@@ -83,23 +83,42 @@ function firstMeaningfulLine(text = '') {
     .find((line) => line.length <= 120) || '';
 }
 
-function extractBody(text = '') {
+function extractBody(text = '', max = 4) {
   return text
     .split(/\n+/)
     .map((line) => line.trim())
     .filter((line) => line.length >= 40)
-    .slice(0, 3);
+    .slice(0, max);
+}
+
+function detectLanguage(text = '') {
+  const lower = text.toLowerCase();
+  const skHits = (lower.match(/\b(ktorý|ktorá|ktoré|zľava|darček|týždeň|objednávku|nakúpiť|pozrite|ďalší|práve|viac|výhodne|zostáva|kolesom|šťastia|chcem)\b/g) || []).length;
+  const czHits = (lower.match(/\b(který|která|které|sleva|dárek|týden|objednávku|nakoupit|podívejte|další|právě|více|výhodně|zbývá|kolem|štěstí|chci)\b/g) || []).length;
+  if (skHits > czHits) return 'sk';
+  if (czHits > skHits) return 'cz';
+  return 'cz';
+}
+
+function classifyCampaignType(text = '') {
+  const lower = text.toLowerCase();
+  if (/(poslední|posledna|končí|koniec|už len|už jen|len dnes|jen dnes|deadline|final|posledná šanca|poslední šance)/i.test(lower)) return 'urgency';
+  if (/(lekce|záznam|tip|návod|krok|how to|webinář|webinar|přednáška|prednáška|kurz|guide)/i.test(lower)) return 'education';
+  if (/(novinka|nové|novy|spouštíme|spúšťame|launch|uvádíme|predstavujeme)/i.test(lower)) return 'launch';
+  if (/(místa|miesta|vstupenku|vstupenka|událost|event|živě|live)/i.test(lower)) return 'event';
+  if (/(sleva|zľava|akce|akcia|zdarma|darček|dárek|balíček|balíčky|výhodne|výhodně|%)/i.test(lower)) return 'promo';
+  return 'promo';
 }
 
 function extractOffers(text = '') {
   const lower = text.toLowerCase();
   const offers = [];
   if (/(sleva|zľava|discount|akce|akcia)/i.test(lower)) offers.push('promo');
-  if (/(jen dnes|jen do|iba do|poslední šance|končí|končí dnes)/i.test(lower)) offers.push('urgency');
+  if (/(jen dnes|jen do|iba do|poslední šance|posledná šanca|končí|končí dnes)/i.test(lower)) offers.push('urgency');
   if (/%/.test(text)) offers.push('percent-off');
   if (/(dárek|darček|gift)/i.test(lower)) offers.push('gift');
   if (/(novinka|new|launch)/i.test(lower)) offers.push('launch');
-  if (/(tip|návod|routine|krok)/i.test(lower)) offers.push('education');
+  if (/(tip|návod|routine|krok|lekce)/i.test(lower)) offers.push('education');
   return unique(offers);
 }
 
@@ -123,12 +142,17 @@ for (const campaign of campaigns) {
   const template = await fetchTemplate(templateId);
   const html = template?.attributes?.html || '';
   const text = stripHtml(html);
+  const contentText = `${message?.attributes?.content?.subject || ''}\n${message?.attributes?.content?.preview_text || ''}\n${text}`;
   const ctas = unique(extractLinkTexts(html)).slice(0, 8);
+  const language = detectLanguage(contentText);
+  const campaignType = classifyCampaignType(contentText);
 
   normalized.push({
     id: campaign.id,
     name: campaign.attributes?.name || '',
     status: campaign.attributes?.status || '',
+    language,
+    campaignType,
     subject: message?.attributes?.content?.subject || campaign.attributes?.name || '',
     previewText: message?.attributes?.content?.preview_text || '',
     sentAt: campaign.attributes?.send_time || campaign.attributes?.scheduled_at || null,
@@ -143,7 +167,7 @@ for (const campaign of campaigns) {
       ctas,
       text
     },
-    offers: extractOffers(`${message?.attributes?.content?.subject || ''}\n${message?.attributes?.content?.preview_text || ''}\n${text}`)
+    offers: extractOffers(contentText)
   });
 }
 

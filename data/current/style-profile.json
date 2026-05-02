@@ -1,7 +1,18 @@
 {
-  "generatedAt": "2026-05-02T16:38:47.568Z",
+  "generatedAt": "2026-05-02T16:43:38.237Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
+  "languageBreakdown": {
+    "cz": 120,
+    "sk": 30
+  },
+  "campaignTypeBreakdown": {
+    "promo": 56,
+    "education": 50,
+    "urgency": 38,
+    "launch": 5,
+    "event": 1
+  },
   "tone": {
     "voice": [
       "kratší subject lines",
@@ -15,18 +26,18 @@
       "headline s rychlým příslibem nebo výsledkem"
     ],
     "ctaPatterns": [
-      "ZATOČIŤ A VYHRAŤ",
-      "ZATOČIT A VYHRÁT",
-      "nové balíčky s darčekmi,",
-      "limitované zľavy",
-      "CHCEM NAKÚPIŤ VÝHODNE",
-      "pro vás exkluzivní nové balíčky s dárky,",
-      "limitované slevy",
-      "CHCI NAKOUPIT VÝHODNĚ",
-      "šanca nakúpiť s 50 % zľavou",
-      "s darčekmi v hodnote 27 €.",
-      "CHCEM VYUŽIŤ POSLEDNÚ ŠANCU",
-      "nakoupit s 50% slevou"
+      "KOUPIT",
+      "ZJISTIT VÍC",
+      "CHCI BÝT U TOHO",
+      "Připojte se na webinář nyní",
+      "KÚPIŤ",
+      "Sledovat na youtube",
+      "PUSTIT VIDEO",
+      "CHCI PŘÍRUČKY ZDARMA",
+      "Chci VIP slevu",
+      "ZÍSKAT BALÍČEK S DÁRKEM",
+      "PUSTIT SI ZÁZNAM",
+      "CHCI SE PŘIDAT DO SKUPINY"
     ]
   },
   "commonOffers": [
@@ -37,7 +48,6 @@
     "promo",
     "urgency"
   ],
-  "commonSegments": [],
   "structure": {
     "sections": [
       "hero",
@@ -45,80 +55,535 @@
       "offer/details",
       "cta"
     ],
-    "bodyParagraphTarget": 3
+    "bodyParagraphTarget": 4
+  },
+  "defaults": {
+    "brands": [
+      "Království tianDe"
+    ],
+    "languages": [
+      "cz",
+      "sk"
+    ],
+    "lengths": [
+      "short",
+      "medium",
+      "long"
+    ]
+  },
+  "byLanguage": {
+    "cz": {
+      "count": 120,
+      "avgSubjectLength": 39,
+      "avgHeadlineLength": 45,
+      "topCtas": [
+        "KOUPIT",
+        "ZJISTIT VÍC",
+        "CHCI BÝT U TOHO",
+        "Připojte se na webinář nyní",
+        "Sledovat na youtube",
+        "PUSTIT VIDEO"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "education",
+        "promo",
+        "gift",
+        "urgency"
+      ],
+      "examples": [
+        {
+          "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+          "headline": "Zatočte kolem štěstí a odneste si dárek!",
+          "previewText": "Každý, kdo zatočí, vyhraje!",
+          "cta": "ZATOČIT A VYHRÁT"
+        },
+        {
+          "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+          "headline": "Slavíme 10. narozeniny, ale dárky rozdáváme my!",
+          "previewText": "Každý, kdo zatočí, vyhraje!",
+          "cta": "ZATOČIT A VYHRÁT"
+        },
+        {
+          "subject": "🚚 POZOR: Týden dopravy zdarma právě začal! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Velký start: nové balíčky s dárky, nové slevy a doprava zdarma pouze teď!",
+          "cta": "pro vás exkluzivní nové balíčky s dárky,"
+        },
+        {
+          "subject": "⏰ Slevové zemětřesení končí! Poslední minuty! ⏰",
+          "headline": "POZOR: Slevové zemětřesení končí!",
+          "previewText": "Poslední chvíle nakoupit s 50% slevou a získat dárky za 680 Kč!",
+          "cta": "nakoupit s 50% slevou"
+        },
+        {
+          "subject": "Zbývá posledních 17 míst. Stihnete se přidat?",
+          "headline": "Poslední místa: Margit Slimáková otevřeně o hubnutí",
+          "previewText": "Už za pár dní se potkáme. A zbývá opravdu jen několik posledních židlí.",
+          "cta": "KOUPIT VSTUPENKU"
+        },
+        {
+          "subject": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období",
+          "headline": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období!",
+          "previewText": "Záznam 4. lekce už na vás čeká. Pět prvků, játra, lymfa, spánek a mapa vnitřního světa.",
+          "cta": "PUSTIT SI ZÁZNAM"
+        }
+      ]
+    },
+    "sk": {
+      "count": 30,
+      "avgSubjectLength": 38,
+      "avgHeadlineLength": 42,
+      "topCtas": [
+        "KÚPIŤ",
+        "PUSTIŤ SI ROZHOVOR",
+        "PRIHLÁSIŤ SA",
+        "Chcem VIP zľavu",
+        "CHCEM BYŤ PRI TOM",
+        "REZERVOVAŤ SI MIESTO"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "gift",
+        "urgency",
+        "education",
+        "promo"
+      ],
+      "examples": [
+        {
+          "subject": "Zatočte kolesom šťastia a vyhrajte darček!",
+          "headline": "Zatočte kolesom šťastia a odneste si darček!",
+          "previewText": "Každý, kto zatočí, vyhrá!",
+          "cta": "ZATOČIŤ A VYHRAŤ"
+        },
+        {
+          "subject": "🚚 POZOR: Týždeň dopravy zadarmo práve začal! 🚚",
+          "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zadarmo",
+          "previewText": "Veľký štart: nové balíčky s darčekmi, nové zľavy a doprava zadarmo iba teraz!",
+          "cta": "nové balíčky s darčekmi,"
+        },
+        {
+          "subject": "⏰ Zľavové zemetrasenie končí! Posledné minúty! ⏰",
+          "headline": "POZOR: Zľavové zemetrasenie končí!",
+          "previewText": "Posledná chvíľa nakúpiť s 50 % zľavou!",
+          "cta": "šanca nakúpiť s 50 % zľavou"
+        },
+        {
+          "subject": "Zostáva posledných 17 miest. Stihnete sa pridať?",
+          "headline": "Posledné miesta: Margit Slimáková otvorene o chudnutí",
+          "previewText": "Už o pár dní sa stretneme. A zostáva naozaj už len niekoľko posledných stoličiek.",
+          "cta": "KOUPIŤ VSTUPENKU"
+        },
+        {
+          "subject": "Už sa to blíži. Ste pripravení?",
+          "headline": "Sebaláska krok za krokom. Už budúci týždeň!",
+          "previewText": "Kurz Sebaláska krok za krokom začína už 4. 5.",
+          "cta": "PRIHLÁSIŤ SA"
+        },
+        {
+          "subject": "Zastavte vrásky skôr, než sa prehĺbia!",
+          "headline": "Pleť už nie je, čo bývala? Máme novinku!",
+          "previewText": "Nová rada so ženšenom vracia pleti silu, jas a mladistvý vzhľad.",
+          "cta": "VYSKÚŠAŤ NOVINKU PROTI VRÁSKAM"
+        }
+      ]
+    }
+  },
+  "byCampaignType": {
+    "promo": {
+      "count": 56,
+      "avgSubjectLength": 37,
+      "avgHeadlineLength": 43,
+      "topCtas": [
+        "KOUPIT",
+        "KÚPIŤ",
+        "CHCI BÝT U TOHO",
+        "Chci VIP slevu",
+        "ZJISTIT VÍC",
+        "REZERVOVAT SI MÍSTO"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "gift",
+        "promo",
+        "education",
+        "urgency"
+      ],
+      "examples": [
+        {
+          "subject": "Zatočte kolesom šťastia a vyhrajte darček!",
+          "headline": "Zatočte kolesom šťastia a odneste si darček!",
+          "previewText": "Každý, kto zatočí, vyhrá!",
+          "cta": "ZATOČIŤ A VYHRAŤ"
+        },
+        {
+          "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+          "headline": "Zatočte kolem štěstí a odneste si dárek!",
+          "previewText": "Každý, kdo zatočí, vyhraje!",
+          "cta": "ZATOČIT A VYHRÁT"
+        },
+        {
+          "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+          "headline": "Slavíme 10. narozeniny, ale dárky rozdáváme my!",
+          "previewText": "Každý, kdo zatočí, vyhraje!",
+          "cta": "ZATOČIT A VYHRÁT"
+        },
+        {
+          "subject": "Zastavte vrásky dřív, než se prohloubí!",
+          "headline": "Pleť už není, co bývala? Máme novinku!",
+          "previewText": "Nová řada se ženšenem vrací pleti sílu, jas a mladistvý vzhled.",
+          "cta": "VYZKOUŠET NOVINKU PROTI VRÁSKÁM"
+        },
+        {
+          "subject": "Zastavte vrásky skôr, než sa prehĺbia!",
+          "headline": "Pleť už nie je, čo bývala? Máme novinku!",
+          "previewText": "Nová rada so ženšenom vracia pleti silu, jas a mladistvý vzhľad.",
+          "cta": "VYSKÚŠAŤ NOVINKU PROTI VRÁSKAM"
+        },
+        {
+          "subject": "ZĽAVOVÉ ZEMETRASENIE! Až -50 %",
+          "headline": "SOS: ZĽAVOVÉ ZEMETRASENIE!",
+          "previewText": "Zľavy až -50 % a darčeky v hodnote 27,40 € zadarmo čakajú. Využite to, kým môžete!",
+          "cta": "NAKÚPIŤ TERAZ, NEŽ BUDE NESKORO"
+        }
+      ]
+    },
+    "launch": {
+      "count": 5,
+      "avgSubjectLength": 42,
+      "avgHeadlineLength": 42,
+      "topCtas": [
+        "CHCEM NAKÚPIŤ VÝHODNE",
+        "CHCI NAKOUPIT VÝHODNĚ",
+        "CHCI BALÍČEK S DÁRKEM",
+        "KOUPIT",
+        "VYBRAT SI BALÍČEK S 20 % SLEVOU",
+        "VYBRAŤ SI BALÍČEK S 20 % ZĽAVOU"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "gift",
+        "promo"
+      ],
+      "examples": [
+        {
+          "subject": "🚚 POZOR: Týždeň dopravy zadarmo práve začal! 🚚",
+          "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zadarmo",
+          "previewText": "Veľký štart: nové balíčky s darčekmi, nové zľavy a doprava zadarmo iba teraz!",
+          "cta": "nové balíčky s darčekmi,"
+        },
+        {
+          "subject": "🚚 POZOR: Týden dopravy zdarma právě začal! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Velký start: nové balíčky s dárky, nové slevy a doprava zdarma pouze teď!",
+          "cta": "pro vás exkluzivní nové balíčky s dárky,"
+        },
+        {
+          "subject": "Tak tohle tu ještě nebylo....",
+          "headline": "Exkluzivní nabídka: dárky k balíčkům",
+          "previewText": "Dárky až za 685 Kč Tohle se vám bude líbit!",
+          "cta": "nové exkluzivní akce,"
+        },
+        {
+          "subject": "POZOR: 20 % sleva je tady! Využijete ji včas?",
+          "headline": "Objevte nové balíčky s 20 % slevou!",
+          "previewText": "Nové pleťové a vlasové balíčky teď pořídíte o 20 % levněji!",
+          "cta": "VYBRAT SI BALÍČEK S 20 % SLEVOU"
+        },
+        {
+          "subject": "POZOR: 20 % zľava je tu! Využijete ju včas?",
+          "headline": "Objavte nové balíčky s 20 % zľavou!",
+          "previewText": "Nové pleťové a vlasové balíčky teraz kúpite o 20 % lacnejšie!",
+          "cta": "VYBRAŤ SI BALÍČEK S 20 % ZĽAVOU"
+        }
+      ]
+    },
+    "urgency": {
+      "count": 38,
+      "avgSubjectLength": 34,
+      "avgHeadlineLength": 42,
+      "topCtas": [
+        "KOUPIT",
+        "ZÍSKAT BALÍČEK S DÁRKEM",
+        "KÚPIŤ",
+        "CHCI BÝT U TOHO",
+        "ZJISTIT VÍC",
+        "Chci VIP slevu"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "urgency",
+        "gift",
+        "education",
+        "promo"
+      ],
+      "examples": [
+        {
+          "subject": "⏰ Zľavové zemetrasenie končí! Posledné minúty! ⏰",
+          "headline": "POZOR: Zľavové zemetrasenie končí!",
+          "previewText": "Posledná chvíľa nakúpiť s 50 % zľavou!",
+          "cta": "šanca nakúpiť s 50 % zľavou"
+        },
+        {
+          "subject": "⏰ Slevové zemětřesení končí! Poslední minuty! ⏰",
+          "headline": "POZOR: Slevové zemětřesení končí!",
+          "previewText": "Poslední chvíle nakoupit s 50% slevou a získat dárky za 680 Kč!",
+          "cta": "nakoupit s 50% slevou"
+        },
+        {
+          "subject": "Zostáva posledných 17 miest. Stihnete sa pridať?",
+          "headline": "Posledné miesta: Margit Slimáková otvorene o chudnutí",
+          "previewText": "Už o pár dní sa stretneme. A zostáva naozaj už len niekoľko posledných stoličiek.",
+          "cta": "KOUPIŤ VSTUPENKU"
+        },
+        {
+          "subject": "Zbývá posledních 17 míst. Stihnete se přidat?",
+          "headline": "Poslední místa: Margit Slimáková otevřeně o hubnutí",
+          "previewText": "Už za pár dní se potkáme. A zbývá opravdu jen několik posledních židlí.",
+          "cta": "KOUPIT VSTUPENKU"
+        },
+        {
+          "subject": "Teď nebo nikdy!",
+          "headline": "KURZ HUBNUTÍ skončil, ale o materiály nepřijdete.",
+          "previewText": "Poslední šance, jak si materiály zachovat!",
+          "cta": "NECHCI O MATERIÁLY PŘIJÍT"
+        },
+        {
+          "subject": "Za pár hodín bude vypredané!",
+          "headline": "Zľavové zemetrasenie: posledných 10 kusov čaká na najrýchlejších!",
+          "previewText": "Zľavové zemetrasenie otriaslo skladom. Zostalo posledných pár kusov!",
+          "cta": "NAKÚPIŤ TERAZ, KÝM NIE JE NESKORO"
+        }
+      ]
+    },
+    "education": {
+      "count": 50,
+      "avgSubjectLength": 43,
+      "avgHeadlineLength": 47,
+      "topCtas": [
+        "KOUPIT",
+        "Připojte se na webinář nyní",
+        "ZJISTIT VÍC",
+        "CHCI PŘÍRUČKY ZDARMA",
+        "Sledovat na youtube",
+        "PUSTIT SI ZÁZNAM"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "education",
+        "promo",
+        "gift"
+      ],
+      "examples": [
+        {
+          "subject": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období",
+          "headline": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období!",
+          "previewText": "Záznam 4. lekce už na vás čeká. Pět prvků, játra, lymfa, spánek a mapa vnitřního světa.",
+          "cta": "PUSTIT SI ZÁZNAM"
+        },
+        {
+          "subject": "Váš e-book z kurzu Tělo jako kompas",
+          "headline": "Dobrý den,",
+          "previewText": "",
+          "cta": "Stáhnout ebook"
+        },
+        {
+          "subject": "⏰ Kurz Tělo jako kompas - ZAČÍNÁME ZA 30 MINUT! + Dnes skvělý dárek",
+          "headline": "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
+          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+          "cta": "Připojte se na webinář nyní"
+        },
+        {
+          "subject": "Už sa to blíži. Ste pripravení?",
+          "headline": "Sebaláska krok za krokom. Už budúci týždeň!",
+          "previewText": "Kurz Sebaláska krok za krokom začína už 4. 5.",
+          "cta": "PRIHLÁSIŤ SA"
+        },
+        {
+          "subject": "Už se to blíží. Jste připraveni?",
+          "headline": "Sebeláska krok za krokem. Už příští týden!",
+          "previewText": "Kurz Sebeláska krok za krokem začíná už 4. 5.",
+          "cta": "PŘIHLÁSIT SE"
+        },
+        {
+          "subject": "Jak vybrat masku na pleť a proč maskovat 10 dní",
+          "headline": "Jak vybrat masku na pleť a proč maskovat 10 dní",
+          "previewText": "Záznam webináře o pleťových, očních i nočních maskách je připravený.",
+          "cta": "PUSTIT SI ZÁZNAM"
+        }
+      ]
+    },
+    "event": {
+      "count": 1,
+      "avgSubjectLength": 29,
+      "avgHeadlineLength": 54,
+      "topCtas": [
+        "Zjistit víc"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch"
+      ],
+      "examples": [
+        {
+          "subject": "O tomhle se ženy bojí mluvit…",
+          "headline": "Ženské zdraví bez studu. Už zítra se potkáme v Měčíně!",
+          "previewText": "Už zítra v Měčíně. Rezervujte si své místo, dokud je volné!",
+          "cta": "Zjistit víc"
+        }
+      ]
+    }
   },
   "examples": [
     {
       "subject": "Zatočte kolesom šťastia a vyhrajte darček!",
       "headline": "Zatočte kolesom šťastia a odneste si darček!",
       "previewText": "Každý, kto zatočí, vyhrá!",
-      "cta": "ZATOČIŤ A VYHRAŤ"
+      "cta": "ZATOČIŤ A VYHRAŤ",
+      "language": "sk",
+      "campaignType": "promo"
     },
     {
       "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
       "headline": "Zatočte kolem štěstí a odneste si dárek!",
       "previewText": "Každý, kdo zatočí, vyhraje!",
-      "cta": "ZATOČIT A VYHRÁT"
+      "cta": "ZATOČIT A VYHRÁT",
+      "language": "cz",
+      "campaignType": "promo"
     },
     {
       "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
       "headline": "Slavíme 10. narozeniny, ale dárky rozdáváme my!",
       "previewText": "Každý, kdo zatočí, vyhraje!",
-      "cta": "ZATOČIT A VYHRÁT"
+      "cta": "ZATOČIT A VYHRÁT",
+      "language": "cz",
+      "campaignType": "promo"
     },
     {
       "subject": "🚚 POZOR: Týždeň dopravy zadarmo práve začal! 🚚",
       "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zadarmo",
       "previewText": "Veľký štart: nové balíčky s darčekmi, nové zľavy a doprava zadarmo iba teraz!",
-      "cta": "nové balíčky s darčekmi,"
+      "cta": "nové balíčky s darčekmi,",
+      "language": "sk",
+      "campaignType": "launch"
     },
     {
       "subject": "🚚 POZOR: Týden dopravy zdarma právě začal! 🚚",
       "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
       "previewText": "Velký start: nové balíčky s dárky, nové slevy a doprava zdarma pouze teď!",
-      "cta": "pro vás exkluzivní nové balíčky s dárky,"
+      "cta": "pro vás exkluzivní nové balíčky s dárky,",
+      "language": "cz",
+      "campaignType": "launch"
     },
     {
       "subject": "⏰ Zľavové zemetrasenie končí! Posledné minúty! ⏰",
       "headline": "POZOR: Zľavové zemetrasenie končí!",
       "previewText": "Posledná chvíľa nakúpiť s 50 % zľavou!",
-      "cta": "šanca nakúpiť s 50 % zľavou"
+      "cta": "šanca nakúpiť s 50 % zľavou",
+      "language": "sk",
+      "campaignType": "urgency"
     },
     {
       "subject": "⏰ Slevové zemětřesení končí! Poslední minuty! ⏰",
       "headline": "POZOR: Slevové zemětřesení končí!",
       "previewText": "Poslední chvíle nakoupit s 50% slevou a získat dárky za 680 Kč!",
-      "cta": "nakoupit s 50% slevou"
+      "cta": "nakoupit s 50% slevou",
+      "language": "cz",
+      "campaignType": "urgency"
     },
     {
       "subject": "Zostáva posledných 17 miest. Stihnete sa pridať?",
       "headline": "Posledné miesta: Margit Slimáková otvorene o chudnutí",
       "previewText": "Už o pár dní sa stretneme. A zostáva naozaj už len niekoľko posledných stoličiek.",
-      "cta": "KOUPIŤ VSTUPENKU"
+      "cta": "KOUPIŤ VSTUPENKU",
+      "language": "sk",
+      "campaignType": "urgency"
     },
     {
       "subject": "Zbývá posledních 17 míst. Stihnete se přidat?",
       "headline": "Poslední místa: Margit Slimáková otevřeně o hubnutí",
       "previewText": "Už za pár dní se potkáme. A zbývá opravdu jen několik posledních židlí.",
-      "cta": "KOUPIT VSTUPENKU"
+      "cta": "KOUPIT VSTUPENKU",
+      "language": "cz",
+      "campaignType": "urgency"
     },
     {
       "subject": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období",
       "headline": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období!",
       "previewText": "Záznam 4. lekce už na vás čeká. Pět prvků, játra, lymfa, spánek a mapa vnitřního světa.",
-      "cta": "PUSTIT SI ZÁZNAM"
+      "cta": "PUSTIT SI ZÁZNAM",
+      "language": "cz",
+      "campaignType": "education"
     },
     {
       "subject": "Váš e-book z kurzu Tělo jako kompas",
       "headline": "Dobrý den,",
       "previewText": "",
-      "cta": "Stáhnout ebook"
+      "cta": "Stáhnout ebook",
+      "language": "cz",
+      "campaignType": "education"
     },
     {
       "subject": "⏰ Kurz Tělo jako kompas - ZAČÍNÁME ZA 30 MINUT! + Dnes skvělý dárek",
       "headline": "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
       "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-      "cta": "Připojte se na webinář nyní"
+      "cta": "Připojte se na webinář nyní",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Už sa to blíži. Ste pripravení?",
+      "headline": "Sebaláska krok za krokom. Už budúci týždeň!",
+      "previewText": "Kurz Sebaláska krok za krokom začína už 4. 5.",
+      "cta": "PRIHLÁSIŤ SA",
+      "language": "sk",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Už se to blíží. Jste připraveni?",
+      "headline": "Sebeláska krok za krokem. Už příští týden!",
+      "previewText": "Kurz Sebeláska krok za krokem začíná už 4. 5.",
+      "cta": "PŘIHLÁSIT SE",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Jak vybrat masku na pleť a proč maskovat 10 dní",
+      "headline": "Jak vybrat masku na pleť a proč maskovat 10 dní",
+      "previewText": "Záznam webináře o pleťových, očních i nočních maskách je připravený.",
+      "cta": "PUSTIT SI ZÁZNAM",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Teď nebo nikdy!",
+      "headline": "KURZ HUBNUTÍ skončil, ale o materiály nepřijdete.",
+      "previewText": "Poslední šance, jak si materiály zachovat!",
+      "cta": "NECHCI O MATERIÁLY PŘIJÍT",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "⏰ ZAČÍNÁME ZA 30 MINUT! Pleťové masky",
+      "headline": "Už za 30 minut začínáme náš webinář ve 20:00 hodin. První účastníci se už připojují.",
+      "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+      "cta": "Připojte se na webinář nyní",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Zastavte vrásky dřív, než se prohloubí!",
+      "headline": "Pleť už není, co bývala? Máme novinku!",
+      "previewText": "Nová řada se ženšenem vrací pleti sílu, jas a mladistvý vzhled.",
+      "cta": "VYZKOUŠET NOVINKU PROTI VRÁSKÁM",
+      "language": "cz",
+      "campaignType": "promo"
     }
   ]
 }

@@ -34,6 +34,17 @@
           <form id="generator-form">
             <div class="grid">
               <label>
+                Jazyk
+                <select name="language">
+                  <option value="cz">Čeština</option>
+                  <option value="sk">Slovenština</option>
+                </select>
+              </label>
+              <label>
+                Značka
+                <input name="brand" value="Království tianDe" />
+              </label>
+              <label>
                 Téma
                 <input name="theme" placeholder="např. jarní restart pleti" required />
               </label>
@@ -47,7 +58,25 @@
                   <option value="promo">Promo</option>
                   <option value="education">Edukace</option>
                   <option value="launch">Launch</option>
-                  <option value="reactivation">Reaktivace</option>
+                  <option value="event">Event</option>
+                  <option value="urgency">Urgency</option>
+                </select>
+              </label>
+              <label>
+                Délka mailu
+                <select name="length">
+                  <option value="short">Krátký</option>
+                  <option value="medium" selected>Střední</option>
+                  <option value="long">Delší</option>
+                </select>
+              </label>
+              <label>
+                Tone
+                <select name="tonePreset">
+                  <option value="direct">Přímý</option>
+                  <option value="warm">Teplejší</option>
+                  <option value="urgent">Urgentní</option>
+                  <option value="educational">Edukativní</option>
                 </select>
               </label>
               <label>
