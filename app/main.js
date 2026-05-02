@@ -54,7 +54,8 @@ function renderSidebar() {
     <strong>${profile.campaignCount}</strong> kampaní<br />
     <span>Poslední build: ${new Date(profile.generatedAt).toLocaleString('cs-CZ')}</span><br />
     <span>${langInfo}</span><br />
-    <span>${typeInfo}</span>
+    <span>${typeInfo}</span><br />
+    <strong>Mode:</strong> High-seller default
   `;
 
   profile.tone.voice.forEach((item) => appendListItem(toneList, item));
@@ -95,22 +96,56 @@ function appendListItem(target, text) {
 }
 
 function generateNewsletter(data) {
-  const subset = pickSubset(data);
-  const inspiration = findInspiration(data);
-  const cta = buildCta(data, subset, inspiration);
-  const subjectAngles = scoreSubjectAngles(buildSubjectAngles(data, subset), data, inspiration);
-  const primarySubject = subjectAngles[0];
-  const preheader = buildPreheader(data, subset, primarySubject.angle);
-  const headline = buildHeadline(data, subset, primarySubject.angle, inspiration);
-  const blocks = buildBlocks(data, cta, primarySubject.angle, inspiration);
+  const tuned = { ...data, mode: 'high-seller', tonePreset: normalizeTone(data) };
+  const subset = pickSubset(tuned);
+  const inspiration = findInspiration(tuned);
+  let cta = buildCta(tuned, subset, inspiration);
+  let subjectAngles = scoreSubjectAngles(buildSubjectAngles(tuned, subset), tuned, inspiration);
+  let primarySubject = subjectAngles[0];
+  let preheader = buildPreheader(tuned, subset, primarySubject.angle);
+  let headline = buildHeadline(tuned, subset, primarySubject.angle, inspiration);
+  let blocks = buildBlocks(tuned, cta, primarySubject.angle, inspiration);
+  let salesScore = scoreDraft({ tuned, primarySubject, preheader, headline, cta, blocks });
+
+  if (salesScore.total < 80) {
+    ({ primarySubject, subjectAngles, preheader, headline, cta, blocks, salesScore } = strengthenDraft({ tuned, subset, inspiration, subjectAngles, cta, preheader, headline, blocks }));
+  }
+
   const body = blocks.map((block) => block.title ? `${block.title}\n${block.text}` : block.text).join('\n\n');
-  const salesChecks = buildSalesChecks(data, primarySubject.angle, cta);
-  const html = buildHtmlDraft({ data, subject: primarySubject.text, preheader, headline, cta, blocks });
-  return { subject: primarySubject.text, subjectAngles, preheader, headline, body, cta, blocks, html, salesChecks, inspiration };
+  const salesChecks = buildSalesChecks(tuned, primarySubject.angle, cta, salesScore);
+  const html = buildHtmlDraft({ data: tuned, preheader, headline, cta, blocks });
+  return { subject: primarySubject.text, subjectAngles, preheader, headline, body, cta, blocks, html, salesChecks, inspiration, salesScore };
+}
+
+function strengthenDraft({ tuned, subset, inspiration, subjectAngles, cta, preheader, headline, blocks }) {
+  const strongerAngles = subjectAngles.sort((a, b) => {
+    const aBoost = ['urgency', 'benefit', 'offer', 'deadline'].includes(a.angle) ? 20 : 0;
+    const bBoost = ['urgency', 'benefit', 'offer', 'deadline'].includes(b.angle) ? 20 : 0;
+    return (b.score + bBoost) - (a.score + aBoost);
+  });
+  const primarySubject = strongerAngles[0];
+  const strongerCta = strengthenCta(tuned, cta);
+  const strongerPreheader = strengthenPreheader(tuned, preheader);
+  const strongerHeadline = strengthenHeadline(tuned, headline);
+  const strongerBlocks = strengthenBlocks(tuned, blocks, strongerCta);
+  const salesScore = scoreDraft({ tuned, primarySubject, preheader: strongerPreheader, headline: strongerHeadline, cta: strongerCta, blocks: strongerBlocks });
+  return {
+    primarySubject,
+    subjectAngles: strongerAngles,
+    preheader: strongerPreheader,
+    headline: strongerHeadline,
+    cta: strongerCta,
+    blocks: strongerBlocks,
+    salesScore
+  };
 }
 
 function formatDraft(draft, language) {
   return [
+    `${label('mode', language)}: HIGH-SELLER`,
+    `${label('score', language)}: ${draft.salesScore.total}/100`,
+    `${label('score_breakdown', language)}: open ${draft.salesScore.openPotential}, click ${draft.salesScore.clickPotential}, clarity ${draft.salesScore.salesClarity}, urgency ${draft.salesScore.urgencyStrength}`,
+    '',
     `${label('subject', language)}: ${draft.subject}`,
     '',
     `${label('subject_variants', language)}:`,
@@ -129,6 +164,13 @@ function formatDraft(draft, language) {
     `${label('checks', language)}:`,
     ...draft.salesChecks.map((item) => `- ${item}`)
   ].join('\n');
+}
+
+function normalizeTone(data) {
+  if (data.tonePreset === 'warm') return 'direct';
+  if (data.campaignType === 'education') return 'educational';
+  if (data.campaignType === 'urgency' || data.offer) return 'urgent';
+  return data.tonePreset || 'direct';
 }
 
 function pickSubset(data) {
@@ -270,6 +312,13 @@ function buildPreheader(data, subset, angle) {
   return truncate(base, subset.avgSubjectLength ? Math.max(58, subset.avgSubjectLength + 25) : 88);
 }
 
+function strengthenPreheader(data, preheader) {
+  if (/jednat právě teď|konať práve teraz|hlavní přínos|hlavný prínos/i.test(preheader)) return preheader;
+  return data.language === 'sk'
+    ? `Ponuka je časovo citlivá a hlavný prínos komunikujeme hneď v úvode.`
+    : `Nabídka je časově citlivá a hlavní přínos komunikujeme hned v úvodu.`;
+}
+
 function buildHeadline(data, subset, angle, inspiration) {
   const product = capitalize(data.product);
   const theme = capitalize(data.theme);
@@ -299,6 +348,13 @@ function buildHeadline(data, subset, angle, inspiration) {
     }
   };
   return angleMap[data.language]?.[angle] || inspirationHeadline || subset.examples?.[0]?.headline || `${theme} a ${product}`;
+}
+
+function strengthenHeadline(data, headline) {
+  if (/teď|teraz|pozornost|výhodný|výhodný/i.test(headline)) return headline;
+  return data.language === 'sk'
+    ? `${capitalize(data.product)} je ponuka, ktorú sa oplatí otvoriť práve teraz`
+    : `${capitalize(data.product)} je nabídka, kterou se vyplatí otevřít právě teď`;
 }
 
 function buildBlocks(data, cta, angle, inspiration) {
@@ -333,42 +389,66 @@ function buildBlocks(data, cta, angle, inspiration) {
   return blocks;
 }
 
-function buildHtmlDraft({ data, subject, preheader, headline, cta, blocks }) {
-  const ctaHref = '#';
-  const blockHtml = blocks.map((block) => `
-    <tr>
-      <td style="padding:0 32px 20px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
-        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:8px;">${escapeHtml(block.title)}</div>
-        <div style="font-size:16px;line-height:1.6;">${escapeHtml(block.text)}</div>
-      </td>
-    </tr>`).join('');
+function strengthenBlocks(data, blocks, cta) {
+  return blocks.map((block, index) => {
+    if (index === 0) {
+      return {
+        ...block,
+        text: data.language === 'sk'
+          ? `${block.text} Prínos aj dôvod konať musia byť jasné do pár sekúnd.`
+          : `${block.text} Přínos i důvod jednat musí být jasné do pár sekund.`
+      };
+    }
+    if (index === blocks.length - 1) {
+      return {
+        ...block,
+        text: `${block.text} ${data.language === 'sk' ? 'CTA nechávame jedno a úplne konkrétne:' : 'CTA necháváme jedno a úplně konkrétní:'} ${cta}.`
+      };
+    }
+    return block;
+  });
+}
 
-  return `<!doctype html>
-<html lang="${data.language}">
-  <body style="margin:0;padding:0;background:#f4f6fb;">
-    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${escapeHtml(preheader)}</div>
-    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f4f6fb;padding:24px 0;">
-      <tr>
-        <td align="center">
-          <table role="presentation" width="640" cellspacing="0" cellpadding="0" style="background:#ffffff;border-radius:16px;overflow:hidden;">
-            <tr>
-              <td style="padding:32px 32px 12px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
-                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:10px;">${escapeHtml(data.brand || 'Brand')}</div>
-                <h1 style="margin:0;font-size:32px;line-height:1.2;">${escapeHtml(headline)}</h1>
-              </td>
-            </tr>
-            ${blockHtml}
-            <tr>
-              <td style="padding:0 32px 36px 32px;">
-                <a href="${ctaHref}" style="display:inline-block;background:#7c9cff;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:12px;font-family:Arial,sans-serif;font-weight:700;">${escapeHtml(cta)}</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </body>
-</html>`;
+function scoreDraft({ tuned, primarySubject, preheader, headline, cta, blocks }) {
+  const openPotential = scoreOpenPotential(primarySubject, preheader);
+  const clickPotential = scoreClickPotential(cta, blocks);
+  const salesClarity = scoreSalesClarity(blocks, headline);
+  const urgencyStrength = scoreUrgencyStrength(tuned, primarySubject, preheader, blocks);
+  const total = Math.round((openPotential + clickPotential + salesClarity + urgencyStrength) / 4);
+  return { total, openPotential, clickPotential, salesClarity, urgencyStrength };
+}
+
+function scoreOpenPotential(subject, preheader) {
+  let score = 55;
+  if (subject.text.length >= 22 && subject.text.length <= 52) score += 15;
+  if (/(sleva|zľava|novinka|poslední|posledná|teď|teraz|proč|prečo|%)/i.test(subject.text)) score += 15;
+  if (preheader && preheader !== subject.text) score += 10;
+  return Math.min(score, 100);
+}
+
+function scoreClickPotential(cta, blocks) {
+  let score = 55;
+  if (cta.length >= 4 && cta.length <= 28) score += 15;
+  if (!/(zobrazit|pozrieť|podívat|podivat)/i.test(cta)) score += 10;
+  if (blocks.some((block) => /hlavní akce|hlavná akcia|cta/i.test(block.text))) score += 15;
+  return Math.min(score, 100);
+}
+
+function scoreSalesClarity(blocks, headline) {
+  let score = 55;
+  if (headline.length <= 65) score += 10;
+  if (blocks.length >= 3) score += 10;
+  if (blocks.some((block) => /nabídka|ponuka|benefit|přínos|prínos/i.test(block.text))) score += 15;
+  if (blocks.some((block) => /důvod|dovod|věřit|veriť/i.test(block.title + ' ' + block.text))) score += 10;
+  return Math.min(score, 100);
+}
+
+function scoreUrgencyStrength(tuned, subject, preheader, blocks) {
+  let score = tuned.offer ? 60 : 45;
+  if (/(končí|brzy|teď|teraz|poslední|posledná|deadline|šance)/i.test(subject.text)) score += 20;
+  if (/(jednat právě teď|konať práve teraz|časově citlivá|časovo citlivá)/i.test(preheader)) score += 15;
+  if (blocks.some((block) => /teď|teraz|čas|časové|časovo/i.test(block.text))) score += 10;
+  return Math.min(score, 100);
 }
 
 function buildWhyNow(data, language, angle) {
@@ -443,30 +523,74 @@ function buildRiskOfNoAction(data, language, angle) {
   return map[language]?.[angle] || map[language].benefit;
 }
 
-function buildSalesChecks(data, angle, cta) {
+function buildSalesChecks(data, angle, cta, salesScore) {
   return data.language === 'sk'
     ? [
-        `Subject stojí na jednom hlavnom angle: ${angle}.`,
+        `Mode je HIGH-SELLER a hlavný angle je ${angle}.`,
+        `Predajné skóre je ${salesScore.total}/100.`,
         'Preheader dopĺňa subject, neopakuje ho doslova.',
-        'Hero sekcia predáva benefit v prvých sekundách.',
         `Mail smeruje k jednému hlavnému CTA: ${cta}.`,
-        'Výstup má aj HTML-ready verziu.'
+        'Slabší draft sa automaticky pritvrdí do predajnejšej verzie.'
       ]
     : [
-        `Subject stojí na jednom hlavním angle: ${angle}.`,
+        `Mode je HIGH-SELLER a hlavní angle je ${angle}.`,
+        `Prodejní skóre je ${salesScore.total}/100.`,
         'Preheader doplňuje subject, neopakuje ho doslova.',
-        'Hero sekce prodává benefit v prvních sekundách.',
         `Mail směřuje k jednomu hlavnímu CTA: ${cta}.`,
-        'Výstup má i HTML-ready verzi.'
+        'Slabší draft se automaticky přitvrdí do prodejnější verze.'
       ];
 }
 
 function buildCta(data, subset, inspiration) {
-  if (data.ctaGoal) return data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`;
-  if (inspiration[0]?.cta) return inspiration[0].cta;
-  if (subset.topCtas?.length) return subset.topCtas[0];
+  if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
+  if (inspiration[0]?.cta) return strengthenCta(data, inspiration[0].cta);
+  if (subset.topCtas?.length) return strengthenCta(data, subset.topCtas[0]);
   if (data.offer) return data.language === 'sk' ? 'Využiť ponuku' : 'Využít nabídku';
   return data.language === 'sk' ? 'Zistiť viac' : 'Zjistit víc';
+}
+
+function strengthenCta(data, cta) {
+  if (/(zjistit|zistiť|koupit|kúpiť|využít|využiť|chci|chcem)/i.test(cta)) return cta;
+  if (data.offer) return data.language === 'sk' ? 'Využiť ponuku teraz' : 'Využít nabídku teď';
+  return data.language === 'sk' ? 'Chcem to využiť' : 'Chci toho využít';
+}
+
+function buildHtmlDraft({ data, preheader, headline, cta, blocks }) {
+  const ctaHref = '#';
+  const blockHtml = blocks.map((block) => `
+    <tr>
+      <td style="padding:0 32px 20px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:8px;">${escapeHtml(block.title)}</div>
+        <div style="font-size:16px;line-height:1.6;">${escapeHtml(block.text)}</div>
+      </td>
+    </tr>`).join('');
+
+  return `<!doctype html>
+<html lang="${data.language}">
+  <body style="margin:0;padding:0;background:#f4f6fb;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${escapeHtml(preheader)}</div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f4f6fb;padding:24px 0;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="640" cellspacing="0" cellpadding="0" style="background:#ffffff;border-radius:16px;overflow:hidden;">
+            <tr>
+              <td style="padding:32px 32px 12px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:10px;">${escapeHtml(data.brand || 'Brand')}</div>
+                <h1 style="margin:0;font-size:32px;line-height:1.2;">${escapeHtml(headline)}</h1>
+              </td>
+            </tr>
+            ${blockHtml}
+            <tr>
+              <td style="padding:0 32px 36px 32px;">
+                <a href="${ctaHref}" style="display:inline-block;background:#7c9cff;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:12px;font-family:Arial,sans-serif;font-weight:700;">${escapeHtml(cta)}</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>`;
 }
 
 function buildNumberSubject(theme, language) {
@@ -480,6 +604,9 @@ function cleanSubject(value) {
 function label(key, language) {
   const map = {
     cz: {
+      mode: 'REŽIM',
+      score: 'HIGH-SELLER SCORE',
+      score_breakdown: 'ROZPAD SCORE',
       subject: 'PŘEDMĚT',
       subject_variants: 'VARIANTY PŘEDMĚTU',
       preheader: 'PREHEADER',
@@ -490,6 +617,9 @@ function label(key, language) {
       checks: 'PRODEJNÍ CHECKLIST'
     },
     sk: {
+      mode: 'REŽIM',
+      score: 'HIGH-SELLER SCORE',
+      score_breakdown: 'ROZPAD SCORE',
       subject: 'PREDMET',
       subject_variants: 'VARIANTY PREDMETU',
       preheader: 'PREHEADER',
