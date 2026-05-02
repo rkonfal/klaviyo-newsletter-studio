@@ -1,0 +1,12 @@
+{
+  "name": "klaviyo-newsletter-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync:klaviyo": "node scripts/sync-klaviyo.mjs",
+    "build:data": "node scripts/build-dataset.mjs",
+    "build": "npm run build:data",
+    "dev": "python3 -m http.server 4173"
+  }
+}

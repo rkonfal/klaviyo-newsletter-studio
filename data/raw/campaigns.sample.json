@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sample-campaign-1",
+    "name": "Květnová akce na kolagen",
+    "subject": "Květnová sleva 20 % na kolagen",
+    "previewText": "Jen do neděle a jen pro věrné zákazníky",
+    "sentAt": "2026-04-28T08:00:00Z",
+    "template": {
+      "headline": "Kolagen, po kterém se vždycky zapráší",
+      "body": [
+        "Máme pro tebe rychlou květnovou akci na jeden z nejprodávanějších produktů.",
+        "Sleva platí jen krátce, takže pokud sis chtěl(a) doplnit zásoby, teď je ideální chvíle."
+      ],
+      "cta": "Chci kolagen se slevou"
+    },
+    "offers": ["sleva", "časově omezená akce"],
+    "segments": ["věrní zákazníci"]
+  },
+  {
+    "id": "sample-campaign-2",
+    "name": "Tipy pro jarní restart pleti",
+    "subject": "3 jednoduché kroky pro jarní restart pleti",
+    "previewText": "Rychlá inspirace, kterou zvládneš doma",
+    "sentAt": "2026-04-18T09:30:00Z",
+    "template": {
+      "headline": "Pleť po zimě nemusí vypadat unaveně",
+      "body": [
+        "Sepsali jsme 3 kroky, které zákazníkům pravidelně fungují při jarní péči.",
+        "Začni jemným čištěním, přidej cílené sérum a nezapomeň na pravidelnou hydrataci."
+      ],
+      "cta": "Chci jarní tipy"
+    },
+    "offers": ["edukace"],
+    "segments": ["všichni odběratelé"]
+  }
+]

@@ -1,0 +1,36 @@
+name: Sync Klaviyo and build dataset
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 4 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci || npm install
+
+      - name: Sync Klaviyo
+        env:
+          KLAVIYO_API_KEY: ${{ secrets.KLAVIYO_API_KEY }}
+        run: npm run sync:klaviyo
+
+      - name: Build dataset
+        run: npm run build:data
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/raw data/current
+          git diff --staged --quiet || git commit -m "chore: refresh klaviyo dataset"
+          git push

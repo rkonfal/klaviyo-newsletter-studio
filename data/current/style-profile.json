@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-05-02T16:18:10.986Z",
+  "campaignCount": 2,
+  "tone": {
+    "voice": [
+      "srozumitelný",
+      "přímý",
+      "benefit-first",
+      "první odhad z MVP datasetu"
+    ],
+    "headlinePatterns": [
+      "průměrná délka předmětu 36 znaků",
+      "headline s rychlým příslibem nebo výsledkem"
+    ],
+    "ctaPatterns": [
+      "Chci kolagen se slevou",
+      "Chci jarní tipy"
+    ]
+  },
+  "commonOffers": [
+    "sleva",
+    "časově omezená akce",
+    "edukace"
+  ],
+  "commonSegments": [
+    "věrní zákazníci",
+    "všichni odběratelé"
+  ],
+  "structure": {
+    "sections": [
+      "hero",
+      "reason-to-care",
+      "offer/details",
+      "cta"
+    ],
+    "bodyParagraphTarget": 2
+  },
+  "examples": [
+    {
+      "subject": "Květnová sleva 20 % na kolagen",
+      "headline": "Kolagen, po kterém se vždycky zapráší"
+    },
+    {
+      "subject": "3 jednoduché kroky pro jarní restart pleti",
+      "headline": "Pleť po zimě nemusí vypadat unaveně"
+    }
+  ]
+}

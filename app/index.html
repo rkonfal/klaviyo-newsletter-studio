@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klaviyo Newsletter Studio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="sidebar">
+        <h1>Klaviyo Newsletter Studio</h1>
+        <p>GitHub-first modul pro návrh newsletterů podle historie odeslaných kampaní.</p>
+
+        <section class="card small">
+          <h2>Dataset</h2>
+          <div id="dataset-meta">Načítám…</div>
+        </section>
+
+        <section class="card small">
+          <h2>Styl značky</h2>
+          <ul id="tone-list"></ul>
+        </section>
+
+        <section class="card small">
+          <h2>Typické CTA</h2>
+          <ul id="cta-list"></ul>
+        </section>
+      </aside>
+
+      <main class="main">
+        <section class="card">
+          <h2>Vstup</h2>
+          <form id="generator-form">
+            <div class="grid">
+              <label>
+                Téma
+                <input name="theme" placeholder="např. jarní restart pleti" required />
+              </label>
+              <label>
+                Produkt / focus
+                <input name="product" placeholder="např. kolagen marine" required />
+              </label>
+              <label>
+                Typ kampaně
+                <select name="campaignType">
+                  <option value="promo">Promo</option>
+                  <option value="education">Edukace</option>
+                  <option value="launch">Launch</option>
+                  <option value="reactivation">Reaktivace</option>
+                </select>
+              </label>
+              <label>
+                Segment
+                <input name="segment" placeholder="např. věrní zákazníci" />
+              </label>
+              <label>
+                Nabídka
+                <input name="offer" placeholder="např. 20 % sleva do neděle" />
+              </label>
+              <label>
+                CTA cíl
+                <input name="ctaGoal" placeholder="např. objednat se slevou" />
+              </label>
+            </div>
+            <label>
+              Brief
+              <textarea name="brief" rows="5" placeholder="Co přesně má newsletter říct, co zdůraznit, čemu se vyhnout"></textarea>
+            </label>
+            <button type="submit">Vygenerovat newsletter</button>
+          </form>
+        </section>
+
+        <section class="card">
+          <div class="output-header">
+            <h2>Výstup</h2>
+            <button id="copy-output" type="button">Kopírovat</button>
+          </div>
+          <div id="output" class="output empty">Vyplň brief a vygeneruj první draft.</div>
+        </section>
+
+        <section class="card">
+          <h2>Podobné vzory z historie</h2>
+          <div id="examples" class="examples"></div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
