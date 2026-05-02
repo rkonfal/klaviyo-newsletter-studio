@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-02T16:33:30.170Z",
+  "generatedAt": "2026-05-02T16:38:47.568Z",
   "sourceFile": "data/raw/campaigns.json",
-  "campaignCount": 120,
+  "campaignCount": 150,
   "tone": {
     "voice": [
       "kratší subject lines",
@@ -10,7 +10,7 @@
       "benefit-first"
     ],
     "headlinePatterns": [
-      "průměrná délka předmětu 38 znaků",
+      "průměrná délka předmětu 39 znaků",
       "průměrná délka headline 44 znaků",
       "headline s rychlým příslibem nebo výsledkem"
     ],
