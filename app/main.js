@@ -5,28 +5,46 @@ const toneList = document.querySelector('#tone-list');
 const ctaList = document.querySelector('#cta-list');
 const examplesEl = document.querySelector('#examples');
 const outputEl = document.querySelector('#output');
+const inspirationEl = document.querySelector('#inspiration');
 const form = document.querySelector('#generator-form');
 const copyBtn = document.querySelector('#copy-output');
+const copyHtmlBtn = document.querySelector('#copy-html-output');
+
+let lastDraft = null;
 
 renderSidebar();
 renderExamples('cz', 'promo');
+renderInspiration([]);
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = Object.fromEntries(new FormData(form).entries());
   const draft = generateNewsletter(data);
+  lastDraft = draft;
 
   outputEl.classList.remove('empty');
   outputEl.textContent = formatDraft(draft, data.language);
   renderExamples(data.language, data.campaignType);
+  renderInspiration(draft.inspiration);
 });
 
 copyBtn.addEventListener('click', async () => {
   if (!outputEl.textContent.trim()) return;
   await navigator.clipboard.writeText(outputEl.textContent);
-  copyBtn.textContent = 'Zkopírováno';
-  setTimeout(() => (copyBtn.textContent = 'Kopírovat'), 1500);
+  flashButton(copyBtn, 'Zkopírováno');
 });
+
+copyHtmlBtn.addEventListener('click', async () => {
+  if (!lastDraft?.html) return;
+  await navigator.clipboard.writeText(lastDraft.html);
+  flashButton(copyHtmlBtn, 'HTML zkopírováno');
+});
+
+function flashButton(button, text) {
+  const original = button.textContent;
+  button.textContent = text;
+  setTimeout(() => (button.textContent = original), 1500);
+}
 
 function renderSidebar() {
   const langInfo = Object.entries(profile.languageBreakdown || {}).map(([key, value]) => `${key.toUpperCase()}: ${value}`).join(' · ');
@@ -56,6 +74,20 @@ function renderExamples(language, campaignType) {
   });
 }
 
+function renderInspiration(items) {
+  inspirationEl.innerHTML = '';
+  if (!items.length) {
+    inspirationEl.innerHTML = '<div class="example muted">Po vygenerování tady uvidíš nejpodobnější minulé kampaně.</div>';
+    return;
+  }
+  items.forEach((item) => {
+    const div = document.createElement('div');
+    div.className = 'example';
+    div.innerHTML = `<strong>${item.subject}</strong><p>${item.headline}</p><small>score ${item.score} · ${item.campaignType}/${item.language} · ${item.cta || ''}</small>`;
+    inspirationEl.appendChild(div);
+  });
+}
+
 function appendListItem(target, text) {
   const li = document.createElement('li');
   li.textContent = text;
@@ -64,14 +96,17 @@ function appendListItem(target, text) {
 
 function generateNewsletter(data) {
   const subset = pickSubset(data);
-  const cta = buildCta(data, subset);
-  const subjectAngles = buildSubjectAngles(data, subset);
+  const inspiration = findInspiration(data);
+  const cta = buildCta(data, subset, inspiration);
+  const subjectAngles = scoreSubjectAngles(buildSubjectAngles(data, subset), data, inspiration);
   const primarySubject = subjectAngles[0];
   const preheader = buildPreheader(data, subset, primarySubject.angle);
-  const headline = buildHeadline(data, subset, primarySubject.angle);
-  const body = buildBody(data, subset, cta, primarySubject.angle);
+  const headline = buildHeadline(data, subset, primarySubject.angle, inspiration);
+  const blocks = buildBlocks(data, cta, primarySubject.angle, inspiration);
+  const body = blocks.map((block) => block.title ? `${block.title}\n${block.text}` : block.text).join('\n\n');
   const salesChecks = buildSalesChecks(data, primarySubject.angle, cta);
-  return { subject: primarySubject.text, subjectAngles, preheader, headline, body, cta, salesChecks };
+  const html = buildHtmlDraft({ data, subject: primarySubject.text, preheader, headline, cta, blocks });
+  return { subject: primarySubject.text, subjectAngles, preheader, headline, body, cta, blocks, html, salesChecks, inspiration };
 }
 
 function formatDraft(draft, language) {
@@ -79,16 +114,17 @@ function formatDraft(draft, language) {
     `${label('subject', language)}: ${draft.subject}`,
     '',
     `${label('subject_variants', language)}:`,
-    ...draft.subjectAngles.map((item, index) => `${index + 1}. [${item.angle}] ${item.text}`),
+    ...draft.subjectAngles.map((item, index) => `${index + 1}. [${item.angle} | ${item.score}] ${item.text}`),
     '',
     `${label('preheader', language)}: ${draft.preheader}`,
     '',
     `${label('headline', language)}: ${draft.headline}`,
     '',
     `${label('body', language)}:`,
-    draft.body,
-    '',
+    ...draft.blocks.flatMap((block) => block.title ? [`${block.title}:`, block.text, ''] : [block.text, '']),
     `${label('cta', language)}: ${draft.cta}`,
+    '',
+    `${label('html', language)}: připraveno ke kopírování tlačítkem`,
     '',
     `${label('checks', language)}:`,
     ...draft.salesChecks.map((item) => `- ${item}`)
@@ -99,70 +135,108 @@ function pickSubset(data) {
   return profile.byCampaignType?.[data.campaignType] || profile.byLanguage?.[data.language] || {};
 }
 
+function findInspiration(data) {
+  const tokens = tokenize(`${data.theme} ${data.product} ${data.offer || ''}`);
+  return (profile.examples || [])
+    .filter((item) => item.language === data.language)
+    .map((item) => ({ ...item, score: similarityScore(tokens, item) }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3);
+}
+
+function similarityScore(tokens, item) {
+  const hay = tokenize(`${item.subject} ${item.headline} ${item.previewText || ''} ${item.cta || ''}`);
+  let score = 0;
+  tokens.forEach((token) => {
+    if (hay.includes(token)) score += 2;
+  });
+  if (item.campaignType) score += 1;
+  return score;
+}
+
+function tokenize(value) {
+  return value.toLowerCase().split(/[^\p{L}\p{N}]+/u).filter((item) => item.length > 2);
+}
+
 function buildSubjectAngles(data, subset) {
-  const rules = buildAngleRules(data);
-  return rules
+  const offer = data.offer?.trim();
+  const product = capitalize(data.product);
+  const theme = capitalize(data.theme);
+  const deadlineWord = data.language === 'sk' ? 'končí čoskoro' : 'končí brzy';
+  const moreSense = data.language === 'sk' ? 'práve teraz dáva zmysel' : 'právě teď dává smysl';
+  const youNeed = data.language === 'sk' ? 'čo potrebuješ vedieť' : 'co potřebuješ vědět';
+  const benefitVerb = data.language === 'sk' ? 'pomôže' : 'pomůže';
+  const curiosity = data.language === 'sk' ? `Prečo si ${product.toLowerCase()} berie stále viac ľudí` : `Proč si ${product.toLowerCase()} bere stále víc lidí`;
+  const promoOffer = offer ? `${product}: ${offer}` : `${product} ${moreSense}`;
+  const urgencyOffer = offer ? `${offer} ${deadlineWord}` : `${product} ${deadlineWord}`;
+  const educationAngle = `${theme}: ${youNeed}`;
+  const resultAngle = data.language === 'sk' ? `${product}, ktorý ${benefitVerb} práve teraz` : `${product}, který ${benefitVerb} právě teď`;
+  const launchAngle = `Novinka: ${product}`;
+  const eventAngle = data.language === 'sk' ? `${theme}, ktoré sa blíži` : `${theme}, které se blíží`;
+
+  const base = {
+    promo: [
+      { angle: 'benefit', text: promoOffer },
+      { angle: 'urgency', text: urgencyOffer },
+      { angle: 'curiosity', text: curiosity },
+      { angle: 'result', text: resultAngle },
+      { angle: 'offer', text: offer || subset.examples?.[0]?.subject || promoOffer }
+    ],
+    education: [
+      { angle: 'usefulness', text: educationAngle },
+      { angle: 'curiosity', text: curiosity },
+      { angle: 'benefit', text: resultAngle },
+      { angle: 'number', text: buildNumberSubject(theme, data.language) },
+      { angle: 'offer', text: promoOffer }
+    ],
+    launch: [
+      { angle: 'novelty', text: launchAngle },
+      { angle: 'benefit', text: promoOffer },
+      { angle: 'curiosity', text: curiosity },
+      { angle: 'result', text: resultAngle },
+      { angle: 'offer', text: offer ? `${launchAngle} ${offer}` : launchAngle }
+    ],
+    event: [
+      { angle: 'deadline', text: eventAngle },
+      { angle: 'urgency', text: urgencyOffer },
+      { angle: 'curiosity', text: curiosity },
+      { angle: 'benefit', text: promoOffer },
+      { angle: 'offer', text: offer ? `${theme}: ${offer}` : eventAngle }
+    ],
+    urgency: [
+      { angle: 'urgency', text: urgencyOffer },
+      { angle: 'benefit', text: promoOffer },
+      { angle: 'deadline', text: data.language === 'sk' ? `Posledná šanca pre ${product.toLowerCase()}` : `Poslední šance pro ${product.toLowerCase()}` },
+      { angle: 'curiosity', text: curiosity },
+      { angle: 'offer', text: offer || urgencyOffer }
+    ]
+  };
+
+  return (base[data.campaignType] || base.promo)
     .map((rule) => ({ angle: rule.angle, text: cleanSubject(rule.text) }))
     .filter((item) => item.text.length >= 8)
     .filter((item, index, array) => array.findIndex((other) => other.text.toLowerCase() === item.text.toLowerCase()) === index)
     .slice(0, 5);
+}
 
-  function buildAngleRules(data) {
-    const offer = data.offer?.trim();
-    const product = capitalize(data.product);
-    const theme = capitalize(data.theme);
-    const deadlineWord = data.language === 'sk' ? 'končí čoskoro' : 'končí brzy';
-    const moreSense = data.language === 'sk' ? 'práve teraz dáva zmysel' : 'právě teď dává smysl';
-    const youNeed = data.language === 'sk' ? 'čo potrebuješ vedieť' : 'co potřebuješ vědět';
-    const benefitVerb = data.language === 'sk' ? 'pomôže' : 'pomůže';
-    const curiosity = data.language === 'sk' ? `Prečo si ${product.toLowerCase()} berie stále viac ľudí` : `Proč si ${product.toLowerCase()} bere stále víc lidí`;
-    const promoOffer = offer ? `${product}: ${offer}` : `${product} ${moreSense}`;
-    const urgencyOffer = offer ? `${offer} ${deadlineWord}` : `${product} ${deadlineWord}`;
-    const educationAngle = `${theme}: ${youNeed}`;
-    const resultAngle = data.language === 'sk' ? `${product}, ktorý ${benefitVerb} práve teraz` : `${product}, který ${benefitVerb} právě teď`;
-    const launchAngle = data.language === 'sk' ? `Novinka: ${product}` : `Novinka: ${product}`;
-    const eventAngle = data.language === 'sk' ? `${theme}, ktoré sa blíži` : `${theme}, které se blíží`;
+function scoreSubjectAngles(angles, data, inspiration) {
+  return angles
+    .map((item) => ({ ...item, score: scoreAngle(item.angle, data, inspiration) }))
+    .sort((a, b) => b.score - a.score);
+}
 
-    const base = {
-      promo: [
-        { angle: 'benefit', text: promoOffer },
-        { angle: 'urgency', text: urgencyOffer },
-        { angle: 'curiosity', text: curiosity },
-        { angle: 'result', text: resultAngle },
-        { angle: 'offer', text: offer ? offer : subset.examples?.[0]?.subject || promoOffer }
-      ],
-      education: [
-        { angle: 'usefulness', text: educationAngle },
-        { angle: 'curiosity', text: curiosity },
-        { angle: 'benefit', text: resultAngle },
-        { angle: 'number', text: buildNumberSubject(theme, data.language) },
-        { angle: 'offer', text: promoOffer }
-      ],
-      launch: [
-        { angle: 'novelty', text: launchAngle },
-        { angle: 'benefit', text: promoOffer },
-        { angle: 'curiosity', text: curiosity },
-        { angle: 'result', text: resultAngle },
-        { angle: 'offer', text: offer ? `${launchAngle} ${offer}` : launchAngle }
-      ],
-      event: [
-        { angle: 'deadline', text: eventAngle },
-        { angle: 'urgency', text: urgencyOffer },
-        { angle: 'curiosity', text: curiosity },
-        { angle: 'benefit', text: promoOffer },
-        { angle: 'offer', text: offer ? `${theme}: ${offer}` : eventAngle }
-      ],
-      urgency: [
-        { angle: 'urgency', text: urgencyOffer },
-        { angle: 'benefit', text: promoOffer },
-        { angle: 'deadline', text: data.language === 'sk' ? `Posledná šanca pre ${product.toLowerCase()}` : `Poslední šance pro ${product.toLowerCase()}` },
-        { angle: 'curiosity', text: curiosity },
-        { angle: 'offer', text: offer ? offer : urgencyOffer }
-      ]
-    };
-
-    return base[data.campaignType] || base.promo;
-  }
+function scoreAngle(angle, data, inspiration) {
+  let score = 50;
+  if (data.campaignType === 'promo' && ['benefit', 'offer', 'urgency'].includes(angle)) score += 25;
+  if (data.campaignType === 'education' && ['usefulness', 'number', 'curiosity'].includes(angle)) score += 25;
+  if (data.campaignType === 'launch' && ['novelty', 'benefit', 'result'].includes(angle)) score += 25;
+  if (data.campaignType === 'event' && ['deadline', 'urgency'].includes(angle)) score += 25;
+  if (data.campaignType === 'urgency' && ['urgency', 'deadline', 'offer'].includes(angle)) score += 25;
+  if (data.offer && ['offer', 'urgency', 'benefit'].includes(angle)) score += 10;
+  if (data.tonePreset === 'urgent' && ['urgency', 'deadline'].includes(angle)) score += 10;
+  if (data.tonePreset === 'educational' && ['usefulness', 'number'].includes(angle)) score += 10;
+  if (inspiration[0]?.subject && inspiration[0].score > 0 && ['benefit', 'curiosity', 'offer'].includes(angle)) score += 5;
+  return score;
 }
 
 function buildPreheader(data, subset, angle) {
@@ -185,7 +259,7 @@ function buildPreheader(data, subset, angle) {
       urgency: 'Jasne hovoríme, prečo treba konať práve teraz.',
       curiosity: 'Dopĺňame subject o konkrétny dôvod, prečo sa pozrieť dovnútra.',
       result: 'Rýchlo ukazujeme, aký výsledok môže táto ponuka priniesť.',
-      usefulness: 'Hneď je jasné, čo si čitateľ z mailu odnesie.',
+      usefulness: 'Hneď je jasné, čo si čitateľ odnesie.',
       novelty: 'Zdôrazňujeme, čo je nové a prečo to stojí za pozornosť.',
       number: 'Stručne naznačujeme, čo konkrétne sa čitateľ dozvie.',
       deadline: 'Je z neho cítiť časové obmedzenie a konkrétny dôvod otvoriť mail.',
@@ -196,9 +270,10 @@ function buildPreheader(data, subset, angle) {
   return truncate(base, subset.avgSubjectLength ? Math.max(58, subset.avgSubjectLength + 25) : 88);
 }
 
-function buildHeadline(data, subset, angle) {
+function buildHeadline(data, subset, angle, inspiration) {
   const product = capitalize(data.product);
   const theme = capitalize(data.theme);
+  const inspirationHeadline = inspiration[0]?.headline;
   const angleMap = {
     cz: {
       benefit: `${product} právě teď stojí za pozornost`,
@@ -223,49 +298,77 @@ function buildHeadline(data, subset, angle) {
       offer: data.offer ? `${product} a ponuka, ktorá dáva zmysel` : `${product} a dôvod otvoriť práve teraz`
     }
   };
-  return angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${product}`;
+  return angleMap[data.language]?.[angle] || inspirationHeadline || subset.examples?.[0]?.headline || `${theme} a ${product}`;
 }
 
-function buildBody(data, subset, cta, angle) {
-  const paragraphCount = { short: 2, medium: 3, long: 4 }[data.length] || 3;
-  const lines = data.language === 'sk'
-    ? buildSkSalesBody(data, cta, angle, paragraphCount)
-    : buildCzSalesBody(data, cta, angle, paragraphCount);
-  return lines.join('\n\n');
+function buildBlocks(data, cta, angle, inspiration) {
+  const proofLine = buildProof(data, data.language);
+  const whyNow = buildWhyNow(data, data.language, angle);
+  const risk = buildRiskOfNoAction(data, data.language, angle);
+  const social = inspiration[0]?.headline
+    ? (data.language === 'sk' ? `Podobné kampane najčastejšie stáli na promise typu: ${inspiration[0].headline}` : `Podobné kampaně nejčastěji stály na promise typu: ${inspiration[0].headline}`)
+    : (data.language === 'sk' ? 'Sľub musí byť čitateľný už pri rýchlom prebehnutí očami.' : 'Slib musí být čitelný už při rychlém přeběhnutí očima.');
+
+  const blocks = data.language === 'sk'
+    ? [
+        { title: 'HERO', text: `${capitalize(data.product)} je dnes hlavná téma. ${whyNow}` },
+        { title: 'PREČO TO MÁ ZMYSEL', text: data.offer ? `Hlavná ponuka je ${data.offer}. Benefit aj ponuku držíme úplne hore.` : `Benefit držíme úplne hore, aby bolo hneď jasné, čo čitateľ získa.` },
+        { title: 'DÔVOD VERIŤ', text: `${proofLine} ${social}` },
+        { title: 'AKCIA TERAZ', text: `${risk} Hlavná akcia je: ${cta}.` }
+      ]
+    : [
+        { title: 'HERO', text: `${capitalize(data.product)} je dnes hlavní téma. ${whyNow}` },
+        { title: 'PROČ TO DÁVÁ SMYSL', text: data.offer ? `Hlavní nabídka je ${data.offer}. Benefit i nabídku držíme úplně nahoře.` : `Benefit držíme úplně nahoře, aby bylo hned jasné, co čtenář získá.` },
+        { title: 'DŮVOD VĚŘIT', text: `${proofLine} ${social}` },
+        { title: 'AKCE TEĎ', text: `${risk} Hlavní akce je: ${cta}.` }
+      ];
+
+  if (data.length === 'short') return blocks.slice(0, 3);
+  if (data.length === 'long') {
+    blocks.splice(3, 0, {
+      title: data.language === 'sk' ? 'DOPLNENIE' : 'DOPLNĚNÍ',
+      text: data.brief?.trim() || (data.language === 'sk' ? 'Text môžeš ešte doplniť o konkrétny detail produktu, bonus alebo termín.' : 'Text můžeš ještě doplnit o konkrétní detail produktu, bonus nebo termín.')
+    });
+  }
+  return blocks;
 }
 
-function buildCzSalesBody(data, cta, angle, paragraphCount) {
-  const whyNow = buildWhyNow(data, 'cz', angle);
-  const proof = buildProof(data, 'cz');
-  const risk = buildRiskOfNoAction(data, 'cz', angle);
-  const lines = [
-    'Ahoj,',
-    `${capitalize(data.product)} je dnes hlavní téma z jednoho jednoduchého důvodu. ${whyNow}`,
-    data.offer
-      ? `Hlavní nabídka je ${data.offer}. Už v prvních větách proto držíme benefit i nabídku úplně nahoře, aby bylo během pár sekund jasné, co čtenář získá.`
-      : `V prvních větách držíme benefit úplně nahoře, aby bylo během pár sekund jasné, co čtenář získá a proč má pokračovat dál.`,
-    `${proof} Proto tenhle mail nestavíme jako seznam featurek, ale jako krátkou cestu od relevance přes benefit až k jedné akci.`,
-    `${risk} Proto čtenáře vedeme k jedné hlavní akci: ${cta}.`,
-    data.brief?.trim() ? `Do copy je zapracovaný i tento brief: ${data.brief.trim()}` : `Text je schválně snadno skenovatelný, prodejní a bez zbytečné omáčky.`
-  ];
-  return lines.slice(0, paragraphCount + 1);
-}
+function buildHtmlDraft({ data, subject, preheader, headline, cta, blocks }) {
+  const ctaHref = '#';
+  const blockHtml = blocks.map((block) => `
+    <tr>
+      <td style="padding:0 32px 20px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
+        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:8px;">${escapeHtml(block.title)}</div>
+        <div style="font-size:16px;line-height:1.6;">${escapeHtml(block.text)}</div>
+      </td>
+    </tr>`).join('');
 
-function buildSkSalesBody(data, cta, angle, paragraphCount) {
-  const whyNow = buildWhyNow(data, 'sk', angle);
-  const proof = buildProof(data, 'sk');
-  const risk = buildRiskOfNoAction(data, 'sk', angle);
-  const lines = [
-    'Ahoj,',
-    `${capitalize(data.product)} je dnes hlavná téma z jedného jednoduchého dôvodu. ${whyNow}`,
-    data.offer
-      ? `Hlavná ponuka je ${data.offer}. Už v prvých vetách preto držíme benefit aj ponuku úplne hore, aby bolo počas pár sekúnd jasné, čo čitateľ získa.`
-      : `V prvých vetách držíme benefit úplne hore, aby bolo počas pár sekúnd jasné, čo čitateľ získa a prečo má čítať ďalej.`,
-    `${proof} Preto tento mail nestaviame ako zoznam featurek, ale ako krátku cestu od relevancie cez benefit až k jednej akcii.`,
-    `${risk} Preto čitateľa vedieme k jednej hlavnej akcii: ${cta}.`,
-    data.brief?.trim() ? `Do copy je zapracovaný aj tento brief: ${data.brief.trim()}` : `Text je zámerne ľahko skenovateľný, predajný a bez zbytočnej omáčky.`
-  ];
-  return lines.slice(0, paragraphCount + 1);
+  return `<!doctype html>
+<html lang="${data.language}">
+  <body style="margin:0;padding:0;background:#f4f6fb;">
+    <div style="display:none;max-height:0;overflow:hidden;opacity:0;">${escapeHtml(preheader)}</div>
+    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f4f6fb;padding:24px 0;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="640" cellspacing="0" cellpadding="0" style="background:#ffffff;border-radius:16px;overflow:hidden;">
+            <tr>
+              <td style="padding:32px 32px 12px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
+                <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:10px;">${escapeHtml(data.brand || 'Brand')}</div>
+                <h1 style="margin:0;font-size:32px;line-height:1.2;">${escapeHtml(headline)}</h1>
+              </td>
+            </tr>
+            ${blockHtml}
+            <tr>
+              <td style="padding:0 32px 36px 32px;">
+                <a href="${ctaHref}" style="display:inline-block;background:#7c9cff;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:12px;font-family:Arial,sans-serif;font-weight:700;">${escapeHtml(cta)}</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>`;
 }
 
 function buildWhyNow(data, language, angle) {
@@ -274,9 +377,9 @@ function buildWhyNow(data, language, angle) {
       benefit: `Právě teď nejlíp odpovídá na potřebu kolem tématu ${data.theme}.`,
       urgency: `Pokud má čtenář využít nabídku včas, musí její hodnotu pochopit hned.`,
       curiosity: `Nejdřív vzbudíme zájem a hned potom ho otočíme do konkrétního benefitu.`,
-      result: `Lidé nekupují jen produkt, ale hlavně výsledek, který jim přinese.`,
+      result: `Lidé nekupují hlavně produkt, ale výsledek, který jim přinese.`,
       usefulness: `Čtenář musí už z prvních řádků cítit, že dostane něco praktického.`,
-      novelty: `Novost sama nestačí, proto ji hned spojujeme s jasným důvodem ke koupi.`,
+      novelty: `Novost sama nestačí, proto ji hned spojujeme s důvodem ke koupi.`,
       number: `Číslo nebo struktura pomáhá rychle pochopit hodnotu mailu.`,
       deadline: `Časové omezení funguje jen tehdy, když je v mailu opravdu cítit.`,
       offer: `Obchodní nabídka musí být pochopitelná bez dlouhého vysvětlování.`
@@ -285,9 +388,9 @@ function buildWhyNow(data, language, angle) {
       benefit: `Práve teraz najlepšie odpovedá na potrebu okolo témy ${data.theme}.`,
       urgency: `Ak má čitateľ využiť ponuku včas, musí jej hodnotu pochopiť hneď.`,
       curiosity: `Najprv vzbudíme záujem a hneď potom ho otočíme do konkrétneho benefitu.`,
-      result: `Ľudia nekupujú len produkt, ale hlavne výsledok, ktorý im prinesie.`,
+      result: `Ľudia nekupujú hlavne produkt, ale výsledok, ktorý im prinesie.`,
       usefulness: `Čitateľ musí už z prvých riadkov cítiť, že dostane niečo praktické.`,
-      novelty: `Novosť sama nestačí, preto ju hneď spájame s jasným dôvodom ku kúpe.`,
+      novelty: `Novosť sama nestačí, preto ju hneď spájame s dôvodom ku kúpe.`,
       number: `Číslo alebo štruktúra pomáha rýchlo pochopiť hodnotu mailu.`,
       deadline: `Časové obmedzenie funguje len vtedy, keď je v maile naozaj cítiť.`,
       offer: `Obchodná ponuka musí byť pochopiteľná bez dlhého vysvetľovania.`
@@ -299,13 +402,13 @@ function buildWhyNow(data, language, angle) {
 function buildProof(data, language) {
   if (data.campaignType === 'education') {
     return language === 'sk'
-      ? 'Pomáha nám jednoduchá edukácia, pretože znižuje neistotu a zároveň buduje dôveru v ponuku.'
-      : 'Pomáhá nám jednoduchá edukace, protože snižuje nejistotu a zároveň buduje důvěru v nabídku.';
+      ? 'Jednoduchá edukácia znižuje neistotu a zároveň buduje dôveru v ponuku.'
+      : 'Jednoduchá edukace snižuje nejistotu a zároveň buduje důvěru v nabídku.';
   }
   if (data.offer) {
     return language === 'sk'
-      ? 'Keď je v hre konkrétna ponuka, najlepšie funguje jasnosť, konkrétnosť a rýchlo pochopiteľná hodnota.'
-      : 'Když je ve hře konkrétní nabídka, nejlépe funguje jasnost, konkrétnost a rychle pochopitelná hodnota.';
+      ? 'Pri konkrétnej ponuke najlepšie funguje jasnosť, konkrétnosť a rýchlo pochopiteľná hodnota.'
+      : 'Při konkrétní nabídce nejlépe funguje jasnost, konkrétnost a rychle pochopitelná hodnota.';
   }
   return language === 'sk'
     ? 'Najlepšie funguje copy, ktoré ide rýchlo k veci a nenechá čitateľa hádať, prečo má pokračovať.'
@@ -315,26 +418,26 @@ function buildProof(data, language) {
 function buildRiskOfNoAction(data, language, angle) {
   const map = {
     cz: {
-      urgency: 'Kdybychom tlak na čas neukázali jasně, mail ztratí prodejní napětí.',
-      benefit: 'Kdybychom benefit schovali až níž, část publika odpadne dřív, než pochopí hodnotu.',
-      curiosity: 'Kdybychom zůstali jen u zvědavosti, otevření by se nemuselo proměnit v klik a nákup.',
-      result: 'Kdybychom neukázali výsledek, produkt bude působit zaměnitelně.',
-      usefulness: 'Kdybychom nepůsobili prakticky, čtenář si mail vyhodnotí jako další obecnou promo zprávu.',
-      novelty: 'Kdybychom stáli jen na novosti, rychle se vytratí obchodní důvod jednat.',
-      number: 'Kdybychom nepomohli rychlou orientací, hodnota mailu se ztratí v prvních sekundách.',
-      deadline: 'Kdybychom deadline neudělali viditelný, urgence nebude působit věrohodně.',
-      offer: 'Kdybychom nabídku nepodali jasně, zájem se nerozjede do akce.'
+      urgency: 'Bez viditelného tlaku na čas mail ztratí prodejní napětí.',
+      benefit: 'Když benefit schováme níž, část publika odpadne dřív, než pochopí hodnotu.',
+      curiosity: 'Když zůstaneme jen u zvědavosti, otevření se nemusí proměnit v klik.',
+      result: 'Když neukážeme výsledek, produkt bude působit zaměnitelně.',
+      usefulness: 'Když nebudeme praktičtí, mail spadne do šedé zóny běžných promo zpráv.',
+      novelty: 'Když budeme stát jen na novosti, rychle se vytratí důvod jednat.',
+      number: 'Když nepomůžeme rychlou orientací, hodnota mailu se ztratí v prvních sekundách.',
+      deadline: 'Když deadline nebude vidět, urgence nebude působit věrohodně.',
+      offer: 'Když nabídku nepodáme jasně, zájem se nerozjede do akce.'
     },
     sk: {
-      urgency: 'Keby sme tlak na čas neukázali jasne, mail stratí predajné napätie.',
-      benefit: 'Keby sme benefit schovali až nižšie, časť publika odpadne skôr, než pochopí hodnotu.',
-      curiosity: 'Keby sme zostali len pri zvedavosti, otvorenie sa nemusí zmeniť na klik a nákup.',
-      result: 'Keby sme neukázali výsledok, produkt bude pôsobiť zameniteľne.',
-      usefulness: 'Keby sme nepôsobili prakticky, čitateľ si mail vyhodnotí ako ďalšiu všeobecnú promo správu.',
-      novelty: 'Keby sme stáli len na novosti, rýchlo sa vytratí obchodný dôvod konať.',
-      number: 'Keby sme nepomohli rýchlou orientáciou, hodnota mailu sa stratí v prvých sekundách.',
-      deadline: 'Keby sme deadline neurobili viditeľný, urgencia nebude pôsobiť dôveryhodne.',
-      offer: 'Keby sme ponuku nepodali jasne, záujem sa nerozbehne do akcie.'
+      urgency: 'Bez viditeľného tlaku na čas mail stratí predajné napätie.',
+      benefit: 'Keď benefit schováme nižšie, časť publika odpadne skôr, než pochopí hodnotu.',
+      curiosity: 'Keď zostaneme len pri zvedavosti, otvorenie sa nemusí zmeniť na klik.',
+      result: 'Keď neukážeme výsledok, produkt bude pôsobiť zameniteľne.',
+      usefulness: 'Keď nebudeme praktickí, mail spadne do šedej zóny bežných promo správ.',
+      novelty: 'Keď budeme stáť len na novosti, rýchlo sa vytratí dôvod konať.',
+      number: 'Keď nepomôžeme rýchlou orientáciou, hodnota mailu sa stratí v prvých sekundách.',
+      deadline: 'Keď deadline nebude vidno, urgencia nebude pôsobiť dôveryhodne.',
+      offer: 'Keď ponuku nepodáme jasne, záujem sa nerozbehne do akcie.'
     }
   };
   return map[language]?.[angle] || map[language].benefit;
@@ -345,21 +448,22 @@ function buildSalesChecks(data, angle, cta) {
     ? [
         `Subject stojí na jednom hlavnom angle: ${angle}.`,
         'Preheader dopĺňa subject, neopakuje ho doslova.',
-        'V prvých 2 vetách je jasný benefit aj dôvod otvoriť mail.',
+        'Hero sekcia predáva benefit v prvých sekundách.',
         `Mail smeruje k jednému hlavnému CTA: ${cta}.`,
-        'Copy je písané skenovateľne a predajne.'
+        'Výstup má aj HTML-ready verziu.'
       ]
     : [
         `Subject stojí na jednom hlavním angle: ${angle}.`,
         'Preheader doplňuje subject, neopakuje ho doslova.',
-        'V prvních 2 větách je jasný benefit i důvod otevřít mail.',
+        'Hero sekce prodává benefit v prvních sekundách.',
         `Mail směřuje k jednomu hlavnímu CTA: ${cta}.`,
-        'Copy je psané skenovatelně a prodejně.'
+        'Výstup má i HTML-ready verzi.'
       ];
 }
 
-function buildCta(data, subset) {
+function buildCta(data, subset, inspiration) {
   if (data.ctaGoal) return data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`;
+  if (inspiration[0]?.cta) return inspiration[0].cta;
   if (subset.topCtas?.length) return subset.topCtas[0];
   if (data.offer) return data.language === 'sk' ? 'Využiť ponuku' : 'Využít nabídku';
   return data.language === 'sk' ? 'Zistiť viac' : 'Zjistit víc';
@@ -380,8 +484,9 @@ function label(key, language) {
       subject_variants: 'VARIANTY PŘEDMĚTU',
       preheader: 'PREHEADER',
       headline: 'HEADLINE',
-      body: 'BODY COPY',
+      body: 'BLOKY NEWSLETTERU',
       cta: 'CTA',
+      html: 'HTML EXPORT',
       checks: 'PRODEJNÍ CHECKLIST'
     },
     sk: {
@@ -389,12 +494,22 @@ function label(key, language) {
       subject_variants: 'VARIANTY PREDMETU',
       preheader: 'PREHEADER',
       headline: 'HEADLINE',
-      body: 'BODY COPY',
+      body: 'BLOKY NEWSLETTERA',
       cta: 'CTA',
+      html: 'HTML EXPORT',
       checks: 'PREDAJNÝ CHECKLIST'
     }
   };
   return map[language]?.[key] || key.toUpperCase();
+}
+
+function escapeHtml(value = '') {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
 }
 
 function truncate(value, max) {

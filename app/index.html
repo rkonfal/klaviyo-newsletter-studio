@@ -103,9 +103,17 @@
         <section class="card">
           <div class="output-header">
             <h2>Výstup</h2>
-            <button id="copy-output" type="button">Kopírovat</button>
+            <div class="actions">
+              <button id="copy-output" type="button">Kopírovat text</button>
+              <button id="copy-html-output" type="button" class="secondary">Kopírovat HTML</button>
+            </div>
           </div>
           <div id="output" class="output empty">Vyplň brief a vygeneruj první prodejní draft včetně variant předmětu.</div>
+        </section>
+
+        <section class="card">
+          <h2>Nejpodobnější minulé kampaně</h2>
+          <div id="inspiration" class="examples"></div>
         </section>
 
         <section class="card">

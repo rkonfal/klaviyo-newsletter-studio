@@ -37,7 +37,7 @@ body {
 }
 .card.small { margin-top: 16px; }
 h1,h2,p { margin-top: 0; }
-p, li, label, input, select, textarea, button { font-size: 15px; }
+p, li, label, input, select, textarea, button, small { font-size: 15px; }
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -63,10 +63,19 @@ button {
   border: none;
   font-weight: 600;
 }
+button.secondary {
+  background: transparent;
+  border: 1px solid var(--border);
+}
 .output-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
+}
+.actions {
+  display: flex;
+  gap: 10px;
 }
 .output {
   white-space: pre-wrap;
@@ -88,12 +97,19 @@ button {
   padding: 12px;
   background: #10141b;
 }
+.example.muted {
+  color: var(--muted);
+}
 ul {
   margin: 0;
   padding-left: 18px;
   color: var(--muted);
 }
+small {
+  color: var(--muted);
+}
 @media (max-width: 900px) {
   .shell { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
+  .output-header, .actions { flex-direction: column; align-items: stretch; }
 }
