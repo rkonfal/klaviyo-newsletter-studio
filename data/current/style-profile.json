@@ -1,31 +1,43 @@
 {
-  "generatedAt": "2026-05-02T16:18:10.986Z",
-  "campaignCount": 2,
+  "generatedAt": "2026-05-02T16:33:30.170Z",
+  "sourceFile": "data/raw/campaigns.json",
+  "campaignCount": 120,
   "tone": {
     "voice": [
-      "srozumitelný",
-      "přímý",
-      "benefit-first",
-      "první odhad z MVP datasetu"
+      "kratší subject lines",
+      "stručné preview texty",
+      "kratší odstavce",
+      "benefit-first"
     ],
     "headlinePatterns": [
-      "průměrná délka předmětu 36 znaků",
+      "průměrná délka předmětu 38 znaků",
+      "průměrná délka headline 44 znaků",
       "headline s rychlým příslibem nebo výsledkem"
     ],
     "ctaPatterns": [
-      "Chci kolagen se slevou",
-      "Chci jarní tipy"
+      "ZATOČIŤ A VYHRAŤ",
+      "ZATOČIT A VYHRÁT",
+      "nové balíčky s darčekmi,",
+      "limitované zľavy",
+      "CHCEM NAKÚPIŤ VÝHODNE",
+      "pro vás exkluzivní nové balíčky s dárky,",
+      "limitované slevy",
+      "CHCI NAKOUPIT VÝHODNĚ",
+      "šanca nakúpiť s 50 % zľavou",
+      "s darčekmi v hodnote 27 €.",
+      "CHCEM VYUŽIŤ POSLEDNÚ ŠANCU",
+      "nakoupit s 50% slevou"
     ]
   },
   "commonOffers": [
-    "sleva",
-    "časově omezená akce",
-    "edukace"
+    "percent-off",
+    "launch",
+    "education",
+    "gift",
+    "promo",
+    "urgency"
   ],
-  "commonSegments": [
-    "věrní zákazníci",
-    "všichni odběratelé"
-  ],
+  "commonSegments": [],
   "structure": {
     "sections": [
       "hero",
@@ -33,16 +45,80 @@
       "offer/details",
       "cta"
     ],
-    "bodyParagraphTarget": 2
+    "bodyParagraphTarget": 3
   },
   "examples": [
     {
-      "subject": "Květnová sleva 20 % na kolagen",
-      "headline": "Kolagen, po kterém se vždycky zapráší"
+      "subject": "Zatočte kolesom šťastia a vyhrajte darček!",
+      "headline": "Zatočte kolesom šťastia a odneste si darček!",
+      "previewText": "Každý, kto zatočí, vyhrá!",
+      "cta": "ZATOČIŤ A VYHRAŤ"
     },
     {
-      "subject": "3 jednoduché kroky pro jarní restart pleti",
-      "headline": "Pleť po zimě nemusí vypadat unaveně"
+      "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+      "headline": "Zatočte kolem štěstí a odneste si dárek!",
+      "previewText": "Každý, kdo zatočí, vyhraje!",
+      "cta": "ZATOČIT A VYHRÁT"
+    },
+    {
+      "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+      "headline": "Slavíme 10. narozeniny, ale dárky rozdáváme my!",
+      "previewText": "Každý, kdo zatočí, vyhraje!",
+      "cta": "ZATOČIT A VYHRÁT"
+    },
+    {
+      "subject": "🚚 POZOR: Týždeň dopravy zadarmo práve začal! 🚚",
+      "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zadarmo",
+      "previewText": "Veľký štart: nové balíčky s darčekmi, nové zľavy a doprava zadarmo iba teraz!",
+      "cta": "nové balíčky s darčekmi,"
+    },
+    {
+      "subject": "🚚 POZOR: Týden dopravy zdarma právě začal! 🚚",
+      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+      "previewText": "Velký start: nové balíčky s dárky, nové slevy a doprava zdarma pouze teď!",
+      "cta": "pro vás exkluzivní nové balíčky s dárky,"
+    },
+    {
+      "subject": "⏰ Zľavové zemetrasenie končí! Posledné minúty! ⏰",
+      "headline": "POZOR: Zľavové zemetrasenie končí!",
+      "previewText": "Posledná chvíľa nakúpiť s 50 % zľavou!",
+      "cta": "šanca nakúpiť s 50 % zľavou"
+    },
+    {
+      "subject": "⏰ Slevové zemětřesení končí! Poslední minuty! ⏰",
+      "headline": "POZOR: Slevové zemětřesení končí!",
+      "previewText": "Poslední chvíle nakoupit s 50% slevou a získat dárky za 680 Kč!",
+      "cta": "nakoupit s 50% slevou"
+    },
+    {
+      "subject": "Zostáva posledných 17 miest. Stihnete sa pridať?",
+      "headline": "Posledné miesta: Margit Slimáková otvorene o chudnutí",
+      "previewText": "Už o pár dní sa stretneme. A zostáva naozaj už len niekoľko posledných stoličiek.",
+      "cta": "KOUPIŤ VSTUPENKU"
+    },
+    {
+      "subject": "Zbývá posledních 17 míst. Stihnete se přidat?",
+      "headline": "Poslední místa: Margit Slimáková otevřeně o hubnutí",
+      "previewText": "Už za pár dní se potkáme. A zbývá opravdu jen několik posledních židlí.",
+      "cta": "KOUPIT VSTUPENKU"
+    },
+    {
+      "subject": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období",
+      "headline": "Čtvrtá lekce nám ukázala, jak spolu souvisí orgány, emoce a roční období!",
+      "previewText": "Záznam 4. lekce už na vás čeká. Pět prvků, játra, lymfa, spánek a mapa vnitřního světa.",
+      "cta": "PUSTIT SI ZÁZNAM"
+    },
+    {
+      "subject": "Váš e-book z kurzu Tělo jako kompas",
+      "headline": "Dobrý den,",
+      "previewText": "",
+      "cta": "Stáhnout ebook"
+    },
+    {
+      "subject": "⏰ Kurz Tělo jako kompas - ZAČÍNÁME ZA 30 MINUT! + Dnes skvělý dárek",
+      "headline": "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
+      "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+      "cta": "Připojte se na webinář nyní"
     }
   ]
 }

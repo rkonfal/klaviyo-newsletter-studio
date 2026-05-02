@@ -4,8 +4,9 @@ Static-first GitHub-hosted module for learning from sent Klaviyo campaigns and g
 
 ## What it does
 
-- syncs sent campaigns from Klaviyo into normalized JSON
-- builds a lightweight style profile from your sent emails
+- syncs sent email campaigns from Klaviyo into normalized JSON
+- fetches campaign message metadata and linked template HTML
+- extracts a lightweight style profile from real sent emails
 - serves a browser UI via GitHub Pages
 - generates first-draft newsletters from a short input brief
 - keeps everything versioned on GitHub
@@ -19,23 +20,25 @@ Static-first GitHub-hosted module for learning from sent Klaviyo campaigns and g
 
 ## Setup
 
-1. Create repository secrets:
+1. Add repository secret:
    - `KLAVIYO_API_KEY`
-2. Enable GitHub Pages from the `gh-pages` branch or GitHub Actions pages deployment.
+2. Enable GitHub Pages with GitHub Actions.
 3. Run workflow `Sync Klaviyo and build dataset`.
 
 ## Local run
 
 ```bash
 npm install
+npm run sync:klaviyo
 npm run build
 cd app && python3 -m http.server 4173
 ```
 
-## Klaviyo sync
+## Output files
 
-The sync script currently reads campaigns and campaign messages from Klaviyo JSON:API and stores a normalized subset locally. If API access is limited, you can also drop manually exported JSON files into `data/raw/` and rebuild.
+- `data/raw/campaigns.json` -> normalized campaign archive from Klaviyo
+- `data/current/style-profile.json` -> distilled style profile for the UI generator
 
 ## Notes
 
-This MVP stays fully GitHub-centric. No separate backend is required for the first working version.
+This MVP stays GitHub-centric. No separate backend is required for the first working version, but private secrets remain only in GitHub Actions or local env.
