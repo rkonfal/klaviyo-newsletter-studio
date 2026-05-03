@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-05-02T16:43:38.237Z",
+  "generatedAt": "2026-05-03T06:45:42.391Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 120,
-    "sk": 30
+    "cz": 111,
+    "sk": 39
   },
   "campaignTypeBreakdown": {
-    "promo": 56,
-    "education": 50,
-    "urgency": 38,
-    "launch": 5,
+    "education": 61,
+    "urgency": 51,
+    "promo": 29,
+    "launch": 8,
     "event": 1
   },
   "tone": {
@@ -73,7 +73,7 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 120,
+      "count": 111,
       "avgSubjectLength": 39,
       "avgHeadlineLength": 45,
       "topCtas": [
@@ -132,16 +132,16 @@
       ]
     },
     "sk": {
-      "count": 30,
+      "count": 39,
       "avgSubjectLength": 38,
       "avgHeadlineLength": 42,
       "topCtas": [
         "KÚPIŤ",
-        "PUSTIŤ SI ROZHOVOR",
-        "PRIHLÁSIŤ SA",
-        "Chcem VIP zľavu",
         "CHCEM BYŤ PRI TOM",
-        "REZERVOVAŤ SI MIESTO"
+        "REZERVOVAŤ SI MIESTO",
+        "ZISTIŤ VIAC",
+        "PUSTIŤ SI ROZHOVOR",
+        "PRIHLÁSIŤ SA"
       ],
       "topOffers": [
         "percent-off",
@@ -193,23 +193,22 @@
   },
   "byCampaignType": {
     "promo": {
-      "count": 56,
-      "avgSubjectLength": 37,
-      "avgHeadlineLength": 43,
+      "count": 29,
+      "avgSubjectLength": 36,
+      "avgHeadlineLength": 39,
       "topCtas": [
         "KOUPIT",
         "KÚPIŤ",
-        "CHCI BÝT U TOHO",
         "Chci VIP slevu",
-        "ZJISTIT VÍC",
-        "REZERVOVAT SI MÍSTO"
+        "ZATOČIT A VYHRÁT",
+        "Zjistit víc",
+        "ZATOČIŤ A VYHRAŤ"
       ],
       "topOffers": [
         "percent-off",
         "launch",
         "gift",
         "promo",
-        "education",
         "urgency"
       ],
       "examples": [
@@ -252,9 +251,9 @@
       ]
     },
     "launch": {
-      "count": 5,
-      "avgSubjectLength": 42,
-      "avgHeadlineLength": 42,
+      "count": 8,
+      "avgSubjectLength": 44,
+      "avgHeadlineLength": 43,
       "topCtas": [
         "CHCEM NAKÚPIŤ VÝHODNE",
         "CHCI NAKOUPIT VÝHODNĚ",
@@ -299,28 +298,34 @@
           "headline": "Objavte nové balíčky s 20 % zľavou!",
           "previewText": "Nové pleťové a vlasové balíčky teraz kúpite o 20 % lacnejšie!",
           "cta": "VYBRAŤ SI BALÍČEK S 20 % ZĽAVOU"
+        },
+        {
+          "subject": "Tenhle příběh o růžích by měl znát každý!",
+          "headline": "Jak příroda prozradila svůj největší recept na mládí....",
+          "previewText": "Hebká, pružná a odpočatá pleť? Tajemství je jednodušší, než myslíte!",
+          "cta": "Vícefunkční krém s mucinem hlemýžďů"
         }
       ]
     },
     "urgency": {
-      "count": 38,
-      "avgSubjectLength": 34,
+      "count": 51,
+      "avgSubjectLength": 35,
       "avgHeadlineLength": 42,
       "topCtas": [
         "KOUPIT",
+        "CHCI BÝT U TOHO",
         "ZÍSKAT BALÍČEK S DÁRKEM",
         "KÚPIŤ",
-        "CHCI BÝT U TOHO",
         "ZJISTIT VÍC",
-        "Chci VIP slevu"
+        "SPUSTIT ZÁZNAM"
       ],
       "topOffers": [
         "percent-off",
         "launch",
         "urgency",
-        "gift",
         "education",
-        "promo"
+        "promo",
+        "gift"
       ],
       "examples": [
         {
@@ -362,16 +367,16 @@
       ]
     },
     "education": {
-      "count": 50,
-      "avgSubjectLength": 43,
-      "avgHeadlineLength": 47,
+      "count": 61,
+      "avgSubjectLength": 42,
+      "avgHeadlineLength": 48,
       "topCtas": [
         "KOUPIT",
         "Připojte se na webinář nyní",
         "ZJISTIT VÍC",
-        "CHCI PŘÍRUČKY ZDARMA",
         "Sledovat na youtube",
-        "PUSTIT SI ZÁZNAM"
+        "CHCI BÝT U TOHO",
+        "CHCI PŘÍRUČKY ZDARMA"
       ],
       "topOffers": [
         "percent-off",

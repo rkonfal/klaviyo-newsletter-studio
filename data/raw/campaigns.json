@@ -4100,6 +4100,8 @@
     "id": "01KMZ1N18F5DP102YEQE9MXFAC",
     "name": "KURZ HUBNUTÍ 2 - Jak mít teplé jídlo vždy po ruce",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Co dělat, když vás na cestách přepadne hlad?",
     "previewText": "Když máte jídlo po ruce, hubnutí je najednou mnohem klidnější.",
     "sentAt": "2026-03-30T13:00:00+00:00",
@@ -4112,7 +4114,8 @@
       "body": [
         "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den ,{% endif %}",
         "moc všem děkujeme za vyplnění ankety v naší skupině Královské proměny těla i duše.  Postupně vám budeme dávat krátká videa, kde najdete inspiraci na naší cestě za vysněnou postavou a klidem v sobě, protože už nehladovíme . A začínáme hned prvním tématem:",
-        "Jak mít teplé jídlo vždy po ruce i na cestách"
+        "Jak mít teplé jídlo vždy po ruce i na cestách",
+        "Znáte ten moment, kdy máte hlad, jste na cestách… a najednou není po ruce nic, co by zapadalo do vašeho režimu? A přesně tady často vznikají t y „malé výjimky“, které nás zbytečně brzdí."
       ],
       "cta": "skupině Královské proměny těla i duše.",
       "ctas": [
@@ -4133,6 +4136,8 @@
     "id": "01KMYSQHGX0JB2X6MJ539N8TK9",
     "name": "SK - Nabídka na březen",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
     "subject": "Tohle jsme si pro vás nechali na konec měsíce!",
     "previewText": "Zostáva už len pár dní…",
     "sentAt": "2026-03-30T08:30:00+00:00",
@@ -4145,7 +4150,8 @@
       "body": [
         "Posledné dni v marci: doprajte si starostlivosť, ktorú si zaslúžite",
         "Vieme, že starostlivosť o seba by nemala mať sezónu. Ale koniec marca je skvelá príležitosť doplniť zásoby a dopriať si niečo navyše.",
-        "Obľúbená voľba tisícok zákazníčok, teraz dostupná ihneď!"
+        "Obľúbená voľba tisícok zákazníčok, teraz dostupná ihneď!",
+        "✅ Pomáha navrátiť zubom prirodzene svetlejší vzhľad"
       ],
       "cta": "PREJSŤ DO E-SHOPU",
       "ctas": [
@@ -4163,6 +4169,8 @@
     "id": "01KMQK4RF7T00DGT1JV56KC7WY",
     "name": "CZ - Nabídka na březen",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Tohle jsme si pro vás nechali na konec měsíce!",
     "previewText": "Zbývá jen pár dní...",
     "sentAt": "2026-03-30T08:00:00+00:00",
@@ -4175,7 +4183,8 @@
       "body": [
         "Poslední dny v březnu: dopřejte si péči, kterou si zasloužíte",
         "Víme, že péče o sebe by neměla mít sezónu. Ale konec března je skvělá příležitost doplnit zásoby a dopřát si něco navíc.",
-        "Oblíbená volba tisíců zákaznic, teď dostupná ihned!"
+        "Oblíbená volba tisíců zákaznic, teď dostupná ihned!",
+        "✅Pomáhá navrátit zubům přirozeně světlejší vzhled"
       ],
       "cta": "PŘEJÍT DO ESHOPU",
       "ctas": [
@@ -4194,6 +4203,8 @@
     "id": "01KMX4NXNX5SN7V283Z380PE2X",
     "name": "SK - Balíček s rozchodnicí",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "promo",
     "subject": "Chýba vám energia? Máme pre vás riešenie!",
     "previewText": "Podporte svoju ženskú rovnováhu a získajte DARČEK!",
     "sentAt": "2026-03-29T16:30:00+00:00",
@@ -4206,7 +4217,8 @@
       "body": [
         "Viete, aké to je, keď idete naplno… práca, rodina, starosti a zrazu cítite, že energia ubúda a nálada kolíše. Pripravili sme pre vás balíček pre aktívne ženy, ktorý spája silu bylín a každodennú starostlivosť.",
         "Tenhle text přeložím do slovenštiny beze změny významu: Ten balíček nie je len o produktoch. Je o pocite, že sa o seba staráte s láskou. Že máte energiu byť ženou, ktorá zvláda svoj deň a pritom nezabúda sama na seba.",
-        "Podpora prirodzenej rovnováhy ženského tela"
+        "Podpora prirodzenej rovnováhy ženského tela",
+        "Pocit čistoty a komfortu v intímnej oblasti"
       ],
       "cta": "OBJEDNAŤ BALÍČEK S DARČEKOM",
       "ctas": [
@@ -4225,6 +4237,8 @@
     "id": "01KMN3EYG6DB0GXVN5MJHKC5QC",
     "name": "CZ - Balíček s rozchodnicí",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "promo",
     "subject": "Chybí vám energie? Máme pro vás řešení!",
     "previewText": "Podpořte svou ženskou rovnováhu a získejte DÁREK!",
     "sentAt": "2026-03-29T16:30:00+00:00",
@@ -4237,7 +4251,8 @@
       "body": [
         "Víte, jaké to je, když jedete naplno… práce, rodina, starost a najednou cítíte, že energie ubývá a  nálada kolísá. Připravili jsme pro vás balíček pro aktivní ženy, který spojuje sílu bylin a každodenní péči.",
         "Tenhle balíček není jen o produktech.  Je o pocitu, že se o sebe staráte s láskou. Že máte energii být ženou, která zvládá svůj den a přitom nezapomíná sama na sebe.",
-        "Podpora přirozené rovnováhy ženského těla"
+        "Podpora přirozené rovnováhy ženského těla",
+        "Pocit čistoty a komfortu v intimní oblasti"
       ],
       "cta": "OBJEDNAT BALÍČEK S DÁRKEM",
       "ctas": [
@@ -4255,6 +4270,8 @@
     "id": "01KMJHMZ2A229VQ0XASCMHGT6R",
     "name": "CZ Webinář Menopauza - již zítra",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Menopauzou život nekončí!",
     "previewText": "Otevřeně o menopauze, tak jak to skutečně potřebujeme slyšet!",
     "sentAt": "2026-03-29T13:00:00+00:00",
@@ -4267,7 +4284,8 @@
       "body": [
         "Nejsi v tom sama. Pojďme si o menopauze promluvit společně.",
         "Možná i vy cítíte, že se vaše tělo postupně mění a některé věci už nejsou jako dřív.  Není to slabost ani selhání, je to přirozená etapa života. A právě o ní si budeme už zítra povídat otevřeně a s respektem.",
-        "Zveme vás na výjimečný večer, který může přinést odpovědi, úlevu i pocit, že v tom nejste sami."
+        "Zveme vás na výjimečný večer, který může přinést odpovědi, úlevu i pocit, že v tom nejste sami.",
+        "Naším hostem bude Jana Jakoubková, certifikovaný menopause kouč, která dlouhodobě pomáhá ženám projít tímto obdobím s větším klidem a pochopením."
       ],
       "cta": "CHCI BÝT U TOHO",
       "ctas": [
@@ -4288,6 +4306,8 @@
     "id": "01KMD9PXMFK9G3FW81T4WB2SBQ",
     "name": "CZ - Šneci storytelling",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "launch",
     "subject": "Tenhle příběh o růžích by měl znát každý!",
     "previewText": "Hebká, pružná a odpočatá pleť? Tajemství je jednodušší, než myslíte!",
     "sentAt": "2026-03-28T17:00:00+00:00",
@@ -4300,7 +4320,8 @@
       "body": [
         "Jak příroda prozradila svůj největší recept na mládí....",
         "Všechno to začalo před lety v prosluněných zahradách, kde se pěstovaly ty nejvzácnější růže. Práce tam byla krásná, ale neuvěřitelně tvrdá. Sběračky růží měly ruce denně rozdrásané od ostrých trnů a vysušené od spalujícího slunce.",
-        "Jejich dlaně měly být podle všech předpokladů plné jizev a hlubokých vrásek."
+        "Jejich dlaně měly být podle všech předpokladů plné jizev a hlubokých vrásek.",
+        "Jenže se stal zázrak, který nikdo nečekal."
       ],
       "cta": "Vícefunkční krém s mucinem hlemýžďů",
       "ctas": [
@@ -4318,6 +4339,8 @@
     "id": "01KMN5YQA459PWN8ZHQ3HEQ3KZ",
     "name": "KURZ HUBNUTÍ 2 - pozvánka na 5. lekci",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Zastavilo se hubnutí? Může za to lymfa!",
     "previewText": "V další lekci se naučíte krok, který často rozhoduje o dalším úbytku kilogramů!",
     "sentAt": "2026-03-28T13:00:00+00:00",
@@ -4330,7 +4353,8 @@
       "body": [
         "Zastavilo se hubnutí? V další lekci to změníme!",
         "Víte, jaký je to pocit, když děláte všechno správně… a přesto se hubnutí na chvíli zastaví? V další lekci se podíváme na jeden z nejdůležitějších systémů v těle – lymfu. Právě ta často rozhoduje o tom, jestli hubneme!",
-        "Na další lekci našeho kurzu se podíváme na to, jak lymfatický systém skutečně funguje a proč je klíčem k lehkosti, energii i dalšímu úbytku kilogramů. Ukážeme si jednoduché kroky, které můžete začít dělat hned."
+        "Na další lekci našeho kurzu se podíváme na to, jak lymfatický systém skutečně funguje a proč je klíčem k lehkosti, energii i dalšímu úbytku kilogramů. Ukážeme si jednoduché kroky, které můžete začít dělat hned.",
+        "Zjistíte, proč je lymfa klíčová pro hubnutí a jak ovlivňuje otoky"
       ],
       "cta": "CHCI BÝT U TOHO",
       "ctas": [
@@ -4351,6 +4375,8 @@
     "id": "01KMQCRGMFTKZJ7FFA8X4KW24Z",
     "name": "SK Webinář Menopauza",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
     "subject": "Menopauzou sa život nekončí!",
     "previewText": "Otvorene o menopauze tak, ako to skutočne potrebujeme počuť!",
     "sentAt": "2026-03-27T17:00:00+00:00",
@@ -4363,7 +4389,8 @@
       "body": [
         "Telo sa mení, energia niekedy ubúda a spánok už nie je taký pokojný ako kedysi.  Pozývame vás na webinár o menopauze , kde budeme hovoriť otvorene – tak, ako to naozaj je.",
         "Menopauza nie je koniec. Je to nová kapitola. A keď jej porozumieme, môže byť pokojnejšia, vedomejšia a oveľa láskavejšia k nášmu telu.",
-        "Prečo vznikajú návaly horúčavy a ako ich prirodzene zmierniť"
+        "Prečo vznikajú návaly horúčavy a ako ich prirodzene zmierniť",
+        "Prečo sa mení váha a ako s tým pracovať bez drastických diét"
       ],
       "cta": "CHCEM BYŤ PRI TOM",
       "ctas": [
@@ -4383,6 +4410,8 @@
     "id": "01KMFDGH1TRFZC4KFEZT02PBDT",
     "name": "CZ Webinář Menopauza",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Menopauzou život nekončí!",
     "previewText": "Otevřeně o menopauze, tak jak to skutečně potřebujeme slyšet!",
     "sentAt": "2026-03-27T17:00:00+00:00",
@@ -4395,7 +4424,8 @@
       "body": [
         "Tělo se mění, energie někdy ubývá a spánek už není tak klidný jako dřív.",
         "Zveme vás na webinář o menopauze, kde budeme mluvit otevřeně, tak jak to je.",
-        "Menopauza není konec. Je to nová kapitola. A když jí porozumíme, může být klidnější, vědomější a mnohem laskavější k našemu tělu."
+        "Menopauza není konec. Je to nová kapitola. A když jí porozumíme, může být klidnější, vědomější a mnohem laskavější k našemu tělu.",
+        "Proč vznikají návaly horka a jak je přirozeně zmírnit"
       ],
       "cta": "CHCI BÝT U TOHO",
       "ctas": [
@@ -4416,6 +4446,8 @@
     "id": "01KMFGMN8TR7NX9NEHEZ3GQ38J",
     "name": "CZ - Tělo jako kompas",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Startujeme už brzy. Budete u toho?",
     "previewText": "Nový online kurz zdarma pro ženy, které chtějí lépe rozumět svému tělu!",
     "sentAt": "2026-03-27T13:00:00+00:00",
@@ -4428,7 +4460,8 @@
       "body": [
         "Tělo jako kompas: Udělejte si jasno ve svém zdraví jednou provždy!",
         "Znáte ten pocit, kdy jste unaveni, ale nevíte proč?  V našem kurzu během 7 týdnů pochopíte souvislosti mezi únavou, napětím, cyklem, stresem i každodenními návyky. Jednoduše, prakticky a bez složité teorie",
-        "REZERVUJTE SI SVÉ MÍSTO, DOKUD JSOU VOLNÁ"
+        "REZERVUJTE SI SVÉ MÍSTO, DOKUD JSOU VOLNÁ",
+        "Zkušená lektorka PaedDr. Eva Štěpová , která umí převést principy tradiční čínské medicíny do běžného ženského života bez složité terminologie."
       ],
       "cta": "REZERVUJTE SI SVÉ MÍSTO, DOKUD JSOU VOLNÁ",
       "ctas": [
@@ -4447,6 +4480,8 @@
     "id": "01KMQC9C3QJ1HRGAH3XQS22PFE",
     "name": "SK - Tělo jako kompas",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "education",
     "subject": "Štartujeme už čoskoro. Budete pri tom?",
     "previewText": "Nový online kurz zadarmo pre ženy, ktoré chcú lepšie rozumieť svojmu telu!",
     "sentAt": "2026-03-27T13:00:00+00:00",
@@ -4459,7 +4494,8 @@
       "body": [
         "Telo ako kompas: Urobte si jasno vo svojom zdraví raz a navždy!",
         "⏰ Začíname 7. 4. o 20:00 💻 ONLINE A ZADARMO",
-        "Poznáte ten pocit, keď ste unavené, ale neviete prečo? V našom kurze počas 7 týždňov pochopíte súvislost i medzi únavou, napätím, cyklom, stresom aj každodennými návykmi. Jednoducho, prakticky a bez zložitej teórie."
+        "Poznáte ten pocit, keď ste unavené, ale neviete prečo? V našom kurze počas 7 týždňov pochopíte súvislost i medzi únavou, napätím, cyklom, stresom aj každodennými návykmi. Jednoducho, prakticky a bez zložitej teórie.",
+        "REZERVUJTE SI SVOJE MIESTO, KÝM SÚ VOĽNÉ"
       ],
       "cta": "REZERVUJTE SI SVOJE MIESTO, KÝM SÚ VOĽNÉ",
       "ctas": [
@@ -4477,6 +4513,8 @@
     "id": "01KMN0RM402AZ1JVAS81AXNV83",
     "name": "SK - Turmalíny",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "launch",
     "subject": "Jaro nás zase vypeklo, ale my vieme, ako sa zohriať!",
     "previewText": "Chladné počasie sa vracia. Zahrejte chrbát, kolená aj celé telo!",
     "sentAt": "2026-03-26T17:00:00+00:00",
@@ -4489,7 +4527,8 @@
       "body": [
         "Jar sa s nami tento rok trochu pohráva. Jeden deň slnko, druhý deň chlad a dážď. A naše telo to vníma viac, než si myslíme. Práve vtedy prichádza čas dopriať telu teplo, ktoré ho objíme a prinesie mu úľavu.",
         "Turmalín je minerál a je známy tým, že pri kontakte s telom vytvára príjemné teplo a podporuje prekrvenie. A práve to je dôvod, prečo sa k nemu toľko ľudí vracia.",
-        "Prečo by turmalín nemal chýbať v našej výbave"
+        "Prečo by turmalín nemal chýbať v našej výbave",
+        "Turmalín je ako malá baterka, ktorú zapneme vo chvíli, keď nám dochádza energia. Keď sa necítime vo svojej koži, sme unavené alebo v napätí… jeho prirodzené vlastnosti prinášajú pocit pohodlia, uvoľnenia a rovnováhy."
       ],
       "cta": "ZOHRIAŤ SA",
       "ctas": [
@@ -4506,6 +4545,8 @@
     "id": "01KMJEDEHFHFY389SEYT17052N",
     "name": "CZ - Turmalíny",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "launch",
     "subject": "Jaro nás zase vypeklo, ale my víme, jak se zahřát!",
     "previewText": "Chladné počasí se vrací. Zahřejte záda, kolena i celé tělo!",
     "sentAt": "2026-03-26T17:00:00+00:00",
@@ -4518,7 +4559,8 @@
       "body": [
         "Jaro si s námi letos trochu pohrává. Jeden den slunce, druhý den chlad a déšť. A naše tělo to vnímá víc, než si myslíme. Právě tehdy přichází čas dopřát tělu teplo, které ho obejme a uleví mu.",
         "Turmalín je minerál a je známý tím, že při kontaktu s tělem vytváří příjemné teplo a podporuje prokrvení. A právě to je důvod, proč se k němu tolik lidí vrací.",
-        "Proč by turmalín neměl chybět v naší výbavě"
+        "Proč by turmalín neměl chybět v naší výbavě",
+        "Turmalín je jako malá baterka, kterou zapneme ve chvíli, kdy nám dochází energie. Když se necítíme ve své kůži, jsme unavené nebo v napětí … jeho přirozené vlastnosti přinášejí pocit pohodlí, uvolnění a rovnováhy."
       ],
       "cta": "ZAHŘÁT SE",
       "ctas": [
@@ -4535,6 +4577,8 @@
     "id": "01KMMYVTSQFRY8PRMZETBX6R00",
     "name": "KURZ HUBNUTÍ 2 - 4 lekce záznam",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Utekla vám 4. lekce? Záznam je tady!",
     "previewText": "Záznam 4. lekce je připravený! A uvnitř na vás čeká malé překvapení!",
     "sentAt": "2026-03-26T13:00:00+00:00",
@@ -4547,7 +4591,8 @@
       "body": [
         "Ve 4. lekci jsme s Jiřinou Radovou otevřeli téma, které zná až příliš mnoho z nás: Jíte lehce, hýbete se víc, ale tělo jako by řeklo „stop“. Pokud jste lekci nestihli, nic se neděje. Záznam je tady!",
         "Mluvili jsme o věcech, které na první pohled vypadají obyčejně… ale ve skutečnosti rozhodují o tom, jestli tělo spaluje, nebo se brání. Ukázali jsme si:",
-        "Možná jíte zdravě. Možná se hýbete.  Ale tělo je každý den zatěžované chemií. Z nádobí, z prádla, z prostředí kolem nás. A když je lymfa přetížená, tělo místo spalování řeší detoxikaci."
+        "Možná jíte zdravě. Možná se hýbete.  Ale tělo je každý den zatěžované chemií. Z nádobí, z prádla, z prostředí kolem nás. A když je lymfa přetížená, tělo místo spalování řeší detoxikaci.",
+        "Proto jsme doporučili jednoduchý krok: začít tam, kde to dává největší smysl. U každodenního mytí."
       ],
       "cta": "SPUSTIT ZÁZNAM",
       "ctas": [
@@ -4567,6 +4612,8 @@
     "id": "01KMJ8D27WKHY8GSHB7BDTEADR",
     "name": "KURZ HUBNUTÍ  1 + 2 - Základní balíček",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Speciální balíček s DÁRKEM pro vás!",
     "previewText": "A ten dárek? Ten vám na cestě opravdu pomůže!",
     "sentAt": "2026-03-26T09:00:00+00:00",
@@ -4579,7 +4626,8 @@
       "body": [
         "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den ,{% endif %}",
         "možná si vzpomínáte, že včera na webináři Jiřina zmínila speciální video , které pro vás připravila. A právě dnes vám ho s velkou radostí posíláme",
-        "Mnoho z vás se na nás v poslední době obracelo s podobnou otázkou:"
+        "Mnoho z vás se na nás v poslední době obracelo s podobnou otázkou:",
+        "„Jaké jsou ty opravdu nejdůležitější produkty, když nechci nebo nemůžu začít s velkým balíčkem?“  A právě proto jsme pro vás připravili jednodušší variantu, která dává smysl hned od začátku."
       ],
       "cta": "PUSTIT SPECIÁLNÍ VIDEO",
       "ctas": [
@@ -4599,6 +4647,8 @@
     "id": "01KMJMDHMFK883EZ7Y1A6BV5SW",
     "name": "Kurz hubnutí 2, 1.lekce 9.3. odkaz (clone)",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "⏰ Kurz hubnutí - ZAČÍNÁME ZA 30 MINUT! + dnes skvělý dárek",
     "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
     "sentAt": "2026-03-25T17:30:00+00:00",
@@ -4611,7 +4661,8 @@
       "body": [
         "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
         "Už za 30 minut začínáme náš kurz hubnutí v 19:00 hodin. První účastníci se už připojují.",
-        "​ Nejčastější chyby, které brzdí hubnutí"
+        "​ Nejčastější chyby, které brzdí hubnutí",
+        "Důležité: Připojte se včas, kapacita webináře je omezená."
       ],
       "cta": "Nejčastější chyby, které brzdí hubnutí",
       "ctas": [
@@ -4631,6 +4682,8 @@
     "id": "01KMF9Y2QE7C70APFM5Q707PRQ",
     "name": "CZ - Jarní detox - balíčky s dárkem",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Co dostanete k detox balíčku zdarma?",
     "previewText": "Ke každému detoxikačnímu balíčku přidáváme dárek zdarma! Pouze do 31. 3.",
     "sentAt": "2026-03-25T17:00:00+00:00",
@@ -4643,7 +4696,8 @@
       "body": [
         "Po zimě často cítíme únavu, těžkost nebo chuť něco změnit. Právě teď je ten správný okamžik začít. Připravili jsme pro vás detoxikační balíčky , ke kterým jsme přidali dárek navíc!",
         "Potřebuje vaše tělo detox? Zjistěte to za 30 sekund!",
-        "Možná cítíte únavu, těžkost nebo vám chybí energie , ale nejste si jistí, jestli je detox právě to, co vaše tělo potřebuje. Každý z nás je jiný a signály těla se mohou lišit. Proto jsme pro vás připravili krátký kvíz, který vám během chvilky napoví, jak na tom jste."
+        "Možná cítíte únavu, těžkost nebo vám chybí energie , ale nejste si jistí, jestli je detox právě to, co vaše tělo potřebuje. Každý z nás je jiný a signály těla se mohou lišit. Proto jsme pro vás připravili krátký kvíz, který vám během chvilky napoví, jak na tom jste.",
+        "P. S. Vyberte si svůj balíček ještě dnes a udělejte první krok k lehčímu tělu. Dárek na vás čeká!"
       ],
       "cta": "detoxikační balíčky",
       "ctas": [
@@ -4664,6 +4718,8 @@
     "id": "01KMDBV0HQMHMSG8EQG6ZGGYC1",
     "name": "CZ - Margit podcast pro všechny",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Diety nefungují? Možná stačí změnit jedno pravidlo!",
     "previewText": "Poslechněte si podcast, který mění pohled na hubnutí.",
     "sentAt": "2026-03-24T17:00:00+00:00",
@@ -4676,7 +4732,8 @@
       "body": [
         "Poslechněte si podcast, který boří mýty o dietách",
         "Věděli jste, že většina diet končí zklamáním, i když děláme všechno správně? Možná problém není ve vás, ale v pravidlech, která jsme se naučili. Poslechněte si podcast, který vám může otevřít oči.",
-        "Víte, jaké to je snažit se jíst „správně“, hlídat kalorie… a váha se stejně nehýbe?  Přesně tím si prošla i Renata Králová. Až pochopila, že tělo nepotřebuje další dietu, ale porozumění."
+        "Víte, jaké to je snažit se jíst „správně“, hlídat kalorie… a váha se stejně nehýbe?  Přesně tím si prošla i Renata Králová. Až pochopila, že tělo nepotřebuje další dietu, ale porozumění.",
+        "Do svého podcastu si proto pozvala jednu z nejznámějších propagátorek zdravého životního stylu, PharmDr. Margit Slimákovou. Společně otevřely téma, o kterém se často mlčí – proč diety nefungují a jak se dá ke štíhlosti doslova „projíst“."
       ],
       "cta": "PUSTIT SI PODCAST",
       "ctas": [
@@ -4696,6 +4753,8 @@
     "id": "01KMG19RVX01VX44BBKYHDSJQR",
     "name": "SK - Margit podcast pro všechny",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
     "subject": "Diety nefungujú? Možno stačí zmeniť jedno pravidlo!",
     "previewText": "Poslechnite si podcast, ktorý mení pohľad na chudnutie.",
     "sentAt": "2026-03-24T17:00:00+00:00",
@@ -4708,7 +4767,8 @@
       "body": [
         "Poslechnite si podcast, ktorý búra mýty o diétach.",
         "Vedeli ste, že väčšina diét končí sklamaním, aj keď robíme všetko správne? Možno problém nie je vo vás, ale v pravidlách, ktoré sme sa naučili. Poslechnite si podcast, ktorý vám môže otvoriť oči.",
-        "Vedeli ste, aké to je snažiť sa jesť „správne“, strážiť kalórie… a váha sa aj tak nehýbe? Presne tým si prešla aj Renata Králová. Až keď pochopila, že telo nepotrebuje ďalšiu diétu, ale porozumenie."
+        "Vedeli ste, aké to je snažiť sa jesť „správne“, strážiť kalórie… a váha sa aj tak nehýbe? Presne tým si prešla aj Renata Králová. Až keď pochopila, že telo nepotrebuje ďalšiu diétu, ale porozumenie.",
+        "Do svojho podcastu si preto pozvala jednu z najznámejších propagátoriek zdravého životného štýlu, PharmDr. Margit Slimákovú. Spoločne otvorili tému, o ktorej sa často mlčí – prečo diéty nefungujú a ako sa dá k štíhlosti doslova „prejesť“."
       ],
       "cta": "PUSTIŤ SI PODCAST",
       "ctas": [
@@ -4728,6 +4788,8 @@
     "id": "01KMG6DEN17QABD3E2RGXFYE2C",
     "name": "SK Webinář Doplňky stravy záznam",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "education",
     "subject": "Video je pripravené. Pustite si ho!",
     "previewText": "Nestihli ste včera webinár! Nevadí, záznam webinára je pripravený vo vašom účte!",
     "sentAt": "2026-03-24T15:45:00+00:00",
@@ -4740,7 +4802,8 @@
       "body": [
         "Nestihli ste webinár? Máme pre vás záznam!",
         "Ak ste včera nestihli náš webinár, nič sa nedeje. Záznam je už pripravený a čaká vo vašom účte. Stačí sa prihlásiť a môžete začať robiť prvý krok pre svoje zdravie.",
-        "Na webinári sme sa spolu zastavili pri téme, ktorú dnes rieši mnoho žien. Únava, pomalšie trávenie alebo pocit, že nám niekedy dochádza energia. Hovorili sme otvorene o tom, prečo sa niektoré ťažkosti vracajú, ako vnímať signály svojho tela a ako sa o seba starať prirodzeným spôsobom."
+        "Na webinári sme sa spolu zastavili pri téme, ktorú dnes rieši mnoho žien. Únava, pomalšie trávenie alebo pocit, že nám niekedy dochádza energia. Hovorili sme otvorene o tom, prečo sa niektoré ťažkosti vracajú, ako vnímať signály svojho tela a ako sa o seba starať prirodzeným spôsobom.",
+        "Ako sa starať o svoju obranyschopnosť a energiu"
       ],
       "cta": "SPUSTIŤ ZÁZNAM",
       "ctas": [
@@ -4758,6 +4821,8 @@
     "id": "01KMFVRTD9MMZFEC4DRXD7Q6Z8",
     "name": "CZ Webinář Doplňky stravy záznam",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Video je připraveno. Pusťte si ho!",
     "previewText": "Nestihli jste včera webinář! Nevadí, záznam webináře je připraven ve vašem účtu!",
     "sentAt": "2026-03-24T15:30:00+00:00",
@@ -4770,7 +4835,8 @@
       "body": [
         "Nestihli jste webinář? Máme pro vás záznam!",
         "Pokud jste včera nestihli náš webinář, nic se neděje. Záznam je už připraven a čeká ve vašem účtu. Stačí se přihlásit a můžete začít dělat první krok pro své zdraví.",
-        "Na webináři jsme se společně zastavili u tématu, které dnes řeší mnoho žen. Únava, pomalejší trávení nebo pocit, že nám někdy dochází energie. Mluvili jsme otevřeně o tom, proč se některé obtíže vracejí, jak vnímat signály svého těla a jak o sebe pečovat přirozeným způsobem."
+        "Na webináři jsme se společně zastavili u tématu, které dnes řeší mnoho žen. Únava, pomalejší trávení nebo pocit, že nám někdy dochází energie. Mluvili jsme otevřeně o tom, proč se některé obtíže vracejí, jak vnímat signály svého těla a jak o sebe pečovat přirozeným způsobem.",
+        "Jak pečovat o svou obranyschopnost a energii"
       ],
       "cta": "PUSTIT ZÁZNAM",
       "ctas": [
@@ -4790,6 +4856,8 @@
     "id": "01KMDCYQKRDST59Y3T4D33XSSA",
     "name": "CZ - Margit podcast pro lidi z kuru",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "Poslední místa na setkání s Margit Slimákovou!",
     "previewText": "Rezervujte si své místo dřív, než bude vyprodáno!",
     "sentAt": "2026-03-24T14:00:00+00:00",
@@ -4802,7 +4870,8 @@
       "body": [
         "Jedno rozhodnutí. Jeden den. Velká změna.",
         "Představte si den, který věnujete jen sobě. Svému zdraví, energii a nové motivaci. Den, ze kterého si odnesete konkrétní odpovědi i chuť něco změnit. Přesně takový tě čeká na setkání s Margit Slimákovou.",
-        "Čeká vás inspirativní den s Margit Slimákovou, Jiřinou Radovou a Renatou Královou. Den, kdy na chvíli vystoupíte z každodenního kolotoče a dopřejete si prostor jen pro sebe."
+        "Čeká vás inspirativní den s Margit Slimákovou, Jiřinou Radovou a Renatou Královou. Den, kdy na chvíli vystoupíte z každodenního kolotoče a dopřejete si prostor jen pro sebe.",
+        "Možná zjistíte, že problém nikdy nebyl ve vás … ale v tom, co vám celý život říkali."
       ],
       "cta": "CHCI BÝT U TOHO",
       "ctas": [
@@ -4820,6 +4889,8 @@
     "id": "01KMF878R1P91V8ZB8E1G0XR61",
     "name": "KURZ HUBNUTÍ 2 - pozvánka na 4. lekci již zítra",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Nejste v tom sami. Zítra pokračujeme!",
     "previewText": "Už zítra: 4. lekce, která často rozhodne o úspěchu!",
     "sentAt": "2026-03-24T12:00:00+00:00",
@@ -4832,7 +4903,8 @@
       "body": [
         "📍 Kde:  Odkaz pošleme do e-mailu v 18:30",
         "4. lekce je pro mnoho žen moment, kdy se věci konečně pohnou správným směrem.  Ukážeme si chyby, které brzdí hubnutí, i jednoduché principy, které tělo uklidní a nastartují spalování.",
-        "Nejde o zákazy ani dřinu. Jde o malé změny, které tělo uklidní a dovolí mu dělat to, co umí nejlépe – spalovat.  Jak říká Jiřina Radová: „Nejde o zákazy. Jde o vědomé kombinace, které pracují pro tvoje tělo, ne proti němu.“"
+        "Nejde o zákazy ani dřinu. Jde o malé změny, které tělo uklidní a dovolí mu dělat to, co umí nejlépe – spalovat.  Jak říká Jiřina Radová: „Nejde o zákazy. Jde o vědomé kombinace, které pracují pro tvoje tělo, ne proti němu.“",
+        "Budeme losovat o dárek. Ze všech účastnic vybereme celkem 5 výherkyň, které od nás získají krásný dárek. Stačí se připojit na webinář a být s námi u další lekce."
       ],
       "cta": "CHCI BÝT U TOHO",
       "ctas": [
@@ -4853,6 +4925,8 @@
     "id": "01KMDN3CYKVPZQDQFY3GV727DM",
     "name": "Připomenutí webinář 23.3. 20:00 /3",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "⏰ ZAČÍNÁME ZA 30 MINUT! Doplňky stravy pro silnou vitalitu",
     "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
     "sentAt": "2026-03-23T18:30:00+00:00",
@@ -4865,7 +4939,8 @@
       "body": [
         "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
         "Už za 30 minut začínáme náš webinář ve 20:00 hodin. První účastníci se už připojují.",
-        "Důležité: Připojte se včas, kapacita webináře je omezená."
+        "Důležité: Připojte se včas, kapacita webináře je omezená.",
+        "🟢 Váš osobní odkaz pro připojení na webinář:"
       ],
       "cta": "Připojte se na webinář nyní",
       "ctas": [
@@ -4882,6 +4957,8 @@
     "id": "01KMDQBRVQPC0XMWZ6SVXRN2JK",
     "name": "SK - čistíme sklad - limitovaná edice",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "promo",
     "subject": "🚨Likvidácia skladov. Čo zmizne, už nebude!🚨",
     "previewText": "Vybrané produkty teraz za lepšie ceny. Ale len do vypredania zásob!",
     "sentAt": "2026-03-23T17:30:00+00:00",
@@ -4894,7 +4971,8 @@
       "body": [
         "Začalo veľké čistenie skladu. Niektoré produkty teraz nakúpite výhodnejšie než kedykoľvek predtým!",
         "P. S. Prezrite si ponuku a vyberte si svoje obľúbené produkty za výhodnejšie ceny, pokiaľ sú ešte skladom.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
       ],
       "cta": "ULOVIŤ POSLEDNÉ KUSY",
       "ctas": [
@@ -4912,6 +4990,8 @@
     "id": "01KMD2N4HYR102JE44J1AW57SQ",
     "name": "CZ - čistíme sklad - limitovaná edice",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "🚨Likvidace skladů. Co zmizí, už nebude!🚨",
     "previewText": "Vybrané produkty teď za lepší ceny. Ale jen do vyprodání zásob!",
     "sentAt": "2026-03-23T17:30:00+00:00",
@@ -4924,7 +5004,8 @@
       "body": [
         "Začalo velké čištění skladu. Některé produkty teď nakoupíte výhodněji než kdy jindy!",
         "✅ Hřejivý komfort přesně tam, kde ho potřebujete",
-        "Bylinný balíček pro vitální imunitu a uvolněné tělo"
+        "Bylinný balíček pro vitální imunitu a uvolněné tělo",
+        "✅ Hřejivý komfort pro namáhané partie těla"
       ],
       "cta": "ULOVIT POSLEDNÍ KUSY",
       "ctas": [
@@ -4945,6 +5026,8 @@
     "id": "01KMB5QHKQH5N3EMST2XF0DYDS",
     "name": "CZ Webinář Doplňky stravy - již zítra",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
     "subject": "Už zítra odhalíme tajemství!",
     "previewText": "Webinář, který vám pomůže znovu nastartovat energii.",
     "sentAt": "2026-03-22T17:30:00+00:00",
@@ -4957,7 +5040,8 @@
       "body": [
         "Vaše tělo ví, co potřebuje. Pojďme to společně objevit.",
         "Možná cítíte únavu, oslabenou imunitu nebo jen potřebu znovu nastartovat své tělo. Dobrá zpráva je, že existují jednoduché kroky, které mohou přinést velkou změnu. A právě o nich si budeme povídat už zítra večer.",
-        "Už zítra  vám srozumitelně a lidsky ukážeme 4 pilíře vitality. Webinářem vás provedou Renata Králová, Gabriela Novotná a Denisa Horová, které dlouhodobě pomáhají ženám pochopit signály vlastního těla a vrátit mu sílu, energii a rovnováhu."
+        "Už zítra  vám srozumitelně a lidsky ukážeme 4 pilíře vitality. Webinářem vás provedou Renata Králová, Gabriela Novotná a Denisa Horová, které dlouhodobě pomáhají ženám pochopit signály vlastního těla a vrátit mu sílu, energii a rovnováhu.",
+        "Jak správně doplnit minerály a podpořit zdravé kosti"
       ],
       "cta": "CHCI BÝT U TOHO",
       "ctas": [
@@ -4978,6 +5062,8 @@
     "id": "01KMB0ENY1ZV6C94F8C9D9935C",
     "name": "SK  Deexpert konec",
     "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
     "subject": "⏰POSLEDNÁ ŠANCA!⏰",
     "previewText": "Dnes o polnoci 20 % ZĽAVA KONČÍ...",
     "sentAt": "2026-03-22T16:30:00+00:00",
@@ -4990,7 +5076,8 @@
       "body": [
         "P. S. Nečakajte na zajtra. Urobte ten krok pre seba práve teraz. O pár hodín už táto šanca nebude.",
         "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
+        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
       ],
       "cta": "NAKÚPIŤ SO ZĽAVOU",
       "ctas": [
@@ -5010,6 +5097,8 @@
     "id": "01KM0Q0XKQM0FVNGBKNW7PWF49",
     "name": "CZ Deexpert konec",
     "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
     "subject": "⏰POSLEDNÍ ŠANCE!⏰",
     "previewText": "Dnes o půlnoci 20 % SLEVA KONČÍ...",
     "sentAt": "2026-03-22T16:00:00+00:00",
@@ -5022,7 +5111,8 @@
       "body": [
         "P.S . Nečekejte na zítra. Udělejte ten krok pro sebe právě teď. Za pár hodin už tahle šance nebude",
         "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
+        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
       ],
       "cta": "NAKOUPIT SE SLEVOU",
       "ctas": [
