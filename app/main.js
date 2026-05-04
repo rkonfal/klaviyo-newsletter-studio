@@ -456,34 +456,12 @@ function scoreAngle(angle, data, inspiration) {
 
 function buildPreheader(data, subset, angle) {
   const focus = getPrimaryFocus(data);
+  const theme = getThemeFocus(data);
   const offer = normalizeSentence(data.offer);
-  const briefLead = getBriefLead(data);
   const multiLead = getSelectedProducts(data).length > 1 ? buildMultiModeLead(data) : '';
-  const map = {
-    cz: {
-      benefit: offer || multiLead || `${focus} v krátkém a srozumitelném mailu bez omáčky.`,
-      urgency: offer ? `${offer} Platí teď, proto mrkni dovnitř.` : `${focus} řešíme stručně a rovnou k věci.`,
-      curiosity: briefLead || `Uvnitř najdeš konkrétní důvod, proč se na ${focus.toLowerCase()} podívat právě teď.`,
-      result: `Ukážeme, co ${focus.toLowerCase()} přinese a pro koho dává smysl.`,
-      usefulness: `Stručně, jasně a prakticky k tématu ${data.theme}.`,
-      novelty: `Novinka, benefit a jasný důvod kliknout v jednom mailu.`,
-      number: `Rychlý přehled toho nejdůležitějšího bez zbytečné vaty.`,
-      deadline: offer ? `${offer} Pokud o tom uvažuješ, teď je správný moment.` : `Pokud tě ${focus.toLowerCase()} zajímá, neodkládej to.`,
-      offer: offer || `Konkrétní důvod otevřít mail je uvnitř hned nahoře.`
-    },
-    sk: {
-      benefit: offer || multiLead || `${focus} v krátkom a zrozumiteľnom maile bez omáčky.`,
-      urgency: offer ? `${offer} Platí teraz, preto sa pozri dovnútra.` : `${focus} riešime stručne a rovno k veci.`,
-      curiosity: briefLead || `Vo vnútri nájdeš konkrétny dôvod, prečo sa na ${focus.toLowerCase()} pozrieť práve teraz.`,
-      result: `Ukážeme, čo ${focus.toLowerCase()} prinesie a pre koho dáva zmysel.`,
-      usefulness: `Stručne, jasne a prakticky k téme ${data.theme}.`,
-      novelty: `Novinka, benefit a jasný dôvod kliknúť v jednom maile.`,
-      number: `Rýchly prehľad toho najdôležitejšieho bez zbytočnej vaty.`,
-      deadline: offer ? `${offer} Ak o tom uvažuješ, teraz je správny moment.` : `Ak ťa ${focus.toLowerCase()} zaujíma, neodkladaj to.`,
-      offer: offer || `Konkrétny dôvod otvoriť mail je vo vnútri hneď hore.`
-    }
-  };
-  const base = map[data.language]?.[angle] || map[data.language]?.benefit || '';
+  const base = shouldLeadWithTheme(data)
+    ? (data.language === 'sk' ? `${theme} je príležitosť vybrať milý a praktický darček.` : `${theme} je příležitost vybrat milý a praktický dárek.`)
+    : (offer || multiLead || (data.language === 'sk' ? `${focus} stručne, jasne a s dôvodom, prečo ho riešiť práve teraz.` : `${focus} stručně, jasně a s důvodem, proč ho řešit právě teď.`));
   return truncate(cleanCopy(base), subset.avgSubjectLength ? Math.max(58, subset.avgSubjectLength + 25) : 88);
 }
 
@@ -498,11 +476,15 @@ function strengthenPreheader(data, preheader) {
 
 function buildHeadline(data, subset, angle, inspiration) {
   const focus = capitalize(getPrimaryFocus(data));
-  const theme = capitalize(data.theme);
+  const theme = capitalize(getThemeFocus(data));
   const multiHeadline = getSelectedProducts(data).length > 1 ? buildMultiHeadline(data) : null;
+  if (multiHeadline) return cleanCopy(multiHeadline);
+  if (shouldLeadWithTheme(data)) {
+    return cleanCopy(data.language === 'sk' ? `${theme}: tip na darček, ktorý poteší` : `${theme}: tip na dárek, který potěší`);
+  }
   const angleMap = {
     cz: {
-      benefit: `${focus} teď dává smysl otevřít`,
+      benefit: `${focus}, které stojí za pozornost`,
       urgency: `${focus}, které nechceš prošvihnout`,
       curiosity: `Proč právě teď řešit ${focus.toLowerCase()}`,
       result: `Co ti ${focus.toLowerCase()} může přinést`,
@@ -510,10 +492,10 @@ function buildHeadline(data, subset, angle, inspiration) {
       novelty: `Novinka kolem ${focus.toLowerCase()}`,
       number: `${theme} v několika jasných bodech`,
       deadline: `${focus} nebude takhle výhodné dlouho`,
-      offer: data.offer ? `${focus} a nabídka, kterou je škoda minout` : `${focus} bez zbytečné omáčky`
+      offer: data.offer ? `${focus} a nabídka, kterou je škoda minout` : `${focus} jako rychlý a konkrétní tip`
     },
     sk: {
-      benefit: `${focus} teraz dáva zmysel otvoriť`,
+      benefit: `${focus}, ktoré stojí za pozornosť`,
       urgency: `${focus}, ktoré nechceš zmeškať`,
       curiosity: `Prečo práve teraz riešiť ${focus.toLowerCase()}`,
       result: `Čo ti ${focus.toLowerCase()} môže priniesť`,
@@ -521,10 +503,10 @@ function buildHeadline(data, subset, angle, inspiration) {
       novelty: `Novinka okolo ${focus.toLowerCase()}`,
       number: `${theme} v niekoľkých jasných bodoch`,
       deadline: `${focus} nebude takto výhodné dlho`,
-      offer: data.offer ? `${focus} a ponuka, ktorú je škoda minúť` : `${focus} bez zbytočnej omáčky`
+      offer: data.offer ? `${focus} a ponuka, ktorú je škoda minúť` : `${focus} ako rýchly a konkrétny tip`
     }
   };
-  return cleanCopy(multiHeadline || angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${focus}`);
+  return cleanCopy(angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${focus}`);
 }
 
 function strengthenHeadline(data, headline) {
@@ -751,16 +733,14 @@ function buildCta(data, subset, inspiration) {
   const focus = getPrimaryFocus(data).toLowerCase();
   const selectedCount = getSelectedProducts(data).length;
   if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
-  if (selectedCount > 1) {
-    return strengthenCta(data, buildMultiCta(data));
-  }
-  if (data.offer) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
+  if (selectedCount > 1) return strengthenCta(data, buildMultiCta(data));
+  if (data.offer && !isSoftOffer(data.offer)) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
+  if (shouldLeadWithTheme(data)) return strengthenCta(data, data.language === 'sk' ? 'Chcem vybrať darček' : 'Chci vybrat dárek');
   if (data.campaignType === 'event') return strengthenCta(data, data.language === 'sk' ? 'Chcem si rezervovať miesto' : 'Chci si rezervovat místo');
   if (/(kurz|webinář|webinar|školení|seminář|seminar|konference|vstupenka|vstupenky)/i.test(focus)) {
     return strengthenCta(data, data.language === 'sk' ? 'Chcem rezervovať miesto' : 'Chci rezervovat místo');
   }
-  if (inspiration[0]?.cta) return strengthenCta(data, inspiration[0].cta);
-  if (subset.topCtas?.length) return strengthenCta(data, subset.topCtas[0]);
+  if (focus) return strengthenCta(data, data.language === 'sk' ? 'Chcem objednať' : 'Chci objednat');
   return data.language === 'sk' ? 'Chcem zistiť viac' : 'Chci zjistit víc';
 }
 
@@ -1336,8 +1316,8 @@ function buildBenefitParagraph(data) {
   const focus = getPrimaryFocus(data);
   if (data.briefSignals?.mentionBenefits) {
     return data.language === 'sk'
-      ? `${focus} v texte staviame na konkrétnych benefitoch, aby bolo rýchlo zrozumiteľné, prečo práve tento výber dáva zmysel.`
-      : `${focus} v textu stavíme na konkrétních benefitech, aby bylo rychle srozumitelné, proč právě tenhle výběr dává smysl.`;
+      ? `${focus} v texte predstavujeme ako tip, ktorý spája praktické použitie, príjemný dojem a dôvod, prečo môže potešiť práve pri tejto príležitosti.`
+      : `${focus} v textu představujeme jako tip, který spojuje praktické využití, příjemný dojem a důvod, proč může potěšit právě při této příležitosti.`;
   }
   if (shouldLeadWithTheme(data)) {
     return data.language === 'sk'
@@ -1345,20 +1325,20 @@ function buildBenefitParagraph(data) {
       : `Hlavní síla tohohle tipu je v tom, že nepůsobí jako náhodný dárek, ale jako osobní a užitečná volba.`;
   }
   return data.language === 'sk'
-    ? `${focus} komunikujeme tak, aby benefit prišiel hneď v prvých vetách a čitateľ nemusel zložito hľadať dôvod ku kúpe.`
-    : `${focus} komunikujeme tak, aby benefit přišel hned v prvních větách a čtenář nemusel složitě hledat důvod ke koupi.`;
+    ? `${focus} komunikujeme tak, aby bolo hneď jasné, pre koho sa hodí a prečo si zaslúži pozornosť.`
+    : `${focus} komunikujeme tak, aby bylo hned jasné, pro koho se hodí a proč si zaslouží pozornost.`;
 }
 
 function buildTrustParagraph(data) {
   const focus = getPrimaryFocus(data);
   if (data.briefSignals?.mentionReview) {
     return data.language === 'sk'
-      ? `Dôveryhodnosť môže posilniť aj krátka skúsenosť zákazníčky, ktorá ukáže, prečo si ${focus} obľúbila.`
-      : `Důvěryhodnost může posílit i krátká zkušenost zákaznice, která ukáže, proč si ${focus} oblíbila.`;
+      ? `Do textu sa hodí aj krátka skúsenosť zákazníčky, ktorá ukáže, prečo si ${focus} obľúbila a čo jej na ňom vyhovuje.`
+      : `Do textu se hodí i krátká zkušenost zákaznice, která ukáže, proč si ${focus} oblíbila a co jí na něm vyhovuje.`;
   }
   return data.language === 'sk'
-    ? `${focus} preto držíme v texte krátko, konkrétne a bez zbytočného preháňania, aby celý mail pôsobil dôveryhodne.`
-    : `${focus} proto držíme v textu krátce, konkrétně a bez zbytečného přehánění, aby celý mail působil důvěryhodně.`;
+    ? `${focus} preto držíme v texte stručne, konkrétne a bez zbytočného preháňania, aby celý mail pôsobil dôveryhodne.`
+    : `${focus} proto držíme v textu stručně, konkrétně a bez zbytečného přehánění, aby celý mail působil důvěryhodně.`;
 }
 
 function buildLongDetailParagraph(data) {
