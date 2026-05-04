@@ -17,6 +17,12 @@ const productSearchEl = document.querySelector('#product-search');
 const productResultsEl = document.querySelector('#product-results');
 const selectedProductsEl = document.querySelector('#selected-products');
 const selectedProductsInput = document.querySelector('#selected-products-input');
+const advancedToggleBtn = document.querySelector('#advanced-toggle');
+const advancedPanelEl = document.querySelector('#advanced-panel');
+const manualProductInput = document.querySelector('#manual-product-input');
+const manualProductHint = document.querySelector('#manual-product-hint');
+const catalogSelectionHint = document.querySelector('#catalog-selection-hint');
+const focusBox = document.querySelector('.focus-box');
 
 let lastDraft = null;
 let selectedCatalogProducts = [];
@@ -25,6 +31,12 @@ renderSidebar();
 renderExamples('cz', 'promo');
 renderInspiration([]);
 renderProductPicker();
+updateInputMode();
+
+advancedToggleBtn?.addEventListener('click', () => {
+  advancedPanelEl?.classList.toggle('hidden');
+  advancedToggleBtn.textContent = advancedPanelEl?.classList.contains('hidden') ? 'Zobrazit advanced' : 'Skrýt advanced';
+});
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
@@ -40,6 +52,7 @@ form.addEventListener('submit', (event) => {
 });
 
 productSearchEl?.addEventListener('input', () => renderProductPicker(productSearchEl.value));
+manualProductInput?.addEventListener('input', () => updateInputMode());
 
 copyBtn.addEventListener('click', async () => {
   if (!outputEl.textContent.trim()) return;
@@ -115,6 +128,7 @@ function renderSelectedProducts() {
   if (!selectedCatalogProducts.length) {
     selectedProductsEl.innerHTML = '<div class="empty-state">Zatím není vybraný žádný katalogový produkt.</div>';
     syncSelectedProductsInput();
+    updateInputMode();
     return;
   }
 
@@ -126,6 +140,7 @@ function renderSelectedProducts() {
     selectedProductsEl.appendChild(chip);
   });
   syncSelectedProductsInput();
+  updateInputMode();
 }
 
 function searchCatalog(query = '') {
@@ -175,6 +190,26 @@ function syncSelectedProductsInput() {
     price: item.price,
     visible: item.visible
   })));
+}
+
+function updateInputMode() {
+  const hasCatalogSelection = selectedCatalogProducts.length > 0;
+  if (manualProductInput) {
+    manualProductInput.disabled = hasCatalogSelection;
+    if (hasCatalogSelection) manualProductInput.value = '';
+  }
+  focusBox?.classList.toggle('disabled', hasCatalogSelection);
+  if (manualProductHint) {
+    manualProductHint.textContent = hasCatalogSelection
+      ? 'Produktový focus teď řídí vybraný katalog. Ruční pole je vypnuté.'
+      : 'Tohle pole použij jen jako fallback, když nechceš vybírat produkt z katalogu.';
+  }
+  if (catalogSelectionHint) {
+    catalogSelectionHint.textContent = hasCatalogSelection
+      ? `${selectedCatalogProducts.length} produktů vybráno, generátor pojede primárně z katalogu.`
+      : 'Bez vybraného produktu bude výstup slabší.';
+    catalogSelectionHint.classList.toggle('ready', hasCatalogSelection);
+  }
 }
 
 function renderExamples(language, campaignType) {

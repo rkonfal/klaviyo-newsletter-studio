@@ -34,37 +34,33 @@
       </aside>
 
       <main class="main">
+        <section class="card hero-card">
+          <div>
+            <h2>Vytvoř newsletter z reálných produktů</h2>
+            <p>Vyber produkty, napiš téma a krátké zadání. Zbytek dopočítá generátor sám.</p>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">Katalog produktů</span>
+            <span class="badge">CZ + SK</span>
+            <span class="badge">HTML export</span>
+          </div>
+        </section>
+
         <section class="card">
-          <h2>Vstup</h2>
+          <div class="section-head">
+            <div>
+              <h2>Vstup</h2>
+              <p class="muted-copy">Basic režim drží minimum polí, advanced schovává jen jemné ladění.</p>
+            </div>
+            <button id="advanced-toggle" class="secondary" type="button">Zobrazit advanced</button>
+          </div>
           <form id="generator-form">
-            <div class="grid">
+            <div class="grid compact-grid">
               <label>
                 Jazyk
                 <select name="language">
                   <option value="cz">Čeština</option>
                   <option value="sk">Slovenština</option>
-                </select>
-              </label>
-              <label>
-                Značka
-                <input name="brand" value="Království tianDe" />
-              </label>
-              <label>
-                Téma
-                <input name="theme" placeholder="např. jarní restart pleti" required />
-              </label>
-              <label>
-                Produkt / focus
-                <input name="product" placeholder="např. kolagen marine nebo hlavní produktová řada" required />
-              </label>
-              <label>
-                Typ kampaně
-                <select name="campaignType">
-                  <option value="promo">Promo</option>
-                  <option value="education">Edukace</option>
-                  <option value="launch">Launch</option>
-                  <option value="event">Event</option>
-                  <option value="urgency">Urgency</option>
                 </select>
               </label>
               <label>
@@ -75,53 +71,92 @@
                   <option value="long">Delší</option>
                 </select>
               </label>
-              <label>
-                Tone (high-seller override)
-                <select name="tonePreset">
-                  <option value="direct">Přímý</option>
-                  <option value="warm">Teplejší</option>
-                  <option value="urgent">Urgentní</option>
-                  <option value="educational">Edukativní</option>
-                </select>
-              </label>
-              <label>
-                Segment
-                <input name="segment" placeholder="např. věrní zákazníci" />
-              </label>
-              <label>
-                Nabídka
-                <input name="offer" placeholder="např. 20 % sleva do neděle" />
-              </label>
-              <label>
-                CTA cíl
-                <input name="ctaGoal" placeholder="např. objednat se slevou" />
-              </label>
-              <label>
-                Multi-product režim
-                <select name="multiProductMode">
-                  <option value="auto" selected>Auto</option>
-                  <option value="bundle">Bundle</option>
-                  <option value="routine">Rutina</option>
-                  <option value="top-picks">Top 3 výběr</option>
-                  <option value="cross-sell">Cross-sell</option>
-                </select>
+              <label class="full-span">
+                Téma kampaně
+                <input name="theme" placeholder="např. Den matek, jarní restart pleti, letní balíček" required />
               </label>
             </div>
+
             <section class="product-picker">
               <div class="product-picker-header">
-                <strong>Produkty z katalogu</strong>
-                <small>Můžeš vybrat 1 i více produktů. Generátor je pak zohlední ve copy.</small>
+                <div>
+                  <strong>Produkty z katalogu</strong>
+                  <small>Vyber jeden produkt, nebo poskládej více produktů do jednoho mailu.</small>
+                </div>
+                <div id="catalog-selection-hint" class="selection-hint">Bez vybraného produktu bude výstup slabší.</div>
               </div>
               <input id="product-search" type="text" placeholder="Hledej podle názvu, kódu, EAN nebo URL" autocomplete="off" />
               <div id="selected-products" class="selected-products"></div>
               <div id="product-results" class="product-results"></div>
               <input type="hidden" name="selectedProducts" id="selected-products-input" />
             </section>
+
+            <div class="focus-box">
+              <label class="full-span">
+                Ruční focus, jen když nechceš jet čistě podle katalogu
+                <input id="manual-product-input" name="product" placeholder="např. hlavní produktová řada nebo fallback focus" />
+              </label>
+              <small id="manual-product-hint">Když vybereš produkt z katalogu, tohle pole se automaticky odstaví.</small>
+            </div>
+
             <label>
               Brief
-              <textarea name="brief" rows="5" placeholder="Co přesně má newsletter říct, co zdůraznit, čemu se vyhnout"></textarea>
+              <textarea name="brief" rows="6" placeholder="Např. Blíží se Den matek 10. 5. Chci z toho udělat tip na dárek pro maminku. V textu zdůrazni hlavní benefity produktu a přidej krátkou zkušenost zákaznice."></textarea>
             </label>
-            <button type="submit">Vygenerovat prodejní newsletter</button>
+
+            <div id="advanced-panel" class="advanced-panel hidden">
+              <div class="grid">
+                <label>
+                  Typ kampaně
+                  <select name="campaignType">
+                    <option value="promo">Promo</option>
+                    <option value="education">Edukace</option>
+                    <option value="launch">Launch</option>
+                    <option value="event">Event</option>
+                    <option value="urgency">Urgency</option>
+                  </select>
+                </label>
+                <label>
+                  Značka
+                  <input name="brand" value="Království tianDe" />
+                </label>
+                <label>
+                  Segment
+                  <input name="segment" placeholder="např. věrní zákazníci" />
+                </label>
+                <label>
+                  Nabídka
+                  <input name="offer" placeholder="např. 20 % sleva do neděle" />
+                </label>
+                <label>
+                  CTA cíl
+                  <input name="ctaGoal" placeholder="např. objednat se slevou" />
+                </label>
+                <label>
+                  Multi-product režim
+                  <select name="multiProductMode">
+                    <option value="auto" selected>Auto</option>
+                    <option value="bundle">Bundle</option>
+                    <option value="routine">Rutina</option>
+                    <option value="top-picks">Top 3 výběr</option>
+                    <option value="cross-sell">Cross-sell</option>
+                  </select>
+                </label>
+                <label>
+                  Tone override
+                  <select name="tonePreset">
+                    <option value="direct">Přímý</option>
+                    <option value="warm">Teplejší</option>
+                    <option value="urgent">Urgentní</option>
+                    <option value="educational">Edukativní</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit">Vygenerovat newsletter</button>
+            </div>
           </form>
         </section>
 
