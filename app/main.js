@@ -510,28 +510,25 @@ function buildBlocks(data, cta, angle, inspiration) {
   const multiIntro = getSelectedProducts(data).length > 1 ? buildMultiIntro(data) : '';
   const multiSupport = getSelectedProducts(data).length > 1 ? buildMultiSupport(data) : '';
   const actionLead = isSoftOffer(data.offer) ? '' : offer;
+  const extraParagraphs = buildLengthParagraphs(data, inspiration);
 
   const blocks = data.language === 'sk'
     ? [
         { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je práve teraz téma, ktorá si zaslúži pozornosť. ${buildConcreteOpening(data) || whyNow}`) },
         { title: 'DETAIL', text: cleanCopy(detail || multiIntro || `${capitalize(focus)} komunikujeme stručne, konkrétne a s jasným benefitom pre čitateľa.`) },
         { title: 'DÔVOD', text: cleanCopy(detail2 || multiSupport || proofLine) },
+        ...extraParagraphs.map((text, index) => ({ title: index === 0 ? 'DOPLNENIE' : 'VIAC', text: cleanCopy(text) })),
         { title: 'AKCIA', text: cleanCopy(`${actionLead ? `${actionLead} ` : ''}${cta}.`) }
       ]
     : [
         { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je právě teď téma, které si zaslouží pozornost. ${buildConcreteOpening(data) || whyNow}`) },
         { title: 'DETAIL', text: cleanCopy(detail || multiIntro || `${capitalize(focus)} komunikujeme stručně, konkrétně a s jasným benefitem pro čtenáře.`) },
         { title: 'DŮVOD', text: cleanCopy(detail2 || multiSupport || proofLine) },
+        ...extraParagraphs.map((text, index) => ({ title: index === 0 ? 'DOPLNĚNÍ' : 'VÍC', text: cleanCopy(text) })),
         { title: 'AKCE', text: cleanCopy(`${actionLead ? `${actionLead} ` : ''}${cta}.`) }
       ];
 
   if (data.length === 'short') return blocks.slice(0, 3);
-  if (data.length === 'long') {
-    blocks.splice(3, 0, {
-      title: data.language === 'sk' ? 'DOPLNENIE' : 'DOPLNĚNÍ',
-      text: cleanCopy(buildSupportParagraph(data, inspiration))
-    });
-  }
   return blocks;
 }
 
@@ -1131,10 +1128,10 @@ function isGenericFocus(value = '') {
 
 function buildSupportParagraph(data, inspiration) {
   const fallback = data.language === 'sk'
-    ? 'Ak máš konkrétny bonus, termín alebo limit, doplň ho sem ako krátku finálnu vetu.'
-    : 'Pokud máš konkrétní bonus, termín nebo limit, doplň ho sem jako krátkou finální větu.';
+    ? `${getPrimaryFocus(data)} dávame do mailu tak, aby bol rýchlo pochopiteľný, konkrétny a ľahko vyberateľný.`
+    : `${getPrimaryFocus(data)} dáváme do mailu tak, aby byl rychle pochopitelný, konkrétní a snadno vybratelný.`;
   const briefSentence = splitSentences(data.brief)[2];
-  return briefSentence || fallback;
+  return briefSentence ? rewriteBriefSentence(briefSentence, data, 'support') : fallback;
 }
 
 function buildConcreteOpening(data) {
@@ -1148,6 +1145,25 @@ function buildConcreteOpening(data) {
   return data.language === 'sk'
     ? `${focus} dávame do pozornosti stručne a bez zbytočnej omáčky.`
     : `${focus} dáváme do pozornosti stručně a bez zbytečné omáčky.`;
+}
+
+function buildLengthParagraphs(data, inspiration) {
+  if (data.length === 'short') return [];
+  const paragraphs = [buildSupportParagraph(data, inspiration)];
+  if (data.length === 'long') paragraphs.push(buildExtraLongParagraph(data));
+  return paragraphs.filter(Boolean);
+}
+
+function buildExtraLongParagraph(data) {
+  const focus = getPrimaryFocus(data);
+  if (shouldLeadWithTheme(data)) {
+    return data.language === 'sk'
+      ? `${focus} môže fungovať ako milý a praktický tip pre tých, ktorí nechcú siahať po obyčajnom darčeku bez nápadu.`
+      : `${focus} může fungovat jako milý a praktický tip pro ty, kdo nechtějí sáhnout po obyčejném dárku bez nápadu.`;
+  }
+  return data.language === 'sk'
+    ? `${focus} si zaslúži v maile ešte jednu konkrétnu vetu navyše, aby bol dôvod kúpy úplne jasný aj pri rýchlom prečítaní.`
+    : `${focus} si zaslouží v mailu ještě jednu konkrétní větu navíc, aby byl důvod koupě úplně jasný i při rychlém přečtení.`;
 }
 
 function getBriefLead(data) {
