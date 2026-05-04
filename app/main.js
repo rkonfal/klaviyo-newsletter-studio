@@ -130,9 +130,11 @@ function renderSelectedProducts() {
 
 function searchCatalog(query = '') {
   const cleaned = cleanField(query).toLowerCase();
-  if (!cleaned) return (catalog.items || []).filter((item) => item.visible).slice(0, 12);
-  return (catalog.items || [])
-    .filter((item) => !selectedCatalogProducts.some((selected) => (selected.code || selected.title) === (item.code || item.title)))
+  const baseItems = (catalog.items || [])
+    .filter((item) => !isPlaceholderProduct(item))
+    .filter((item) => !selectedCatalogProducts.some((selected) => (selected.code || selected.title) === (item.code || item.title)));
+  if (!cleaned) return baseItems.filter((item) => item.visible).slice(0, 12);
+  return baseItems
     .map((item) => ({ item, score: scoreCatalogMatch(item, cleaned) }))
     .filter(({ score }) => score > 0)
     .sort((a, b) => b.score - a.score)
@@ -150,6 +152,7 @@ function scoreCatalogMatch(item, query) {
     else if (field.includes(query)) score += 20;
   });
   if (item.visible) score += 10;
+  if (item.code === query || (item.search || []).some((entry) => cleanField(entry) === query)) score += 60;
   return score;
 }
 
@@ -418,7 +421,7 @@ function scoreAngle(angle, data, inspiration) {
 function buildPreheader(data, subset, angle) {
   const focus = getPrimaryFocus(data);
   const offer = normalizeSentence(data.offer);
-  const briefLead = firstMeaningfulSentence(data.brief);
+  const briefLead = getBriefLead(data);
   const multiLead = getSelectedProducts(data).length > 1 ? buildMultiModeLead(data) : '';
   const map = {
     cz: {
@@ -500,8 +503,8 @@ function strengthenHeadline(data, headline) {
 function buildBlocks(data, cta, angle, inspiration) {
   const focus = getPrimaryFocus(data);
   const offer = normalizeSentence(data.offer);
-  const detail = firstMeaningfulSentence(data.brief);
-  const detail2 = secondMeaningfulSentence(data.brief);
+  const detail = getBriefLead(data);
+  const detail2 = getBriefSupport(data);
   const whyNow = buildWhyNow(data, data.language, angle);
   const proofLine = buildProof(data, data.language);
   const multiIntro = getSelectedProducts(data).length > 1 ? buildMultiIntro(data) : '';
@@ -614,9 +617,10 @@ function scoreUrgencyStrength(tuned, subject, preheader, blocks) {
 function buildWhyNow(data, language, angle) {
   const theme = getThemeFocus(data);
   const focus = getPrimaryFocus(data);
+  const dateHint = data.briefSignals?.occasionDate ? (language === 'sk' ? ` Blíži sa ${data.briefSignals.occasionDate}.` : ` Blíží se ${data.briefSignals.occasionDate}.`) : '';
   const map = {
     cz: {
-      benefit: shouldLeadWithTheme(data) ? `${theme} je dobrý moment připomenout tip, který se hodí jako dárek.` : `${focus} je právě teď dobrý tip pro zákazníky, kteří chtějí něco konkrétního a srozumitelného.`,
+      benefit: shouldLeadWithTheme(data) ? `${theme} je dobrý moment připomenout tip, který se hodí jako dárek.${dateHint}` : `${focus} je právě teď dobrý tip pro zákazníky, kteří chtějí něco konkrétního a srozumitelného.`,
       urgency: data.offer ? `${data.offer} Proto dává smysl jednat teď.` : `${focus} má smysl připomenout právě teď.`,
       curiosity: `Uvnitř rychle ukážeme, proč se na ${focus.toLowerCase()} podívat blíž.`,
       result: `Hned vysvětlíme, co může ${focus.toLowerCase()} přinést.`,
@@ -627,7 +631,7 @@ function buildWhyNow(data, language, angle) {
       offer: `Hned nahoře musí být jasné, co zákazník získá.`
     },
     sk: {
-      benefit: shouldLeadWithTheme(data) ? `${theme} je dobrý moment pripomenúť tip, ktorý sa hodí ako darček.` : `${focus} je práve teraz dobrý tip pre zákazníkov, ktorí chcú niečo konkrétne a zrozumiteľné.`,
+      benefit: shouldLeadWithTheme(data) ? `${theme} je dobrý moment pripomenúť tip, ktorý sa hodí ako darček.${dateHint}` : `${focus} je práve teraz dobrý tip pre zákazníkov, ktorí chcú niečo konkrétne a zrozumiteľné.`,
       urgency: data.offer ? `${data.offer} Preto dáva zmysel konať teraz.` : `${focus} má zmysel pripomenúť práve teraz.`,
       curiosity: `Vo vnútri rýchlo ukážeme, prečo sa na ${focus.toLowerCase()} pozrieť bližšie.`,
       result: `Hneď vysvetlíme, čo môže ${focus.toLowerCase()} priniesť.`,
@@ -643,12 +647,17 @@ function buildWhyNow(data, language, angle) {
 
 function buildProof(data, language) {
   const focus = getPrimaryFocus(data).toLowerCase();
+  if (data.briefSignals?.mentionReview) {
+    return language === 'sk'
+      ? `Doplň krátku skúsenosť zákazníčky, ktorá vysvetlí, prečo si ${focus} obľúbila.`
+      : `Doplň krátkou zkušenost zákaznice, která vysvětlí, proč si ${focus} oblíbila.`;
+  }
   if (data.campaignType === 'education') {
     return language === 'sk'
       ? `Stručné vysvetlenie pomôže rýchlo pochopiť, prečo dáva ${focus} zmysel.`
       : `Stručné vysvětlení pomůže rychle pochopit, proč dává ${focus} smysl.`;
   }
-  if (data.offer) {
+  if (data.offer || data.briefSignals?.mentionBenefits) {
     return language === 'sk'
       ? `Jasná ponuka a konkrétny benefit pomáhajú rýchlo rozhodnúť, či je ${focus} správna voľba.`
       : `Jasná nabídka a konkrétní benefit pomáhají rychle rozhodnout, jestli je ${focus} správná volba.`;
@@ -833,18 +842,20 @@ function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headli
 
 function sanitizeInput(data) {
   const selectedProducts = parseSelectedProducts(data.selectedProducts);
+  const brief = cleanField(data.brief);
   return {
     ...data,
     theme: cleanField(data.theme),
     product: cleanField(data.product),
     offer: cleanField(data.offer),
-    brief: cleanField(data.brief),
+    brief,
     segment: cleanField(data.segment),
     ctaGoal: cleanField(data.ctaGoal),
     brand: cleanField(data.brand),
     multiProductMode: cleanField(data.multiProductMode) || 'auto',
     selectedProducts,
-    productNames: selectedProducts.map((item) => item.title).filter(Boolean)
+    productNames: selectedProducts.map((item) => item.title).filter(Boolean),
+    briefSignals: extractBriefSignals(brief)
   };
 }
 
@@ -919,7 +930,29 @@ function buildProductListSentence(data) {
 }
 
 function isInstructionSentence(value = '') {
-  return /(napiš|napiš mi|napište|zaměř se|zameraj sa|zaměřte se|chceme aby|chceme, aby|potřebuju|potrebuju|přidej|pridej|doplň|dopln|recenzi|review|udělej|urob|vypiš|vypis)/i.test(cleanField(value));
+  return /(napiš|napiš mi|napište|zaměř se|zameraj sa|zaměřte se|chceme aby|chceme, aby|potřebuju|potrebuju|přidej|pridej|doplň|dopln|udělej|urob|vypiš|vypis)/i.test(cleanField(value));
+}
+
+function extractBriefSignals(brief = '') {
+  const cleaned = cleanField(brief);
+  const lower = cleaned.toLowerCase();
+  return {
+    mentionBenefits: /(benefit|benefity|prodejní benefity|predajné benefity)/i.test(cleaned),
+    mentionReview: /(recenzi|reference|zkušenost zákazníka|skúsenosť zákazníka|review|testimonial)/i.test(cleaned),
+    mentionGift: /(mamink|dárek|darček|potěší|potesi|den matek)/i.test(lower),
+    audienceMothers: /(mamink|mamince|maminku|maminkám)/i.test(lower),
+    occasionDate: extractOccasionDate(cleaned),
+    usableSentences: splitSentences(cleaned)
+  };
+}
+
+function extractOccasionDate(value = '') {
+  const match = cleanField(value).match(/\b(\d{1,2})\.?\s*(\d{1,2})?\.?\b/);
+  return match ? match[0] : '';
+}
+
+function isPlaceholderProduct(item) {
+  return !item || cleanField(item.title) === '...';
 }
 
 function shouldLeadWithTheme(data) {
@@ -1075,6 +1108,38 @@ function buildConcreteOpening(data) {
     : `${focus} dáváme do pozornosti stručně a bez zbytečné omáčky.`;
 }
 
+function getBriefLead(data) {
+  const usable = data.briefSignals?.usableSentences || [];
+  if (usable[0]) return usable[0];
+  if (data.briefSignals?.mentionGift) {
+    return data.language === 'sk'
+      ? `${getPrimaryFocus(data)} môže byť pekným tipom pre tých, ktorí chcú mamke vybrať niečo milé a užitočné.`
+      : `${getPrimaryFocus(data)} může být hezkým tipem pro ty, kdo chtějí mamince vybrat něco milého a užitečného.`;
+  }
+  return '';
+}
+
+function getBriefSupport(data) {
+  const usable = data.briefSignals?.usableSentences || [];
+  if (usable[1]) return usable[1];
+  if (data.briefSignals?.mentionBenefits && data.briefSignals?.mentionReview) {
+    return data.language === 'sk'
+      ? `Zameraj sa na hlavné benefity produktu a doplň krátku skúsenosť zákazníčky, ktorá podporí dôveryhodnosť.`
+      : `Zaměř se na hlavní benefity produktu a doplň krátkou zkušenost zákaznice, která podpoří důvěryhodnost.`;
+  }
+  if (data.briefSignals?.mentionBenefits) {
+    return data.language === 'sk'
+      ? `Zdôrazni hlavné benefity produktu a prečo dáva zmysel práve pri tejto príležitosti.`
+      : `Zdůrazni hlavní benefity produktu a proč dává smysl právě při této příležitosti.`;
+  }
+  if (data.briefSignals?.mentionReview) {
+    return data.language === 'sk'
+      ? `Doplň krátku skúsenosť zákazníčky, ktorá produktu dodá dôveryhodnosť.`
+      : `Doplň krátkou zkušenost zákaznice, která produktu dodá důvěryhodnost.`;
+  }
+  return '';
+}
+
 function buildConcreteSupport(data) {
   const focus = getPrimaryFocus(data);
   const selected = getSelectedProducts(data);
@@ -1093,21 +1158,29 @@ function buildConcreteSupport(data) {
     return data.language === 'sk'
       ? [
           `${focus} môže byť príjemným tipom pre tých, ktorí chcú darovať niečo osobné a zároveň užitočné.`,
-          `Text preto držíme krátky, zrozumiteľný a zameraný na to, prečo sa tento tip hodí práve k tejto príležitosti.`
+          data.briefSignals?.mentionReview
+            ? `Pridaj aj krátku skúsenosť zákazníčky, ktorá vysvetlí, prečo si tento produkt obľúbila.`
+            : `Text preto držíme krátky, zrozumiteľný a zameraný na to, prečo sa tento tip hodí práve k tejto príležitosti.`
         ]
       : [
           `${focus} může být příjemným tipem pro ty, kdo chtějí darovat něco osobního a zároveň užitečného.`,
-          `Text proto držíme krátký, srozumitelný a zaměřený na to, proč se tenhle tip hodí právě k této příležitosti.`
+          data.briefSignals?.mentionReview
+            ? `Přidej i krátkou zkušenost zákaznice, která vysvětlí, proč si tenhle produkt oblíbila.`
+            : `Text proto držíme krátký, srozumitelný a zaměřený na to, proč se tenhle tip hodí právě k této příležitosti.`
         ];
   }
   return data.language === 'sk'
     ? [
         `${focus} komunikujeme jednoducho, aby bolo hneď jasné, pre koho sa hodí a prečo stojí za pozornosť.`,
-        `Namiesto dlhého vysvetľovania ideme rovno na konkrétny benefit a jasnú výzvu k akcii.`
+        data.briefSignals?.mentionBenefits
+          ? `Zdôrazni konkrétne benefity produktu a zakonči text jasnou výzvou k akcii.`
+          : `Namiesto dlhého vysvetľovania ideme rovno na konkrétny benefit a jasnú výzvu k akcii.`
       ]
     : [
         `${focus} komunikujeme jednoduše, aby bylo hned jasné, pro koho se hodí a proč stojí za pozornost.`,
-        `Místo dlouhého vysvětlování jdeme rovnou na konkrétní benefit a jasnou výzvu k akci.`
+        data.briefSignals?.mentionBenefits
+          ? `Zdůrazni konkrétní benefity produktu a zakonči text jasnou výzvou k akci.`
+          : `Místo dlouhého vysvětlování jdeme rovnou na konkrétní benefit a jasnou výzvu k akci.`
       ];
 }
 
