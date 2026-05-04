@@ -325,6 +325,8 @@ function buildSubjectAngles(data, subset) {
   const product = capitalize(getPrimaryFocus(data));
   const productLine = capitalize(getProductLine(data, 3));
   const theme = capitalize(data.theme);
+  const themeFocus = capitalize(getThemeFocus(data));
+  const isThemeLed = shouldLeadWithTheme(data);
   const isMulti = getSelectedProducts(data).length > 1;
   const deadlineWord = data.language === 'sk' ? 'končí čoskoro' : 'končí brzy';
   const moreSense = data.language === 'sk' ? 'práve teraz dáva zmysel' : 'právě teď dává smysl';
@@ -332,15 +334,19 @@ function buildSubjectAngles(data, subset) {
   const benefitVerb = data.language === 'sk' ? 'pomôže' : 'pomůže';
   const curiosity = isMulti
     ? (data.language === 'sk' ? `Ako poskladať výber: ${productLine}` : `Jak poskládat výběr: ${productLine}`)
-    : (data.language === 'sk' ? `Prečo si ${product.toLowerCase()} berie stále viac ľudí` : `Proč si ${product.toLowerCase()} bere stále víc lidí`);
-  const promoOffer = offer ? `${product}: ${offer}` : isMulti ? `${productLine} ${moreSense}` : `${product} ${moreSense}`;
-  const urgencyOffer = offer ? `${offer} ${deadlineWord}` : `${product} ${deadlineWord}`;
+    : isThemeLed
+      ? (data.language === 'sk' ? `${themeFocus} sa blíži` : `${themeFocus} se blíží`)
+      : (data.language === 'sk' ? `Prečo si ${product.toLowerCase()} berie stále viac ľudí` : `Proč si ${product.toLowerCase()} bere stále víc lidí`);
+  const promoOffer = offer ? `${isThemeLed ? themeFocus : product}: ${offer}` : isMulti ? `${productLine} ${moreSense}` : isThemeLed ? `${themeFocus} ${moreSense}` : `${product} ${moreSense}`;
+  const urgencyOffer = offer ? `${offer} ${deadlineWord}` : `${isThemeLed ? themeFocus : product} ${deadlineWord}`;
   const educationAngle = `${theme}: ${youNeed}`;
   const resultAngle = isMulti
     ? (data.language === 'sk' ? `${productLine}, ktoré spolu dávajú zmysel` : `${productLine}, které spolu dávají smysl`)
-    : (data.language === 'sk' ? `${product}, ktorý ${benefitVerb} práve teraz` : `${product}, který ${benefitVerb} právě teď`);
+    : isThemeLed
+      ? (data.language === 'sk' ? `${themeFocus} a tip, ktorý ${benefitVerb} s výberom` : `${themeFocus} a tip, který ${benefitVerb} s výběrem`)
+      : (data.language === 'sk' ? `${product}, ktorý ${benefitVerb} práve teraz` : `${product}, který ${benefitVerb} právě teď`);
   const launchAngle = `Novinka: ${product}`;
-  const eventAngle = data.language === 'sk' ? `${theme}, ktoré sa blíži` : `${theme}, které se blíží`;
+  const eventAngle = data.language === 'sk' ? `${themeFocus}, ktoré sa blíži` : `${themeFocus}, které se blíží`;
 
   const base = {
     promo: [
@@ -403,6 +409,8 @@ function scoreAngle(angle, data, inspiration) {
   if (data.offer && ['offer', 'urgency', 'benefit'].includes(angle)) score += 10;
   if (data.tonePreset === 'urgent' && ['urgency', 'deadline'].includes(angle)) score += 10;
   if (data.tonePreset === 'educational' && ['usefulness', 'number'].includes(angle)) score += 10;
+  if (shouldLeadWithTheme(data) && ['benefit', 'curiosity', 'offer'].includes(angle)) score += 18;
+  if (shouldLeadWithTheme(data) && ['urgency', 'deadline'].includes(angle) && !data.offer) score -= 12;
   if (inspiration[0]?.subject && inspiration[0].score > 0 && ['benefit', 'curiosity', 'offer'].includes(angle)) score += 5;
   return score;
 }
@@ -837,7 +845,8 @@ function splitSentences(value = '') {
   return cleanField(value)
     .split(/(?<=[.!?])\s+/)
     .map((item) => item.trim())
-    .filter((item) => item.length >= 12);
+    .filter((item) => item.length >= 12)
+    .filter((item) => !isInstructionSentence(item));
 }
 
 function parseSelectedProducts(value = '') {
@@ -882,6 +891,25 @@ function buildProductListSentence(data) {
   if (!names.length) return '';
   if (names.length <= 3) return names.join(', ');
   return `${names.slice(0, 3).join(', ')} + ${names.length - 3} další`;
+}
+
+function isInstructionSentence(value = '') {
+  return /(napiš|napiš mi|napište|zaměř se|zameraj sa|zaměřte se|chceme aby|chceme, aby|potřebuju|potrebuju|přidej|pridej|doplň|dopln|recenzi|review|udělej|urob|vypiš|vypis)/i.test(cleanField(value));
+}
+
+function shouldLeadWithTheme(data) {
+  const theme = cleanField(data.theme);
+  if (!theme) return false;
+  if (isSeasonalTheme(theme)) return true;
+  return isGenericFocus(cleanField(data.product)) && !!theme;
+}
+
+function isSeasonalTheme(value = '') {
+  return /(den matek|mothers day|valentýn|valentin|vánoce|vanoce|velikonoce|back to school|černý pátek|black friday|svátek|svatek|dárk|darcek)/i.test(cleanField(value));
+}
+
+function getThemeFocus(data) {
+  return cleanField(data.theme) || getPrimaryFocus(data);
 }
 
 function resolveMultiProductMode(data) {
@@ -1015,6 +1043,7 @@ function cleanCopy(value = '') {
     .replace(/\b(benefit držíme úplně nahoře|benefit držíme úplne hore)\b/gi, '')
     .replace(/\b(hlavní akce je|hlavná akcia je)\b:?/gi, '')
     .replace(/\b(Podobné kampaně nejčastěji stály na promise typu|Podobné kampane najčastejšie stáli na promise typu):?[^.]*\.?/gi, '')
+    .replace(/\bse blíží končí brzy\b/gi, 'se blíží')
     .replace(/\s+/g, ' ')
     .trim();
 }
