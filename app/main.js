@@ -209,6 +209,7 @@ function appendListItem(target, text) {
 
 function generateNewsletter(data) {
   const tuned = sanitizeInput({ ...data, mode: 'high-seller', tonePreset: normalizeTone(data) });
+  tuned.multiProductMode = resolveMultiProductMode(tuned);
   const subset = pickSubset(tuned);
   const inspiration = findInspiration(tuned);
   let cta = buildCta(tuned, subset, inspiration);
@@ -410,9 +411,10 @@ function buildPreheader(data, subset, angle) {
   const focus = getPrimaryFocus(data);
   const offer = normalizeSentence(data.offer);
   const briefLead = firstMeaningfulSentence(data.brief);
+  const multiLead = getSelectedProducts(data).length > 1 ? buildMultiModeLead(data) : '';
   const map = {
     cz: {
-      benefit: offer || `${focus} v krátkém a srozumitelném mailu bez omáčky.`,
+      benefit: offer || multiLead || `${focus} v krátkém a srozumitelném mailu bez omáčky.`,
       urgency: offer ? `${offer} Platí teď, proto mrkni dovnitř.` : `${focus} řešíme stručně a rovnou k věci.`,
       curiosity: briefLead || `Uvnitř najdeš konkrétní důvod, proč se na ${focus.toLowerCase()} podívat právě teď.`,
       result: `Ukážeme, co ${focus.toLowerCase()} přinese a pro koho dává smysl.`,
@@ -423,7 +425,7 @@ function buildPreheader(data, subset, angle) {
       offer: offer || `Konkrétní důvod otevřít mail je uvnitř hned nahoře.`
     },
     sk: {
-      benefit: offer || `${focus} v krátkom a zrozumiteľnom maile bez omáčky.`,
+      benefit: offer || multiLead || `${focus} v krátkom a zrozumiteľnom maile bez omáčky.`,
       urgency: offer ? `${offer} Platí teraz, preto sa pozri dovnútra.` : `${focus} riešime stručne a rovno k veci.`,
       curiosity: briefLead || `Vo vnútri nájdeš konkrétny dôvod, prečo sa na ${focus.toLowerCase()} pozrieť práve teraz.`,
       result: `Ukážeme, čo ${focus.toLowerCase()} prinesie a pre koho dáva zmysel.`,
@@ -448,6 +450,7 @@ function strengthenPreheader(data, preheader) {
 function buildHeadline(data, subset, angle, inspiration) {
   const focus = capitalize(getPrimaryFocus(data));
   const theme = capitalize(data.theme);
+  const multiHeadline = getSelectedProducts(data).length > 1 ? buildMultiHeadline(data) : null;
   const angleMap = {
     cz: {
       benefit: `${focus} teď dává smysl otevřít`,
@@ -472,7 +475,7 @@ function buildHeadline(data, subset, angle, inspiration) {
       offer: data.offer ? `${focus} a ponuka, ktorú je škoda minúť` : `${focus} bez zbytočnej omáčky`
     }
   };
-  return cleanCopy(angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${focus}`);
+  return cleanCopy(multiHeadline || angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${focus}`);
 }
 
 function strengthenHeadline(data, headline) {
@@ -489,22 +492,20 @@ function buildBlocks(data, cta, angle, inspiration) {
   const detail2 = secondMeaningfulSentence(data.brief);
   const whyNow = buildWhyNow(data, data.language, angle);
   const proofLine = buildProof(data, data.language);
-  const productListSentence = buildProductListSentence(data);
-  const multiIntro = getSelectedProducts(data).length > 1
-    ? (data.language === 'sk' ? `V tomto maile pracujeme s výberom produktov: ${productListSentence}.` : `V tomhle mailu pracujeme s výběrem produktů: ${productListSentence}.`)
-    : '';
+  const multiIntro = getSelectedProducts(data).length > 1 ? buildMultiIntro(data) : '';
+  const multiSupport = getSelectedProducts(data).length > 1 ? buildMultiSupport(data) : '';
 
   const blocks = data.language === 'sk'
     ? [
         { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je práve teraz téma, ktorá si zaslúži pozornosť. ${offer || whyNow}`) },
         { title: 'DETAIL', text: cleanCopy(detail || multiIntro || `${capitalize(focus)} komunikujeme stručne, konkrétne a s jasným benefitom pre čitateľa.`) },
-        { title: 'DÔVOD', text: cleanCopy(detail2 || proofLine) },
+        { title: 'DÔVOD', text: cleanCopy(detail2 || multiSupport || proofLine) },
         { title: 'AKCIA', text: cleanCopy(`${offer ? `${offer} ` : ''}${cta}.`) }
       ]
     : [
         { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je právě teď téma, které si zaslouží pozornost. ${offer || whyNow}`) },
         { title: 'DETAIL', text: cleanCopy(detail || multiIntro || `${capitalize(focus)} komunikujeme stručně, konkrétně a s jasným benefitem pro čtenáře.`) },
-        { title: 'DŮVOD', text: cleanCopy(detail2 || proofLine) },
+        { title: 'DŮVOD', text: cleanCopy(detail2 || multiSupport || proofLine) },
         { title: 'AKCE', text: cleanCopy(`${offer ? `${offer} ` : ''}${cta}.`) }
       ];
 
@@ -675,7 +676,7 @@ function buildCta(data, subset, inspiration) {
   const selectedCount = getSelectedProducts(data).length;
   if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
   if (selectedCount > 1) {
-    return strengthenCta(data, data.language === 'sk' ? 'Chcem si vybrať produkty' : 'Chci si vybrat produkty');
+    return strengthenCta(data, buildMultiCta(data));
   }
   if (data.offer) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
   if (data.campaignType === 'event') return strengthenCta(data, data.language === 'sk' ? 'Chcem si rezervovať miesto' : 'Chci si rezervovat místo');
@@ -808,6 +809,7 @@ function sanitizeInput(data) {
     segment: cleanField(data.segment),
     ctaGoal: cleanField(data.ctaGoal),
     brand: cleanField(data.brand),
+    multiProductMode: cleanField(data.multiProductMode) || 'auto',
     selectedProducts,
     productNames: selectedProducts.map((item) => item.title).filter(Boolean)
   };
@@ -880,6 +882,108 @@ function buildProductListSentence(data) {
   if (!names.length) return '';
   if (names.length <= 3) return names.join(', ');
   return `${names.slice(0, 3).join(', ')} + ${names.length - 3} další`;
+}
+
+function resolveMultiProductMode(data) {
+  const selectedCount = getSelectedProducts(data).length;
+  if (selectedCount <= 1) return 'single';
+  if (data.multiProductMode && data.multiProductMode !== 'auto') return data.multiProductMode;
+  if (data.campaignType === 'education') return 'routine';
+  if (data.offer) return 'bundle';
+  if (selectedCount >= 3) return 'top-picks';
+  return 'cross-sell';
+}
+
+function buildMultiModeLead(data) {
+  const map = {
+    cz: {
+      bundle: 'Uvnitř je zvýhodněný balíček více produktů, které patří k sobě.',
+      routine: 'Uvnitř najdeš rutinu z více produktů poskládanou krok za krokem.',
+      'top-picks': 'Uvnitř najdeš rychlý výběr nejsilnějších produktů na jedno téma.',
+      'cross-sell': 'Uvnitř najdeš doplňující produkty, které dávají smysl používat spolu.'
+    },
+    sk: {
+      bundle: 'Vo vnútri je zvýhodnený balíček viacerých produktov, ktoré patria k sebe.',
+      routine: 'Vo vnútri nájdeš rutinu z viacerých produktov poskladanú krok za krokom.',
+      'top-picks': 'Vo vnútri nájdeš rýchly výber najsilnejších produktov na jednu tému.',
+      'cross-sell': 'Vo vnútri nájdeš doplnkové produkty, ktoré dáva zmysel používať spolu.'
+    }
+  };
+  return map[data.language]?.[data.multiProductMode] || '';
+}
+
+function buildMultiHeadline(data) {
+  const line = getProductLine(data, 2);
+  const map = {
+    cz: {
+      bundle: `${line} v jednom výhodném balíčku`,
+      routine: `${line} jako rutina krok za krokem`,
+      'top-picks': `${line}, které stojí za pozornost`,
+      'cross-sell': `${line}, které fungují líp spolu`
+    },
+    sk: {
+      bundle: `${line} v jednom výhodnom balíčku`,
+      routine: `${line} ako rutina krok za krokom`,
+      'top-picks': `${line}, ktoré stoja za pozornosť`,
+      'cross-sell': `${line}, ktoré fungujú lepšie spolu`
+    }
+  };
+  return map[data.language]?.[data.multiProductMode] || null;
+}
+
+function buildMultiIntro(data) {
+  const list = buildProductListSentence(data);
+  const map = {
+    cz: {
+      bundle: `V tomhle mailu stavíme na balíčku produktů: ${list}. Důležité je ukázat jednu společnou hodnotu a jeden důvod koupit celek.`,
+      routine: `V tomhle mailu skládáme rutinu z produktů: ${list}. Copy musí čtenáře provést pořadím a ukázat, proč kroky fungují spolu.`,
+      'top-picks': `V tomhle mailu vybíráme top produkty: ${list}. Každý musí mít krátký důvod, proč je ve výběru.`,
+      'cross-sell': `V tomhle mailu propojujeme produkty: ${list}. Hlavní je ukázat, proč se vzájemně doplňují.`
+    },
+    sk: {
+      bundle: `V tomto maile staviame na balíčku produktov: ${list}. Dôležité je ukázať jednu spoločnú hodnotu a jeden dôvod kúpiť celok.`,
+      routine: `V tomto maile skladáme rutinu z produktov: ${list}. Copy musí čitateľa previesť poradím a ukázať, prečo kroky fungujú spolu.`,
+      'top-picks': `V tomto maile vyberáme top produkty: ${list}. Každý musí mať krátky dôvod, prečo je vo výbere.`,
+      'cross-sell': `V tomto maile prepájame produkty: ${list}. Hlavné je ukázať, prečo sa navzájom dopĺňajú.`
+    }
+  };
+  return map[data.language]?.[data.multiProductMode] || '';
+}
+
+function buildMultiSupport(data) {
+  const map = {
+    cz: {
+      bundle: 'Balíček musí působit jednoduše. Jedna hlavní výhoda, jeden společný výsledek a minimum rozhodování.',
+      routine: 'Rutina prodává, když je jasné pořadí, role jednotlivých kroků a výsledek po pravidelném používání.',
+      'top-picks': 'Výběr top produktů potřebuje krátké důvody výběru, ne dlouhé katalogové popisy.',
+      'cross-sell': 'Cross-sell funguje ve chvíli, kdy je jasné, co je hlavní produkt a co jeho chytré doplnění.'
+    },
+    sk: {
+      bundle: 'Balíček musí pôsobiť jednoducho. Jedna hlavná výhoda, jeden spoločný výsledok a minimum rozhodovania.',
+      routine: 'Rutina predáva, keď je jasné poradie, rola jednotlivých krokov a výsledok pri pravidelnom používaní.',
+      'top-picks': 'Výber top produktov potrebuje krátke dôvody výberu, nie dlhé katalógové popisy.',
+      'cross-sell': 'Cross-sell funguje vo chvíli, keď je jasné, čo je hlavný produkt a čo jeho chytré doplnenie.'
+    }
+  };
+  return map[data.language]?.[data.multiProductMode] || '';
+}
+
+function buildMultiCta(data) {
+  const map = {
+    cz: {
+      bundle: 'Chci celý balíček',
+      routine: 'Chci tu rutinu',
+      'top-picks': 'Chci si vybrat top produkty',
+      'cross-sell': 'Chci si vybrat produkty'
+    },
+    sk: {
+      bundle: 'Chcem celý balíček',
+      routine: 'Chcem tú rutinu',
+      'top-picks': 'Chcem si vybrať top produkty',
+      'cross-sell': 'Chcem si vybrať produkty'
+    }
+  };
+  return map[data.language]?.[data.multiProductMode] || (data.language === 'sk' ? 'Chcem si vybrať produkty' : 'Chci si vybrat produkty');
 }
 
 function getPrimaryFocus(data) {
