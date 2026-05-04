@@ -96,7 +96,7 @@ function appendListItem(target, text) {
 }
 
 function generateNewsletter(data) {
-  const tuned = { ...data, mode: 'high-seller', tonePreset: normalizeTone(data) };
+  const tuned = sanitizeInput({ ...data, mode: 'high-seller', tonePreset: normalizeTone(data) });
   const subset = pickSubset(tuned);
   const inspiration = findInspiration(tuned);
   let cta = buildCta(tuned, subset, inspiration);
@@ -111,10 +111,23 @@ function generateNewsletter(data) {
     ({ primarySubject, subjectAngles, preheader, headline, cta, blocks, salesScore } = strengthenDraft({ tuned, subset, inspiration, subjectAngles, cta, preheader, headline, blocks }));
   }
 
-  const body = blocks.map((block) => block.title ? `${block.title}\n${block.text}` : block.text).join('\n\n');
-  const salesChecks = buildSalesChecks(tuned, primarySubject.angle, cta, salesScore);
-  const html = buildHtmlDraft({ data: tuned, preheader, headline, cta, blocks });
-  return { subject: primarySubject.text, subjectAngles, preheader, headline, body, cta, blocks, html, salesChecks, inspiration, salesScore };
+  const finalDraft = finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headline, cta, blocks, salesScore, inspiration });
+  const body = finalDraft.blocks.map((block) => block.text).join('\n\n');
+  const salesChecks = buildSalesChecks(tuned, finalDraft.primarySubject.angle, finalDraft.cta, finalDraft.salesScore);
+  const html = buildHtmlDraft({ data: tuned, preheader: finalDraft.preheader, headline: finalDraft.headline, cta: finalDraft.cta, blocks: finalDraft.blocks });
+  return {
+    subject: finalDraft.primarySubject.text,
+    subjectAngles: finalDraft.subjectAngles,
+    preheader: finalDraft.preheader,
+    headline: finalDraft.headline,
+    body,
+    cta: finalDraft.cta,
+    blocks: finalDraft.blocks,
+    html,
+    salesChecks,
+    inspiration,
+    salesScore: finalDraft.salesScore
+  };
 }
 
 function strengthenDraft({ tuned, subset, inspiration, subjectAngles, cta, preheader, headline, blocks }) {
@@ -142,27 +155,21 @@ function strengthenDraft({ tuned, subset, inspiration, subjectAngles, cta, prehe
 
 function formatDraft(draft, language) {
   return [
-    `${label('mode', language)}: HIGH-SELLER`,
-    `${label('score', language)}: ${draft.salesScore.total}/100`,
-    `${label('score_breakdown', language)}: open ${draft.salesScore.openPotential}, click ${draft.salesScore.clickPotential}, clarity ${draft.salesScore.salesClarity}, urgency ${draft.salesScore.urgencyStrength}`,
-    '',
     `${label('subject', language)}: ${draft.subject}`,
     '',
     `${label('subject_variants', language)}:`,
-    ...draft.subjectAngles.map((item, index) => `${index + 1}. [${item.angle} | ${item.score}] ${item.text}`),
+    ...draft.subjectAngles.slice(0, 5).map((item, index) => `${index + 1}. ${item.text}`),
     '',
     `${label('preheader', language)}: ${draft.preheader}`,
     '',
     `${label('headline', language)}: ${draft.headline}`,
     '',
     `${label('body', language)}:`,
-    ...draft.blocks.flatMap((block) => block.title ? [`${block.title}:`, block.text, ''] : [block.text, '']),
+    ...draft.blocks.map((block) => block.text),
+    '',
     `${label('cta', language)}: ${draft.cta}`,
     '',
-    `${label('html', language)}: připraveno ke kopírování tlačítkem`,
-    '',
-    `${label('checks', language)}:`,
-    ...draft.salesChecks.map((item) => `- ${item}`)
+    `${label('html', language)}: ${language === 'sk' ? 'pripravené na kopírovanie tlačidlom' : 'připraveno ke kopírování tlačítkem'}`
   ].join('\n');
 }
 
@@ -282,34 +289,35 @@ function scoreAngle(angle, data, inspiration) {
 }
 
 function buildPreheader(data, subset, angle) {
-  const segment = data.segment || (data.language === 'sk' ? 'odberateľov' : 'odběratelů');
-  const offerPart = data.offer ? `${data.offer}. ` : '';
-  const angleLine = {
+  const focus = getPrimaryFocus(data);
+  const offer = normalizeSentence(data.offer);
+  const briefLead = firstMeaningfulSentence(data.brief);
+  const map = {
     cz: {
-      benefit: 'Hned v úvodu říkáme hlavní přínos a proč se vyplatí kliknout.',
-      urgency: 'Jasně říkáme, proč je potřeba jednat právě teď.',
-      curiosity: 'Doplňujeme subject o konkrétní důvod, proč se podívat dovnitř.',
-      result: 'Rychle ukazujeme, jaký výsledek může tahle nabídka přinést.',
-      usefulness: 'Hned je jasné, co si z mailu čtenář odnese.',
-      novelty: 'Zdůrazňujeme, co je nové a proč to stojí za pozornost.',
-      number: 'Krátce naznačujeme, co konkrétního se čtenář dozví.',
-      deadline: 'Je z něj cítit časové omezení a konkrétní důvod otevřít mail.',
-      offer: 'Doplňujeme subject o konkrétní obchodní důvod otevření.'
+      benefit: offer || `${focus} v krátkém a srozumitelném mailu bez omáčky.`,
+      urgency: offer ? `${offer} Platí teď, proto mrkni dovnitř.` : `${focus} řešíme stručně a rovnou k věci.`,
+      curiosity: briefLead || `Uvnitř najdeš konkrétní důvod, proč se na ${focus.toLowerCase()} podívat právě teď.`,
+      result: `Ukážeme, co ${focus.toLowerCase()} přinese a pro koho dává smysl.`,
+      usefulness: `Stručně, jasně a prakticky k tématu ${data.theme}.`,
+      novelty: `Novinka, benefit a jasný důvod kliknout v jednom mailu.`,
+      number: `Rychlý přehled toho nejdůležitějšího bez zbytečné vaty.`,
+      deadline: offer ? `${offer} Pokud o tom uvažuješ, teď je správný moment.` : `Pokud tě ${focus.toLowerCase()} zajímá, neodkládej to.`,
+      offer: offer || `Konkrétní důvod otevřít mail je uvnitř hned nahoře.`
     },
     sk: {
-      benefit: 'Hneď v úvode hovoríme hlavný prínos a prečo sa oplatí kliknúť.',
-      urgency: 'Jasne hovoríme, prečo treba konať práve teraz.',
-      curiosity: 'Dopĺňame subject o konkrétny dôvod, prečo sa pozrieť dovnútra.',
-      result: 'Rýchlo ukazujeme, aký výsledok môže táto ponuka priniesť.',
-      usefulness: 'Hneď je jasné, čo si čitateľ odnesie.',
-      novelty: 'Zdôrazňujeme, čo je nové a prečo to stojí za pozornosť.',
-      number: 'Stručne naznačujeme, čo konkrétne sa čitateľ dozvie.',
-      deadline: 'Je z neho cítiť časové obmedzenie a konkrétny dôvod otvoriť mail.',
-      offer: 'Dopĺňame subject o konkrétny obchodný dôvod otvorenia.'
+      benefit: offer || `${focus} v krátkom a zrozumiteľnom maile bez omáčky.`,
+      urgency: offer ? `${offer} Platí teraz, preto sa pozri dovnútra.` : `${focus} riešime stručne a rovno k veci.`,
+      curiosity: briefLead || `Vo vnútri nájdeš konkrétny dôvod, prečo sa na ${focus.toLowerCase()} pozrieť práve teraz.`,
+      result: `Ukážeme, čo ${focus.toLowerCase()} prinesie a pre koho dáva zmysel.`,
+      usefulness: `Stručne, jasne a prakticky k téme ${data.theme}.`,
+      novelty: `Novinka, benefit a jasný dôvod kliknúť v jednom maile.`,
+      number: `Rýchly prehľad toho najdôležitejšieho bez zbytočnej vaty.`,
+      deadline: offer ? `${offer} Ak o tom uvažuješ, teraz je správny moment.` : `Ak ťa ${focus.toLowerCase()} zaujíma, neodkladaj to.`,
+      offer: offer || `Konkrétny dôvod otvoriť mail je vo vnútri hneď hore.`
     }
   };
-  const base = `${offerPart}${angleLine[data.language]?.[angle] || ''} ${data.language === 'sk' ? `Pre segment ${segment}.` : `Pro segment ${segment}.`}`.trim();
-  return truncate(base, subset.avgSubjectLength ? Math.max(58, subset.avgSubjectLength + 25) : 88);
+  const base = map[data.language]?.[angle] || map[data.language]?.benefit || '';
+  return truncate(cleanCopy(base), subset.avgSubjectLength ? Math.max(58, subset.avgSubjectLength + 25) : 88);
 }
 
 function strengthenPreheader(data, preheader) {
@@ -320,34 +328,33 @@ function strengthenPreheader(data, preheader) {
 }
 
 function buildHeadline(data, subset, angle, inspiration) {
-  const product = capitalize(data.product);
+  const focus = capitalize(getPrimaryFocus(data));
   const theme = capitalize(data.theme);
-  const inspirationHeadline = inspiration[0]?.headline;
   const angleMap = {
     cz: {
-      benefit: `${product} právě teď stojí za pozornost`,
-      urgency: `Teď je správný čas pro ${product.toLowerCase()}`,
-      curiosity: `${theme}, které nechceš přehlédnout`,
-      result: `${product}, který rychle ukáže svůj přínos`,
-      usefulness: `${theme} bez zbytečné složitosti`,
-      novelty: `Seznam se s ${product}`,
+      benefit: `${focus} teď dává smysl otevřít`,
+      urgency: `${focus}, které nechceš prošvihnout`,
+      curiosity: `Proč právě teď řešit ${focus.toLowerCase()}`,
+      result: `Co ti ${focus.toLowerCase()} může přinést`,
+      usefulness: `${theme} stručně a prakticky`,
+      novelty: `Novinka kolem ${focus.toLowerCase()}`,
       number: `${theme} v několika jasných bodech`,
-      deadline: `${product} nebude takhle výhodný dlouho`,
-      offer: data.offer ? `${product} a nabídka, která dává smysl` : `${product} a důvod otevřít právě teď`
+      deadline: `${focus} nebude takhle výhodné dlouho`,
+      offer: data.offer ? `${focus} a nabídka, kterou je škoda minout` : `${focus} bez zbytečné omáčky`
     },
     sk: {
-      benefit: `${product} si práve teraz zaslúži pozornosť`,
-      urgency: `Teraz je správny čas pre ${product.toLowerCase()}`,
-      curiosity: `${theme}, ktoré nechceš prehliadnuť`,
-      result: `${product}, ktorý rýchlo ukáže svoj prínos`,
-      usefulness: `${theme} bez zbytočnej zložitosti`,
-      novelty: `Zoznám sa s ${product}`,
+      benefit: `${focus} teraz dáva zmysel otvoriť`,
+      urgency: `${focus}, ktoré nechceš zmeškať`,
+      curiosity: `Prečo práve teraz riešiť ${focus.toLowerCase()}`,
+      result: `Čo ti ${focus.toLowerCase()} môže priniesť`,
+      usefulness: `${theme} stručne a prakticky`,
+      novelty: `Novinka okolo ${focus.toLowerCase()}`,
       number: `${theme} v niekoľkých jasných bodoch`,
-      deadline: `${product} nebude takto výhodný dlho`,
-      offer: data.offer ? `${product} a ponuka, ktorá dáva zmysel` : `${product} a dôvod otvoriť práve teraz`
+      deadline: `${focus} nebude takto výhodné dlho`,
+      offer: data.offer ? `${focus} a ponuka, ktorú je škoda minúť` : `${focus} bez zbytočnej omáčky`
     }
   };
-  return angleMap[data.language]?.[angle] || inspirationHeadline || subset.examples?.[0]?.headline || `${theme} a ${product}`;
+  return cleanCopy(angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${focus}`);
 }
 
 function strengthenHeadline(data, headline) {
@@ -358,32 +365,32 @@ function strengthenHeadline(data, headline) {
 }
 
 function buildBlocks(data, cta, angle, inspiration) {
-  const proofLine = buildProof(data, data.language);
+  const focus = getPrimaryFocus(data);
+  const offer = normalizeSentence(data.offer);
+  const detail = firstMeaningfulSentence(data.brief);
+  const detail2 = secondMeaningfulSentence(data.brief);
   const whyNow = buildWhyNow(data, data.language, angle);
-  const risk = buildRiskOfNoAction(data, data.language, angle);
-  const social = inspiration[0]?.headline
-    ? (data.language === 'sk' ? `Podobné kampane najčastejšie stáli na promise typu: ${inspiration[0].headline}` : `Podobné kampaně nejčastěji stály na promise typu: ${inspiration[0].headline}`)
-    : (data.language === 'sk' ? 'Sľub musí byť čitateľný už pri rýchlom prebehnutí očami.' : 'Slib musí být čitelný už při rychlém přeběhnutí očima.');
+  const proofLine = buildProof(data, data.language);
 
   const blocks = data.language === 'sk'
     ? [
-        { title: 'HERO', text: `${capitalize(data.product)} je dnes hlavná téma. ${whyNow}` },
-        { title: 'PREČO TO MÁ ZMYSEL', text: data.offer ? `Hlavná ponuka je ${data.offer}. Benefit aj ponuku držíme úplne hore.` : `Benefit držíme úplne hore, aby bolo hneď jasné, čo čitateľ získa.` },
-        { title: 'DÔVOD VERIŤ', text: `${proofLine} ${social}` },
-        { title: 'AKCIA TERAZ', text: `${risk} Hlavná akcia je: ${cta}.` }
+        { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je práve teraz téma, ktorá si zaslúži pozornosť. ${offer || whyNow}`) },
+        { title: 'DETAIL', text: cleanCopy(detail || `${capitalize(focus)} komunikujeme stručne, konkrétne a s jasným benefitom pre čitateľa.`) },
+        { title: 'DÔVOD', text: cleanCopy(detail2 || proofLine) },
+        { title: 'AKCIA', text: cleanCopy(`${offer ? `${offer} ` : ''}${cta}.`) }
       ]
     : [
-        { title: 'HERO', text: `${capitalize(data.product)} je dnes hlavní téma. ${whyNow}` },
-        { title: 'PROČ TO DÁVÁ SMYSL', text: data.offer ? `Hlavní nabídka je ${data.offer}. Benefit i nabídku držíme úplně nahoře.` : `Benefit držíme úplně nahoře, aby bylo hned jasné, co čtenář získá.` },
-        { title: 'DŮVOD VĚŘIT', text: `${proofLine} ${social}` },
-        { title: 'AKCE TEĎ', text: `${risk} Hlavní akce je: ${cta}.` }
+        { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je právě teď téma, které si zaslouží pozornost. ${offer || whyNow}`) },
+        { title: 'DETAIL', text: cleanCopy(detail || `${capitalize(focus)} komunikujeme stručně, konkrétně a s jasným benefitem pro čtenáře.`) },
+        { title: 'DŮVOD', text: cleanCopy(detail2 || proofLine) },
+        { title: 'AKCE', text: cleanCopy(`${offer ? `${offer} ` : ''}${cta}.`) }
       ];
 
   if (data.length === 'short') return blocks.slice(0, 3);
   if (data.length === 'long') {
     blocks.splice(3, 0, {
       title: data.language === 'sk' ? 'DOPLNENIE' : 'DOPLNĚNÍ',
-      text: data.brief?.trim() || (data.language === 'sk' ? 'Text môžeš ešte doplniť o konkrétny detail produktu, bonus alebo termín.' : 'Text můžeš ještě doplnit o konkrétní detail produktu, bonus nebo termín.')
+      text: cleanCopy(buildSupportParagraph(data, inspiration))
     });
   }
   return blocks;
@@ -542,17 +549,23 @@ function buildSalesChecks(data, angle, cta, salesScore) {
 }
 
 function buildCta(data, subset, inspiration) {
+  const focus = getPrimaryFocus(data).toLowerCase();
   if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
+  if (data.offer) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
+  if (data.campaignType === 'event') return strengthenCta(data, data.language === 'sk' ? 'Chcem si rezervovať miesto' : 'Chci si rezervovat místo');
+  if (/(kurz|webinář|webinar|školení|seminář|seminar|konference|vstupenka|vstupenky)/i.test(focus)) {
+    return strengthenCta(data, data.language === 'sk' ? 'Chcem rezervovať miesto' : 'Chci rezervovat místo');
+  }
   if (inspiration[0]?.cta) return strengthenCta(data, inspiration[0].cta);
   if (subset.topCtas?.length) return strengthenCta(data, subset.topCtas[0]);
-  if (data.offer) return data.language === 'sk' ? 'Využiť ponuku' : 'Využít nabídku';
-  return data.language === 'sk' ? 'Zistiť viac' : 'Zjistit víc';
+  return data.language === 'sk' ? 'Chcem zistiť viac' : 'Chci zjistit víc';
 }
 
 function strengthenCta(data, cta) {
-  if (/(zjistit|zistiť|koupit|kúpiť|využít|využiť|chci|chcem)/i.test(cta)) return cta;
-  if (data.offer) return data.language === 'sk' ? 'Využiť ponuku teraz' : 'Využít nabídku teď';
-  return data.language === 'sk' ? 'Chcem to využiť' : 'Chci toho využít';
+  const cleaned = cleanCopy(cta);
+  if (/(zjistit|zistiť|koupit|kúpiť|využít|využiť|chci|chcem|rezervovat|rezervovať|objednat|objednať|přihlásit|prihlásiť)/i.test(cleaned)) return cleaned;
+  if (data.offer) return data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku';
+  return data.language === 'sk' ? 'Chcem zistiť viac' : 'Chci zjistit víc';
 }
 
 function buildHtmlDraft({ data, preheader, headline, cta, blocks }) {
@@ -631,6 +644,103 @@ function label(key, language) {
     }
   };
   return map[language]?.[key] || key.toUpperCase();
+}
+
+function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headline, cta, blocks, salesScore, inspiration }) {
+  const cleanedSubjectAngles = subjectAngles.map((item) => ({ ...item, text: cleanCopy(item.text) })).filter((item, index, array) => array.findIndex((other) => other.text.toLowerCase() === item.text.toLowerCase()) === index);
+  const cleanedBlocks = blocks
+    .map((block) => ({ ...block, text: cleanCopy(block.text) }))
+    .filter((block) => block.text && !isMetaCopy(block.text));
+
+  const finalPrimary = { ...primarySubject, text: cleanCopy(primarySubject.text) };
+  const finalPreheader = cleanCopy(preheader);
+  const finalHeadline = cleanCopy(headline);
+  const finalCta = cleanCopy(cta);
+  const rescored = scoreDraft({ tuned, primarySubject: finalPrimary, preheader: finalPreheader, headline: finalHeadline, cta: finalCta, blocks: cleanedBlocks });
+
+  return {
+    tuned,
+    primarySubject: finalPrimary,
+    subjectAngles: cleanedSubjectAngles,
+    preheader: finalPreheader,
+    headline: finalHeadline,
+    cta: finalCta,
+    blocks: cleanedBlocks,
+    salesScore: rescored,
+    inspiration
+  };
+}
+
+function sanitizeInput(data) {
+  return {
+    ...data,
+    theme: cleanField(data.theme),
+    product: cleanField(data.product),
+    offer: cleanField(data.offer),
+    brief: cleanField(data.brief),
+    segment: cleanField(data.segment),
+    ctaGoal: cleanField(data.ctaGoal),
+    brand: cleanField(data.brand)
+  };
+}
+
+function cleanField(value = '') {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function normalizeSentence(value = '') {
+  const cleaned = cleanField(value);
+  if (!cleaned) return '';
+  return /[.!?]$/.test(cleaned) ? cleaned : `${cleaned}.`;
+}
+
+function firstMeaningfulSentence(value = '') {
+  return splitSentences(value)[0] || '';
+}
+
+function secondMeaningfulSentence(value = '') {
+  return splitSentences(value)[1] || '';
+}
+
+function splitSentences(value = '') {
+  return cleanField(value)
+    .split(/(?<=[.!?])\s+/)
+    .map((item) => item.trim())
+    .filter((item) => item.length >= 12);
+}
+
+function getPrimaryFocus(data) {
+  const product = cleanField(data.product);
+  const theme = cleanField(data.theme);
+  if (!product) return theme || (data.language === 'sk' ? 'ponuka' : 'nabídka');
+  if (isGenericFocus(product) && theme) return theme;
+  return product;
+}
+
+function isGenericFocus(value = '') {
+  return /^(produkt|ponuka|nabídka|newsletter|mail|email|vstupenka|vstupenky)$/i.test(cleanField(value));
+}
+
+function buildSupportParagraph(data, inspiration) {
+  const fallback = data.language === 'sk'
+    ? 'Ak máš konkrétny bonus, termín alebo limit, daj ho sem ako samostatnú vetu.'
+    : 'Pokud máš konkrétní bonus, termín nebo limit, dej ho sem jako samostatnou větu.';
+  const briefSentence = splitSentences(data.brief)[2];
+  return briefSentence || fallback;
+}
+
+function cleanCopy(value = '') {
+  return cleanField(value)
+    .replace(/\b(HERO|ÚVOD|DETAIL|DŮVOD|DÔVOD|AKCE|AKCIA|DOPLNĚNÍ|DOPLNENIE):/gi, '')
+    .replace(/\b(benefit držíme úplně nahoře|benefit držíme úplne hore)\b/gi, '')
+    .replace(/\b(hlavní akce je|hlavná akcia je)\b:?/gi, '')
+    .replace(/\b(Podobné kampaně nejčastěji stály na promise typu|Podobné kampane najčastejšie stáli na promise typu):?[^.]*\.?/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function isMetaCopy(value = '') {
+  return /(benefit držíme|hlavní akce je|hlavná akcia je|promise typu|mode je high-seller|prodejní skóre|predajné skóre)/i.test(value);
 }
 
 function escapeHtml(value = '') {
