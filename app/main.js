@@ -228,9 +228,9 @@ function generateNewsletter(data) {
   }
 
   const finalDraft = finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headline, cta, blocks, salesScore, inspiration });
-  const body = finalDraft.blocks.map((block) => block.text).join('\n\n');
+  const body = finalDraft.paragraphs.join('\n\n');
   const salesChecks = buildSalesChecks(tuned, finalDraft.primarySubject.angle, finalDraft.cta, finalDraft.salesScore);
-  const html = buildHtmlDraft({ data: tuned, preheader: finalDraft.preheader, headline: finalDraft.headline, cta: finalDraft.cta, blocks: finalDraft.blocks });
+  const html = buildHtmlDraft({ data: tuned, preheader: finalDraft.preheader, headline: finalDraft.headline, cta: finalDraft.cta, paragraphs: finalDraft.paragraphs });
   return {
     subject: finalDraft.primarySubject.text,
     subjectAngles: finalDraft.subjectAngles,
@@ -239,6 +239,7 @@ function generateNewsletter(data) {
     body,
     cta: finalDraft.cta,
     blocks: finalDraft.blocks,
+    paragraphs: finalDraft.paragraphs,
     html,
     salesChecks,
     inspiration,
@@ -281,7 +282,7 @@ function formatDraft(draft, language) {
     `${label('headline', language)}: ${draft.headline}`,
     '',
     `${label('body', language)}:`,
-    ...draft.blocks.map((block) => block.text),
+    ...draft.paragraphs,
     '',
     `${label('cta', language)}: ${draft.cta}`,
     '',
@@ -735,13 +736,12 @@ function strengthenCta(data, cta) {
   return data.language === 'sk' ? 'Chcem zistiť viac' : 'Chci zjistit víc';
 }
 
-function buildHtmlDraft({ data, preheader, headline, cta, blocks }) {
+function buildHtmlDraft({ data, preheader, headline, cta, paragraphs }) {
   const ctaHref = '#';
-  const blockHtml = blocks.map((block) => `
+  const paragraphHtml = paragraphs.map((text) => `
     <tr>
-      <td style="padding:0 32px 20px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
-        <div style="font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#7c9cff;margin-bottom:8px;">${escapeHtml(block.title)}</div>
-        <div style="font-size:16px;line-height:1.6;">${escapeHtml(block.text)}</div>
+      <td style="padding:0 32px 18px 32px;font-family:Arial,sans-serif;color:#1a1a1a;">
+        <div style="font-size:16px;line-height:1.7;">${escapeHtml(text)}</div>
       </td>
     </tr>`).join('');
 
@@ -759,9 +759,9 @@ function buildHtmlDraft({ data, preheader, headline, cta, blocks }) {
                 <h1 style="margin:0;font-size:32px;line-height:1.2;">${escapeHtml(headline)}</h1>
               </td>
             </tr>
-            ${blockHtml}
+            ${paragraphHtml}
             <tr>
-              <td style="padding:0 32px 36px 32px;">
+              <td style="padding:8px 32px 36px 32px;">
                 <a href="${ctaHref}" style="display:inline-block;background:#7c9cff;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:12px;font-family:Arial,sans-serif;font-weight:700;">${escapeHtml(cta)}</a>
               </td>
             </tr>
@@ -822,8 +822,10 @@ function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headli
   const finalPrimary = { ...primarySubject, text: cleanCopy(primarySubject.text) };
   const finalPreheader = cleanCopy(preheader);
   const finalHeadline = cleanCopy(headline);
-  const finalCta = cleanCopy(cta);
-  const rescored = scoreDraft({ tuned, primarySubject: finalPrimary, preheader: finalPreheader, headline: finalHeadline, cta: finalCta, blocks: cleanedBlocks });
+  const finalCta = normalizeCta(cleanCopy(cta));
+  const paragraphs = composeFinalParagraphs(tuned, cleanedBlocks, finalCta);
+  const scoringBlocks = paragraphs.map((text) => ({ title: '', text }));
+  const rescored = scoreDraft({ tuned, primarySubject: finalPrimary, preheader: finalPreheader, headline: finalHeadline, cta: finalCta, blocks: scoringBlocks });
 
   return {
     tuned,
@@ -833,6 +835,7 @@ function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headli
     headline: finalHeadline,
     cta: finalCta,
     blocks: cleanedBlocks,
+    paragraphs,
     salesScore: rescored,
     inspiration
   };
@@ -1242,9 +1245,28 @@ function buildConcreteSupport(data) {
       ];
 }
 
+function composeFinalParagraphs(data, blocks, cta) {
+  const paragraphs = blocks.map((block) => block.text).filter(Boolean);
+  return paragraphs
+    .map((text, index) => polishParagraph(text, data, cta, index, paragraphs.length))
+    .filter(Boolean);
+}
+
+function polishParagraph(text, data, cta, index, total) {
+  let result = cleanCopy(text);
+  result = result.replace(/^([a-zá-ž])/u, (m) => m.toUpperCase());
+  result = result.replace(new RegExp(`\\b${escapeRegExp(cta)}\\.?$`, 'i'), '').trim();
+  result = result.replace(/\b(Chci|Chcem)\s+objednat\b/gi, data.language === 'sk' ? 'Chcem objednať' : 'Chci objednat');
+  if (index === total - 1) {
+    result = result.replace(/[.!?]+$/g, '');
+    return result ? `${result}.` : '';
+  }
+  return /[.!?]$/.test(result) ? result : `${result}.`;
+}
+
 function cleanCopy(value = '') {
   return cleanField(value)
-    .replace(/\b(HERO|ÚVOD|DETAIL|DŮVOD|DÔVOD|AKCE|AKCIA|DOPLNĚNÍ|DOPLNENIE):/gi, '')
+    .replace(/\b(HERO|ÚVOD|DETAIL|DŮVOD|DÔVOD|AKCE|AKCIA|DOPLNĚNÍ|DOPLNENIE|VÍC|VIAC):/gi, '')
     .replace(/\b(benefit držíme úplně nahoře|benefit držíme úplne hore)\b/gi, '')
     .replace(/\b(hlavní akce je|hlavná akcia je)\b:?/gi, '')
     .replace(/\b(Podobné kampaně nejčastěji stály na promise typu|Podobné kampane najčastejšie stáli na promise typu):?[^.]*\.?/gi, '')
@@ -1255,6 +1277,10 @@ function cleanCopy(value = '') {
 
 function isMetaCopy(value = '') {
   return /(benefit držíme|hlavní akce je|hlavná akcia je|promise typu|mode je high-seller|prodejní skóre|predajné skóre)/i.test(value);
+}
+
+function escapeRegExp(value = '') {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 function escapeHtml(value = '') {
