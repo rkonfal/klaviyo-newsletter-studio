@@ -1281,21 +1281,117 @@ function buildConcreteSupport(data) {
 }
 
 function composeFinalParagraphs(data, blocks, cta) {
-  const paragraphs = blocks.map((block) => block.text).filter(Boolean);
-  return paragraphs
-    .map((text, index) => polishParagraph(text, data, cta, index, paragraphs.length))
+  const generated = getSelectedProducts(data).length > 1
+    ? composeMultiProductParagraphs(data, cta)
+    : composeSingleProductParagraphs(data, cta);
+
+  const fallback = blocks.map((block) => cleanSentence(block.text)).filter(Boolean);
+  const paragraphs = (generated.length ? generated : fallback)
+    .map((text) => cleanSentence(text))
     .filter(Boolean);
+
+  return paragraphs.filter((text, index, array) => array.findIndex((other) => other.toLowerCase() === text.toLowerCase()) === index);
 }
 
-function polishParagraph(text, data, cta, index, total) {
+function composeSingleProductParagraphs(data, cta) {
+  const focus = getPrimaryFocus(data);
+  const theme = getThemeFocus(data);
+  const paragraphs = [];
+
+  if (shouldLeadWithTheme(data)) {
+    paragraphs.push(data.language === 'sk'
+      ? `${theme} sa blíži a ${focus} môže byť milým aj praktickým tipom pre tých, ktorí chcú vybrať darček s nápadom.`
+      : `${theme} se blíží a ${focus} může být milým i praktickým tipem pro ty, kdo chtějí vybrat dárek s nápadem.`);
+  } else {
+    paragraphs.push(data.language === 'sk'
+      ? `${focus} dávame do pozornosti stručne a bez omáčky, aby bolo hneď jasné, pre koho sa hodí a prečo stojí za otvorenie mailu.`
+      : `${focus} dáváme do pozornosti stručně a bez omáčky, aby bylo hned jasné, pro koho se hodí a proč stojí za otevření mailu.`);
+  }
+
+  paragraphs.push(buildBenefitParagraph(data));
+
+  if (data.length !== 'short') paragraphs.push(buildTrustParagraph(data));
+  if (data.length === 'long') paragraphs.push(buildLongDetailParagraph(data));
+
+  paragraphs.push(buildActionParagraph(data, cta));
+  return paragraphs;
+}
+
+function composeMultiProductParagraphs(data, cta) {
+  const line = getProductLine(data, 3);
+  const paragraphs = [
+    data.language === 'sk'
+      ? `Vybrali sme produkty ${line}, ktoré spolu dávajú zmysel a pomáhajú urobiť výber rýchlejší a zrozumiteľnejší.`
+      : `Vybrali jsme produkty ${line}, které spolu dávají smysl a pomáhají udělat výběr rychlejší a srozumitelnější.`,
+    buildBenefitParagraph(data)
+  ];
+
+  if (data.length !== 'short') paragraphs.push(buildTrustParagraph(data));
+  if (data.length === 'long') paragraphs.push(buildLongDetailParagraph(data));
+  paragraphs.push(buildActionParagraph(data, cta));
+  return paragraphs;
+}
+
+function buildBenefitParagraph(data) {
+  const focus = getPrimaryFocus(data);
+  if (data.briefSignals?.mentionBenefits) {
+    return data.language === 'sk'
+      ? `${focus} v texte staviame na konkrétnych benefitoch, aby bolo rýchlo zrozumiteľné, prečo práve tento výber dáva zmysel.`
+      : `${focus} v textu stavíme na konkrétních benefitech, aby bylo rychle srozumitelné, proč právě tenhle výběr dává smysl.`;
+  }
+  if (shouldLeadWithTheme(data)) {
+    return data.language === 'sk'
+      ? `Hlavná sila tohto tipu je v tom, že nepôsobí ako náhodný darček, ale ako osobná a užitočná voľba.`
+      : `Hlavní síla tohohle tipu je v tom, že nepůsobí jako náhodný dárek, ale jako osobní a užitečná volba.`;
+  }
+  return data.language === 'sk'
+    ? `${focus} komunikujeme tak, aby benefit prišiel hneď v prvých vetách a čitateľ nemusel zložito hľadať dôvod ku kúpe.`
+    : `${focus} komunikujeme tak, aby benefit přišel hned v prvních větách a čtenář nemusel složitě hledat důvod ke koupi.`;
+}
+
+function buildTrustParagraph(data) {
+  const focus = getPrimaryFocus(data);
+  if (data.briefSignals?.mentionReview) {
+    return data.language === 'sk'
+      ? `Dôveryhodnosť môže posilniť aj krátka skúsenosť zákazníčky, ktorá ukáže, prečo si ${focus} obľúbila.`
+      : `Důvěryhodnost může posílit i krátká zkušenost zákaznice, která ukáže, proč si ${focus} oblíbila.`;
+  }
+  return data.language === 'sk'
+    ? `${focus} preto držíme v texte krátko, konkrétne a bez zbytočného preháňania, aby celý mail pôsobil dôveryhodne.`
+    : `${focus} proto držíme v textu krátce, konkrétně a bez zbytečného přehánění, aby celý mail působil důvěryhodně.`;
+}
+
+function buildLongDetailParagraph(data) {
+  const focus = getPrimaryFocus(data);
+  const theme = getThemeFocus(data);
+  if (shouldLeadWithTheme(data)) {
+    return data.language === 'sk'
+      ? `${theme} je navyše dobrá príležitosť hovoriť jednoducho, láskavo a bez tlačenia na pílu, takže ponuka pôsobí prirodzenejšie.`
+      : `${theme} je navíc dobrá příležitost mluvit jednoduše, mile a bez tlačení na pilu, takže nabídka působí přirozeněji.`;
+  }
+  return data.language === 'sk'
+    ? `${focus} si pri dlhšej verzii mailu zaslúži ešte jednu vetu navyše, ktorá doplní kontext a pomôže preklopiť záujem do objednávky.`
+    : `${focus} si u delší verze mailu zaslouží ještě jednu větu navíc, která doplní kontext a pomůže překlopit zájem do objednávky.`;
+}
+
+function buildActionParagraph(data, cta) {
+  const offer = cleanField(data.offer);
+  if (offer && !isSoftOffer(offer)) {
+    return data.language === 'sk'
+      ? `${offer}. Ak ťa ponuka zaujala, klikni na ${cta.toLowerCase()}.`
+      : `${offer}. Pokud tě nabídka zaujala, klikni na ${cta.toLowerCase()}.`;
+  }
+  return data.language === 'sk'
+    ? `Ak ťa tento tip zaujal, klikni na ${cta.toLowerCase()} a pozri sa na detail ponuky.`
+    : `Jestli tě tenhle tip zaujal, klikni na ${cta.toLowerCase()} a podívej se na detail nabídky.`;
+}
+
+function cleanSentence(text = '') {
   let result = cleanCopy(text);
   result = result.replace(/^([a-zá-ž])/u, (m) => m.toUpperCase());
-  result = result.replace(new RegExp(`\\b${escapeRegExp(cta)}\\.?$`, 'i'), '').trim();
-  result = result.replace(/\b(Chci|Chcem)\s+objednat\b/gi, data.language === 'sk' ? 'Chcem objednať' : 'Chci objednat');
-  if (index === total - 1) {
-    result = result.replace(/[.!?]+$/g, '');
-    return result ? `${result}.` : '';
-  }
+  result = result.replace(/\b(Chci|Chcem)\s+objednat\b/gi, (m) => m === 'Chcem Objednat' ? 'Chcem objednať' : 'Chci objednat');
+  result = result.replace(/\s+/g, ' ').trim();
+  if (!result) return '';
   return /[.!?]$/.test(result) ? result : `${result}.`;
 }
 
