@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "sync:klaviyo": "node scripts/sync-klaviyo.mjs",
-    "build:data": "node scripts/build-dataset.mjs",
+    "build:data": "node scripts/build-dataset.mjs && node scripts/build-product-catalog.mjs",
+    "build:catalog": "node scripts/build-product-catalog.mjs",
     "build": "npm run build:data",
     "dev": "python3 -m http.server 4173"
   }
