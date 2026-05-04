@@ -1,5 +1,213 @@
 [
   {
+    "id": "01KQRXWKZ03ASCYXESSQSYBH4D",
+    "name": "CZ Den matek - kolagen",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
+    "previewText": "Každý, kdo zatočí, vyhraje!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "UGAPph",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Slavíme 10. narozeniny, ale dárky rozdáváme my!",
+      "body": [
+        "Slavíme 10. narozeniny, ale dárky rozdáváme my!",
+        "Ano, čtete správně. Slavíme 10. narozeniny a jako poděkování za vaši přízeň jsme pro vás připravili Kolo štěstí plné dárků. Zatočte Kolem štěstí a získejte svůj dárek!",
+        "Kupon vložte do nákupního košíku do pole „Mám slevový kód“",
+        "P. S. Děkujeme, že jste s námi už 10 let. Vaše důvěra je pro nás tím největším dárkem. Teď je řada na nás. Zatočte kolem štěstí ještě dnes a odneste si svůj dárek."
+      ],
+      "cta": "ZATOČIT A VYHRÁT",
+      "ctas": [
+        "ZATOČIT A VYHRÁT"
+      ],
+      "text": "96\nSlavíme 10. narozeniny, ale dárky rozdáváme my!\n⏰ do 17. 5.\n🎡 100% šance na výhru\nAno, čtete správně. Slavíme 10. narozeniny a jako poděkování za vaši přízeň jsme pro vás připravili Kolo štěstí plné dárků. Zatočte Kolem štěstí a získejte svůj dárek!\nZATOČIT A VYHRÁT\nKlikněte a roztočte kolo štěstí\nVytočený dárek získáte ve formě kuponu\nKupon vložte do nákupního košíku do pole „Mám slevový kód“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Děkujeme, že jste s námi už 10 let. Vaše důvěra je pro nás tím největším dárkem. Teď je řada na nás. Zatočte kolem štěstí ještě dnes a odneste si svůj dárek.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KQRTHAWJZ8XXJ7XZ8G9NDC8T",
+    "name": "CZ - Tělo jako kompas - 5. lekce pozvánka",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "Proč nejste „jako ostatní“? A proč je to dobře!",
+    "previewText": "5. lekce startuje už zítra. Jste připraveni na pravdu?",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "Shn9tG",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Tohle změní způsob, jakým se na sebe díváte!",
+      "body": [
+        "Tohle změní způsob, jakým se na sebe díváte!",
+        "📍 Kde: Odkaz pošleme do e-mailu v 19:30",
+        "Už zítra vás čeká 5. lekce, která vám může změnit pohled na sebe. Součástí je i krátký test, díky kterému odhalíte svůj dominantní prvek. Nenechte si ji ujít.",
+        "Možná jste si už někdy říkali, proč v určitých situacích reagujete jinak než ostatní. Proč vás něco vyčerpá, zatímco jiným to dodává energii. Právě typologie osobnosti vám pomůže tyto souvislosti konečně pochopit."
+      ],
+      "cta": "CHCI BÝT U TOHO",
+      "ctas": [
+        "CHCI BÝT U TOHO",
+        "UDĚLAT SI TEST",
+        "CHCI VĚDĚT VÍC",
+        "CHCI PŘÍRUČKY ZDARMA",
+        "KOUPIT"
+      ],
+      "text": "96\nTohle změní způsob, jakým se na sebe díváte!\n📍 Kde: Odkaz pošleme do e-mailu v 19:30\nUž zítra vás čeká 5. lekce, která vám může změnit pohled na sebe. Součástí je i krátký test, díky kterému odhalíte svůj dominantní prvek. Nenechte si ji ujít.\nCHCI BÝT U TOHO\nMožná jste si už někdy říkali, proč v určitých situacích reagujete jinak než ostatní. Proč vás něco vyčerpá, zatímco jiným to dodává energii. Právě typologie osobnosti vám pomůže tyto souvislosti konečně pochopit.\nCo vám 5. lekce přinese:\nPochopíte své přirozené nastavení a reakce\nOdhalíte svůj dominantní prvek (Dřevo, Oheň, Země, Kov, Voda)\nNaučíte se lépe pracovat se stresem i emocemi\nZískáte větší jistotu v rozhodování\nJaký prvek ve vás dominuje? Odpověď vás možná překvapí\nA pokud si chcete už teď vyzkoušet, jaký prvek u vás převažuje, můžete se pustit do krátkého testu níže. Stačí odpovídat intuitivně. Bez přemýšlení, bez tlaku.\nUDĚLAT SI TEST\nVýsledek testu znáte… ale víte, co za ním je?\nPokud chcete pochopit jednotlivé elementy opravdu detailně, př ipravili jsme pro vás přehled všech typů. Každý element má své silné stránky, výzvy i způsob, jak o sebe správně pečovat.\nCHCI VĚDĚT VÍC\nElektronické i tištěné materiály dostanete v hlavním balíčku\nPokud chcete mít po ruce i konkrétní podporu z webináře, dole najdete balíček, příručky a odkazy na produkty, o kterých se během večera mluvilo. Není to podmínka účasti v kurzu.\nCHCI PŘÍRUČKY ZDARMA\nKomplexní péče od hlavy až k patám\nPropojení vnější a vnitřní péče\nZískáte jedinečné vzdělávací materiály\n🎁 Dáky v hodnotě 2 500 Kč\nGlutatione complex\n✅ Podpora jater a detoxikačních procesů ✅ Pomáhá tělu zvládat větší zátěž a únavu ✅ Praktické užívání v denním režimu ✅ Hodí se jako součást jarní podpory organismu\n1 340 Kč\n871 Kč ( VIP Sleva)\nKOUPIT\nOstropestřec s riboflavinem\n✅ Jemná každodenní podpora jater ✅ Praktická forma tablet ✅ Hodí se do jarního režimu i po období větší zátěže ✅ Dobře doplňuje lehčí a pravidelnější rytmus dne\n456 Kč\n296 Kč ( VIP Sleva)\nKOUPIT\nZlatophyt\n✅ Podpora ledvinové oblasti a vitality\n✅ Hodí se při únavě a nočním buzení\n✅ Praktický doplněk do denního režimu\n✅ Téma, které v lekci zaznělo u vodního elementu\n1 340 Kč\n871 Kč ( VIP Sleva)\nKOUPIT\nSlaviton\n✅ Přináší chladivý a osvěžující pocit\n✅ Pomáhá unaveným a těžkým nohám\n✅ Hodí se po náročném dni nebo delším stání\n✅ Rychle se vstřebává a dobře se používá doma\n434 Kč\n282 Kč ( VIP Sleva)\nKOUPIT\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S. Už zítra vás čeká lekce, která vám může změnit pohled na sebe samotné. Nenechte si ji ujít. Pochopíte věci, které vám doteď nedávaly smysl.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KPZJQSHGBT04Y84YGVB0S0XZ",
+    "name": "CZ - Nové akce (květen - červen)",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "launch",
+    "subject": "Tak tohle tu ještě nebylo....",
+    "previewText": "Dárky až za 685 Kč Tohle se vám bude líbit!",
+    "sentAt": "2026-05-03T16:30:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Ssmzdu",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Exkluzivní nabídka: dárky k balíčkům",
+      "body": [
+        "Připravili jsme pro vás nové exkluzivní akce,  kde si kromě svých oblíbených produktů odnesete i dárky v hodnotě až 685 Kč. Vyberte si svůj balíček ještě dnes a dopřejte si dárek, který vám udělá radost.",
+        "✅Hloubková obnova vlasů od kořínků po konečky",
+        "✅ Ideální řešení pro vlasy namáhané barvením, fénem nebo žehlením",
+        "Marcela 45 let: „Moje vlasy byly po letech barvení suché, bez života a konečky se lámaly. Upřímně jsem už nevěřila, že se to dá změnit. Po měsíci používání této sady s hadím olejem jsou vlasy hebčí, lesklejší a hlavně se mnohem lépe rozčesávají.“"
+      ],
+      "cta": "nové exkluzivní akce,",
+      "ctas": [
+        "nové exkluzivní akce,",
+        "CHCI BALÍČEK S DÁRKEM",
+        "KOUPIT"
+      ],
+      "text": "96\nExkluzivní nabídka: dárky k balíčkům\naž za 685 Kč\nPřipravili jsme pro vás nové exkluzivní akce,  kde si kromě svých oblíbených produktů odnesete i dárky v hodnotě až 685 Kč. Vyberte si svůj balíček ještě dnes a dopřejte si dárek, který vám udělá radost.\nCHCI BALÍČEK S DÁRKEM\nSOS regenerace pro oslabené vlasy\n✅Hloubková obnova vlasů od kořínků po konečky\n✅ Ideální řešení pro vlasy namáhané barvením, fénem nebo žehlením\n✅ Viditelně hladší a lesklejší vlasy\n🎁 DÁREK V HODNOTĚ 414 Kč\n708 Kč\n460 Kč (VIP Sleva)\nKOUPIT\nMarcela 45 let: „Moje vlasy byly po letech barvení suché, bez života a konečky se lámaly. Upřímně jsem už nevěřila, že se to dá změnit. Po měsíci používání této sady s hadím olejem jsou vlasy hebčí, lesklejší a hlavně se mnohem lépe rozčesávají.“\nHloubkové čištění, ochrana a lesk\n✅ Hloubkové čištění bez vysušení\n✅ Efekt bio-laminace pro hladké a lesklé vlasy\n✅ Ideální pro vlasy, které se rychle mastí nebo jsou zatížené stylingem\n🎁 DÁREK V HODNOTĚ 536 Kč\n894 Kč\n581 Kč (VIP Sleva)\nKOUPIT\nMelisa 39 let: „Moje vlasy byly bez objemu, rychle se mastily a po umytí působily těžce. Po vyzkoušení této péče jsem byla mile překvapená. Vlasy jsou lehké, krásně se lesknou a konečně vypadají upraveně i bez složitého stylingu.“\nEkologický úklid, který šetří čas, peníze i vaše ruce\n✅ Ekologické složení bez fosfátů a agresivní chemie\n✅ Méně prostředků, více pořádku\n✅ Ideální pro zaneprázdněné ženy a rodiny\n🎁 DÁREK V HODNOTĚ 685 Kč\n1 054 Kč\n685 Kč (VIP Sleva)\nKOUPIT\nMilada 58 let: „Dřív jsem měla doma spoustu různých prostředků a stejně jsem měla pocit, že pořád něco chybí. Tyto produkty jsou super. Prádlo je krásně svěží, nádobí se leskne a s utěrkou zvládnu rychle uklidit kuchyň i koupelnu. Nejvíc oceňuju, že nemusím nic složitě dávkovat. Prostě vezmu a použiju.“\nChytré řešení pro čistou domácnost\n✅ Chytré řešení pro celou domácnost\n✅ Účinné čištění bez fosfátů a chlóru\n✅ Poradí si i s odolnými nečistotami\n🎁 DÁREK V HODNOTĚ 685 Kč\n1 012 Kč\n658 Kč (VIP Sleva)\nKOUPIT\nLenka 62 let: „Mám ráda pořádek, ale nechci trávit hodiny úklidem. Tenhle balíček mi hodně usnadnil každodenní fungování. Prádlo je krásně čisté, nádobí se leskne a s utěrkou rychle setřu kuchyň i koupelnu. Nejvíc oceňuju jednoduchost. Žádné složité dávkování, prostě to funguje.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Taková odměna za nákup tu nebývá každý den. Klikněte a podívejte se, jaké dárky jsme pro vás připravili.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KQQ6ZE0CZQWPBCSPSAMEP98K",
+    "name": "SK - Nové akce (květen - červen)",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "launch",
+    "subject": "Tak toto tu ešte nebolo…",
+    "previewText": "Darčeky až za 27 € ? Toto sa vám bude páčiť!",
+    "sentAt": "2026-05-03T16:30:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "TeefuP",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Exkluzívna ponuka: darčeky k balíčkom",
+      "body": [
+        "Pripravili sme pre vás nové exkluzívne akcie , kde si okrem svojich obľúbených produktov odnesiete aj darčeky v hodnote až 27 €. Vyberte si svoj balíček ešte dnes a doprajte si darček, ktorý vám urobí radosť.",
+        "✅ Hĺbková obnova vlasov od korienkov po končeky",
+        "✅ Ideálne riešenie pre vlasy namáhané farbením, fénom alebo žehlením",
+        "Marcela, 45 rokov: „Moje vlasy boli po rokoch farbenia suché, bez života a končeky sa lámali. Úprimne som už neverila, že sa to dá zmeniť. Po mesiaci používania tejto sady s hadím olejom sú vlasy hebkejšie, lesklejšie a hlavne sa oveľa lepšie rozčesávajú.“"
+      ],
+      "cta": "nové exkluzívne akcie",
+      "ctas": [
+        "nové exkluzívne akcie",
+        "CHCEM BALÍČEK S DARČEKOM",
+        "KÚPIŤ"
+      ],
+      "text": "96\nExkluzívna ponuka: darčeky k balíčkom\naž za 27 €\nPripravili sme pre vás nové exkluzívne akcie , kde si okrem svojich obľúbených produktov odnesiete aj darčeky v hodnote až 27 €. Vyberte si svoj balíček ešte dnes a doprajte si darček, ktorý vám urobí radosť.\nCHCEM BALÍČEK S DARČEKOM\nSOS regenerácia pre oslabené vlasy\n✅ Hĺbková obnova vlasov od korienkov po končeky\n✅ Ideálne riešenie pre vlasy namáhané farbením, fénom alebo žehlením\n✅ Viditeľne hladšie a lesklejšie vlasy\n🎁 DARČEK V HODNOTE 16,70 €\nKÚPIŤ\nMarcela, 45 rokov: „Moje vlasy boli po rokoch farbenia suché, bez života a končeky sa lámali. Úprimne som už neverila, že sa to dá zmeniť. Po mesiaci používania tejto sady s hadím olejom sú vlasy hebkejšie, lesklejšie a hlavne sa oveľa lepšie rozčesávajú.“\nHĺbkové čistenie, ochrana a lesk\n✅ Hĺbkové čistenie bez vysušenia\n✅ Efekt bio-laminácie pre hladké a lesklé vlasy\n✅ Ideálne pre vlasy, ktoré sa rýchlo mastia alebo sú zaťažené stylingom\n🎁 DARČEK V HODNOTE 21,60 €\nKÚPIŤ\nMelisa, 39 rokov: „Moje vlasy boli bez objemu, rýchlo sa mastili a po umytí pôsobili ťažko. Po vyskúšaní tejto starostlivosti som bola milo prekvapená. Vlasy sú ľahké, krásne sa lesknú a konečne vyzerajú upravene aj bez zložitého stylingu.“\nEkologické upratovanie, ktoré šetrí čas, peniaze aj vaše ruky\n✅ Ekologické zloženie bez fosfátov a agresívnej chémie\n✅ Menej prostriedkov, viac poriadku\n✅ Ideálne pre zaneprázdnené ženy a rodiny\n🎁 DARČEK V HODNOTE 27,60 €\nKÚPIŤ\nMilada, 58 rokov: „Kedysi som mala doma množstvo rôznych prostriedkov a aj tak som mala pocit, že mi stále niečo chýba. Tieto produkty sú skvelé. Prádlo je krásne svieže, riad sa leskne a s utierkou zvládnem rýchlo upratať kuchyňu aj kúpeľňu. Najviac oceňujem, že nemusím nič zložito dávkovať. Jednoducho vezmem a použijem.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Takáto odmena za nákup tu nebýva každý deň. Kliknite a pozrite sa, aké darčeky sme pre vás pripravili.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KQPKEHC8RZNG65BCB48MN7VN",
+    "name": "SK- Sebeláska 3. pozvánka (již zítra)",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
+    "subject": "Brány sa zatvárajú. Pridáte sa?",
+    "previewText": "Kurz sebelásky začína už zajtra. Dnes je posledná možnosť sa pridať.",
+    "sentAt": "2026-05-03T11:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "S3VbcV",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Zajtra začíname. Dnes je posledný deň vstúpiť do kurzu sebelásky!",
+      "body": [
+        "Zajtra začíname. Dnes je posledný deň vstúpiť do kurzu sebelásky!",
+        "Dnes je posledná možnosť prihlásiť sa do kurzu Sebalásky. Zostáva už len pár posledných voľných miest a keď sa zaplnia, prihlášky definitívne uzavrieme. Rezervujte si svoje miesto zadarmo, kým je ešte voľné.",
+        "Možno ste dlho odkladali samu seba na druhú koľaj. Hovorili ste si, že to ešte zvládnete, že teraz nie je správny čas. Ale niekde vo vnútri cítite, že takto to už ďalej nejde. Že potrebujete zmenu. Nadýchnuť sa. Zastaviť sa. Začať znovu myslieť aj na seba.",
+        "Čo v kurze Sebaláska krok za krokom naozaj získate"
+      ],
+      "cta": "CHCEM BYŤ PRI TOM",
+      "ctas": [
+        "CHCEM BYŤ PRI TOM"
+      ],
+      "text": "96\nZajtra začíname. Dnes je posledný deň vstúpiť do kurzu sebelásky!\n📌KEDY: už zajtra o 19:00\n📌KDE: ONLINE\n💰 ZADARMO\nDnes je posledná možnosť prihlásiť sa do kurzu Sebalásky. Zostáva už len pár posledných voľných miest a keď sa zaplnia, prihlášky definitívne uzavrieme. Rezervujte si svoje miesto zadarmo, kým je ešte voľné.\nCHCEM BYŤ PRI TOM\nMožno ste dlho odkladali samu seba na druhú koľaj. Hovorili ste si, že to ešte zvládnete, že teraz nie je správny čas. Ale niekde vo vnútri cítite, že takto to už ďalej nejde. Že potrebujete zmenu. Nadýchnuť sa. Zastaviť sa. Začať znovu myslieť aj na seba.\nČo v kurze Sebaláska krok za krokom naozaj získate\n6 online stretnutí, ktoré vás prevedú návratom k sebe krok za krokom\nKonkrétne návody, ako zvládať stres, únavu a tlak v bežnom živote\nPodporu a vedenie skúsenej lektorky – Mgr. Andrea Svitáková\nPocit, že na to nie ste sama\nNavyše získate aj všetky materiály k práci na sebe:\nPracovné listy ku každému stretnutiu\nPríručky, ku ktorým sa môžete kedykoľvek vrátiť\nZáznamy zo všetkých 6 online stretnutí\nObsah dostupný z domu, v čase, ktorý vám vyhovuje\nKurz je úplne zadarmo – bez tlaku a bez záväzkov.\nKurzom vás bude sprevádzať Mgr. Andrea Svitáková\nLektorka a sprievodkyňa, ktorá rozumie ženám, ktoré dlhé roky fungovali pre všetkých okolo seba. Veci vysvetľuje ľudsky, jasne a s rešpektom k tomu, čo naozaj prežívate.\n❤️ Budeme sa na vás tešiť!\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S.: Dnes sa prihlášky do kurzu sebalásky uzatvárajú. Ak cítite, že je čas začať myslieť aj na seba, kliknite teraz a rezervujte si svoje miesto, kým je ešte voľné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KPZDKSRRGH7SFG5A93KXBHZ9",
+    "name": "CZ - Sebeláska 3. pozvánka (již zítra)",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Brány se zavírají. Přidáte se?",
+    "previewText": "Kurz sebelásky začíná už zítra. Dnes je poslední možnost se přidat.",
+    "sentAt": "2026-05-03T11:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "V46wxh",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Zítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!",
+      "body": [
+        "Zítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!",
+        "Dnes je poslední možnost přihlásit se do kurzu Sebelásky. Zbývá už jen pár posledních volných míst a jakmile se zaplní, přihlášky definitivně uzavřeme. Rezervujte si své místo zdarma, dokud je ještě volné.",
+        "Možná jste dlouho odkládala sama sebe na druhou kolej. Říkala jste si, že to ještě zvládnete, že teď není správný čas. Ale někde uvnitř cítíte, že takhle už to dál nejde. Že potřebujete změnu. Nadechnout se. Zastavit se. Začít znovu myslet i na sebe.",
+        "Co v kurzu Sebeláska krok za krokem opravdu získáte"
+      ],
+      "cta": "CHCI BÝT U TOHO",
+      "ctas": [
+        "CHCI BÝT U TOHO"
+      ],
+      "text": "96\nZítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!\n📌 KDY: už zítra v 19:00\n📌 KDE: ONLINE\n💰 ZDARMA\nDnes je poslední možnost přihlásit se do kurzu Sebelásky. Zbývá už jen pár posledních volných míst a jakmile se zaplní, přihlášky definitivně uzavřeme. Rezervujte si své místo zdarma, dokud je ještě volné.\nCHCI BÝT U TOHO\nMožná jste dlouho odkládala sama sebe na druhou kolej. Říkala jste si, že to ještě zvládnete, že teď není správný čas. Ale někde uvnitř cítíte, že takhle už to dál nejde. Že potřebujete změnu. Nadechnout se. Zastavit se. Začít znovu myslet i na sebe.\nCo v kurzu Sebeláska krok za krokem opravdu získáte\n6 online setkání, která vás provedou návratem k sobě krok za krokem\nKonkrétní návody, jak zvládat stres, únavu a tlak v běžném životě\nPodporu a vedení zkušené lektorky - Mgr. Andrea Svitáková\nPocit, že na to nejste sama\nNavíc získáte i všechny materiály k práci na sobě\nPracovní listy ke každému setkání\nPříručky, ke kterým se můžete kdykoli vrátit\nZáznamy ze všech 6 online setkání\nObsah dostupný z domova , v čase, který vám vyhovuje\nKurz zcela zdarma – bez tlaku a bez závazků\nKurzem vás bude provázet Mgr. Andrea Svitáková\nLektorka a průvodkyně, která rozumí ženám, které dlouhé roky fungovaly pro všechny kolem sebe. Vysvětlí věci lidsky, jasně a s respektem k tomu, co opravdu prožíváte.\n❤️ Budeme se na vás těšit!\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S.: Dnes se přihlášky do kurzu sebelásky uzavírají. Pokud cítíte, že je čas začít myslet i na sebe, klikněte teď a rezervujte si své místo, dokud je ještě volné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
     "id": "01KQJ20XQG8936XDXZ1M04S1FJ",
     "name": "SK kolo štěstí - květen",
     "status": "Sent",
@@ -879,75 +1087,6 @@
         "PŘIHLÁSIT SE"
       ],
       "text": "96\nNový kurz Sebeláska: Návrat k sobě krok za krokem!\n📌 KDY: už 4. května v 19:00\n📌 KDE: ONLINE\n💰 ZDARMA\nMožná už jedete příliš dlouho na rezervu. Fungujete, staráte se o ostatní a zvládáte víc, než by zvládl kdokoli jiný. A tělo i hlava Vám to začínají vracet. Právě proto vznikl nový kurz Sebeláska , který Vám pomůže vrátit energii, klid a čas zase i sobě.\nPŘIHLÁSIT SE\nMožná jste už vyzkoušela odpočinek, dovolenou nebo snahu zpomalit. A přesto se ráno budíte unavená a bez energie.  Není to Vaše chyba. Je to důsledek let, kdy jste dávala přednost všemu a všem před sebou.\nNový kurz Sebeláska krok za krokem Vám ukáže , jak se k sobě začít chovat jinak. Nečekají Vás žádné motivační řeči. Čekají Vás konkrétní kroky, které můžete použít hned v běžném životě.\nCo Vám kurz přinese\nVíce energie během dne bez pocitu vyčerpání\nKlidnější hlavu a lepší spánek\nSchopnost říct „ne“ bez výčitek\nJasnější hranice ve vztazích\nPraktické nástroje, jak zvládat stres a tlak\nPocit, že zase máte svůj život víc ve svých rukou\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Možná si říkáte, že to ještě chvíli vydržíte. Většina žen si to říká roky až do chvíle, kdy tělo řekne dost. Zajistěte si své místo v novém kurzu Sebeláska zdarma ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KPZJQSHGBT04Y84YGVB0S0XZ",
-    "name": "CZ - Nové akce (květen - červen)",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "launch",
-    "subject": "Tak tohle tu ještě nebylo....",
-    "previewText": "Dárky až za 685 Kč Tohle se vám bude líbit!",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "Ssmzdu",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Exkluzivní nabídka: dárky k balíčkům",
-      "body": [
-        "Připravili jsme pro vás nové exkluzivní akce,  kde si kromě svých oblíbených produktů odnesete i dárky v hodnotě až 685 Kč. Vyberte si svůj balíček ještě dnes a dopřejte si dárek, který vám udělá radost.",
-        "✅Hloubková obnova vlasů od kořínků po konečky",
-        "✅ Ideální řešení pro vlasy namáhané barvením, fénem nebo žehlením",
-        "Marcela 45 let: „Moje vlasy byly po letech barvení suché, bez života a konečky se lámaly. Upřímně jsem už nevěřila, že se to dá změnit. Po měsíci používání této sady s hadím olejem jsou vlasy hebčí, lesklejší a hlavně se mnohem lépe rozčesávají.“"
-      ],
-      "cta": "nové exkluzivní akce,",
-      "ctas": [
-        "nové exkluzivní akce,",
-        "CHCI BALÍČEK S DÁRKEM",
-        "KOUPIT"
-      ],
-      "text": "96\nExkluzivní nabídka: dárky k balíčkům\naž za 680 Kč\nPřipravili jsme pro vás nové exkluzivní akce,  kde si kromě svých oblíbených produktů odnesete i dárky v hodnotě až 685 Kč. Vyberte si svůj balíček ještě dnes a dopřejte si dárek, který vám udělá radost.\nCHCI BALÍČEK S DÁRKEM\nSOS regenerace pro oslabené vlasy\n✅Hloubková obnova vlasů od kořínků po konečky\n✅ Ideální řešení pro vlasy namáhané barvením, fénem nebo žehlením\n✅ Viditelně hladší a lesklejší vlasy\n🎁 DÁREK V HODNOTĚ 414 Kč\n708 Kč\n460 Kč (VIP Sleva)\nKOUPIT\nMarcela 45 let: „Moje vlasy byly po letech barvení suché, bez života a konečky se lámaly. Upřímně jsem už nevěřila, že se to dá změnit. Po měsíci používání této sady s hadím olejem jsou vlasy hebčí, lesklejší a hlavně se mnohem lépe rozčesávají.“\nHloubkové čištění, ochrana a lesk\n✅ Hloubkové čištění bez vysušení\n✅ Efekt bio-laminace pro hladké a lesklé vlasy\n✅ Ideální pro vlasy, které se rychle mastí nebo jsou zatížené stylingem\n🎁 DÁREK V HODNOTĚ 536 Kč\n894 Kč\n581 Kč (VIP Sleva)\nKOUPIT\nMelisa 39 let: „Moje vlasy byly bez objemu, rychle se mastily a po umytí působily těžce. Po vyzkoušení této péče jsem byla mile překvapená. Vlasy jsou lehké, krásně se lesknou a konečně vypadají upraveně i bez složitého stylingu.“\nEkologický úklid, který šetří čas, peníze i vaše ruce\n✅ Ekologické složení bez fosfátů a agresivní chemie\n✅ Méně prostředků, více pořádku\n✅ Ideální pro zaneprázdněné ženy a rodiny\n🎁 DÁREK V HODNOTĚ 685 Kč\n1 054 Kč\n685 Kč (VIP Sleva)\nKOUPIT\nMilada 58 let: „Dřív jsem měla doma spoustu různých prostředků a stejně jsem měla pocit, že pořád něco chybí. Tyto produkty jsou super. Prádlo je krásně svěží, nádobí se leskne a s utěrkou zvládnu rychle uklidit kuchyň i koupelnu. Nejvíc oceňuju, že nemusím nic složitě dávkovat. Prostě vezmu a použiju.“\nChytré řešení pro čistou domácnost\n✅ Chytré řešení pro celou domácnost\n✅ Účinné čištění bez fosfátů a chlóru\n✅ Poradí si i s odolnými nečistotami\n🎁 DÁREK V HODNOTĚ 685 Kč\n1 012 Kč\n658 Kč (VIP Sleva)\nKOUPIT\nLenka 62 let: „Mám ráda pořádek, ale nechci trávit hodiny úklidem. Tenhle balíček mi hodně usnadnil každodenní fungování. Prádlo je krásně čisté, nádobí se leskne a s utěrkou rychle setřu kuchyň i koupelnu. Nejvíc oceňuju jednoduchost. Žádné složité dávkování, prostě to funguje.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Taková odměna za nákup tu nebývá každý den. Klikněte a podívejte se, jaké dárky jsme pro vás připravili.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KPZDKSRRGH7SFG5A93KXBHZ9",
-    "name": "CZ - Sebeláska 3. pozvánka (již zítra)",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Brány se zavírají. Přidáte se?",
-    "previewText": "Kurz sebelásky začíná už zítra. Dnes je poslední možnost se přidat.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "V46wxh",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Zítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!",
-      "body": [
-        "Zítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!",
-        "Dnes je poslední možnost přihlásit se do kurzu Sebelásky. Zbývá už jen pár posledních volných míst a jakmile se zaplní, přihlášky definitivně uzavřeme. Rezervujte si své místo zdarma, dokud je ještě volné.",
-        "Možná jste dlouho odkládala sama sebe na druhou kolej. Říkala jste si, že to ještě zvládnete, že teď není správný čas. Ale někde uvnitř cítíte, že takhle už to dál nejde. Že potřebujete změnu. Nadechnout se. Zastavit se. Začít znovu myslet i na sebe.",
-        "Co v kurzu Sebeláska krok za krokem opravdu získáte"
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO"
-      ],
-      "text": "96\nZítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!\n📌 KDY: už zítra v 19:00\n📌 KDE: ONLINE\n💰 ZDARMA\nDnes je poslední možnost přihlásit se do kurzu Sebelásky. Zbývá už jen pár posledních volných míst a jakmile se zaplní, přihlášky definitivně uzavřeme. Rezervujte si své místo zdarma, dokud je ještě volné.\nCHCI BÝT U TOHO\nMožná jste dlouho odkládala sama sebe na druhou kolej. Říkala jste si, že to ještě zvládnete, že teď není správný čas. Ale někde uvnitř cítíte, že takhle už to dál nejde. Že potřebujete změnu. Nadechnout se. Zastavit se. Začít znovu myslet i na sebe.\nCo v kurzu Sebeláska krok za krokem opravdu získáte\n6 online setkání, která vás provedou návratem k sobě krok za krokem\nKonkrétní návody, jak zvládat stres, únavu a tlak v běžném životě\nPodporu a vedení zkušené lektorky - Mgr. Andrea Svitáková\nPocit, že na to nejste sama\nNavíc získáte i všechny materiály k práci na sobě\nPracovní listy ke každému setkání\nPříručky, ke kterým se můžete kdykoli vrátit\nZáznamy ze všech 6 online setkání\nObsah dostupný z domova , v čase, který vám vyhovuje\nKurz zcela zdarma – bez tlaku a bez závazků\nKurzem vás bude provázet Mgr. Andrea Svitáková\nLektorka a průvodkyně, která rozumí ženám, které dlouhé roky fungovaly pro všechny kolem sebe. Vysvětlí věci lidsky, jasně a s respektem k tomu, co opravdu prožíváte.\n❤️ Budeme se na vás těšit!\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S.: Dnes se přihlášky do kurzu sebelásky uzavírají. Pokud cítíte, že je čas začít myslet i na sebe, klikněte teď a rezervujte si své místo, dokud je ještě volné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "percent-off",
@@ -4984,148 +5123,6 @@
     "offers": [
       "percent-off",
       "launch"
-    ]
-  },
-  {
-    "id": "01KMD2N4HYR102JE44J1AW57SQ",
-    "name": "CZ - čistíme sklad - limitovaná edice",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "🚨Likvidace skladů. Co zmizí, už nebude!🚨",
-    "previewText": "Vybrané produkty teď za lepší ceny. Ale jen do vyprodání zásob!",
-    "sentAt": "2026-03-23T17:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "V6qvYK",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Velké čištění skladu právě začalo!",
-      "body": [
-        "Začalo velké čištění skladu. Některé produkty teď nakoupíte výhodněji než kdy jindy!",
-        "✅ Hřejivý komfort přesně tam, kde ho potřebujete",
-        "Bylinný balíček pro vitální imunitu a uvolněné tělo",
-        "✅ Hřejivý komfort pro namáhané partie těla"
-      ],
-      "cta": "ULOVIT POSLEDNÍ KUSY",
-      "ctas": [
-        "ULOVIT POSLEDNÍ KUSY",
-        "KOUPIT",
-        "a vyberte si své oblíbené produkty"
-      ],
-      "text": "96\nVelké čištění skladu právě začalo!\n⏰ 31. 3.\nZačalo velké čištění skladu. Některé produkty teď nakoupíte výhodněji než kdy jindy!\nULOVIT POSLEDNÍ KUSY\nPřírodní péče pro tělo i duši\n✅ Okamžitý i dlouhodobý efekt\n✅ Péče zevnitř i zvenčí\n✅ Intenzivní péče o jemnou pokožku\n🎁 MASKY ZDARMA\n1 343 Kč\n873 Kč ( VIP Sleva)\nKOUPIT\nBylinná péče pro tělo v pohybu i klidu\n✅ Hřejivý komfort přesně tam, kde ho potřebujete\n✅ Přírodní složení bez kompromisů\n✅ Ucelená bylinná péče pro celé tělo\n🎁 AROMA TYČINKA ZDARMA\n829 Kč\n539 Kč ( VIP Sleva)\nKOUPIT\nBylinný balíček pro vitální imunitu a uvolněné tělo\n✅ Komplexní podpora imunity a energie\n✅ Hřejivý komfort pro namáhané partie těla\n✅ Aromaterapeutické osvěžení kdykoliv\n🎁 AROMA TYČINKA ZDARMA\n829 Kč\n539 Kč ( VIP Sleva)\nKOUPIT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Prohlédněte si nabídku a vyberte si své oblíbené produkty za výhodnější ceny, dokud jsou ještě skladem.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KMB5QHKQH5N3EMST2XF0DYDS",
-    "name": "CZ Webinář Doplňky stravy - již zítra",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Už zítra odhalíme tajemství!",
-    "previewText": "Webinář, který vám pomůže znovu nastartovat energii.",
-    "sentAt": "2026-03-22T17:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RcN2ph",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Vaše tělo ví, co potřebuje. Pojďme to společně objevit.",
-      "body": [
-        "Vaše tělo ví, co potřebuje. Pojďme to společně objevit.",
-        "Možná cítíte únavu, oslabenou imunitu nebo jen potřebu znovu nastartovat své tělo. Dobrá zpráva je, že existují jednoduché kroky, které mohou přinést velkou změnu. A právě o nich si budeme povídat už zítra večer.",
-        "Už zítra  vám srozumitelně a lidsky ukážeme 4 pilíře vitality. Webinářem vás provedou Renata Králová, Gabriela Novotná a Denisa Horová, které dlouhodobě pomáhají ženám pochopit signály vlastního těla a vrátit mu sílu, energii a rovnováhu.",
-        "Jak správně doplnit minerály a podpořit zdravé kosti"
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO",
-        "KOUPIT",
-        "REZERVOVAT SI MÍSTO"
-      ],
-      "text": "96\nVaše tělo ví, co potřebuje. Pojďme to společně objevit.\n⏰Už zítra ve 20:00\nMožná cítíte únavu, oslabenou imunitu nebo jen potřebu znovu nastartovat své tělo. Dobrá zpráva je, že existují jednoduché kroky, které mohou přinést velkou změnu. A právě o nich si budeme povídat už zítra večer.\nCHCI BÝT U TOHO\nUž zítra  vám srozumitelně a lidsky ukážeme 4 pilíře vitality. Webinářem vás provedou Renata Králová, Gabriela Novotná a Denisa Horová, které dlouhodobě pomáhají ženám pochopit signály vlastního těla a vrátit mu sílu, energii a rovnováhu.\nJak přirozeně podpořit imunitu\nJak chránit své buňky před stárnutím\nJak správně doplnit minerály a podpořit zdravé kosti\nJak podpořit játra a trávení\nPraktické tipy z praxe\n🎁 Překvapení\nCitrokalcevit\n✅ Podpora zdraví kostí a zubů\n✅ Ideální doplněk při zvýšené zátěži, stresu nebo nevyvážené stravě\n✅ Kombinace vápníku a vitamínů\n✅ Podpora imunitního systému\n745 Kč\n484 Kč ( VIP Sleva)\nKOUPIT\nFunkční komplex s vlašským ořechem se sladidlem\n✅ Podpora trávicího systému\n✅ Podpora přirozené obranyschopnosti\n✅ Podpora funkce ledvin\n🔥 Nyní s 15 % slevou\n628 Kč\n347 Kč ( VIP Sleva)\nKOUPIT\nGlutatione complex\n✅ Pomáhá snížit únavu a vyčerpání\n✅ Podpora imunitního systému\n✅ Pomáhá snížit únavu\n1 340 Kč\n871 Kč ( VIP Sleva)\nKOUPIT\nČaga s mumiem\n✅ Podpora vitality a každodenní energie\n✅ Přispívá k celkové pohodě organismu\n✅ Podpora přirozené odolnosti a regenerace\n1 340 Kč\n871 Kč ( VIP Sleva)\nKOUPIT\nZveme vás na výjimečný online webinář – rezervujte si své místo na webináři ZDARMA!\n📅 Kdy: 23. března\n🕒 Čas: 20:00\n💻 Kde: Online (z pohodlí domova)\nREZERVOVAT SI MÍSTO\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Klikněte a zajistěte si své místo na webináři zdarma.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KMB0ENY1ZV6C94F8C9D9935C",
-    "name": "SK  Deexpert konec",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "urgency",
-    "subject": "⏰POSLEDNÁ ŠANCA!⏰",
-    "previewText": "Dnes o polnoci 20 % ZĽAVA KONČÍ...",
-    "sentAt": "2026-03-22T16:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UxRwA8",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Posledná šanca nakúpiť s 20 % zľavou!",
-      "body": [
-        "P. S. Nečakajte na zajtra. Urobte ten krok pre seba práve teraz. O pár hodín už táto šanca nebude.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
-        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
-      ],
-      "cta": "NAKÚPIŤ SO ZĽAVOU",
-      "ctas": [
-        "NAKÚPIŤ SO ZĽAVOU"
-      ],
-      "text": "96\nPosledná šanca nakúpiť s 20 % zľavou!\n⏰ Do dnešnej polnoci\n🔥 20 % ZĽAVA\nNAKÚPIŤ SO ZĽAVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Nečakajte na zajtra. Urobte ten krok pre seba práve teraz. O pár hodín už táto šanca nebude.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KM0Q0XKQM0FVNGBKNW7PWF49",
-    "name": "CZ Deexpert konec",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "⏰POSLEDNÍ ŠANCE!⏰",
-    "previewText": "Dnes o půlnoci 20 % SLEVA KONČÍ...",
-    "sentAt": "2026-03-22T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "YdLCyL",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Poslední šance nakoupit s 20% slevou!",
-      "body": [
-        "P.S . Nečekejte na zítra. Udělejte ten krok pro sebe právě teď. Za pár hodin už tahle šance nebude",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
-        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
-      ],
-      "cta": "NAKOUPIT SE SLEVOU",
-      "ctas": [
-        "NAKOUPIT SE SLEVOU"
-      ],
-      "text": "96\nPoslední šance nakoupit s 20% slevou!\n⏰ Do dnešní půlnoci\n🔥 20% SLEVA\nNAKOUPIT SE SLEVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S . Nečekejte na zítra. Udělejte ten krok pro sebe právě teď. Za pár hodin už tahle šance nebude\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "launch",
-      "education"
     ]
   }
 ]
