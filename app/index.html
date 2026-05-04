@@ -18,6 +18,11 @@
         </section>
 
         <section class="card small">
+          <h2>Produktový katalog</h2>
+          <div id="catalog-meta">Načítám…</div>
+        </section>
+
+        <section class="card small">
           <h2>Styl značky</h2>
           <ul id="tone-list"></ul>
         </section>
@@ -50,7 +55,7 @@
               </label>
               <label>
                 Produkt / focus
-                <input name="product" placeholder="např. kolagen marine" required />
+                <input name="product" placeholder="např. kolagen marine nebo hlavní produktová řada" required />
               </label>
               <label>
                 Typ kampaně
@@ -92,6 +97,16 @@
                 <input name="ctaGoal" placeholder="např. objednat se slevou" />
               </label>
             </div>
+            <section class="product-picker">
+              <div class="product-picker-header">
+                <strong>Produkty z katalogu</strong>
+                <small>Můžeš vybrat 1 i více produktů. Generátor je pak zohlední ve copy.</small>
+              </div>
+              <input id="product-search" type="text" placeholder="Hledej podle názvu, kódu, EAN nebo URL" autocomplete="off" />
+              <div id="selected-products" class="selected-products"></div>
+              <div id="product-results" class="product-results"></div>
+              <input type="hidden" name="selectedProducts" id="selected-products-input" />
+            </section>
             <label>
               Brief
               <textarea name="brief" rows="5" placeholder="Co přesně má newsletter říct, co zdůraznit, čemu se vyhnout"></textarea>

@@ -1,6 +1,10 @@
-const profile = await fetch('../data/current/style-profile.json').then((r) => r.json());
+const [profile, catalog] = await Promise.all([
+  fetch('../data/current/style-profile.json').then((r) => r.json()),
+  fetch('../data/current/product-catalog.json').then((r) => r.json())
+]);
 
 const datasetMeta = document.querySelector('#dataset-meta');
+const catalogMeta = document.querySelector('#catalog-meta');
 const toneList = document.querySelector('#tone-list');
 const ctaList = document.querySelector('#cta-list');
 const examplesEl = document.querySelector('#examples');
@@ -9,15 +13,22 @@ const inspirationEl = document.querySelector('#inspiration');
 const form = document.querySelector('#generator-form');
 const copyBtn = document.querySelector('#copy-output');
 const copyHtmlBtn = document.querySelector('#copy-html-output');
+const productSearchEl = document.querySelector('#product-search');
+const productResultsEl = document.querySelector('#product-results');
+const selectedProductsEl = document.querySelector('#selected-products');
+const selectedProductsInput = document.querySelector('#selected-products-input');
 
 let lastDraft = null;
+let selectedCatalogProducts = [];
 
 renderSidebar();
 renderExamples('cz', 'promo');
 renderInspiration([]);
+renderProductPicker();
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
+  syncSelectedProductsInput();
   const data = Object.fromEntries(new FormData(form).entries());
   const draft = generateNewsletter(data);
   lastDraft = draft;
@@ -27,6 +38,8 @@ form.addEventListener('submit', (event) => {
   renderExamples(data.language, data.campaignType);
   renderInspiration(draft.inspiration);
 });
+
+productSearchEl?.addEventListener('input', () => renderProductPicker(productSearchEl.value));
 
 copyBtn.addEventListener('click', async () => {
   if (!outputEl.textContent.trim()) return;
@@ -58,8 +71,107 @@ function renderSidebar() {
     <strong>Mode:</strong> High-seller default
   `;
 
+  catalogMeta.innerHTML = `
+    <strong>${catalog.counts?.total || 0}</strong> produktů<br />
+    <span>Viditelných: ${catalog.counts?.visible || 0}</span><br />
+    <span>S cenou: ${catalog.counts?.withPrice || 0}</span><br />
+    <span>Build: ${new Date(catalog.generatedAt).toLocaleString('cs-CZ')}</span>
+  `;
+
   profile.tone.voice.forEach((item) => appendListItem(toneList, item));
   profile.tone.ctaPatterns.forEach((item) => appendListItem(ctaList, item));
+}
+
+function renderProductPicker(query = '') {
+  renderSelectedProducts();
+  const matches = searchCatalog(query);
+  productResultsEl.innerHTML = '';
+
+  if (!matches.length) {
+    productResultsEl.innerHTML = `<div class="empty-state">${query ? 'Nic jsem nenašel. Zkus název, kód, EAN nebo kratší dotaz.' : 'Začni psát a vyber produkty z katalogu.'}</div>`;
+    return;
+  }
+
+  matches.forEach((item) => {
+    const row = document.createElement('div');
+    row.className = 'product-result';
+    row.innerHTML = `
+      <div class="product-result-top">
+        <div>
+          <strong>${escapeHtml(item.title)}</strong>
+          <div class="product-result-meta">${escapeHtml(item.code || 'bez kódu')} · ${item.price?.withVat ?? '–'} ${escapeHtml(item.price?.currency || 'CZK')} · ${item.visible ? 'viditelný' : 'skrytý'}</div>
+        </div>
+        <button type="button" data-add-product="${escapeHtml(item.code || item.title)}">Přidat</button>
+      </div>
+      <div class="product-result-meta">${escapeHtml(item.url || '')}</div>
+    `;
+    row.querySelector('button')?.addEventListener('click', () => addSelectedProduct(item));
+    productResultsEl.appendChild(row);
+  });
+}
+
+function renderSelectedProducts() {
+  selectedProductsEl.innerHTML = '';
+  if (!selectedCatalogProducts.length) {
+    selectedProductsEl.innerHTML = '<div class="empty-state">Zatím není vybraný žádný katalogový produkt.</div>';
+    syncSelectedProductsInput();
+    return;
+  }
+
+  selectedCatalogProducts.forEach((item) => {
+    const chip = document.createElement('div');
+    chip.className = 'product-chip';
+    chip.innerHTML = `<span>${escapeHtml(item.title)}</span><button type="button" aria-label="Odebrat">×</button>`;
+    chip.querySelector('button')?.addEventListener('click', () => removeSelectedProduct(item.code || item.title));
+    selectedProductsEl.appendChild(chip);
+  });
+  syncSelectedProductsInput();
+}
+
+function searchCatalog(query = '') {
+  const cleaned = cleanField(query).toLowerCase();
+  if (!cleaned) return (catalog.items || []).filter((item) => item.visible).slice(0, 12);
+  return (catalog.items || [])
+    .filter((item) => !selectedCatalogProducts.some((selected) => (selected.code || selected.title) === (item.code || item.title)))
+    .map((item) => ({ item, score: scoreCatalogMatch(item, cleaned) }))
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 12)
+    .map(({ item }) => item);
+}
+
+function scoreCatalogMatch(item, query) {
+  const hay = [item.title, item.code, item.ean, item.url, ...(item.search || [])].map((value) => cleanField(value).toLowerCase());
+  let score = 0;
+  hay.forEach((field) => {
+    if (!field) return;
+    if (field === query) score += 100;
+    else if (field.startsWith(query)) score += 40;
+    else if (field.includes(query)) score += 20;
+  });
+  if (item.visible) score += 10;
+  return score;
+}
+
+function addSelectedProduct(item) {
+  if (selectedCatalogProducts.some((selected) => (selected.code || selected.title) === (item.code || item.title))) return;
+  selectedCatalogProducts = [...selectedCatalogProducts, item];
+  renderProductPicker(productSearchEl.value);
+}
+
+function removeSelectedProduct(key) {
+  selectedCatalogProducts = selectedCatalogProducts.filter((item) => (item.code || item.title) !== key);
+  renderProductPicker(productSearchEl.value);
+}
+
+function syncSelectedProductsInput() {
+  selectedProductsInput.value = JSON.stringify(selectedCatalogProducts.map((item) => ({
+    code: item.code,
+    title: item.title,
+    url: item.url,
+    price: item.price,
+    visible: item.visible
+  })));
 }
 
 function renderExamples(language, campaignType) {
@@ -185,7 +297,7 @@ function pickSubset(data) {
 }
 
 function findInspiration(data) {
-  const tokens = tokenize(`${data.theme} ${data.product} ${data.offer || ''}`);
+  const tokens = tokenize(`${data.theme} ${data.product} ${getProductNames(data).join(' ')} ${data.offer || ''}`);
   return (profile.examples || [])
     .filter((item) => item.language === data.language)
     .map((item) => ({ ...item, score: similarityScore(tokens, item) }))
@@ -209,17 +321,23 @@ function tokenize(value) {
 
 function buildSubjectAngles(data, subset) {
   const offer = data.offer?.trim();
-  const product = capitalize(data.product);
+  const product = capitalize(getPrimaryFocus(data));
+  const productLine = capitalize(getProductLine(data, 3));
   const theme = capitalize(data.theme);
+  const isMulti = getSelectedProducts(data).length > 1;
   const deadlineWord = data.language === 'sk' ? 'končí čoskoro' : 'končí brzy';
   const moreSense = data.language === 'sk' ? 'práve teraz dáva zmysel' : 'právě teď dává smysl';
   const youNeed = data.language === 'sk' ? 'čo potrebuješ vedieť' : 'co potřebuješ vědět';
   const benefitVerb = data.language === 'sk' ? 'pomôže' : 'pomůže';
-  const curiosity = data.language === 'sk' ? `Prečo si ${product.toLowerCase()} berie stále viac ľudí` : `Proč si ${product.toLowerCase()} bere stále víc lidí`;
-  const promoOffer = offer ? `${product}: ${offer}` : `${product} ${moreSense}`;
+  const curiosity = isMulti
+    ? (data.language === 'sk' ? `Ako poskladať výber: ${productLine}` : `Jak poskládat výběr: ${productLine}`)
+    : (data.language === 'sk' ? `Prečo si ${product.toLowerCase()} berie stále viac ľudí` : `Proč si ${product.toLowerCase()} bere stále víc lidí`);
+  const promoOffer = offer ? `${product}: ${offer}` : isMulti ? `${productLine} ${moreSense}` : `${product} ${moreSense}`;
   const urgencyOffer = offer ? `${offer} ${deadlineWord}` : `${product} ${deadlineWord}`;
   const educationAngle = `${theme}: ${youNeed}`;
-  const resultAngle = data.language === 'sk' ? `${product}, ktorý ${benefitVerb} práve teraz` : `${product}, který ${benefitVerb} právě teď`;
+  const resultAngle = isMulti
+    ? (data.language === 'sk' ? `${productLine}, ktoré spolu dávajú zmysel` : `${productLine}, které spolu dávají smysl`)
+    : (data.language === 'sk' ? `${product}, ktorý ${benefitVerb} práve teraz` : `${product}, který ${benefitVerb} právě teď`);
   const launchAngle = `Novinka: ${product}`;
   const eventAngle = data.language === 'sk' ? `${theme}, ktoré sa blíži` : `${theme}, které se blíží`;
 
@@ -371,17 +489,21 @@ function buildBlocks(data, cta, angle, inspiration) {
   const detail2 = secondMeaningfulSentence(data.brief);
   const whyNow = buildWhyNow(data, data.language, angle);
   const proofLine = buildProof(data, data.language);
+  const productListSentence = buildProductListSentence(data);
+  const multiIntro = getSelectedProducts(data).length > 1
+    ? (data.language === 'sk' ? `V tomto maile pracujeme s výberom produktov: ${productListSentence}.` : `V tomhle mailu pracujeme s výběrem produktů: ${productListSentence}.`)
+    : '';
 
   const blocks = data.language === 'sk'
     ? [
         { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je práve teraz téma, ktorá si zaslúži pozornosť. ${offer || whyNow}`) },
-        { title: 'DETAIL', text: cleanCopy(detail || `${capitalize(focus)} komunikujeme stručne, konkrétne a s jasným benefitom pre čitateľa.`) },
+        { title: 'DETAIL', text: cleanCopy(detail || multiIntro || `${capitalize(focus)} komunikujeme stručne, konkrétne a s jasným benefitom pre čitateľa.`) },
         { title: 'DÔVOD', text: cleanCopy(detail2 || proofLine) },
         { title: 'AKCIA', text: cleanCopy(`${offer ? `${offer} ` : ''}${cta}.`) }
       ]
     : [
         { title: 'ÚVOD', text: cleanCopy(`${capitalize(focus)} je právě teď téma, které si zaslouží pozornost. ${offer || whyNow}`) },
-        { title: 'DETAIL', text: cleanCopy(detail || `${capitalize(focus)} komunikujeme stručně, konkrétně a s jasným benefitem pro čtenáře.`) },
+        { title: 'DETAIL', text: cleanCopy(detail || multiIntro || `${capitalize(focus)} komunikujeme stručně, konkrétně a s jasným benefitem pro čtenáře.`) },
         { title: 'DŮVOD', text: cleanCopy(detail2 || proofLine) },
         { title: 'AKCE', text: cleanCopy(`${offer ? `${offer} ` : ''}${cta}.`) }
       ];
@@ -550,7 +672,11 @@ function buildSalesChecks(data, angle, cta, salesScore) {
 
 function buildCta(data, subset, inspiration) {
   const focus = getPrimaryFocus(data).toLowerCase();
+  const selectedCount = getSelectedProducts(data).length;
   if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
+  if (selectedCount > 1) {
+    return strengthenCta(data, data.language === 'sk' ? 'Chcem si vybrať produkty' : 'Chci si vybrat produkty');
+  }
   if (data.offer) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
   if (data.campaignType === 'event') return strengthenCta(data, data.language === 'sk' ? 'Chcem si rezervovať miesto' : 'Chci si rezervovat místo');
   if (/(kurz|webinář|webinar|školení|seminář|seminar|konference|vstupenka|vstupenky)/i.test(focus)) {
@@ -672,6 +798,7 @@ function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headli
 }
 
 function sanitizeInput(data) {
+  const selectedProducts = parseSelectedProducts(data.selectedProducts);
   return {
     ...data,
     theme: cleanField(data.theme),
@@ -680,7 +807,9 @@ function sanitizeInput(data) {
     brief: cleanField(data.brief),
     segment: cleanField(data.segment),
     ctaGoal: cleanField(data.ctaGoal),
-    brand: cleanField(data.brand)
+    brand: cleanField(data.brand),
+    selectedProducts,
+    productNames: selectedProducts.map((item) => item.title).filter(Boolean)
   };
 }
 
@@ -709,9 +838,56 @@ function splitSentences(value = '') {
     .filter((item) => item.length >= 12);
 }
 
+function parseSelectedProducts(value = '') {
+  try {
+    const parsed = JSON.parse(value || '[]');
+    return Array.isArray(parsed) ? parsed.map((item) => ({
+      code: cleanField(item.code),
+      title: cleanField(item.title),
+      url: cleanField(item.url),
+      visible: Boolean(item.visible),
+      price: item.price || null
+    })).filter((item) => item.title) : [];
+  } catch {
+    return [];
+  }
+}
+
+function getSelectedProducts(data) {
+  return Array.isArray(data.selectedProducts) ? data.selectedProducts : [];
+}
+
+function getProductNames(data) {
+  const selected = getSelectedProducts(data).map((item) => item.title).filter(Boolean);
+  if (selected.length) return selected;
+  const manual = cleanField(data.product);
+  return manual ? [manual] : [];
+}
+
+function getProductLine(data, limit = 2) {
+  const names = getProductNames(data);
+  if (!names.length) return data.language === 'sk' ? 'ponuka' : 'nabídka';
+  if (names.length === 1) return names[0];
+  const shown = names.slice(0, limit);
+  const remainder = names.length - shown.length;
+  const joined = shown.join(', ');
+  if (remainder <= 0) return joined;
+  return data.language === 'sk' ? `${joined} a ďalšie ${remainder}` : `${joined} a další ${remainder}`;
+}
+
+function buildProductListSentence(data) {
+  const names = getProductNames(data);
+  if (!names.length) return '';
+  if (names.length <= 3) return names.join(', ');
+  return `${names.slice(0, 3).join(', ')} + ${names.length - 3} další`;
+}
+
 function getPrimaryFocus(data) {
   const product = cleanField(data.product);
   const theme = cleanField(data.theme);
+  const selected = getSelectedProducts(data);
+  if (selected.length === 1) return selected[0].title;
+  if (selected.length > 1) return theme || getProductLine(data, 2);
   if (!product) return theme || (data.language === 'sk' ? 'ponuka' : 'nabídka');
   if (isGenericFocus(product) && theme) return theme;
   return product;
