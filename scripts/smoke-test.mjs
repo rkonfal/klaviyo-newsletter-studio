@@ -150,6 +150,32 @@ await runScenario(
 );
 
 await runScenario(
+  'urgency-style-copy',
+  async (url) => {
+    if (String(url).includes('style-profile.json')) return fakeResponse(profile);
+    if (String(url).includes('product-catalog.json')) return fakeResponse(catalog);
+    throw new Error(`Unexpected fetch ${url}`);
+  },
+  async (window) => {
+    const { document } = window;
+    const theme = document.querySelector('input[name="theme"]');
+    const brief = document.querySelector('textarea[name="brief"]');
+    const offer = document.querySelector('input[name="offer"]');
+    const form = document.querySelector('#generator-form');
+    const output = document.querySelector('#output');
+
+    theme.value = 'Jarní restart pleti';
+    brief.value = 'Napiš newsletter na produkt Aloe Vera šťáva, 500 ml. Zdůrazni benefity.';
+    offer.value = '20 % sleva do neděle';
+    form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+    await waitForTick();
+
+    assert.match(output.textContent, /20 % sleva do neděle/i);
+    assert.match(output.textContent, /dřív, než nabídka zmizí|jen teď|otevři detail/i);
+  }
+);
+
+await runScenario(
   'load-error',
   async (url) => {
     if (String(url).includes('style-profile.json')) return fakeResponse(profile);
