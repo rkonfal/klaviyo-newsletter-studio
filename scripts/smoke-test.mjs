@@ -71,6 +71,31 @@ await runScenario(
 );
 
 await runScenario(
+  'theme-only-nongift',
+  async (url) => {
+    if (String(url).includes('style-profile.json')) return fakeResponse(profile);
+    if (String(url).includes('product-catalog.json')) return fakeResponse(catalog);
+    throw new Error(`Unexpected fetch ${url}`);
+  },
+  async (window) => {
+    const { document } = window;
+    const theme = document.querySelector('input[name="theme"]');
+    const brief = document.querySelector('textarea[name="brief"]');
+    const form = document.querySelector('#generator-form');
+    const output = document.querySelector('#output');
+
+    theme.value = 'Jarní restart pleti';
+    brief.value = 'Zdůrazni benefity a krátkou zkušenost zákaznice.';
+    form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+    await waitForTick();
+
+    assert.doesNotMatch(output.textContent, /tip na dárek/i);
+    assert.doesNotMatch(output.textContent, /klikni na chci/i);
+    assert.match(output.textContent, /Chci si vybrat/);
+  }
+);
+
+await runScenario(
   'load-error',
   async (url) => {
     if (String(url).includes('style-profile.json')) return fakeResponse(profile);
