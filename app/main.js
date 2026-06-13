@@ -1,7 +1,5 @@
-const [profile, catalog] = await Promise.all([
-  fetch('../data/current/style-profile.json').then((r) => r.json()),
-  fetch('../data/current/product-catalog.json').then((r) => r.json())
-]);
+let profile = {};
+let catalog = {};
 
 const datasetMeta = document.querySelector('#dataset-meta');
 const catalogMeta = document.querySelector('#catalog-meta');
@@ -27,58 +25,121 @@ const focusBox = document.querySelector('.focus-box');
 let lastDraft = null;
 let selectedCatalogProducts = [];
 
-renderSidebar();
-renderExamples('cz', 'promo');
-renderInspiration([]);
-renderProductPicker();
-updateInputMode();
+bootstrap().catch(handleBootstrapError);
 
-advancedToggleBtn?.addEventListener('click', () => {
-  advancedPanelEl?.classList.toggle('hidden');
-  advancedToggleBtn.textContent = advancedPanelEl?.classList.contains('hidden') ? 'Zobrazit advanced' : 'Skrýt advanced';
-});
+async function bootstrap() {
+  ensureRequiredDom();
+  setLoadingState();
+  [profile, catalog] = await Promise.all([
+    loadJson('../data/current/style-profile.json', 'datasetu kampaní'),
+    loadJson('../data/current/product-catalog.json', 'produktového katalogu')
+  ]);
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  syncSelectedProductsInput();
-  const data = Object.fromEntries(new FormData(form).entries());
-  const draft = generateNewsletter(data);
-  lastDraft = draft;
+  renderSidebar();
+  renderExamples('cz', 'promo');
+  renderInspiration([]);
+  renderProductPicker();
+  updateInputMode();
+  bindEvents();
+}
 
-  outputEl.classList.remove('empty');
-  outputEl.textContent = formatDraft(draft, data.language);
-  renderExamples(data.language, data.campaignType);
-  renderInspiration(draft.inspiration);
-});
+function bindEvents() {
+  advancedToggleBtn?.addEventListener('click', () => {
+    advancedPanelEl?.classList.toggle('hidden');
+    advancedToggleBtn.textContent = advancedPanelEl?.classList.contains('hidden') ? 'Zobrazit advanced' : 'Skrýt advanced';
+  });
 
-productSearchEl?.addEventListener('input', () => renderProductPicker(productSearchEl.value));
-manualProductInput?.addEventListener('input', () => updateInputMode());
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    syncSelectedProductsInput();
+    const data = Object.fromEntries(new FormData(form).entries());
+    const draft = generateNewsletter(data);
+    lastDraft = draft;
 
-copyBtn.addEventListener('click', async () => {
-  if (!outputEl.textContent.trim()) return;
-  await navigator.clipboard.writeText(outputEl.textContent);
-  flashButton(copyBtn, 'Zkopírováno');
-});
+    outputEl?.classList.remove('empty');
+    outputEl.textContent = formatDraft(draft, data.language);
+    renderExamples(data.language, data.campaignType);
+    renderInspiration(draft.inspiration);
+  });
 
-copyHtmlBtn.addEventListener('click', async () => {
-  if (!lastDraft?.html) return;
-  await navigator.clipboard.writeText(lastDraft.html);
-  flashButton(copyHtmlBtn, 'HTML zkopírováno');
-});
+  productSearchEl?.addEventListener('input', () => renderProductPicker(productSearchEl.value));
+  manualProductInput?.addEventListener('input', () => updateInputMode());
+
+  copyBtn?.addEventListener('click', async () => {
+    if (!outputEl?.textContent.trim()) return;
+    await navigator.clipboard.writeText(outputEl.textContent);
+    flashButton(copyBtn, 'Zkopírováno');
+  });
+
+  copyHtmlBtn?.addEventListener('click', async () => {
+    if (!lastDraft?.html) return;
+    await navigator.clipboard.writeText(lastDraft.html);
+    flashButton(copyHtmlBtn, 'HTML zkopírováno');
+  });
+}
+
+function ensureRequiredDom() {
+  const missing = [
+    ['#dataset-meta', datasetMeta],
+    ['#catalog-meta', catalogMeta],
+    ['#tone-list', toneList],
+    ['#cta-list', ctaList],
+    ['#examples', examplesEl],
+    ['#output', outputEl],
+    ['#inspiration', inspirationEl],
+    ['#generator-form', form],
+    ['#product-results', productResultsEl],
+    ['#selected-products', selectedProductsEl],
+    ['#selected-products-input', selectedProductsInput]
+  ].filter(([, node]) => !node);
+
+  if (missing.length) {
+    throw new Error(`Chybí povinné DOM prvky: ${missing.map(([selector]) => selector).join(', ')}`);
+  }
+}
+
+async function loadJson(url, label) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(`Nepodařilo se načíst ${label} (${response.status})`);
+  }
+  return response.json();
+}
+
+function setLoadingState() {
+  datasetMeta && (datasetMeta.textContent = 'Načítám dataset…');
+  catalogMeta && (catalogMeta.textContent = 'Načítám katalog…');
+  outputEl && (outputEl.textContent = 'Načítám data generátoru…');
+}
+
+function handleBootstrapError(error) {
+  console.error('[newsletter-studio] bootstrap failed', error);
+  datasetMeta && (datasetMeta.innerHTML = '<span class="error-text">Dataset se nepodařilo načíst.</span>');
+  catalogMeta && (catalogMeta.innerHTML = '<span class="error-text">Katalog se nepodařilo načíst.</span>');
+  if (outputEl) {
+    outputEl.classList.remove('empty');
+    outputEl.textContent = `Modul se nepodařilo spustit. ${error.message || 'Zkus obnovit stránku nebo zkontrolovat data.'}`;
+  }
+  copyBtn && (copyBtn.disabled = true);
+  copyHtmlBtn && (copyHtmlBtn.disabled = true);
+}
 
 function flashButton(button, text) {
+  if (!button) return;
   const original = button.textContent;
   button.textContent = text;
   setTimeout(() => (button.textContent = original), 1500);
 }
 
 function renderSidebar() {
-  const langInfo = Object.entries(profile.languageBreakdown || {}).map(([key, value]) => `${key.toUpperCase()}: ${value}`).join(' · ');
-  const typeInfo = Object.entries(profile.campaignTypeBreakdown || {}).map(([key, value]) => `${key}: ${value}`).join(' · ');
+  const langInfo = Object.entries(profile.languageBreakdown || {}).map(([key, value]) => `${key.toUpperCase()}: ${value}`).join(' · ') || 'Bez jazykových dat';
+  const typeInfo = Object.entries(profile.campaignTypeBreakdown || {}).map(([key, value]) => `${key}: ${value}`).join(' · ') || 'Bez typologických dat';
+  const profileGeneratedAt = profile.generatedAt ? new Date(profile.generatedAt).toLocaleString('cs-CZ') : 'neznámý';
+  const catalogGeneratedAt = catalog.generatedAt ? new Date(catalog.generatedAt).toLocaleString('cs-CZ') : 'neznámý';
 
   datasetMeta.innerHTML = `
-    <strong>${profile.campaignCount}</strong> kampaní<br />
-    <span>Poslední build: ${new Date(profile.generatedAt).toLocaleString('cs-CZ')}</span><br />
+    <strong>${profile.campaignCount || 0}</strong> kampaní<br />
+    <span>Poslední build: ${profileGeneratedAt}</span><br />
     <span>${langInfo}</span><br />
     <span>${typeInfo}</span><br />
     <strong>Mode:</strong> High-seller default
@@ -88,11 +149,13 @@ function renderSidebar() {
     <strong>${catalog.counts?.total || 0}</strong> produktů<br />
     <span>Viditelných: ${catalog.counts?.visible || 0}</span><br />
     <span>S cenou: ${catalog.counts?.withPrice || 0}</span><br />
-    <span>Build: ${new Date(catalog.generatedAt).toLocaleString('cs-CZ')}</span>
+    <span>Build: ${catalogGeneratedAt}</span>
   `;
 
-  profile.tone.voice.forEach((item) => appendListItem(toneList, item));
-  profile.tone.ctaPatterns.forEach((item) => appendListItem(ctaList, item));
+  toneList.innerHTML = '';
+  ctaList.innerHTML = '';
+  (profile.tone?.voice || ['dataset zatím nevrátil tonalitu']).forEach((item) => appendListItem(toneList, item));
+  (profile.tone?.ctaPatterns || ['Chci zjistit víc']).forEach((item) => appendListItem(ctaList, item));
 }
 
 function renderProductPicker(query = '') {

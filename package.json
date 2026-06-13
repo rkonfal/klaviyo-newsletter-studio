@@ -8,6 +8,10 @@
     "build:data": "node scripts/build-dataset.mjs && node scripts/build-product-catalog.mjs",
     "build:catalog": "node scripts/build-product-catalog.mjs",
     "build": "npm run build:data",
-    "dev": "python3 -m http.server 4173"
+    "dev": "python3 -m http.server 4173",
+    "test:smoke": "node scripts/smoke-test.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
   }
 }

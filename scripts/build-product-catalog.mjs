@@ -8,7 +8,9 @@ const outPath = path.join(root, 'data', 'current', 'product-catalog.json');
 
 const snapshotDir = await findLatestSnapshotDir(snapshotsRoot);
 if (!snapshotDir) {
-  throw new Error(`No reporting-v2 snapshot found in ${snapshotsRoot}`);
+  const fallbackUsed = await useExistingCatalogFallback(outPath, snapshotsRoot);
+  if (fallbackUsed) process.exit(0);
+  throw new Error(`No reporting-v2 snapshot found in ${snapshotsRoot} and no committed fallback catalog exists at ${outPath}`);
 }
 
 const combinedIndexPath = path.join(snapshotDir, 'combined_product_index.json');
@@ -134,15 +136,33 @@ function unique(items) {
 }
 
 async function findLatestSnapshotDir(baseDir) {
-  const entries = await fs.readdir(baseDir, { withFileTypes: true });
-  const dirs = entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort().reverse();
-  for (const dir of dirs) {
-    const full = path.join(baseDir, dir);
-    try {
-      await fs.access(path.join(full, 'combined_product_index.json'));
-      await fs.access(path.join(full, 'wpj_products.json'));
-      return full;
-    } catch {}
+  try {
+    const entries = await fs.readdir(baseDir, { withFileTypes: true });
+    const dirs = entries.filter((entry) => entry.isDirectory()).map((entry) => entry.name).sort().reverse();
+    for (const dir of dirs) {
+      const full = path.join(baseDir, dir);
+      try {
+        await fs.access(path.join(full, 'combined_product_index.json'));
+        await fs.access(path.join(full, 'wpj_products.json'));
+        return full;
+      } catch {}
+    }
+    return null;
+  } catch (error) {
+    if (error?.code === 'ENOENT') return null;
+    throw error;
   }
-  return null;
+}
+
+async function useExistingCatalogFallback(filePath, missingSnapshotsRoot) {
+  try {
+    const existing = JSON.parse(await fs.readFile(filePath, 'utf8'));
+    const itemCount = Array.isArray(existing.items) ? existing.items.length : 0;
+    if (!itemCount) return false;
+    console.warn(`No reporting snapshot found in ${missingSnapshotsRoot}. Reusing committed product catalog with ${itemCount} items from ${path.relative(root, filePath)}.`);
+    return true;
+  } catch (error) {
+    if (error?.code === 'ENOENT') return false;
+    throw error;
+  }
 }
