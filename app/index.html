@@ -36,23 +36,37 @@
       <main class="main">
         <section class="card hero-card">
           <div>
-            <h2>Vytvoř newsletter z reálných produktů</h2>
-            <p>Vyber produkty, napiš téma a krátké zadání. Zbytek dopočítá generátor sám.</p>
+            <div class="eyebrow">V6 UX/UI polish</div>
+            <h2>Vytvoř prodejní newsletter z reálných produktů</h2>
+            <p>Vyber produkt, doplň téma a brief. Generátor připraví subjecty, headline, tělo i HTML draft v jednom průchodu.</p>
           </div>
           <div class="hero-badges">
             <span class="badge">Katalog produktů</span>
             <span class="badge">CZ + SK</span>
             <span class="badge">HTML export</span>
+            <span class="badge accent">Sales-first</span>
           </div>
         </section>
 
-        <section class="card">
+        <section class="status-strip" aria-label="Rychlý přehled">
+          <div class="status-pill"><span class="status-label">Flow</span><strong>Katalog → brief → draft</strong></div>
+          <div class="status-pill"><span class="status-label">Vhodné pro</span><strong>promo, launch, urgency, edukaci</strong></div>
+          <div class="status-pill"><span class="status-label">Výstup</span><strong>text + HTML + subject varianty</strong></div>
+        </section>
+
+        <div class="workspace-grid">
+        <section class="card input-card">
           <div class="section-head">
             <div>
-              <h2>Vstup</h2>
-              <p class="muted-copy">Basic režim drží minimum polí, advanced schovává jen jemné ladění.</p>
+              <h2>1. Zadání</h2>
+              <p class="muted-copy">Basic režim drží minimum polí, advanced schovává jemné ladění až pod povrch.</p>
             </div>
             <button id="advanced-toggle" class="secondary" type="button">Zobrazit advanced</button>
+          </div>
+          <div class="quick-briefs">
+            <button type="button" class="secondary quick-fill" data-fill-theme="Den matek" data-fill-brief="Chci tip na dárek pro maminku. Zdůrazni benefity a krátkou zkušenost zákaznice." data-fill-offer="">Den matek</button>
+            <button type="button" class="secondary quick-fill" data-fill-theme="Jarní restart pleti" data-fill-brief="Zdůrazni hlavní benefity, rychlý efekt a důvod kliknout na detail produktu." data-fill-offer="">Restart pleti</button>
+            <button type="button" class="secondary quick-fill" data-fill-theme="Víkendová akce" data-fill-brief="Napiš krátký prodejní newsletter s tlakem na rychlé rozhodnutí a jasné CTA." data-fill-offer="20 % sleva do neděle">Urgency akce</button>
           </div>
           <form id="generator-form">
             <div class="grid compact-grid">
@@ -156,28 +170,47 @@
 
             <div class="form-actions">
               <button type="submit">Vygenerovat newsletter</button>
+              <span class="form-helper">Tip: produkt z katalogu má vždy vyšší prioritu než ruční nebo brief inference.</span>
             </div>
           </form>
         </section>
 
-        <section class="card">
+        <section class="card output-card sticky-card">
           <div class="output-header">
-            <h2>Výstup</h2>
+            <div>
+              <h2>2. Výstup</h2>
+              <p class="muted-copy">Subjecty, headline, body copy a HTML draft připravené ke kopírování.</p>
+            </div>
             <div class="actions">
               <button id="copy-output" type="button">Kopírovat text</button>
               <button id="copy-html-output" type="button" class="secondary">Kopírovat HTML</button>
             </div>
           </div>
+          <div class="output-toolbar">
+            <span class="toolbar-pill">Sales-first output</span>
+            <span class="toolbar-pill muted">Nejprve zkontroluj subject a CTA</span>
+          </div>
           <div id="output" class="output empty">Vyplň brief a vygeneruj první prodejní draft včetně variant předmětu.</div>
         </section>
+        </div>
 
         <section class="card">
-          <h2>Nejpodobnější minulé kampaně</h2>
+          <div class="section-head compact">
+            <div>
+              <h2>3. Nejpodobnější minulé kampaně</h2>
+              <p class="muted-copy">Rychlá inspirace podle tónu, tématu a typu kampaně.</p>
+            </div>
+          </div>
           <div id="inspiration" class="examples"></div>
         </section>
 
         <section class="card">
-          <h2>Podobné vzory z historie</h2>
+          <div class="section-head compact">
+            <div>
+              <h2>4. Podobné vzory z historie</h2>
+              <p class="muted-copy">Použij je jako referenci pro tempo, styl a CTA.</p>
+            </div>
+          </div>
           <div id="examples" class="examples"></div>
         </section>
       </main>

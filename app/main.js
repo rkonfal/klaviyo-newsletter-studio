@@ -21,6 +21,7 @@ const manualProductInput = document.querySelector('#manual-product-input');
 const manualProductHint = document.querySelector('#manual-product-hint');
 const catalogSelectionHint = document.querySelector('#catalog-selection-hint');
 const focusBox = document.querySelector('.focus-box');
+const quickFillButtons = Array.from(document.querySelectorAll('.quick-fill'));
 
 let lastDraft = null;
 let selectedCatalogProducts = [];
@@ -75,6 +76,18 @@ function bindEvents() {
     if (!lastDraft?.html) return;
     await navigator.clipboard.writeText(lastDraft.html);
     flashButton(copyHtmlBtn, 'HTML zkopírováno');
+  });
+
+  quickFillButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const themeInput = form?.querySelector('input[name="theme"]');
+      const briefInput = form?.querySelector('textarea[name="brief"]');
+      const offerInput = form?.querySelector('input[name="offer"]');
+      if (themeInput && button.dataset.fillTheme) themeInput.value = button.dataset.fillTheme;
+      if (briefInput && button.dataset.fillBrief) briefInput.value = button.dataset.fillBrief;
+      if (offerInput) offerInput.value = button.dataset.fillOffer || '';
+      flashButton(button, 'Vyplněno');
+    });
   });
 }
 
