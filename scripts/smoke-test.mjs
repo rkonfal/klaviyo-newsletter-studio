@@ -67,6 +67,8 @@ await runScenario(
     assert.match(output.textContent, /PŘEDMĚT:/);
     assert.match(output.textContent, /PREHEADER:/);
     assert.match(output.textContent, /CTA:/);
+    assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
+    assert.doesNotMatch(output.textContent, /klikni na chci/i);
   }
 );
 
@@ -117,6 +119,7 @@ await runScenario(
     assert.match(output.textContent, /Aloe Vera šťáva, 500 ml/);
     assert.doesNotMatch(output.textContent, /Chci si vybrat/);
     assert.match(output.textContent, /Chci objednat/);
+    assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
   }
 );
 
