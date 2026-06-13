@@ -481,8 +481,10 @@ function buildSubjectAngles(data, subset) {
       : [`${theme}: tip na dárek, který potěší`, `${theme}: co vybrat pro maminku`, `${theme}: výběr, který nepůsobí obyčejně`];
   }
 
-  return angleOrder
-    .flatMap((angle) => (bank[angle] || []).map((text) => ({ angle, text: cleanSubject(text) })))
+  const librarySubjects = data.copyPlan?.copyLibrary?.subjects || [];
+
+  return [...librarySubjects.map((text) => ({ angle: 'benefit', text: cleanSubject(text) })), ...angleOrder
+    .flatMap((angle) => (bank[angle] || []).map((text) => ({ angle, text: cleanSubject(text) })))]
     .filter((item) => item.text.length >= 8)
     .filter((item, index, array) => array.findIndex((other) => other.text.toLowerCase() === item.text.toLowerCase()) === index)
     .slice(0, 5);
@@ -502,8 +504,9 @@ function scoreAngle(angle, data, inspiration) {
   if (data.campaignType === 'event' && ['deadline', 'urgency'].includes(angle)) score += 25;
   if (data.campaignType === 'urgency' && ['urgency', 'deadline', 'offer'].includes(angle)) score += 25;
   if (data.offer && ['offer', 'urgency', 'benefit'].includes(angle)) score += 10;
-  if (data.tonePreset === 'urgent' && ['urgency', 'deadline'].includes(angle)) score += 10;
-  if (data.tonePreset === 'educational' && ['usefulness', 'number'].includes(angle)) score += 10;
+  if (data.copyPlan?.styleMode === 'urgency-sell' && ['urgency', 'deadline'].includes(angle)) score += 10;
+  if (data.copyPlan?.styleMode === 'education-sell' && ['usefulness', 'number'].includes(angle)) score += 10;
+  if (data.copyPlan?.styleMode === 'hard-sell' && ['benefit', 'offer', 'result'].includes(angle)) score += 8;
   if (shouldLeadWithTheme(data) && ['benefit', 'curiosity', 'offer'].includes(angle)) score += 18;
   if (shouldLeadWithTheme(data) && ['urgency', 'deadline'].includes(angle) && !data.offer) score -= 12;
   if (inspiration[0]?.subject && inspiration[0].score > 0 && ['benefit', 'curiosity', 'offer'].includes(angle)) score += 5;
@@ -539,6 +542,8 @@ function buildHeadline(data, subset, angle, inspiration) {
   const theme = capitalize(getThemeFocus(data));
   const multiHeadline = getSelectedProducts(data).length > 1 ? buildMultiHeadline(data) : null;
   if (multiHeadline) return cleanCopy(multiHeadline);
+  const libraryHeadline = data.copyPlan?.copyLibrary?.headlines?.[0];
+  if (libraryHeadline) return cleanCopy(libraryHeadline);
   if (isGiftOccasion(data) && data.copyPlan?.leadType !== 'theme') {
     return cleanCopy(data.language === 'sk' ? `${focus}: darčekový tip, ktorý poteší` : `${focus}: dárkový tip, který potěší`);
   }
@@ -547,31 +552,7 @@ function buildHeadline(data, subset, angle, inspiration) {
       ? (data.language === 'sk' ? `${theme}: tip na darček, ktorý poteší` : `${theme}: tip na dárek, který potěší`)
       : (data.language === 'sk' ? `${theme}: čo sa oplatí otvoriť` : `${theme}: co se vyplatí otevřít`));
   }
-  const angleMap = {
-    cz: {
-      benefit: `${focus}: proč stojí za pozornost`,
-      urgency: `${focus}: nepřehlédni ho právě teď`,
-      curiosity: `${focus}: proč na něj lidé klikají opakovaně`,
-      result: `${focus}: co z něj dělá silný tip`,
-      usefulness: `${focus}: stručně, jasně a prodejně`,
-      novelty: `Novinka: ${focus}`,
-      number: `${focus}: 3 důvody otevřít detail`,
-      deadline: `${focus}: nabídka, která tu nebude dlouho`,
-      offer: data.offer ? `${focus}: ${data.offer}` : `${focus}: rychlý tip s jasným důvodem koupě`
-    },
-    sk: {
-      benefit: `${focus}: prečo stojí za pozornosť`,
-      urgency: `${focus}: neprehliadni ho práve teraz`,
-      curiosity: `${focus}: prečo naň ľudia klikajú opakovane`,
-      result: `${focus}: čo z neho robí silný tip`,
-      usefulness: `${focus}: stručne, jasne a predajne`,
-      novelty: `Novinka: ${focus}`,
-      number: `${focus}: 3 dôvody otvoriť detail`,
-      deadline: `${focus}: ponuka, ktorá tu nebude dlho`,
-      offer: data.offer ? `${focus}: ${data.offer}` : `${focus}: rýchly tip s jasným dôvodom kúpy`
-    }
-  };
-  return cleanCopy(angleMap[data.language]?.[angle] || subset.examples?.[0]?.headline || `${theme} a ${focus}`);
+  return cleanCopy(subset.examples?.[0]?.headline || `${theme} a ${focus}`);
 }
 
 function strengthenHeadline(data, headline) {
@@ -799,8 +780,10 @@ function buildSalesChecks(data, angle, cta, salesScore) {
 function buildCta(data, subset, inspiration) {
   const focus = getPrimaryFocus(data).toLowerCase();
   const selectedCount = getSelectedProducts(data).length;
+  const libraryCta = data.copyPlan?.copyLibrary?.ctas?.[0];
   if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
   if (selectedCount > 1) return strengthenCta(data, buildMultiCta(data));
+  if (libraryCta) return strengthenCta(data, libraryCta);
   if (data.copyPlan?.ctaType === 'offer' || (data.offer && !isSoftOffer(data.offer))) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
   if (data.copyPlan?.ctaType === 'gift') return strengthenCta(data, data.language === 'sk' ? 'Chcem vybrať darček' : 'Chci vybrat dárek');
   if (data.copyPlan?.ctaType === 'browse' || shouldLeadWithTheme(data)) {
@@ -1013,7 +996,7 @@ function buildCopyPlan(data) {
         ? 'selection-rationale'
         : 'credibility';
 
-  return {
+  const plan = {
     leadType,
     ctaType,
     proofType,
@@ -1025,6 +1008,9 @@ function buildCopyPlan(data) {
     primaryProduct: context.primaryProduct || '',
     selectedCount: context.selectedCount || 0
   };
+
+  plan.copyLibrary = buildCopyLibrary(data, plan);
+  return plan;
 }
 
 function cleanField(value = '') {
@@ -1537,6 +1523,10 @@ function composeMultiProductParagraphs(data, cta) {
 function buildBenefitParagraph(data) {
   const focus = getPrimaryFocus(data);
   const promise = buildSalesPromise(data);
+  const libraryBenefit = data.copyPlan?.copyLibrary?.benefits?.[0];
+  if (libraryBenefit && data.copyPlan?.proofType !== 'selection-rationale') {
+    return `${libraryBenefit} ${buildCategoryBenefitLine(data)} ${promise}`;
+  }
   if (data.copyPlan?.proofType === 'selection-rationale') {
     return data.language === 'sk'
       ? `Nejde o náhodný výber. Vyberáme len to, čo má jasný prínos, rýchlo sa číta a dá sa ľahko preklopiť do objednávky.`
@@ -1569,6 +1559,10 @@ function buildBenefitParagraph(data) {
 }
 
 function buildTrustParagraph(data) {
+  const libraryTrust = data.copyPlan?.copyLibrary?.trust?.[0];
+  if (libraryTrust && !(data.copyPlan?.proofType === 'review' || data.briefSignals?.mentionReview)) {
+    return libraryTrust;
+  }
   if (data.copyPlan?.proofType === 'review' || data.briefSignals?.mentionReview) {
     return data.language === 'sk'
       ? `Krátka skúsenosť zákazníčky tu neplní len okrasnú rolu. Pomáha znížiť váhanie a ukazuje, prečo sa k produktu ľudia vracajú.`
@@ -1731,6 +1725,125 @@ function detectProductCategory(value = '') {
   if (/(šťáva|stava|kapky|doplněk|doplnok|vitam|bylinn|ashwagandha|aloe vera)/i.test(lower)) return 'supplement';
   if (/(krém|krem|gel|serum|maska|peeling|pleť|plet|oči|oci|šampon|sampon|vlasy|kůž|kož)/i.test(lower)) return 'skincare';
   return 'general';
+}
+
+function buildCopyLibrary(data, plan) {
+  const focus = capitalize(getPrimaryFocus(data));
+  const theme = capitalize(getThemeFocus(data));
+  const offer = cleanField(data.offer);
+  const language = data.language;
+  const category = plan.category;
+  const mode = plan.styleMode;
+  const leadType = plan.leadType;
+
+  const library = {
+    subjects: buildSubjectLibrary(language, { focus, theme, offer, category, mode, leadType }),
+    headlines: buildHeadlineLibrary(language, { focus, theme, offer, category, mode, leadType }),
+    benefits: buildBenefitLibrary(language, { focus, theme, offer, category, mode, leadType }),
+    trust: buildTrustLibrary(language, { focus, theme, offer, category, mode, leadType, review: plan.proofType === 'review' }),
+    ctas: buildCtaLibrary(language, { focus, theme, offer, category, mode, leadType, ctaType: plan.ctaType })
+  };
+
+  return library;
+}
+
+function buildSubjectLibrary(language, ctx) {
+  const common = language === 'sk'
+    ? [
+        `${ctx.focus}: prečo stojí za otvorenie`,
+        `${ctx.focus}: čo z neho robí silný tip`,
+        `${ctx.focus}: dôvod kliknúť práve dnes`
+      ]
+    : [
+        `${ctx.focus}: proč stojí za otevření`,
+        `${ctx.focus}: co z něj dělá silný tip`,
+        `${ctx.focus}: důvod kliknout právě dnes`
+      ];
+  const byMode = {
+    'hard-sell': language === 'sk'
+      ? [ctx.offer ? `${ctx.focus}: ${ctx.offer}` : `${ctx.focus}: otvor detail a rozhodni sa rýchlejšie`]
+      : [ctx.offer ? `${ctx.focus}: ${ctx.offer}` : `${ctx.focus}: otevři detail a rozhodni se rychleji`],
+    'warm-sell': language === 'sk'
+      ? [`${ctx.focus}: tip, ktorý pôsobí prirodzene a predáva`, `${ctx.focus}: voľba, ktorá dáva zmysel bez tlačenia`]
+      : [`${ctx.focus}: tip, který působí přirozeně a prodává`, `${ctx.focus}: volba, která dává smysl bez tlačení`],
+    'education-sell': language === 'sk'
+      ? [`${ctx.focus}: najprv pochopíš prečo, potom klikneš`, `${ctx.theme}: čo potrebuješ vedieť pred výberom`]
+      : [`${ctx.focus}: nejdřív pochopíš proč, potom klikneš`, `${ctx.theme}: co potřebuješ vědět před výběrem`],
+    'urgency-sell': language === 'sk'
+      ? [ctx.offer ? `${ctx.offer}: otvor detail hneď` : `${ctx.focus}: čas rozhodnúť sa teraz`]
+      : [ctx.offer ? `${ctx.offer}: otevři detail hned` : `${ctx.focus}: čas rozhodnout se teď`]
+  };
+  const byCategory = {
+    skincare: language === 'sk'
+      ? [`${ctx.focus}: prečo ho zaradiť do rutiny`, `${ctx.focus}: efekt, ktorý chceš vidieť čo najskôr`]
+      : [`${ctx.focus}: proč ho zařadit do rutiny`, `${ctx.focus}: efekt, který chceš vidět co nejdřív`],
+    supplement: language === 'sk'
+      ? [`${ctx.focus}: prečo sa oplatí mať ho doma`, `${ctx.focus}: jasný úžitok bez zložitého vysvetľovania`]
+      : [`${ctx.focus}: proč se vyplatí mít ho doma`, `${ctx.focus}: jasný užitek bez složitého vysvětlování`],
+    bundle: language === 'sk'
+      ? [`${ctx.focus}: výber, ktorý šetrí rozhodovanie`, `${ctx.focus}: kombinácia, ktorá dáva zmysel ako celok`]
+      : [`${ctx.focus}: výběr, který šetří rozhodování`, `${ctx.focus}: kombinace, která dává smysl jako celek`],
+    general: []
+  };
+  return [...common, ...(byMode[ctx.mode] || []), ...(byCategory[ctx.category] || [])];
+}
+
+function buildHeadlineLibrary(language, ctx) {
+  return language === 'sk'
+    ? [
+        `${ctx.focus}: prečo stojí za pozornosť`,
+        `${ctx.focus}: čo presvedčí k otvoreniu detailu`,
+        ctx.leadType === 'theme' ? `${ctx.theme}: čo sa oplatí otvoriť` : `${ctx.focus}: čo môže rozhodnúť o kliknutí`
+      ]
+    : [
+        `${ctx.focus}: proč stojí za pozornost`,
+        `${ctx.focus}: co přesvědčí k otevření detailu`,
+        ctx.leadType === 'theme' ? `${ctx.theme}: co se vyplatí otevřít` : `${ctx.focus}: co může rozhodnout o kliknutí`
+      ];
+}
+
+function buildBenefitLibrary(language, ctx) {
+  const base = language === 'sk'
+    ? [
+        `${ctx.focus} staviame na jasnom prínose, rýchlom pochopení hodnoty a dôvode kliknúť bez zbytočného váhania.`,
+        `${ctx.focus} musí hneď ukázať, čo prináša, pre koho sa hodí a prečo má zmysel otvoriť detail práve teraz.`
+      ]
+    : [
+        `${ctx.focus} stavíme na jasném přínosu, rychlém pochopení hodnoty a důvodu kliknout bez zbytečného váhání.`,
+        `${ctx.focus} musí hned ukázat, co přináší, pro koho se hodí a proč má smysl otevřít detail právě teď.`
+      ];
+  return [...base];
+}
+
+function buildTrustLibrary(language, ctx) {
+  if (ctx.review) {
+    return language === 'sk'
+      ? [`Krátka skúsenosť zákazníčky znižuje váhanie a ukazuje, prečo sa k produktu ľudia vracajú.`]
+      : [`Krátká zkušenost zákaznice snižuje váhání a ukazuje, proč se k produktu lidé vracejí.`];
+  }
+  return language === 'sk'
+    ? [`Text držíme bez výplňových viet, aby sa pozornosť nestratila skôr, než príde CTA.`]
+    : [`Text držíme bez výplňových vět, aby se pozornost neztratila dřív, než přijde CTA.`];
+}
+
+function buildCtaLibrary(language, ctx) {
+  const map = {
+    cz: {
+      goal: ['Chci to teď využít'],
+      offer: ['Chci využít nabídku', 'Otevřít nabídku'],
+      gift: ['Chci vybrat dárek', 'Podívat se na tip'],
+      browse: ['Chci si vybrat', 'Otevřít výběr'],
+      order: ['Chci objednat', 'Otevřít detail produktu']
+    },
+    sk: {
+      goal: ['Chcem to teraz využiť'],
+      offer: ['Chcem využiť ponuku', 'Otvoriť ponuku'],
+      gift: ['Chcem vybrať darček', 'Pozrieť si tip'],
+      browse: ['Chcem si vybrať', 'Otvoriť výber'],
+      order: ['Chcem objednať', 'Otvoriť detail produktu']
+    }
+  };
+  return map[language]?.[ctx.ctaType] || map[language]?.order || [];
 }
 
 function getCategorySubjectPack(language, category, focus, theme) {
