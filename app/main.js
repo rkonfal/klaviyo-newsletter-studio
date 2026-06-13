@@ -594,25 +594,25 @@ function buildHeadline(data, subset, angle, inspiration) {
   }
   const angleMap = {
     cz: {
-      benefit: `${focus}, které stojí za pozornost`,
-      urgency: `${focus}, které nechceš prošvihnout`,
+      benefit: `Tip, který stojí za pozornost: ${focus}`,
+      urgency: `Nepřehlédni: ${focus}`,
       curiosity: `Proč právě teď řešit ${focus.toLowerCase()}`,
-      result: `Co ti ${focus.toLowerCase()} může přinést`,
+      result: `Co může přinést ${focus.toLowerCase()}`,
       usefulness: `${theme} stručně a prakticky`,
-      novelty: `Novinka kolem ${focus.toLowerCase()}`,
+      novelty: `Novinka: ${focus}`,
       number: `${theme} v několika jasných bodech`,
-      deadline: `${focus} nebude takhle výhodné dlouho`,
+      deadline: `${focus}: nabídka, která tu nebude dlouho`,
       offer: data.offer ? `${focus} a nabídka, kterou je škoda minout` : `${focus} jako rychlý a konkrétní tip`
     },
     sk: {
-      benefit: `${focus}, ktoré stojí za pozornosť`,
-      urgency: `${focus}, ktoré nechceš zmeškať`,
+      benefit: `Tip, ktorý stojí za pozornosť: ${focus}`,
+      urgency: `Neprehliadni: ${focus}`,
       curiosity: `Prečo práve teraz riešiť ${focus.toLowerCase()}`,
-      result: `Čo ti ${focus.toLowerCase()} môže priniesť`,
+      result: `Čo môže priniesť ${focus.toLowerCase()}`,
       usefulness: `${theme} stručne a prakticky`,
-      novelty: `Novinka okolo ${focus.toLowerCase()}`,
+      novelty: `Novinka: ${focus}`,
       number: `${theme} v niekoľkých jasných bodoch`,
-      deadline: `${focus} nebude takto výhodné dlho`,
+      deadline: `${focus}: ponuka, ktorá tu nebude dlho`,
       offer: data.offer ? `${focus} a ponuka, ktorú je škoda minúť` : `${focus} ako rýchly a konkrétny tip`
     }
   };
@@ -975,10 +975,16 @@ function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headli
 function sanitizeInput(data) {
   const selectedProducts = parseSelectedProducts(data.selectedProducts);
   const brief = cleanField(data.brief);
+  const manualProduct = cleanField(data.product);
+  const inferredProduct = inferProductFromBrief(brief, { manualProduct, selectedProducts });
+  const resolvedProduct = manualProduct || inferredProduct?.title || '';
   return {
     ...data,
     theme: cleanField(data.theme),
-    product: cleanField(data.product),
+    product: resolvedProduct,
+    manualProduct,
+    inferredProduct,
+    productSource: selectedProducts.length ? 'catalog' : manualProduct ? 'manual' : inferredProduct ? 'brief' : 'theme',
     offer: cleanField(data.offer),
     brief,
     segment: cleanField(data.segment),
@@ -1032,6 +1038,40 @@ function parseSelectedProducts(value = '') {
   }
 }
 
+function inferProductFromBrief(brief = '', { manualProduct = '', selectedProducts = [] } = {}) {
+  if (selectedProducts.length || cleanField(manualProduct)) return null;
+  const cleanedBrief = cleanField(brief);
+  if (!cleanedBrief) return null;
+
+  const candidates = (catalog.items || [])
+    .filter((item) => !isPlaceholderProduct(item))
+    .map((item) => ({ item, score: scoreBriefProductCandidate(cleanedBrief, item) }))
+    .filter(({ score }) => score >= 120)
+    .sort((a, b) => b.score - a.score || (b.item.title?.length || 0) - (a.item.title?.length || 0));
+
+  return candidates[0]?.item || null;
+}
+
+function scoreBriefProductCandidate(brief, item) {
+  const normalizedBrief = cleanField(brief).toLowerCase();
+  const title = cleanField(item.title).toLowerCase();
+  const code = cleanField(item.code).toLowerCase();
+  const searchTokens = Array.isArray(item.search) ? item.search.map((entry) => cleanField(entry).toLowerCase()).filter(Boolean) : [];
+  let score = 0;
+
+  if (title && normalizedBrief.includes(title)) score += 220;
+  if (code && normalizedBrief.includes(code)) score += 180;
+  searchTokens.forEach((token) => {
+    if (token.length >= 6 && normalizedBrief.includes(token)) score += Math.min(40, token.length * 2);
+  });
+
+  const titleWords = title.split(/[^\p{L}\p{N}]+/u).filter((word) => word.length >= 4);
+  const matchedWords = titleWords.filter((word) => normalizedBrief.includes(word));
+  if (matchedWords.length >= 2) score += matchedWords.length * 25;
+  if (item.visible) score += 5;
+  return score;
+}
+
 function getSelectedProducts(data) {
   return Array.isArray(data.selectedProducts) ? data.selectedProducts : [];
 }
@@ -1039,8 +1079,10 @@ function getSelectedProducts(data) {
 function getProductNames(data) {
   const selected = getSelectedProducts(data).map((item) => item.title).filter(Boolean);
   if (selected.length) return selected;
-  const manual = cleanField(data.product);
-  return manual ? [manual] : [];
+  const manual = cleanField(data.manualProduct || data.product);
+  if (manual) return [manual];
+  const inferred = cleanField(data.inferredProduct?.title);
+  return inferred ? [inferred] : [];
 }
 
 function getProductLine(data, limit = 2) {
@@ -1133,7 +1175,7 @@ function shouldLeadWithTheme(data) {
   if (!theme) return false;
   if (isSeasonalTheme(theme)) return true;
   if (!hasConcreteProductFocus(data)) return true;
-  return isGenericFocus(cleanField(data.product)) && !!theme;
+  return isGenericFocus(cleanField(data.manualProduct || data.product)) && !!theme;
 }
 
 function isSeasonalTheme(value = '') {
@@ -1252,11 +1294,15 @@ function buildMultiCta(data) {
 }
 
 function getPrimaryFocus(data) {
+  const manualProduct = cleanField(data.manualProduct);
+  const inferredProduct = cleanField(data.inferredProduct?.title);
   const product = cleanField(data.product);
   const theme = cleanField(data.theme);
   const selected = getSelectedProducts(data);
   if (selected.length === 1) return selected[0].title;
   if (selected.length > 1) return theme || getProductLine(data, 2);
+  if (manualProduct && !isGenericFocus(manualProduct) && manualProduct.toLowerCase() !== theme.toLowerCase()) return manualProduct;
+  if (inferredProduct && !isGenericFocus(inferredProduct) && inferredProduct.toLowerCase() !== theme.toLowerCase()) return inferredProduct;
   if (product && !isGenericFocus(product) && product.toLowerCase() !== theme.toLowerCase()) return product;
   if (theme && !isSeasonalTheme(theme)) return theme;
   if (isGiftOccasion(data)) return data.language === 'sk' ? 'tip na darček' : 'tip na dárek';
@@ -1267,7 +1313,7 @@ function getPrimaryFocus(data) {
 function hasConcreteProductFocus(data) {
   const selected = getSelectedProducts(data);
   if (selected.length > 0) return true;
-  const product = cleanField(data.product);
+  const product = cleanField(data.manualProduct || data.inferredProduct?.title || data.product);
   const theme = cleanField(data.theme);
   return !!product && !isGenericFocus(product) && product.toLowerCase() !== theme.toLowerCase();
 }
@@ -1483,8 +1529,8 @@ function buildTrustParagraph(data) {
   const focus = getPrimaryFocus(data);
   if (data.briefSignals?.mentionReview) {
     return data.language === 'sk'
-      ? `Do textu sa hodí aj krátka skúsenosť zákazníčky, ktorá ukáže, prečo si ${focus} obľúbila a čo jej na ňom vyhovuje.`
-      : `Do textu se hodí i krátká zkušenost zákaznice, která ukáže, proč si ${focus} oblíbila a co jí na něm vyhovuje.`;
+      ? `Do textu sa hodí aj krátka skúsenosť zákazníčky, ktorá ukáže, čo jej na produkte vyhovuje a prečo sa k nemu vracia.`
+      : `Do textu se hodí i krátká zkušenost zákaznice, která ukáže, co jí na produktu vyhovuje a proč se k němu vrací.`;
   }
   if (isGiftOccasion(data)) {
     return data.language === 'sk'
@@ -1492,8 +1538,8 @@ function buildTrustParagraph(data) {
       : `Právě u takové příležitosti funguje nejlépe text, který působí osobně, důvěryhodně a bez zbytečně tlačené akce.`;
   }
   return data.language === 'sk'
-    ? `${focus} preto držíme v texte stručne, konkrétne a bez zbytočného preháňania, aby celý mail pôsobil dôveryhodne.`
-    : `${focus} proto držíme v textu stručně, konkrétně a bez zbytečného přehánění, aby celý mail působil důvěryhodně.`;
+    ? `Text preto držíme stručne, konkrétne a bez zbytočného preháňania, aby celý mail pôsobil dôveryhodne.`
+    : `Text proto držíme stručně, konkrétně a bez zbytečného přehánění, aby celý mail působil důvěryhodně.`;
 }
 
 function buildLongDetailParagraph(data) {

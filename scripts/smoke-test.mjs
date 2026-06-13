@@ -96,6 +96,31 @@ await runScenario(
 );
 
 await runScenario(
+  'brief-product-inference',
+  async (url) => {
+    if (String(url).includes('style-profile.json')) return fakeResponse(profile);
+    if (String(url).includes('product-catalog.json')) return fakeResponse(catalog);
+    throw new Error(`Unexpected fetch ${url}`);
+  },
+  async (window) => {
+    const { document } = window;
+    const theme = document.querySelector('input[name="theme"]');
+    const brief = document.querySelector('textarea[name="brief"]');
+    const form = document.querySelector('#generator-form');
+    const output = document.querySelector('#output');
+
+    theme.value = 'Jarní restart pleti';
+    brief.value = 'Napiš newsletter na produkt Aloe Vera šťáva, 500 ml. Zdůrazni benefity a krátkou zkušenost zákaznice.';
+    form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+    await waitForTick();
+
+    assert.match(output.textContent, /Aloe Vera šťáva, 500 ml/);
+    assert.doesNotMatch(output.textContent, /Chci si vybrat/);
+    assert.match(output.textContent, /Chci objednat/);
+  }
+);
+
+await runScenario(
   'load-error',
   async (url) => {
     if (String(url).includes('style-profile.json')) return fakeResponse(profile);
