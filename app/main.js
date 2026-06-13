@@ -309,8 +309,7 @@ function appendListItem(target, text) {
 }
 
 function generateNewsletter(data) {
-  const tuned = sanitizeInput({ ...data, mode: 'high-seller', tonePreset: normalizeTone(data) });
-  tuned.multiProductMode = resolveMultiProductMode(tuned);
+  const tuned = prepareNewsletterInput({ ...data, mode: 'high-seller', tonePreset: normalizeTone(data) });
   const subset = pickSubset(tuned);
   const inspiration = findInspiration(tuned);
   let cta = buildCta(tuned, subset, inspiration);
@@ -828,16 +827,16 @@ function buildSalesChecks(data, angle, cta, salesScore) {
     ? [
         `Mode je HIGH-SELLER a hlavný angle je ${angle}.`,
         `Predajné skóre je ${salesScore.total}/100.`,
+        `Lead type: ${data.copyPlan?.leadType || 'n/a'}, source: ${data.copyPlan?.source || data.productSource || 'n/a'} (${data.copyPlan?.sourceConfidence || 'n/a'}).`,
         'Preheader dopĺňa subject, neopakuje ho doslova.',
-        `Mail smeruje k jednému hlavnému CTA: ${cta}.`,
-        'Slabší draft sa automaticky pritvrdí do predajnejšej verzie.'
+        `Mail smeruje k jednému hlavnému CTA: ${cta}.`
       ]
     : [
         `Mode je HIGH-SELLER a hlavní angle je ${angle}.`,
         `Prodejní skóre je ${salesScore.total}/100.`,
+        `Lead type: ${data.copyPlan?.leadType || 'n/a'}, source: ${data.copyPlan?.source || data.productSource || 'n/a'} (${data.copyPlan?.sourceConfidence || 'n/a'}).`,
         'Preheader doplňuje subject, neopakuje ho doslova.',
-        `Mail směřuje k jednomu hlavnímu CTA: ${cta}.`,
-        'Slabší draft se automaticky přitvrdí do prodejnější verze.'
+        `Mail směřuje k jednomu hlavnímu CTA: ${cta}.`
       ];
 }
 
@@ -846,11 +845,10 @@ function buildCta(data, subset, inspiration) {
   const selectedCount = getSelectedProducts(data).length;
   if (data.ctaGoal) return strengthenCta(data, data.language === 'sk' ? `Chcem ${data.ctaGoal}` : `Chci ${data.ctaGoal}`);
   if (selectedCount > 1) return strengthenCta(data, buildMultiCta(data));
-  if (data.offer && !isSoftOffer(data.offer)) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
-  if (shouldLeadWithTheme(data)) {
-    return strengthenCta(data, isGiftOccasion(data)
-      ? (data.language === 'sk' ? 'Chcem vybrať darček' : 'Chci vybrat dárek')
-      : (data.language === 'sk' ? 'Chcem si vybrať' : 'Chci si vybrat'));
+  if (data.copyPlan?.ctaType === 'offer' || (data.offer && !isSoftOffer(data.offer))) return strengthenCta(data, data.language === 'sk' ? 'Chcem využiť ponuku' : 'Chci využít nabídku');
+  if (data.copyPlan?.ctaType === 'gift') return strengthenCta(data, data.language === 'sk' ? 'Chcem vybrať darček' : 'Chci vybrat dárek');
+  if (data.copyPlan?.ctaType === 'browse' || shouldLeadWithTheme(data)) {
+    return strengthenCta(data, data.language === 'sk' ? 'Chcem si vybrať' : 'Chci si vybrat');
   }
   if (data.campaignType === 'event') return strengthenCta(data, data.language === 'sk' ? 'Chcem si rezervovať miesto' : 'Chci si rezervovat místo');
   if (/(kurz|webinář|webinar|školení|seminář|seminar|konference|vstupenka|vstupenky)/i.test(focus)) {
@@ -972,6 +970,14 @@ function finalizeDraft({ tuned, primarySubject, subjectAngles, preheader, headli
   };
 }
 
+function prepareNewsletterInput(data) {
+  const tuned = sanitizeInput(data);
+  tuned.multiProductMode = resolveMultiProductMode(tuned);
+  tuned.productContext = resolveProductContext(tuned);
+  tuned.copyPlan = buildCopyPlan(tuned);
+  return tuned;
+}
+
 function sanitizeInput(data) {
   const selectedProducts = parseSelectedProducts(data.selectedProducts);
   const brief = cleanField(data.brief);
@@ -994,6 +1000,67 @@ function sanitizeInput(data) {
     selectedProducts,
     productNames: selectedProducts.map((item) => item.title).filter(Boolean),
     briefSignals: extractBriefSignals(brief)
+  };
+}
+
+function resolveProductContext(data) {
+  const selected = getSelectedProducts(data);
+  const manualProduct = cleanField(data.manualProduct);
+  const inferredProduct = cleanField(data.inferredProduct?.title);
+  const theme = cleanField(data.theme);
+
+  if (selected.length === 1) {
+    return { source: 'catalog', confidence: 'high', primaryProduct: selected[0].title, selectedCount: 1 };
+  }
+  if (selected.length > 1) {
+    return { source: 'catalog', confidence: 'high', primaryProduct: theme || getProductLine(data, 2), selectedCount: selected.length };
+  }
+  if (manualProduct) {
+    return { source: 'manual', confidence: 'high', primaryProduct: manualProduct, selectedCount: 0 };
+  }
+  if (inferredProduct) {
+    return { source: 'brief', confidence: 'medium', primaryProduct: inferredProduct, selectedCount: 0 };
+  }
+  return { source: 'theme', confidence: 'low', primaryProduct: theme || '', selectedCount: 0 };
+}
+
+function buildCopyPlan(data) {
+  const context = data.productContext || resolveProductContext(data);
+  const isMulti = getSelectedProducts(data).length > 1;
+  const isGift = isGiftOccasion(data);
+  const leadType = isMulti
+    ? 'bundle'
+    : context.source === 'theme'
+      ? 'theme'
+      : isGift
+        ? 'gift-product'
+        : 'product';
+  const ctaType = data.ctaGoal
+    ? 'goal'
+    : data.offer && !isSoftOffer(data.offer)
+      ? 'offer'
+      : leadType === 'theme'
+        ? 'browse'
+        : isGift
+          ? 'gift'
+          : 'order';
+  const proofType = data.briefSignals?.mentionReview
+    ? 'review'
+    : data.briefSignals?.mentionBenefits
+      ? 'benefits'
+      : leadType === 'theme'
+        ? 'selection-rationale'
+        : 'credibility';
+
+  return {
+    leadType,
+    ctaType,
+    proofType,
+    sourceConfidence: context.confidence,
+    source: context.source,
+    audience: isGift && data.briefSignals?.audienceMothers ? 'mothers' : 'general',
+    primaryProduct: context.primaryProduct || '',
+    selectedCount: context.selectedCount || 0
   };
 }
 
@@ -1173,6 +1240,7 @@ function normalizeCta(value = '') {
 function shouldLeadWithTheme(data) {
   const theme = cleanField(data.theme);
   if (!theme) return false;
+  if (data.copyPlan?.leadType === 'theme') return true;
   if (isSeasonalTheme(theme)) return true;
   if (!hasConcreteProductFocus(data)) return true;
   return isGenericFocus(cleanField(data.manualProduct || data.product)) && !!theme;
@@ -1311,6 +1379,7 @@ function getPrimaryFocus(data) {
 }
 
 function hasConcreteProductFocus(data) {
+  if (['catalog', 'manual', 'brief'].includes(data.copyPlan?.source || data.productSource)) return true;
   const selected = getSelectedProducts(data);
   if (selected.length > 0) return true;
   const product = cleanField(data.manualProduct || data.inferredProduct?.title || data.product);
@@ -1456,7 +1525,11 @@ function composeSingleProductParagraphs(data, cta) {
   const theme = getThemeFocus(data);
   const paragraphs = [];
 
-  if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
+  if (data.copyPlan?.leadType === 'theme') {
+    paragraphs.push(data.language === 'sk'
+      ? `${theme} je dobrá príležitosť otvoriť stručný a konkrétny výber, ktorý rýchlo vysvetlí, čo má pre čitateľa zmysel.`
+      : `${theme} je dobrá příležitost otevřít stručný a konkrétní výběr, který rychle vysvětlí, co má pro čtenáře smysl.`);
+  } else if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
     paragraphs.push(data.language === 'sk'
       ? `${theme} sa blíži a v maile preto ponúkame tip na darček pre mamu, ktorý pôsobí osobne, milo a zároveň užitočne.`
       : `${theme} se blíží a v mailu proto nabízíme tip na dárek pro maminku, který působí osobně, mile a zároveň užitečně.`);
@@ -1500,6 +1573,11 @@ function composeMultiProductParagraphs(data, cta) {
 
 function buildBenefitParagraph(data) {
   const focus = getPrimaryFocus(data);
+  if (data.copyPlan?.proofType === 'selection-rationale') {
+    return data.language === 'sk'
+      ? `Nejde o náhodný výber. Cieľom je rýchlo ukázať, čo stojí za pozornosť, pre koho sa to hodí a prečo to dáva zmysel práve teraz.`
+      : `Nejde o náhodný výběr. Cílem je rychle ukázat, co stojí za pozornost, pro koho se to hodí a proč to dává smysl právě teď.`;
+  }
   if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
     return data.language === 'sk'
       ? `Nejde o náhodný darček do počtu. Cieľom je ukázať výber, ktorý poteší, dáva zmysel a nepôsobí ako zúfalé riešenie na poslednú chvíľu.`
@@ -1527,7 +1605,7 @@ function buildBenefitParagraph(data) {
 
 function buildTrustParagraph(data) {
   const focus = getPrimaryFocus(data);
-  if (data.briefSignals?.mentionReview) {
+  if (data.copyPlan?.proofType === 'review' || data.briefSignals?.mentionReview) {
     return data.language === 'sk'
       ? `Do textu sa hodí aj krátka skúsenosť zákazníčky, ktorá ukáže, čo jej na produkte vyhovuje a prečo sa k nemu vracia.`
       : `Do textu se hodí i krátká zkušenost zákaznice, která ukáže, co jí na produktu vyhovuje a proč se k němu vrací.`;
