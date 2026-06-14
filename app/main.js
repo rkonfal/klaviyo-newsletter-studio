@@ -1510,48 +1510,17 @@ function composeFinalParagraphs(data, blocks, cta) {
 }
 
 function composeSingleProductParagraphs(data, cta) {
-  const focus = getPrimaryFocus(data);
-  const theme = getThemeFocus(data);
-  const category = data.copyPlan?.category || detectProductCategory(focus);
   const productBank = getProductSpecificBank(data);
-  const paragraphs = [];
+  const paragraphs = [
+    productBank?.opening || buildCustomerOpening(data),
+    productBank?.benefit || buildCustomerBenefit(data)
+  ];
 
-  if (productBank?.opening) paragraphs.push(productBank.opening);
-  else
-
-  if (data.copyPlan?.leadType === 'theme') {
-    paragraphs.push(data.language === 'sk'
-      ? `${theme} je dobrá príležitosť ukázať konkrétny tip, ktorý sa číta rýchlo a hneď dáva zmysel.`
-      : `${theme} je dobrá příležitost ukázat konkrétní tip, který se čte rychle a hned dává smysl.`);
-  } else if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
-    paragraphs.push(data.language === 'sk'
-      ? `${theme} sa blíži a v maile preto ponúkame darčekový tip, ktorý pôsobí osobne a zároveň je naozaj užitočný.`
-      : `${theme} se blíží a v mailu proto nabízíme dárkový tip, který působí osobně a zároveň je opravdu užitečný.`);
-  } else if (isGiftOccasion(data)) {
-    paragraphs.push(data.language === 'sk'
-      ? `${theme} sa blíži a ${focus} môže byť pekným darčekom pre tých, ktorí nechcú kupovať len niečo do počtu.`
-      : `${theme} se blíží a ${focus} může být hezkým dárkem pro ty, kdo nechtějí kupovat jen něco do počtu.`);
-  } else if (shouldLeadWithTheme(data)) {
-    paragraphs.push(data.language === 'sk'
-      ? `${theme} je dobrá príležitosť ukázať konkrétny tip, ktorý sa číta rýchlo a hneď dáva zmysel.`
-      : `${theme} je dobrá příležitost ukázat konkrétní tip, který se čte rychle a hned dává smysl.`);
-  } else if (category === 'relief') {
-    paragraphs.push(data.language === 'sk'
-      ? `${focus} sa hodí vo chvíli, keď chceš dopriať unavenému telu úľavu a príjemný pocit po náročnom dni.`
-      : `${focus} se hodí ve chvíli, kdy chceš dopřát unavenému tělu úlevu a příjemný pocit po náročném dni.`);
-  } else {
-    paragraphs.push(data.language === 'sk'
-      ? `${focus} patrí medzi tipy, ktoré v maile fungujú najlepšie vtedy, keď hneď povedia, čo prinášajú a pre koho sa hodia.`
-      : `${focus} patří mezi tipy, které v mailu fungují nejlépe tehdy, když hned řeknou, co přinášejí a pro koho se hodí.`);
-  }
-
-  paragraphs.push(productBank?.benefit || buildBenefitParagraph(data));
-
-  if (data.length !== 'short') paragraphs.push(productBank?.trust || buildTrustParagraph(data));
+  if (data.length !== 'short') paragraphs.push(productBank?.trust || buildCustomerTrust(data));
   if (data.length === 'long') paragraphs.push(buildLongDetailParagraph(data));
 
   paragraphs.push(buildActionParagraph(data, cta));
-  return paragraphs;
+  return paragraphs.filter(Boolean);
 }
 
 function composeMultiProductParagraphs(data, cta) {
@@ -1567,6 +1536,110 @@ function composeMultiProductParagraphs(data, cta) {
   if (data.length === 'long') paragraphs.push(buildLongDetailParagraph(data));
   paragraphs.push(buildActionParagraph(data, cta));
   return paragraphs;
+}
+
+function buildCustomerOpening(data) {
+  const focus = getPrimaryFocus(data);
+  const theme = getThemeFocus(data);
+  const category = data.copyPlan?.category || detectProductCategory(focus);
+
+  if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
+    return data.language === 'sk'
+      ? `${theme} sa blíži a práve teraz je ideálny čas vybrať tip, ktorý poteší a zároveň sa naozaj využije.`
+      : `${theme} se blíží a právě teď je ideální čas vybrat tip, který potěší a zároveň se opravdu využije.`;
+  }
+
+  if (isGiftOccasion(data)) {
+    return data.language === 'sk'
+      ? `${focus} môže byť krásnym darčekom pre tých, ktorí nechcú kupovať len niečo do počtu, ale chcú vybrať niečo, čo urobí radosť.`
+      : `${focus} může být krásným dárkem pro ty, kdo nechtějí kupovat jen něco do počtu, ale chtějí vybrat něco, co opravdu udělá radost.`;
+  }
+
+  if (shouldLeadWithTheme(data)) {
+    return data.language === 'sk'
+      ? `${theme} je správny moment ukázať produkt, ktorý rýchlo dáva zmysel a má jasný dôvod, prečo mu venovať pozornosť.`
+      : `${theme} je správný moment ukázat produkt, který rychle dává smysl a má jasný důvod, proč mu věnovat pozornost.`;
+  }
+
+  const map = {
+    cz: {
+      relief: `${focus} přijde vhod přesně ve chvíli, kdy si chceš po náročném dni dopřát úlevu, uvolnění a větší pohodlí.`,
+      skincare: `${focus} je tip pro chvíle, kdy chceš své pleti dopřát příjemnou péči a mít ze sebe ještě lepší pocit.`,
+      supplement: `${focus} dává smysl každému, kdo chce mít po ruce něco, co snadno zapadne do běžného dne a rychle si najde své místo v rutině.`,
+      bundle: `${focus} je ideální pro ty, kdo nechtějí složitě vybírat jednotlivé kroky, ale chtějí sáhnout po kombinaci, která dává smysl jako celek.`,
+      general: `${focus} patří mezi produkty, které prodávají nejlépe ve chvíli, kdy je hned jasné, proč je člověk chce mít doma.`
+    },
+    sk: {
+      relief: `${focus} príde vhod presne vo chvíli, keď si chceš po náročnom dni dopriať úľavu, uvoľnenie a väčšie pohodlie.`,
+      skincare: `${focus} je tip pre chvíle, keď chceš svojej pleti dopriať príjemnú starostlivosť a mať zo seba ešte lepší pocit.`,
+      supplement: `${focus} dáva zmysel každému, kto chce mať poruke niečo, čo ľahko zapadne do bežného dňa a rýchlo si nájde svoje miesto v rutine.`,
+      bundle: `${focus} je ideálny pre tých, ktorí nechcú zložito vyberať jednotlivé kroky, ale chcú siahnuť po kombinácii, ktorá dáva zmysel ako celok.`,
+      general: `${focus} patrí medzi produkty, ktoré predávajú najlepšie vo chvíli, keď je hneď jasné, prečo ich človek chce mať doma.`
+    }
+  };
+
+  return map[data.language]?.[category] || map[data.language]?.general || '';
+}
+
+function buildCustomerBenefit(data) {
+  const focus = getPrimaryFocus(data);
+  const category = data.copyPlan?.category || detectProductCategory(focus);
+  const offer = cleanField(data.offer);
+
+  const map = {
+    cz: {
+      relief: `${focus} příjemně zapadne do chvil, kdy tělo potřebuje vypnout, ulevit namáhaným místům a dopřát si péči, kterou ucítíš skoro hned.`,
+      skincare: `${focus} prodává hlavně příjemný pocit z použití, snadné zařazení do rutiny a dobrý pocit z toho, že pro svou pleť děláš něco navíc.`,
+      supplement: `${focus} funguje hlavně díky tomu, že se používá jednoduše, nezdržuje a rychle se stane praktickou součástí každého dne.`,
+      bundle: `${focus} šetří čas i rozhodování, protože spojuje to důležité do jednoho promyšleného výběru, který se používá jednodušeji než skládání po kusech.`,
+      general: `${focus} funguje nejlépe tehdy, když text rychle ukáže konkrétní přínos, snadné použití a jasný důvod, proč si ho dopřát právě teď.`
+    },
+    sk: {
+      relief: `${focus} príjemne zapadne do chvíľ, keď telo potrebuje vypnúť, uľaviť namáhaným miestam a dopriať si starostlivosť, ktorú pocítiš takmer hneď.`,
+      skincare: `${focus} predáva hlavne príjemný pocit z použitia, ľahké zaradenie do rutiny a dobrý pocit z toho, že pre svoju pleť robíš niečo navyše.`,
+      supplement: `${focus} funguje hlavne vďaka tomu, že sa používa jednoducho, nezdržuje a rýchlo sa stane praktickou súčasťou každého dňa.`,
+      bundle: `${focus} šetrí čas aj rozhodovanie, pretože spája to dôležité do jedného premysleného výberu, ktorý sa používa jednoduchšie než skladanie po kusoch.`,
+      general: `${focus} funguje najlepšie vtedy, keď text rýchlo ukáže konkrétny prínos, ľahké použitie a jasný dôvod, prečo si ho dopriať práve teraz.`
+    }
+  };
+
+  const offerLine = offer
+    ? (data.language === 'sk'
+        ? `A ak je navyše práve teraz v ponuke ${offer.toLowerCase().replace(/[.!?]+$/,'')}, dôvod konať je ešte silnejší.`
+        : `A pokud je navíc právě teď v nabídce ${offer.toLowerCase().replace(/[.!?]+$/,'')}, důvod jednat je ještě silnější.`)
+    : '';
+
+  return `${map[data.language]?.[category] || map[data.language]?.general || ''} ${offerLine}`.trim();
+}
+
+function buildCustomerTrust(data) {
+  const focus = getPrimaryFocus(data);
+  const category = data.copyPlan?.category || detectProductCategory(focus);
+
+  if (data.copyPlan?.proofType === 'review' || data.briefSignals?.mentionReview) {
+    return data.language === 'sk'
+      ? `Krátka skúsenosť zákazníčky tu dobre funguje, pretože pomôže rýchlo pochopiť, prečo sa ľudia k ${focus} radi vracajú.`
+      : `Krátká zkušenost zákaznice tu funguje dobře, protože pomůže rychle pochopit, proč se lidé k ${focus} rádi vracejí.`;
+  }
+
+  const map = {
+    cz: {
+      relief: `Právě proto ho ocení každý, kdo hledá jednoduchý a rychle použitelný tip pro chvíle, kdy chce být svému tělu zase o něco příjemněji.`,
+      skincare: `Stačí pár vět a čtenář hned ví, proč si tímhle produktem může zpříjemnit každodenní péči a mít ze sebe lepší pocit.`,
+      supplement: `Jakmile je ten přínos pojmenovaný jednoduše a bez zbytečné omáčky, člověk hned ví, proč má smysl zařadit ho do svého dne.`,
+      bundle: `Silný je hlavně v tom, že zákazník nemusí dlouho přemýšlet, co s čím kombinovat, ale rovnou vidí hotové řešení.`,
+      general: `Když je důvod koupě řečený jednoduše a lidsky, čtenář se mnohem rychleji rozhodne, jestli je to přesně produkt pro něj.`
+    },
+    sk: {
+      relief: `Práve preto ho ocení každý, kto hľadá jednoduchý a rýchlo použiteľný tip pre chvíle, keď chce byť svojmu telu zase o niečo príjemnejšie.`,
+      skincare: `Stačí pár viet a čitateľ hneď vie, prečo si týmto produktom môže spríjemniť každodennú starostlivosť a mať zo seba lepší pocit.`,
+      supplement: `Keď je ten prínos pomenovaný jednoducho a bez zbytočnej omáčky, človek hneď vie, prečo má zmysel zaradiť ho do svojho dňa.`,
+      bundle: `Silný je hlavne v tom, že zákazník nemusí dlho premýšľať, čo s čím kombinovať, ale rovno vidí hotové riešenie.`,
+      general: `Keď je dôvod kúpy povedaný jednoducho a ľudsky, čitateľ sa oveľa rýchlejšie rozhodne, či je to presne produkt pre neho.`
+    }
+  };
+
+  return map[data.language]?.[category] || map[data.language]?.general || '';
 }
 
 function buildBenefitParagraph(data) {
@@ -1854,6 +1927,15 @@ function getProductSpecificBank(data) {
         ? ['Cordyceps: podpora, ktorú oceníš pri náročných dňoch', 'Cordyceps: keď chceš telu dopriať viac energie', 'Cordyceps: jednoduchý tip pre každodennú vitalitu']
         : ['Cordyceps: podpora, kterou oceníš při náročných dnech', 'Cordyceps: když chceš tělu dopřát víc energie', 'Cordyceps: jednoduchý tip pro každodenní vitalitu'],
       headline: data.language === 'sk' ? 'Cordyceps: podpora pre náročné dni' : 'Cordyceps: podpora pro náročné dny',
+      opening: data.language === 'sk'
+        ? 'Cordyceps sa hodí práve do dní, keď toho máš veľa a chceš telu dopriať podporu, ktorú ľahko zaradíš do svojej rutiny.'
+        : 'Cordyceps se hodí právě do dnů, kdy toho máš hodně a chceš tělu dopřát podporu, kterou snadno zařadíš do své rutiny.',
+      benefit: data.language === 'sk'
+        ? 'Práve v tom je jeho sila. Nepôsobí zložito, ľahko sa používa a rýchlo dáva pocit, že pre svoju vitalitu robíš niečo konkrétne.'
+        : 'Právě v tom je jeho síla. Nepůsobí složitě, snadno se používá a rychle dává pocit, že pro svou vitalitu děláš něco konkrétního.',
+      trust: data.language === 'sk'
+        ? 'Ocení ho každý, kto hľadá praktický produkt pre náročnejšie obdobie a nechce sa spoliehať len na to, že energia príde sama.'
+        : 'Ocení ho každý, kdo hledá praktický produkt pro náročnější období a nechce se spoléhat jen na to, že energie přijde sama.',
       cta: data.language === 'sk' ? 'Chcem viac energie' : 'Chci víc energie'
     },
     {
