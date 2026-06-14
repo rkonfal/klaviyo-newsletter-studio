@@ -119,6 +119,7 @@ await runScenario(
     assert.match(output.textContent, /Aloe Vera šťáva, 500 ml/);
     assert.doesNotMatch(output.textContent, /Chci si vybrat/);
     assert.match(output.textContent, /Chci to mít doma|Chci vyzkoušet produkt|Chci objednat/);
+    assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva, 500 ml: (podpora|co oceníš|benefit)/);
     assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
   }
 );
@@ -197,6 +198,7 @@ await runScenario(
     await waitForTick();
 
     assert.match(output.textContent, /Fytogel Slaviton/);
+    assert.match(output.textContent, /PŘEDMĚT: Fytogel Slaviton: (úleva|když chceš dopřát tělu větší komfort)/);
     assert.match(output.textContent, /úlevu|komfort/i);
     assert.match(output.textContent, /Chci dopřát úlevu/);
     assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby|v textu proto funguje|právě proto umí rychle prodat/i);

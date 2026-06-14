@@ -450,26 +450,26 @@ function buildSubjectAngles(data, subset) {
 
   const baseBank = data.language === 'sk'
     ? {
-        benefit: [offer ? `${focus}: ${offer}` : `${focus}: tip, ktorý sa oplatí otvoriť`, `${focus}: čo z neho robí silný tip`, `${focus}: prečo po ňom ľudia siahajú opakovane`],
-        urgency: [offer ? `${offer} len teraz` : `${focus}: neodkladaj to na neskôr`, `${focus}: pozri sa naň skôr, než ho minieš`, `${focus}: teraz je správny čas otvoriť detail`],
-        curiosity: [isMulti ? `${line}: ako vybrať kombináciu, ktorá funguje` : `${focus}: prečo si ho ľudia dávajú do košíka opakovane`, `${focus}: čo na ňom zaujme po prvom kliknutí`, `${focus}: čo z neho robí rýchly favorit`],
-        result: [`${focus}: čo môže priniesť pri pravidelnom používaní`, `${focus}: efekt, ktorý chceš cítiť čo najskôr`, `${focus}: výsledok, kvôli ktorému stojí za pozornosť`],
-        offer: [offer ? `${focus}: ${offer}` : `${focus}: vyber si ho skôr, než zapadne`, `${focus}: ponuka, ktorú je škoda nechať bez kliknutia`, `${focus}: rýchly tip s jasným dôvodom kúpy`],
-        usefulness: [`${theme}: čo sa oplatí vybrať`, `${theme}: krátko, jasne a bez omáčky`, `${theme}: čo stojí za otvorenie`],
-        number: [`3 dôvody, prečo otvoriť ${theme.toLowerCase()}`],
+        benefit: [offer ? `${focus}: ${offer}` : `${focus}: čo oceníš už pri prvom použití`, `${focus}: benefit, ktorý dáva rýchly zmysel`, `${focus}: prečo si ho dopriať práve teraz`],
+        urgency: [offer ? `${offer} len teraz` : `${focus}: neodkladaj to na neskôr`, `${focus}: chvíľa, keď sa oplatí konať`, `${focus}: teraz je správny čas vybrať si ho`],
+        curiosity: [isMulti ? `${line}: ako vybrať kombináciu, ktorá funguje` : `${focus}: prečo sa k nemu ľudia vracajú`, `${focus}: čo na ňom oceníš najrýchlejšie`, `${focus}: čo z neho robí obľúbený tip`],
+        result: [`${focus}: čo môže priniesť pri pravidelnom používaní`, `${focus}: efekt, ktorý chceš cítiť čo najskôr`, `${focus}: výsledok, ktorý chceš cítiť čo najskôr`],
+        offer: [offer ? `${focus}: ${offer}` : `${focus}: jasný dôvod kúpy bez zložitého vyberania`, `${focus}: tip, ktorý dáva zmysel práve teraz`, `${focus}: rýchly dôvod pozrieť sa na detail`],
+        usefulness: [`${theme}: čo sa oplatí vybrať`, `${theme}: rýchly výber s jasným prínosom`, `${theme}: čo môže pomôcť práve teraz`],
+        number: [`3 dôvody, prečo si vybrať ${theme.toLowerCase()}`],
         novelty: [`Novinka: ${focus}`, `${focus}: nový tip, ktorý stojí za pozornosť`],
-        deadline: [`${focus}: posledná šanca otvoriť detail`, `${focus}: nenechávaj to na poslednú chvíľu`]
+        deadline: [`${focus}: posledná šanca využiť ponuku`, `${focus}: nenechávaj to na poslednú chvíľu`]
       }
     : {
-        benefit: [offer ? `${focus}: ${offer}` : `${focus}: tip, který se vyplatí otevřít`, `${focus}: co z něj dělá silný tip`, `${focus}: proč po něm lidé sahají opakovaně`],
-        urgency: [offer ? `${offer} jen teď` : `${focus}: neodkládej to na později`, `${focus}: podívej se na něj dřív, než ho mineš`, `${focus}: teď je správný čas otevřít detail`],
-        curiosity: [isMulti ? `${line}: jak vybrat kombinaci, která funguje` : `${focus}: proč si ho lidé dávají do košíku opakovaně`, `${focus}: co na něm zaujme po prvním kliknutí`, `${focus}: co z něj dělá rychlého favorita`],
-        result: [`${focus}: co může přinést při pravidelném používání`, `${focus}: efekt, který chceš cítit co nejdřív`, `${focus}: výsledek, kvůli kterému stojí za pozornost`],
-        offer: [offer ? `${focus}: ${offer}` : `${focus}: vyber si ho dřív, než zapadne`, `${focus}: nabídka, kterou je škoda nechat bez kliknutí`, `${focus}: rychlý tip s jasným důvodem koupě`],
-        usefulness: [`${theme}: co se vyplatí vybrat`, `${theme}: stručně, jasně a bez omáčky`, `${theme}: co stojí za otevření`],
-        number: [`3 důvody, proč otevřít ${theme.toLowerCase()}`],
+        benefit: [offer ? `${focus}: ${offer}` : `${focus}: co oceníš už při prvním použití`, `${focus}: benefit, který dává rychlý smysl`, `${focus}: proč si ho dopřát právě teď`],
+        urgency: [offer ? `${offer} jen teď` : `${focus}: neodkládej to na později`, `${focus}: chvíle, kdy se vyplatí jednat`, `${focus}: teď je správný čas vybrat si ho`],
+        curiosity: [isMulti ? `${line}: jak vybrat kombinaci, která funguje` : `${focus}: proč se k němu lidé vracejí`, `${focus}: co na něm oceníš nejrychleji`, `${focus}: co z něj dělá oblíbený tip`],
+        result: [`${focus}: co může přinést při pravidelném používání`, `${focus}: efekt, který chceš cítit co nejdřív`, `${focus}: výsledek, který chceš cítit co nejdřív`],
+        offer: [offer ? `${focus}: ${offer}` : `${focus}: jasný důvod koupě bez složitého vybírání`, `${focus}: tip, který dává smysl právě teď`, `${focus}: rychlý důvod podívat se na detail`],
+        usefulness: [`${theme}: co se vyplatí vybrat`, `${theme}: rychlý výběr s jasným přínosem`, `${theme}: co může pomoct právě teď`],
+        number: [`3 důvody, proč si vybrat ${theme.toLowerCase()}`],
         novelty: [`Novinka: ${focus}`, `${focus}: nový tip, který stojí za pozornost`],
-        deadline: [`${focus}: poslední šance otevřít detail`, `${focus}: nenechávej to na poslední chvíli`]
+        deadline: [`${focus}: poslední šance využít nabídku`, `${focus}: nenechávej to na poslední chvíli`]
       };
 
   const categoryBank = getCategorySubjectPack(data.language, category, focus, theme);
@@ -505,8 +505,31 @@ function buildSubjectAngles(data, subset) {
 
 function scoreSubjectAngles(angles, data, inspiration) {
   return angles
-    .map((item) => ({ ...item, score: scoreAngle(item.angle, data, inspiration) }))
+    .map((item) => ({ ...item, score: scoreAngle(item.angle, data, inspiration) + scoreSubjectText(item.text, data) }))
     .sort((a, b) => b.score - a.score);
+}
+
+function scoreSubjectText(text, data) {
+  const value = cleanField(text);
+  const words = value.split(/\s+/).filter(Boolean);
+  let score = 0;
+
+  if (value.length >= 24 && value.length <= 58) score += 10;
+  else if (value.length <= 64) score += 5;
+  else score -= 8;
+
+  if (words.length >= 4 && words.length <= 9) score += 10;
+  else if (words.length <= 11) score += 4;
+  else score -= 6;
+
+  if (/\d/.test(value)) score += 4;
+  if (data.offer && /%|sleva|zľava|akce|ponuka|nabídka/i.test(value)) score += 8;
+  if (/benefit|efekt|úleva|uleva|komfort|výsledek|vysledok|důvod|dovod|podpora/i.test(value)) score += 10;
+  if (/otevření|otvorenie|kliknout|kliknúť|silný tip|obľúbený tip|oblíbený tip/i.test(value)) score -= 10;
+  if ((value.match(/[:!?]/g) || []).length > 2) score -= 6;
+  if (/zdarma zdarma|!!!|\?\?/i.test(value)) score -= 10;
+
+  return score;
 }
 
 function scoreAngle(angle, data, inspiration) {
@@ -1812,14 +1835,14 @@ function buildSubjectLibrary(language, ctx) {
   };
   const common = language === 'sk'
     ? [
-        `${ctx.focus}: prečo stojí za otvorenie`,
-        `${ctx.focus}: čo z neho robí silný tip`,
-        `${ctx.focus}: dôvod kliknúť práve dnes`
+        `${ctx.focus}: čo oceníš už pri prvom použití`,
+        `${ctx.focus}: prečo si ho dopriať práve teraz`,
+        `${ctx.focus}: benefit, ktorý dáva rýchly zmysel`
       ]
     : [
-        `${ctx.focus}: proč stojí za otevření`,
-        `${ctx.focus}: co z něj dělá silný tip`,
-        `${ctx.focus}: důvod kliknout právě dnes`
+        `${ctx.focus}: co oceníš už při prvním použití`,
+        `${ctx.focus}: proč si ho dopřát právě teď`,
+        `${ctx.focus}: benefit, který dává rychlý smysl`
       ];
   const byMode = {
     'hard-sell': language === 'sk'
