@@ -8,32 +8,7 @@
   </head>
   <body>
     <div class="shell">
-      <aside class="sidebar">
-        <div class="sidebar-intro">
-          <h1>Klaviyo Newsletter Studio</h1>
-          <p>Vyber produkt, napiš brief a nech si připravit prodejní draft newsletteru.</p>
-        </div>
-
-        <section class="card small sidebar-summary">
-          <h2>Rychlý přehled</h2>
-          <div id="dataset-meta">Načítám…</div>
-          <div id="catalog-meta" class="sidebar-meta-block">Načítám…</div>
-        </section>
-
-        <details class="card small sidebar-details">
-          <summary>Více o stylu a CTA</summary>
-          <section class="sidebar-detail-block">
-            <h3>Styl značky</h3>
-            <ul id="tone-list"></ul>
-          </section>
-          <section class="sidebar-detail-block">
-            <h3>Typické CTA</h3>
-            <ul id="cta-list"></ul>
-          </section>
-        </details>
-      </aside>
-
-      <main class="main">
+      <main class="main main-minimal">
         <section class="card hero-card hero-card-simple">
           <div>
             <div class="eyebrow">Newsletter generator</div>
@@ -42,20 +17,23 @@
           </div>
         </section>
 
-        <div class="workspace-grid">
+        <div class="workspace-grid minimalist-grid">
         <section class="card input-card">
-          <div class="section-head">
+          <div class="section-head minimal-head">
             <div>
               <h2>Zadání</h2>
-              <p class="muted-copy">Nejdřív vyber produkt a napiš, co má mail prodat.</p>
+              <p class="muted-copy">Vyber produkt a napiš, co má newsletter prodat.</p>
             </div>
-            <button id="advanced-toggle" class="secondary" type="button">Zobrazit advanced</button>
+            <button id="advanced-toggle" class="secondary subtle-button" type="button">Pokročilé nastavení</button>
           </div>
-          <div class="quick-briefs" aria-label="Rychlé starty pro brief">
+          <details class="quick-starts-details">
+            <summary>Rychlé starty</summary>
+            <div class="quick-briefs" aria-label="Rychlé starty pro brief">
             <button type="button" class="secondary quick-fill" data-fill-theme="Produktová nabídka" data-fill-brief="Napiš maximálně prodejní newsletter na vybraný produkt. Vytáhni 2 až 3 hlavní benefity pro zákazníka, jasný důvod koupě a silné CTA." data-fill-offer="">Prodej produktu</button>
             <button type="button" class="secondary quick-fill" data-fill-theme="Akční nabídka" data-fill-brief="Napiš krátký prodejní newsletter s důrazem na hlavní benefit produktu, jasnou nabídku a rychlé rozhodnutí." data-fill-offer="20 % sleva do neděle">Akce / sleva</button>
             <button type="button" class="secondary quick-fill" data-fill-theme="Edukativní produktový mail" data-fill-brief="Napiš newsletter, který nejdřív rychle vysvětlí proč je produkt užitečný, potom vytáhne hlavní benefity a dovede čtenáře ke kliknutí." data-fill-offer="">Edukace + prodej</button>
-          </div>
+            </div>
+          </details>
           <form id="generator-form">
             <div class="grid compact-grid">
               <label>
@@ -163,7 +141,7 @@
           </form>
         </section>
 
-        <section class="card output-card sticky-card">
+        <section class="card output-card">
           <div class="output-header">
             <div>
               <h2>Výstup</h2>
@@ -174,33 +152,43 @@
               <button id="copy-html-output" type="button" class="secondary">Kopírovat HTML</button>
             </div>
           </div>
-          <div class="output-toolbar">
+          <div class="output-toolbar minimalist-toolbar">
             <span class="toolbar-pill muted">Nejdřív zkontroluj předmět a CTA</span>
           </div>
           <div id="output" class="output empty">Vyplň brief a vygeneruj první prodejní draft včetně variant předmětu.</div>
         </section>
         </div>
 
-        <section class="card">
-          <div class="section-head compact">
-            <div>
-              <h2>Podobné kampaně</h2>
-              <p class="muted-copy">Jen pro rychlou orientaci a inspiraci.</p>
+        <details class="card references-card">
+          <summary>Reference a inspirace</summary>
+          <section class="references-section">
+            <div class="section-head compact">
+              <div>
+                <h2>Podobné kampaně</h2>
+                <p class="muted-copy">Jen pro rychlou orientaci.</p>
+              </div>
             </div>
-          </div>
-          <div id="inspiration" class="examples"></div>
-        </section>
+            <div id="inspiration" class="examples"></div>
+          </section>
 
-        <section class="card">
-          <div class="section-head compact">
-            <div>
-              <h2>Historické vzory</h2>
-              <p class="muted-copy">Volitelné reference, když si chceš ověřit tón nebo tempo.</p>
+          <section class="references-section">
+            <div class="section-head compact">
+              <div>
+                <h2>Historické vzory</h2>
+                <p class="muted-copy">Volitelné reference pro tón a tempo.</p>
+              </div>
             </div>
-          </div>
-          <div id="examples" class="examples"></div>
-        </section>
+            <div id="examples" class="examples"></div>
+          </section>
+        </details>
       </main>
+
+      <div class="minimal-meta" hidden>
+        <div id="dataset-meta">Načítám…</div>
+        <div id="catalog-meta">Načítám…</div>
+        <ul id="tone-list"></ul>
+        <ul id="cta-list"></ul>
+      </div>
     </div>
 
     <script type="module" src="./main.js"></script>

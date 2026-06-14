@@ -19,45 +19,7 @@ body {
   color: var(--text);
 }
 .shell {
-  display: grid;
-  grid-template-columns: 320px 1fr;
   min-height: 100vh;
-}
-.sidebar {
-  padding: 24px;
-  border-right: 1px solid var(--border);
-  background: #12151c;
-  display: grid;
-  align-content: start;
-  gap: 14px;
-}
-.sidebar-intro p {
-  color: var(--muted);
-  margin-bottom: 0;
-}
-.sidebar-summary,
-.sidebar-details {
-  margin-top: 0;
-}
-.sidebar-meta-block {
-  margin-top: 14px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
-}
-.sidebar-details summary {
-  cursor: pointer;
-  font-weight: 600;
-  list-style: none;
-}
-.sidebar-details summary::-webkit-details-marker {
-  display: none;
-}
-.sidebar-detail-block + .sidebar-detail-block {
-  margin-top: 16px;
-}
-.sidebar-detail-block h3 {
-  margin: 0 0 10px;
-  font-size: 14px;
 }
 .main {
   padding: 24px;
@@ -66,9 +28,16 @@ body {
 }
 .workspace-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
+  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
   gap: 20px;
   align-items: start;
+}
+.minimalist-grid {
+  margin-top: 4px;
+}
+.main-minimal {
+  max-width: 1320px;
+  margin: 0 auto;
 }
 .card {
   background: var(--panel);
@@ -167,6 +136,9 @@ button.secondary {
 button.secondary:hover {
   background: rgba(124,156,255,0.08);
 }
+.subtle-button {
+  color: var(--muted);
+}
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -174,14 +146,38 @@ button.secondary:hover {
   gap: 16px;
   margin-bottom: 16px;
 }
+.minimal-head {
+  align-items: center;
+}
 .section-head.compact {
   margin-bottom: 12px;
+}
+.quick-starts-details,
+.references-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+.quick-starts-details {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  background: rgba(255,255,255,0.02);
+}
+.quick-starts-details summary,
+.references-card summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  list-style: none;
+}
+.quick-starts-details summary::-webkit-details-marker,
+.references-card summary::-webkit-details-marker {
+  display: none;
 }
 .quick-briefs {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 0 0 18px;
+  margin: 14px 0 0;
 }
 .quick-fill {
   font-size: 14px;
@@ -236,6 +232,21 @@ button.secondary:hover {
 .sticky-card {
   position: sticky;
   top: 20px;
+}
+.references-card {
+  margin-top: 4px;
+  padding: 18px 20px;
+}
+.references-section + .references-section {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+.minimalist-toolbar {
+  margin-bottom: 10px;
+}
+.minimal-meta {
+  display: none;
 }
 .actions {
   display: flex;
@@ -377,7 +388,6 @@ small {
   }
 }
 @media (max-width: 900px) {
-  .shell { grid-template-columns: 1fr; }
   .grid { grid-template-columns: 1fr; }
   .hero-card, .section-head, .output-header, .actions { flex-direction: column; align-items: stretch; }
 }
