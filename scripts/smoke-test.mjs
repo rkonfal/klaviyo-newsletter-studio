@@ -119,8 +119,8 @@ await runScenario(
     assert.match(output.textContent, /Aloe Vera šťáva, 500 ml/);
     assert.doesNotMatch(output.textContent, /Chci si vybrat/);
     assert.match(output.textContent, /Chci to mít doma|Chci vyzkoušet produkt|Chci objednat/);
-    assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva(:|, 500 ml: ) (podpora|co oceníš|benefit)/);
-    assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
+    assert.match(output.textContent, /PŘEDMĚT: (Už jste to viděli\?|Aloe Vera šťáva\. Podíváte se\?|Možná přesně tohle vám teď sedne\.|Možná si to rychle oblíbíte\.)/);
+    assert.doesNotMatch(output.textContent, /právě teď dává smysl|zařadíš do dne|benefit/i);
   }
 );
 
@@ -198,7 +198,7 @@ await runScenario(
     await waitForTick();
 
     assert.match(output.textContent, /Fytogel Slaviton/);
-    assert.match(output.textContent, /PŘEDMĚT: Fytogel Slaviton: (úleva|když chceš dopřát tělu větší komfort)/);
+    assert.match(output.textContent, /PŘEDMĚT: (Když si tělo řekne o úlevu\.\.\.|Může to přijít vhod po dlouhém dni\.|Fytogel Slaviton\. Podíváte se\?)/);
     assert.match(output.textContent, /Když máš za sebou dlouhý den/);
     assert.match(output.textContent, /Příjemně se nanáší, rychle zpříjemní chvíle po námaze/);
     assert.match(output.textContent, /Chci dopřát úlevu/);
@@ -227,7 +227,7 @@ await runScenario(
     form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
     await waitForTick();
 
-    assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva: podpora, kterou snadno zařadíš do dne/);
+    assert.match(output.textContent, /PŘEDMĚT: (Už jste to viděli\?|Aloe Vera šťáva\. Podíváte se\?|Možná přesně tohle vám teď sedne\.|Možná si to rychle oblíbíte\.)/);
     assert.match(output.textContent, /HEADLINE: Aloe Vera šťáva: podpora pro každý den/);
     assert.match(output.textContent, /Aloe Vera šťáva je příjemný tip pro každého/);
     assert.match(output.textContent, /Používá se snadno, nezatěžuje rutinu/);
@@ -273,6 +273,7 @@ await runScenario(
     form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
     await waitForTick();
 
+    assert.match(output.textContent, /PŘEDMĚT: (Cordyceps\. Podíváte se\?|Možná se vám to bude hodit právě teď\.|Možná je to přesně to, co teď potřebujete\.)/);
     assert.match(output.textContent, /Cordyceps se hodí přesně do dnů, kdy toho máš hodně/);
     assert.match(output.textContent, /Používá se snadno, nezdržuje/);
     assert.doesNotMatch(output.textContent, /rychle ukáže přínos|funguje nejlépe tehdy|dává smysl každému/i);

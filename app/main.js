@@ -514,18 +514,28 @@ function scoreSubjectText(text, data) {
   const words = value.split(/\s+/).filter(Boolean);
   let score = 0;
 
-  if (value.length >= 24 && value.length <= 58) score += 10;
-  else if (value.length <= 64) score += 5;
+  if (value.length >= 20 && value.length <= 52) score += 12;
+  else if (value.length <= 60) score += 6;
   else score -= 8;
 
-  if (words.length >= 4 && words.length <= 9) score += 10;
-  else if (words.length <= 11) score += 4;
+  if (words.length >= 4 && words.length <= 8) score += 10;
+  else if (words.length <= 10) score += 4;
   else score -= 6;
 
+  if (/\?$/.test(value)) score += 8;
+  if (/\.\.\.$/.test(value)) score += 6;
+  if (/^(Tohle|Už|Zbývá|Poslední|Pozor|POZOR|Neměli|Přiznáváme|Chcete|Viděli|Proč)/i.test(value)) score += 8;
   if (/\d/.test(value)) score += 4;
-  if (data.offer && /%|sleva|zľava|akce|ponuka|nabídka/i.test(value)) score += 8;
-  if (/benefit|efekt|úleva|uleva|komfort|výsledek|vysledok|důvod|dovod|podpora/i.test(value)) score += 10;
-  if (/otevření|otvorenie|kliknout|kliknúť|silný tip|obľúbený tip|oblíbený tip/i.test(value)) score -= 10;
+  const focus = cleanField(getPrimaryFocus(data)).toLowerCase();
+  const theme = cleanField(getThemeFocus(data)).toLowerCase();
+  if (focus && value.toLowerCase().includes(focus)) score += 8;
+  else if (theme && value.toLowerCase().includes(theme)) score += 4;
+  else if (!data.offer) score -= 3;
+  if ((focus || data.copyPlan?.source === 'manual' || data.copyPlan?.source === 'brief' || data.copyPlan?.source === 'catalog') && /^(Neměli bychom vám to říkat\. Ale\.\.\.|Nemali by sme vám to hovoriť\. Ale\.\.\.)$/i.test(value)) score -= 6;
+  if (data.offer && /%|sleva|zľava|akce|ponuka|nabídka|dárek|zdarma/i.test(value)) score += 8;
+  if (/benefit|efekt|výsledek|vysledok|důvod|dovod|podpora|komfort|rychlý smysl|rychly zmysel/i.test(value)) score -= 10;
+  if (/^[^?!.]+:\s/.test(value)) score -= 10;
+  if (/otevření|otvorenie|kliknout|kliknúť|silný tip|obľúbený tip|oblíbený tip|dopřát|dopriať|zařadíš do dne|zaradíš do dňa/i.test(value)) score -= 8;
   if ((value.match(/[:!?]/g) || []).length > 2) score -= 6;
   if (/zdarma zdarma|!!!|\?\?/i.test(value)) score -= 10;
 
@@ -1797,7 +1807,7 @@ function stripWeakSalesPhrases(value = '', data = {}, kind = 'body') {
     .replace(/\btip na dárek může být hezkým tipem\b/gi, 'je tip, který může potěšit')
     .replace(/\bklikni na chci\b/gi, 'klikni na tlačítko')
     .replace(/\btenhle tip\b/gi, 'tento tip')
-    .replace(/\btohle\b/gi, kind === 'subject' ? 'to' : 'tohle')
+    .replace(/\btohle\b/gi, 'tohle')
     .replace(/\bstručně a bez omáčky\b/gi, 'jasně')
     .replace(/\bbez omáčky\b/gi, 'jasně')
     .replace(/\bprávě při této příležitosti\b/gi, 'právě teď')
@@ -1928,8 +1938,8 @@ function getProductSpecificBank(data) {
     {
       match: /(slaviton|fytogel slaviton)/i,
       subject: data.language === 'sk'
-        ? ['Fytogel Slaviton: úľava pre namáhané telo', 'Fytogel Slaviton: keď chceš dopriať telu väčší komfort', 'Fytogel Slaviton: príjemná úľava po náročnom dni']
-        : ['Fytogel Slaviton: úleva pro namáhané tělo', 'Fytogel Slaviton: když chceš dopřát tělu větší komfort', 'Fytogel Slaviton: příjemná úleva po náročném dni'],
+        ? ['Keď si telo pýta úľavu...', 'Môže to prísť vhod po dlhom dni.', 'Fytogel Slaviton. Pozriete sa?']
+        : ['Když si tělo řekne o úlevu...', 'Může to přijít vhod po dlouhém dni.', 'Fytogel Slaviton. Podíváte se?'],
       headline: data.language === 'sk'
         ? 'Fytogel Slaviton: úľava pre namáhané telo'
         : 'Fytogel Slaviton: úleva pro namáhané tělo',
@@ -1947,8 +1957,8 @@ function getProductSpecificBank(data) {
     {
       match: /(aloe vera.*šťáva|aloe vera.*stava|aloe vera šťáva|aloe vera stava)/i,
       subject: data.language === 'sk'
-        ? ['Aloe Vera šťava: podpora, ktorú ľahko zaradíš do dňa', 'Aloe Vera šťava: čo oceníš pri pravidelnom používaní', 'Aloe Vera šťava: jednoduchý krok pre každodennú pohodu']
-        : ['Aloe Vera šťáva: podpora, kterou snadno zařadíš do dne', 'Aloe Vera šťáva: co oceníš při pravidelném používání', 'Aloe Vera šťáva: jednoduchý krok pro každodenní pohodu'],
+        ? ['Možno presne toto vám teraz sadne.', 'Aloe Vera šťava. Pozriete sa?', 'Možno si to rýchlo obľúbite.']
+        : ['Možná přesně tohle vám teď sedne.', 'Aloe Vera šťáva. Podíváte se?', 'Možná si to rychle oblíbíte.'],
       headline: data.language === 'sk'
         ? 'Aloe Vera šťava: podpora pre každý deň'
         : 'Aloe Vera šťáva: podpora pro každý den',
@@ -1966,8 +1976,8 @@ function getProductSpecificBank(data) {
     {
       match: /(cordyceps)/i,
       subject: data.language === 'sk'
-        ? ['Cordyceps: podpora, ktorú oceníš pri náročných dňoch', 'Cordyceps: keď chceš telu dopriať viac energie', 'Cordyceps: jednoduchý tip pre každodennú vitalitu']
-        : ['Cordyceps: podpora, kterou oceníš při náročných dnech', 'Cordyceps: když chceš tělu dopřát víc energie', 'Cordyceps: jednoduchý tip pro každodenní vitalitu'],
+        ? ['Možno sa vám to bude hodiť práve teraz.', 'Cordyceps. Pozriete sa?', 'Možno je to presne to, čo teraz potrebujete.']
+        : ['Možná se vám to bude hodit právě teď.', 'Cordyceps. Podíváte se?', 'Možná je to přesně to, co teď potřebujete.'],
       headline: data.language === 'sk' ? 'Cordyceps: podpora pre náročné dni' : 'Cordyceps: podpora pro náročné dny',
       opening: data.language === 'sk'
         ? 'Cordyceps sa hodí presne do dní, keď toho máš veľa a nechceš sa spoliehať len na to, že energia príde sama.'
@@ -2026,61 +2036,63 @@ function buildCopyLibrary(data, plan) {
 }
 
 function buildSubjectLibrary(language, ctx) {
-  const priorityCategory = {
-    cz: {
-      relief: [`${ctx.focus}: úleva pro namáhané tělo`, `${ctx.focus}: když chceš dopřát tělu větší komfort`],
-      skincare: [`${ctx.focus}: příjemný krok pro lepší pocit z pleti`],
-      supplement: [`${ctx.focus}: podpora, kterou snadno zařadíš do dne`],
-      bundle: [`${ctx.focus}: kombinace, která šetří rozhodování`]
-    },
-    sk: {
-      relief: [`${ctx.focus}: úľava pre namáhané telo`, `${ctx.focus}: keď chceš dopriať telu väčší komfort`],
-      skincare: [`${ctx.focus}: príjemný krok pre lepší pocit z pleti`],
-      supplement: [`${ctx.focus}: podpora, ktorú ľahko zaradíš do dňa`],
-      bundle: [`${ctx.focus}: kombinácia, ktorá šetrí rozhodovanie`]
-    }
-  };
-  const common = language === 'sk'
+  const gentleCuriosity = language === 'sk'
     ? [
-        `${ctx.focus}: čo oceníš už pri prvom použití`,
-        `${ctx.focus}: prečo si ho dopriať práve teraz`,
-        `${ctx.focus}: benefit, ktorý dáva rýchly zmysel`
+        'Už ste to videli?',
+        'Môžeme vám ukázať jeden pekný tip?',
+        'Možno sa vám toto bude hodiť práve teraz.',
+        'Nemali by sme vám to hovoriť. Ale...',
+        'Toto sa vám môže páčiť viac, než čakáte.'
       ]
     : [
-        `${ctx.focus}: co oceníš už při prvním použití`,
-        `${ctx.focus}: proč si ho dopřát právě teď`,
-        `${ctx.focus}: benefit, který dává rychlý smysl`
+        'Už jste to viděli?',
+        'Můžeme vám ukázat jeden hezký tip?',
+        'Možná se vám to bude hodit právě teď.',
+        'Neměli bychom vám to říkat. Ale...',
+        'Tohle se vám může líbit víc, než čekáte.'
       ];
+  const productSoft = {
+    cz: {
+      relief: ['Když tělo řekne o úlevu...', 'Může to přijít vhod po dlouhém dni.', 'Jedna příjemná věc pro dnešek.'],
+      skincare: ['Pleti teď může udělat dobře právě tohle.', 'Jeden příjemný tip pro vaši pleť.', 'Vaší pleti by se to mohlo líbit.'],
+      supplement: ['Možná přesně tohle vám teď sedne.', 'Jeden jednoduchý tip pro každý den.', 'Možná si to rychle oblíbíte.'],
+      bundle: ['Tahle kombinace se opravdu povedla.', 'Možná jsme vám teď usnadnili výběr.', 'Stojí to za rychlé mrknutí.'],
+      general: ['Stojí to za otevření.', 'Máme pro vás jeden hezký tip.', 'Tohle by vám nemělo utéct.']
+    },
+    sk: {
+      relief: ['Keď si telo pýta úľavu...', 'Môže to prísť vhod po dlhom dni.', 'Jedna príjemná vec na dnešok.'],
+      skincare: ['Pleti teraz môže urobiť dobre práve toto.', 'Jeden príjemný tip pre vašu pleť.', 'Vašej pleti by sa to mohlo páčiť.'],
+      supplement: ['Možno presne toto vám teraz sadne.', 'Jeden jednoduchý tip na každý deň.', 'Možno si to rýchlo obľúbite.'],
+      bundle: ['Táto kombinácia sa naozaj podarila.', 'Možno sme vám teraz uľahčili výber.', 'Stojí to za rýchle pozretie.'],
+      general: ['Stojí to za otvorenie.', 'Máme pre vás jeden pekný tip.', 'Toto by vám nemalo ujsť.']
+    }
+  };
   const byMode = {
     'hard-sell': language === 'sk'
-      ? [ctx.offer ? `${ctx.focus}: ${ctx.offer}` : `${ctx.focus}: otvor detail a rozhodni sa rýchlejšie`]
-      : [ctx.offer ? `${ctx.focus}: ${ctx.offer}` : `${ctx.focus}: otevři detail a rozhodni se rychleji`],
+      ? [ctx.offer ? `${ctx.offer}. Stihnete to?` : 'Toto by vám nemalo ujsť.']
+      : [ctx.offer ? `${ctx.offer}. Stihnete to?` : 'Tohle by vám nemělo utéct.'],
     'warm-sell': language === 'sk'
-      ? [`${ctx.focus}: tip, ktorý pôsobí prirodzene a predáva`, `${ctx.focus}: voľba, ktorá dáva zmysel bez tlačenia`]
-      : [`${ctx.focus}: tip, který působí přirozeně a prodává`, `${ctx.focus}: volba, která dává smysl bez tlačení`],
+      ? ['Toto sa vám môže páčiť.', 'Máme pre vás jeden milý tip.']
+      : ['Tohle by se vám mohlo líbit.', 'Máme pro vás jeden milý tip.'],
     'education-sell': language === 'sk'
-      ? [`${ctx.focus}: najprv pochopíš prečo, potom klikneš`, `${ctx.theme}: čo potrebuješ vedieť pred výberom`]
-      : [`${ctx.focus}: nejdřív pochopíš proč, potom klikneš`, `${ctx.theme}: co potřebuješ vědět před výběrem`],
+      ? ['Možno je toto presne to, čo ste chceli vedieť.', 'Pozrite sa na to skôr, než sa rozhodnete.']
+      : ['Možná je tohle přesně to, co jste chtěli vědět.', 'Podívejte se na to dřív, než se rozhodnete.'],
     'urgency-sell': language === 'sk'
-      ? [ctx.offer ? `${ctx.offer}: otvor detail hneď` : `${ctx.focus}: čas rozhodnúť sa teraz`]
-      : [ctx.offer ? `${ctx.offer}: otevři detail hned` : `${ctx.focus}: čas rozhodnout se teď`]
+      ? [ctx.offer ? `${ctx.offer}. Pozriete sa?` : 'Zostáva už len chvíľa.']
+      : [ctx.offer ? `${ctx.offer}. Podíváte se?` : 'Zbývá už jen chvíle.']
   };
-  const categoryFollowups = {
-    skincare: language === 'sk'
-      ? [`${ctx.focus}: prečo ho zaradiť do rutiny`, `${ctx.focus}: efekt, ktorý chceš vidieť čo najskôr`]
-      : [`${ctx.focus}: proč ho zařadit do rutiny`, `${ctx.focus}: efekt, který chceš vidět co nejdřív`],
-    supplement: language === 'sk'
-      ? [`${ctx.focus}: prečo sa oplatí mať ho doma`, `${ctx.focus}: jasný úžitok bez zložitého vysvetľovania`]
-      : [`${ctx.focus}: proč se vyplatí mít ho doma`, `${ctx.focus}: jasný užitek bez složitého vysvětlování`],
-    bundle: language === 'sk'
-      ? [`${ctx.focus}: výber, ktorý šetrí rozhodovanie`, `${ctx.focus}: kombinácia, ktorá dáva zmysel ako celok`]
-      : [`${ctx.focus}: výběr, který šetří rozhodování`, `${ctx.focus}: kombinace, která dává smysl jako celek`],
-    relief: language === 'sk'
-      ? [`${ctx.focus}: keď telo potrebuje rýchlu úľavu`, `${ctx.focus}: komfort, ktorý príde vhod po náročnom dni`]
-      : [`${ctx.focus}: když tělo potřebuje rychlou úlevu`, `${ctx.focus}: komfort, který přijde vhod po náročném dni`],
-    general: []
-  };
-  return [...((priorityCategory[language]?.[ctx.category]) || []), ...common, ...(byMode[ctx.mode] || []), ...(categoryFollowups[ctx.category] || [])];
+  const prompts = language === 'sk'
+    ? [
+        `${ctx.focus}. Pozriete sa?`,
+        `Už ste videli ${ctx.focus.toLowerCase()}?`,
+        `Toto sa pri ${ctx.focus.toLowerCase()} naozaj podarilo.`
+      ]
+    : [
+        `${ctx.focus}. Podíváte se?`,
+        `Už jste viděli ${ctx.focus.toLowerCase()}?`,
+        `Tohle se u ${ctx.focus.toLowerCase()} opravdu povedlo.`
+      ];
+  return [...gentleCuriosity, ...((productSoft[language]?.[ctx.category]) || productSoft[language]?.general || []), ...(byMode[ctx.mode] || []), ...prompts];
 }
 
 function buildHeadlineLibrary(language, ctx) {
