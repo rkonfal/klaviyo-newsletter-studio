@@ -67,6 +67,9 @@ await runScenario(
     assert.match(output.textContent, /PŘEDMĚT:/);
     assert.match(output.textContent, /PREHEADER:/);
     assert.match(output.textContent, /CTA:/);
+    assert.match(output.textContent, /PŘÍSPĚVEK NA SOCIALS:/);
+    assert.match(output.textContent, /Více zde: https?:\/\//);
+    assert.match(output.textContent, /#kralovstvitianDe #tiande/);
     assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
     assert.doesNotMatch(output.textContent, /klikni na chci/i);
   }
@@ -120,6 +123,8 @@ await runScenario(
     assert.doesNotMatch(output.textContent, /Chci si vybrat/);
     assert.match(output.textContent, /Chci to mít doma|Chci vyzkoušet produkt|Chci objednat/);
     assert.match(output.textContent, /PŘEDMĚT: (Už jste to viděli\?|Aloe Vera šťáva\. Podíváte se\?|Možná přesně tohle vám teď sedne\.|Možná si to rychle oblíbíte\.)/);
+    assert.match(output.textContent, /Více zde: https:\/\/www\.kralovstvi-tiande\.cz\//);
+    assert.match(output.textContent, /✅/);
     assert.doesNotMatch(output.textContent, /právě teď dává smysl|zařadíš do dne|benefit/i);
   }
 );
@@ -173,6 +178,7 @@ await runScenario(
 
     assert.match(output.textContent, /20 % sleva do neděle/i);
     assert.match(output.textContent, /dokud je nabídka aktuální|jen teď|otevři detail/i);
+    assert.match(output.textContent, /Více zde: https?:\/\//);
   }
 );
 
@@ -232,6 +238,7 @@ await runScenario(
     assert.match(output.textContent, /Aloe Vera šťáva je příjemný tip pro každého/);
     assert.match(output.textContent, /Používá se snadno, nezatěžuje rutinu/);
     assert.match(output.textContent, /Chci to mít doma/);
+    assert.match(output.textContent, /#kralovstvitianDe #tiande/);
   }
 );
 

@@ -384,6 +384,7 @@ function generateNewsletter(data) {
   const body = finalDraft.paragraphs.join('\n\n');
   const salesChecks = buildSalesChecks(tuned, finalDraft.primarySubject.angle, finalDraft.cta, finalDraft.salesScore);
   const html = buildHtmlDraft({ data: tuned, preheader: finalDraft.preheader, headline: finalDraft.headline, cta: finalDraft.cta, paragraphs: finalDraft.paragraphs });
+  const social = buildSocialPost(tuned, finalDraft);
   return {
     subject: finalDraft.primarySubject.text,
     subjectAngles: finalDraft.subjectAngles,
@@ -394,6 +395,7 @@ function generateNewsletter(data) {
     blocks: finalDraft.blocks,
     paragraphs: finalDraft.paragraphs,
     html,
+    social,
     salesChecks,
     inspiration,
     salesScore: finalDraft.salesScore
@@ -438,6 +440,9 @@ function formatDraft(draft, language) {
     ...draft.paragraphs,
     '',
     `${label('cta', language)}: ${draft.cta}`,
+    '',
+    `${label('social', language)}:`,
+    draft.social,
     '',
     `${label('html', language)}: ${language === 'sk' ? 'pripravené na kopírovanie tlačidlom' : 'připraveno ke kopírování tlačítkem'}`
   ].join('\n');
@@ -954,6 +959,7 @@ function label(key, language) {
       headline: 'HEADLINE',
       body: 'BLOKY NEWSLETTERU',
       cta: 'CTA',
+      social: 'PŘÍSPĚVEK NA SOCIALS',
       html: 'HTML EXPORT',
       checks: 'PRODEJNÍ CHECKLIST'
     },
@@ -967,6 +973,7 @@ function label(key, language) {
       headline: 'HEADLINE',
       body: 'BLOKY NEWSLETTERA',
       cta: 'CTA',
+      social: 'PRÍSPEVOK NA SOCIALS',
       html: 'HTML EXPORT',
       checks: 'PREDAJNÝ CHECKLIST'
     }
@@ -1401,6 +1408,136 @@ function buildMultiCta(data) {
     }
   };
   return map[data.language]?.[data.multiProductMode] || (data.language === 'sk' ? 'Chcem si vybrať produkty' : 'Chci si vybrat produkty');
+}
+
+function buildSocialPost(data, draft) {
+  const link = resolveSocialUrl(data);
+  const hook = buildSocialHook(data);
+  const intro = buildSocialIntro(data);
+  const benefits = buildSocialBenefits(data);
+  const cta = data.language === 'sk'
+    ? `Viac tu: ${link}`
+    : `Více zde: ${link}`;
+  const hashtags = buildSocialHashtags(data);
+
+  return [
+    hook,
+    '',
+    intro,
+    '',
+    ...benefits.map((item) => `✅ ${item}`),
+    '',
+    cta,
+    hashtags
+  ].filter(Boolean).join('\n');
+}
+
+function resolveSocialUrl(data) {
+  const direct = cleanField(data.socialUrl);
+  if (direct) return normalizeAbsoluteUrl(direct);
+  const selected = getSelectedProducts(data);
+  if (selected[0]?.url) return normalizeAbsoluteUrl(selected[0].url);
+  if (cleanField(data.inferredProduct?.url)) return normalizeAbsoluteUrl(data.inferredProduct.url);
+  return 'https://www.kralovstvi-tiande.cz/';
+}
+
+function normalizeAbsoluteUrl(url = '') {
+  const cleaned = cleanField(url);
+  if (!cleaned) return 'https://www.kralovstvi-tiande.cz/';
+  if (/^https?:\/\//i.test(cleaned)) return cleaned;
+  return `https://www.kralovstvi-tiande.cz/${cleaned.replace(/^\/+/, '')}`;
+}
+
+function buildSocialHook(data) {
+  const focus = getPrimaryFocus(data);
+  const category = data.copyPlan?.category || detectProductCategory(focus);
+  const map = {
+    cz: {
+      relief: `${focus} může přijít vhod právě dnes.`,
+      skincare: `Malý krok pro lepší pocit z pleti.`,
+      supplement: `Jednoduchý tip pro každý den.`,
+      bundle: `Když chceš mít výběr jednodušší.`,
+      general: `Tohle stojí za rychlé mrknutí.`
+    },
+    sk: {
+      relief: `${focus} môže prísť vhod práve dnes.`,
+      skincare: `Malý krok pre lepší pocit z pleti.`,
+      supplement: `Jednoduchý tip na každý deň.`,
+      bundle: `Keď chceš mať výber jednoduchší.`,
+      general: `Toto stojí za rýchle pozretie.`
+    }
+  };
+  return sanitizeSocialCopy(map[data.language]?.[category] || map[data.language]?.general || focus);
+}
+
+function buildSocialIntro(data) {
+  const focus = getPrimaryFocus(data);
+  const category = data.copyPlan?.category || detectProductCategory(focus);
+  const offer = cleanField(data.offer);
+  const map = {
+    cz: {
+      relief: `${focus} je příjemnou součástí každodenní péče ve chvíli, kdy si chceš dopřát větší komfort a uvolněnější pocit.`,
+      skincare: `${focus} potěší každého, kdo má rád jednoduchou péči, příjemné použití a produkty, ke kterým se chce vracet.`,
+      supplement: `${focus} snadno zapadne do běžného dne a ocení ho každý, kdo má rád praktické a dobře použitelné produkty.`,
+      bundle: `${focus} dává smysl pro každého, kdo chce mít výběr rychlejší, přehlednější a bez zbytečného přemýšlení.`,
+      general: `${focus} zaujme hlavně svou jednoduchostí, snadným použitím a tím, jak přirozeně zapadne do běžného dne.`
+    },
+    sk: {
+      relief: `${focus} je príjemnou súčasťou každodennej starostlivosti vo chvíli, keď si chceš dopriať väčší komfort a uvoľnenejší pocit.`,
+      skincare: `${focus} poteší každého, kto má rád jednoduchú starostlivosť, príjemné použitie a produkty, ku ktorým sa chce vracať.`,
+      supplement: `${focus} ľahko zapadne do bežného dňa a ocení ho každý, kto má rád praktické a dobre použiteľné produkty.`,
+      bundle: `${focus} dáva zmysel pre každého, kto chce mať výber rýchlejší, prehľadnejší a bez zbytočného premýšľania.`,
+      general: `${focus} zaujme hlavne svojou jednoduchosťou, ľahkým použitím a tým, ako prirodzene zapadne do bežného dňa.`
+    }
+  };
+  const line = map[data.language]?.[category] || map[data.language]?.general || '';
+  const withOffer = offer
+    ? `${line} ${data.language === 'sk' ? `A ak je navyše v ponuke ${offer.toLowerCase().replace(/[.!?]+$/,'')}, o to lepšie.` : `A pokud je navíc v nabídce ${offer.toLowerCase().replace(/[.!?]+$/,'')}, o to lépe.`}`
+    : line;
+  return sanitizeSocialCopy(withOffer);
+}
+
+function buildSocialBenefits(data) {
+  const category = data.copyPlan?.category || detectProductCategory(getPrimaryFocus(data));
+  const map = {
+    cz: {
+      relief: ['pocit většího komfortu', 'příjemné použití', 'vhodné pro každý den'],
+      skincare: ['příjemný pocit z péče', 'snadné zařazení do rutiny', 'vhodné pro každý den'],
+      supplement: ['jednoduché použití', 'praktický tip pro každý den', 'součást aktivního životního stylu'],
+      bundle: ['rychlejší výběr', 'smysluplná kombinace', 'více pohodlí při rozhodování'],
+      general: ['snadné použití', 'příjemný pocit', 'vhodné pro každý den']
+    },
+    sk: {
+      relief: ['pocit väčšieho komfortu', 'príjemné použitie', 'vhodné na každý deň'],
+      skincare: ['príjemný pocit zo starostlivosti', 'ľahké zaradenie do rutiny', 'vhodné na každý deň'],
+      supplement: ['jednoduché použitie', 'praktický tip na každý deň', 'súčasť aktívneho životného štýlu'],
+      bundle: ['rýchlejší výber', 'zmysluplná kombinácia', 'viac pohodlia pri rozhodovaní'],
+      general: ['ľahké použitie', 'príjemný pocit', 'vhodné na každý deň']
+    }
+  };
+  return (map[data.language]?.[category] || map[data.language]?.general || []).map(sanitizeSocialCopy).slice(0, 3);
+}
+
+function buildSocialHashtags(data) {
+  const category = data.copyPlan?.category || detectProductCategory(getPrimaryFocus(data));
+  const base = data.language === 'sk'
+    ? ['#kralovstvitianDe', '#tiande', '#inspiracia']
+    : ['#kralovstvitianDe', '#tiande', '#inspirace'];
+  const byCategory = {
+    relief: data.language === 'sk' ? ['#komfort', '#kazdodennastarostlivost'] : ['#komfort', '#kazdodennipece'],
+    skincare: data.language === 'sk' ? ['#starostlivostoplet', '#kazdodennarutina'] : ['#peceoplet', '#kazdodennipece'],
+    supplement: data.language === 'sk' ? ['#vitalita', '#aktivnyzivotnystyl'] : ['#vitalita', '#aktivnizivotnistyl'],
+    bundle: data.language === 'sk' ? ['#vyberproduktov', '#oblubenetipy'] : ['#vyberproduktu', '#oblibenetipy'],
+    general: data.language === 'sk' ? ['#oblubenetipy', '#kazdyden'] : ['#oblibenetipy', '#kazdyden']
+  };
+  return [...base, ...(byCategory[category] || byCategory.general)].slice(0, 5).join(' ');
+}
+
+function sanitizeSocialCopy(value = '') {
+  return cleanField(value)
+    .replace(/\b(l[eé]čí|léč[ií]|vyl[eé]čí|vyl[eé]čit|proti migr[eé]ně|proti migrene|na ekz[eé]m|na ekzem|snižuje cholesterol|protiz[aá]nětliv[ýy]|protizapalov[ýy]|pom[aá]h[aá] při|pom[aá]ha pri|artr[oó]ze|diagn[oó]zy|diagnózy)\b/gi, '')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
 function getPrimaryFocus(data) {
