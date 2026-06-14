@@ -14,6 +14,8 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v4
         with:
@@ -37,5 +39,10 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/raw data/current
-          git diff --staged --quiet || git commit -m "chore: refresh klaviyo dataset"
-          git push
+          if git diff --staged --quiet; then
+            echo "No dataset changes to commit"
+            exit 0
+          fi
+          git commit -m "chore: refresh klaviyo dataset"
+          git pull --rebase origin main
+          git push origin HEAD:main
