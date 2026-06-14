@@ -1,5 +1,42 @@
 [
   {
+    "id": "01KTKKG5FE6939C3GFE98YF0TF",
+    "name": "CZ - Konec školního roku se blíží",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
+    "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
+    "sentAt": "2026-06-13T17:15:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "XHdAND",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Dárky, které potěší každou paní učitelku!",
+      "body": [
+        "Dárky, které potěší každou paní učitelku!",
+        "⏰Školní rok se pomalu chýlí ke svému závěru.",
+        "Školní rok je téměř u konce a nastává čas poděkovat ženám , které naše děti celý rok vedly, podporovaly a inspirovaly. Pokud ještě nemáte vybraný dárek pro paní učitelku, připravili jsme pro vás tipy , které patří mezi nejoblíbenější.",
+        "Revitalizační sprchový gel Oliva a Marakuja"
+      ],
+      "cta": "VYBRAT DÁREK",
+      "ctas": [
+        "VYBRAT DÁREK",
+        "KOUPIT",
+        "NAKOUPIT SE SLEVOU"
+      ],
+      "text": "96\nDárky, které potěší každou paní učitelku!\n⏰Školní rok se pomalu chýlí ke svému závěru.\nŠkolní rok je téměř u konce a nastává čas poděkovat ženám , které naše děti celý rok vedly, podporovaly a inspirovaly. Pokud ještě nemáte vybraný dárek pro paní učitelku, připravili jsme pro vás tipy , které patří mezi nejoblíbenější.\nVYBRAT DÁREK\nRevitalizační sprchový gel Oliva a Marakuja\n✅ Přírodní alternativa energetických nápojů ✅ Chrání buňky před stresem z okolního prostředí ✅ Pomáhá zvládat hektické dny s větší lehkostí\n382 Kč 248 Kč ( VIP Sleva)\nKOUPIT\nMagda 38 let: \"Tenhle sprchový gel mě mile překvapil. Krásně pění, nádherně voní po marakuje a pokožka po sprše není vysušená ani napjatá. Naopak je hebká a příjemná na dotek. Navíc velké balení vydrží opravdu dlouho. Stal se součástí mé každodenní koupelnové rutiny.\"\nPleťová maska s kyselinou azelaovou a vitamínem C\n✅ Hloubková hydratace bez zatížení ✅ Zklidnění a péče o nedokonalosti ✅ Rozjasňuje a sjednocuje tón pleti 🔥20% SLEVA\n102 Kč 53 Kč ( VIP Sleva)\nKOUPIT\nNatálie 42 let: \"Po této masce je moje pleť vždy viditelně svěžejší a rozjasněná. Oceňuji, že pokožku nevysušuje, ale naopak ji krásně hydratuje a zanechá hebkou na dotek. Mám citlivější pleť a maska mi vyhovuje i díky tomu, že po použití nepociťuji pnutí ani podráždění. Skvělá rychlá péče, když chci pleti dodat energii a zdravý vzhled.\"\nKrém na ruce s hadím tukem\n✅ Intenzivní výživa pro suché a namáhané ruce\n✅ Rychle se vstřebává bez mastného filmu ✅ Ochrana a komfort po celý den\n176 Kč 114 Kč ( VIP Sleva)\nKOUPIT\nPatricia 46 let: \"Skvělý krém na každodenní letní péči. Ruce hydratuje, zjemňuje a přitom se rychle vstřebává. Používám ho po práci na zahradě i během dne a pokožka je po něm příjemně hebká bez mastného pocitu. Za mě jeden z nejlepších krémů na ruce, které jsem vyzkoušela.\"\nNakupujte u nás s 35% slevou?\nNAKOUPIT SE SLEVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S.: Tyto dárky patří mezi nejoblíbenější tipy pro paní učitelky a každý rok před koncem školy mizí nejrychleji. Pokud chcete mít jistotu, že svůj dárek stihnete objednat včas, doporučujeme s výběrem neotálet.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "gift",
+      "launch",
+      "education"
+    ]
+  },
+  {
     "id": "01KTZSWVEHQ4KZC6FDC13P08JK",
     "name": "SK Webinář s překvapením",
     "status": "Sent",
@@ -668,43 +705,6 @@
       "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš kurz hubnutí v 19:00 hodin. První účastníci se už připojují.\nSebeláska krok za krokem\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nAndrea Svitáková\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
-      "percent-off",
-      "gift",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KTKKG5FE6939C3GFE98YF0TF",
-    "name": "CZ - Konec školního roku se blíží",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
-    "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "XHdAND",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Dárky, které potěší každou paní učitelku!",
-      "body": [
-        "Dárky, které potěší každou paní učitelku!",
-        "⏰Školní rok se pomalu chýlí ke svému závěru.",
-        "Školní rok je téměř u konce a nastává čas poděkovat ženám , které naše děti celý rok vedly, podporovaly a inspirovaly. Pokud ještě nemáte vybraný dárek pro paní učitelku, připravili jsme pro vás tipy , které patří mezi nejoblíbenější.",
-        "Revitalizační sprchový gel Oliva a Marakuja"
-      ],
-      "cta": "VYBRAT DÁREK",
-      "ctas": [
-        "VYBRAT DÁREK",
-        "KOUPIT",
-        "NAKOUPIT SE SLEVOU"
-      ],
-      "text": "96\nDárky, které potěší každou paní učitelku!\n⏰Školní rok se pomalu chýlí ke svému závěru.\nŠkolní rok je téměř u konce a nastává čas poděkovat ženám , které naše děti celý rok vedly, podporovaly a inspirovaly. Pokud ještě nemáte vybraný dárek pro paní učitelku, připravili jsme pro vás tipy , které patří mezi nejoblíbenější.\nVYBRAT DÁREK\nRevitalizační sprchový gel Oliva a Marakuja\n✅ Přírodní alternativa energetických nápojů ✅ Chrání buňky před stresem z okolního prostředí ✅ Pomáhá zvládat hektické dny s větší lehkostí\n382 Kč 248 Kč ( VIP Sleva)\nKOUPIT\nMagda 38 let: \"Tenhle sprchový gel mě mile překvapil. Krásně pění, nádherně voní po marakuje a pokožka po sprše není vysušená ani napjatá. Naopak je hebká a příjemná na dotek. Navíc velké balení vydrží opravdu dlouho. Stal se součástí mé každodenní koupelnové rutiny.\"\nPleťová maska s kyselinou azelaovou a vitamínem C\n✅ Hloubková hydratace bez zatížení ✅ Zklidnění a péče o nedokonalosti ✅ Rozjasňuje a sjednocuje tón pleti 🔥20% SLEVA\n102 Kč 53 Kč ( VIP Sleva)\nKOUPIT\nNatálie 42 let: \"Po této masce je moje pleť vždy viditelně svěžejší a rozjasněná. Oceňuji, že pokožku nevysušuje, ale naopak ji krásně hydratuje a zanechá hebkou na dotek. Mám citlivější pleť a maska mi vyhovuje i díky tomu, že po použití nepociťuji pnutí ani podráždění. Skvělá rychlá péče, když chci pleti dodat energii a zdravý vzhled.\"\nKrém na ruce s hadím tukem\n✅ Intenzivní výživa pro suché a namáhané ruce\n✅ Rychle se vstřebává bez mastného filmu ✅ Ochrana a komfort po celý den\n176 Kč 114 Kč ( VIP Sleva)\nKOUPIT\nPatricia 46 let: \"Skvělý krém na každodenní letní péči. Ruce hydratuje, zjemňuje a přitom se rychle vstřebává. Používám ho po práci na zahradě i během dne a pokožka je po něm příjemně hebká bez mastného pocitu. Za mě jeden z nejlepších krémů na ruce, které jsem vyzkoušela.\"\nNakupujte u nás s 35% slevou?\nNAKOUPIT SE SLEVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S.: Tyto dárky patří mezi nejoblíbenější tipy pro paní učitelky a každý rok před koncem školy mizí nejrychleji. Pokud chcete mít jistotu, že svůj dárek stihnete objednat včas, doporučujeme s výběrem neotálet.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
       "percent-off",
       "gift",
       "launch",

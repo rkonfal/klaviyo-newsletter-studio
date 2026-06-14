@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-13T12:50:05.332Z",
+  "generatedAt": "2026-06-14T09:16:54.181Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -94,6 +94,12 @@
       ],
       "examples": [
         {
+          "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
+          "headline": "Dárky, které potěší každou paní učitelku!",
+          "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
+          "cta": "VYBRAT DÁREK"
+        },
+        {
           "subject": "Neměli bychom vám to říkat. Ale...",
           "headline": "18. 6. se stane něco, co jsme ještě nikdy neudělali.",
           "previewText": "18. 6. odhalíme něco, co nikdo nečeká!",
@@ -122,12 +128,6 @@
           "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
           "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
           "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
-        },
-        {
-          "subject": "Zbývá už jen pár kusů! Stihnete si vybrat?",
-          "headline": "Nečekejte! Nejoblíbenější dárky jsou téměř vyprodané.",
-          "previewText": "Exkluzivní dárky mizí rekordním tempem.",
-          "cta": "VYBRAT SI DÁREK"
         }
       ]
     },
@@ -192,6 +192,64 @@
     }
   },
   "byCampaignType": {
+    "education": {
+      "count": 58,
+      "avgSubjectLength": 47,
+      "avgHeadlineLength": 59,
+      "topCtas": [
+        "KOUPIT",
+        "Připojte se na webinář nyní",
+        "CHCI BÝT U TOHO",
+        "CHCI SE PŘIDAT DO SKUPINY",
+        "PUSTIT SI ZÁZNAM",
+        "Sledovat na youtube"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "education",
+        "promo",
+        "gift"
+      ],
+      "examples": [
+        {
+          "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
+          "headline": "Dárky, které potěší každou paní učitelku!",
+          "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
+          "cta": "VYBRAT DÁREK"
+        },
+        {
+          "subject": "Neměli bychom vám to říkat. Ale...",
+          "headline": "18. 6. se stane něco, co jsme ještě nikdy neudělali.",
+          "previewText": "18. 6. odhalíme něco, co nikdo nečeká!",
+          "cta": "TO SI ROZHODNĚ NENECHÁM UJÍT"
+        },
+        {
+          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
+          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
+          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
+          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
+        },
+        {
+          "subject": "STOP! Leto je za rohom a celulitída sama nezmizne!",
+          "headline": "Leto sa blíži. Ukážte stehná, na ktoré budete hrdá.",
+          "previewText": "Plavky nepočkajú. Objavte 3 pomocníkov proti celulitíde.",
+          "cta": "Chcem sa cítiť sebavedomo"
+        },
+        {
+          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
+          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
+          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
+          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
+        },
+        {
+          "subject": "Představili jsme letní novinky. Viděli jste je?",
+          "headline": "Od menopauzy až po krásnou pleť",
+          "previewText": "Nestihli jste živé vysílání? Záznam webináře s Elenou už na vás čeká.",
+          "cta": "PUSTIT SI ZÁZNAM"
+        }
+      ]
+    },
     "promo": {
       "count": 25,
       "avgSubjectLength": 41,
@@ -247,64 +305,6 @@
           "headline": "Zážitkový den v Králoství tiande",
           "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
           "cta": "Zjistit víc"
-        }
-      ]
-    },
-    "education": {
-      "count": 58,
-      "avgSubjectLength": 47,
-      "avgHeadlineLength": 59,
-      "topCtas": [
-        "KOUPIT",
-        "Připojte se na webinář nyní",
-        "CHCI BÝT U TOHO",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "PUSTIT SI ZÁZNAM",
-        "Sledovat na youtube"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "education",
-        "promo",
-        "gift"
-      ],
-      "examples": [
-        {
-          "subject": "Neměli bychom vám to říkat. Ale...",
-          "headline": "18. 6. se stane něco, co jsme ještě nikdy neudělali.",
-          "previewText": "18. 6. odhalíme něco, co nikdo nečeká!",
-          "cta": "TO SI ROZHODNĚ NENECHÁM UJÍT"
-        },
-        {
-          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
-          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
-          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
-          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
-        },
-        {
-          "subject": "STOP! Leto je za rohom a celulitída sama nezmizne!",
-          "headline": "Leto sa blíži. Ukážte stehná, na ktoré budete hrdá.",
-          "previewText": "Plavky nepočkajú. Objavte 3 pomocníkov proti celulitíde.",
-          "cta": "Chcem sa cítiť sebavedomo"
-        },
-        {
-          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
-          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
-          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
-          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
-        },
-        {
-          "subject": "Představili jsme letní novinky. Viděli jste je?",
-          "headline": "Od menopauzy až po krásnou pleť",
-          "previewText": "Nestihli jste živé vysílání? Záznam webináře s Elenou už na vás čeká.",
-          "cta": "PUSTIT SI ZÁZNAM"
-        },
-        {
-          "subject": "Predstavili sme letné novinky. Videli ste ich?",
-          "headline": "Od menopauzy až po krásnu pleť.",
-          "previewText": "Nestihli ste živé vysielanie? Záznam webinára s Elenou už na vás čaká.",
-          "cta": "PUSTIŤ SI ZÁZNAM"
         }
       ]
     },
@@ -449,6 +449,14 @@
   },
   "examples": [
     {
+      "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
+      "headline": "Dárky, které potěší každou paní učitelku!",
+      "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
+      "cta": "VYBRAT DÁREK",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
       "subject": "Nemali by sme vám to hovoriť. Ale...",
       "headline": "18. 6. Stane sa niečo, čo sme ešte nikdy neurobili.",
       "previewText": "18. 6. odhalíme niečo, čo nikto nečaká!",
@@ -583,14 +591,6 @@
       "cta": "VYBRAT SVÉHO LETNÍHO FAVORITA",
       "language": "cz",
       "campaignType": "promo"
-    },
-    {
-      "subject": "Letní dárková mánie je tady!",
-      "headline": "Exkluzivní letní dárky jsou připravené. Který bude váš?",
-      "previewText": "Vyberte si svůj exkluzivní dárek ještě dnes!",
-      "cta": "VYBRAT SI DÁREK",
-      "language": "cz",
-      "campaignType": "urgency"
     }
   ]
 }
