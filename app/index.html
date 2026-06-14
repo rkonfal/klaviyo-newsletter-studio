@@ -9,57 +9,45 @@
   <body>
     <div class="shell">
       <aside class="sidebar">
-        <h1>Klaviyo Newsletter Studio</h1>
-        <p>GitHub-first modul pro návrh newsletterů podle historie odeslaných kampaní.</p>
+        <div class="sidebar-intro">
+          <h1>Klaviyo Newsletter Studio</h1>
+          <p>Vyber produkt, napiš brief a nech si připravit prodejní draft newsletteru.</p>
+        </div>
 
-        <section class="card small">
-          <h2>Dataset</h2>
+        <section class="card small sidebar-summary">
+          <h2>Rychlý přehled</h2>
           <div id="dataset-meta">Načítám…</div>
+          <div id="catalog-meta" class="sidebar-meta-block">Načítám…</div>
         </section>
 
-        <section class="card small">
-          <h2>Produktový katalog</h2>
-          <div id="catalog-meta">Načítám…</div>
-        </section>
-
-        <section class="card small">
-          <h2>Styl značky</h2>
-          <ul id="tone-list"></ul>
-        </section>
-
-        <section class="card small">
-          <h2>Typické CTA</h2>
-          <ul id="cta-list"></ul>
-        </section>
+        <details class="card small sidebar-details">
+          <summary>Více o stylu a CTA</summary>
+          <section class="sidebar-detail-block">
+            <h3>Styl značky</h3>
+            <ul id="tone-list"></ul>
+          </section>
+          <section class="sidebar-detail-block">
+            <h3>Typické CTA</h3>
+            <ul id="cta-list"></ul>
+          </section>
+        </details>
       </aside>
 
       <main class="main">
-        <section class="card hero-card">
+        <section class="card hero-card hero-card-simple">
           <div>
-            <div class="eyebrow">V6 UX/UI polish</div>
-            <h2>Vytvoř prodejní newsletter z reálných produktů</h2>
-            <p>Vyber produkt, doplň téma a brief. Generátor připraví subjecty, headline, tělo i HTML draft v jednom průchodu.</p>
+            <div class="eyebrow">Newsletter generator</div>
+            <h2>Vytvoř prodejní newsletter bez zbytečného balastu</h2>
+            <p>Vyber produkt z katalogu, napiš brief a uprav hotový draft. Zbytek nech na generátoru.</p>
           </div>
-          <div class="hero-badges">
-            <span class="badge">Katalog produktů</span>
-            <span class="badge">CZ + SK</span>
-            <span class="badge">HTML export</span>
-            <span class="badge accent">Sales-first</span>
-          </div>
-        </section>
-
-        <section class="status-strip" aria-label="Rychlý přehled">
-          <div class="status-pill"><span class="status-label">Flow</span><strong>Katalog → brief → draft</strong></div>
-          <div class="status-pill"><span class="status-label">Vhodné pro</span><strong>promo, launch, urgency, edukaci</strong></div>
-          <div class="status-pill"><span class="status-label">Výstup</span><strong>text + HTML + subject varianty</strong></div>
         </section>
 
         <div class="workspace-grid">
         <section class="card input-card">
           <div class="section-head">
             <div>
-              <h2>1. Zadání</h2>
-              <p class="muted-copy">Basic režim drží minimum polí, advanced schovává jemné ladění až pod povrch.</p>
+              <h2>Zadání</h2>
+              <p class="muted-copy">Nejdřív vyber produkt a napiš, co má mail prodat.</p>
             </div>
             <button id="advanced-toggle" class="secondary" type="button">Zobrazit advanced</button>
           </div>
@@ -87,15 +75,15 @@
               </label>
               <label class="full-span">
                 Téma kampaně
-                <input name="theme" placeholder="např. Den matek, jarní restart pleti, letní balíček" required />
+                <input name="theme" placeholder="např. letní akce, péče o pleť, produktový mail" required />
               </label>
             </div>
 
             <section class="product-picker">
               <div class="product-picker-header">
                 <div>
-                  <strong>Produkty z katalogu</strong>
-                  <small>Vyber jeden produkt, nebo poskládej více produktů do jednoho mailu.</small>
+                  <strong>Produkt z katalogu</strong>
+                  <small>Vyber hlavní produkt. Více produktů přidej jen když opravdu děláš kombinovaný mail.</small>
                 </div>
                 <div id="catalog-selection-hint" class="selection-hint">Bez vybraného produktu bude výstup slabší.</div>
               </div>
@@ -107,15 +95,15 @@
 
             <div class="focus-box">
               <label class="full-span">
-                Ruční focus, jen když nechceš jet čistě podle katalogu
-                <input id="manual-product-input" name="product" placeholder="např. hlavní produktová řada nebo fallback focus" />
+                Ruční focus, jen když produkt nechceš vybírat z katalogu
+                <input id="manual-product-input" name="product" placeholder="např. produktová řada nebo fallback focus" />
               </label>
               <small id="manual-product-hint">Když vybereš produkt z katalogu, tohle pole se automaticky odstaví.</small>
             </div>
 
             <label>
               Brief
-              <textarea name="brief" rows="6" placeholder="Např. Blíží se Den matek 10. 5. Chci z toho udělat tip na dárek pro maminku. V textu zdůrazni hlavní benefity produktu a přidej krátkou zkušenost zákaznice."></textarea>
+              <textarea name="brief" rows="5" placeholder="Např. Napiš maximálně prodejní newsletter na vybraný produkt. Vytáhni hlavní benefity pro zákazníka, jasný důvod koupě a silné CTA."></textarea>
             </label>
 
             <div id="advanced-panel" class="advanced-panel hidden">
@@ -170,7 +158,7 @@
 
             <div class="form-actions">
               <button type="submit">Vygenerovat newsletter</button>
-              <span class="form-helper">Tip: produkt z katalogu má vždy vyšší prioritu než ruční nebo brief inference.</span>
+              <span class="form-helper">Když vybereš produkt z katalogu, generátor ho bere jako hlavní zdroj pravdy.</span>
             </div>
           </form>
         </section>
@@ -178,8 +166,8 @@
         <section class="card output-card sticky-card">
           <div class="output-header">
             <div>
-              <h2>2. Výstup</h2>
-              <p class="muted-copy">Subjecty, headline, body copy a HTML draft připravené ke kopírování.</p>
+              <h2>Výstup</h2>
+              <p class="muted-copy">Hotový draft, který můžeš rovnou upravit nebo zkopírovat.</p>
             </div>
             <div class="actions">
               <button id="copy-output" type="button">Kopírovat text</button>
@@ -187,8 +175,7 @@
             </div>
           </div>
           <div class="output-toolbar">
-            <span class="toolbar-pill">Sales-first output</span>
-            <span class="toolbar-pill muted">Nejprve zkontroluj subject a CTA</span>
+            <span class="toolbar-pill muted">Nejdřív zkontroluj předmět a CTA</span>
           </div>
           <div id="output" class="output empty">Vyplň brief a vygeneruj první prodejní draft včetně variant předmětu.</div>
         </section>
@@ -197,8 +184,8 @@
         <section class="card">
           <div class="section-head compact">
             <div>
-              <h2>3. Nejpodobnější minulé kampaně</h2>
-              <p class="muted-copy">Rychlá inspirace podle tónu, tématu a typu kampaně.</p>
+              <h2>Podobné kampaně</h2>
+              <p class="muted-copy">Jen pro rychlou orientaci a inspiraci.</p>
             </div>
           </div>
           <div id="inspiration" class="examples"></div>
@@ -207,8 +194,8 @@
         <section class="card">
           <div class="section-head compact">
             <div>
-              <h2>4. Podobné vzory z historie</h2>
-              <p class="muted-copy">Použij je jako referenci pro tempo, styl a CTA.</p>
+              <h2>Historické vzory</h2>
+              <p class="muted-copy">Volitelné reference, když si chceš ověřit tón nebo tempo.</p>
             </div>
           </div>
           <div id="examples" class="examples"></div>
