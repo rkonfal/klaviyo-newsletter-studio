@@ -199,9 +199,10 @@ await runScenario(
 
     assert.match(output.textContent, /Fytogel Slaviton/);
     assert.match(output.textContent, /PŘEDMĚT: Fytogel Slaviton: (úleva|když chceš dopřát tělu větší komfort)/);
-    assert.match(output.textContent, /úlevu|komfort/i);
+    assert.match(output.textContent, /Když máš za sebou dlouhý den/);
+    assert.match(output.textContent, /Příjemně se nanáší, rychle zpříjemní chvíle po námaze/);
     assert.match(output.textContent, /Chci dopřát úlevu/);
-    assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby|v textu proto funguje|právě proto umí rychle prodat/i);
+    assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby|v textu proto funguje|právě proto umí rychle prodat|rychle dává smysl/i);
   }
 );
 
@@ -228,6 +229,8 @@ await runScenario(
 
     assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva: podpora, kterou snadno zařadíš do dne/);
     assert.match(output.textContent, /HEADLINE: Aloe Vera šťáva: podpora pro každý den/);
+    assert.match(output.textContent, /Aloe Vera šťáva je příjemný tip pro každého/);
+    assert.match(output.textContent, /Používá se snadno, nezatěžuje rutinu/);
     assert.match(output.textContent, /Chci to mít doma/);
   }
 );
@@ -247,6 +250,33 @@ await runScenario(
     assert.equal(copyHtmlBtn.disabled, true);
   },
   { quietErrors: true }
+);
+
+await runScenario(
+  'cordyceps-product-bank',
+  async (url) => {
+    if (String(url).includes('style-profile.json')) return fakeResponse(profile);
+    if (String(url).includes('product-catalog.json')) return fakeResponse(catalog);
+    throw new Error(`Unexpected fetch ${url}`);
+  },
+  async (window) => {
+    const { document } = window;
+    const theme = document.querySelector('input[name="theme"]');
+    const brief = document.querySelector('textarea[name="brief"]');
+    const manual = document.querySelector('#manual-product-input');
+    const form = document.querySelector('#generator-form');
+    const output = document.querySelector('#output');
+
+    theme.value = 'Cordyceps';
+    manual.value = 'Cordyceps';
+    brief.value = 'Napiš prodejní newsletter na Cordyceps. Vytáhni hlavní benefity pro zákazníka.';
+    form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+    await waitForTick();
+
+    assert.match(output.textContent, /Cordyceps se hodí přesně do dnů, kdy toho máš hodně/);
+    assert.match(output.textContent, /Používá se snadno, nezdržuje/);
+    assert.doesNotMatch(output.textContent, /rychle ukáže přínos|funguje nejlépe tehdy|dává smysl každému/i);
+  }
 );
 
 console.log('Smoke tests passed');
