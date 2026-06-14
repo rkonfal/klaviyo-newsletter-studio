@@ -1485,28 +1485,33 @@ function composeFinalParagraphs(data, blocks, cta) {
 function composeSingleProductParagraphs(data, cta) {
   const focus = getPrimaryFocus(data);
   const theme = getThemeFocus(data);
+  const category = data.copyPlan?.category || detectProductCategory(focus);
   const paragraphs = [];
 
   if (data.copyPlan?.leadType === 'theme') {
     paragraphs.push(data.language === 'sk'
-      ? `${theme} je dobrá príležitosť otvoriť stručný a konkrétny výber, ktorý rýchlo vysvetlí, čo má pre čitateľa zmysel.`
-      : `${theme} je dobrá příležitost otevřít stručný a konkrétní výběr, který rychle vysvětlí, co má pro čtenáře smysl.`);
+      ? `${theme} je dobrá príležitosť ukázať konkrétny tip, ktorý sa číta rýchlo a hneď dáva zmysel.`
+      : `${theme} je dobrá příležitost ukázat konkrétní tip, který se čte rychle a hned dává smysl.`);
   } else if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
     paragraphs.push(data.language === 'sk'
-      ? `${theme} sa blíži a v maile preto ponúkame tip na darček pre mamu, ktorý pôsobí osobne, milo a zároveň užitočne.`
-      : `${theme} se blíží a v mailu proto nabízíme tip na dárek pro maminku, který působí osobně, mile a zároveň užitečně.`);
+      ? `${theme} sa blíži a v maile preto ponúkame darčekový tip, ktorý pôsobí osobne a zároveň je naozaj užitočný.`
+      : `${theme} se blíží a v mailu proto nabízíme dárkový tip, který působí osobně a zároveň je opravdu užitečný.`);
   } else if (isGiftOccasion(data)) {
     paragraphs.push(data.language === 'sk'
-      ? `${theme} sa blíži a ${focus} môže byť pekným tipom pre tých, ktorí nechcú kupovať len obyčajný darček bez nápadu.`
-      : `${theme} se blíží a ${focus} může být hezkým tipem pro ty, kdo nechtějí kupovat jen obyčejný dárek bez nápadu.`);
+      ? `${theme} sa blíži a ${focus} môže byť pekným darčekom pre tých, ktorí nechcú kupovať len niečo do počtu.`
+      : `${theme} se blíží a ${focus} může být hezkým dárkem pro ty, kdo nechtějí kupovat jen něco do počtu.`);
   } else if (shouldLeadWithTheme(data)) {
     paragraphs.push(data.language === 'sk'
-      ? `${theme} je dobrá príležitosť otvoriť stručný a konkrétny výber, ktorý rýchlo vysvetlí, čo má pre čitateľa zmysel.`
-      : `${theme} je dobrá příležitost otevřít stručný a konkrétní výběr, který rychle vysvětlí, co má pro čtenáře smysl.`);
+      ? `${theme} je dobrá príležitosť ukázať konkrétny tip, ktorý sa číta rýchlo a hneď dáva zmysel.`
+      : `${theme} je dobrá příležitost ukázat konkrétní tip, který se čte rychle a hned dává smysl.`);
+  } else if (category === 'relief') {
+    paragraphs.push(data.language === 'sk'
+      ? `${focus} sa hodí vo chvíli, keď chceš dopriať unavenému telu úľavu a príjemný pocit po náročnom dni.`
+      : `${focus} se hodí ve chvíli, kdy chceš dopřát unavenému tělu úlevu a příjemný pocit po náročném dni.`);
   } else {
     paragraphs.push(data.language === 'sk'
-      ? `${focus} dávame do pozornosti stručne a bez omáčky, aby bolo hneď jasné, pre koho sa hodí a prečo stojí za otvorenie mailu.`
-      : `${focus} dáváme do pozornosti stručně a bez omáčky, aby bylo hned jasné, pro koho se hodí a proč stojí za otevření mailu.`);
+      ? `${focus} patrí medzi tipy, ktoré v maile fungujú najlepšie vtedy, keď hneď povedia, čo prinášajú a pre koho sa hodia.`
+      : `${focus} patří mezi tipy, které v mailu fungují nejlépe tehdy, když hned řeknou, co přinášejí a pro koho se hodí.`);
   }
 
   paragraphs.push(buildBenefitParagraph(data));
@@ -1534,61 +1539,46 @@ function composeMultiProductParagraphs(data, cta) {
 }
 
 function buildBenefitParagraph(data) {
-  const focus = getPrimaryFocus(data);
+  const categoryLine = buildCategoryBenefitLine(data);
   const promise = buildSalesPromise(data);
-  const libraryBenefit = data.copyPlan?.copyLibrary?.benefits?.[0];
-  if (libraryBenefit && data.copyPlan?.proofType !== 'selection-rationale') {
-    return `${libraryBenefit} ${buildCategoryBenefitLine(data)} ${promise}`;
-  }
+
   if (data.copyPlan?.proofType === 'selection-rationale') {
     return data.language === 'sk'
-      ? `Nejde o náhodný výber. Vyberáme len to, čo má jasný prínos, rýchlo sa číta a dá sa ľahko preklopiť do objednávky.`
-      : `Nejde o náhodný výběr. Vybíráme jen to, co má jasný přínos, rychle se čte a snadno se překlápí do objednávky.`;
+      ? `Vybrali sme to, čo má jasný prínos, číta sa rýchlo a dá sa ľahko zaradiť do bežného dňa.`
+      : `Vybrali jsme to, co má jasný přínos, čte se rychle a dá se snadno zařadit do běžného dne.`;
   }
   if (isGiftOccasion(data) && !hasConcreteProductFocus(data)) {
     return data.language === 'sk'
-      ? `Nejde o darček do počtu. Cieľom je ponúknuť výber, ktorý poteší, pôsobí premyslene a má dôvod, prečo naň kliknúť hneď.`
-      : `Nejde o dárek do počtu. Cílem je nabídnout výběr, který potěší, působí promyšleně a má důvod, proč na něj kliknout hned.`;
+      ? `Nejde o darček do počtu. Je to tip, ktorý poteší, pôsobí premyslene a zároveň má praktické využitie.`
+      : `Nejde o dárek do počtu. Je to tip, který potěší, působí promyšleně a zároveň má praktické využití.`;
   }
   if (isGiftOccasion(data)) {
     return data.language === 'sk'
-      ? `${focus} tu predávame ako darčekový tip, ktorý má konkrétny efekt, pôsobí hodnotne a nerobí z nákupu len povinnú položku.`
-      : `${focus} tu prodáváme jako dárkový tip, který má konkrétní efekt, působí hodnotně a nedělá z nákupu jen povinnou položku.`;
+      ? `${categoryLine} ${promise}`
+      : `${categoryLine} ${promise}`;
   }
-  if (data.briefSignals?.mentionBenefits || data.copyPlan?.proofType === 'benefits') {
-    const categoryLine = buildCategoryBenefitLine(data);
+  if (shouldLeadWithTheme(data) && !hasConcreteProductFocus(data)) {
     return data.language === 'sk'
-      ? `${focus} staviame na konkrétnom prínose. ${categoryLine} ${promise}`
-      : `${focus} stavíme na konkrétním přínosu. ${categoryLine} ${promise}`;
+      ? `Hlavnou výhodou takého výberu je, že čitateľ rýchlo pochopí, čo sa hodí práve teraz a prečo sa oplatí kliknúť ďalej.`
+      : `Hlavní výhodou takového výběru je, že čtenář rychle pochopí, co se hodí právě teď a proč se vyplatí kliknout dál.`;
   }
-  if (shouldLeadWithTheme(data)) {
-    return data.language === 'sk'
-      ? `Hlavná sila výberu je v tom, že rýchlo ukáže, čo sa oplatí otvoriť, čo dáva zmysel kúpiť a čo neskončí bez kliknutia.`
-      : `Hlavní síla výběru je v tom, že rychle ukáže, co se vyplatí otevřít, co dává smysl koupit a co neskončí bez kliknutí.`;
-  }
-  return data.language === 'sk'
-    ? `${focus} komunikujeme tak, aby bolo po pár sekundách jasné, čo prináša a prečo má zmysel prejsť rovno na detail produktu.`
-    : `${focus} komunikujeme tak, aby bylo po pár sekundách jasné, co přináší a proč má smysl přejít rovnou na detail produktu.`;
+  return `${categoryLine} ${promise}`;
 }
 
 function buildTrustParagraph(data) {
-  const libraryTrust = data.copyPlan?.copyLibrary?.trust?.[0];
-  if (libraryTrust && !(data.copyPlan?.proofType === 'review' || data.briefSignals?.mentionReview)) {
-    return libraryTrust;
-  }
   if (data.copyPlan?.proofType === 'review' || data.briefSignals?.mentionReview) {
     return data.language === 'sk'
-      ? `Krátka skúsenosť zákazníčky tu neplní len okrasnú rolu. Pomáha znížiť váhanie a ukazuje, prečo sa k produktu ľudia vracajú.`
-      : `Krátká zkušenost zákaznice tu nemá jen okrasnou roli. Pomáhá snížit váhání a ukazuje, proč se k produktu lidé vracejí.`;
+      ? `Krátka skúsenosť zákazníčky pomôže znížiť váhanie a ukáže, prečo sa k produktu ľudia radi vracajú.`
+      : `Krátká zkušenost zákaznice pomůže snížit váhání a ukáže, proč se k produktu lidé rádi vracejí.`;
   }
   if (isGiftOccasion(data)) {
     return data.language === 'sk'
-      ? `Pri takejto príležitosti funguje najlepšie text, ktorý je osobný, dôveryhodný a zároveň jasne vedie ku kliknutiu.`
-      : `U takové příležitosti funguje nejlépe text, který je osobní, důvěryhodný a zároveň jasně vede ke kliknutí.`;
+      ? `Pri darčekovom tipe najlepšie funguje osobný tón, jasný prínos a jednoduchá cesta na detail produktu.`
+      : `U dárkového tipu nejlépe funguje osobní tón, jasný přínos a jednoduchá cesta na detail produktu.`;
   }
   return data.language === 'sk'
-    ? `Text držíme stručne, konkrétne a bez výplňových viet, aby sa pozornosť nestratila skôr, než príde CTA.`
-    : `Text držíme stručně, konkrétně a bez výplňových vět, aby se pozornost neztratila dřív, než přijde CTA.`;
+    ? `Stačí pár konkrétnych viet a čitateľ hneď vie, pre koho sa hodí a prečo stojí za pozornosť.`
+    : `Stačí pár konkrétních vět a čtenář hned ví, pro koho se hodí a proč stojí za pozornost.`;
 }
 
 function buildLongDetailParagraph(data) {
@@ -1608,17 +1598,17 @@ function buildActionParagraph(data, cta) {
   const offer = cleanField(data.offer);
   if (offer && !isSoftOffer(offer)) {
     return data.language === 'sk'
-      ? `${offer}. Ak chceš využiť moment, klikni na tlačidlo „${cta}“ a otvor detail skôr, než ponuka zmizne.`
-      : `${offer}. Pokud chceš využít moment, klikni na tlačítko „${cta}“ a otevři detail dřív, než nabídka zmizí.`;
+      ? `${offer}. Klikni na tlačidlo „${cta}“ a otvor detail, kým je ponuka aktuálna.`
+      : `${offer}. Klikni na tlačítko „${cta}“ a otevři detail, dokud je nabídka aktuální.`;
   }
   if (isGiftOccasion(data)) {
     return data.language === 'sk'
-      ? `Ak chceš vybrať darček, ktorý poteší a nebude pôsobiť obyčajne, klikni na tlačidlo „${cta}“ a pozri sa na detail hneď.`
-      : `Jestli chceš vybrat dárek, který potěší a nebude působit obyčejně, klikni na tlačítko „${cta}“ a podívej se na detail hned.`;
+      ? `Ak hľadáš darček, ktorý poteší aj sa skutočne využije, klikni na tlačidlo „${cta}“ a pozri si detail produktu.`
+      : `Jestli hledáš dárek, který potěší a opravdu se využije, klikni na tlačítko „${cta}“ a podívej se na detail produktu.`;
   }
   return data.language === 'sk'
-    ? `Ak ťa tento tip zaujal, klikni na tlačidlo „${cta}“ a pozri sa na detail skôr, než zapadne medzi ostatné ponuky.`
-    : `Jestli tě tenhle tip zaujal, klikni na tlačítko „${cta}“ a podívej se na detail dřív, než zapadne mezi ostatní nabídky.`;
+    ? `Ak ťa ${getPrimaryFocus(data)} zaujal, klikni na tlačidlo „${cta}“ a pozri si detail produktu.`
+    : `Jestli tě ${getPrimaryFocus(data)} zaujal, klikni na tlačítko „${cta}“ a podívej se na detail produktu.`;
 }
 
 function cleanSentence(text = '') {
@@ -1683,16 +1673,18 @@ function buildCategoryBenefitLine(data) {
   const category = data.copyPlan?.category || detectProductCategory(getPrimaryFocus(data));
   const lines = {
     cz: {
-      skincare: 'Prodává ho hlavně příslib lepšího pocitu z pleti, snadného použití a rychle pochopitelného benefitu.',
-      supplement: 'Prodává ho hlavně jednoduché zařazení do dne, jasný účel a důvod vracet se k němu opakovaně.',
-      bundle: 'Prodává ho hlavně to, že šetří rozhodování a skládá víc kroků do jednoho smysluplného výběru.',
-      general: 'Prodává ho hlavně jasný přínos, rychlé pochopení hodnoty a jednoduchý důvod kliknout dál.'
+      skincare: 'Příjemně se používá, snadno se zařadí do rutiny a jeho benefit si člověk umí rychle představit.',
+      supplement: 'Dobře zapadne do běžného dne, má jasný účel a dává smysl vracet se k němu pravidelně.',
+      bundle: 'Šetří rozhodování a spojuje víc kroků do jedné smysluplné kombinace.',
+      relief: 'Příjemně se nanáší a hodí se pro chvíle, kdy chceš dopřát namáhanému tělu úlevu a větší komfort.',
+      general: 'Rychle ukáže jasný přínos a jednoduchý důvod podívat se na detail.'
     },
     sk: {
-      skincare: 'Predáva ho hlavne prísľub lepšieho pocitu z pleti, jednoduchého použitia a rýchlo pochopiteľného benefitu.',
-      supplement: 'Predáva ho hlavne jednoduché zaradenie do dňa, jasný účel a dôvod vracať sa k nemu opakovane.',
-      bundle: 'Predáva ho hlavne to, že šetrí rozhodovanie a skladá viac krokov do jedného zmysluplného výberu.',
-      general: 'Predáva ho hlavne jasný prínos, rýchle pochopenie hodnoty a jednoduchý dôvod kliknúť ďalej.'
+      skincare: 'Príjemne sa používa, ľahko sa zaradí do rutiny a jeho benefit si človek vie rýchlo predstaviť.',
+      supplement: 'Dobre zapadne do bežného dňa, má jasný účel a dáva zmysel vracať sa k nemu pravidelne.',
+      bundle: 'Šetrí rozhodovanie a spája viac krokov do jednej zmysluplnej kombinácie.',
+      relief: 'Príjemne sa nanáša a hodí sa pre chvíle, keď chceš dopriať namáhanému telu úľavu a väčší komfort.',
+      general: 'Rýchlo ukáže jasný prínos a jednoduchý dôvod pozrieť sa na detail.'
     }
   };
   return lines[data.language]?.[category] || lines[data.language]?.general || '';
@@ -1703,38 +1695,36 @@ function buildSalesPromise(data) {
   const mode = data.copyPlan?.styleMode || 'hard-sell';
   const base = {
     skincare: data.language === 'sk'
-      ? 'Stojí na rýchlom pochopení benefitu, príjemnom používaní a dôvode pridať ho do rutiny ešte dnes.'
-      : 'Stojí na rychlém pochopení benefitu, příjemném používání a důvodu zařadit ho do rutiny ještě dnes.',
+      ? 'Už po prvej vete má byť jasné, čo môže spríjemniť každodennú rutinu.'
+      : 'Už po první větě má být jasné, co může zpříjemnit každodenní rutinu.',
     supplement: data.language === 'sk'
-      ? 'Predávame ho cez jasný úžitok, jednoduché zaradenie do dňa a dôvod vrátiť sa k nemu opakovane.'
-      : 'Prodáváme ho přes jasný užitek, jednoduché zařazení do dne a důvod vracet se k němu opakovaně.',
+      ? 'Rýchlo z neho má byť cítiť, prečo sa hodí do bežného dňa a čo človek pri pravidelnom používaní ocení.'
+      : 'Rychle z něj má být cítit, proč se hodí do běžného dne a co člověk při pravidelném používání ocení.',
     bundle: data.language === 'sk'
-      ? 'Silu má v tom, že šetrí rozhodovanie a spája viac krokov do jedného jednoduchého výberu.'
-      : 'Sílu má v tom, že šetří rozhodování a spojuje víc kroků do jednoho jednoduchého výběru.',
+      ? 'Na prvé prečítanie má byť zrejmé, prečo táto kombinácia šetrí čas aj rozhodovanie.'
+      : 'Na první přečtení má být zřejmé, proč tahle kombinace šetří čas i rozhodování.',
+    relief: data.language === 'sk'
+      ? mode === 'urgency-sell'
+        ? 'Pripomína úľavu a komfort navyše, na ktorý sa neoplatí dlho čakať.'
+        : 'Pripomína úľavu, komfort a chvíľu starostlivosti o telo navyše.'
+      : mode === 'urgency-sell'
+        ? 'Připomíná úlevu a komfort navíc, na který se nevyplatí dlouho čekat.'
+        : 'Připomíná úlevu, komfort a chvíli péče o tělo navíc.',
     general: data.language === 'sk'
-      ? 'Text má hneď ukázať prínos, dôvod kúpy a jasný impulz prekliknúť sa na detail.'
-      : 'Text má hned ukázat přínos, důvod koupě a jasný impuls prokliknout se na detail.'
+      ? mode === 'urgency-sell'
+        ? 'Hneď ukáže prínos a jemne pripomenie, že sa neoplatí odkladať rozhodnutie.'
+        : 'Hneď ukáže prínos a dá jednoduchý dôvod prejsť na detail produktu.'
+      : mode === 'urgency-sell'
+        ? 'Hned ukáže přínos a jemně připomene, že se nevyplatí odkládat rozhodnutí.'
+        : 'Hned ukáže přínos a dá jednoduchý důvod přejít na detail produktu.'
   };
-  const modeBoost = {
-    'hard-sell': data.language === 'sk'
-      ? 'Tlačíme na jasný výsledok, dôvod kúpy a rýchle rozhodnutie.'
-      : 'Tlačíme na jasný výsledek, důvod koupě a rychlé rozhodnutí.',
-    'warm-sell': data.language === 'sk'
-      ? 'Nechávame priestor pre dôveru, ale stále držíme jasný benefit a smer ku kliknutiu.'
-      : 'Necháváme prostor pro důvěru, ale pořád držíme jasný benefit a směr ke kliknutí.',
-    'education-sell': data.language === 'sk'
-      ? 'Najprv vysvetlíme prečo, hneď potom dávame dôvod prekliknúť sa na detail.'
-      : 'Nejdřív vysvětlíme proč, hned potom dáváme důvod prokliknout se na detail.',
-    'urgency-sell': data.language === 'sk'
-      ? 'Text musí vytvoriť pocit, že odklad znižuje šancu využiť ponuku naplno.'
-      : 'Text musí vytvořit pocit, že odklad snižuje šanci využít nabídku naplno.'
-  };
-  return `${base[category] || base.general} ${modeBoost[mode] || modeBoost['hard-sell']}`;
+  return base[category] || base.general;
 }
 
 function detectProductCategory(value = '') {
   const lower = cleanField(value).toLowerCase();
   if (/(balíček|balicek|set|sada|rutina)/i.test(lower)) return 'bundle';
+  if (/(slaviton|fytogel|masáž|masaz|kloub|klouby|sval|svaly|záda|zada|krk|ramena|nohy|únava nohou|unava nohou)/i.test(lower)) return 'relief';
   if (/(šťáva|stava|kapky|doplněk|doplnok|vitam|bylinn|ashwagandha|aloe vera)/i.test(lower)) return 'supplement';
   if (/(krém|krem|gel|serum|maska|peeling|pleť|plet|oči|oci|šampon|sampon|vlasy|kůž|kož)/i.test(lower)) return 'skincare';
   return 'general';
@@ -1818,12 +1808,12 @@ function buildHeadlineLibrary(language, ctx) {
 function buildBenefitLibrary(language, ctx) {
   const base = language === 'sk'
     ? [
-        `${ctx.focus} staviame na jasnom prínose, rýchlom pochopení hodnoty a dôvode kliknúť bez zbytočného váhania.`,
-        `${ctx.focus} musí hneď ukázať, čo prináša, pre koho sa hodí a prečo má zmysel otvoriť detail práve teraz.`
+        `${ctx.focus} má hneď ukázať konkrétny prínos a dôvod, prečo mu venovať pozornosť práve teraz.`,
+        `${ctx.focus} funguje najlepšie vtedy, keď text rýchlo vysvetlí, čo prináša a komu môže urobiť radosť alebo úľavu.`
       ]
     : [
-        `${ctx.focus} stavíme na jasném přínosu, rychlém pochopení hodnoty a důvodu kliknout bez zbytečného váhání.`,
-        `${ctx.focus} musí hned ukázat, co přináší, pro koho se hodí a proč má smysl otevřít detail právě teď.`
+        `${ctx.focus} má hned ukázat konkrétní přínos a důvod, proč mu věnovat pozornost právě teď.`,
+        `${ctx.focus} funguje nejlépe tehdy, když text rychle vysvětlí, co přináší a komu může udělat radost nebo úlevu.`
       ];
   return [...base];
 }
@@ -1831,12 +1821,12 @@ function buildBenefitLibrary(language, ctx) {
 function buildTrustLibrary(language, ctx) {
   if (ctx.review) {
     return language === 'sk'
-      ? [`Krátka skúsenosť zákazníčky znižuje váhanie a ukazuje, prečo sa k produktu ľudia vracajú.`]
-      : [`Krátká zkušenost zákaznice snižuje váhání a ukazuje, proč se k produktu lidé vracejí.`];
+      ? [`Krátka skúsenosť zákazníčky znižuje váhanie a pomáha uveriť, že produkt má v praxi zmysel.`]
+      : [`Krátká zkušenost zákaznice snižuje váhání a pomáhá uvěřit, že produkt má v praxi smysl.`];
   }
   return language === 'sk'
-    ? [`Text držíme bez výplňových viet, aby sa pozornosť nestratila skôr, než príde CTA.`]
-    : [`Text držíme bez výplňových vět, aby se pozornost neztratila dřív, než přijde CTA.`];
+    ? [`Dobre funguje pár konkrétnych viet, ktoré rýchlo vysvetlia prínos a prirodzene dovedú čitateľa ku kliknutiu.`]
+    : [`Dobře funguje pár konkrétních vět, které rychle vysvětlí přínos a přirozeně dovedou čtenáře ke kliknutí.`];
 }
 
 function buildCtaLibrary(language, ctx) {
@@ -1948,7 +1938,7 @@ function mergeSubjectBanks(...banks) {
 }
 
 function isMetaCopy(value = '') {
-  return /(benefit držíme|hlavní akce je|hlavná akcia je|promise typu|mode je high-seller|prodejní skóre|predajné skóre)/i.test(value);
+  return /(benefit držíme|hlavní akce je|hlavná akcia je|promise typu|mode je high-seller|prodejní skóre|predajné skóre|stavíme na jasném přínosu|staviame na jasnom prínose|prodává ho hlavně|predáva ho hlavne|text držíme|tlačíme na jasný|komunikujeme tak, aby|závěr proto může|zaver preto moze|má připomenout|ma pripomenut)/i.test(value);
 }
 
 function escapeRegExp(value = '') {

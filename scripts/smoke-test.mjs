@@ -171,7 +171,34 @@ await runScenario(
     await waitForTick();
 
     assert.match(output.textContent, /20 % sleva do neděle/i);
-    assert.match(output.textContent, /dřív, než nabídka zmizí|jen teď|otevři detail/i);
+    assert.match(output.textContent, /dokud je nabídka aktuální|jen teď|otevři detail/i);
+  }
+);
+
+await runScenario(
+  'slaviton-no-meta-copy',
+  async (url) => {
+    if (String(url).includes('style-profile.json')) return fakeResponse(profile);
+    if (String(url).includes('product-catalog.json')) return fakeResponse(catalog);
+    throw new Error(`Unexpected fetch ${url}`);
+  },
+  async (window) => {
+    const { document } = window;
+    const theme = document.querySelector('input[name="theme"]');
+    const brief = document.querySelector('textarea[name="brief"]');
+    const manual = document.querySelector('#manual-product-input');
+    const form = document.querySelector('#generator-form');
+    const output = document.querySelector('#output');
+
+    theme.value = 'Slaviton';
+    manual.value = 'Fytogel Slaviton';
+    brief.value = 'Napiš prodejní newsletter na Fytogel Slaviton.';
+    form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+    await waitForTick();
+
+    assert.match(output.textContent, /Fytogel Slaviton/);
+    assert.match(output.textContent, /úlevu|komfort/i);
+    assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby/i);
   }
 );
 
