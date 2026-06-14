@@ -118,7 +118,7 @@ await runScenario(
 
     assert.match(output.textContent, /Aloe Vera šťáva, 500 ml/);
     assert.doesNotMatch(output.textContent, /Chci si vybrat/);
-    assert.match(output.textContent, /Chci objednat/);
+    assert.match(output.textContent, /Chci to mít doma|Chci vyzkoušet produkt|Chci objednat/);
     assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
   }
 );
@@ -198,7 +198,8 @@ await runScenario(
 
     assert.match(output.textContent, /Fytogel Slaviton/);
     assert.match(output.textContent, /úlevu|komfort/i);
-    assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby/i);
+    assert.match(output.textContent, /Chci dopřát úlevu/);
+    assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby|v textu proto funguje|právě proto umí rychle prodat/i);
   }
 );
 

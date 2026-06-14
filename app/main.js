@@ -531,11 +531,13 @@ function buildPreheader(data, subset, angle) {
   const theme = getThemeFocus(data);
   const offer = normalizeSentence(data.offer);
   const multiLead = getSelectedProducts(data).length > 1 ? buildMultiModeLead(data) : '';
+  const category = data.copyPlan?.category || detectProductCategory(focus);
+  const categoryLine = getPreheaderBenefit(data.language, category, focus);
   const base = isGiftOccasion(data)
     ? (data.language === 'sk' ? `${theme} je za rohom. Vyber tip, ktorý poteší a zároveň dáva zmysel.` : `${theme} je za rohem. Vyber tip, který potěší a zároveň dává smysl.`)
     : shouldLeadWithTheme(data)
       ? (data.language === 'sk' ? `${theme} je dobrá príležitosť ukázať krátky, konkrétny a užitočný výber.` : `${theme} je dobrá příležitost ukázat krátký, konkrétní a užitečný výběr.`)
-      : (offer || multiLead || (data.language === 'sk' ? `${focus} stručne, jasne a s dôvodom, prečo ho riešiť práve teraz.` : `${focus} stručně, jasně a s důvodem, proč ho řešit právě teď.`));
+      : (offer || multiLead || categoryLine || (data.language === 'sk' ? `${focus} stručne, jasne a s dôvodom, prečo ho riešiť práve teraz.` : `${focus} stručně, jasně a s důvodem, proč ho řešit právě teď.`));
   return truncate(cleanCopy(base), subset.avgSubjectLength ? Math.max(58, subset.avgSubjectLength + 25) : 88);
 }
 
@@ -1541,6 +1543,7 @@ function composeMultiProductParagraphs(data, cta) {
 function buildBenefitParagraph(data) {
   const categoryLine = buildCategoryBenefitLine(data);
   const promise = buildSalesPromise(data);
+  const benefitBullets = buildBenefitBullets(data);
 
   if (data.copyPlan?.proofType === 'selection-rationale') {
     return data.language === 'sk'
@@ -1552,17 +1555,12 @@ function buildBenefitParagraph(data) {
       ? `Nejde o darček do počtu. Je to tip, ktorý poteší, pôsobí premyslene a zároveň má praktické využitie.`
       : `Nejde o dárek do počtu. Je to tip, který potěší, působí promyšleně a zároveň má praktické využití.`;
   }
-  if (isGiftOccasion(data)) {
-    return data.language === 'sk'
-      ? `${categoryLine} ${promise}`
-      : `${categoryLine} ${promise}`;
-  }
   if (shouldLeadWithTheme(data) && !hasConcreteProductFocus(data)) {
     return data.language === 'sk'
       ? `Hlavnou výhodou takého výberu je, že čitateľ rýchlo pochopí, čo sa hodí práve teraz a prečo sa oplatí kliknúť ďalej.`
       : `Hlavní výhodou takového výběru je, že čtenář rychle pochopí, co se hodí právě teď a proč se vyplatí kliknout dál.`;
   }
-  return `${categoryLine} ${promise}`;
+  return `${categoryLine} ${benefitBullets} ${promise}`;
 }
 
 function buildTrustParagraph(data) {
@@ -1576,9 +1574,15 @@ function buildTrustParagraph(data) {
       ? `Pri darčekovom tipe najlepšie funguje osobný tón, jasný prínos a jednoduchá cesta na detail produktu.`
       : `U dárkového tipu nejlépe funguje osobní tón, jasný přínos a jednoduchá cesta na detail produktu.`;
   }
+  const category = data.copyPlan?.category || detectProductCategory(getPrimaryFocus(data));
+  if (category === 'relief') {
+    return data.language === 'sk'
+      ? `Oceni ho každý, kto hľadá rýchlo použiteľný tip na chvíle, keď telo potrebuje vypnúť a cítiť sa príjemnejšie.`
+      : `Ocení ho každý, kdo hledá rychle použitelný tip pro chvíle, kdy tělo potřebuje vypnout a cítit se příjemněji.`;
+  }
   return data.language === 'sk'
-    ? `Stačí pár konkrétnych viet a čitateľ hneď vie, pre koho sa hodí a prečo stojí za pozornosť.`
-    : `Stačí pár konkrétních vět a čtenář hned ví, pro koho se hodí a proč stojí za pozornost.`;
+    ? `Keď je prínos pomenovaný hneď, čitateľ sa rýchlejšie rozhodne, či je to presne tip pre neho.`
+    : `Když je přínos pojmenovaný hned, čtenář se rychleji rozhodne, jestli je to přesně tip pro něj.`;
 }
 
 function buildLongDetailParagraph(data) {
@@ -1690,6 +1694,27 @@ function buildCategoryBenefitLine(data) {
   return lines[data.language]?.[category] || lines[data.language]?.general || '';
 }
 
+function buildBenefitBullets(data) {
+  const category = data.copyPlan?.category || detectProductCategory(getPrimaryFocus(data));
+  const lines = {
+    cz: {
+      skincare: 'Díky tomu z běžné péče dělá příjemný rituál, ke kterému se člověk rád vrací.',
+      supplement: 'Díky tomu je snadné mít ho po ruce a vracet se k němu jako k praktickému pomocníkovi.',
+      bundle: 'Díky tomu zákazník dostává dobře vymyšlené řešení bez zbytečného přemýšlení.',
+      relief: 'Po náročném dni může být přesně tím tipem, po kterém sáhneš, když chceš tělu dopřát úlevu, uvolnění a větší pohodlí.',
+      general: 'Díky tomu rychle ukáže, proč se vyplatí podívat se na detail a mít ho doma.'
+    },
+    sk: {
+      skincare: 'Vďaka tomu robí z bežnej starostlivosti príjemný rituál, ku ktorému sa človek rád vracia.',
+      supplement: 'Vďaka tomu je ľahké mať ho poruke a vracať sa k nemu ako k praktickému pomocníkovi.',
+      bundle: 'Vďaka tomu zákazník dostáva dobre vymyslené riešenie bez zbytočného premýšľania.',
+      relief: 'Po náročnom dni môže byť presne tým tipom, po ktorom siahneš, keď chceš telu dopriať úľavu, uvoľnenie a väčšie pohodlie.',
+      general: 'Vďaka tomu rýchlo ukáže, prečo sa oplatí pozrieť sa na detail a mať ho doma.'
+    }
+  };
+  return lines[data.language]?.[category] || lines[data.language]?.general || '';
+}
+
 function buildSalesPromise(data) {
   const category = data.copyPlan?.category || detectProductCategory(getPrimaryFocus(data));
   const mode = data.copyPlan?.styleMode || 'hard-sell';
@@ -1719,6 +1744,26 @@ function buildSalesPromise(data) {
         : 'Hned ukáže přínos a dá jednoduchý důvod přejít na detail produktu.'
   };
   return base[category] || base.general;
+}
+
+function getPreheaderBenefit(language, category, focus) {
+  const lines = {
+    cz: {
+      relief: `${focus} pro chvíle, kdy chceš dopřát tělu úlevu, komfort a rychlé použití.`,
+      skincare: `${focus} pro příjemnější rutinu a lepší pocit z každodenní péče.`,
+      supplement: `${focus} s jasným přínosem, který snadno zařadíš do běžného dne.`,
+      bundle: `${focus} jako promyšlená kombinace, která šetří čas i rozhodování.`,
+      general: `${focus} s jasným přínosem a důvodem podívat se na detail hned.`
+    },
+    sk: {
+      relief: `${focus} pre chvíle, keď chceš dopriať telu úľavu, komfort a rýchle použitie.`,
+      skincare: `${focus} pre príjemnejšiu rutinu a lepší pocit z každodennej starostlivosti.`,
+      supplement: `${focus} s jasným prínosom, ktorý ľahko zaradíš do bežného dňa.`,
+      bundle: `${focus} ako premyslená kombinácia, ktorá šetrí čas aj rozhodovanie.`,
+      general: `${focus} s jasným prínosom a dôvodom pozrieť sa na detail hneď.`
+    }
+  };
+  return lines[language]?.[category] || lines[language]?.general || '';
 }
 
 function detectProductCategory(value = '') {
@@ -1751,6 +1796,20 @@ function buildCopyLibrary(data, plan) {
 }
 
 function buildSubjectLibrary(language, ctx) {
+  const priorityCategory = {
+    cz: {
+      relief: [`${ctx.focus}: úleva pro namáhané tělo`, `${ctx.focus}: když chceš dopřát tělu větší komfort`],
+      skincare: [`${ctx.focus}: příjemný krok pro lepší pocit z pleti`],
+      supplement: [`${ctx.focus}: podpora, kterou snadno zařadíš do dne`],
+      bundle: [`${ctx.focus}: kombinace, která šetří rozhodování`]
+    },
+    sk: {
+      relief: [`${ctx.focus}: úľava pre namáhané telo`, `${ctx.focus}: keď chceš dopriať telu väčší komfort`],
+      skincare: [`${ctx.focus}: príjemný krok pre lepší pocit z pleti`],
+      supplement: [`${ctx.focus}: podpora, ktorú ľahko zaradíš do dňa`],
+      bundle: [`${ctx.focus}: kombinácia, ktorá šetrí rozhodovanie`]
+    }
+  };
   const common = language === 'sk'
     ? [
         `${ctx.focus}: prečo stojí za otvorenie`,
@@ -1776,7 +1835,7 @@ function buildSubjectLibrary(language, ctx) {
       ? [ctx.offer ? `${ctx.offer}: otvor detail hneď` : `${ctx.focus}: čas rozhodnúť sa teraz`]
       : [ctx.offer ? `${ctx.offer}: otevři detail hned` : `${ctx.focus}: čas rozhodnout se teď`]
   };
-  const byCategory = {
+  const categoryFollowups = {
     skincare: language === 'sk'
       ? [`${ctx.focus}: prečo ho zaradiť do rutiny`, `${ctx.focus}: efekt, ktorý chceš vidieť čo najskôr`]
       : [`${ctx.focus}: proč ho zařadit do rutiny`, `${ctx.focus}: efekt, který chceš vidět co nejdřív`],
@@ -1786,13 +1845,16 @@ function buildSubjectLibrary(language, ctx) {
     bundle: language === 'sk'
       ? [`${ctx.focus}: výber, ktorý šetrí rozhodovanie`, `${ctx.focus}: kombinácia, ktorá dáva zmysel ako celok`]
       : [`${ctx.focus}: výběr, který šetří rozhodování`, `${ctx.focus}: kombinace, která dává smysl jako celek`],
+    relief: language === 'sk'
+      ? [`${ctx.focus}: keď telo potrebuje rýchlu úľavu`, `${ctx.focus}: komfort, ktorý príde vhod po náročnom dni`]
+      : [`${ctx.focus}: když tělo potřebuje rychlou úlevu`, `${ctx.focus}: komfort, který přijde vhod po náročném dni`],
     general: []
   };
-  return [...common, ...(byMode[ctx.mode] || []), ...(byCategory[ctx.category] || [])];
+  return [...((priorityCategory[language]?.[ctx.category]) || []), ...common, ...(byMode[ctx.mode] || []), ...(categoryFollowups[ctx.category] || [])];
 }
 
 function buildHeadlineLibrary(language, ctx) {
-  return language === 'sk'
+  const base = language === 'sk'
     ? [
         `${ctx.focus}: prečo stojí za pozornosť`,
         `${ctx.focus}: čo presvedčí k otvoreniu detailu`,
@@ -1803,9 +1865,62 @@ function buildHeadlineLibrary(language, ctx) {
         `${ctx.focus}: co přesvědčí k otevření detailu`,
         ctx.leadType === 'theme' ? `${ctx.theme}: co se vyplatí otevřít` : `${ctx.focus}: co může rozhodnout o kliknutí`
       ];
+  const categoryLines = {
+    cz: {
+      relief: [`${ctx.focus}: úleva pro namáhané tělo`, `${ctx.focus}: když chceš dopřát tělu větší komfort`],
+      skincare: [`${ctx.focus}: příjemný krok pro lepší pocit z pleti`],
+      supplement: [`${ctx.focus}: podpora, kterou snadno zařadíš do dne`],
+      bundle: [`${ctx.focus}: kombinace, která šetří rozhodování`]
+    },
+    sk: {
+      relief: [`${ctx.focus}: úľava pre namáhané telo`, `${ctx.focus}: keď chceš dopriať telu väčší komfort`],
+      skincare: [`${ctx.focus}: príjemný krok pre lepší pocit z pleti`],
+      supplement: [`${ctx.focus}: podpora, ktorú ľahko zaradíš do dňa`],
+      bundle: [`${ctx.focus}: kombinácia, ktorá šetrí rozhodovanie`]
+    }
+  };
+  return [...((categoryLines[language]?.[ctx.category]) || []), ...base];
 }
 
 function buildBenefitLibrary(language, ctx) {
+  const byCategory = {
+    cz: {
+      relief: [
+        `${ctx.focus} může být silný tip ve chvíli, kdy zákazník hledá rychlou úlevu a příjemnější pocit po náročném dni.`,
+        `${ctx.focus} dobře prodává moment, kdy si člověk chce dopřát komfort, uvolnění a jednoduchou péči navíc.`
+      ],
+      skincare: [
+        `${ctx.focus} prodává hlavně příjemné použití, lepší pocit z pleti a snadné zařazení do rutiny.`,
+        `${ctx.focus} funguje nejlépe tehdy, když text rychle ukáže, jak snadno se stane součástí každodenní péče.`
+      ],
+      supplement: [
+        `${ctx.focus} stojí na jednoduchém zařazení do dne a na jasném důvodu mít ho po ruce pravidelně.`,
+        `${ctx.focus} funguje dobře tehdy, když čtenář rychle pochopí jeho praktický užitek.`
+      ],
+      bundle: [
+        `${ctx.focus} šetří rozhodování a dává zákazníkovi pocit, že dostává promyšlený celek.`,
+        `${ctx.focus} funguje tehdy, když je rychle vidět, proč dává tahle kombinace smysl dohromady.`
+      ]
+    },
+    sk: {
+      relief: [
+        `${ctx.focus} môže byť silný tip vo chvíli, keď zákazník hľadá rýchlu úľavu a príjemnejší pocit po náročnom dni.`,
+        `${ctx.focus} dobre predáva moment, keď si človek chce dopriať komfort, uvoľnenie a jednoduchú starostlivosť navyše.`
+      ],
+      skincare: [
+        `${ctx.focus} predáva hlavne príjemné použitie, lepší pocit z pleti a ľahké zaradenie do rutiny.`,
+        `${ctx.focus} funguje najlepšie vtedy, keď text rýchlo ukáže, ako ľahko sa stane súčasťou každodennej starostlivosti.`
+      ],
+      supplement: [
+        `${ctx.focus} stojí na jednoduchom zaradení do dňa a na jasnom dôvode mať ho poruke pravidelne.`,
+        `${ctx.focus} funguje dobre vtedy, keď čitateľ rýchlo pochopí jeho praktický úžitok.`
+      ],
+      bundle: [
+        `${ctx.focus} šetrí rozhodovanie a dáva zákazníkovi pocit, že dostáva premyslený celok.`,
+        `${ctx.focus} funguje vtedy, keď je rýchlo vidieť, prečo dáva táto kombinácia zmysel spolu.`
+      ]
+    }
+  };
   const base = language === 'sk'
     ? [
         `${ctx.focus} má hneď ukázať konkrétny prínos a dôvod, prečo mu venovať pozornosť práve teraz.`,
@@ -1815,7 +1930,7 @@ function buildBenefitLibrary(language, ctx) {
         `${ctx.focus} má hned ukázat konkrétní přínos a důvod, proč mu věnovat pozornost právě teď.`,
         `${ctx.focus} funguje nejlépe tehdy, když text rychle vysvětlí, co přináší a komu může udělat radost nebo úlevu.`
       ];
-  return [...base];
+  return [...((byCategory[language]?.[ctx.category]) || []), ...base];
 }
 
 function buildTrustLibrary(language, ctx) {
@@ -1830,6 +1945,39 @@ function buildTrustLibrary(language, ctx) {
 }
 
 function buildCtaLibrary(language, ctx) {
+  const byCategory = {
+    cz: {
+      relief: {
+        offer: ['Chci využít nabídku', 'Chci dopřát úlevu'],
+        order: ['Chci dopřát úlevu', 'Chci vyzkoušet Slaviton']
+      },
+      skincare: {
+        order: ['Chci to zařadit do rutiny', 'Chci vyzkoušet produkt']
+      },
+      supplement: {
+        order: ['Chci to mít doma', 'Chci vyzkoušet produkt']
+      },
+      bundle: {
+        order: ['Chci tenhle výběr', 'Chci si vybrat celou kombinaci']
+      }
+    },
+    sk: {
+      relief: {
+        offer: ['Chcem využiť ponuku', 'Chcem dopriať úľavu'],
+        order: ['Chcem dopriať úľavu', 'Chcem vyskúšať produkt']
+      },
+      skincare: {
+        order: ['Chcem to zaradiť do rutiny', 'Chcem vyskúšať produkt']
+      },
+      supplement: {
+        order: ['Chcem to mať doma', 'Chcem vyskúšať produkt']
+      },
+      bundle: {
+        order: ['Chcem tento výber', 'Chcem si vybrať celú kombináciu']
+      }
+    }
+  };
+
   const map = {
     cz: {
       goal: ['Chci to teď využít'],
@@ -1846,7 +1994,7 @@ function buildCtaLibrary(language, ctx) {
       order: ['Chcem objednať', 'Otvoriť detail produktu']
     }
   };
-  return map[language]?.[ctx.ctaType] || map[language]?.order || [];
+  return byCategory[language]?.[ctx.category]?.[ctx.ctaType] || map[language]?.[ctx.ctaType] || map[language]?.order || [];
 }
 
 function getCategorySubjectPack(language, category, focus, theme) {
