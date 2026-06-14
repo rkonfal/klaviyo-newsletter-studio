@@ -22,10 +22,13 @@ const manualProductHint = document.querySelector('#manual-product-hint');
 const catalogSelectionHint = document.querySelector('#catalog-selection-hint');
 const focusBox = document.querySelector('.focus-box');
 const quickFillButtons = Array.from(document.querySelectorAll('.quick-fill'));
+const themeToggleBtn = document.querySelector('#theme-toggle');
+const THEME_STORAGE_KEY = 'newsletter-studio-theme';
 
 let lastDraft = null;
 let selectedCatalogProducts = [];
 
+applyStoredTheme();
 bootstrap().catch(handleBootstrapError);
 
 async function bootstrap() {
@@ -45,6 +48,8 @@ async function bootstrap() {
 }
 
 function bindEvents() {
+  themeToggleBtn?.addEventListener('click', toggleTheme);
+
   advancedToggleBtn?.addEventListener('click', () => {
     advancedPanelEl?.classList.toggle('hidden');
     advancedToggleBtn.textContent = advancedPanelEl?.classList.contains('hidden') ? 'Zobrazit advanced' : 'Skrýt advanced';
@@ -142,6 +147,44 @@ function flashButton(button, text) {
   const original = button.textContent;
   button.textContent = text;
   setTimeout(() => (button.textContent = original), 1500);
+}
+
+function applyStoredTheme() {
+  const storedTheme = safeStorageGet(THEME_STORAGE_KEY);
+  const theme = storedTheme === 'light' || storedTheme === 'dark' ? storedTheme : 'dark';
+  setTheme(theme);
+}
+
+function toggleTheme() {
+  const current = document.body.dataset.theme === 'light' ? 'light' : 'dark';
+  setTheme(current === 'light' ? 'dark' : 'light');
+}
+
+function setTheme(theme) {
+  document.body.dataset.theme = theme;
+  safeStorageSet(THEME_STORAGE_KEY, theme);
+  updateThemeToggleLabel(theme);
+}
+
+function updateThemeToggleLabel(theme) {
+  if (!themeToggleBtn) return;
+  themeToggleBtn.textContent = theme === 'light' ? '☀️ Light mode' : '🌙 Dark mode';
+}
+
+function safeStorageGet(key) {
+  try {
+    return window.localStorage.getItem(key);
+  } catch {
+    return null;
+  }
+}
+
+function safeStorageSet(key, value) {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch {
+    return;
+  }
 }
 
 function renderSidebar() {
