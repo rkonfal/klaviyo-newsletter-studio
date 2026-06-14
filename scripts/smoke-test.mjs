@@ -119,7 +119,7 @@ await runScenario(
     assert.match(output.textContent, /Aloe Vera šťáva, 500 ml/);
     assert.doesNotMatch(output.textContent, /Chci si vybrat/);
     assert.match(output.textContent, /Chci to mít doma|Chci vyzkoušet produkt|Chci objednat/);
-    assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva, 500 ml: (podpora|co oceníš|benefit)/);
+    assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva(:|, 500 ml: ) (podpora|co oceníš|benefit)/);
     assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);
   }
 );
@@ -202,6 +202,33 @@ await runScenario(
     assert.match(output.textContent, /úlevu|komfort/i);
     assert.match(output.textContent, /Chci dopřát úlevu/);
     assert.doesNotMatch(output.textContent, /stavíme na jasném přínosu|prodává ho hlavně|text držíme|tlačíme na jasný|komunikujeme tak, aby|v textu proto funguje|právě proto umí rychle prodat/i);
+  }
+);
+
+await runScenario(
+  'aloe-product-bank',
+  async (url) => {
+    if (String(url).includes('style-profile.json')) return fakeResponse(profile);
+    if (String(url).includes('product-catalog.json')) return fakeResponse(catalog);
+    throw new Error(`Unexpected fetch ${url}`);
+  },
+  async (window) => {
+    const { document } = window;
+    const theme = document.querySelector('input[name="theme"]');
+    const brief = document.querySelector('textarea[name="brief"]');
+    const manual = document.querySelector('#manual-product-input');
+    const form = document.querySelector('#generator-form');
+    const output = document.querySelector('#output');
+
+    theme.value = 'Aloe Vera';
+    manual.value = 'Aloe Vera šťáva, 500 ml';
+    brief.value = 'Napiš prodejní newsletter na Aloe Vera šťáva, 500 ml. Zdůrazni benefity.';
+    form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
+    await waitForTick();
+
+    assert.match(output.textContent, /PŘEDMĚT: Aloe Vera šťáva: podpora, kterou snadno zařadíš do dne/);
+    assert.match(output.textContent, /HEADLINE: Aloe Vera šťáva: podpora pro každý den/);
+    assert.match(output.textContent, /Chci to mít doma/);
   }
 );
 

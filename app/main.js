@@ -579,7 +579,9 @@ function buildHeadline(data, subset, angle, inspiration) {
   const focus = capitalize(getPrimaryFocus(data));
   const theme = capitalize(getThemeFocus(data));
   const multiHeadline = getSelectedProducts(data).length > 1 ? buildMultiHeadline(data) : null;
+  const productBank = getProductSpecificBank(data);
   if (multiHeadline) return cleanCopy(multiHeadline);
+  if (productBank?.headline) return cleanCopy(productBank.headline);
   const libraryHeadline = data.copyPlan?.copyLibrary?.headlines?.[0];
   if (libraryHeadline) return cleanCopy(libraryHeadline);
   if (isGiftOccasion(data) && data.copyPlan?.leadType !== 'theme') {
@@ -1511,7 +1513,11 @@ function composeSingleProductParagraphs(data, cta) {
   const focus = getPrimaryFocus(data);
   const theme = getThemeFocus(data);
   const category = data.copyPlan?.category || detectProductCategory(focus);
+  const productBank = getProductSpecificBank(data);
   const paragraphs = [];
+
+  if (productBank?.opening) paragraphs.push(productBank.opening);
+  else
 
   if (data.copyPlan?.leadType === 'theme') {
     paragraphs.push(data.language === 'sk'
@@ -1539,9 +1545,9 @@ function composeSingleProductParagraphs(data, cta) {
       : `${focus} patří mezi tipy, které v mailu fungují nejlépe tehdy, když hned řeknou, co přinášejí a pro koho se hodí.`);
   }
 
-  paragraphs.push(buildBenefitParagraph(data));
+  paragraphs.push(productBank?.benefit || buildBenefitParagraph(data));
 
-  if (data.length !== 'short') paragraphs.push(buildTrustParagraph(data));
+  if (data.length !== 'short') paragraphs.push(productBank?.trust || buildTrustParagraph(data));
   if (data.length === 'long') paragraphs.push(buildLongDetailParagraph(data));
 
   paragraphs.push(buildActionParagraph(data, cta));
@@ -1623,19 +1629,21 @@ function buildLongDetailParagraph(data) {
 
 function buildActionParagraph(data, cta) {
   const offer = cleanField(data.offer);
+  const productBank = getProductSpecificBank(data);
+  const finalCta = productBank?.cta || cta;
   if (offer && !isSoftOffer(offer)) {
     return data.language === 'sk'
-      ? `${offer}. Klikni na tlačidlo „${cta}“ a otvor detail, kým je ponuka aktuálna.`
-      : `${offer}. Klikni na tlačítko „${cta}“ a otevři detail, dokud je nabídka aktuální.`;
+      ? `${offer}. Klikni na tlačidlo „${finalCta}“ a otvor detail, kým je ponuka aktuálna.`
+      : `${offer}. Klikni na tlačítko „${finalCta}“ a otevři detail, dokud je nabídka aktuální.`;
   }
   if (isGiftOccasion(data)) {
     return data.language === 'sk'
-      ? `Ak hľadáš darček, ktorý poteší aj sa skutočne využije, klikni na tlačidlo „${cta}“ a pozri si detail produktu.`
-      : `Jestli hledáš dárek, který potěší a opravdu se využije, klikni na tlačítko „${cta}“ a podívej se na detail produktu.`;
+      ? `Ak hľadáš darček, ktorý poteší aj sa skutočne využije, klikni na tlačidlo „${finalCta}“ a pozri si detail produktu.`
+      : `Jestli hledáš dárek, který potěší a opravdu se využije, klikni na tlačítko „${finalCta}“ a podívej se na detail produktu.`;
   }
   return data.language === 'sk'
-    ? `Ak ťa ${getPrimaryFocus(data)} zaujal, klikni na tlačidlo „${cta}“ a pozri si detail produktu.`
-    : `Jestli tě ${getPrimaryFocus(data)} zaujal, klikni na tlačítko „${cta}“ a podívej se na detail produktu.`;
+    ? `Ak ťa ${getPrimaryFocus(data)} zaujal, klikni na tlačidlo „${finalCta}“ a pozri si detail produktu.`
+    : `Jestli tě ${getPrimaryFocus(data)} zaujal, klikni na tlačítko „${finalCta}“ a podívej se na detail produktu.`;
 }
 
 function cleanSentence(text = '') {
@@ -1798,6 +1806,68 @@ function detectProductCategory(value = '') {
   return 'general';
 }
 
+function getProductSpecificBank(data) {
+  const focus = getPrimaryFocus(data);
+  const lower = cleanField(focus).toLowerCase();
+  const banks = [
+    {
+      match: /(slaviton|fytogel slaviton)/i,
+      subject: data.language === 'sk'
+        ? ['Fytogel Slaviton: úľava pre namáhané telo', 'Fytogel Slaviton: keď chceš dopriať telu väčší komfort', 'Fytogel Slaviton: príjemná úľava po náročnom dni']
+        : ['Fytogel Slaviton: úleva pro namáhané tělo', 'Fytogel Slaviton: když chceš dopřát tělu větší komfort', 'Fytogel Slaviton: příjemná úleva po náročném dni'],
+      headline: data.language === 'sk'
+        ? 'Fytogel Slaviton: úľava pre namáhané telo'
+        : 'Fytogel Slaviton: úleva pro namáhané tělo',
+      opening: data.language === 'sk'
+        ? 'Fytogel Slaviton sa hodí vo chvíli, keď chceš dopriať unavenému telu úľavu a príjemný pocit po náročnom dni.'
+        : 'Fytogel Slaviton se hodí ve chvíli, kdy chceš dopřát unavenému tělu úlevu a příjemný pocit po náročném dni.',
+      benefit: data.language === 'sk'
+        ? 'Príjemne sa nanáša, pomáha spríjemniť chvíle po námahe a dáva telu pocit väčšieho komfortu presne vtedy, keď ho potrebuješ.'
+        : 'Příjemně se nanáší, pomáhá zpříjemnit chvíle po námaze a dává tělu pocit většího komfortu přesně tehdy, kdy ho potřebuješ.',
+      trust: data.language === 'sk'
+        ? 'Ocení ho každý, kto hľadá rýchlo použiteľný tip na chvíle, keď telo potrebuje vypnúť a cítiť sa príjemnejšie.'
+        : 'Ocení ho každý, kdo hledá rychle použitelný tip pro chvíle, kdy tělo potřebuje vypnout a cítit se příjemněji.',
+      cta: data.language === 'sk' ? 'Chcem dopriať úľavu' : 'Chci dopřát úlevu'
+    },
+    {
+      match: /(aloe vera.*šťáva|aloe vera.*stava|aloe vera šťáva|aloe vera stava)/i,
+      subject: data.language === 'sk'
+        ? ['Aloe Vera šťava: podpora, ktorú ľahko zaradíš do dňa', 'Aloe Vera šťava: čo oceníš pri pravidelnom používaní', 'Aloe Vera šťava: jednoduchý krok pre každodennú pohodu']
+        : ['Aloe Vera šťáva: podpora, kterou snadno zařadíš do dne', 'Aloe Vera šťáva: co oceníš při pravidelném používání', 'Aloe Vera šťáva: jednoduchý krok pro každodenní pohodu'],
+      headline: data.language === 'sk'
+        ? 'Aloe Vera šťava: podpora pre každý deň'
+        : 'Aloe Vera šťáva: podpora pro každý den',
+      opening: data.language === 'sk'
+        ? 'Aloe Vera šťava je tip pre tých, ktorí chcú mať po ruke niečo, čo ľahko zapadne do bežného dňa.'
+        : 'Aloe Vera šťáva je tip pro ty, kdo chtějí mít po ruce něco, co snadno zapadne do běžného dne.',
+      benefit: data.language === 'sk'
+        ? 'Práve jej jednoduché používanie a pocit, že pre seba každý deň robíš niečo navyše, z nej robia produkt, ku ktorému sa ľudia radi vracajú.'
+        : 'Právě její jednoduché používání a pocit, že pro sebe každý den děláš něco navíc, z ní dělají produkt, ke kterému se lidé rádi vracejí.',
+      trust: data.language === 'sk'
+        ? 'Dáva zmysel každému, kto hľadá praktický produkt s jasným miestom v každodennej rutine.'
+        : 'Dává smysl každému, kdo hledá praktický produkt s jasným místem v každodenní rutině.',
+      cta: data.language === 'sk' ? 'Chcem to mať doma' : 'Chci to mít doma'
+    },
+    {
+      match: /(cordyceps)/i,
+      subject: data.language === 'sk'
+        ? ['Cordyceps: podpora, ktorú oceníš pri náročných dňoch', 'Cordyceps: keď chceš telu dopriať viac energie', 'Cordyceps: jednoduchý tip pre každodennú vitalitu']
+        : ['Cordyceps: podpora, kterou oceníš při náročných dnech', 'Cordyceps: když chceš tělu dopřát víc energie', 'Cordyceps: jednoduchý tip pro každodenní vitalitu'],
+      headline: data.language === 'sk' ? 'Cordyceps: podpora pre náročné dni' : 'Cordyceps: podpora pro náročné dny',
+      cta: data.language === 'sk' ? 'Chcem viac energie' : 'Chci víc energie'
+    },
+    {
+      match: /(had[ií]|snake|serpent)/i,
+      subject: data.language === 'sk'
+        ? ['Hadia kozmetika: hladšia pleť a príjemnejší pocit z rutiny', 'Hadia kozmetika: čo oceníš pri každodennej starostlivosti', 'Hadia kozmetika: príjemný krok pre lepší pocit z pleti']
+        : ['Hadí kosmetika: hladší pleť a příjemnější pocit z rutiny', 'Hadí kosmetika: co oceníš při každodenní péči', 'Hadí kosmetika: příjemný krok pro lepší pocit z pleti'],
+      headline: data.language === 'sk' ? 'Hadia kozmetika: príjemný krok pre lepší pocit z pleti' : 'Hadí kosmetika: příjemný krok pro lepší pocit z pleti'
+    }
+  ];
+
+  return banks.find((item) => item.match.test(lower)) || null;
+}
+
 function buildCopyLibrary(data, plan) {
   const focus = capitalize(getPrimaryFocus(data));
   const theme = capitalize(getThemeFocus(data));
@@ -1806,6 +1876,7 @@ function buildCopyLibrary(data, plan) {
   const category = plan.category;
   const mode = plan.styleMode;
   const leadType = plan.leadType;
+  const productBank = getProductSpecificBank(data);
 
   const library = {
     subjects: buildSubjectLibrary(language, { focus, theme, offer, category, mode, leadType }),
@@ -1814,6 +1885,18 @@ function buildCopyLibrary(data, plan) {
     trust: buildTrustLibrary(language, { focus, theme, offer, category, mode, leadType, review: plan.proofType === 'review' }),
     ctas: buildCtaLibrary(language, { focus, theme, offer, category, mode, leadType, ctaType: plan.ctaType })
   };
+
+  if (productBank?.subject?.length) {
+    library.subjects = [...productBank.subject, ...library.subjects];
+  }
+
+  if (productBank?.headline) {
+    library.headlines = [productBank.headline, ...library.headlines];
+  }
+
+  if (productBank?.cta) {
+    library.ctas = [productBank.cta, ...library.ctas];
+  }
 
   return library;
 }
