@@ -64,10 +64,12 @@ await runScenario(
     form.dispatchEvent(new window.Event('submit', { bubbles: true, cancelable: true }));
     await waitForTick();
 
+    assert.match(output.textContent, /NEWSLETTER/);
+    assert.match(output.textContent, /SOCIALS/);
     assert.match(output.textContent, /PŘEDMĚT:/);
     assert.match(output.textContent, /PREHEADER:/);
     assert.match(output.textContent, /CTA:/);
-    assert.match(output.textContent, /PŘÍSPĚVEK NA SOCIALS:/);
+    assert.match(output.textContent, /SOCIALS/);
     assert.match(output.textContent, /Více zde: https?:\/\//);
     assert.match(output.textContent, /#kralovstvitianDe #tiande/);
     assert.doesNotMatch(output.textContent, /právě teď dává smysl/i);

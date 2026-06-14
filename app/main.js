@@ -427,6 +427,8 @@ function strengthenDraft({ tuned, subset, inspiration, subjectAngles, cta, prehe
 
 function formatDraft(draft, language) {
   return [
+    label('newsletter', language),
+    '',
     `${label('subject', language)}: ${draft.subject}`,
     '',
     `${label('subject_variants', language)}:`,
@@ -441,10 +443,11 @@ function formatDraft(draft, language) {
     '',
     `${label('cta', language)}: ${draft.cta}`,
     '',
-    `${label('social', language)}:`,
-    draft.social,
+    `${label('html', language)}: ${language === 'sk' ? 'pripravené na kopírovanie tlačidlom' : 'připraveno ke kopírování tlačítkem'}`,
     '',
-    `${label('html', language)}: ${language === 'sk' ? 'pripravené na kopírovanie tlačidlom' : 'připraveno ke kopírování tlačítkem'}`
+    label('socials', language),
+    '',
+    draft.social
   ].join('\n');
 }
 
@@ -953,6 +956,8 @@ function label(key, language) {
       mode: 'REŽIM',
       score: 'HIGH-SELLER SCORE',
       score_breakdown: 'ROZPAD SCORE',
+      newsletter: 'NEWSLETTER',
+      socials: 'SOCIALS',
       subject: 'PŘEDMĚT',
       subject_variants: 'VARIANTY PŘEDMĚTU',
       preheader: 'PREHEADER',
@@ -967,6 +972,8 @@ function label(key, language) {
       mode: 'REŽIM',
       score: 'HIGH-SELLER SCORE',
       score_breakdown: 'ROZPAD SCORE',
+      newsletter: 'NEWSLETTER',
+      socials: 'SOCIALS',
       subject: 'PREDMET',
       subject_variants: 'VARIANTY PREDMETU',
       preheader: 'PREHEADER',
