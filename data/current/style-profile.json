@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-16T09:41:19.773Z",
+  "generatedAt": "2026-06-17T09:18:49.709Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -32,8 +32,8 @@
       "PUSTIT SI ZÁZNAM",
       "CHCI SE PŘIDAT DO SKUPINY",
       "Připojte se na webinář nyní",
-      "Zjistit víc",
       "TO MUSÍM MÍT",
+      "Zjistit víc",
       "CHCI PŘÍRUČKY ZDARMA",
       "Sledovat na youtube",
       "CHCI NAKOUPIT VÝHODNĚ",
@@ -82,7 +82,7 @@
         "PUSTIT SI ZÁZNAM",
         "CHCI SE PŘIDAT DO SKUPINY",
         "Připojte se na webinář nyní",
-        "Zjistit víc"
+        "TO MUSÍM MÍT"
       ],
       "topOffers": [
         "percent-off",
@@ -94,16 +94,16 @@
       ],
       "examples": [
         {
-          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
-          "headline": "Dopřejte si den, který bude patřit jen vám!",
-          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
-          "cta": "Zjistit víc"
-        },
-        {
           "subject": "☀️ Letní favorité našich zákazníků! ☀️",
           "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
           "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
           "cta": "TO MUSÍM MÍT"
+        },
+        {
+          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
+          "headline": "Dopřejte si den, který bude patřit jen vám!",
+          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+          "cta": "Zjistit víc"
         },
         {
           "subject": "Dva dárky k nákupu zdarma pro vás.",
@@ -192,34 +192,6 @@
     }
   },
   "byCampaignType": {
-    "event": {
-      "count": 2,
-      "avgSubjectLength": 44,
-      "avgHeadlineLength": 45,
-      "topCtas": [
-        "Zjistit víc",
-        "CHCEM OBJEDNAŤ KOLAGÉN"
-      ],
-      "topOffers": [
-        "percent-off",
-        "gift",
-        "launch"
-      ],
-      "examples": [
-        {
-          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
-          "headline": "Dopřejte si den, který bude patřit jen vám!",
-          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Nezmeškajte darček na Deň matiek!",
-          "headline": "Deň matiek sa blíži. Darujte viac než kvetinu.",
-          "previewText": "Den matiek je už 10. 5. Čas na darček sa kráti!",
-          "cta": "CHCEM OBJEDNAŤ KOLAGÉN"
-        }
-      ]
-    },
     "promo": {
       "count": 30,
       "avgSubjectLength": 43,
@@ -275,6 +247,34 @@
           "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
           "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
           "cta": "Zjistit víc"
+        }
+      ]
+    },
+    "event": {
+      "count": 2,
+      "avgSubjectLength": 44,
+      "avgHeadlineLength": 45,
+      "topCtas": [
+        "Zjistit víc",
+        "CHCEM OBJEDNAŤ KOLAGÉN"
+      ],
+      "topOffers": [
+        "percent-off",
+        "gift",
+        "launch"
+      ],
+      "examples": [
+        {
+          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
+          "headline": "Dopřejte si den, který bude patřit jen vám!",
+          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+          "cta": "Zjistit víc"
+        },
+        {
+          "subject": "Nezmeškajte darček na Deň matiek!",
+          "headline": "Deň matiek sa blíži. Darujte viac než kvetinu.",
+          "previewText": "Den matiek je už 10. 5. Čas na darček sa kráti!",
+          "cta": "CHCEM OBJEDNAŤ KOLAGÉN"
         }
       ]
     },
@@ -456,14 +456,6 @@
   },
   "examples": [
     {
-      "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
-      "headline": "Dopřejte si den, který bude patřit jen vám!",
-      "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
-      "cta": "Zjistit víc",
-      "language": "cz",
-      "campaignType": "event"
-    },
-    {
       "subject": "☀️ Letní favorité našich zákazníků! ☀️",
       "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
       "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
@@ -478,6 +470,14 @@
       "cta": "TOTO MUSÍM MAŤ!",
       "language": "sk",
       "campaignType": "promo"
+    },
+    {
+      "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
+      "headline": "Dopřejte si den, který bude patřit jen vám!",
+      "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+      "cta": "Zjistit víc",
+      "language": "cz",
+      "campaignType": "event"
     },
     {
       "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",

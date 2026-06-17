@@ -1,39 +1,8 @@
 [
   {
-    "id": "01KV52MQ0KYH6QPDT84AKVEWE3",
-    "name": "Jindřichův Hradec - Zážitkový den - 1. email",
-    "status": "Scheduled",
-    "language": "cz",
-    "campaignType": "event",
-    "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
-    "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
-    "sentAt": "2026-06-16T11:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "R3Zrt2",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Dopřejte si den, který bude patřit jen vám!",
-      "body": [
-        "Dopřejte si den, který bude patřit jen vám!",
-        "📌 KDY: 16. 7. 2026 od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec, Hotel Concertino   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
-        "Zveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.",
-        "Objevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma."
-      ],
-      "cta": "Zjistit víc",
-      "ctas": [],
-      "text": "96\nDopřejte si den, který bude patřit jen vám!\n📌 KDY: 16. 7. 2026 od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec, Hotel Concertino   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nZveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.\nObjevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma.\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.:  Zájem o Zážitkový den je velký a místa se rychle plní. Pokud si chcete dopřát péči v hodnotě 3 100 Kč zdarma, doporučujeme rezervovat si svůj termín co nejdříve.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
     "id": "01KV7P608CA9REA3VCGKKDV0EE",
     "name": "CZ CZ- Letní favorité našich zákazníků",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "promo",
     "subject": "☀️ Letní favorité našich zákazníků! ☀️",
@@ -68,7 +37,7 @@
   {
     "id": "01KV56ERFVAFVQCKPQ8TMAMA42",
     "name": "CZ - Letní favorité našich zákazníků",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "sk",
     "campaignType": "promo",
     "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
@@ -95,6 +64,37 @@
     },
     "offers": [
       "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KV52MQ0KYH6QPDT84AKVEWE3",
+    "name": "Jindřichův Hradec - Zážitkový den - 1. email",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "event",
+    "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
+    "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+    "sentAt": "2026-06-16T11:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "R3Zrt2",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Dopřejte si den, který bude patřit jen vám!",
+      "body": [
+        "Dopřejte si den, který bude patřit jen vám!",
+        "📌 KDY: 16. 7. 2026 od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec, Hotel Concertino   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
+        "Zveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.",
+        "Objevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma."
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nDopřejte si den, který bude patřit jen vám!\n📌 KDY: 16. 7. 2026 od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec, Hotel Concertino   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nZveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.\nObjevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma.\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.:  Zájem o Zážitkový den je velký a místa se rychle plní. Pokud si chcete dopřát péči v hodnotě 3 100 Kč zdarma, doporučujeme rezervovat si svůj termín co nejdříve.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
       "launch"
     ]
   },
