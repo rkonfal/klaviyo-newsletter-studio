@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-17T09:18:49.709Z",
+  "generatedAt": "2026-06-18T09:02:06.660Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 111,
-    "sk": 39
+    "cz": 112,
+    "sk": 38
   },
   "campaignTypeBreakdown": {
     "education": 52,
@@ -30,10 +30,10 @@
       "KÚPIŤ",
       "CHCI BÝT U TOHO",
       "PUSTIT SI ZÁZNAM",
-      "CHCI SE PŘIDAT DO SKUPINY",
       "Připojte se na webinář nyní",
-      "TO MUSÍM MÍT",
+      "CHCI SE PŘIDAT DO SKUPINY",
       "Zjistit víc",
+      "TO MUSÍM MÍT",
       "CHCI PŘÍRUČKY ZDARMA",
       "Sledovat na youtube",
       "CHCI NAKOUPIT VÝHODNĚ",
@@ -44,8 +44,8 @@
     "percent-off",
     "launch",
     "education",
-    "gift",
     "promo",
+    "gift",
     "urgency"
   ],
   "structure": {
@@ -73,16 +73,16 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 111,
+      "count": 112,
       "avgSubjectLength": 44,
       "avgHeadlineLength": 52,
       "topCtas": [
         "KOUPIT",
         "CHCI BÝT U TOHO",
         "PUSTIT SI ZÁZNAM",
-        "CHCI SE PŘIDAT DO SKUPINY",
         "Připojte se na webinář nyní",
-        "TO MUSÍM MÍT"
+        "CHCI SE PŘIDAT DO SKUPINY",
+        "Zjistit víc"
       ],
       "topOffers": [
         "percent-off",
@@ -94,46 +94,46 @@
       ],
       "examples": [
         {
-          "subject": "☀️ Letní favorité našich zákazníků! ☀️",
-          "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
-          "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
-          "cta": "TO MUSÍM MÍT"
-        },
-        {
-          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
-          "headline": "Dopřejte si den, který bude patřit jen vám!",
-          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Dva dárky k nákupu zdarma pro vás.",
-          "headline": "Den otců je tady. Dárky máme pro tatínky, ale i pro vás.",
-          "previewText": "Oslavte Den otců s námi a získejte krásné dárky navíc ke své objednávce!",
-          "cta": "CHCI 2 DÁRKY K NÁKUPU"
-        },
-        {
-          "subject": "Už zítra: Nezapomněli jste si rezervovat svůj termín?",
-          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-          "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
-          "cta": "Zjistit víc"
-        },
-        {
           "subject": "Letní výprodej je tady! Až -20 %",
           "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
           "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
-          "cta": "Zjistit víc"
+          "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
+        },
+        {
+          "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+          "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+          "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+          "cta": "SOUTĚŽIT NA INSTAGRAMU"
+        },
+        {
+          "subject": "Súťaž o MERCEDES medzi soľami začína!",
+          "headline": "Budete jednou z 3 žien, ktoré získajú Mercedes medzi soľami?",
+          "previewText": "Zapojte sa do súťaže a vyhrajte luxusnú starostlivosť z Mŕtveho mora. Hráme o 3 výhry!",
+          "cta": "SÚŤAŽIŤ NA INSTAGRAME"
         },
         {
           "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
           "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
           "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
           "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT"
+        },
+        {
+          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
+          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
+          "cta": "CHCI BÝT U TOHO"
+        },
+        {
+          "subject": "Opravdu chcete přijít o 20 % slevu?",
+          "headline": "Letní výprodej končí dnes o půlnoci!",
+          "previewText": "Dnes o půlnoci končí Letní výprodej!",
+          "cta": "Zjistit víc"
         }
       ]
     },
     "sk": {
-      "count": 39,
-      "avgSubjectLength": 41,
+      "count": 38,
+      "avgSubjectLength": 40,
       "avgHeadlineLength": 48,
       "topCtas": [
         "KÚPIŤ",
@@ -147,22 +147,28 @@
         "percent-off",
         "launch",
         "gift",
-        "urgency",
         "promo",
+        "urgency",
         "education"
       ],
       "examples": [
         {
-          "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
-          "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
-          "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
-          "cta": "TOTO MUSÍM MAŤ!"
+          "subject": "Letný výpredaj je tu! Až -20 %",
+          "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
+          "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
+          "cta": "NAKÚPIŤ SO ZĽAVOU AŽ 20 %"
         },
         {
           "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
           "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
           "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
           "cta": "TOTO SI URČITE NENECHÁM UJSŤ!"
+        },
+        {
+          "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
+          "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
+          "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
+          "cta": "TOTO MUSÍM MAŤ!"
         },
         {
           "subject": "Dva darčeky k nákupu zdarma pre vás.",
@@ -181,107 +187,15 @@
           "headline": "18. 6. Stane sa niečo, čo sme ešte nikdy neurobili.",
           "previewText": "18. 6. odhalíme niečo, čo nikto nečaká!",
           "cta": "TO SI URČITE NENECHÁM UJSŤ"
-        },
-        {
-          "subject": "STOP! Leto je za rohom a celulitída sama nezmizne!",
-          "headline": "Leto sa blíži. Ukážte stehná, na ktoré budete hrdá.",
-          "previewText": "Plavky nepočkajú. Objavte 3 pomocníkov proti celulitíde.",
-          "cta": "Chcem sa cítiť sebavedomo"
         }
       ]
     }
   },
   "byCampaignType": {
-    "promo": {
-      "count": 30,
-      "avgSubjectLength": 43,
-      "avgHeadlineLength": 50,
-      "topCtas": [
-        "KOUPIT",
-        "KÚPIŤ",
-        "Zjistit víc",
-        "NAKÚPIŤ MASKY SO ZĽAVOU",
-        "Chci VIP slevu",
-        "ZATOČIŤ A VYHRAŤ"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "promo",
-        "gift",
-        "urgency"
-      ],
-      "examples": [
-        {
-          "subject": "☀️ Letní favorité našich zákazníků! ☀️",
-          "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
-          "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
-          "cta": "TO MUSÍM MÍT"
-        },
-        {
-          "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
-          "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
-          "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
-          "cta": "TOTO MUSÍM MAŤ!"
-        },
-        {
-          "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
-          "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
-          "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
-          "cta": "TOTO SI URČITE NENECHÁM UJSŤ!"
-        },
-        {
-          "subject": "Dva darčeky k nákupu zdarma pre vás.",
-          "headline": "Deň otcov je tu. Darčeky máme pre oteckov, ale aj pre vás.",
-          "previewText": "Oslávte Deň otcov s nami a získajte krásne darčeky navyše k svojej objednávke!",
-          "cta": "CHCEM 2 DARČEKY K NÁKUPU"
-        },
-        {
-          "subject": "Dva dárky k nákupu zdarma pro vás.",
-          "headline": "Den otců je tady. Dárky máme pro tatínky, ale i pro vás.",
-          "previewText": "Oslavte Den otců s námi a získejte krásné dárky navíc ke své objednávce!",
-          "cta": "CHCI 2 DÁRKY K NÁKUPU"
-        },
-        {
-          "subject": "Už zítra: Nezapomněli jste si rezervovat svůj termín?",
-          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-          "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
-          "cta": "Zjistit víc"
-        }
-      ]
-    },
-    "event": {
-      "count": 2,
-      "avgSubjectLength": 44,
-      "avgHeadlineLength": 45,
-      "topCtas": [
-        "Zjistit víc",
-        "CHCEM OBJEDNAŤ KOLAGÉN"
-      ],
-      "topOffers": [
-        "percent-off",
-        "gift",
-        "launch"
-      ],
-      "examples": [
-        {
-          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
-          "headline": "Dopřejte si den, který bude patřit jen vám!",
-          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Nezmeškajte darček na Deň matiek!",
-          "headline": "Deň matiek sa blíži. Darujte viac než kvetinu.",
-          "previewText": "Den matiek je už 10. 5. Čas na darček sa kráti!",
-          "cta": "CHCEM OBJEDNAŤ KOLAGÉN"
-        }
-      ]
-    },
     "urgency": {
       "count": 51,
-      "avgSubjectLength": 40,
-      "avgHeadlineLength": 47,
+      "avgSubjectLength": 39,
+      "avgHeadlineLength": 48,
       "topCtas": [
         "KOUPIT",
         "PUSTIT SI ZÁZNAM",
@@ -294,15 +208,39 @@
         "percent-off",
         "launch",
         "urgency",
-        "education",
         "promo",
+        "education",
         "gift"
       ],
       "examples": [
         {
+          "subject": "Letný výpredaj je tu! Až -20 %",
+          "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
+          "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
+          "cta": "NAKÚPIŤ SO ZĽAVOU AŽ 20 %"
+        },
+        {
           "subject": "Letní výprodej je tady! Až -20 %",
           "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
           "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
+          "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
+        },
+        {
+          "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+          "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+          "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+          "cta": "SOUTĚŽIT NA INSTAGRAMU"
+        },
+        {
+          "subject": "Súťaž o MERCEDES medzi soľami začína!",
+          "headline": "Budete jednou z 3 žien, ktoré získajú Mercedes medzi soľami?",
+          "previewText": "Zapojte sa do súťaže a vyhrajte luxusnú starostlivosť z Mŕtveho mora. Hráme o 3 výhry!",
+          "cta": "SÚŤAŽIŤ NA INSTAGRAME"
+        },
+        {
+          "subject": "Opravdu chcete přijít o 20 % slevu?",
+          "headline": "Letní výprodej končí dnes o půlnoci!",
+          "previewText": "Dnes o půlnoci končí Letní výprodej!",
           "cta": "Zjistit víc"
         },
         {
@@ -310,30 +248,6 @@
           "headline": "Nejoblíbenější produkty žen jsou téměř vyprodané!",
           "previewText": "Nakupte nyní a ušetřete až 20 %.",
           "cta": "CHCI NAKOUPIT SE SLEVOU"
-        },
-        {
-          "subject": "Posledná šanca nakúpiť za pôvodné ceny.",
-          "headline": "Posledná šanca nakúpiť za súčasné ceny!",
-          "previewText": "O pár dní budú ceny turmalínových produktov vyššie!",
-          "cta": "CHCEM NAKÚPIŤ ZA PÔVODNÉ CENY"
-        },
-        {
-          "subject": "Poslední šance nakoupit za původní ceny.",
-          "headline": "Poslední šance nakoupit za současné ceny!",
-          "previewText": "Za pár dní budou ceny turmalínových produktů vyšší!",
-          "cta": "CHCI NAKOUPIT ZA PŮVODNÍ CENY"
-        },
-        {
-          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Zbývá už jen pár kusů! Stihnete si vybrat?",
-          "headline": "Nečekejte! Nejoblíbenější dárky jsou téměř vyprodané.",
-          "previewText": "Exkluzivní dárky mizí rekordním tempem.",
-          "cta": "VYBRAT SI DÁREK"
         }
       ]
     },
@@ -364,6 +278,12 @@
           "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT"
         },
         {
+          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
+          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
+          "cta": "CHCI BÝT U TOHO"
+        },
+        {
           "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
           "headline": "Dárky, které potěší každou paní učitelku!",
           "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
@@ -386,12 +306,92 @@
           "headline": "Leto sa blíži. Ukážte stehná, na ktoré budete hrdá.",
           "previewText": "Plavky nepočkajú. Objavte 3 pomocníkov proti celulitíde.",
           "cta": "Chcem sa cítiť sebavedomo"
+        }
+      ]
+    },
+    "promo": {
+      "count": 30,
+      "avgSubjectLength": 43,
+      "avgHeadlineLength": 50,
+      "topCtas": [
+        "KOUPIT",
+        "KÚPIŤ",
+        "Zjistit víc",
+        "NAKÚPIŤ MASKY SO ZĽAVOU",
+        "Chci VIP slevu",
+        "ZATOČIŤ A VYHRAŤ"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "promo",
+        "gift",
+        "urgency"
+      ],
+      "examples": [
+        {
+          "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
+          "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
+          "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
+          "cta": "TOTO SI URČITE NENECHÁM UJSŤ!"
         },
         {
-          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
-          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
-          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
-          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
+          "subject": "LETNÍ TOUR 2026 začíná! Potkáme se letos i ve vašem městě?",
+          "headline": "Letní Tour 2026 startuje a vy můžete rozhodnout o její trase!",
+          "previewText": "Vyplňte krátký dotazník a rozhodněte, kam vyrazíme s diagnostikami zdarma v hodnotě přes 3 000 Kč.",
+          "cta": "CHCI HLASOVAT PRO SVÉ MĚSTO"
+        },
+        {
+          "subject": "☀️ Letní favorité našich zákazníků! ☀️",
+          "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
+          "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
+          "cta": "TO MUSÍM MÍT"
+        },
+        {
+          "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
+          "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
+          "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
+          "cta": "TOTO MUSÍM MAŤ!"
+        },
+        {
+          "subject": "Dva darčeky k nákupu zdarma pre vás.",
+          "headline": "Deň otcov je tu. Darčeky máme pre oteckov, ale aj pre vás.",
+          "previewText": "Oslávte Deň otcov s nami a získajte krásne darčeky navyše k svojej objednávke!",
+          "cta": "CHCEM 2 DARČEKY K NÁKUPU"
+        },
+        {
+          "subject": "Dva dárky k nákupu zdarma pro vás.",
+          "headline": "Den otců je tady. Dárky máme pro tatínky, ale i pro vás.",
+          "previewText": "Oslavte Den otců s námi a získejte krásné dárky navíc ke své objednávce!",
+          "cta": "CHCI 2 DÁRKY K NÁKUPU"
+        }
+      ]
+    },
+    "event": {
+      "count": 2,
+      "avgSubjectLength": 44,
+      "avgHeadlineLength": 45,
+      "topCtas": [
+        "Zjistit víc",
+        "CHCEM OBJEDNAŤ KOLAGÉN"
+      ],
+      "topOffers": [
+        "percent-off",
+        "gift",
+        "launch"
+      ],
+      "examples": [
+        {
+          "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
+          "headline": "Dopřejte si den, který bude patřit jen vám!",
+          "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+          "cta": "Zjistit víc"
+        },
+        {
+          "subject": "Nezmeškajte darček na Deň matiek!",
+          "headline": "Deň matiek sa blíži. Darujte viac než kvetinu.",
+          "previewText": "Den matiek je už 10. 5. Čas na darček sa kráti!",
+          "cta": "CHCEM OBJEDNAŤ KOLAGÉN"
         }
       ]
     },
@@ -456,6 +456,78 @@
   },
   "examples": [
     {
+      "subject": "Letný výpredaj je tu! Až -20 %",
+      "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
+      "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
+      "cta": "NAKÚPIŤ SO ZĽAVOU AŽ 20 %",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Letní výprodej je tady! Až -20 %",
+      "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
+      "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
+      "cta": "NAKOUPIT SE SLEVOU AŽ 20 %",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+      "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+      "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+      "cta": "SOUTĚŽIT NA INSTAGRAMU",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Súťaž o MERCEDES medzi soľami začína!",
+      "headline": "Budete jednou z 3 žien, ktoré získajú Mercedes medzi soľami?",
+      "previewText": "Zapojte sa do súťaže a vyhrajte luxusnú starostlivosť z Mŕtveho mora. Hráme o 3 výhry!",
+      "cta": "SÚŤAŽIŤ NA INSTAGRAME",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
+      "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
+      "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
+      "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
+      "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
+      "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
+      "cta": "TOTO SI URČITE NENECHÁM UJSŤ!",
+      "language": "sk",
+      "campaignType": "promo"
+    },
+    {
+      "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
+      "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+      "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
+      "cta": "CHCI BÝT U TOHO",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Opravdu chcete přijít o 20 % slevu?",
+      "headline": "Letní výprodej končí dnes o půlnoci!",
+      "previewText": "Dnes o půlnoci končí Letní výprodej!",
+      "cta": "Zjistit víc",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "LETNÍ TOUR 2026 začíná! Potkáme se letos i ve vašem městě?",
+      "headline": "Letní Tour 2026 startuje a vy můžete rozhodnout o její trase!",
+      "previewText": "Vyplňte krátký dotazník a rozhodněte, kam vyrazíme s diagnostikami zdarma v hodnotě přes 3 000 Kč.",
+      "cta": "CHCI HLASOVAT PRO SVÉ MĚSTO",
+      "language": "cz",
+      "campaignType": "promo"
+    },
+    {
       "subject": "☀️ Letní favorité našich zákazníků! ☀️",
       "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
       "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
@@ -478,14 +550,6 @@
       "cta": "Zjistit víc",
       "language": "cz",
       "campaignType": "event"
-    },
-    {
-      "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
-      "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
-      "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
-      "cta": "TOTO SI URČITE NENECHÁM UJSŤ!",
-      "language": "sk",
-      "campaignType": "promo"
     },
     {
       "subject": "Dva darčeky k nákupu zdarma pre vás.",
@@ -512,30 +576,6 @@
       "campaignType": "promo"
     },
     {
-      "subject": "Letní výprodej je tady! Až -20 %",
-      "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
-      "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
-      "cta": "Zjistit víc",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
-      "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
-      "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
-      "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT",
-      "language": "cz",
-      "campaignType": "education"
-    },
-    {
-      "subject": "LETNÍ TOUR 2026 začíná! Potkáme se letos i ve vašem městě?",
-      "headline": "Letní Tour 2026 startuje a vy můžete rozhodnout o její trase!",
-      "previewText": "Vyplňte krátký dotazník a rozhodněte, kam vyrazíme s diagnostikami zdarma v hodnotě přes 3 000 Kč.",
-      "cta": "CHCI HLASOVAT PRO SVÉ MĚSTO",
-      "language": "cz",
-      "campaignType": "promo"
-    },
-    {
       "subject": "Téměř vyprodáno! Ženské produkty se slevou až 20 %!",
       "headline": "Nejoblíbenější produkty žen jsou téměř vyprodané!",
       "previewText": "Nakupte nyní a ušetřete až 20 %.",
@@ -556,46 +596,6 @@
       "headline": "Dárky, které potěší každou paní učitelku!",
       "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
       "cta": "VYBRAT DÁREK",
-      "language": "cz",
-      "campaignType": "education"
-    },
-    {
-      "subject": "Nemali by sme vám to hovoriť. Ale...",
-      "headline": "18. 6. Stane sa niečo, čo sme ešte nikdy neurobili.",
-      "previewText": "18. 6. odhalíme niečo, čo nikto nečaká!",
-      "cta": "TO SI URČITE NENECHÁM UJSŤ",
-      "language": "sk",
-      "campaignType": "promo"
-    },
-    {
-      "subject": "Neměli bychom vám to říkat. Ale...",
-      "headline": "18. 6. se stane něco, co jsme ještě nikdy neudělali.",
-      "previewText": "18. 6. odhalíme něco, co nikdo nečeká!",
-      "cta": "TO SI ROZHODNĚ NENECHÁM UJÍT",
-      "language": "cz",
-      "campaignType": "education"
-    },
-    {
-      "subject": "Poslední šance nakoupit za původní ceny.",
-      "headline": "Poslední šance nakoupit za současné ceny!",
-      "previewText": "Za pár dní budou ceny turmalínových produktů vyšší!",
-      "cta": "CHCI NAKOUPIT ZA PŮVODNÍ CENY",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-      "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-      "cta": "Zjistit víc",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
-      "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
-      "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
-      "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ",
       "language": "cz",
       "campaignType": "education"
     }
