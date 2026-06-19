@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-18T09:02:06.660Z",
+  "generatedAt": "2026-06-19T09:20:18.266Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 112,
-    "sk": 38
+    "cz": 113,
+    "sk": 37
   },
   "campaignTypeBreakdown": {
-    "education": 52,
-    "urgency": 51,
-    "promo": 30,
-    "launch": 15,
+    "education": 53,
+    "urgency": 53,
+    "promo": 29,
+    "launch": 13,
     "event": 2
   },
   "tone": {
@@ -29,15 +29,15 @@
       "KOUPIT",
       "KÚPIŤ",
       "CHCI BÝT U TOHO",
-      "PUSTIT SI ZÁZNAM",
       "Připojte se na webinář nyní",
+      "PUSTIT SI ZÁZNAM",
       "CHCI SE PŘIDAT DO SKUPINY",
       "Zjistit víc",
       "TO MUSÍM MÍT",
       "CHCI PŘÍRUČKY ZDARMA",
       "Sledovat na youtube",
-      "CHCI NAKOUPIT VÝHODNĚ",
-      "ZAČNU HUBNOUT HNED"
+      "ZAČNU HUBNOUT HNED",
+      "PUSTIT VIDEO"
     ]
   },
   "commonOffers": [
@@ -73,14 +73,14 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 112,
+      "count": 113,
       "avgSubjectLength": 44,
-      "avgHeadlineLength": 52,
+      "avgHeadlineLength": 53,
       "topCtas": [
         "KOUPIT",
         "CHCI BÝT U TOHO",
-        "PUSTIT SI ZÁZNAM",
         "Připojte se na webinář nyní",
+        "PUSTIT SI ZÁZNAM",
         "CHCI SE PŘIDAT DO SKUPINY",
         "Zjistit víc"
       ],
@@ -94,16 +94,28 @@
       ],
       "examples": [
         {
+          "subject": "⏰ Webinář s překvapením - ZAČÍNÁME ZA 30 MINUT!",
+          "headline": "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
+          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+          "cta": "Připojte se na webinář nyní"
+        },
+        {
           "subject": "Letní výprodej je tady! Až -20 %",
           "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
           "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
           "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
         },
         {
-          "subject": "Soutěž o MERCEDES mezi solemi začíná!",
-          "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
-          "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
-          "cta": "SOUTĚŽIT NA INSTAGRAMU"
+          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+          "headline": "Nakupte teď. Zaplaťte později.",
+          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
+        },
+        {
+          "subject": "Sprchové gely a tělové soli se slevou až 20 %",
+          "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+          "previewText": "Poslední kusy skladem!",
+          "cta": "ZÍSKAT POSLEDNÍ KUSY"
         },
         {
           "subject": "Súťaž o MERCEDES medzi soľami začína!",
@@ -112,36 +124,24 @@
           "cta": "SÚŤAŽIŤ NA INSTAGRAME"
         },
         {
-          "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
-          "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
-          "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
-          "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT"
-        },
-        {
-          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
-          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
-          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
-          "cta": "CHCI BÝT U TOHO"
-        },
-        {
-          "subject": "Opravdu chcete přijít o 20 % slevu?",
-          "headline": "Letní výprodej končí dnes o půlnoci!",
-          "previewText": "Dnes o půlnoci končí Letní výprodej!",
-          "cta": "Zjistit víc"
+          "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+          "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+          "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+          "cta": "SOUTĚŽIT NA INSTAGRAMU"
         }
       ]
     },
     "sk": {
-      "count": 38,
+      "count": 37,
       "avgSubjectLength": 40,
       "avgHeadlineLength": 48,
       "topCtas": [
         "KÚPIŤ",
-        "CHCEM NAKÚPIŤ VÝHODNE",
         "NAKÚPIŤ VÝHODNE",
         "ZATOČIŤ A VYHRAŤ",
         "VYBRAŤ SI DARČEK",
-        "CHCEM BYŤ PRI TOM!"
+        "CHCEM BYŤ PRI TOM!",
+        "NAKÚPIŤ MASKY SO ZĽAVOU"
       ],
       "topOffers": [
         "percent-off",
@@ -192,10 +192,68 @@
     }
   },
   "byCampaignType": {
+    "education": {
+      "count": 53,
+      "avgSubjectLength": 48,
+      "avgHeadlineLength": 59,
+      "topCtas": [
+        "KOUPIT",
+        "Připojte se na webinář nyní",
+        "CHCI BÝT U TOHO",
+        "CHCI SE PŘIDAT DO SKUPINY",
+        "PUSTIT SI ZÁZNAM",
+        "KÚPIŤ"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "education",
+        "gift",
+        "promo"
+      ],
+      "examples": [
+        {
+          "subject": "⏰ Webinář s překvapením - ZAČÍNÁME ZA 30 MINUT!",
+          "headline": "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
+          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+          "cta": "Připojte se na webinář nyní"
+        },
+        {
+          "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
+          "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
+          "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
+          "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT"
+        },
+        {
+          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
+          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
+          "cta": "CHCI BÝT U TOHO"
+        },
+        {
+          "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
+          "headline": "Dárky, které potěší každou paní učitelku!",
+          "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
+          "cta": "VYBRAT DÁREK"
+        },
+        {
+          "subject": "Neměli bychom vám to říkat. Ale...",
+          "headline": "18. 6. se stane něco, co jsme ještě nikdy neudělali.",
+          "previewText": "18. 6. odhalíme něco, co nikdo nečeká!",
+          "cta": "TO SI ROZHODNĚ NENECHÁM UJÍT"
+        },
+        {
+          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
+          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
+          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
+          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
+        }
+      ]
+    },
     "urgency": {
-      "count": 51,
+      "count": 53,
       "avgSubjectLength": 39,
-      "avgHeadlineLength": 48,
+      "avgHeadlineLength": 47,
       "topCtas": [
         "KOUPIT",
         "PUSTIT SI ZÁZNAM",
@@ -226,10 +284,16 @@
           "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
         },
         {
-          "subject": "Soutěž o MERCEDES mezi solemi začíná!",
-          "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
-          "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
-          "cta": "SOUTĚŽIT NA INSTAGRAMU"
+          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+          "headline": "Nakupte teď. Zaplaťte později.",
+          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
+        },
+        {
+          "subject": "Sprchové gely a tělové soli se slevou až 20 %",
+          "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+          "previewText": "Poslední kusy skladem!",
+          "cta": "ZÍSKAT POSLEDNÍ KUSY"
         },
         {
           "subject": "Súťaž o MERCEDES medzi soľami začína!",
@@ -238,79 +302,15 @@
           "cta": "SÚŤAŽIŤ NA INSTAGRAME"
         },
         {
-          "subject": "Opravdu chcete přijít o 20 % slevu?",
-          "headline": "Letní výprodej končí dnes o půlnoci!",
-          "previewText": "Dnes o půlnoci končí Letní výprodej!",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Téměř vyprodáno! Ženské produkty se slevou až 20 %!",
-          "headline": "Nejoblíbenější produkty žen jsou téměř vyprodané!",
-          "previewText": "Nakupte nyní a ušetřete až 20 %.",
-          "cta": "CHCI NAKOUPIT SE SLEVOU"
-        }
-      ]
-    },
-    "education": {
-      "count": 52,
-      "avgSubjectLength": 48,
-      "avgHeadlineLength": 59,
-      "topCtas": [
-        "KOUPIT",
-        "Připojte se na webinář nyní",
-        "CHCI BÝT U TOHO",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "PUSTIT SI ZÁZNAM",
-        "KÚPIŤ"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "education",
-        "gift",
-        "promo"
-      ],
-      "examples": [
-        {
-          "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
-          "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
-          "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
-          "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT"
-        },
-        {
-          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
-          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
-          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
-          "cta": "CHCI BÝT U TOHO"
-        },
-        {
-          "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
-          "headline": "Dárky, které potěší každou paní učitelku!",
-          "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
-          "cta": "VYBRAT DÁREK"
-        },
-        {
-          "subject": "Neměli bychom vám to říkat. Ale...",
-          "headline": "18. 6. se stane něco, co jsme ještě nikdy neudělali.",
-          "previewText": "18. 6. odhalíme něco, co nikdo nečeká!",
-          "cta": "TO SI ROZHODNĚ NENECHÁM UJÍT"
-        },
-        {
-          "subject": "STOP! Léto je za rohem a celulitida nezmizí sama!",
-          "headline": "Léto se blíží. Ukažte stehna, na která budete hrdá.",
-          "previewText": "Plavky nepočkají. Objevte 3 pomocníky proti celulitidě.",
-          "cta": "CHCI SE CÍTIT SEBEVĚDOMĚ"
-        },
-        {
-          "subject": "STOP! Leto je za rohom a celulitída sama nezmizne!",
-          "headline": "Leto sa blíži. Ukážte stehná, na ktoré budete hrdá.",
-          "previewText": "Plavky nepočkajú. Objavte 3 pomocníkov proti celulitíde.",
-          "cta": "Chcem sa cítiť sebavedomo"
+          "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+          "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+          "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+          "cta": "SOUTĚŽIT NA INSTAGRAMU"
         }
       ]
     },
     "promo": {
-      "count": 30,
+      "count": 29,
       "avgSubjectLength": 43,
       "avgHeadlineLength": 50,
       "topCtas": [
@@ -396,9 +396,9 @@
       ]
     },
     "launch": {
-      "count": 15,
-      "avgSubjectLength": 41,
-      "avgHeadlineLength": 43,
+      "count": 13,
+      "avgSubjectLength": 40,
+      "avgHeadlineLength": 41,
       "topCtas": [
         "KOUPIT",
         "TO MUSÍM VYZKOŠET",
@@ -456,6 +456,14 @@
   },
   "examples": [
     {
+      "subject": "⏰ Webinář s překvapením - ZAČÍNÁME ZA 30 MINUT!",
+      "headline": "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
+      "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+      "cta": "Připojte se na webinář nyní",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
       "subject": "Letný výpredaj je tu! Až -20 %",
       "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
       "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
@@ -472,10 +480,18 @@
       "campaignType": "urgency"
     },
     {
-      "subject": "Soutěž o MERCEDES mezi solemi začíná!",
-      "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
-      "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
-      "cta": "SOUTĚŽIT NA INSTAGRAMU",
+      "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+      "headline": "Nakupte teď. Zaplaťte později.",
+      "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+      "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Sprchové gely a tělové soli se slevou až 20 %",
+      "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+      "previewText": "Poslední kusy skladem!",
+      "cta": "ZÍSKAT POSLEDNÍ KUSY",
       "language": "cz",
       "campaignType": "urgency"
     },
@@ -484,6 +500,14 @@
       "headline": "Budete jednou z 3 žien, ktoré získajú Mercedes medzi soľami?",
       "previewText": "Zapojte sa do súťaže a vyhrajte luxusnú starostlivosť z Mŕtveho mora. Hráme o 3 výhry!",
       "cta": "SÚŤAŽIŤ NA INSTAGRAME",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+      "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+      "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+      "cta": "SOUTĚŽIT NA INSTAGRAMU",
       "language": "cz",
       "campaignType": "urgency"
     },
@@ -574,30 +598,6 @@
       "cta": "Zjistit víc",
       "language": "cz",
       "campaignType": "promo"
-    },
-    {
-      "subject": "Téměř vyprodáno! Ženské produkty se slevou až 20 %!",
-      "headline": "Nejoblíbenější produkty žen jsou téměř vyprodané!",
-      "previewText": "Nakupte nyní a ušetřete až 20 %.",
-      "cta": "CHCI NAKOUPIT SE SLEVOU",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Posledná šanca nakúpiť za pôvodné ceny.",
-      "headline": "Posledná šanca nakúpiť za súčasné ceny!",
-      "previewText": "O pár dní budú ceny turmalínových produktov vyššie!",
-      "cta": "CHCEM NAKÚPIŤ ZA PÔVODNÉ CENY",
-      "language": "sk",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Přiznáváme: tyto dárky mizí před koncem školy nejrychleji!",
-      "headline": "Dárky, které potěší každou paní učitelku!",
-      "previewText": "Hledáte dárek pro učitelku? Tohle jsou letošní favorité!",
-      "cta": "VYBRAT DÁREK",
-      "language": "cz",
-      "campaignType": "education"
     }
   ]
 }

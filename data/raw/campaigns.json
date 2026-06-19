@@ -1,8 +1,40 @@
 [
   {
+    "id": "01KVDB0RHPRHHVQ5ZN0QH2W4SA",
+    "name": "CZ Webinář s překvapením - 18.6. odkaz",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "⏰ Webinář s překvapením - ZAČÍNÁME ZA 30 MINUT!",
+    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+    "sentAt": "2026-06-18T17:30:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "TW3vNG",
+      "name": "2025-02-16 06:16 s podpisem",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
+      "body": [
+        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
+        "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
+        "Důležité: Připojte se včas, kapacita webináře je omezená.",
+        "🟢 Váš osobní odkaz pro připojení na webinář:"
+      ],
+      "cta": "Připojte se na webinář nyní",
+      "ctas": [
+        "Připojte se na webinář nyní"
+      ],
+      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.\nWebinář s překvapením\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nElena Jesíčková  produktová lektorka\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KVCWXZN1KPA8Z5DJQMK9P6SZ",
     "name": "SK - Deexpert 06/25 začíná",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "sk",
     "campaignType": "urgency",
     "subject": "Letný výpredaj je tu! Až -20 %",
@@ -36,12 +68,12 @@
   {
     "id": "01KV59MV3GZ11FW17XSGRWF39Q",
     "name": "CZ - Deexpert 06/25 začíná",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "urgency",
     "subject": "Letní výprodej je tady! Až -20 %",
     "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
-    "sentAt": "2026-06-18T17:00:00+00:00",
+    "sentAt": "2026-06-18T16:45:00+00:00",
     "segments": [],
     "template": {
       "id": "WUx7kG",
@@ -68,35 +100,72 @@
     ]
   },
   {
-    "id": "01KVAN1J6EMG36PPCF8PDA257H",
-    "name": "CZ - Letní souěž",
-    "status": "Scheduled",
+    "id": "01KVD8KF334C2SDKNB6EMP6M1E",
+    "name": "CZ - Deexpert 06/25 - tělové soli + twisto",
+    "status": "Draft",
     "language": "cz",
     "campaignType": "urgency",
-    "subject": "Soutěž o MERCEDES mezi solemi začíná!",
-    "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
-    "sentAt": "2026-06-18T09:45:00+00:00",
+    "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+    "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+    "sentAt": null,
     "segments": [],
     "template": {
-      "id": "R5zaQb",
+      "id": "YuaR2Z",
       "name": "2025-02-28 04:04 popup existující klient",
       "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+      "headline": "Nakupte teď. Zaplaťte později.",
       "body": [
-        "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
-        "Tři šťastné výherkyně získají luxusní péči, které naše zákaznice neřeknou jinak než Mercedes mezi solemi. Stačí si vybrat svou oblíbenou vůni, napsat komentář a během pár vteřin můžete být ve hře o domácí wellness, které si zamilujete od prvního použití.",
-        "P.S. Neodkládejte to na později. Stačí pár vteřin a můžete být mezi 3 výherkyněmi. Klikněte na naše sociální sítě a zapojte se ještě dnes. ​ P.P.S. Veškeré podmínky soutěže, pravidla zapojení i termín losování najdete přímo u soutěžního příspěvku na našem Facebooku a Instagramu. Těšíme se na vaši odpověď!",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
+        "Proč čekat na výplatu, když si můžete udělat radost už dnes? Oblíbené letní produkty jsme navíc zlevnili až o 20 % , ale tato nabídka končí už zítra o půlnoci. Využijte poslední šanci pořídit své oblíbené produkty za výhodnější ceny a n akupujte pohodlně hned. Zaplatit můžete i později.",
+        "S Twisto je to snadné. Při dokončení objednávky si jednoduše vyberete platbu Twisto a zvolíte si variantu, která vám vyhovuje:",
+        "Zaplatíte až za 30 dní – objednávku odešleme ihned a vy zaplatíte později.",
+        "Rozložíte si platbu do 3 splátek – bez navýšení a bez zbytečného papírování."
       ],
-      "cta": "SOUTĚŽIT NA INSTAGRAMU",
+      "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI",
       "ctas": [
-        "SOUTĚŽIT NA INSTAGRAMU",
-        "SOUTĚZIT NA FACEBOOKU"
+        "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI",
+        "www.twisto.cz",
+        "KOUPIT"
       ],
-      "text": "96\nBudete jednou ze 3 žen, které získají Mercedes mezi solemi?\n🎁 3x Výherci  ⏰ Soutěž končí 24. 6.\nTři šťastné výherkyně získají luxusní péči, které naše zákaznice neřeknou jinak než Mercedes mezi solemi. Stačí si vybrat svou oblíbenou vůni, napsat komentář a během pár vteřin můžete být ve hře o domácí wellness, které si zamilujete od prvního použití.\nSOUTĚŽIT NA INSTAGRAMU\nSOUTĚZIT NA FACEBOOKU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Neodkládejte to na později. Stačí pár vteřin a můžete být mezi 3 výherkyněmi. Klikněte na naše sociální sítě a zapojte se ještě dnes. ​ P.P.S. Veškeré podmínky soutěže, pravidla zapojení i termín losování najdete přímo u soutěžního příspěvku na našem Facebooku a Instagramu. Těšíme se na vaši odpověď!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+      "text": "96\nNakupte teď. Zaplaťte později.\nProč čekat na výplatu, když si můžete udělat radost už dnes? Oblíbené letní produkty jsme navíc zlevnili až o 20 % , ale tato nabídka končí už zítra o půlnoci. Využijte poslední šanci pořídit své oblíbené produkty za výhodnější ceny a n akupujte pohodlně hned. Zaplatit můžete i později.\nNAKOUPIT TEĎ, ZAPLATIT POZDĚJI\n​Twisto zaplatí za vás!\nS Twisto je to snadné. Při dokončení objednávky si jednoduše vyberete platbu Twisto a zvolíte si variantu, která vám vyhovuje:\nZaplatíte až za 30 dní – objednávku odešleme ihned a vy zaplatíte později.\nRozložíte si platbu do 3 splátek – bez navýšení a bez zbytečného papírování.\nJak na to?\nVytvořte si zdarma účet na Twisto na  www.twisto.cz\nRegistrace je rychlá, pohodlná a ZDARMA.\nV košíku zvolte způsob platby Twisto.\nVyberte si, zda zaplatíte za 30 dní nebo ve 3 splátkách.\nA pak už se můžete těšit na svou objednávku.\nDeodorant, který nechá pokožku dýchat\n✅ Neutralizuje nepříjemný zápach\n✅ Neucpává póry a neblokuje přirozené pocení\n✅ Nezanechává bílé ani žluté stopy na oblečení ✅ Prebiotika podporují zdravý kožní mikrobiom podpaží 🔥 10 % sleva\n206 Kč 121 Kč (VIP Sleva)\nKOUPIT\nNikola, 32 let   \"Po letech používání klasických antiperspirantů jsem hledala šetrnější alternativu. Překvapilo mě, jak dobře funguje. Cítím se svěží celý den, pokožka není podrážděná a konečně nemám skvrny na oblečení. Navíc mám dobrý pocit z přírodního složení.\"\nPřírodní deodorant s prebiotiky pro aktivní muže\n✅ Bez alkoholu a parabenů – vhodný i pro citlivou pokožku\n✅ Neucpává póry a respektuje přirozené funkce těla\n✅ Nezanechává bílé ani žluté stopy na oblečení ✅ Neutralizuje nepříjemný zápach 🔥 10 % sleva\n206 Kč 121 Kč (VIP Sleva)\nKOUPIT\nMarek, 42 let  „Skvělý přírodní deodorant. Nelepí, nedráždí pokožku a opravdu funguje po celý den. Oceňuji složení bez alkoholu a parabenů. Navíc vydrží dlouho, takže poměr cena/výkon je výborný.“\nMelounová dávka svěžesti\n✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů\n✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení\n✅ Šetrné složení vhodné pro každodenní použití 🔥 20 % sleva\n931 Kč 484 Kč (VIP Sleva)\nKOUPIT\nMarie, 48 let   „Vlasy jsou hebké, pokožka krásně hydratovaná a deodorant mě mile překvapil svou účinností. Vůně melounu je svěží, čistá a nepůsobí přeslazeně. Po sprše mám pocit, jako bych právě vyšla z wellness.\"\nTělová sůl “Krystaly z Mrtvého moře”\n✅ Minerály z Mrtvého moře zanechávají pokožku pevnější, hladší a sametově hebkou\n✅ Podporuje lymfatický systém při pravidelném používání\n✅ Pomáhá zlepšit vzhled pokožky se sklony k celulitidě\n🔥 15 % sleva\n462 Kč 270 Kč (VIP Sleva)\nKOUPIT\nLaura, 49 let  \"Používám sůl pravidelně při masáži stehen a boků. Pokožka je výrazně hladší, pevnější a v kombinaci s pohybem a pitným režimem mám pocit, že se vzhled celulitidy viditelně zlepšil. Navíc je to úžasný relaxační rituál po náročném dni.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Letní slevy nebudou trvat věčně. Využijte je, dokud můžete.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
+      "promo",
       "urgency",
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KVD60G3BF5XNTBYEB17CXX58",
+    "name": "CZ - Deexpert 06/25 sprchové gely + tělové soli",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Sprchové gely a tělové soli se slevou až 20 %",
+    "previewText": "Poslední kusy skladem!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "R8Aiuw",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+      "body": [
+        "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+        "Dopřejte si vůni léta v každé kapce a každém doteku. Právě teď si můžete dopřát své oblíbené sprchové gely a tělové soli ​  se slevou až 20 % . Jen pozor, nejoblíbenější vůně mizí ze skladu rychleji, než jsme čekali, a některé produkty jsou už v posledních kusech.",
+        "✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů",
+        "✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení"
+      ],
+      "cta": "ZÍSKAT POSLEDNÍ KUSY",
+      "ctas": [
+        "ZÍSKAT POSLEDNÍ KUSY",
+        "KOUPIT"
+      ],
+      "text": "96\nNakupte dřív, než zmizí. Poslední kusy skladem!\n⏰ Pouze do 21. 6.  🔥 Poslední kusy\nDopřejte si vůni léta v každé kapce a každém doteku. Právě teď si můžete dopřát své oblíbené sprchové gely a tělové soli ​  se slevou až 20 % . Jen pozor, nejoblíbenější vůně mizí ze skladu rychleji, než jsme čekali, a některé produkty jsou už v posledních kusech.\nZÍSKAT POSLEDNÍ KUSY\nMelounová dávka svěžesti\n✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů\n✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení\n✅ Šetrné složení vhodné pro každodenní použití 🔥 20 % sleva\n931 Kč 484 Kč ( VIP Sleva)\nKOUPIT\nMarie, 48 let   „Vlasy jsou hebké, pokožka krásně hydratovaná a deodorant mě mile překvapil svou účinností. Vůně melounu je svěží, čistá a nepůsobí přeslazeně. Po sprše mám pocit, jako bych právě vyšla z wellness.\"\nDotek Mrtvého moře\n✅ Minerály z Mrtvého moře pomáhají obnovit hladkost a vitalitu pokožky\n✅ Olivový extrakt vyživuje a chrání před vysušováním\n✅ Pokožka je jemnější, pružnější a viditelně zářivější již po několika použitích\n🔥 15 % sleva\n1 292 Kč 714 Kč ( VIP Sleva)\nKOUPIT\nIrena, 46 let  \"Po každém použití mám pocit, jako bych si dopřála domácí wellness. Peeling krásně vyhladí a zpevní pokožku, sprchový gel ji nevysušuje a tělové mléko zanechá pokožku hebkou až do večera. Miluji jemnou olivovou vůni.\"\nTělová sůl “Krystaly z Mrtvého moře”\n✅ Minerály z Mrtvého moře zanechávají pokožku pevnější, hladší a sametově hebkou\n✅ Podporuje lymfatický systém při pravidelném používání\n✅ Pomáhá zlepšit vzhled pokožky se sklony k celulitidě\n🔥 15 % sleva\n462 Kč 270 Kč ( VIP Sleva)\nKOUPIT\nLaura, 49 let  \"Používám sůl pravidelně při masáži stehen a boků. Pokožka je výrazně hladší, pevnější a v kombinaci s pohybem a pitným režimem mám pocit, že se vzhled celulitidy viditelně zlepšil. Navíc je to úžasný relaxační rituál po náročném dni.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Ty nejoblíbenější vůně mizí ze skladu nejrychleji. Klikněte a dopřejte si letní péči se slevou až 20 %, dokud je z čeho vybírat.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
       "percent-off",
       "launch"
     ]
@@ -104,7 +173,7 @@
   {
     "id": "01KVCWA4C966R27TP85TZ8QRZ6",
     "name": "SK - Letní souěž",
-    "status": "Scheduled",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "urgency",
     "subject": "Súťaž o MERCEDES medzi soľami začína!",
@@ -128,6 +197,40 @@
         "SÚŤAŽIŤ NA FACEBOOKU"
       ],
       "text": "96\nBudete jednou z 3 žien, ktoré získajú Mercedes medzi soľami?\n🎁 3x výherkyne ⏰ Súťaž končí 24. 6.\nTri šťastné výherkyne získajú luxusnú starostlivosť , ktorú naše zákazníčky nevolajú inak ako Mercedes medzi soľami. Stačí si vybrať svoju obľúbenú vôňu, napísať komentár a už o pár sekúnd môžete byť v hre o domáce wellness, ktoré si zamilujete už po prvom použití.\nSÚŤAŽIŤ NA INSTAGRAME\nSÚŤAŽIŤ NA FACEBOOKU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Neodkladajte to na neskôr. Stačí pár sekúnd a môžete byť medzi 3 výherkyňami. Kliknite na naše sociálne siete a zapojte sa ešte dnes. ​ P.P.S. Všetky podmienky súťaže, pravidlá zapojenia aj termín žrebovania nájdete priamo pri súťažnom príspevku na našom Facebooku a Instagrame. Tešíme sa na vašu odpoveď!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVAN1J6EMG36PPCF8PDA257H",
+    "name": "CZ - Letní souěž",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Soutěž o MERCEDES mezi solemi začíná!",
+    "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
+    "sentAt": "2026-06-18T09:45:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "R5zaQb",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+      "body": [
+        "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
+        "Tři šťastné výherkyně získají luxusní péči, které naše zákaznice neřeknou jinak než Mercedes mezi solemi. Stačí si vybrat svou oblíbenou vůni, napsat komentář a během pár vteřin můžete být ve hře o domácí wellness, které si zamilujete od prvního použití.",
+        "P.S. Neodkládejte to na později. Stačí pár vteřin a můžete být mezi 3 výherkyněmi. Klikněte na naše sociální sítě a zapojte se ještě dnes. ​ P.P.S. Veškeré podmínky soutěže, pravidla zapojení i termín losování najdete přímo u soutěžního příspěvku na našem Facebooku a Instagramu. Těšíme se na vaši odpověď!",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
+      ],
+      "cta": "SOUTĚŽIT NA INSTAGRAMU",
+      "ctas": [
+        "SOUTĚŽIT NA INSTAGRAMU",
+        "SOUTĚZIT NA FACEBOOKU"
+      ],
+      "text": "96\nBudete jednou ze 3 žen, které získají Mercedes mezi solemi?\n🎁 3x Výherci  ⏰ Soutěž končí 24. 6.\nTři šťastné výherkyně získají luxusní péči, které naše zákaznice neřeknou jinak než Mercedes mezi solemi. Stačí si vybrat svou oblíbenou vůni, napsat komentář a během pár vteřin můžete být ve hře o domácí wellness, které si zamilujete od prvního použití.\nSOUTĚŽIT NA INSTAGRAMU\nSOUTĚZIT NA FACEBOOKU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Neodkládejte to na později. Stačí pár vteřin a můžete být mezi 3 výherkyněmi. Klikněte na naše sociální sítě a zapojte se ještě dnes. ​ P.P.S. Veškeré podmínky soutěže, pravidla zapojení i termín losování najdete přímo u soutěžního příspěvku na našem Facebooku a Instagramu. Těšíme se na vaši odpověď!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "urgency",
@@ -5000,108 +5103,6 @@
     "offers": [
       "percent-off",
       "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KPZN60FTBQGR4W83ES211YM7",
-    "name": "CZ kolo štěstí - květen",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "Zatočte kolem štěstí a vyhrajte dárek!",
-    "previewText": "Každý, kdo zatočí, vyhraje!",
-    "sentAt": "2026-05-01T15:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UrQHmK",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Zatočte kolem štěstí a odneste si dárek!",
-      "body": [
-        "Zatočte kolem štěstí a odneste si dárek!",
-        "Ano, čtete správně. Kolo štěstí se opět točí . Stačí přijít, zatočit a odnést si svůj dárek.   Přijďte si pro svou výhru ještě dnes.",
-        "Kupon vložte do nákupního košíku do pole „Mám slevový kód“",
-        "P.S. Nezapomeňte, že každý den můžete zatočit znovu a získat další dárek. Přijďte si zkusit své štěstí ještě dnes."
-      ],
-      "cta": "ZATOČIT A VYHRÁT",
-      "ctas": [
-        "ZATOČIT A VYHRÁT"
-      ],
-      "text": "96\nZatočte kolem štěstí a odneste si dárek!\n🎡 100% šance na výhru\n🎁 Exkluzivní dárky\nAno, čtete správně. Kolo štěstí se opět točí . Stačí přijít, zatočit a odnést si svůj dárek.   Přijďte si pro svou výhru ještě dnes.\nZATOČIT A VYHRÁT\nKlikněte a roztočte kolo štěstí\nVytočený dárek získáte ve formě kuponu\nKupon vložte do nákupního košíku do pole „Mám slevový kód“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Nezapomeňte, že každý den můžete zatočit znovu a získat další dárek. Přijďte si zkusit své štěstí ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQH2PW8YV2QS3DE6BDQMJKAJ",
-    "name": "SK Doprava zdarma květen",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "launch",
-    "subject": "🚚 POZOR: Týždeň dopravy zadarmo práve začal! 🚚",
-    "previewText": "Veľký štart: nové balíčky s darčekmi, nové zľavy a doprava zadarmo iba teraz!",
-    "sentAt": "2026-05-01T09:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "WsKeDH",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zadarmo",
-      "body": [
-        "JE TO TU: Nové balíčky, nové zľavy a doprava zadarmo",
-        "Nový mesiac sme odštartovali vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, limitované zľavy a pri nákupe nad 36 € získate dopravu ZDARMA. Urobte si radosť ešte dnes.",
-        "P. S. Objednajte ešte dnes, kým sú nové zľavy a balíčky dostupné. Stačí nákup nad 36 € a poštovné neplatíte.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
-      ],
-      "cta": "nové balíčky s darčekmi,",
-      "ctas": [
-        "nové balíčky s darčekmi,",
-        "limitované zľavy",
-        "CHCEM NAKÚPIŤ VÝHODNE"
-      ],
-      "text": "96\nJE TO TU: Nové balíčky, nové zľavy a doprava zadarmo\n📅 Od 1. do 7. mája\n🎁 Pri nákupe nad 36 €\nNový mesiac sme odštartovali vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, limitované zľavy a pri nákupe nad 36 € získate dopravu ZDARMA. Urobte si radosť ešte dnes.\nCHCEM NAKÚPIŤ VÝHODNE\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Objednajte ešte dnes, kým sú nové zľavy a balíčky dostupné. Stačí nákup nad 36 € a poštovné neplatíte.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KPXAE3VHPY23W2Q1B2FP60GN",
-    "name": "CZ Doprava zdarma duben",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "launch",
-    "subject": "🚚 POZOR: Týden dopravy zdarma právě začal! 🚚",
-    "previewText": "Velký start: nové balíčky s dárky, nové slevy a doprava zdarma pouze teď!",
-    "sentAt": "2026-05-01T09:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "Ys8REE",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-      "body": [
-        "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-        "Nový měsíc jsme odstartovali ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky, limitované slevy a při nákupu nad 900 Kč získáte dopravu ZDARMA. Udělejte si radost ještě dnes.",
-        "P. S. Objednejte ještě dnes, dokud jsou nové slevy a balíčky dostupné. Stačí nákup nad 900 Kč a poštovné neplatíte.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
-      ],
-      "cta": "pro vás exkluzivní nové balíčky s dárky,",
-      "ctas": [
-        "pro vás exkluzivní nové balíčky s dárky,",
-        "limitované slevy",
-        "CHCI NAKOUPIT VÝHODNĚ"
-      ],
-      "text": "96\nJE TO TADY: Nové balíčky, nové slevy a doprava zdarma\n📅Od 1. do 7. května\n🎁Při nákupu nad 900 Kč\nNový měsíc jsme odstartovali ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky, limitované slevy a při nákupu nad 900 Kč získáte dopravu ZDARMA. Udělejte si radost ještě dnes.\nCHCI NAKOUPIT VÝHODNĚ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Objednejte ještě dnes, dokud jsou nové slevy a balíčky dostupné. Stačí nákup nad 900 Kč a poštovné neplatíte.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
       "launch"
     ]
   }
