@@ -1,5 +1,108 @@
 [
   {
+    "id": "01KVD60G3BF5XNTBYEB17CXX58",
+    "name": "CZ - Deexpert 06/25 sprchové gely + tělové soli",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Sprchové gely a tělové soli se slevou až 20 %",
+    "previewText": "Poslední kusy skladem!",
+    "sentAt": "2026-06-19T17:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "R8Aiuw",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+      "body": [
+        "Nakupte dřív, než zmizí. Poslední kusy skladem!",
+        "Dopřejte si vůni léta v každé kapce a každém doteku. Právě teď si můžete dopřát své oblíbené sprchové gely a tělové soli ​  se slevou až 20 % . Jen pozor, nejoblíbenější vůně mizí ze skladu rychleji, než jsme čekali, a některé produkty jsou už v posledních kusech.",
+        "✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů",
+        "✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení"
+      ],
+      "cta": "ZÍSKAT POSLEDNÍ KUSY",
+      "ctas": [
+        "ZÍSKAT POSLEDNÍ KUSY",
+        "KOUPIT"
+      ],
+      "text": "96\nNakupte dřív, než zmizí. Poslední kusy skladem!\n⏰ Pouze do 21. 6.  🔥 Poslední kusy\nDopřejte si vůni léta v každé kapce a každém doteku. Právě teď si můžete dopřát své oblíbené sprchové gely a tělové soli ​  se slevou až 20 % . Jen pozor, nejoblíbenější vůně mizí ze skladu rychleji, než jsme čekali, a některé produkty jsou už v posledních kusech.\nZÍSKAT POSLEDNÍ KUSY\nMelounová dávka svěžesti\n✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů\n✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení\n✅ Šetrné složení vhodné pro každodenní použití 🔥 20 % sleva\n931 Kč 484 Kč ( VIP Sleva)\nKOUPIT\nMarie, 48 let   „Vlasy jsou hebké, pokožka krásně hydratovaná a deodorant mě mile překvapil svou účinností. Vůně melounu je svěží, čistá a nepůsobí přeslazeně. Po sprše mám pocit, jako bych právě vyšla z wellness.\"\nDotek Mrtvého moře\n✅ Minerály z Mrtvého moře pomáhají obnovit hladkost a vitalitu pokožky\n✅ Olivový extrakt vyživuje a chrání před vysušováním\n✅ Pokožka je jemnější, pružnější a viditelně zářivější již po několika použitích\n🔥 15 % sleva\n1 292 Kč 714 Kč ( VIP Sleva)\nKOUPIT\nIrena, 46 let  \"Po každém použití mám pocit, jako bych si dopřála domácí wellness. Peeling krásně vyhladí a zpevní pokožku, sprchový gel ji nevysušuje a tělové mléko zanechá pokožku hebkou až do večera. Miluji jemnou olivovou vůni.\"\nTělová sůl “Krystaly z Mrtvého moře”\n✅ Minerály z Mrtvého moře zanechávají pokožku pevnější, hladší a sametově hebkou\n✅ Podporuje lymfatický systém při pravidelném používání\n✅ Pomáhá zlepšit vzhled pokožky se sklony k celulitidě\n🔥 15 % sleva\n462 Kč 270 Kč ( VIP Sleva)\nKOUPIT\nLaura, 49 let  \"Používám sůl pravidelně při masáži stehen a boků. Pokožka je výrazně hladší, pevnější a v kombinaci s pohybem a pitným režimem mám pocit, že se vzhled celulitidy viditelně zlepšil. Navíc je to úžasný relaxační rituál po náročném dni.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Ty nejoblíbenější vůně mizí ze skladu nejrychleji. Klikněte a dopřejte si letní péči se slevou až 20 %, dokud je z čeho vybírat.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVFQ2GJ7Z6M14EKFN59K4WQ9",
+    "name": "SK Webinář s překvapením - záznam",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "education",
+    "subject": "Prekvapenie je odhalené. Pozrite si ho skôr, než záznam zmizne.",
+    "previewText": "Záznam z včerajšieho webinára je online. Ale len do nedele!",
+    "sentAt": "2026-06-19T12:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "U4NqgQ",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Veľké odhalenie je tu. Pozrite si ho, kým môžete.",
+      "body": [
+        "Veľké odhalenie je tu. Pozrite si ho, kým môžete.",
+        "Včera sme odhalili prekvapenie, ktoré sme pre vás dlho pripravovali. Ak ste neboli na webinári naživo, teraz máte možnosť zistiť, o čo ide. Záznam bude pre vás dostupný do nedele.",
+        "Prírodný deodorant s prebiotikami pre aktívnych mužov.",
+        "✅ Bez alkoholu a parabénov – vhodný aj pre citlivú pokožku ✅ Neupcháva póry a rešpektuje prirodzené funkcie tela"
+      ],
+      "cta": "PUSTIŤ SI ZÁZNAM",
+      "ctas": [
+        "PUSTIŤ SI ZÁZNAM",
+        "KÚPIŤ"
+      ],
+      "text": "96\nVeľké odhalenie je tu. Pozrite si ho, kým môžete.\n⏰ Záznam je dostupný len do NEDELE.\nVčera sme odhalili prekvapenie, ktoré sme pre vás dlho pripravovali. Ak ste neboli na webinári naživo, teraz máte možnosť zistiť, o čo ide. Záznam bude pre vás dostupný do nedele.\nPUSTIŤ SI ZÁZNAM\nPrírodný deodorant s prebiotikami pre aktívnych mužov.\n✅ Bez alkoholu a parabénov – vhodný aj pre citlivú pokožku ✅ Neupcháva póry a rešpektuje prirodzené funkcie tela\n✅ Nezanecháva biele ani žlté stopy na oblečení\n✅ Neutralizuje nepríjemný zápach\n🔥 Zľava 10 %\nKÚPIŤ\nMarek, 42 rokov „Skvelý prírodný deodorant. Nelepí, nedráždi pokožku a naozaj funguje počas celého dňa. Oceňujem zloženie bez alkoholu a parabénov. Navyše vydrží dlho, takže pomer ceny a výkonu je výborný.“\nMelónová dávka sviežosti\n✅ Hydratuje vlasy aj pokožku vďaka extraktom z vodného melóna a hrozna ✅ Prírodný deodorant s prebiotikami pomáha chrániť pred zápachom bez toho, aby blokoval potenie\n✅ Šetrné zloženie vhodné na každodenné používanie\n🔥 Zľava 20 %\nKÚPIŤ\nMária, 48 rokov „Vlasy sú hebké, pokožka krásne hydratovaná a deodorant ma milo prekvapil svojou účinnosťou. Vôňa melóna je svieža, čistá a nepôsobí presladene. Po sprche mám pocit, akoby som práve vyšla z wellness.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Prekvapenie je odhalené a záznam na vás čaká. Kliknite na tlačidlo nižšie a zistite, čo sme pre vás pripravili.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVFM7BSZ6CSVX6PZ90A3TNEY",
+    "name": "CZ Webinář s překvapením - záznam",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "Překvapení je odhaleno. Podívejte se, než záznam zmizí.",
+    "previewText": "Záznam ze včerejšího webináře je online. Ale jen do neděle!",
+    "sentAt": "2026-06-19T12:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "WPdC4Z",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Velké odhalení je tady. Podívejte se, dokud můžete.",
+      "body": [
+        "Velké odhalení je tady. Podívejte se, dokud můžete.",
+        "Včera jsme odhalili překvapení, které jsme pro vás dlouho chystali. Pokud jste nebyli na webináři živě, teď máte možnost zjistit, o co jde. Záznam pro vás bude dostupný do neděle.",
+        "Přírodní deodorant s prebiotiky pro aktivní muže",
+        "✅ Bez alkoholu a parabenů – vhodný i pro citlivou pokožku"
+      ],
+      "cta": "PUSTIT SI ZÁZNAM",
+      "ctas": [
+        "PUSTIT SI ZÁZNAM",
+        "KOUPIT"
+      ],
+      "text": "96\nVelké odhalení je tady. Podívejte se, dokud můžete.\n⏰ Záznam dostupný pouze do NEDĚLE\nVčera jsme odhalili překvapení, které jsme pro vás dlouho chystali. Pokud jste nebyli na webináři živě, teď máte možnost zjistit, o co jde. Záznam pro vás bude dostupný do neděle.\nPUSTIT SI ZÁZNAM\nPřírodní deodorant s prebiotiky pro aktivní muže\n✅ Bez alkoholu a parabenů – vhodný i pro citlivou pokožku\n✅ Neucpává póry a respektuje přirozené funkce těla\n✅ Nezanechává bílé ani žluté stopy na oblečení ✅ Neutralizuje nepříjemný zápach 🔥 10 % sleva\n206 Kč 121 Kč (VIP Sleva)\nKOUPIT\nMarek, 42 let  „Skvělý přírodní deodorant. Nelepí, nedráždí pokožku a opravdu funguje po celý den. Oceňuji složení bez alkoholu a parabenů. Navíc vydrží dlouho, takže poměr cena/výkon je výborný.“\nMelounová dávka svěžesti\n✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů\n✅ Přírodní deodorant s prebiotiky pomáhá chránit před zápachem, aniž by blokoval pocení\n✅ Šetrné složení vhodné pro každodenní použití 🔥 20 % sleva\n931 Kč 484 Kč (VIP Sleva)\nKOUPIT\nMarie, 48 let  „Vlasy jsou hebké, pokožka krásně hydratovaná a deodorant mě mile překvapil svou účinností. Vůně melounu je svěží, čistá a nepůsobí přeslazeně. Po sprše mám pocit, jako bych právě vyšla z wellness.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Překvapení je odhaleno a záznam na vás čeká. Klikněte na tlačítko níže a zjistěte, co jsme pro vás připravili.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KVDB0RHPRHHVQ5ZN0QH2W4SA",
     "name": "CZ Webinář s překvapením - 18.6. odkaz",
     "status": "Sent",
@@ -134,40 +237,6 @@
       "percent-off",
       "launch",
       "education"
-    ]
-  },
-  {
-    "id": "01KVD60G3BF5XNTBYEB17CXX58",
-    "name": "CZ - Deexpert 06/25 sprchové gely + tělové soli",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Sprchové gely a tělové soli se slevou až 20 %",
-    "previewText": "Poslední kusy skladem!",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "R8Aiuw",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
-      "body": [
-        "Nakupte dřív, než zmizí. Poslední kusy skladem!",
-        "Dopřejte si vůni léta v každé kapce a každém doteku. Právě teď si můžete dopřát své oblíbené sprchové gely a tělové soli ​  se slevou až 20 % . Jen pozor, nejoblíbenější vůně mizí ze skladu rychleji, než jsme čekali, a některé produkty jsou už v posledních kusech.",
-        "✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů",
-        "✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení"
-      ],
-      "cta": "ZÍSKAT POSLEDNÍ KUSY",
-      "ctas": [
-        "ZÍSKAT POSLEDNÍ KUSY",
-        "KOUPIT"
-      ],
-      "text": "96\nNakupte dřív, než zmizí. Poslední kusy skladem!\n⏰ Pouze do 21. 6.  🔥 Poslední kusy\nDopřejte si vůni léta v každé kapce a každém doteku. Právě teď si můžete dopřát své oblíbené sprchové gely a tělové soli ​  se slevou až 20 % . Jen pozor, nejoblíbenější vůně mizí ze skladu rychleji, než jsme čekali, a některé produkty jsou už v posledních kusech.\nZÍSKAT POSLEDNÍ KUSY\nMelounová dávka svěžesti\n✅ Hydratuje vlasy i pokožku díky extraktům vodního melounu a hroznů\n✅ Přírodní deodorant s prebiotiky chrání před zápachem bez blokování pocení\n✅ Šetrné složení vhodné pro každodenní použití 🔥 20 % sleva\n931 Kč 484 Kč ( VIP Sleva)\nKOUPIT\nMarie, 48 let   „Vlasy jsou hebké, pokožka krásně hydratovaná a deodorant mě mile překvapil svou účinností. Vůně melounu je svěží, čistá a nepůsobí přeslazeně. Po sprše mám pocit, jako bych právě vyšla z wellness.\"\nDotek Mrtvého moře\n✅ Minerály z Mrtvého moře pomáhají obnovit hladkost a vitalitu pokožky\n✅ Olivový extrakt vyživuje a chrání před vysušováním\n✅ Pokožka je jemnější, pružnější a viditelně zářivější již po několika použitích\n🔥 15 % sleva\n1 292 Kč 714 Kč ( VIP Sleva)\nKOUPIT\nIrena, 46 let  \"Po každém použití mám pocit, jako bych si dopřála domácí wellness. Peeling krásně vyhladí a zpevní pokožku, sprchový gel ji nevysušuje a tělové mléko zanechá pokožku hebkou až do večera. Miluji jemnou olivovou vůni.\"\nTělová sůl “Krystaly z Mrtvého moře”\n✅ Minerály z Mrtvého moře zanechávají pokožku pevnější, hladší a sametově hebkou\n✅ Podporuje lymfatický systém při pravidelném používání\n✅ Pomáhá zlepšit vzhled pokožky se sklony k celulitidě\n🔥 15 % sleva\n462 Kč 270 Kč ( VIP Sleva)\nKOUPIT\nLaura, 49 let  \"Používám sůl pravidelně při masáži stehen a boků. Pokožka je výrazně hladší, pevnější a v kombinaci s pohybem a pitným režimem mám pocit, že se vzhled celulitidy viditelně zlepšil. Navíc je to úžasný relaxační rituál po náročném dni.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Ty nejoblíbenější vůně mizí ze skladu nejrychleji. Klikněte a dopřejte si letní péči se slevou až 20 %, dokud je z čeho vybírat.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
     ]
   },
   {
@@ -5038,72 +5107,6 @@
       "percent-off",
       "launch",
       "education"
-    ]
-  },
-  {
-    "id": "01KPZDKSRRGH7SFG5A93KXBHZ9",
-    "name": "CZ - Sebeláska 3. pozvánka (již zítra)",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Brány se zavírají. Přidáte se?",
-    "previewText": "Kurz sebelásky začíná už zítra. Dnes je poslední možnost se přidat.",
-    "sentAt": "2026-05-03T11:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "V46wxh",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Zítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!",
-      "body": [
-        "Zítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!",
-        "Dnes je poslední možnost přihlásit se do kurzu Sebelásky. Zbývá už jen pár posledních volných míst a jakmile se zaplní, přihlášky definitivně uzavřeme. Rezervujte si své místo zdarma, dokud je ještě volné.",
-        "Možná jste dlouho odkládala sama sebe na druhou kolej. Říkala jste si, že to ještě zvládnete, že teď není správný čas. Ale někde uvnitř cítíte, že takhle už to dál nejde. Že potřebujete změnu. Nadechnout se. Zastavit se. Začít znovu myslet i na sebe.",
-        "Co v kurzu Sebeláska krok za krokem opravdu získáte"
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO"
-      ],
-      "text": "96\nZítra začínáme. Dnes je poslední den vstoupit do kurzu sebelásky!\n📌 KDY: už zítra v 19:00\n📌 KDE: ONLINE\n💰 ZDARMA\nDnes je poslední možnost přihlásit se do kurzu Sebelásky. Zbývá už jen pár posledních volných míst a jakmile se zaplní, přihlášky definitivně uzavřeme. Rezervujte si své místo zdarma, dokud je ještě volné.\nCHCI BÝT U TOHO\nMožná jste dlouho odkládala sama sebe na druhou kolej. Říkala jste si, že to ještě zvládnete, že teď není správný čas. Ale někde uvnitř cítíte, že takhle už to dál nejde. Že potřebujete změnu. Nadechnout se. Zastavit se. Začít znovu myslet i na sebe.\nCo v kurzu Sebeláska krok za krokem opravdu získáte\n6 online setkání, která vás provedou návratem k sobě krok za krokem\nKonkrétní návody, jak zvládat stres, únavu a tlak v běžném životě\nPodporu a vedení zkušené lektorky - Mgr. Andrea Svitáková\nPocit, že na to nejste sama\nNavíc získáte i všechny materiály k práci na sobě\nPracovní listy ke každému setkání\nPříručky, ke kterým se můžete kdykoli vrátit\nZáznamy ze všech 6 online setkání\nObsah dostupný z domova , v čase, který vám vyhovuje\nKurz zcela zdarma – bez tlaku a bez závazků\nKurzem vás bude provázet Mgr. Andrea Svitáková\nLektorka a průvodkyně, která rozumí ženám, které dlouhé roky fungovaly pro všechny kolem sebe. Vysvětlí věci lidsky, jasně a s respektem k tomu, co opravdu prožíváte.\n❤️ Budeme se na vás těšit!\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S.: Dnes se přihlášky do kurzu sebelásky uzavírají. Pokud cítíte, že je čas začít myslet i na sebe, klikněte teď a rezervujte si své místo, dokud je ještě volné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KQJ20XQG8936XDXZ1M04S1FJ",
-    "name": "SK kolo štěstí - květen",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "promo",
-    "subject": "Zatočte kolesom šťastia a vyhrajte darček!",
-    "previewText": "Každý, kto zatočí, vyhrá!",
-    "sentAt": "2026-05-01T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "SxyPxD",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Zatočte kolesom šťastia a odneste si darček!",
-      "body": [
-        "Zatočte kolesom šťastia a odneste si darček!",
-        "Áno, čítate správne. Koleso šťastia sa opäť točí. Stačí prísť, zatočiť a odniesť si svoj darček. Príďte si po svoju výhru ešte dnes.",
-        "Vytočený darček získate vo forme kupónu.",
-        "Kupón vložte do nákupného košíka do poľa „Mám zľavový kód“."
-      ],
-      "cta": "ZATOČIŤ A VYHRAŤ",
-      "ctas": [
-        "ZATOČIŤ A VYHRAŤ"
-      ],
-      "text": "96\nZatočte kolesom šťastia a odneste si darček!\n🎡 100 % šanca na výhru\n🎁 Exkluzívne darček\nÁno, čítate správne. Koleso šťastia sa opäť točí. Stačí prísť, zatočiť a odniesť si svoj darček. Príďte si po svoju výhru ešte dnes.\nZATOČIŤ A VYHRAŤ\nKliknite a roztočte koleso šťastia.\nVytočený darček získate vo forme kupónu.\nKupón vložte do nákupného košíka do poľa „Mám zľavový kód“.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Nezabudnite, že každý deň môžete zatočiť znova a získať ďalší darček. Príďte si skúsiť svoje šťastie ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
     ]
   }
 ]
