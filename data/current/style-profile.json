@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-20T08:03:24.149Z",
+  "generatedAt": "2026-06-21T08:46:16.441Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -94,6 +94,12 @@
       ],
       "examples": [
         {
+          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+          "headline": "Nakupte teď. Zaplaťte později.",
+          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
+        },
+        {
           "subject": "Sprchové gely a tělové soli se slevou až 20 %",
           "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
           "previewText": "Poslední kusy skladem!",
@@ -116,12 +122,6 @@
           "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
           "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
           "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
-        },
-        {
-          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
-          "headline": "Nakupte teď. Zaplaťte později.",
-          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
-          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
         },
         {
           "subject": "Súťaž o MERCEDES medzi soľami začína!",
@@ -214,6 +214,12 @@
       ],
       "examples": [
         {
+          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+          "headline": "Nakupte teď. Zaplaťte později.",
+          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
+        },
+        {
           "subject": "Sprchové gely a tělové soli se slevou až 20 %",
           "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
           "previewText": "Poslední kusy skladem!",
@@ -230,12 +236,6 @@
           "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
           "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
           "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
-        },
-        {
-          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
-          "headline": "Nakupte teď. Zaplaťte později.",
-          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
-          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
         },
         {
           "subject": "Súťaž o MERCEDES medzi soľami začína!",
@@ -457,6 +457,14 @@
   },
   "examples": [
     {
+      "subject": "Máme pro vás 3 000 Kč. Využijete je?",
+      "headline": "Nakupte teď. Zaplaťte později.",
+      "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
+      "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
       "subject": "Sprchové gely a tělové soli se slevou až 20 %",
       "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
       "previewText": "Poslední kusy skladem!",
@@ -501,14 +509,6 @@
       "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
       "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
       "cta": "NAKOUPIT SE SLEVOU AŽ 20 %",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Máme pro vás 3 000 Kč. Využijete je?",
-      "headline": "Nakupte teď. Zaplaťte později.",
-      "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
-      "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI",
       "language": "cz",
       "campaignType": "urgency"
     },
