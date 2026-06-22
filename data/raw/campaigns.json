@@ -1,5 +1,140 @@
 [
   {
+    "id": "01KVNFBCEQ61TX6VMGRNR88RSG",
+    "name": "SK - Deexpert 06/25 začíná konec",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Naozaj chcete prísť o 20 % zľavu?",
+    "previewText": "Dnes o polnoci končí Letný výpredaj!",
+    "sentAt": "2026-06-21T17:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "XsSKKD",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Letný výpredaj končí dnes o polnoci!",
+      "body": [
+        "P. S.: Poslední šance ušetřit až 20 % je právě teď. Za několik hodin letní výprodej skončí. Klikněte a dopřejte si své oblíbené produkty výhodněji, dokud je čas.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
+        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
+      ],
+      "cta": "NAKÚPIŤ SO ZĽAVOU",
+      "ctas": [
+        "NAKÚPIŤ SO ZĽAVOU"
+      ],
+      "text": "96\nLetný výpredaj končí dnes o polnoci!\n⏰ Iba do dnešnej polnoci!\nNAKÚPIŤ SO ZĽAVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Poslední šance ušetřit až 20 % je právě teď. Za několik hodin letní výprodej skončí. Klikněte a dopřejte si své oblíbené produkty výhodněji, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVAPT7M7W1QJFRWG7PA7YMR6",
+    "name": "CZ - Deexpert 06/25 začíná konec",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Opravdu chcete přijít o 20 % slevu?",
+    "previewText": "Dnes o půlnoci končí Letní výprodej!",
+    "sentAt": "2026-06-21T17:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "T39NRU",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Letní výprodej končí dnes o půlnoci!",
+      "body": [
+        "P. S.: Poslední šance ušetřit až 20 % je právě teď. Za několik hodin letní výprodej skončí. Klikněte a dopřejte si své oblíbené produkty výhodněji, dokud je čas.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
+        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
+      ],
+      "cta": "NAKOUPIT SE SLEVOU",
+      "ctas": [
+        "NAKOUPIT SE SLEVOU"
+      ],
+      "text": "96\nLetní výprodej končí dnes o půlnoci!\n⏰ Pouze do dnešní půlnoci\nNAKOUPIT SE SLEVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Poslední šance ušetřit až 20 % je právě teď. Za několik hodin letní výprodej skončí. Klikněte a dopřejte si své oblíbené produkty výhodněji, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVARKTQWH7H5GPDH0JK9H9E8",
+    "name": "CZ Webinář Krásná a zdravá pleť v každém věku - pozvánka",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
+    "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
+    "sentAt": "2026-06-21T12:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Y2mVzz",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+      "body": [
+        "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+        "🖥️ ONLINE - již zítra ve 20:00 💰 ZDARMA",
+        "Kolik chyb v péči o pleť děláme každý den , aniž bychom si je uvědomovaly? Právě drobné návyky mohou rozhodovat o tom, zda bude naše pleť zářit, nebo zda se vrásky objeví dříve , než bychom si přály. Přihlaste se na webinář a objevte jednoduché kroky, které pomohou udržet pleť hydratovanou, svěží a krásnou v každém věku.",
+        "Léto je pro naši pleť krásným, ale zároveň náročným obdobím. Slunce, vysoké teploty, klimatizace i časté koupání mohou způsobit dehydrataci, ztrátu pružnosti nebo předčasné stárnutí pokožky. Právě proto je důležité vědět, jak o pleť správně pečovat , aby si zachovala svůj zdravý, svěží a zářivý vzhled ​ Na našem webináři se dozvíte: Jak pečovat o pleť v různých obdobích života"
+      ],
+      "cta": "CHCI BÝT U TOHO",
+      "ctas": [
+        "CHCI BÝT U TOHO",
+        "KOUPIT"
+      ],
+      "text": "96\nWebinář zdarma: Krásná a zdravá pleť v každém věku\n🖥️ ONLINE - již zítra ve 20:00 💰 ZDARMA\nKolik chyb v péči o pleť děláme každý den , aniž bychom si je uvědomovaly? Právě drobné návyky mohou rozhodovat o tom, zda bude naše pleť zářit, nebo zda se vrásky objeví dříve , než bychom si přály. Přihlaste se na webinář a objevte jednoduché kroky, které pomohou udržet pleť hydratovanou, svěží a krásnou v každém věku.\nCHCI BÝT U TOHO\nLéto je pro naši pleť krásným, ale zároveň náročným obdobím. Slunce, vysoké teploty, klimatizace i časté koupání mohou způsobit dehydrataci, ztrátu pružnosti nebo předčasné stárnutí pokožky. Právě proto je důležité vědět, jak o pleť správně pečovat , aby si zachovala svůj zdravý, svěží a zářivý vzhled ​ Na našem webináři se dozvíte: Jak pečovat o pleť v různých obdobích života\nJak podpořit přirozenou regeneraci a hydrataci pleti\nJak zpomalit projevy stárnutí a zachovat si svěží vzhled\nJaké chyby ženy v péči o pleť dělají nejčastěji\nJak si správně sestavit každodenní rutinu péče o pleť\nPraktické tipy a doporučení, které můžete ihned zařadit do svého života\nPolypeptidový pleťový krém s kolagenem na vrásky\nPolypeptidový krém s kolagenem pomáhá pleti získat zpět pružnost, hydrataci a mladistvý vzhled. Každá aplikace je krokem k hladší, pevnější a zářivější pleti, na kterou budete ráda pohlížet v zrcadle.\n✅ Pomáhá redukovat vzhled vrásek a známek stárnutí ✅ Intenzivně hydratuje a chrání před vysoušením ✅ Lehká textura bez mastného filmu ✅ 4 druhy peptidů pro viditelně hladší a pevnější pleť\n745 Kč 484 Kč ( VIP Sleva)\nKOUPIT\nMarie 45 let: „Po několika týdnech používání jsem si všimla, že je moje pleť pevnější a jemnější na dotek. Nejvíc mě potěšilo, že vrásky kolem úst a na čele už nejsou tak výrazné. Každé ráno vypadám odpočatěji.“\nKrém pro hloubkovou obnovu pleti Ženšen a orchidej\nDopřejte své pleti péči inspirovanou tisíciletou moudrostí Orientu. Krém Ženšen a orchidej pomáhá obnovit pevnost, pružnost a zář pleti, vyhlazuje vrásky a dodává pokožce energii, kterou s přibývajícími roky ztrácí.\n✅ Vyhlazuje jemné i hlubší vrásky\n✅ Obnovuje pevnost a pružnost ochablé pokožky ✅ Zklidňuje citlivou pleť a redukuje zarudnutí ✅ Hloubkově hydratuje a vyživuje po celý den ✅ 3 aktivní formy ženšenu pro intenzivní regeneraci pleti\n916 Kč 595 Kč ( VIP Sleva)\nKOUPIT\nLenka 48 let:  Moje pleť znovu ožila. Je hebčí, pružnější a vrásky kolem úst i očí jsou méně výrazné. Navíc miluji ten pocit výživy a komfortu, který vydrží celý den.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Pokud chcete, aby vaše pleť vypadala za rok lépe než dnes, začněte tím nejdůležitějším – správnými informacemi. Na webináři vám ukážeme, co skutečně funguje a čemu je lepší se vyhnout. Klikněte na registraci a zajistěte si své místo ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KVMWB8KP8VPBJ0R8DNGKNVBY",
+    "name": "SK Webinář Krásná a zdravá pleť v každém věku - pozvánka (clone)",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "education",
+    "subject": "Prečo niektoré ženy nestarnú tak rýchlo? Odpoveď vás prekvapí.",
+    "previewText": "Objavte tajomstvo krásnej a žiarivej pleti na našom webinári 22. 6.",
+    "sentAt": "2026-06-21T12:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "RaX4cA",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Webinár zdarma: Krásna a zdravá pleť v každom veku",
+      "body": [
+        "Webinár zdarma: Krásna a zdravá pleť v každom veku",
+        "🖥️ ONLINE – už zajtra o 20:00 💰 ZDARMA",
+        "Koľko chýb v starostlivosti o pleť robíme každý deň bez toho, aby sme si ich uvedomovali? Práve drobné návyky môžu rozhodovať o tom, či bude naša pleť žiariť, alebo sa vrásky objavia skôr, než by sme si želali. Prihláste sa na náš bezplatný webinár a objavte jednoduché kroky, ktoré pomôžu udržať pleť hydratovanú, sviežu a krásnu v každom veku.",
+        "Leto je pre našu pleť krásnym, ale zároveň náročným obdobím. Slnko, vysoké teploty, klimatizácia aj časté kúpanie môžu spôsobiť dehydratáciu, stratu pružnosti či predčasné starnutie pokožky. Práve preto je dôležité vedieť, ako sa o pleť správne starať, aby si zachovala zdravý, svieži a žiarivý vzhľad. ​ Na našom bezplatnom webinári sa dozviete:"
+      ],
+      "cta": "CHCEM BYŤ PRI TOM!",
+      "ctas": [
+        "CHCEM BYŤ PRI TOM!",
+        "KÚPIŤ"
+      ],
+      "text": "96\nWebinár zdarma: Krásna a zdravá pleť v každom veku\n🖥️ ONLINE – už zajtra o 20:00 💰 ZDARMA\nKoľko chýb v starostlivosti o pleť robíme každý deň bez toho, aby sme si ich uvedomovali? Práve drobné návyky môžu rozhodovať o tom, či bude naša pleť žiariť, alebo sa vrásky objavia skôr, než by sme si želali. Prihláste sa na náš bezplatný webinár a objavte jednoduché kroky, ktoré pomôžu udržať pleť hydratovanú, sviežu a krásnu v každom veku.\nCHCEM BYŤ PRI TOM!\nLeto je pre našu pleť krásnym, ale zároveň náročným obdobím. Slnko, vysoké teploty, klimatizácia aj časté kúpanie môžu spôsobiť dehydratáciu, stratu pružnosti či predčasné starnutie pokožky. Práve preto je dôležité vedieť, ako sa o pleť správne starať, aby si zachovala zdravý, svieži a žiarivý vzhľad. ​ Na našom bezplatnom webinári sa dozviete:\nAko sa starať o pleť v rôznych obdobiach života\nAko podporiť prirodzenú regeneráciu a hydratáciu pleti\nAko spomaliť prejavy starnutia a zachovať si svieži vzhľad\nAké chyby ženy v starostlivosti o pleť robia najčastejšie\nAko si správne zostaviť každodennú rutinu starostlivosti o pleť\nPraktické tipy a odporúčania, ktoré môžete ihneď zaradiť do svojho života\nPolypeptidový pleťový krém s kolagénom proti vráskam\nPolypeptidový krém s kolagénom pomáha pleti získať späť pružnosť, hydratáciu a mladistvý vzhľad. Každá aplikácia je krokom k hladšej, pevnejšej a žiarivejšej pleti, na ktorú sa budete s radosťou pozerať v zrkadle.\n✅ Pomáha redukovať vzhľad vrások a prejavov starnutia ✅ Intenzívne hydratuje a chráni pleť pred vysušovaním\n✅ Ľahká textúra bez mastného filmu\n✅ 4 druhy peptidov pre viditeľne hladšiu a pevnejšiu pleť\nKÚPIŤ\nMarie, 45 rokov: „Po niekoľkých týždňoch používania som si všimla, že moja pleť je pevnejšia a jemnejšia na dotyk. Najviac ma potešilo, že vrásky okolo úst a na čele už nie sú také výrazné. Každé ráno vyzerám oddýchnutejšie.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Ak chcete, aby vaša pleť vyzerala o rok lepšie ako dnes, začnite tým najdôležitejším – správnymi informáciami. Na webinári vám ukážeme, čo skutočne funguje a čomu je lepšie sa vyhnúť. Kliknite na registráciu a zabezpečte si svoje miesto ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
     "id": "01KVD8KF334C2SDKNB6EMP6M1E",
     "name": "CZ - Deexpert 06/25 - tělové soli + twisto",
     "status": "Sent",
@@ -367,72 +502,6 @@
       "text": "96\nTajomstvo odhalíme už zajtra o 20:00. Budete pri tom?\n🎁 WEBINÁR S PREKVAPENÍM\nUž zajtra večer odhalíme niečo, čo sme ešte nikdy neurobili. Mohli by sme vám prezradiť viac, ale tentoraz vás necháme hádať. Jedno je isté, tento webinár bude stáť za to.\nTOTO SI URČITE NENECHÁM UJSŤ!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Máme pre vás pripravené niečo, čo sme ešte nikdy neurobili. A verte nám, že o toto prekvapenie nechcete prísť. Kliknite na tlačidlo a rezervujte si svoje miesto, kým je ešte čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KVARKTQWH7H5GPDH0JK9H9E8",
-    "name": "CZ Webinář Krásná a zdravá pleť v každém věku - pozvánka",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
-    "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "Y2mVzz",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
-      "body": [
-        "Webinář zdarma: Krásná a zdravá pleť v každém věku",
-        "🖥️ ONLINE - již 22. 6. ve 18:00 💰 ZDARMA",
-        "Kolik chyb v péči o pleť děláme každý den , aniž bychom si je uvědomovaly? Právě drobné návyky mohou rozhodovat o tom, zda bude naše pleť zářit, nebo zda se vrásky objeví dříve , než bychom si přály. Přihlaste se na webinář a objevte jednoduché kroky, které pomohou udržet pleť hydratovanou, svěží a krásnou v každém věku.",
-        "Léto je pro naši pleť krásným, ale zároveň náročným obdobím. Slunce, vysoké teploty, klimatizace i časté koupání mohou způsobit dehydrataci, ztrátu pružnosti nebo předčasné stárnutí pokožky. Právě proto je důležité vědět, jak o pleť správně pečovat , aby si zachovala svůj zdravý, svěží a zářivý vzhled ​ Na našem webináři se dozvíte: Jak pečovat o pleť v různých obdobích života"
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO",
-        "KOUPIT"
-      ],
-      "text": "96\nWebinář zdarma: Krásná a zdravá pleť v každém věku\n🖥️ ONLINE - již 22. 6. ve 18:00 💰 ZDARMA\nKolik chyb v péči o pleť děláme každý den , aniž bychom si je uvědomovaly? Právě drobné návyky mohou rozhodovat o tom, zda bude naše pleť zářit, nebo zda se vrásky objeví dříve , než bychom si přály. Přihlaste se na webinář a objevte jednoduché kroky, které pomohou udržet pleť hydratovanou, svěží a krásnou v každém věku.\nCHCI BÝT U TOHO\nLéto je pro naši pleť krásným, ale zároveň náročným obdobím. Slunce, vysoké teploty, klimatizace i časté koupání mohou způsobit dehydrataci, ztrátu pružnosti nebo předčasné stárnutí pokožky. Právě proto je důležité vědět, jak o pleť správně pečovat , aby si zachovala svůj zdravý, svěží a zářivý vzhled ​ Na našem webináři se dozvíte: Jak pečovat o pleť v různých obdobích života\nJak podpořit přirozenou regeneraci a hydrataci pleti\nJak zpomalit projevy stárnutí a zachovat si svěží vzhled\nJaké chyby ženy v péči o pleť dělají nejčastěji\nJak si správně sestavit každodenní rutinu péče o pleť\nPraktické tipy a doporučení, které můžete ihned zařadit do svého života\nPolypeptidový pleťový krém s kolagenem na vrásky\nPolypeptidový krém s kolagenem pomáhá pleti získat zpět pružnost, hydrataci a mladistvý vzhled. Každá aplikace je krokem k hladší, pevnější a zářivější pleti, na kterou budete ráda pohlížet v zrcadle.\n✅ Pomáhá redukovat vzhled vrásek a známek stárnutí ✅ Intenzivně hydratuje a chrání před vysoušením ✅ Lehká textura bez mastného filmu ✅ 4 druhy peptidů pro viditelně hladší a pevnější pleť\n745 Kč 484 Kč ( VIP Sleva)\nKOUPIT\nMarie 45 let: „Po několika týdnech používání jsem si všimla, že je moje pleť pevnější a jemnější na dotek. Nejvíc mě potěšilo, že vrásky kolem úst a na čele už nejsou tak výrazné. Každé ráno vypadám odpočatěji.“\nNápoj s artyčokem a dřišťálem\nDopřejte své pleti péči inspirovanou tisíciletou moudrostí Orientu. Krém Ženšen a orchidej pomáhá obnovit pevnost, pružnost a zář pleti, vyhlazuje vrásky a dodává pokožce energii, kterou s přibývajícími roky ztrácí.\n✅ Vyhlazuje jemné i hlubší vrásky\n✅ Obnovuje pevnost a pružnost ochablé pokožky ✅ Zklidňuje citlivou pleť a redukuje zarudnutí ✅ Hloubkově hydratuje a vyživuje po celý den ✅ 3 aktivní formy ženšenu pro intenzivní regeneraci pleti\n916 Kč 595 Kč ( VIP Sleva)\nKOUPIT\nLenka 48 let:  Moje pleť znovu ožila. Je hebčí, pružnější a vrásky kolem úst i očí jsou méně výrazné. Navíc miluji ten pocit výživy a komfortu, který vydrží celý den.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Pokud chcete, aby vaše pleť vypadala za rok lépe než dnes, začněte tím nejdůležitějším – správnými informacemi. Na webináři vám ukážeme, co skutečně funguje a čemu je lepší se vyhnout. Klikněte na registraci a zajistěte si své místo ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KVAPT7M7W1QJFRWG7PA7YMR6",
-    "name": "CZ - Deexpert 06/25 začíná konec",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Opravdu chcete přijít o 20 % slevu?",
-    "previewText": "Dnes o půlnoci končí Letní výprodej!",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "T39NRU",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Letní výprodej končí dnes o půlnoci!",
-      "body": [
-        "P. S.: Poslední šance ušetřit až 20 % je právě teď. Za několik hodin letní výprodej skončí. Klikněte a dopřejte si své oblíbené produkty výhodněji, dokud je čas.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490",
-        "© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů ."
-      ],
-      "cta": "Zjistit víc",
-      "ctas": [],
-      "text": "96\nLetní výprodej končí dnes o půlnoci!\n⏰ Pouze do dnešní půlnoci\nNAKOUPIT SE SLEVOU\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Poslední šance ušetřit až 20 % je právě teď. Za několik hodin letní výprodej skončí. Klikněte a dopřejte si své oblíbené produkty výhodněji, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
       "percent-off",
       "launch"
     ]
@@ -5039,74 +5108,6 @@
       "percent-off",
       "gift",
       "launch"
-    ]
-  },
-  {
-    "id": "01KQQ6ZE0CZQWPBCSPSAMEP98K",
-    "name": "SK - Nové akce (květen - červen)",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "launch",
-    "subject": "Tak toto tu ešte nebolo…",
-    "previewText": "Darčeky až za 27 € ? Toto sa vám bude páčiť!",
-    "sentAt": "2026-05-03T16:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "TeefuP",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Exkluzívna ponuka: darčeky k balíčkom",
-      "body": [
-        "Pripravili sme pre vás nové exkluzívne akcie , kde si okrem svojich obľúbených produktov odnesiete aj darčeky v hodnote až 27 €. Vyberte si svoj balíček ešte dnes a doprajte si darček, ktorý vám urobí radosť.",
-        "✅ Hĺbková obnova vlasov od korienkov po končeky",
-        "✅ Ideálne riešenie pre vlasy namáhané farbením, fénom alebo žehlením",
-        "Marcela, 45 rokov: „Moje vlasy boli po rokoch farbenia suché, bez života a končeky sa lámali. Úprimne som už neverila, že sa to dá zmeniť. Po mesiaci používania tejto sady s hadím olejom sú vlasy hebkejšie, lesklejšie a hlavne sa oveľa lepšie rozčesávajú.“"
-      ],
-      "cta": "nové exkluzívne akcie",
-      "ctas": [
-        "nové exkluzívne akcie",
-        "CHCEM BALÍČEK S DARČEKOM",
-        "KÚPIŤ"
-      ],
-      "text": "96\nExkluzívna ponuka: darčeky k balíčkom\naž za 27 €\nPripravili sme pre vás nové exkluzívne akcie , kde si okrem svojich obľúbených produktov odnesiete aj darčeky v hodnote až 27 €. Vyberte si svoj balíček ešte dnes a doprajte si darček, ktorý vám urobí radosť.\nCHCEM BALÍČEK S DARČEKOM\nSOS regenerácia pre oslabené vlasy\n✅ Hĺbková obnova vlasov od korienkov po končeky\n✅ Ideálne riešenie pre vlasy namáhané farbením, fénom alebo žehlením\n✅ Viditeľne hladšie a lesklejšie vlasy\n🎁 DARČEK V HODNOTE 16,70 €\nKÚPIŤ\nMarcela, 45 rokov: „Moje vlasy boli po rokoch farbenia suché, bez života a končeky sa lámali. Úprimne som už neverila, že sa to dá zmeniť. Po mesiaci používania tejto sady s hadím olejom sú vlasy hebkejšie, lesklejšie a hlavne sa oveľa lepšie rozčesávajú.“\nHĺbkové čistenie, ochrana a lesk\n✅ Hĺbkové čistenie bez vysušenia\n✅ Efekt bio-laminácie pre hladké a lesklé vlasy\n✅ Ideálne pre vlasy, ktoré sa rýchlo mastia alebo sú zaťažené stylingom\n🎁 DARČEK V HODNOTE 21,60 €\nKÚPIŤ\nMelisa, 39 rokov: „Moje vlasy boli bez objemu, rýchlo sa mastili a po umytí pôsobili ťažko. Po vyskúšaní tejto starostlivosti som bola milo prekvapená. Vlasy sú ľahké, krásne sa lesknú a konečne vyzerajú upravene aj bez zložitého stylingu.“\nEkologické upratovanie, ktoré šetrí čas, peniaze aj vaše ruky\n✅ Ekologické zloženie bez fosfátov a agresívnej chémie\n✅ Menej prostriedkov, viac poriadku\n✅ Ideálne pre zaneprázdnené ženy a rodiny\n🎁 DARČEK V HODNOTE 27,60 €\nKÚPIŤ\nMilada, 58 rokov: „Kedysi som mala doma množstvo rôznych prostriedkov a aj tak som mala pocit, že mi stále niečo chýba. Tieto produkty sú skvelé. Prádlo je krásne svieže, riad sa leskne a s utierkou zvládnem rýchlo upratať kuchyňu aj kúpeľňu. Najviac oceňujem, že nemusím nič zložito dávkovať. Jednoducho vezmem a použijem.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Takáto odmena za nákup tu nebýva každý deň. Kliknite a pozrite sa, aké darčeky sme pre vás pripravili.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQPKEHC8RZNG65BCB48MN7VN",
-    "name": "SK- Sebeláska 3. pozvánka (již zítra)",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "urgency",
-    "subject": "Brány sa zatvárajú. Pridáte sa?",
-    "previewText": "Kurz sebelásky začína už zajtra. Dnes je posledná možnosť sa pridať.",
-    "sentAt": "2026-05-03T11:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "S3VbcV",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Zajtra začíname. Dnes je posledný deň vstúpiť do kurzu sebelásky!",
-      "body": [
-        "Zajtra začíname. Dnes je posledný deň vstúpiť do kurzu sebelásky!",
-        "Dnes je posledná možnosť prihlásiť sa do kurzu Sebalásky. Zostáva už len pár posledných voľných miest a keď sa zaplnia, prihlášky definitívne uzavrieme. Rezervujte si svoje miesto zadarmo, kým je ešte voľné.",
-        "Možno ste dlho odkladali samu seba na druhú koľaj. Hovorili ste si, že to ešte zvládnete, že teraz nie je správny čas. Ale niekde vo vnútri cítite, že takto to už ďalej nejde. Že potrebujete zmenu. Nadýchnuť sa. Zastaviť sa. Začať znovu myslieť aj na seba.",
-        "Čo v kurze Sebaláska krok za krokom naozaj získate"
-      ],
-      "cta": "CHCEM BYŤ PRI TOM",
-      "ctas": [
-        "CHCEM BYŤ PRI TOM"
-      ],
-      "text": "96\nZajtra začíname. Dnes je posledný deň vstúpiť do kurzu sebelásky!\n📌KEDY: už zajtra o 19:00\n📌KDE: ONLINE\n💰 ZADARMO\nDnes je posledná možnosť prihlásiť sa do kurzu Sebalásky. Zostáva už len pár posledných voľných miest a keď sa zaplnia, prihlášky definitívne uzavrieme. Rezervujte si svoje miesto zadarmo, kým je ešte voľné.\nCHCEM BYŤ PRI TOM\nMožno ste dlho odkladali samu seba na druhú koľaj. Hovorili ste si, že to ešte zvládnete, že teraz nie je správny čas. Ale niekde vo vnútri cítite, že takto to už ďalej nejde. Že potrebujete zmenu. Nadýchnuť sa. Zastaviť sa. Začať znovu myslieť aj na seba.\nČo v kurze Sebaláska krok za krokom naozaj získate\n6 online stretnutí, ktoré vás prevedú návratom k sebe krok za krokom\nKonkrétne návody, ako zvládať stres, únavu a tlak v bežnom živote\nPodporu a vedenie skúsenej lektorky – Mgr. Andrea Svitáková\nPocit, že na to nie ste sama\nNavyše získate aj všetky materiály k práci na sebe:\nPracovné listy ku každému stretnutiu\nPríručky, ku ktorým sa môžete kedykoľvek vrátiť\nZáznamy zo všetkých 6 online stretnutí\nObsah dostupný z domu, v čase, ktorý vám vyhovuje\nKurz je úplne zadarmo – bez tlaku a bez záväzkov.\nKurzom vás bude sprevádzať Mgr. Andrea Svitáková\nLektorka a sprievodkyňa, ktorá rozumie ženám, ktoré dlhé roky fungovali pre všetkých okolo seba. Veci vysvetľuje ľudsky, jasne a s rešpektom k tomu, čo naozaj prežívate.\n❤️ Budeme sa na vás tešiť!\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S.: Dnes sa prihlášky do kurzu sebalásky uzatvárajú. Ak cítite, že je čas začať myslieť aj na seba, kliknite teraz a rezervujte si svoje miesto, kým je ešte voľné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
     ]
   }
 ]
