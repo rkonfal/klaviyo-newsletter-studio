@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T10:20:14.665Z",
+  "generatedAt": "2026-06-23T08:03:54.752Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -7,10 +7,10 @@
     "sk": 36
   },
   "campaignTypeBreakdown": {
-    "education": 56,
-    "urgency": 52,
-    "promo": 28,
-    "launch": 12,
+    "urgency": 56,
+    "education": 55,
+    "promo": 26,
+    "launch": 11,
     "event": 2
   },
   "tone": {
@@ -21,7 +21,7 @@
       "benefit-first"
     ],
     "headlinePatterns": [
-      "průměrná délka předmětu 43 znaků",
+      "průměrná délka předmětu 44 znaků",
       "průměrná délka headline 51 znaků",
       "headline s rychlým příslibem nebo výsledkem"
     ],
@@ -29,15 +29,15 @@
       "KOUPIT",
       "KÚPIŤ",
       "CHCI BÝT U TOHO",
-      "PUSTIT SI ZÁZNAM",
       "Připojte se na webinář nyní",
+      "PUSTIT SI ZÁZNAM",
       "CHCI SE PŘIDAT DO SKUPINY",
       "TO MUSÍM MÍT",
       "Zjistit víc",
       "CHCI PŘÍRUČKY ZDARMA",
-      "Sledovat na youtube",
       "NAKOUPIT SE SLEVOU",
-      "ZAČNU HUBNOUT HNED"
+      "ZAČNU HUBNOUT HNED",
+      "PUSTIT VIDEO"
     ]
   },
   "commonOffers": [
@@ -79,8 +79,8 @@
       "topCtas": [
         "KOUPIT",
         "CHCI BÝT U TOHO",
-        "PUSTIT SI ZÁZNAM",
         "Připojte se na webinář nyní",
+        "PUSTIT SI ZÁZNAM",
         "CHCI SE PŘIDAT DO SKUPINY",
         "TO MUSÍM MÍT"
       ],
@@ -94,6 +94,30 @@
       ],
       "examples": [
         {
+          "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
+          "headline": "VIP dárek čeká právě na vás v košíku!",
+          "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
+          "cta": "CHCI SVŮJ DÁREK ZDARMA"
+        },
+        {
+          "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
+          "headline": "VIP dárek čeká právě na vás v košíku!",
+          "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
+          "cta": "CHCI SVŮJ DÁREK ZDARMA"
+        },
+        {
+          "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
+          "headline": "Webinář - Krásná a zdravá pleť v každém věku",
+          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+          "cta": "Připojte se na webinář nyní"
+        },
+        {
+          "subject": "POZOR: V košíku na vás čekají 2 DÁRKY!",
+          "headline": "2 Letní kuchařky už na vás čekají v košíku!",
+          "previewText": "Nakupte nad 3 000 Kč a získejte 2 Letní kuchařky zdarma!",
+          "cta": "VYZVEDNOUT SI SVÉ KUCHAŘKY"
+        },
+        {
           "subject": "Naozaj chcete prísť o 20 % zľavu?",
           "headline": "Letný výpredaj končí dnes o polnoci!",
           "previewText": "Dnes o polnoci končí Letný výpredaj!",
@@ -104,30 +128,6 @@
           "headline": "Letní výprodej končí dnes o půlnoci!",
           "previewText": "Dnes o půlnoci končí Letní výprodej!",
           "cta": "NAKOUPIT SE SLEVOU"
-        },
-        {
-          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
-          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
-          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
-          "cta": "CHCI BÝT U TOHO"
-        },
-        {
-          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
-          "headline": "Nakupte teď. Zaplaťte později.",
-          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
-          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
-        },
-        {
-          "subject": "Sprchové gely a tělové soli se slevou až 20 %",
-          "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
-          "previewText": "Poslední kusy skladem!",
-          "cta": "ZÍSKAT POSLEDNÍ KUSY"
-        },
-        {
-          "subject": "Překvapení je odhaleno. Podívejte se, než záznam zmizí.",
-          "headline": "Velké odhalení je tady. Podívejte se, dokud můžete.",
-          "previewText": "Záznam ze včerejšího webináře je online. Ale jen do neděle!",
-          "cta": "PUSTIT SI ZÁZNAM"
         }
       ]
     },
@@ -147,11 +147,17 @@
         "percent-off",
         "launch",
         "gift",
-        "promo",
         "urgency",
+        "promo",
         "education"
       ],
       "examples": [
+        {
+          "subject": "POZOR! 2 darčeky na vás čakajú v košíku!",
+          "headline": "2 letné kuchárky už na vás čakajú v košíku!",
+          "previewText": "Nakúpte nad 120 € a získajte Letné kuchárky zadarmo!",
+          "cta": "VYZDVIHNÚŤ SI SVOJE KUCHÁRKY"
+        },
         {
           "subject": "Prečo niektoré ženy nestarnú tak rýchlo? Odpoveď vás prekvapí.",
           "headline": "Webinár zdarma: Krásna a zdravá pleť v každom veku",
@@ -181,19 +187,13 @@
           "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
           "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
           "cta": "TOTO MUSÍM MAŤ!"
-        },
-        {
-          "subject": "Dva darčeky k nákupu zdarma pre vás.",
-          "headline": "Deň otcov je tu. Darčeky máme pre oteckov, ale aj pre vás.",
-          "previewText": "Oslávte Deň otcov s nami a získajte krásne darčeky navyše k svojej objednávke!",
-          "cta": "CHCEM 2 DARČEKY K NÁKUPU"
         }
       ]
     }
   },
   "byCampaignType": {
     "urgency": {
-      "count": 52,
+      "count": 56,
       "avgSubjectLength": 39,
       "avgHeadlineLength": 46,
       "topCtas": [
@@ -202,17 +202,41 @@
         "KÚPIŤ",
         "TO MUSÍM MÍT",
         "CHCI BÝT U TOHO",
-        "CHCI SE PŘIDAT DO SKUPINY"
+        "Klikněte"
       ],
       "topOffers": [
         "percent-off",
         "launch",
         "urgency",
         "promo",
-        "education",
-        "gift"
+        "gift",
+        "education"
       ],
       "examples": [
+        {
+          "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
+          "headline": "VIP dárek čeká právě na vás v košíku!",
+          "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
+          "cta": "CHCI SVŮJ DÁREK ZDARMA"
+        },
+        {
+          "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
+          "headline": "VIP dárek čeká právě na vás v košíku!",
+          "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
+          "cta": "CHCI SVŮJ DÁREK ZDARMA"
+        },
+        {
+          "subject": "POZOR: V košíku na vás čekají 2 DÁRKY!",
+          "headline": "2 Letní kuchařky už na vás čekají v košíku!",
+          "previewText": "Nakupte nad 3 000 Kč a získejte 2 Letní kuchařky zdarma!",
+          "cta": "VYZVEDNOUT SI SVÉ KUCHAŘKY"
+        },
+        {
+          "subject": "POZOR! 2 darčeky na vás čakajú v košíku!",
+          "headline": "2 letné kuchárky už na vás čakajú v košíku!",
+          "previewText": "Nakúpte nad 120 € a získajte Letné kuchárky zadarmo!",
+          "cta": "VYZDVIHNÚŤ SI SVOJE KUCHÁRKY"
+        },
         {
           "subject": "Naozaj chcete prísť o 20 % zľavu?",
           "headline": "Letný výpredaj končí dnes o polnoci!",
@@ -224,37 +248,13 @@
           "headline": "Letní výprodej končí dnes o půlnoci!",
           "previewText": "Dnes o půlnoci končí Letní výprodej!",
           "cta": "NAKOUPIT SE SLEVOU"
-        },
-        {
-          "subject": "Máme pro vás 3 000 Kč. Využijete je?",
-          "headline": "Nakupte teď. Zaplaťte později.",
-          "previewText": "Nakupte své oblíbené produkty hned. Zaplatit můžete později!",
-          "cta": "NAKOUPIT TEĎ, ZAPLATIT POZDĚJI"
-        },
-        {
-          "subject": "Sprchové gely a tělové soli se slevou až 20 %",
-          "headline": "Nakupte dřív, než zmizí. Poslední kusy skladem!",
-          "previewText": "Poslední kusy skladem!",
-          "cta": "ZÍSKAT POSLEDNÍ KUSY"
-        },
-        {
-          "subject": "Letný výpredaj je tu! Až -20 %",
-          "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
-          "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
-          "cta": "NAKÚPIŤ SO ZĽAVOU AŽ 20 %"
-        },
-        {
-          "subject": "Letní výprodej je tady! Až -20 %",
-          "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
-          "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
-          "cta": "NAKOUPIT SE SLEVOU AŽ 20 %"
         }
       ]
     },
     "education": {
-      "count": 56,
-      "avgSubjectLength": 48,
-      "avgHeadlineLength": 59,
+      "count": 55,
+      "avgSubjectLength": 49,
+      "avgHeadlineLength": 58,
       "topCtas": [
         "KOUPIT",
         "Připojte se na webinář nyní",
@@ -272,6 +272,12 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
+          "headline": "Webinář - Krásná a zdravá pleť v každém věku",
+          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+          "cta": "Připojte se na webinář nyní"
+        },
         {
           "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
           "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
@@ -301,17 +307,11 @@
           "headline": "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
           "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
           "cta": "Připojte se na webinář nyní"
-        },
-        {
-          "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
-          "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
-          "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
-          "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT"
         }
       ]
     },
     "promo": {
-      "count": 28,
+      "count": 26,
       "avgSubjectLength": 43,
       "avgHeadlineLength": 50,
       "topCtas": [
@@ -397,8 +397,8 @@
       ]
     },
     "launch": {
-      "count": 12,
-      "avgSubjectLength": 41,
+      "count": 11,
+      "avgSubjectLength": 42,
       "avgHeadlineLength": 42,
       "topCtas": [
         "KOUPIT",
@@ -456,6 +456,46 @@
     }
   },
   "examples": [
+    {
+      "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
+      "headline": "VIP dárek čeká právě na vás v košíku!",
+      "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
+      "cta": "CHCI SVŮJ DÁREK ZDARMA",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
+      "headline": "VIP dárek čeká právě na vás v košíku!",
+      "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
+      "cta": "CHCI SVŮJ DÁREK ZDARMA",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
+      "headline": "Webinář - Krásná a zdravá pleť v každém věku",
+      "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+      "cta": "Připojte se na webinář nyní",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "POZOR: V košíku na vás čekají 2 DÁRKY!",
+      "headline": "2 Letní kuchařky už na vás čekají v košíku!",
+      "previewText": "Nakupte nad 3 000 Kč a získejte 2 Letní kuchařky zdarma!",
+      "cta": "VYZVEDNOUT SI SVÉ KUCHAŘKY",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "POZOR! 2 darčeky na vás čakajú v košíku!",
+      "headline": "2 letné kuchárky už na vás čakajú v košíku!",
+      "previewText": "Nakúpte nad 120 € a získajte Letné kuchárky zadarmo!",
+      "cta": "VYZDVIHNÚŤ SI SVOJE KUCHÁRKY",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
     {
       "subject": "Naozaj chcete prísť o 20 % zľavu?",
       "headline": "Letný výpredaj končí dnes o polnoci!",
@@ -559,46 +599,6 @@
       "cta": "SOUTĚŽIT NA INSTAGRAMU",
       "language": "cz",
       "campaignType": "urgency"
-    },
-    {
-      "subject": "Zítra ve 20:00 odhalíme něco, co jsme ještě nikdy neudělali!",
-      "headline": "Tajemství odhalíme už zítra ve 20:00. Budete u toho?",
-      "previewText": "Rezervujte si své místo ještě dnes. Zítra ve 20:00 to celé začíná.",
-      "cta": "TOHLE SI ROZHODNĚ NENECHÁM UJÍT",
-      "language": "cz",
-      "campaignType": "education"
-    },
-    {
-      "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
-      "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
-      "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
-      "cta": "TOTO SI URČITE NENECHÁM UJSŤ!",
-      "language": "sk",
-      "campaignType": "promo"
-    },
-    {
-      "subject": "LETNÍ TOUR 2026 začíná! Potkáme se letos i ve vašem městě?",
-      "headline": "Letní Tour 2026 startuje a vy můžete rozhodnout o její trase!",
-      "previewText": "Vyplňte krátký dotazník a rozhodněte, kam vyrazíme s diagnostikami zdarma v hodnotě přes 3 000 Kč.",
-      "cta": "CHCI HLASOVAT PRO SVÉ MĚSTO",
-      "language": "cz",
-      "campaignType": "promo"
-    },
-    {
-      "subject": "☀️ Letní favorité našich zákazníků! ☀️",
-      "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
-      "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
-      "cta": "TO MUSÍM MÍT",
-      "language": "cz",
-      "campaignType": "promo"
-    },
-    {
-      "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
-      "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
-      "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
-      "cta": "TOTO MUSÍM MAŤ!",
-      "language": "sk",
-      "campaignType": "promo"
     }
   ]
 }
