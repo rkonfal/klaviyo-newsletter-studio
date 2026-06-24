@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-23T08:03:54.752Z",
+  "generatedAt": "2026-06-24T07:59:03.437Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 114,
-    "sk": 36
+    "cz": 112,
+    "sk": 38
   },
   "campaignTypeBreakdown": {
     "urgency": 56,
-    "education": 55,
+    "education": 56,
     "promo": 26,
     "launch": 11,
-    "event": 2
+    "event": 1
   },
   "tone": {
     "voice": [
@@ -73,7 +73,7 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 114,
+      "count": 112,
       "avgSubjectLength": 44,
       "avgHeadlineLength": 52,
       "topCtas": [
@@ -94,10 +94,16 @@
       ],
       "examples": [
         {
-          "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
-          "headline": "VIP dárek čeká právě na vás v košíku!",
-          "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
-          "cta": "CHCI SVŮJ DÁREK ZDARMA"
+          "subject": "Akce, které rozhodně stojí za pozornost!",
+          "headline": "Zákazníci je milují. A právě teď jsou ještě výhodnější.",
+          "previewText": "Akce končí! Využijte balíčky s dárkem až v hodnotě 685 Kč",
+          "cta": "CHCI SI VYBRAT BALÍČEK S DÁRKEM"
+        },
+        {
+          "subject": "Proč některé ženy vypadají o 10 let mladší?",
+          "headline": "Tajemství mladistvé pleti není v genech.",
+          "previewText": "Podívejte se, co překvapilo stovky žen.",
+          "cta": "PUSTIT SI ZÁZNÁM"
         },
         {
           "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
@@ -122,36 +128,48 @@
           "headline": "Letný výpredaj končí dnes o polnoci!",
           "previewText": "Dnes o polnoci končí Letný výpredaj!",
           "cta": "NAKÚPIŤ SO ZĽAVOU"
-        },
-        {
-          "subject": "Opravdu chcete přijít o 20 % slevu?",
-          "headline": "Letní výprodej končí dnes o půlnoci!",
-          "previewText": "Dnes o půlnoci končí Letní výprodej!",
-          "cta": "NAKOUPIT SE SLEVOU"
         }
       ]
     },
     "sk": {
-      "count": 36,
+      "count": 38,
       "avgSubjectLength": 42,
       "avgHeadlineLength": 48,
       "topCtas": [
         "KÚPIŤ",
+        "Kliknite",
+        "PUSTIŤ SI ZÁZNAM",
         "CHCEM BYŤ PRI TOM!",
         "NAKÚPIŤ VÝHODNE",
-        "PUSTIŤ SI ZÁZNAM",
-        "VYBRAŤ SI DARČEK",
-        "NAKÚPIŤ MASKY SO ZĽAVOU"
+        "VYBRAŤ SI DARČEK"
       ],
       "topOffers": [
         "percent-off",
         "launch",
         "gift",
-        "urgency",
         "promo",
+        "urgency",
         "education"
       ],
       "examples": [
+        {
+          "subject": "Akce, které rozhodně stojí za pozornost!",
+          "headline": "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
+          "previewText": "Akcia končí! Využite balíčky s darčekom až v hodnote 27,60 €.",
+          "cta": "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM"
+        },
+        {
+          "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
+          "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
+          "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
+          "cta": "PUSTIŤ SI ZÁZNAM"
+        },
+        {
+          "subject": "🤫 Tajná akcia pre našich VIP zákazníkov!",
+          "headline": "VIP darček čaká práve na vás v košíku!",
+          "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
+          "cta": "CHCEM SVOJ DARČEK ZADARMO"
+        },
         {
           "subject": "POZOR! 2 darčeky na vás čakajú v košíku!",
           "headline": "2 letné kuchárky už na vás čakajú v košíku!",
@@ -169,24 +187,6 @@
           "headline": "Veľké odhalenie je tu. Pozrite si ho, kým môžete.",
           "previewText": "Záznam z včerajšieho webinára je online. Ale len do nedele!",
           "cta": "PUSTIŤ SI ZÁZNAM"
-        },
-        {
-          "subject": "Letný výpredaj je tu! Až -20 %",
-          "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
-          "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
-          "cta": "NAKÚPIŤ SO ZĽAVOU AŽ 20 %"
-        },
-        {
-          "subject": "Zajtra o 20:00 odhalíme niečo, čo sme ešte nikdy neurobili!",
-          "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
-          "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
-          "cta": "TOTO SI URČITE NENECHÁM UJSŤ!"
-        },
-        {
-          "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
-          "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
-          "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
-          "cta": "TOTO MUSÍM MAŤ!"
         }
       ]
     }
@@ -198,10 +198,10 @@
       "avgHeadlineLength": 46,
       "topCtas": [
         "KOUPIT",
-        "PUSTIT SI ZÁZNAM",
         "KÚPIŤ",
-        "TO MUSÍM MÍT",
+        "PUSTIT SI ZÁZNAM",
         "CHCI BÝT U TOHO",
+        "Kliknite",
         "Klikněte"
       ],
       "topOffers": [
@@ -214,16 +214,28 @@
       ],
       "examples": [
         {
-          "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
-          "headline": "VIP dárek čeká právě na vás v košíku!",
-          "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
-          "cta": "CHCI SVŮJ DÁREK ZDARMA"
+          "subject": "Akce, které rozhodně stojí za pozornost!",
+          "headline": "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
+          "previewText": "Akcia končí! Využite balíčky s darčekom až v hodnote 27,60 €.",
+          "cta": "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM"
+        },
+        {
+          "subject": "Akce, které rozhodně stojí za pozornost!",
+          "headline": "Zákazníci je milují. A právě teď jsou ještě výhodnější.",
+          "previewText": "Akce končí! Využijte balíčky s dárkem až v hodnotě 685 Kč",
+          "cta": "CHCI SI VYBRAT BALÍČEK S DÁRKEM"
         },
         {
           "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
           "headline": "VIP dárek čeká právě na vás v košíku!",
           "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
           "cta": "CHCI SVŮJ DÁREK ZDARMA"
+        },
+        {
+          "subject": "🤫 Tajná akcia pre našich VIP zákazníkov!",
+          "headline": "VIP darček čaká práve na vás v košíku!",
+          "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
+          "cta": "CHCEM SVOJ DARČEK ZADARMO"
         },
         {
           "subject": "POZOR: V košíku na vás čekají 2 DÁRKY!",
@@ -236,23 +248,11 @@
           "headline": "2 letné kuchárky už na vás čakajú v košíku!",
           "previewText": "Nakúpte nad 120 € a získajte Letné kuchárky zadarmo!",
           "cta": "VYZDVIHNÚŤ SI SVOJE KUCHÁRKY"
-        },
-        {
-          "subject": "Naozaj chcete prísť o 20 % zľavu?",
-          "headline": "Letný výpredaj končí dnes o polnoci!",
-          "previewText": "Dnes o polnoci končí Letný výpredaj!",
-          "cta": "NAKÚPIŤ SO ZĽAVOU"
-        },
-        {
-          "subject": "Opravdu chcete přijít o 20 % slevu?",
-          "headline": "Letní výprodej končí dnes o půlnoci!",
-          "previewText": "Dnes o půlnoci končí Letní výprodej!",
-          "cta": "NAKOUPIT SE SLEVOU"
         }
       ]
     },
     "education": {
-      "count": 55,
+      "count": 56,
       "avgSubjectLength": 49,
       "avgHeadlineLength": 58,
       "topCtas": [
@@ -272,6 +272,18 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "Proč některé ženy vypadají o 10 let mladší?",
+          "headline": "Tajemství mladistvé pleti není v genech.",
+          "previewText": "Podívejte se, co překvapilo stovky žen.",
+          "cta": "PUSTIT SI ZÁZNÁM"
+        },
+        {
+          "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
+          "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
+          "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
+          "cta": "PUSTIŤ SI ZÁZNAM"
+        },
         {
           "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
           "headline": "Webinář - Krásná a zdravá pleť v každém věku",
@@ -295,18 +307,6 @@
           "headline": "Veľké odhalenie je tu. Pozrite si ho, kým môžete.",
           "previewText": "Záznam z včerajšieho webinára je online. Ale len do nedele!",
           "cta": "PUSTIŤ SI ZÁZNAM"
-        },
-        {
-          "subject": "Překvapení je odhaleno. Podívejte se, než záznam zmizí.",
-          "headline": "Velké odhalení je tady. Podívejte se, dokud můžete.",
-          "previewText": "Záznam ze včerejšího webináře je online. Ale jen do neděle!",
-          "cta": "PUSTIT SI ZÁZNAM"
-        },
-        {
-          "subject": "⏰ Webinář s překvapením - ZAČÍNÁME ZA 30 MINUT!",
-          "headline": "Už za 30 minut začínáme náš webinář s překvapením v 20:00 hodin. První účastníci se už připojují.",
-          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-          "cta": "Připojte se na webinář nyní"
         }
       ]
     },
@@ -369,12 +369,11 @@
       ]
     },
     "event": {
-      "count": 2,
-      "avgSubjectLength": 44,
-      "avgHeadlineLength": 45,
+      "count": 1,
+      "avgSubjectLength": 54,
+      "avgHeadlineLength": 43,
       "topCtas": [
-        "Zjistit víc",
-        "CHCEM OBJEDNAŤ KOLAGÉN"
+        "Zjistit víc"
       ],
       "topOffers": [
         "percent-off",
@@ -387,12 +386,6 @@
           "headline": "Dopřejte si den, který bude patřit jen vám!",
           "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
           "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Nezmeškajte darček na Deň matiek!",
-          "headline": "Deň matiek sa blíži. Darujte viac než kvetinu.",
-          "previewText": "Den matiek je už 10. 5. Čas na darček sa kráti!",
-          "cta": "CHCEM OBJEDNAŤ KOLAGÉN"
         }
       ]
     },
@@ -457,6 +450,38 @@
   },
   "examples": [
     {
+      "subject": "Akce, které rozhodně stojí za pozornost!",
+      "headline": "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
+      "previewText": "Akcia končí! Využite balíčky s darčekom až v hodnote 27,60 €.",
+      "cta": "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Akce, které rozhodně stojí za pozornost!",
+      "headline": "Zákazníci je milují. A právě teď jsou ještě výhodnější.",
+      "previewText": "Akce končí! Využijte balíčky s dárkem až v hodnotě 685 Kč",
+      "cta": "CHCI SI VYBRAT BALÍČEK S DÁRKEM",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Proč některé ženy vypadají o 10 let mladší?",
+      "headline": "Tajemství mladistvé pleti není v genech.",
+      "previewText": "Podívejte se, co překvapilo stovky žen.",
+      "cta": "PUSTIT SI ZÁZNÁM",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
+      "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
+      "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
+      "cta": "PUSTIŤ SI ZÁZNAM",
+      "language": "sk",
+      "campaignType": "education"
+    },
+    {
       "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
       "headline": "VIP dárek čeká právě na vás v košíku!",
       "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
@@ -465,11 +490,11 @@
       "campaignType": "urgency"
     },
     {
-      "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
-      "headline": "VIP dárek čeká právě na vás v košíku!",
-      "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
-      "cta": "CHCI SVŮJ DÁREK ZDARMA",
-      "language": "cz",
+      "subject": "🤫 Tajná akcia pre našich VIP zákazníkov!",
+      "headline": "VIP darček čaká práve na vás v košíku!",
+      "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
+      "cta": "CHCEM SVOJ DARČEK ZADARMO",
+      "language": "sk",
       "campaignType": "urgency"
     },
     {
@@ -567,38 +592,6 @@
       "cta": "Připojte se na webinář nyní",
       "language": "cz",
       "campaignType": "education"
-    },
-    {
-      "subject": "Letný výpredaj je tu! Až -20 %",
-      "headline": "Letná akcia je tu! Ušetrite až 20 % na svojich obľúbených produktoch!",
-      "previewText": "Až 20 % zľava na letné bestsellery. Nakúpte výhodnejšie skôr, než sa akcia skončí.",
-      "cta": "NAKÚPIŤ SO ZĽAVOU AŽ 20 %",
-      "language": "sk",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Letní výprodej je tady! Až -20 %",
-      "headline": "Letní akce je tady! Ušetřete až 20 % na svých oblíbených produktech!",
-      "previewText": "Až 20 % sleva na letní bestsellery. Nakupte výhodněji dřív, než akce skončí.",
-      "cta": "NAKOUPIT SE SLEVOU AŽ 20 %",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Súťaž o MERCEDES medzi soľami začína!",
-      "headline": "Budete jednou z 3 žien, ktoré získajú Mercedes medzi soľami?",
-      "previewText": "Zapojte sa do súťaže a vyhrajte luxusnú starostlivosť z Mŕtveho mora. Hráme o 3 výhry!",
-      "cta": "SÚŤAŽIŤ NA INSTAGRAME",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Soutěž o MERCEDES mezi solemi začíná!",
-      "headline": "Budete jednou ze 3 žen, které získají Mercedes mezi solemi?",
-      "previewText": "Zapojte se do soutěže a vyhrajte luxusní péči z Mrtvého moře. Hrajeme o 3 výhry!",
-      "cta": "SOUTĚŽIT NA INSTAGRAMU",
-      "language": "cz",
-      "campaignType": "urgency"
     }
   ]
 }

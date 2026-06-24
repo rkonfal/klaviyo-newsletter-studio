@@ -1,16 +1,159 @@
 [
   {
-    "id": "01KVSN99JY8PMZWKY2EV3AWWYC",
-    "name": "SK Tajná akce pro naše VIP zákazníky",
-    "status": "Draft",
+    "id": "01KVTJ80KJCY9VB1T47RBFG5TR",
+    "name": "SK - Akce, které stojí za pozornost",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
+    "subject": "Akce, které rozhodně stojí za pozornost!",
+    "previewText": "Akcia končí! Využite balíčky s darčekom až v hodnote 27,60 €.",
+    "sentAt": "2026-06-23T17:05:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "X7HwLW",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
+      "body": [
+        "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
+        "🎁 Darček v hodnote až 27,60 € ⏰ Iba do 30. 6.",
+        "Posledné dni akcie sú tu! Vyberte si balíček na pleť, vlasy alebo do domácnosti a potešte sa darčekom až v hodnote 27,60 €. Ponuka platí už len niekoľko dní.",
+        "Jedna sada. Čistá bielizeň, žiarivý riad a domácnosť bez zbytočnej chémie"
+      ],
+      "cta": "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM",
+      "ctas": [
+        "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM",
+        "KÚPIŤ",
+        "Kliknite"
+      ],
+      "text": "96\nZákazníci ich milujú. A práve teraz sú ešte výhodnejšie.\n🎁 Darček v hodnote až 27,60 € ⏰ Iba do 30. 6.\nPosledné dni akcie sú tu! Vyberte si balíček na pleť, vlasy alebo do domácnosti a potešte sa darčekom až v hodnote 27,60 €. Ponuka platí už len niekoľko dní.\nCHCEM SI VYBRAŤ BALÍČEK S DARČEKOM\nJedna sada. Čistá bielizeň, žiarivý riad a domácnosť bez zbytočnej chémie\n✅ Menej chémie tam, kde žije vaša rodina ✅ Ušetríte až stovky korún\n✅ Menej produktov, viac priestoru\n✅ Žiadne odmeriavanie, žiadny neporiadok\n🎁 Darček v hodnote 27,60 €\nKÚPIŤ\nMartina, 38 rokov: „Tento balíček mi ušetril veľa času aj peňazí. Kapsuly perfektne vyperú aj športové oblečenie, riad je krásne lesklý a utierka si poradí so všetkým – od prachu až po zaschnutú špinu. Páči sa mi, že nemusím nič odmeriavať a doma nemám plnú skrinku rôznych prípravkov. Za mňa skvelá kombinácia účinnosti, jednoduchosti a šetrnosti k domácnosti.“\nVlasy ako po návšteve salónu – hladké, lesklé a plné života každý deň.\n✅ Efekt bio-laminácie ako zo salónu ✅ Okamžitý lesk bez zaťaženia\n✅ Menej lámania, viac krásnych dĺžok\n✅ Skrotí nepoddajné a krepovité vlasy\n🎁 Darček v hodnote 21,60 €\nKÚPIŤ\nPetra, 39 rokov: „Moje vlasy boli dlhodobo mdlé, bez lesku a rýchlo sa mastili. Už po niekoľkých použitiach sú ľahké, krásne hladké a oveľa lepšie sa upravujú. Najviac ma nadchol fluid s arganovým olejom – končeky vyzerajú zdravo a vlasy sa nádherne lesknú. Za mňa jedna z najlepších vlasových súprav, ktoré som vyskúšala.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Akcia končí už o niekoľko dní. Ak ste o niektorom z balíčkov uvažovali, práve teraz je ten najlepší čas urobiť si radosť. Kliknite , vyberte si balíček, ktorý vám spraví radosť, a získajte darček až v hodnote 685 Kč.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVSXQ0C362BCHT1P6G3Q4ZXW",
+    "name": "CZ - Akce, které stojí za pozornost",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Akce, které rozhodně stojí za pozornost!",
+    "previewText": "Akce končí! Využijte balíčky s dárkem až v hodnotě 685 Kč",
+    "sentAt": "2026-06-23T17:05:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "SVKZxe",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Zákazníci je milují. A právě teď jsou ještě výhodnější.",
+      "body": [
+        "Zákazníci je milují. A právě teď jsou ještě výhodnější.",
+        "🎁 Dárek v hodnotě až 685 Kč  ⏰ Pouze do 30. 6.",
+        "Poslední dny akce jsou tady! Vyberte si balíček na pleť, vlasy nebo do domácnosti a potěšte se dárkem až v hodnotě 685 Kč . Nabídka platí už jen několik dnů.",
+        "Jedna sada. Čisté prádlo, zářivé nádobí a domácnost bez zbytečné chemie."
+      ],
+      "cta": "CHCI SI VYBRAT BALÍČEK S DÁRKEM",
+      "ctas": [
+        "CHCI SI VYBRAT BALÍČEK S DÁRKEM",
+        "KOUPIT",
+        "Klikněte"
+      ],
+      "text": "96\nZákazníci je milují. A právě teď jsou ještě výhodnější.\n🎁 Dárek v hodnotě až 685 Kč  ⏰ Pouze do 30. 6.\nPoslední dny akce jsou tady! Vyberte si balíček na pleť, vlasy nebo do domácnosti a potěšte se dárkem až v hodnotě 685 Kč . Nabídka platí už jen několik dnů.\nCHCI SI VYBRAT BALÍČEK S DÁRKEM\nJedna sada. Čisté prádlo, zářivé nádobí a domácnost bez zbytečné chemie.\n✅ Méně chemie tam, kde žije vaše rodina ✅ Ušetříte až stovky korun\n✅ Méně produktů, více prostoru\n✅ Žádné odměřování, žádný nepořádek\n🎁 Dárek v hodnotě 685 Kč\n1 054 Kč 685 Kč ( VIP SLEVA )\nKOUPIT\nMartina, 38 let ​:  „Tenhle balíček mi ušetřil spoustu času i peněz. Kapsle perfektně vyperou i sportovní oblečení, nádobí je krásně lesklé a utěrka zvládne vše od prachu až po zaschlou špínu. Líbí se mi, že nemusím nic odměřovat a doma nemám plnou skříňku různých přípravků. Za mě skvělá kombinace účinnosti, jednoduchosti a šetrnosti k domácnosti.“\nVlasy jako po návštěvě salonu – hladké, lesklé a plné života každý den\n✅ Efekt bio-laminace jako ze salonu ✅ Okamžitý lesk bez zatížení\n✅ Méně lámání, více krásných délek\n✅ Zkrotí nepoddajné a krepaté vlasy\n🎁 Dárek v hodnotě 536 Kč\n894 Kč 581 Kč ( VIP SLEVA )\nKOUPIT\nPetra, 39 let: „Moje vlasy byly dlouhodobě mdlé, bez lesku a rychle se mastily. Už po několika použitích jsou lehké, krásně hladké a mnohem lépe se upravují. Nejvíc mě nadchl fluid s arganovým olejem – konečky vypadají zdravě a vlasy se nádherně lesknou. Za mě jedna z nejlepších vlasových sad, které jsem vyzkoušela.“\nZachraňte poškozené vlasy. Vraťte jim sílu, lesk a život.\n✅ Ideální po barvení, žehlení i fénování ✅ Snadnější rozčesávání bez tahání\n✅ Vlasy vypadají zdravěji už po několika použitích\n✅ Intenzivní regenerace pro poškozené vlas 🎁 Dárek v hodnotě 414 Kč\n708 Kč 460 Kč ( VIP SLEVA )\nKOUPIT\nAnežka, 48 let: ​ „Po letech barvení a každodenního žehlení byly moje vlasy suché, lámavé a bez života. Už po několika týdnech používání této sady jsou mnohem hebčí, lesklejší a konečně vypadají zdravě. Konečky se méně třepí a vlasy se nádherně rozčesávají. Za mě jeden z nejlepších vlasových balíčků, které jsem kdy vyzkoušela.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Akce končí už za několik dnů. Pokud jste o některém z balíčků uvažovali, právě teď je ten nejlepší čas udělat si radost. Klikněte , vyberte si balíček, který vám udělá radost, a získejte dárek až v hodnotě 685 Kč.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVSV1RATAKYFTCJ3TSMNC29S",
+    "name": "CZ Webinář Krásná a zdravá pleť v každém věku",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "Proč některé ženy vypadají o 10 let mladší?",
+    "previewText": "Podívejte se, co překvapilo stovky žen.",
+    "sentAt": "2026-06-23T12:05:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Uhm7sf",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Tajemství mladistvé pleti není v genech.",
+      "body": [
+        "Tajemství mladistvé pleti není v genech.",
+        "Proč některé ženy vypadají mladší než jejich vrstevnice, i když nepoužívají drahou kosmetiku? Odpověď jsme odhalili během našeho webináře a nyní si ji můžete poslechnout i vy ze záznamu .",
+        "Webinářem vás provázely Renata Králová a Věra Hauerová , které se dlouhodobě věnují péči o pleť a ženské kráse. Během večera sdílely nejen své zkušenosti, ale také praktické rady, které může do svého života zařadit každá žena bez ohledu na věk. ​ Na webináři jsme se dozvěděly:",
+        "Proč není stárnutí pleti jen otázkou genetiky a věku"
+      ],
+      "cta": "PUSTIT SI ZÁZNÁM",
+      "ctas": [
+        "PUSTIT SI ZÁZNÁM",
+        "KOUPIT"
+      ],
+      "text": "96\nTajemství mladistvé pleti není v genech.\nProč některé ženy vypadají mladší než jejich vrstevnice, i když nepoužívají drahou kosmetiku? Odpověď jsme odhalili během našeho webináře a nyní si ji můžete poslechnout i vy ze záznamu .\nPUSTIT SI ZÁZNÁM\nWebinářem vás provázely Renata Králová a Věra Hauerová , které se dlouhodobě věnují péči o pleť a ženské kráse. Během večera sdílely nejen své zkušenosti, ale také praktické rady, které může do svého života zařadit každá žena bez ohledu na věk. ​ Na webináři jsme se dozvěděly:\nProč není stárnutí pleti jen otázkou genetiky a věku\nJaké každodenní návyky mohou podpořit zdravý a mladistvý vzhled\nKteré chyby v péči o pleť ženy dělají nejčastěji a jak se jim vyhnout\nProč je důležité pečovat o pleť nejen zvenku, ale i zevnitř\nJak podpořit pružnost, regeneraci a přirozenou vitalitu pokožky\nČisticí gel na obličej pro pleť se sklonem k akné\nČisticí gel je ideální pro pleť, kterou trápí nejen pupínky a rozšířené póry, ale také první známky stárnutí. Hloubkově čistí, pomáhá regulovat tvorbu mazu, podporuje regeneraci pokožky a zanechává pleť svěží.\n✅ Hloubkově čistí póry a odstraňuje nečistoty bez zbytečného vysušování ✅ Pomáhá redukovat pupínky, černé tečky a projevy akné ✅ Pleť zůstává svěží, čistá a bez nepříjemného pnutí ✅ 4 druhy peptidů pro viditelně hladší a pevnější pleť\n558 Kč 363 Kč ( VIP Sleva )\nKOUPIT\nLeontýna 35 let: \"Po několika dnech používání je moje pleť viditelně čistší a méně se mastí. Gel krásně pění, nevysušuje a pokožka je po umytí svěží a příjemná na dotek a pupínky se rychleji hojí. Přesně to, co problematická pleť potřebuje.\"\nKrém pro hloubkovou obnovu pleti Ženšen a orchidej\nDopřejte své pleti péči inspirovanou tisíciletou moudrostí Orientu. Krém Ženšen a orchidej pomáhá obnovit pevnost, pružnost a zář pleti, vyhlazuje vrásky a dodává pokožce energii, kterou s přibývajícími roky ztrácí.\n✅ Vyhlazuje jemné i hlubší vrásky\n✅ Obnovuje pevnost a pružnost ochablé pokožky ✅ Zklidňuje citlivou pleť a redukuje zarudnutí ✅ Hloubkově hydratuje a vyživuje po celý den ✅ 3 aktivní formy ženšenu pro intenzivní regeneraci pleti\n916 Kč 595 Kč ( VIP Sleva )\nKOUPIT\nLenka 48 let:   „Moje pleť znovu ožila. Je hebčí, pružnější a vrásky kolem úst i očí jsou méně výrazné. Navíc miluji ten pocit výživy a komfortu, který vydrží celý den.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Krásná pleť není o dokonalosti, ale o správné péči. Inspirujte se naším webinářem a objevte tipy, které můžete zařadit už dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KVSWN084YNBS7XEHR3W4Q2F1",
+    "name": "SK Webinář Krásná a zdravá pleť v každém věku",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "education",
+    "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
+    "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
+    "sentAt": "2026-06-23T12:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Yg4TVV",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
+      "body": [
+        "Tajomstvo mladistvej pleti nespočíva v génoch.",
+        "Prečo niektoré ženy vyzerajú mladšie ako ich rovesníčky, aj keď nepoužívajú drahú kozmetiku? Odpoveď sme odhalili počas nášho webinára a teraz si ju môžete vypočuť aj vy zo záznamu.",
+        "Webinárom vás sprevádzali Renata Králová a Věra Hauerová, ktoré sa dlhodobo venujú starostlivosti o pleť a ženskej kráse. Počas večera sa podelili nielen o svoje skúsenosti, ale aj o praktické rady, ktoré môže do svojho života zaradiť každá žena bez ohľadu na vek. ​ Na webinári sme sa dozvedeli:",
+        "Prečo starnutie pleti nie je len otázkou genetiky a veku"
+      ],
+      "cta": "PUSTIŤ SI ZÁZNAM",
+      "ctas": [
+        "PUSTIŤ SI ZÁZNAM",
+        "KÚPIŤ"
+      ],
+      "text": "96\nTajomstvo mladistvej pleti nespočíva v génoch.\nPrečo niektoré ženy vyzerajú mladšie ako ich rovesníčky, aj keď nepoužívajú drahú kozmetiku? Odpoveď sme odhalili počas nášho webinára a teraz si ju môžete vypočuť aj vy zo záznamu.\nPUSTIŤ SI ZÁZNAM\nWebinárom vás sprevádzali Renata Králová a Věra Hauerová, ktoré sa dlhodobo venujú starostlivosti o pleť a ženskej kráse. Počas večera sa podelili nielen o svoje skúsenosti, ale aj o praktické rady, ktoré môže do svojho života zaradiť každá žena bez ohľadu na vek. ​ Na webinári sme sa dozvedeli:\nPrečo starnutie pleti nie je len otázkou genetiky a veku\nAké každodenné návyky môžu podporiť zdravý a mladistvý vzhľad\nKtoré chyby v starostlivosti o pleť ženy robia najčastejšie a ako sa im vyhnúť\nPrečo je dôležité starať sa o pleť nielen zvonku, ale aj zvnútra\nAko podporiť pružnosť, regeneráciu a prirodzenú vitalitu pokožky\nČistiaci gél na tvár pre pleť so sklonom k akné\nČistiaci gél je ideálny pre pleť, ktorú trápia nielen vyrážky a rozšírené póry, ale aj prvé známky starnutia. Hĺbkovo čistí, pomáha regulovať tvorbu kožného mazu, podporuje regeneráciu pokožky a zanecháva pleť sviežu.\n✅ Hĺbkovo čistí póry a odstraňuje nečistoty bez zbytočného vysušovania ✅ Pomáha redukovať vyrážky, čierne bodky a prejavy akné\n✅ Pleť zostáva svieža, čistá a bez nepríjemného pnutia\n✅ 4 druhy peptidov pre viditeľne hladšiu a pevnejšiu pleť\nKÚPIŤ\nLeontýna, 35 rokov: „Po niekoľkých dňoch používania je moja pleť viditeľne čistejšia a menej sa mastí. Gél krásne pení, nevysušuje a pokožka je po umytí svieža a príjemná na dotyk. Vyrážky sa hojia rýchlejšie. Presne to, čo problematická pleť potrebuje.“\nKrém na hĺbkovú obnovu pleti Ženšen a orchidea\nDoprajte svojej pleti starostlivosť inšpirovanú tisícročnou múdrosťou Orientu. Krém Ženšen a orchidea pomáha obnoviť pevnosť, pružnosť a jas pleti, vyhladzuje vrásky a dodáva pokožke energiu, ktorú s pribúdajúcimi rokmi stráca.\n✅ Vyhladzuje jemné aj hlbšie vrásky ✅ Obnovuje pevnosť a pružnosť ochabnutej pokožky\n✅ Upokojuje citlivú pleť a redukuje začervenanie\n✅ Hĺbkovo hydratuje a vyživuje počas celého dňa\n✅ 3 aktívne formy ženšenu pre intenzívnu regeneráciu pleti\nKÚPIŤ\nLenka, 48 rokov: „Moja pleť doslova ožila. Je jemnejšia, pružnejšia a vrásky okolo úst aj očí sú menej výrazné. Navyše milujem ten pocit výživy a komfortu, ktorý vydrží celý deň.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Krásna pleť nie je o dokonalosti, ale o správnej starostlivosti. Inšpirujte sa naším webinárom a objavte tipy, ktoré môžete zaradiť do svojho života už dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KVQG9VKANEKXQS5KKD1XPBM8",
+    "name": "Tajná akce pro naše VIP zákazníky",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "urgency",
     "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
     "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
-    "sentAt": null,
+    "sentAt": "2026-06-23T09:00:00+00:00",
     "segments": [],
     "template": {
-      "id": "RKUVpg",
+      "id": "U8AGyu",
       "name": "2025-02-28 04:04 popup existující klient",
       "editorType": "SYSTEM_DRAGGABLE",
       "headline": "VIP dárek čeká právě na vás v košíku!",
@@ -36,32 +179,32 @@
     ]
   },
   {
-    "id": "01KVQG9VKANEKXQS5KKD1XPBM8",
-    "name": "Tajná akce pro naše VIP zákazníky",
-    "status": "Draft",
-    "language": "cz",
+    "id": "01KVSN99JY8PMZWKY2EV3AWWYC",
+    "name": "SK Tajná akce pro naše VIP zákazníky",
+    "status": "Sent",
+    "language": "sk",
     "campaignType": "urgency",
-    "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
-    "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
-    "sentAt": null,
+    "subject": "🤫 Tajná akcia pre našich VIP zákazníkov!",
+    "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
+    "sentAt": "2026-06-23T09:00:00+00:00",
     "segments": [],
     "template": {
-      "id": "U8AGyu",
+      "id": "RKUVpg",
       "name": "2025-02-28 04:04 popup existující klient",
       "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "VIP dárek čeká právě na vás v košíku!",
+      "headline": "VIP darček čaká práve na vás v košíku!",
       "body": [
-        "🎁 Exkluzivní nákupní taška  🚚 Doprava zdarma  ⏰ Platí pouze do 24. 6.",
-        "Protože patříte mezi naše VIP zákazníky , připravili jsme pro vás speciální odměnu. Získejte exkluzivní tašku zdarma. Stejnou, jakou nosí Renata Králová. A navíc od nás máte dopravu zdarma. Využijte tuto nabídku, než skončí.",
-        "Jak získat svůj VIP dárek?  Nakupte alespoň za 1 600 Kč - Vyberte si své oblíbené produkty a naplňte košík nákupem v minimální hodnotě 1 600 Kč.",
-        "Využijte dopravu zdarma - Jako bonus od nás získáte dopravu zdarma, takže za svou objednávku nezaplatíte ani korunu navíc."
+        "🎁 Exkluzívna nákupná taška 🚚 Doprava zdarma",
+        "Pretože patríte medzi našich VIP zákazníkov , pripravili sme pre vás špeciálnu odmenu. Získajte exkluzívnu tašku zdarma. Presne takú, akú nosí aj Renata Kráľová. A navyše od nás máte dopravu zdarma . Využite túto ponuku skôr, než sa skončí.",
+        "Nakúpte aspoň za 60 € - Vyberte si svoje obľúbené produkty a naplňte košík nákupom v minimálnej hodnote 60 €.",
+        "Darček nájdete priamo v košíku - Exkluzívna taška sa vám automaticky zobrazí v košíku po splnení podmienok akcie."
       ],
-      "cta": "CHCI SVŮJ DÁREK ZDARMA",
+      "cta": "CHCEM SVOJ DARČEK ZADARMO",
       "ctas": [
-        "CHCI SVŮJ DÁREK ZDARMA",
-        "Klikněte"
+        "CHCEM SVOJ DARČEK ZADARMO",
+        "Kliknite"
       ],
-      "text": "96\nVIP dárek čeká právě na vás v košíku!\n🎁 Exkluzivní nákupní taška  🚚 Doprava zdarma  ⏰ Platí pouze do 24. 6.\nProtože patříte mezi naše VIP zákazníky , připravili jsme pro vás speciální odměnu. Získejte exkluzivní tašku zdarma. Stejnou, jakou nosí Renata Králová. A navíc od nás máte dopravu zdarma. Využijte tuto nabídku, než skončí.\nCHCI SVŮJ DÁREK ZDARMA\nJak získat svůj VIP dárek?  Nakupte alespoň za 1 600 Kč - Vyberte si své oblíbené produkty a naplňte košík nákupem v minimální hodnotě 1 600 Kč.\nDárek najdete přímo v košík\nVyužijte dopravu zdarma - Jako bonus od nás získáte dopravu zdarma, takže za svou objednávku nezaplatíte ani korunu navíc.\nTěšte se na svůj balíček - Brzy vám dorazí nejen vaše oblíbené produkty, ale také exkluzivní taška, kterou si oblíbila i Renata Králová.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.:  Tato VIP akce skončí za pár hodin. Klikněte , nakupte nad 1 600 Kč a získejte svou exkluzivní tašku zdarma.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+      "text": "96\nVIP darček čaká práve na vás v košíku!\n🎁 Exkluzívna nákupná taška 🚚 Doprava zdarma\n⏰ Platí len do 24. 6.\nPretože patríte medzi našich VIP zákazníkov , pripravili sme pre vás špeciálnu odmenu. Získajte exkluzívnu tašku zdarma. Presne takú, akú nosí aj Renata Kráľová. A navyše od nás máte dopravu zdarma . Využite túto ponuku skôr, než sa skončí.\nCHCEM SVOJ DARČEK ZADARMO\nAko získať svoj VIP darček?\nNakúpte aspoň za 60 € - Vyberte si svoje obľúbené produkty a naplňte košík nákupom v minimálnej hodnote 60 €.\nDarček nájdete priamo v košíku - Exkluzívna taška sa vám automaticky zobrazí v košíku po splnení podmienok akcie.\nVyužite dopravu zdarma - Ako bonus od nás získate dopravu zdarma, takže za svoju objednávku nezaplatíte ani korunu navyše.\nTešte sa na svoj balíček - Čoskoro vám dorazia nielen vaše obľúbené produkty, ale aj exkluzívna taška, ktorú si obľúbila aj Renata Kráľová.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Táto VIP akcia končí už o pár hodín. Kliknite , nakúpte nad 60 € a získajte svoju exkluzívnu tašku zdarma.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "promo",
@@ -4968,144 +5111,6 @@
       "percent-off",
       "gift",
       "launch"
-    ]
-  },
-  {
-    "id": "01KQRXWKZ03ASCYXESSQSYBH4D",
-    "name": "CZ Den matek - kolagen",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Nezmeškejte dárek na Den matek!",
-    "previewText": "Den matek je už 10. 5. Čas na dárek se krátí!",
-    "sentAt": "2026-05-05T16:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UGAPph",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Den matek se blíží. Darujte víc než květinu.",
-      "body": [
-        "Den matek se blíží. Darujte víc než květinu.",
-        "Den matek je za rohem… darujte víc než jen pozornost. Darujte péči v podobě kolagenu.",
-        "Kolagen je tichý architekt naší krásy. S věkem ho ubývá a tělo to začne dávat najevo – unavenější pleť, jemné vrásky, citlivější klouby, lámavé nehty… Právě proto je tak důležité ho doplňovat vědomě a pravidelně.",
-        "Podpora kloubů, vazů i celkového pohybového komfortu"
-      ],
-      "cta": "CHCI OBJEDNAT KOLAGEN",
-      "ctas": [
-        "CHCI OBJEDNAT KOLAGEN"
-      ],
-      "text": "96\nDen matek se blíží. Darujte víc než květinu.\n❤️ Den matek – 10. 5.\nDen matek je za rohem… darujte víc než jen pozornost. Darujte péči v podobě kolagenu.\nCHCI OBJEDNAT KOLAGEN\nKolagen je tichý architekt naší krásy. S věkem ho ubývá a tělo to začne dávat najevo – unavenější pleť, jemné vrásky, citlivější klouby, lámavé nehty… Právě proto je tak důležité ho doplňovat vědomě a pravidelně.\nPodpora kloubů, vlasů i imunity\nPružnější pleť na pohled i na dotek\nPodpora kloubů, vazů i celkového pohybového komfortu\nLepší trávení a podporu metabolismu díky pektinu\nPevnější nehty a silnější, lesklejší vlasy\nPetra 52 let: „Upřímně… tenhle kolagen jsem si koupila původně jen ze zvědavosti. Ale po pár týdnech jsem si začala všímat, že moje pleť působí pevněji. Všimla jsem si, že i pohyb je pro mě příjemnější než dřív. Za mě? Nejhezčí dárek, který může žena dát sama sobě… nebo někomu, na kom jí opravdu záleží.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Den matek se blíží rychleji, než si myslíte… nečekejte na poslední chvíli. Vyberte dárek, který má skutečný význam, a objednejte ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQW47GDDD2YMK7KYQ9V8WPF8",
-    "name": "SK Den matek - kolagen",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "event",
-    "subject": "Nezmeškajte darček na Deň matiek!",
-    "previewText": "Den matiek je už 10. 5. Čas na darček sa kráti!",
-    "sentAt": "2026-05-05T16:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UewDLF",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Deň matiek sa blíži. Darujte viac než kvetinu.",
-      "body": [
-        "Deň matiek sa blíži. Darujte viac než kvetinu.",
-        "Deň matiek je za rohom… darujte viac než len pozornosť. Darujte starostlivosť v podobe kolagénu.",
-        "Kolagén je tichý architekt našej krásy. S vekom ho ubúda a telo to začne dávať najavo – unavenejšia pleť, jemné vrásky, citlivejšie kĺby, lámavé nechty… Práve preto je tak dôležité ho dopĺňať vedome a pravidelne.",
-        "Podpora kĺbov, väzov aj celkového pohybového komfortu"
-      ],
-      "cta": "CHCEM OBJEDNAŤ KOLAGÉN",
-      "ctas": [
-        "CHCEM OBJEDNAŤ KOLAGÉN"
-      ],
-      "text": "96\nDeň matiek sa blíži. Darujte viac než kvetinu.\n❤️ Deň matiek – 10. 5.\nDeň matiek je za rohom… darujte viac než len pozornosť. Darujte starostlivosť v podobe kolagénu.\nCHCEM OBJEDNAŤ KOLAGÉN\nKolagén je tichý architekt našej krásy. S vekom ho ubúda a telo to začne dávať najavo – unavenejšia pleť, jemné vrásky, citlivejšie kĺby, lámavé nechty… Práve preto je tak dôležité ho dopĺňať vedome a pravidelne.\nPodpora kĺbov, vlasov aj imunity\nPružnejšia pleť na pohľad aj na dotyk\nPodpora kĺbov, väzov aj celkového pohybového komfortu\nLepšie trávenie a podpora metabolizmu vďaka pektínu\nPevnejšie nechty a silnejšie, lesklejšie vlasy\nPetra 52 rokov: „Úprimne… tento kolagén som si kúpila pôvodne len zo zvedavosti. Ale po pár týždňoch som si začala všímať, že moja pleť pôsobí pevnejšie. Všimla som si, že aj pohyb je pre mňa príjemnejší než predtým. Za mňa? Najkrajší darček, ktorý si žena môže dať sama sebe… alebo niekomu, na kom jej naozaj záleží.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Deň matiek sa blíži rýchlejšie, než si myslíte… nečakajte na poslednú chvíľu. Vyberte darček, ktorý má skutočný význam, a objednajte ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQVSW6G2NPNEPZ5HS8PZ7N1P",
-    "name": "CZ - Sebeláska 1. lekce - záznam",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Tohle ženy slyší nerady. Včera jsme to otevřeli!",
-    "previewText": "Utekla vám první lekce nového kurzu Sebelásky? Tady je záznam!",
-    "sentAt": "2026-05-05T12:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "VPA3kd",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Sebeláska krok za krokem začíná tady.",
-      "body": [
-        "Víte, kolikrát se během dne dáte až na poslední místo … aniž byste si toho všimli? Včera jsme to v první lekci řekli nahlas. Pokud jste u toho nebyli, můžete si první lekci pustit teď. V klidu a po svém.",
-        "Celou lekcí nás provedla Andrea Svitáková. Klidně, lidsky a bez tlaku na dokonalost. Její přístup je jiný, než možná čekáte. Andrea vás nevede k velkým změnám. Naopak. Ukazuje vám, že stačí jedno jediné:  zastavit se, vnímat sebe a vybrat si jeden malý krok péče, který opravdu zvládnete.",
-        "Společně jsme se podívaly na to, kde se v každodennosti ztrácíme, proč dáváme ostatním víc než sobě. Zaznělo, že sebeláska není sobectví, ale základ, bez kterého dlouhodobě nemáme z čeho dávat.",
-        "Dlouhodobě fungujeme hlavně pro ostatní … a sebe odsouváme."
-      ],
-      "cta": "PUSTIT SI ZÁZNAM",
-      "ctas": [
-        "PUSTIT SI ZÁZNAM",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "CHCI NAKUPOVAT SE SLEVOU",
-        "TO MUSÍM MÍT",
-        "KOUPIT"
-      ],
-      "text": "96\nSebeláska krok za krokem začíná tady.\nVíte, kolikrát se během dne dáte až na poslední místo … aniž byste si toho všimli? Včera jsme to v první lekci řekli nahlas. Pokud jste u toho nebyli, můžete si první lekci pustit teď. V klidu a po svém.\nPUSTIT SI ZÁZNAM\nCelou lekcí nás provedla Andrea Svitáková. Klidně, lidsky a bez tlaku na dokonalost. Její přístup je jiný, než možná čekáte. Andrea vás nevede k velkým změnám. Naopak. Ukazuje vám, že stačí jedno jediné:  zastavit se, vnímat sebe a vybrat si jeden malý krok péče, který opravdu zvládnete.\nSpolečně jsme se podívaly na to, kde se v každodennosti ztrácíme, proč dáváme ostatním víc než sobě. Zaznělo, že sebeláska není sobectví, ale základ, bez kterého dlouhodobě nemáme z čeho dávat.\nCo v první lekci zaznělo:\nDlouhodobě fungujeme hlavně pro ostatní … a sebe odsouváme.\nSebeláska není sobectví, ale základní potřeba.\nČasto říkáme „ano“ , i když uvnitř cítíme „ne“.\nTělo volá o pozornost dřív, než začne bolet.\nPřipojte se do skupiny\nSoučástí kurzu je i naše Facebook skupina, kde vám budeme ukazovat další praktické kroky a malé změny do každodenního života. A hlavně můžete se tam kdykoliv zeptat na to, co vás zajímá.\nCHCI SE PŘIDAT DO SKUPINY\nChci VIP kartu se slevou 35%\nJeště nemáte svou VIP slevu na nákupy v Království tianDe? Vyplňte jednoduchý formulář a otevřete si dveře k výhodnějším nákupům, speciálním akcím a malým radostem, které potěší nejen vás, ale i vaši peněženku.\nCHCI NAKUPOVAT SE SLEVOU\nA teď něco, co vás možná potěší ještě víc…\nKurz právě začal a my máme obrovskou radost, kolik z vás se přidalo. Proto jsme si pro vás připravili malé poděkování.\n3 dárky pro vás:\nPříručka Sebeláska krok za krokem\nPříručka Sebeláska krok za krokem 2\nRůžová plážová taška\nJak dárky získat?\nStačí se přihlásit do svého zákaznického účtu\nVybrat si libovolné produkty za 3 000 Kč\nDárky se vám automaticky přidají do košíku.\nTO MUSÍM MÍT\nRevitalizační noční pleťová krémová maska\n✅ Hloubková hydratace\n✅ Ideální při únavě a stresu\n✅ Zklidnění i pro citlivou pleť\n596 Kč\n387 Kč ( VIP Sleva)\nKOUPIT\nTající kolagenová liftingová pleťová maska\n✅ Lifting a hydratace v jednom kroku\n✅ Rozjasnění unavené pleti\n✅ Okamžitý „wow efekt“\n114 Kč\n74 Kč ( VIP Sleva)\nKOUPIT\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S. Možná si říkáte, že začnete „až bude víc času“… jenže přesně takhle to odkládáme pořád. Pusťte si první lekci právě teď a udělejte ten jeden krok k sobě.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KQVZT694DFDTD724TQV5STG2",
-    "name": "CZ - Po objednávce - 1 email",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Dochází vám zásoby? Nenechte se zaskočit.",
-    "previewText": "Doplňte své oblíbené produkty dřív, než zmizí úplně!",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "TtgAXb",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Nenechte své oblíbené produkty dojít",
-      "body": [
-        "Dochází vám vaše oblíbené produkty? Nečekejte na chvíli, kdy budete bez nich.  Dopřejte si jistotu, že vaše každodenní péče bude vždy kompletní.  Stačí pár kliknutí a máte své oblíbence znovu doma.",
-        "✅ Komplexná starostlivosť o zuby aj ďasná",
-        "P.S.: Až to dojde, bude pozdě. Doplňte zásoby ještě dnes a buďte o krok napřed.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
-      ],
-      "cta": "DOPLNIT ZÁSOBY",
-      "ctas": [
-        "DOPLNIT ZÁSOBY",
-        "KÚPIŤ"
-      ],
-      "text": "96\nNenechte své oblíbené produkty dojít\nDochází vám vaše oblíbené produkty? Nečekejte na chvíli, kdy budete bez nich.  Dopřejte si jistotu, že vaše každodenní péče bude vždy kompletní.  Stačí pár kliknutí a máte své oblíbence znovu doma.\nDOPLNIT ZÁSOBY\nTohle vám může brzy chybět:\nZubní pasta ProDental\n✅ Komplexná starostlivosť o zuby aj ďasná\n✅ Upokojujúci účinok na citlivé ďasná\n✅ Prírodné zloženie bez fluoridu\n✅ Dlhodobo svieži dych\nKÚPIŤ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S.: Až to dojde, bude pozdě. Doplňte zásoby ještě dnes a buďte o krok napřed.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
     ]
   }
 ]
