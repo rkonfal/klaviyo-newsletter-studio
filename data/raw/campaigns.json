@@ -1,5 +1,67 @@
 [
   {
+    "id": "01KVWZDDKXBF1PXS4BN09BCP7W",
+    "name": "Lhenice - Zážitkový den - 1. email",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "event",
+    "subject": "Nenechte si ujít dárek za 3 100 Kč. Čeká právě na vás!",
+    "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+    "sentAt": "2026-06-24T17:05:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "UGgeF8",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Dopřejte si den, který bude patřit jen vám!",
+      "body": [
+        "Dopřejte si den, který bude patřit jen vám!",
+        "📌 KDY: 14. 7. 2026 od 15:00 do 18:00 📌 KDE:  Obecní Úřad Lhenice, 384 02 💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
+        "Zveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.",
+        "Objevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma."
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nDopřejte si den, který bude patřit jen vám!\n📌 KDY: 14. 7. 2026 od 15:00 do 18:00 📌 KDE:  Obecní Úřad Lhenice, 384 02 💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nZveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.\nObjevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma.\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.:  Zájem o Zážitkový den je velký a místa se rychle plní. Pokud si chcete dopřát péči v hodnotě 3 100 Kč zdarma, doporučujeme rezervovat si svůj termín co nejdříve.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVWZS203W3W1QYPQ768ZJZHD",
+    "name": "Jindřichův Hradec - Zážitkový den - 1. email (clone)",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "event",
+    "subject": "Dárek za 3 100 Kč na vás čeká. Využijete ho?",
+    "previewText": "Dopřejte si péči v hodnotě 3 100 Kč zdarma. Čeká Vás analýza zdraví, InBody, vyšetření pleti a vlasů i osobní konzultace.",
+    "sentAt": "2026-06-24T17:05:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "VBMyuh",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Dopřejte si den, který bude patřit jen vám!",
+      "body": [
+        "Dopřejte si den, který bude patřit jen vám!",
+        "📌 KDY: 16. 7. 2026 od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec, Hotel Concertino   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
+        "Zveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.",
+        "Objevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma."
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nDopřejte si den, který bude patřit jen vám!\n📌 KDY: 16. 7. 2026 od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec, Hotel Concertino   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nZveme vás na Zážitkový den v Království tianDe. Dopřejte si péči v celkové hodnotě 3 100 Kč zcela zdarma. Čeká vás analýza zdravotního stavu, InBody, diagnostika pleti a vlasů i osobní konzultace s odborníky.\nObjevte, co vám vaše tělo možná už delší dobu naznačuje. Během našeho Zážitkového dne získáte cenné informace o svém organismu, pleti i vlasech a odnesete si doporučení, která vám mohou pomoci cítit se lépe každý den. ​ ​ ​ Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky Možnost vyzkoušet produkty  🎁To vše v celkové hodnotě 3 100 Kč. Tentokrát zcela zdarma.\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.:  Zájem o Zážitkový den je velký a místa se rychle plní. Pokud si chcete dopřát péči v hodnotě 3 100 Kč zdarma, doporučujeme rezervovat si svůj termín co nejdříve.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
     "id": "01KVTJ80KJCY9VB1T47RBFG5TR",
     "name": "SK - Akce, které stojí za pozornost",
     "status": "Sent",
@@ -5041,75 +5103,6 @@
     "offers": [
       "urgency",
       "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQY9WNF7WBBQEGEA9Y9F6YRG",
-    "name": "CZ - Tělo jako kompas - 5. lekce - záznam",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Tohle je důvod, proč vám partner nerozumí!",
-    "previewText": "Pokud jste nestihli včerejší vysílání, záznam z 5. lekce už na vás čeká.",
-    "sentAt": "2026-05-06T12:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "XAzXTw",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Včerejší lekce: Vztahy, rozdílnost a cesta zpátky k sobě",
-      "body": [
-        "Včerejší lekce: Vztahy, rozdílnost a cesta zpátky k sobě",
-        "Včerejší lekce otevřela téma, které zasáhlo desítky žen. Společně jsme řešili proč se ve vztazích vyčerpáváme, proč pořád dokola narážíme na stejné konflikty a jak se konečně vrátit zpátky k sobě.",
-        "Hostem včerejší lekce byla také Lucie Hašková , žena, která posledních deset let pomáhá ženám měnit vztahy. Neučí vztahy jako teorii z knih, ale jako něco, co sama hluboce prožila a roky ověřovala v praxi.",
-        "Otevřeně mluvila o tom, proč ve vztazích ztrácíme tolik síly, jak nás vyčerpává nepochopení, kontrola nebo staré příběhy, které si neseme v sobě. A zároveň ukázala, že rozdílnost mezi mužem a ženou nemusí být důvodem k boji."
-      ],
-      "cta": "PUSTIT SI ZÁZNAM",
-      "ctas": [
-        "PUSTIT SI ZÁZNAM",
-        "CHCI VYZKOUŠET",
-        "CHCI PŘÍRUČKY ZDARMA"
-      ],
-      "text": "96\nVčerejší lekce: Vztahy, rozdílnost a cesta zpátky k sobě\nVčerejší lekce otevřela téma, které zasáhlo desítky žen. Společně jsme řešili proč se ve vztazích vyčerpáváme, proč pořád dokola narážíme na stejné konflikty a jak se konečně vrátit zpátky k sobě.\nPUSTIT SI ZÁZNAM\nHostem včerejší lekce byla také Lucie Hašková , žena, která posledních deset let pomáhá ženám měnit vztahy. Neučí vztahy jako teorii z knih, ale jako něco, co sama hluboce prožila a roky ověřovala v praxi.\nOtevřeně mluvila o tom, proč ve vztazích ztrácíme tolik síly, jak nás vyčerpává nepochopení, kontrola nebo staré příběhy, které si neseme v sobě. A zároveň ukázala, že rozdílnost mezi mužem a ženou nemusí být důvodem k boji.\nCo jsme zjistili:\nProč se ve vztazích opakují stejné konflikty\nJak rozdílné energie ovlivňují komunikaci i blízkost\nKde ve vztazích nejčastěji ztrácíme sílu\nCvičení „To je mobil. To je slon.“ pro vnímání pravdy v těle\nPochopení, že rozdílnost nemusí rozdělovat\nSoutěžili jsme o Volupta+ pro ženy\nBěhem včerejší lekce jsme soutěžili také o Volupta+ pro ženy. Intimní gel, který spojuje partnery skrze větší blízkost a příjemnější intimní prožitek.\nCHCI VYZKOUŠET\nSimona 48 let: „Po náročném období jsem cítila, že se mezi námi s partnerem vytratila lehkost a blízkost. Intimita pro mě byla často nepříjemná a nedokázala jsem se úplně uvolnit. Volupta+ mi pomohla vrátit větší komfort, svěžest a hlavně pocit, že si můžeme být zase blíž. Dnes jsou naše intimní chvíle mnohem příjemnější a přirozenější pro nás oba.“\nElektronické i tištěné materiály dostanete v hlavním balíčku\nPokud chcete mít po ruce i konkrétní podporu z webináře, dole najdete balíček, příručky a odkazy na produkty, o kterých se během večera mluvilo. Není to podmínka účasti v kurzu.\nCHCI PŘÍRUČKY ZDARMA\nKomplexní péče od hlavy až k patám\nPropojení vnější a vnitřní péče\nZískáte jedinečné vzdělávací materiály\n🎁 Dáky v hodnotě 2 500 Kč\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S. Pokud jste v poslední době cítila, že se ve vztahu vytrácí lehkost, blízkost nebo radost, pusťte si záznam této lekce co nejdříve. Možná právě v ní uslyšíte větu, která vám pomůže začít měnit vztah…\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KQWCBQ82P1TM9X3Y9ZHV3YHK",
-    "name": "Kurz Tělo jako kompas 1, 5.lekce 5.5. odkaz",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "⏰ Kurz Tělo jako kompas - ZAČÍNÁME ZA 30 MINUT! + Dnes skvělý dárek",
-    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-    "sentAt": "2026-05-05T17:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "R9TDU7",
-      "name": "2025-02-16 06:16 s podpisem",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
-      "body": [
-        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
-        "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
-        "Důležité: Připojte se včas, kapacita webináře je omezená.",
-        "🟢 Váš osobní odkaz pro připojení na webinář:"
-      ],
-      "cta": "Připojte se na webinář nyní",
-      "ctas": [
-        "Připojte se na webinář nyní",
-        "Sledovat na youtube"
-      ],
-      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.\nTělo jako kompas\n5. Typologie osobnosti a vztahy\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nPoznámka: Pokud se nedostanete na zoom - zájem je velký - můžete nás sledovat v přímém přenosu na youtube zde:\nSledovat na youtube\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nPaedDr. Eva Štěpová\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
       "launch"
     ]
   }
