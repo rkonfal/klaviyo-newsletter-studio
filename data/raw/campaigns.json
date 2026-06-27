@@ -1,5 +1,340 @@
 [
   {
+    "id": "01KW1S1SQYCAH2NJMQGNDHM8NH",
+    "name": "SK - Webinář - jak ušetřit",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "90 % zákazníkov prichádza o peniaze. Patríte medzi nich?",
+    "previewText": "Príďte na bezplatný webinár a zistite, ako môžete ešte tento mesiac ušetriť.",
+    "sentAt": "2026-06-26T23:43:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "UPs2AJ",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Webinár: Čo si kúpiť, aby ste ušetrili čo najviac.",
+      "body": [
+        "Webinár: Čo si kúpiť, aby ste ušetrili čo najviac.",
+        "KEDY: 29. 6. o 20:00 KDE:  ONLINE (zadarmo)",
+        "Možno pri každej objednávke zbytočne prichádzate o peniaze. Príďte na náš bezplatný webinár a zistite, ako naplno využiť aktuálne akcie a získať z každej objednávky maximum.",
+        "Pripravili sme pre vás webinár nabitý konkrétnymi odporúčaniami. O svoje skúsenosti sa s vami podelia Jana Bařinková a Pavlína Macháčková, ktoré vám ukážu, čo sa práve teraz naozaj oplatí kúpiť a prečo. ​ Na webinári sa dozviete:"
+      ],
+      "cta": "REZERVOVAŤ SI MIESTO ZDARMA",
+      "ctas": [
+        "REZERVOVAŤ SI MIESTO ZDARMA",
+        "KÚPIŤ",
+        "Kliknite"
+      ],
+      "text": "96\nWebinár: Čo si kúpiť, aby ste ušetrili čo najviac.\nKEDY: 29. 6. o 20:00 KDE:  ONLINE (zadarmo)\nMožno pri každej objednávke zbytočne prichádzate o peniaze. Príďte na náš bezplatný webinár a zistite, ako naplno využiť aktuálne akcie a získať z každej objednávky maximum.\nREZERVOVAŤ SI MIESTO ZDARMA\nPripravili sme pre vás webinár nabitý konkrétnymi odporúčaniami. O svoje skúsenosti sa s vami podelia Jana Bařinková a Pavlína Macháčková, ktoré vám ukážu, čo sa práve teraz naozaj oplatí kúpiť a prečo. ​ Na webinári sa dozviete:\nKtoré produkty sa tento mesiac oplatí kúpiť najviac.\nAko využiť aktuálne akcie a získať z každej objednávky maximum.\nAko nakupovať múdrejšie a ušetriť stovky až tisíce eur ročne.\nPrečo sú hygienické kapsuly na pranie hitom a ako ich získať so skvelým darčekom.\nEkologické upratovanie celej domácnosti – dokonale čistý domov bez zbytočnej chémie\n✅ Hygienicky čistá bielizeň aj riad bez agresívnej chémie. ✅ Inteligentná utierka na všetky umývateľné povrchy.\n✅ Jeden balíček, ktorý šetrí váš čas, peniaze aj prírodu.\n🎁 DARČEK v hodnote 27,60 €\nKÚPIŤ\nLenka, 42 rokov: \"Najviac som si obľúbila produkty na pranie. Bielizeň je po vypraní krásne čistá, svieža, mäkká a príjemne vonia. Skvele si poradia aj so športovým oblečením alebo uterákmi, ktoré bývajú po čase cítiť. Oceňujem aj to, že nemusím používať niekoľko rôznych prípravkov a mám dobrý pocit zo šetrnejšieho zloženia. Celý systém mi uľahčil starostlivosť o bielizeň a dnes by som sa už ku klasickým pracím prostriedkom nevrátila. Za mňa veľká spokojnosť a určite odporúčam každému, kto hľadá účinné a zároveň šetrnejšie riešenie na každodenné pranie.\"\nHĺbková regenerácia vlasov s efektom laminácie – lesklé, hladké a dokonale vyživené vlasy\n✅ Jednoduchšie rozčesávanie bez krepovatenia. ✅ Viditeľne hladšie a lesklejšie vlasy ako po návšteve salónu.\n✅ Hĺbkové čistenie + intenzívna výživa v jednom.\n✅ Silnejšie, lesklejšie a hebkejšie vlasy už po niekoľkých použitiach.\n🎁 DARČEK v hodnote 21,60 €\nKÚPIŤ\nLaura, 48 rokov: \"Moje vlasy boli po rokoch farbenia suché, matné a končeky sa neustále štiepili. Po niekoľkých použitiach tejto starostlivosti som bola naozaj prekvapená. Vlasy sú nádherne hladké, hebké na dotyk a majú krásny lesk, akoby som práve odchádzala z kaderníckeho salónu. Navyše sa oveľa lepšie rozčesávajú, nekrepatia sa ani pri vyššej vlhkosti a nepôsobia zaťažene. Oceňujem aj to, že končeky sú viditeľne zdravšie a celé vlasy vyzerajú silnejšie a upravenejšie. Za mňa jedna z najlepších vlasových starostlivostí, ktoré som kedy vyskúšala. Určite si ju objednám znova.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Príďte zistiť, ktoré produkty sa práve teraz oplatí kúpiť najviac a ako využiť všetky aktuálne výhody. Kliknite   a rezervujte si svoje miesto ešte dnes. Počet miest je obmedzený.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW1T7QR8Z9BPM011PT6J666J",
+    "name": "CZ Doprava zdarma červenec - začíná",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "launch",
+    "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+    "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "SkUQ8P",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+      "body": [
+        "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+        "📅 Od 1. do 7. července 🎁 Při nákupu nad 900 Kč",
+        "Nový měsíc jsme odstartovali opravdu ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky , limitované slevy až 50 % a navíc dopravu ZDARMA při nákupu nad 900 Kč. Udělejte si radost ještě dnes.",
+        "P. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!"
+      ],
+      "cta": "exkluzivní nové balíčky s dárky",
+      "ctas": [
+        "exkluzivní nové balíčky s dárky",
+        "limitované slevy až 50 %",
+        "CHCI NAKOUPIT VÝHODNĚ",
+        "Nakupte ještě dnes"
+      ],
+      "text": "96\nJE TO TADY: Nové balíčky, nové slevy a doprava zdarma\n📅 Od 1. do 7. července 🎁 Při nákupu nad 900 Kč\nNový měsíc jsme odstartovali opravdu ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky , limitované slevy až 50 % a navíc dopravu ZDARMA při nákupu nad 900 Kč. Udělejte si radost ještě dnes.\nCHCI NAKOUPIT VÝHODNĚ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW1R9JJGSY174MBQZNVX3QHR",
+    "name": "CZ - Webinář - jak ušetřit",
+    "status": "Sending",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
+    "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
+    "sentAt": "2026-06-26T00:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Yvpi4v",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
+      "body": [
+        "Webinář: Co si koupit, abyste maximálně ušetřili.",
+        "KDY:  29. 6. ve 20:00 KDE: ONLINE (zdarma)",
+        "Možná při každé objednávce zbytečně přicházíte o peníze. Přijďte na náš bezplatný webinář a zjistěte, jak naplno využít aktuální akce a získat z každé objednávky maximum.",
+        "Připravili jsme pro vás webinář nabitý konkrétními doporučeními. Své zkušenosti s vámi budou sdílet Jana Bařinková a Pavlína Macháčková, které vám ukážou, co se právě teď opravdu vyplatí koupit a proč. ​ Na webináři se dozvíte: Které produkty se tento měsíc vyplatí koupit nejvíce."
+      ],
+      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
+      "ctas": [
+        "REZERVOVAT SI MÍSTO ZDARMA",
+        "KOUPIT",
+        "Klikněte"
+      ],
+      "text": "96\nWebinář: Co si koupit, abyste maximálně ušetřili.\nKDY:  29. 6. ve 20:00 KDE: ONLINE (zdarma)\nMožná při každé objednávce zbytečně přicházíte o peníze. Přijďte na náš bezplatný webinář a zjistěte, jak naplno využít aktuální akce a získat z každé objednávky maximum.\nREZERVOVAT SI MÍSTO ZDARMA\nPřipravili jsme pro vás webinář nabitý konkrétními doporučeními. Své zkušenosti s vámi budou sdílet Jana Bařinková a Pavlína Macháčková, které vám ukážou, co se právě teď opravdu vyplatí koupit a proč. ​ Na webináři se dozvíte: Které produkty se tento měsíc vyplatí koupit nejvíce.\nJak využít aktuální akce a získat z každé objednávky maximum.\nJak nakupovat chytřeji a ušetřit stovky až tisíce korun ročně.\nProč jsou hygienické kapsle na praní hitem a jak je pořídit se skvělým dárkem.\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie. ✅ Chytrý hadřík, na všechny omyvatelné povrchy. ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n685 Kč 445 Kč (VIP Sleva)\nKOUPIT\nLenka 42 let: \"Nejvíce jsem si oblíbila produkty na praní. Prádlo je po vyprání krásně čisté, svěží, měkké a příjemně voní. Skvěle si poradí i se sportovním oblečením nebo ručníky, které bývají po čase cítit. Oceňuji také, že nemusím používat několik různých přípravků a mám dobrý pocit z šetrnějšího složení. Celý systém mi usnadnil péči o prádlo a dnes už bych se ke klasickým pracím prostředkům nevrátila. Za mě velká spokojenost a určitě doporučuji každému, kdo hledá účinné a zároveň šetrnější řešení pro každodenní praní.\"\nHloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy\n✅ Snadnější rozčesávání bez krepatění.\n✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu.\n✅ Hloubkové čištění + intenzivní výživa v jednom. ✅ Silnější, lesklejší a hebčí vlasy už po několika použitích. 🎁 DÁREK v hodnotě 536 Kč\n894 Kč 581 Kč (VIP Sleva)\nKOUPIT\nLaura 48 let: \"Moje vlasy byly po letech barvení suché, matné a konečky se neustále třepily. Po několika použitích této péče jsem byla opravdu překvapená. Vlasy jsou nádherně hladké, hebké na dotek a mají krásný lesk, jako bych právě odcházela z kadeřnického salonu. Navíc se mnohem lépe rozčesávají, nekrepatí se ani při vyšší vlhkosti a nepůsobí zatíženě. Oceňuji i to, že jsou konečky viditelně zdravější a celé vlasy vypadají silnější a upravenější. Za mě jedna z nejlepších vlasových péčí, které jsem kdy vyzkoušela. Určitě objednám znovu.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Přijďte zjistit, které produkty se právě teď vyplatí nejvíce a jak využít všechny aktuální výhody. Klikněte   a rezervujte si své místo ještě dnes. Počet míst je omezen. ​\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW1KF6VDYZW7JVF465KGVVSC",
+    "name": "CZ - Dvouměsíční akce - konec",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
+    "previewText": "Poslední příležitost nakoupit za akční ceny.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "XwRJpG",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
+      "body": [
+        "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
+        "P.S. Jen do dnešní půlnoci můžete získat vybrané produkty se slevou až 50 % a navíc exkluzivní dárek v hodnotě 685 Kč . O půlnoci se tato jedinečná nabídka uzavře. Nakupte hned teď a využijte tuto mimořádnou příležitost naplno.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+      ],
+      "cta": "NAKOUPIT HNED TEĎ",
+      "ctas": [
+        "NAKOUPIT HNED TEĎ",
+        "produkty se slevou až 50 %",
+        "dárek v hodnotě 685 Kč"
+      ],
+      "text": "96\nChcete ještě ušetřit? Zbývá posledních 6 hodin!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\nNAKOUPIT HNED TEĎ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Jen do dnešní půlnoci můžete získat vybrané produkty se slevou až 50 % a navíc exkluzivní dárek v hodnotě 685 Kč . O půlnoci se tato jedinečná nabídka uzavře. Nakupte hned teď a využijte tuto mimořádnou příležitost naplno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW1DBK9G6AJVTDAM0RXFNKA2",
+    "name": "CZ - Dvouměsíční akce -Odpočítávání začalo",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Stihnete to dnes?",
+    "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "RjeLU2",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+      "body": [
+        "Odpočet běží. Udělejte si radost, dokud je čas!",
+        "Finální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.",
+        "POZOR: Od 1. 7. se ceny turmalínových produktů mění",
+        "Protože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes."
+      ],
+      "cta": "se slevou až 50 %",
+      "ctas": [
+        "se slevou až 50 %",
+        "dárky v hodnotě 685 Kč",
+        "NAKOUPIT VÝHODNĚ JEŠTĚ DNES",
+        "NAKOUPIT ZA SOUČASNÉ CENY",
+        "KOUPIT",
+        "Klikněte"
+      ],
+      "text": "96\nOdpočet běží. Udělejte si radost, dokud je čas!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nFinální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.\nNAKOUPIT VÝHODNĚ JEŠTĚ DNES\nPOZOR: Od 1. 7. se ceny turmalínových produktů mění\nProtože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes.\nNAKOUPIT ZA SOUČASNÉ CENY\nTurmalín hřeje, uvolňuje a pomáhá dobít energii.\nTurmalín je přírodní minerál, který je oblíbený pro svou schopnost vytvářet při kontaktu s tělem příjemné teplo. Mnoho lidí si ho oblíbilo pro pocit pohodlí, relaxace a regenerace, který přináší. ​ Podpora příjemného lokálního prohřátí\nPocit uvolnění a relaxace\nIdeální společník pro odpočinek po náročném dni\nVyužívá vlastnosti záporných iontů a infračerveného záření\nPás s bodovou turmalínovou vrstvou\nDlouhé sezení, práce na zahradě, sport nebo náročný den? Dopřejte si příjemný pocit tepla a pohodlí s turmalínovým pásem, který se stane vaším každodenním společníkem.\n2 055 Kč 1 336 Kč ( VIP Sleva)\nKOUPIT\nNavozuje příjemný hřejivý pocit v oblasti beder\nPomáhá uvolnit ztuhlost po dlouhém sezení nebo fyzické námaze\nElastický materiál se přizpůsobí pasu až do 120 cm\nDlouhá životnost až 5000 hodin používání\nMilan, 42 let \"Sedím celý den v kanceláři a večer jsem míval záda jako z kamene. Turmalínový pás jsem si pořídil ze zvědavosti a dnes ho používám skoro každý den. Příjemně hřeje, dobře drží a hlavně mi pomáhá cítit se mnohem pohodlněji. Bez něj už si práci z domova neumím představit.\"\nNákoleníky s bodovou turmalínovou vrstvou\nKolena nás nosí celý život. Ať už trávíte hodiny na nohou, milujete procházky, zahradu nebo aktivní život, zaslouží si péči, která přináší příjemný pocit tepla a komfortu.\n1 876 Kč 976 Kč ( VIP Sleva)\nKOUPIT\nNavozují příjemný hřejivý pocit v oblasti kolen\nIdeální po dlouhém dni na nohou i po fyzické aktivitě\nPodporují příjemný pocit uvolnění a regenerace po námaze.\nPružný materiál se dokonale přizpůsobí tvaru kolen\nPohodlně drží na místě a neomezují v pohybu\n🔥Nyní s 20% slevou\nLenka, 58 let: \"Pracuji kolem domu a na zahradě prakticky každý den. Večer bývala kolena unavená a nepříjemně ztuhlá. Nákoleníky mě mile překvapily. Jsou pohodlné, nikde netlačí a příjemné teplo je přesně to, co po náročném dni potřebuji. Dnes jsou součástí mé každodenní rutiny.\"\nPánské spodní prádlo s bodovou turmalínovou vrstvou\nMuži, kteří ho vyzkouší, se k němu rádi vracejí. Protože skutečné pohodlí poznáte už po prvním nošení.\n447 Kč 145 Kč ( VIP Sleva)\nKOUPIT\nPohodlí a příjemné prohřátí citlivých partií\nZvyšuje pocit pohodlí během náročného pracovního dne\nIdeální společník na cestování, do kanceláře i na chalupu\nPřizpůsobí se tělu a neomezuje v pohybu\n🔥Nyní s 50% slevou\nMarek, 39 let: \" Po pár dnech nošení jsem pochopil, proč jsou tak oblíbené. Jsou neuvěřitelně pohodlné, nikde netlačí a člověk se v nich cítí dobře od rána do večera. Dnes mám doma hned několik kusů a jiné už skoro nenosím.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Odpočítávání běží.  Klikněte   a získejte své oblíbené produkty i exkluzivní dárky, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW19FCPPZDC84XHSRTJJDY0V",
+    "name": "CZ - Dvouměsíční akce Teď nebo nikdy",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
+    "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "UKhhvF",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+      "body": [
+        "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+        "Právě teď máte jedinečnou příležitost nakoupit své oblíbené produkty se slevami až 50 % a získat dárky v hodnotě až 685 Kč .  Klikněte a využijte poslední dny naší mimořádné akce, než definitivně skončí!",
+        "Hloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy",
+        "✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu."
+      ],
+      "cta": "slevami až 50 %",
+      "ctas": [
+        "slevami až 50 %",
+        "dárky v hodnotě až 685 Kč",
+        "NAKOUPIT, NEŽ BUDE POZDĚ",
+        "KOUPIT",
+        "CHCI SVŮJ DÁREK",
+        "Klikněte"
+      ],
+      "text": "96\nTeď nebo nikdy: Stihnete naše nejlepší akce?\n🎁 Exkluzivní dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nPrávě teď máte jedinečnou příležitost nakoupit své oblíbené produkty se slevami až 50 % a získat dárky v hodnotě až 685 Kč .  Klikněte a využijte poslední dny naší mimořádné akce, než definitivně skončí!\nNAKOUPIT, NEŽ BUDE POZDĚ\nHloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy\n✅ Snadnější rozčesávání bez krepatění.\n✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu.\n✅ Hloubkové čištění + intenzivní výživa v jednom. ✅ Silnější, lesklejší a hebčí vlasy už po několika použitích. 🎁 DÁREK v hodnotě 536 Kč\n894 Kč 581 Kč (VIP Sleva)\nKOUPIT\nMezoroller (masážní váleček)\n✅ Podporuje přirozenou tvorbu kolagenu a pomáhá vyhlazovat vrásky.\n✅ Pomáhá zvýšit vstřebávání účinných látek z kosmetiky až o 90 %.\n✅ Dopřeje vám péči jako z kosmetického salonu – v pohodlí domova a za zlomek ceny. 🔥 30 % SLEVA\n1 281 Kč 897 Kč (VIP Sleva)\nKOUPIT\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie ✅ Chytrý hadřík na všechny omyvatelné povrchy ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n685 Kč 445 Kč (VIP Sleva)\nKOUPIT\nMalý tip pro vás\nChcete získat ještě něco navíc?  Při nákupu nad 3 000 Kč od nás získáte navíc dvě letní kuchařky zdarma.  Exkluzivní kuchařky, pro nás připravila Health Coach Jiřina Radová. Najdete v nich desítky lehkých, svěžích a chutných receptů, které si zamiluje celá rodina. ​ Nemusíte dělat vůbec nic navíc . Stačí nakoupit nad 3 000 Kč a váš dárek na vás bude automaticky čekat přímo v košíku (každý zákazník může tuto nabídku využít pouze jednou).\nCHCI SVŮJ DÁREK\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Připomínáme, že slevy až 50 %, dárky v hodnotě až 685 Kč a akční balíčky končí už 30. 6. Navíc při nákupu nad 3 000 Kč získáte Letní kuchařky zdarma. Nečekejte, až bude pozdě. Klikněte   a využijte své výhody ještě dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KVZJGSV9YJVSG2EDWVSB95G6",
+    "name": "SK - Skandál o kterým se nemluví",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
+    "subject": "Škandál: Prečo štát chráni viac kondómy než ženy?",
+    "previewText": "Zistite, prečo majú muži väčšiu ochranu než ženy?! ͏ ͏ ͏",
+    "sentAt": "2026-06-25T17:03:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "VjgU7A",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Škandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?",
+      "body": [
+        "Škandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?",
+        "Toto nás doslova šokovalo. Vedeli ste, že kondómy podliehajú prísnej kontrole ako zdravotnícke pomôcky, zatiaľ čo bežné vložky a tampóny štát berie len ako „papier“? Áno, počujete správne! To, čo muži použijú len na pár minút, prechádza prísnymi požiadavkami. Ale to, čo ženy používajú celé dni a noci, podlieha úplne inému režimu. Ako je možné, že sa o tom takmer nehovorí?",
+        "Dobrovoľne si do tela púšťame jedy! ​ Málokto si uvedomuje, že intímna sliznica patrí medzi najcitlivejšie tkanivá ľudského tela. Práve preto môže výber intímnych hygienických pomôcok ovplyvniť nielen ženské sebavedomie a intímne zdravie, ale aj celkovú kvalitu života.",
+        "Napriek tomu väčšina žien nikdy nerieši , z čoho sú vložky alebo tampóny skutočne vyrobené. Používame ich automaticky celý život. Ale položili ste si niekedy otázku, čo sa dotýka vášho tela niekoľko dní každý mesiac?"
+      ],
+      "cta": "TO SI MUSÍM PREČÍTAŤ!",
+      "ctas": [
+        "TO SI MUSÍM PREČÍTAŤ!",
+        "CHCEM VIDIEŤ BEZPEČNEJŠIU VOĽBU",
+        "UROBIŤ SI KVÍZ",
+        "Kliknite",
+        "získať zľavu až 20 %."
+      ],
+      "text": "96\nŠkandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?\nToto nás doslova šokovalo. Vedeli ste, že kondómy podliehajú prísnej kontrole ako zdravotnícke pomôcky, zatiaľ čo bežné vložky a tampóny štát berie len ako „papier“? Áno, počujete správne! To, čo muži použijú len na pár minút, prechádza prísnymi požiadavkami. Ale to, čo ženy používajú celé dni a noci, podlieha úplne inému režimu. Ako je možné, že sa o tom takmer nehovorí?\nTO SI MUSÍM PREČÍTAŤ!\nDobrovoľne si do tela púšťame jedy! ​ Málokto si uvedomuje, že intímna sliznica patrí medzi najcitlivejšie tkanivá ľudského tela. Práve preto môže výber intímnych hygienických pomôcok ovplyvniť nielen ženské sebavedomie a intímne zdravie, ale aj celkovú kvalitu života.\nNapriek tomu väčšina žien nikdy nerieši , z čoho sú vložky alebo tampóny skutočne vyrobené. Používame ich automaticky celý život. Ale položili ste si niekedy otázku, čo sa dotýka vášho tela niekoľko dní každý mesiac?\nUž žiadny hazard. Máte na výber. ​ Keď sme sa začali zaujímať o to, aké vložky a tampóny dnešný trh ženám ponúka, zostali sme v šoku. Väčšina žien totiž vôbec netuší, z čoho sú bežné intímne pomôcky vyrobené.\nPreto sme hrdí, že môžeme ponúknuť unikátne bylinné vložky bez chlórového bielenia, s priedušnou vrstvou a bylinnými extraktmi. Aby ste sa každý deň cítili sviežo, komfortne – bez obáv z nepríjemného zápachu či podráždenia.\nCHCEM VIDIEŤ BEZPEČNEJŠIU VOĽBU\nPetra, 43 rokov: „Predtým som kupovala bežné vložky z drogérie, pretože mi ani nenapadlo, že medzi nimi môže byť nejaký rozdiel. Bylinné vložky používam už viac ako rok a dnes si neviem predstaviť, že by som sa vrátila ku klasickým. Sú oveľa príjemnejšie, priedušnejšie a počas dňa sa cítim sviežo a pohodlne. Je to jedna z tých zmien, pri ktorých si spätne hovorím: Prečo som ich neobjavila už dávno? Dnes ich odporúčam všetkým kamarátkam.“\nNie ste si istá, ktoré vložky sú pre vás tie pravé? ​ Pripravili sme pre vás krátky kvíz. Stačí kliknúť, odpovedať na pár jednoduchých otázok a už o niekoľko sekúnd zistíte, ktoré vložky budú najlepšie vyhovovať vašim potrebám. Už žiadne hádanie. Nechajte si poradiť.\nUROBIŤ SI KVÍZ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Každý mesiac si vyberáte, čo bude niekoľko dní v kontakte s vaším telom. Urobte rozhodnutie, za ktoré sa vám vaše telo raz poďakuje. Kliknite  a objavte unikátne bylinné vložky. ​ P.P.S. Práve teraz môžete na vybrané bylinné vložky získať zľavu až 20 %. Akcia končí už 30. 6. Využite skvelú príležitosť dopriať svojmu telu tú najlepšiu starostlivosť za výhodnejšiu cenu.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVZ0FW055DSPXZ0XXTT2SKZ2",
+    "name": "CZ - Skandál o kterým se nemluví",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Skandál: Proč stát chrání víc kondomy než ženy?",
+    "previewText": "Zjistěte proč mají muži větší ochranu než ženy?! ͏ ͏ ͏",
+    "sentAt": "2026-06-25T17:03:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "WjHwcM",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Skandál, o kterém se mlčí: Proč mají muži větší ochranu než my?",
+      "body": [
+        "Skandál, o kterém se mlčí: Proč mají muži větší ochranu než my?",
+        "Tohle nás doslova šokovalo. Věděli jste, že kondomy podléhají přísné kontrole jako zdravotnické prostředky, zatímco běžné vložky a tampony stát bere jen jako „papír“? Ano, slyšíte dobře! To, co muži použijí jen pár minut, prochází přísnými požadavky. Ale to, co ženy používají celé dny a noci, podléhá úplně jinému režimu. Jak je možné, že se o tom téměř nemluví?",
+        "Dobrovolně si do těla pouštíme jedy! ​ Málokdo si uvědomuje, že intimní sliznice patří k nejcitlivějším tkáním lidského těla. Právě proto může výběr intimních hygienických pomůcek ovlivnit nejen ženské sebevědomí, intimní zdraví, ale i celkovou kvalitu života. ​ Přesto většina žen nikdy neřeší, z čeho jsou vložky nebo tampony skutečně vyrobené. Používáme je automaticky celý život. Ale položili jste si někdy otázku, co se dotýká vašeho těla několik dní každý měsíc?",
+        "Už žádný hazard. Máte na výběr. ​ Když jsme se začali zajímat o to, jaké vložky a tampony dnešní trh ženám nabízí, zůstali jsme v šoku . Většina žen totiž vůbec netuší, z čeho jsou běžné intimní pomůcky vyrobené. ​ Proto jsme hrdí, že můžeme nabídnout unikátní bylinné vložky bez chlorového bělení, s prodyšnou vrstvou a bylinnými extrakty. Abyste se každý den cítili svěží, v pohodlí – bez obav z nepříjemného zápachu nebo podráždění."
+      ],
+      "cta": "TO SI MUSÍM PŘEČÍST",
+      "ctas": [
+        "TO SI MUSÍM PŘEČÍST",
+        "CHCI VIDĚT BEZPEČNĚJŠÍ VOLBU",
+        "UDĚLAT SI KVÍZ",
+        "Klikněte",
+        "slevu až 20 %."
+      ],
+      "text": "96\nSkandál, o kterém se mlčí: Proč mají muži větší ochranu než my?\nTohle nás doslova šokovalo. Věděli jste, že kondomy podléhají přísné kontrole jako zdravotnické prostředky, zatímco běžné vložky a tampony stát bere jen jako „papír“? Ano, slyšíte dobře! To, co muži použijí jen pár minut, prochází přísnými požadavky. Ale to, co ženy používají celé dny a noci, podléhá úplně jinému režimu. Jak je možné, že se o tom téměř nemluví?\nTO SI MUSÍM PŘEČÍST\nDobrovolně si do těla pouštíme jedy! ​ Málokdo si uvědomuje, že intimní sliznice patří k nejcitlivějším tkáním lidského těla. Právě proto může výběr intimních hygienických pomůcek ovlivnit nejen ženské sebevědomí, intimní zdraví, ale i celkovou kvalitu života. ​ Přesto většina žen nikdy neřeší, z čeho jsou vložky nebo tampony skutečně vyrobené. Používáme je automaticky celý život. Ale položili jste si někdy otázku, co se dotýká vašeho těla několik dní každý měsíc?\nUž žádný hazard. Máte na výběr. ​ Když jsme se začali zajímat o to, jaké vložky a tampony dnešní trh ženám nabízí, zůstali jsme v šoku . Většina žen totiž vůbec netuší, z čeho jsou běžné intimní pomůcky vyrobené. ​ Proto jsme hrdí, že můžeme nabídnout unikátní bylinné vložky bez chlorového bělení, s prodyšnou vrstvou a bylinnými extrakty. Abyste se každý den cítili svěží, v pohodlí – bez obav z nepříjemného zápachu nebo podráždění.\nCHCI VIDĚT BEZPEČNĚJŠÍ VOLBU\nPetra 43 let: „Dřív jsem kupovala běžné vložky z drogerie, protože mě ani nenapadlo, že mezi nimi může být nějaký rozdíl. Bylinné vložky používám už více než rok a dnes si neumím představit, že bych se vrátila ke klasickým. Jsou mnohem příjemnější, prodyšnější a během dne se cítím svěže a pohodlně. Je to jedna z těch změn, u kterých si zpětně říkám: Proč jsem je neobjevila už dávno? Dnes je doporučuji všem kamarádkám“\nNejste si jistá, které vložky jsou pro vás ty pravé? ​ Připravili jsme pro vás krátký kvíz. Stačí kliknout, odpovědět na pár jednoduchých otázek a během několika vteřin zjistíte, které vložky budou nejlépe odpovídat vašim potřebám. Už žádné hádání. Nechte si poradit.\nUDĚLAT SI KVÍZ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Každý měsíc si vybíráte, co bude v kontaktu s vaším tělem několik dní. Udělejte rozhodnutí, za které vám vaše tělo jednou poděkuje. Klikněte   a objevte unikátní bylinné vložky.  ​ P.P.S. Právě teď můžete na vybrané bylinné vložky získat slevu až 20 %.  ​ Akce už končí 30. 6.. Využijte skvělou příležitost dopřát svému tělu tu nejlepší péči za výhodnější cenu.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KVZ568J092RXHNRCBW0KCNYX",
+    "name": "CZ - Webinář - od vlasů po úklid - pozvánka",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
+    "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "Xut6z8",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Jak nakupovat chytře a maximálně ušetřit?",
+      "body": [
+        "Jak nakupovat chytře a maximálně ušetřit?",
+        "Jak ušetřit stovky až tisíce korun ročně? Ukážeme vám to už zítra.   Ukážeme vám, které produkty se právě teď vyplatí nejvíce a jak můžete ušetřit stovky až tisíce korun za rok. O webinář je velký zájem a zbývá už jen několik posledních míst.",
+        "Připravili jsme pro vás webinář nabitý konkrétními doporučeními. Své zkušenosti s vámi budou sdílet Jana Bařinková a Pavlína Macháčková, které vám ukážou, co se právě teď opravdu vyplatí koupit a proč. ​ Na webináři se dozvíte: Které produkty se tento měsíc vyplatí koupit nejvíce.",
+        "Jak využít aktuální akce a získat z každé objednávky maximum."
+      ],
+      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
+      "ctas": [
+        "REZERVOVAT SI MÍSTO ZDARMA",
+        "KOUPIT",
+        "Klikněte"
+      ],
+      "text": "96\nJak nakupovat chytře a maximálně ušetřit?\nKDY:  JIŽ ZÍTRA  KDE: ONLINE (zdarma)\nJak ušetřit stovky až tisíce korun ročně? Ukážeme vám to už zítra.   Ukážeme vám, které produkty se právě teď vyplatí nejvíce a jak můžete ušetřit stovky až tisíce korun za rok. O webinář je velký zájem a zbývá už jen několik posledních míst.\nREZERVOVAT SI MÍSTO ZDARMA\nPřipravili jsme pro vás webinář nabitý konkrétními doporučeními. Své zkušenosti s vámi budou sdílet Jana Bařinková a Pavlína Macháčková, které vám ukážou, co se právě teď opravdu vyplatí koupit a proč. ​ Na webináři se dozvíte: Které produkty se tento měsíc vyplatí koupit nejvíce.\nJak využít aktuální akce a získat z každé objednávky maximum.\nJak nakupovat chytřeji a ušetřit stovky až tisíce korun ročně.\nProč jsou hygienické kapsle na praní hitem a jak je pořídit se skvělým dárkem.\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie. ✅ Chytrý hadřík, na všechny omyvatelné povrchy. ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n685 Kč 445 Kč (VIP Sleva)\nKOUPIT\nLenka 42 let: \"Nejvíce jsem si oblíbila produkty na praní. Prádlo je po vyprání krásně čisté, svěží, měkké a příjemně voní. Skvěle si poradí i se sportovním oblečením nebo ručníky, které bývají po čase cítit. Oceňuji také, že nemusím používat několik různých přípravků a mám dobrý pocit z šetrnějšího složení. Celý systém mi usnadnil péči o prádlo a dnes už bych se ke klasickým pracím prostředkům nevrátila. Za mě velká spokojenost a určitě doporučuji každému, kdo hledá účinné a zároveň šetrnější řešení pro každodenní praní.\"\nHloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy\n✅ Snadnější rozčesávání bez krepatění.\n✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu.\n✅ Hloubkové čištění + intenzivní výživa v jednom. ✅ Silnější, lesklejší a hebčí vlasy už po několika použitích. 🎁 DÁREK v hodnotě 536 Kč\n894 Kč 581 Kč (VIP Sleva)\nKOUPIT\nLaura 48 let: \"Moje vlasy byly po letech barvení suché, matné a konečky se neustále třepily. Po několika použitích této péče jsem byla opravdu překvapená. Vlasy jsou nádherně hladké, hebké na dotek a mají krásný lesk, jako bych právě odcházela z kadeřnického salonu. Navíc se mnohem lépe rozčesávají, nekrepatí se ani při vyšší vlhkosti a nepůsobí zatíženě. Oceňuji i to, že jsou konečky viditelně zdravější a celé vlasy vypadají silnější a upravenější. Za mě jedna z nejlepších vlasových péčí, které jsem kdy vyzkoušela. Určitě objednám znovu.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Připravili jsme pro vás konkrétní tipy, aktuální akce a doporučení, která vám pomohou nakupovat ještě chytřeji a výhodněji. Klikněte   a rezervujte si své místo zdarma, dokud jsou ještě volná.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "gift",
+      "launch",
+      "education"
+    ]
+  },
+  {
     "id": "01KVWZDDKXBF1PXS4BN09BCP7W",
     "name": "Lhenice - Zážitkový den - 1. email",
     "status": "Sent",
@@ -4789,321 +5124,6 @@
       "gift",
       "launch",
       "education"
-    ]
-  },
-  {
-    "id": "01KR0PRKBAW010NFEXYY9Q0PM0",
-    "name": "CZ - Tělo jako kompas - 6. lekce pozvánka",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Tohle není normální! Opravdu znáte své tělo dobře?",
-    "previewText": "Už zítra nás čeká 6. lekce! Zjistíme víc o ženském zdraví.",
-    "sentAt": "2026-05-11T09:45:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "XGfwwh",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Ženské zdraví podle TČM: Tohle vám nikdo neřekl!",
-      "body": [
-        "Ženské zdraví podle TČM: Tohle vám nikdo neřekl!",
-        "📍 Kde: Odkaz pošleme do e-mailu v 19:30",
-        "Co když únava, PMS nebo stres nejsou „normální“, ale volání těla o pomoc? Už zítra nás čeká 6. lekce na téma ženského zdraví podle TČM. Připojte se k nám a naučte se svému tělu konečně opravdu rozumět.",
-        "V tradiční čínské medicíně je ženské tělo vnímáno jako celek, kde spolu souvisí energie, emoce, odpočinek i každodenní rytmus života. Často si ani neuvědomujeme, kolik signálů nám tělo během dne posílá."
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO",
-        "CHCI PŘÍRUČKY ZDARMA"
-      ],
-      "text": "96\nŽenské zdraví podle TČM: Tohle vám nikdo neřekl!\n📍 Kde: Odkaz pošleme do e-mailu v 19:30\nCo když únava, PMS nebo stres nejsou „normální“, ale volání těla o pomoc? Už zítra nás čeká 6. lekce na téma ženského zdraví podle TČM. Připojte se k nám a naučte se svému tělu konečně opravdu rozumět.\nCHCI BÝT U TOHO\nV tradiční čínské medicíně je ženské tělo vnímáno jako celek, kde spolu souvisí energie, emoce, odpočinek i každodenní rytmus života. Často si ani neuvědomujeme, kolik signálů nám tělo během dne posílá.\nNa co se zaměříme:\nProč ženy ztrácí energii mnohem rychleji\nCo znamenají studené ruce a nohy podle TČM\nProč podrážděnost nebo bolesti nejsou „normální“\nJak spolu souvisí hormony, trávení a psychika\nElektronické i tištěné materiály dostanete v hlavním balíčku\nPokud chcete mít po ruce i konkrétní podporu z webináře, dole najdete balíček, příručky a odkazy na produkty, o kterých se během večera mluvilo. Není to podmínka účasti v kurzu.\nCHCI PŘÍRUČKY ZDARMA\nKomplexní péče od hlavy až k patám\nPropojení vnější a vnitřní péče\nZískáte jedinečné vzdělávací materiály\n🎁 Dáky v hodnotě 2 500 Kč\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S. Možná právě tahle 6. lekce vám pomůže podívat se na své tělo úplně jinýma očima. Připojte se k nám už zítra a dopřejte si chvíli jen pro sebe a své ženské zdrav\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KR96HA2R27FKYN2XKE68E1F8",
-    "name": "SK Den matek - čelenka jako druhý dárek - konec",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "urgency",
-    "subject": "Posledná šanca získať 3 DARČEKY! Do dnešnej polnoci!",
-    "previewText": "O pár hodín sa všetko končí… Stihnete to?",
-    "sentAt": "2026-05-10T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "SZCDAV",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Do dnešnej polnoci máte šancu získať 3 darčeky",
-      "body": [
-        "Do dnešnej polnoci máte šancu získať 3 darčeky",
-        "Sú akcie, ktoré sa neopakujú… a táto končí už dnes o polnoci. Ešte máte možnosť premeniť svoju objednávku na 3 krásne darčeky navyše.",
-        "Každým nákupom nad 60 € sa navyše zapojíte do súťaže o výnimočný zážitok. Môžete vyhrať vstupenku na súkromný muzikál Láska je láska s úžasnou Luciou Bílou. Čaká vás večer plný emócií, hudby a nezabudnuteľnej atmosféry.",
-        "P. S. Neodkladajte to na zajtra. Kliknite práve teraz, vyberte si svoje obľúbené produkty a doprajte si darčeky, ktoré už o pár hodín nebudú dostupné."
-      ],
-      "cta": "CHCEM SVOJE 3 DARČEKY",
-      "ctas": [
-        "CHCEM SVOJE 3 DARČEKY"
-      ],
-      "text": "96\nDo dnešnej polnoci máte šancu získať 3 darčeky\n⏰ DO DNEŠNEJ POLNOCI\n🎁 3 DARČEKY\nCHCEM SVOJE 3 DARČEKY\nSú akcie, ktoré sa neopakujú… a táto končí už dnes o polnoci. Ešte máte možnosť premeniť svoju objednávku na 3 krásne darčeky navyše.\nLimitovanú Kráľovskú čelenku\nDarček z Kolesa šťastia\nĎalšie prekvapenie priamo v košíku\nA to nie je všetko…\nKaždým nákupom nad 60 € sa navyše zapojíte do súťaže o výnimočný zážitok. Môžete vyhrať vstupenku na súkromný muzikál Láska je láska s úžasnou Luciou Bílou. Čaká vás večer plný emócií, hudby a nezabudnuteľnej atmosféry.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Neodkladajte to na zajtra. Kliknite práve teraz, vyberte si svoje obľúbené produkty a doprajte si darčeky, ktoré už o pár hodín nebudú dostupné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQYGQ9W1J76XSGJAQ38ZSCNZ",
-    "name": "CZ Den matek - čelenka jako druhý dárek - konec",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Poslední šance získat 3 DÁRKY! Do dnešní půlnoci!",
-    "previewText": "Za pár hodin vše končí… Stihnete to?",
-    "sentAt": "2026-05-10T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UNqXdf",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Do dnešní půlnoci máte šanci získat 3 dárky",
-      "body": [
-        "Do dnešní půlnoci máte šanci získat 3 dárky",
-        "Jsou akce, které se neopakují… a tahle končí už dnes o půlnoci.  Ještě máte možnost proměnit svou objednávku ve 3 krásné dárky navíc.",
-        "Každým nákupem nad 1 500 Kč se navíc zapojíte do soutěže o výjimečný zážitek. Můžete vyhrát vstupenku na soukromý muzikál Láska je láska s úžasnou Lucií Bílou.   Čeká vás večer plný emocí, hudby a nezapomenutelné atmosféry,",
-        "Pokud svou objednávku navýšíte nad 1 600 Kč, získáte od nás navíc i dopravu zdarma."
-      ],
-      "cta": "CHCI SVÉ 3 DÁRKY",
-      "ctas": [
-        "CHCI SVÉ 3 DÁRKY",
-        "Dárek z Kola štěstí",
-        "na soukromý muzikál Láska je láska s úžasnou Lucií Bílou.",
-        "TO CHCI STIHNOUT"
-      ],
-      "text": "96\nDo dnešní půlnoci máte šanci získat 3 dárky\n⏰ DO DNEŠNÍ PŮLNOCI\n🎁 3 DÁRKY\nCHCI SVÉ 3 DÁRKY\nJsou akce, které se neopakují… a tahle končí už dnes o půlnoci.  Ještě máte možnost proměnit svou objednávku ve 3 krásné dárky navíc.\nLimitovanou Královskou čelenku\nDárek z Kola štěstí\nDalší překvapení přímo v košíku\nA to není vše\nKaždým nákupem nad 1 500 Kč se navíc zapojíte do soutěže o výjimečný zážitek. Můžete vyhrát vstupenku na soukromý muzikál Láska je láska s úžasnou Lucií Bílou.   Čeká vás večer plný emocí, hudby a nezapomenutelné atmosféry,\nMalý TIP pro vás\nPokud svou objednávku navýšíte nad 1 600 Kč, získáte od nás navíc i dopravu zdarma.\nTO CHCI STIHNOUT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Neodkládejte to na zítřek. Klikněte právě teď, vyberte své oblíbené produkty a dopřejte si dárky, které už za pár hodin nebudou dostupné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "gift",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KQY55D82PZB1WYGTAE83VDFE",
-    "name": "CZ - Sebeláska 2. lekce - pozvánka",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Proč ženy dávají všem všechno… kromě sebe?",
-    "previewText": "Už zítra nás čeká 2. lekce. Téma, které otevřeme, zasáhne každou ženu!",
-    "sentAt": "2026-05-10T10:15:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RbiLSC",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Zítřejší téma: Jak si začít znovu dělat místo i pro sebe!",
-      "body": [
-        "Zítřejší téma: Jak si začít znovu dělat místo i pro sebe!",
-        "📍 Kde: Odkaz pošleme do e-mailu v 18:30",
-        "Už zítra pokračujeme 2. lekcí. Tentokrát se budeme věnovat tématu, ve kterém se pozná snad každá žena. Přijďte si připomenout, že i vy jste důležitá.",
-        "Možná si ani neuvědomujeme, jak často během dne potlačujeme samy sebe. Své potřeby, odpočinek i obyčejnou touhu mít chvíli jen pro sebe. Na zítřejší lekci se společně podíváme na to, jak si začít znovu dělat místo i pro sebe. Bez výčitek a bez pocitu sobectví."
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO",
-        "TO MUSÍM MÍT",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "CHCI NAKUPOVAT SE SLEVOU"
-      ],
-      "text": "96\nZítřejší téma: Jak si začít znovu dělat místo i pro sebe!\n📍 Kde: Odkaz pošleme do e-mailu v 18:30\nUž zítra pokračujeme 2. lekcí. Tentokrát se budeme věnovat tématu, ve kterém se pozná snad každá žena. Přijďte si připomenout, že i vy jste důležitá.\nCHCI BÝT U TOHO\nMožná si ani neuvědomujeme, jak často během dne potlačujeme samy sebe. Své potřeby, odpočinek i obyčejnou touhu mít chvíli jen pro sebe. Na zítřejší lekci se společně podíváme na to, jak si začít znovu dělat místo i pro sebe. Bez výčitek a bez pocitu sobectví.\nCo nás čeká\nProč ženy dávají samy sebe až na poslední místo\nJak poznat, že už jsme ze sebe příliš unavené\nProč máme výčitky, když chceme čas pro sebe\nJak si začít nastavovat malé zdravé hranice\nA teď něco, co vás možná potěší ještě víc…\nKurz právě začal a my máme obrovskou radost, kolik z vás se přidalo. Proto jsme si pro vás připravili malé poděkování.\nTO MUSÍM MÍT\n3 dárky pro vás:\nPříručka Sebeláska krok za krokem\nPříručka Sebeláska krok za krokem 2\nRůžová plážová taška\nJak dárky získat?\nStačí se přihlásit do svého zákaznického účtu\nVybrat si libovolné produkty za 3 000 Kč\nDárky se vám automaticky přidají do košíku.\nPřipojte se do skupiny\nSoučástí kurzu je i naše Facebook skupina, kde vám budeme ukazovat další praktické kroky a malé změny do každodenního života. A hlavně můžete se tam kdykoliv zeptat na to, co vás zajímá.\nCHCI SE PŘIDAT DO SKUPINY\nChci VIP kartu se slevou 35%\nJeště nemáte svou VIP slevu na nákupy v Království tianDe? Vyplňte jednoduchý formulář a otevřete si dveře k výhodnějším nákupům, speciálním akcím a malým radostem, které potěší nejen vás, ale i vaši peněženku.\nCHCI NAKUPOVAT SE SLEVOU\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP. S.: Už zítra pokračujeme 2. lekcí kurzu Sebeláska krok za krokem. Možná právě tahle lekce vám připomene, že nemusíte být ve svém životě vždy až poslední. Přijďte si udělat chvíli sama pro sebe.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KQY193R0PFBDQQCHJ80XRB43",
-    "name": "CZ Den matek - čelenka jako druhý dárek",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "🎁 Získejte tajný DÁREK ke Dni matek! 🎁",
-    "previewText": "Získejte dárek k nákupu nad 1 500 Kč. Jen do 10. 5.",
-    "sentAt": "2026-05-08T18:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "U5V2rf",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Máme pro vás speciální dárek ke Dni matek!",
-      "body": [
-        "Máme pro vás speciální dárek ke Dni matek!",
-        "Ke Dni matek jsme si pro vás připravili tajný dárek. Při nákupu nad",
-        "1 500 Kč od nás získáte luxusní Královskou čelenku. Udělejte radost sobě nebo své mamince ještě dnes.",
-        "Luxusní Královská čelenka se stane vaším oblíbeným beauty pomocníkem. Je neuvěřitelně jemná, pohodlná a dokonale drží vlasy při líčení, odličování i nanášení pleťových masek."
-      ],
-      "cta": "ZÍSKAT KRÁLOVSKOU ČELENKU ZDARMA",
-      "ctas": [
-        "ZÍSKAT KRÁLOVSKOU ČELENKU ZDARMA",
-        "KOUPIT",
-        "Chci VIP slevu"
-      ],
-      "text": "96\nMáme pro vás speciální dárek ke Dni matek!\n⏰ Pouze do 10. 5.\n🎁 Královská čelenka\nKe Dni matek jsme si pro vás připravili tajný dárek. Při nákupu nad\n1 500 Kč od nás získáte luxusní Královskou čelenku. Udělejte radost sobě nebo své mamince ještě dnes.\nZÍSKAT KRÁLOVSKOU ČELENKU ZDARMA\nLuxusní Královská čelenka se stane vaším oblíbeným beauty pomocníkem. Je neuvěřitelně jemná, pohodlná a dokonale drží vlasy při líčení, odličování i nanášení pleťových masek.\nJak čelenku získáte\nNakupte minimálně za 1 500 Kč\nKrálovská čelenka se vám automaticky přiřadí do košíku\nVybrat si můžete šedou nebo růžovou variantu\nRevitalizační noční pleťová krémová maska\n✅ Pleť je po probuzení jemnější, pružnější a zářivější\n✅ Vhodná pro všechny typy pleti\n✅ Zklidňuje citlivou, unavenou i vysušenou pokožku\n596 Kč\n387 Kč ( VIP Sleva)\nKOUPIT\nMonika 48 let: „Večer nanesu a ráno je moje pleť úplně jiná. Hebká, klidná a krásně hydratovaná. Maska je lehká, nelepí a mám pocit, jako bych se konečně opravdu vyspala i v pleti.“\nTající kolagenová liftingová pleťová maska\n✅ Intenzivně hydratuje a zanechává pleť hebkou a vláčnou\n✅ Mořský kolagen pomáhá dodat pleti pocit pevnosti a pružnosti\n✅ Pleť po použití působí vypnutěji a zářivěji\n114 Kč\n74 Kč ( VIP Sleva)\nKOUPIT\nLeontýna 36 let: „Tuhle masku jsem si nechala na večer po náročném týdnu… a wow. Pleť byla po použití nádherně hebká, vypnutá a měla úplně jiný jas. Miluju ten luxusní pocit, když maska na pleti postupně taje. Ráno jsem vypadala odpočatěji než po víkendu.“\n{% if not person|lookup:\"tiandeID\" %}\nChcete u nás nakupovat s 35% slevou?\nChci VIP slevu\n{% endif %}\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Speciální akce ke Dni matek platí pouze do 10. 5. a potom bude luxusní Královská čelenka pryč. Udělejte radost své mamince nebo sama sobě ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KR0N92FCYK9RJFQXTRM9KGRN",
-    "name": "SK Doprava zdarma květen - konec",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "urgency",
-    "subject": "🚚 Nečakajte. Ráno už bude neskoro! 🚚",
-    "previewText": "Doprava zdarma končí dnes o polnoci… stihnete to?",
-    "sentAt": "2026-05-07T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "SXSERy",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Teraz, alebo nikdy: doprava zdarma končí!",
-      "body": [
-        "Teraz, alebo nikdy: doprava zdarma končí!",
-        "Posledné hodiny bežia a doprava zdarma nad 36 € končí už dnes o polnoci, takže ak ste si chceli urobiť radosť, teraz je ten pravý čas.",
-        "Navyše oslavujeme naše 10. narodeniny a k objednávke sme pre vás pripravili malé prekvapenie. Na kolese šťastia si môžete vyžrebovať exkluzívny darček, ktorý vám vyčarí úsmev na tvári.",
-        "P. S. Naozaj už len dnes… o polnoci doprava zdarma končí. Kliknite, vyberte si to, čo vám urobí radosť, a nezabudnite si zatočiť kolesom šťastia!"
-      ],
-      "cta": "CHCEM NAKÚPIŤ VÝHODNE",
-      "ctas": [
-        "CHCEM NAKÚPIŤ VÝHODNE"
-      ],
-      "text": "96\nTeraz, alebo nikdy: doprava zdarma končí!\n⏰ Do dnešnej polnoci\n🎡 Koleso šťastia – každý vyhráva\nCHCEM NAKÚPIŤ VÝHODNE\nPosledné hodiny bežia a doprava zdarma nad 36 € končí už dnes o polnoci, takže ak ste si chceli urobiť radosť, teraz je ten pravý čas.\nNavyše oslavujeme naše 10. narodeniny a k objednávke sme pre vás pripravili malé prekvapenie. Na kolese šťastia si môžete vyžrebovať exkluzívny darček, ktorý vám vyčarí úsmev na tvári.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Naozaj už len dnes… o polnoci doprava zdarma končí. Kliknite, vyberte si to, čo vám urobí radosť, a nezabudnite si zatočiť kolesom šťastia!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQVPP0S70JV9VKS39AP04VB4",
-    "name": "CZ Doprava zdarma květen - konec",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "🚚 Nečekejte. Ráno už bude pozdě! 🚚",
-    "previewText": "Doprava zdarma končí dnes o půlnoci… stihnete to?",
-    "sentAt": "2026-05-07T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UkzVpa",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Teď, nebo nikdy: doprava zdarma končí!",
-      "body": [
-        "Poslední hodiny běží a doprava zdarma nad 900 Kč končí už dnes o půlnoci, takže pokud jste si chtěli udělat radost, teď je ten pravý čas.",
-        "Navíc slavíme naše 10. narozeniny a k objednávce jsme pro vás připravili malé překvapení. Na kole štěstí si můžete vylosovat exkluzivní dárek, který vám vykouzlí úsměv na tváři.",
-        "P. S. Opravdu už jen dnes… o půlnoci doprava zdarma končí. Klikněte, vyberte si to, co vám udělá radost, a nezapomeňte si zatočit kolem štěstí!",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
-      ],
-      "cta": "CHCI NAKOUPIT VÝHODNĚ",
-      "ctas": [
-        "CHCI NAKOUPIT VÝHODNĚ",
-        "ZATOČIT A VYHRÁT"
-      ],
-      "text": "96\nTeď, nebo nikdy: doprava zdarma končí!\n⏰ Do dnešní půlnoci\n🎡 Kolo štěstí - každý vyhrává\nCHCI NAKOUPIT VÝHODNĚ\nPoslední hodiny běží a doprava zdarma nad 900 Kč končí už dnes o půlnoci, takže pokud jste si chtěli udělat radost, teď je ten pravý čas.\nNavíc slavíme naše 10. narozeniny a k objednávce jsme pro vás připravili malé překvapení. Na kole štěstí si můžete vylosovat exkluzivní dárek, který vám vykouzlí úsměv na tváři.\nZATOČIT A VYHRÁT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Opravdu už jen dnes… o půlnoci doprava zdarma končí. Klikněte, vyberte si to, co vám udělá radost, a nezapomeňte si zatočit kolem štěstí!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQS342HPDDYHW5PQJF8Z3TEF",
-    "name": "CZ Lucie Bílá",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Máme pro vás vstupenky na Lucii Bílou!",
-    "previewText": "Zapojte se do soutěže a vyhrajte vstupenky!",
-    "sentAt": "2026-05-06T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "XtbLCG",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Soutěž o vstupenky na Lucii Bílou právě začíná!",
-      "body": [
-        "Soutěž o vstupenky na Lucii Bílou právě začíná!",
-        "Víte, někdy přijdou chvíle, které překvapí i nás samotné. S radostí vám chceme prozradit malé tajemství. Spojili jsme síly s výjimečnou ženou, Lucií Bílou. A čeká nás něco opravdu kouzelného… soukromý koncert jen pro Království tianDe.",
-        "Vzniklo něco, co se u nás ještě nikdy nestalo. Společně jsme připravili muzikál Láska je láska … a tentokrát u toho můžete být i vy. Navíc celé divadlo je soukromé pouze pro Království tianDe. Možná si říkáte: „Tohle se mě netýká…“ Ale co když právě vy budete sedět v hledišti… a zažijete večer, na který se nezapomíná?",
-        "Hlavní výhrou jsou vstupenky na muzikál Láska je láska s Lucií Bílou. A radost nekončí. Ve hře jsou i CD a náramky od Lucie Bílé"
-      ],
-      "cta": "CHCI VYHRÁT",
-      "ctas": [
-        "CHCI VYHRÁT"
-      ],
-      "text": "96\nSoutěž o vstupenky na Lucii Bílou právě začíná!\n⏰ Soutěž trvá do 31. 5.\nVíte, někdy přijdou chvíle, které překvapí i nás samotné. S radostí vám chceme prozradit malé tajemství. Spojili jsme síly s výjimečnou ženou, Lucií Bílou. A čeká nás něco opravdu kouzelného… soukromý koncert jen pro Království tianDe.\nCHCI VYHRÁT\nVzniklo něco, co se u nás ještě nikdy nestalo. Společně jsme připravili muzikál Láska je láska … a tentokrát u toho můžete být i vy. Navíc celé divadlo je soukromé pouze pro Království tianDe. Možná si říkáte: „Tohle se mě netýká…“ Ale co když právě vy budete sedět v hledišti… a zažijete večer, na který se nezapomíná?\nHlavní výhrou jsou vstupenky na muzikál Láska je láska s Lucií Bílou. A radost nekončí. Ve hře jsou i CD a náramky od Lucie Bílé\nJak se zapojit?\nNakupte v květnu za minimálně 1 500 Kč\nAutomaticky se zařadíte do soutěže\nNa začátku června vybereme výherce\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Možná stačí jediný nákup… a budete to právě vy, kdo zažije večer s Lucií Bílou naživo. Nečekejte na „až někdy“. Nakupte ještě dnes a zapojte se do soutěže, dokud běží.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KQYESVJPC6H17756NCTAQGEZ",
-    "name": "SK Lucie Bílá",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "urgency",
-    "subject": "Máme pre vás vstupenky na Luciu Bílou!",
-    "previewText": "Zapojte sa do súťaže a vyhrajte vstupenky!",
-    "sentAt": "2026-05-06T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RUbvWS",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Súťaž o vstupenky na Luciu Bílou práve začína!",
-      "body": [
-        "Súťaž o vstupenky na Luciu Bílou práve začína!",
-        "Viete, niekedy prídu chvíle, ktoré prekvapia aj nás samých. S radosťou vám chceme prezradiť malé tajomstvo. Spojili sme sily s výnimočnou ženou, Luciou Bielou. A čaká nás niečo naozaj čarovné… súkromný koncert len pre Kráľovstvo tianDe.",
-        "Vzniklo niečo, čo sa u nás ešte nikdy nestalo. Spoločne sme pripravili muzikál Láska je láska … a tentoraz pri tom môžete byť aj vy. Navyše celé divadlo je súkromné len pre Kráľovstvo tianDe. Možno si hovoríte: „Toto sa ma netýka…“ Ale čo ak práve vy budete sedieť v hľadisku… a zažijete večer, na ktorý sa nezabúda?",
-        "Hlavnou výhrou sú vstupenky na muzikál Láska je láska s Luciou Bielou. A radosť nekončí. V hre sú aj CD a náramky od Lucie Bielej."
-      ],
-      "cta": "CHCEM VYHRAŤ",
-      "ctas": [
-        "CHCEM VYHRAŤ"
-      ],
-      "text": "96\nSúťaž o vstupenky na Luciu Bílou práve začína!\n⏰ Súťaž trvá do 31. 5.\nViete, niekedy prídu chvíle, ktoré prekvapia aj nás samých. S radosťou vám chceme prezradiť malé tajomstvo. Spojili sme sily s výnimočnou ženou, Luciou Bielou. A čaká nás niečo naozaj čarovné… súkromný koncert len pre Kráľovstvo tianDe.\nCHCEM VYHRAŤ\nVzniklo niečo, čo sa u nás ešte nikdy nestalo. Spoločne sme pripravili muzikál Láska je láska … a tentoraz pri tom môžete byť aj vy. Navyše celé divadlo je súkromné len pre Kráľovstvo tianDe. Možno si hovoríte: „Toto sa ma netýka…“ Ale čo ak práve vy budete sedieť v hľadisku… a zažijete večer, na ktorý sa nezabúda?\nHlavnou výhrou sú vstupenky na muzikál Láska je láska s Luciou Bielou. A radosť nekončí. V hre sú aj CD a náramky od Lucie Bielej.\nAko sa zapojiť?\nNakúpte v máji minimálne za 60 €\nAutomaticky sa zaradíte do súťaže\nNa začiatku júna vyberieme výhercov.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Možno stačí jediný nákup… a budete to práve vy, kto zažije večer s Luciou Bielou naživo. Nečakajte na „až niekedy“. Nakúpte ešte dnes a zapojte sa do súťaže, kým ešte prebieha.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
-      "launch"
     ]
   }
 ]
