@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-06-27T07:32:59.845Z",
+  "generatedAt": "2026-06-28T08:03:43.690Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 113,
-    "sk": 37
+    "cz": 112,
+    "sk": 38
   },
   "campaignTypeBreakdown": {
-    "education": 55,
-    "urgency": 54,
+    "urgency": 55,
+    "education": 54,
     "promo": 26,
     "launch": 12,
     "event": 3
@@ -29,11 +29,11 @@
       "KOUPIT",
       "KÚPIŤ",
       "Zjistit víc",
-      "Připojte se na webinář nyní",
       "CHCI BÝT U TOHO",
+      "Připojte se na webinář nyní",
       "PUSTIT SI ZÁZNAM",
-      "CHCI SE PŘIDAT DO SKUPINY",
       "Klikněte",
+      "CHCI SE PŘIDAT DO SKUPINY",
       "TO MUSÍM MÍT",
       "Kliknite",
       "NAKOUPIT SE SLEVOU",
@@ -73,37 +73,43 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 113,
+      "count": 112,
       "avgSubjectLength": 44,
-      "avgHeadlineLength": 52,
+      "avgHeadlineLength": 51,
       "topCtas": [
         "KOUPIT",
         "Zjistit víc",
-        "Připojte se na webinář nyní",
         "CHCI BÝT U TOHO",
+        "Připojte se na webinář nyní",
         "PUSTIT SI ZÁZNAM",
         "CHCI SE PŘIDAT DO SKUPINY"
       ],
       "topOffers": [
         "percent-off",
         "launch",
-        "education",
         "promo",
+        "education",
         "gift",
         "urgency"
       ],
       "examples": [
         {
-          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
-          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
-          "cta": "exkluzivní nové balíčky s dárky"
+          "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
+          "headline": "Jak nakupovat chytře a maximálně ušetřit?",
+          "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
+          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
         },
         {
           "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
           "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
           "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
           "cta": "REZERVOVAT SI MÍSTO ZDARMA"
+        },
+        {
+          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+          "cta": "exkluzivní nové balíčky s dárky"
         },
         {
           "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
@@ -122,17 +128,11 @@
           "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
           "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
           "cta": "slevami až 50 %"
-        },
-        {
-          "subject": "Skandál: Proč stát chrání víc kondomy než ženy?",
-          "headline": "Skandál, o kterém se mlčí: Proč mají muži větší ochranu než my?",
-          "previewText": "Zjistěte proč mají muži větší ochranu než ženy?! ͏ ͏ ͏",
-          "cta": "TO SI MUSÍM PŘEČÍST"
         }
       ]
     },
     "sk": {
-      "count": 37,
+      "count": 38,
       "avgSubjectLength": 43,
       "avgHeadlineLength": 49,
       "topCtas": [
@@ -152,6 +152,12 @@
         "education"
       ],
       "examples": [
+        {
+          "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
+          "headline": "Ako nakupovať múdro a ušetriť čo najviac?",
+          "previewText": "90 % zákazníkov nevyužíva všetky výhody. Patríte medzi nich?",
+          "cta": "REZERVOVAŤ SI MIESTO ZADARMO"
+        },
         {
           "subject": "90 % zákazníkov prichádza o peniaze. Patríte medzi nich?",
           "headline": "Webinár: Čo si kúpiť, aby ste ušetrili čo najviac.",
@@ -181,17 +187,129 @@
           "headline": "VIP darček čaká práve na vás v košíku!",
           "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
           "cta": "CHCEM SVOJ DARČEK ZADARMO"
-        },
-        {
-          "subject": "POZOR! 2 darčeky na vás čakajú v košíku!",
-          "headline": "2 letné kuchárky už na vás čakajú v košíku!",
-          "previewText": "Nakúpte nad 120 € a získajte Letné kuchárky zadarmo!",
-          "cta": "VYZDVIHNÚŤ SI SVOJE KUCHÁRKY"
         }
       ]
     }
   },
   "byCampaignType": {
+    "urgency": {
+      "count": 55,
+      "avgSubjectLength": 40,
+      "avgHeadlineLength": 47,
+      "topCtas": [
+        "KOUPIT",
+        "Klikněte",
+        "KÚPIŤ",
+        "Kliknite",
+        "PUSTIT SI ZÁZNAM",
+        "CHCI BÝT U TOHO"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "urgency",
+        "promo",
+        "gift",
+        "education"
+      ],
+      "examples": [
+        {
+          "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
+          "headline": "Ako nakupovať múdro a ušetriť čo najviac?",
+          "previewText": "90 % zákazníkov nevyužíva všetky výhody. Patríte medzi nich?",
+          "cta": "REZERVOVAŤ SI MIESTO ZADARMO"
+        },
+        {
+          "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
+          "headline": "Jak nakupovat chytře a maximálně ušetřit?",
+          "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
+          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
+        },
+        {
+          "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
+          "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
+          "previewText": "Poslední příležitost nakoupit za akční ceny.",
+          "cta": "NAKOUPIT HNED TEĎ"
+        },
+        {
+          "subject": "Stihnete to dnes?",
+          "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+          "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+          "cta": "se slevou až 50 %"
+        },
+        {
+          "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
+          "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+          "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
+          "cta": "slevami až 50 %"
+        },
+        {
+          "subject": "Škandál: Prečo štát chráni viac kondómy než ženy?",
+          "headline": "Škandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?",
+          "previewText": "Zistite, prečo majú muži väčšiu ochranu než ženy?! ͏ ͏ ͏",
+          "cta": "TO SI MUSÍM PREČÍTAŤ!"
+        }
+      ]
+    },
+    "education": {
+      "count": 54,
+      "avgSubjectLength": 48,
+      "avgHeadlineLength": 57,
+      "topCtas": [
+        "KOUPIT",
+        "Připojte se na webinář nyní",
+        "CHCI BÝT U TOHO",
+        "CHCI SE PŘIDAT DO SKUPINY",
+        "KÚPIŤ",
+        "PUSTIT SI ZÁZNAM"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "education",
+        "promo",
+        "gift",
+        "urgency"
+      ],
+      "examples": [
+        {
+          "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
+          "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
+          "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
+          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
+        },
+        {
+          "subject": "Proč některé ženy vypadají o 10 let mladší?",
+          "headline": "Tajemství mladistvé pleti není v genech.",
+          "previewText": "Podívejte se, co překvapilo stovky žen.",
+          "cta": "PUSTIT SI ZÁZNÁM"
+        },
+        {
+          "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
+          "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
+          "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
+          "cta": "PUSTIŤ SI ZÁZNAM"
+        },
+        {
+          "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
+          "headline": "Webinář - Krásná a zdravá pleť v každém věku",
+          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+          "cta": "Připojte se na webinář nyní"
+        },
+        {
+          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
+          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
+          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
+          "cta": "CHCI BÝT U TOHO"
+        },
+        {
+          "subject": "Prečo niektoré ženy nestarnú tak rýchlo? Odpoveď vás prekvapí.",
+          "headline": "Webinár zdarma: Krásna a zdravá pleť v každom veku",
+          "previewText": "Objavte tajomstvo krásnej a žiarivej pleti na našom webinári 22. 6.",
+          "cta": "CHCEM BYŤ PRI TOM!"
+        }
+      ]
+    },
     "promo": {
       "count": 26,
       "avgSubjectLength": 44,
@@ -308,124 +426,6 @@
         }
       ]
     },
-    "education": {
-      "count": 55,
-      "avgSubjectLength": 48,
-      "avgHeadlineLength": 57,
-      "topCtas": [
-        "KOUPIT",
-        "Připojte se na webinář nyní",
-        "CHCI BÝT U TOHO",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "KÚPIŤ",
-        "PUSTIT SI ZÁZNAM"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "education",
-        "promo",
-        "gift",
-        "urgency"
-      ],
-      "examples": [
-        {
-          "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
-          "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
-          "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
-          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
-        },
-        {
-          "subject": "Proč některé ženy vypadají o 10 let mladší?",
-          "headline": "Tajemství mladistvé pleti není v genech.",
-          "previewText": "Podívejte se, co překvapilo stovky žen.",
-          "cta": "PUSTIT SI ZÁZNÁM"
-        },
-        {
-          "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
-          "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
-          "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
-          "cta": "PUSTIŤ SI ZÁZNAM"
-        },
-        {
-          "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
-          "headline": "Webinář - Krásná a zdravá pleť v každém věku",
-          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-          "cta": "Připojte se na webinář nyní"
-        },
-        {
-          "subject": "Proč některé ženy nestárnou tak rychle? Odpověď vás překvapí.",
-          "headline": "Webinář zdarma: Krásná a zdravá pleť v každém věku",
-          "previewText": "Objevte tajemství krásné a zářivé pleti na našem webináři 22. 6.",
-          "cta": "CHCI BÝT U TOHO"
-        },
-        {
-          "subject": "Prečo niektoré ženy nestarnú tak rýchlo? Odpoveď vás prekvapí.",
-          "headline": "Webinár zdarma: Krásna a zdravá pleť v každom veku",
-          "previewText": "Objavte tajomstvo krásnej a žiarivej pleti na našom webinári 22. 6.",
-          "cta": "CHCEM BYŤ PRI TOM!"
-        }
-      ]
-    },
-    "urgency": {
-      "count": 54,
-      "avgSubjectLength": 39,
-      "avgHeadlineLength": 47,
-      "topCtas": [
-        "KOUPIT",
-        "Klikněte",
-        "KÚPIŤ",
-        "Kliknite",
-        "PUSTIT SI ZÁZNAM",
-        "CHCI BÝT U TOHO"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "urgency",
-        "promo",
-        "gift",
-        "education"
-      ],
-      "examples": [
-        {
-          "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
-          "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
-          "previewText": "Poslední příležitost nakoupit za akční ceny.",
-          "cta": "NAKOUPIT HNED TEĎ"
-        },
-        {
-          "subject": "Stihnete to dnes?",
-          "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
-          "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
-          "cta": "se slevou až 50 %"
-        },
-        {
-          "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
-          "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
-          "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
-          "cta": "slevami až 50 %"
-        },
-        {
-          "subject": "Škandál: Prečo štát chráni viac kondómy než ženy?",
-          "headline": "Škandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?",
-          "previewText": "Zistite, prečo majú muži väčšiu ochranu než ženy?! ͏ ͏ ͏",
-          "cta": "TO SI MUSÍM PREČÍTAŤ!"
-        },
-        {
-          "subject": "Skandál: Proč stát chrání víc kondomy než ženy?",
-          "headline": "Skandál, o kterém se mlčí: Proč mají muži větší ochranu než my?",
-          "previewText": "Zjistěte proč mají muži větší ochranu než ženy?! ͏ ͏ ͏",
-          "cta": "TO SI MUSÍM PŘEČÍST"
-        },
-        {
-          "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
-          "headline": "Jak nakupovat chytře a maximálně ušetřit?",
-          "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
-          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
-        }
-      ]
-    },
     "event": {
       "count": 3,
       "avgSubjectLength": 51,
@@ -462,6 +462,30 @@
   },
   "examples": [
     {
+      "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
+      "headline": "Ako nakupovať múdro a ušetriť čo najviac?",
+      "previewText": "90 % zákazníkov nevyužíva všetky výhody. Patríte medzi nich?",
+      "cta": "REZERVOVAŤ SI MIESTO ZADARMO",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
+      "headline": "Jak nakupovat chytře a maximálně ušetřit?",
+      "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
+      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
+      "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
+      "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
+      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
       "subject": "90 % zákazníkov prichádza o peniaze. Patríte medzi nich?",
       "headline": "Webinár: Čo si kúpiť, aby ste ušetrili čo najviac.",
       "previewText": "Príďte na bezplatný webinár a zistite, ako môžete ešte tento mesiac ušetriť.",
@@ -476,14 +500,6 @@
       "cta": "exkluzivní nové balíčky s dárky",
       "language": "cz",
       "campaignType": "launch"
-    },
-    {
-      "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
-      "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
-      "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
-      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
-      "language": "cz",
-      "campaignType": "education"
     },
     {
       "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
@@ -522,14 +538,6 @@
       "headline": "Skandál, o kterém se mlčí: Proč mají muži větší ochranu než my?",
       "previewText": "Zjistěte proč mají muži větší ochranu než ženy?! ͏ ͏ ͏",
       "cta": "TO SI MUSÍM PŘEČÍST",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
-      "headline": "Jak nakupovat chytře a maximálně ušetřit?",
-      "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
-      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
       "language": "cz",
       "campaignType": "urgency"
     },
@@ -596,14 +604,6 @@
       "cta": "CHCEM SVOJ DARČEK ZADARMO",
       "language": "sk",
       "campaignType": "urgency"
-    },
-    {
-      "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
-      "headline": "Webinář - Krásná a zdravá pleť v každém věku",
-      "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-      "cta": "Připojte se na webinář nyní",
-      "language": "cz",
-      "campaignType": "education"
     }
   ]
 }
