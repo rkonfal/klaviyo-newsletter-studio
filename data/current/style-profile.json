@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-06-28T08:03:43.690Z",
+  "generatedAt": "2026-06-29T09:13:20.735Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 112,
-    "sk": 38
+    "cz": 110,
+    "sk": 40
   },
   "campaignTypeBreakdown": {
-    "urgency": 55,
-    "education": 54,
+    "urgency": 56,
+    "education": 52,
     "promo": 26,
-    "launch": 12,
+    "launch": 13,
     "event": 3
   },
   "tone": {
@@ -33,8 +33,8 @@
       "Připojte se na webinář nyní",
       "PUSTIT SI ZÁZNAM",
       "Klikněte",
-      "CHCI SE PŘIDAT DO SKUPINY",
       "TO MUSÍM MÍT",
+      "CHCI SE PŘIDAT DO SKUPINY",
       "Kliknite",
       "NAKOUPIT SE SLEVOU",
       "ZAČNU HUBNOUT HNED"
@@ -73,7 +73,7 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 112,
+      "count": 110,
       "avgSubjectLength": 44,
       "avgHeadlineLength": 51,
       "topCtas": [
@@ -82,7 +82,7 @@
         "CHCI BÝT U TOHO",
         "Připojte se na webinář nyní",
         "PUSTIT SI ZÁZNAM",
-        "CHCI SE PŘIDAT DO SKUPINY"
+        "Klikněte"
       ],
       "topOffers": [
         "percent-off",
@@ -93,6 +93,18 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
+          "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+          "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
+          "cta": "slevami až 50 %"
+        },
+        {
+          "subject": "Stihnete to dnes?",
+          "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+          "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+          "cta": "se slevou až 50 %"
+        },
         {
           "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
           "headline": "Jak nakupovat chytře a maximálně ušetřit?",
@@ -116,23 +128,11 @@
           "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
           "previewText": "Poslední příležitost nakoupit za akční ceny.",
           "cta": "NAKOUPIT HNED TEĎ"
-        },
-        {
-          "subject": "Stihnete to dnes?",
-          "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
-          "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
-          "cta": "se slevou až 50 %"
-        },
-        {
-          "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
-          "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
-          "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
-          "cta": "slevami až 50 %"
         }
       ]
     },
     "sk": {
-      "count": 38,
+      "count": 40,
       "avgSubjectLength": 43,
       "avgHeadlineLength": 49,
       "topCtas": [
@@ -146,12 +146,24 @@
       "topOffers": [
         "percent-off",
         "launch",
-        "promo",
         "gift",
+        "promo",
         "urgency",
         "education"
       ],
       "examples": [
+        {
+          "subject": "Stihnete to dnes?",
+          "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+          "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
+          "cta": "ženské zdravie so zľavou až 50 %"
+        },
+        {
+          "subject": "Teraz alebo nikdy: Posledné dni našich najlepších akcií!",
+          "headline": "Teraz alebo nikdy: Stihnete naše najlepšie akcie?",
+          "previewText": "Zľavy až do 50 %, akčné balíčky a darčeky v hodnote až 27 €",
+          "cta": "produkty so zľavami až do 50 %"
+        },
         {
           "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
           "headline": "Ako nakupovať múdro a ušetriť čo najviac?",
@@ -175,25 +187,13 @@
           "headline": "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
           "previewText": "Akcia končí! Využite balíčky s darčekom až v hodnote 27,60 €.",
           "cta": "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM"
-        },
-        {
-          "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
-          "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
-          "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
-          "cta": "PUSTIŤ SI ZÁZNAM"
-        },
-        {
-          "subject": "🤫 Tajná akcia pre našich VIP zákazníkov!",
-          "headline": "VIP darček čaká práve na vás v košíku!",
-          "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
-          "cta": "CHCEM SVOJ DARČEK ZADARMO"
         }
       ]
     }
   },
   "byCampaignType": {
     "urgency": {
-      "count": 55,
+      "count": 56,
       "avgSubjectLength": 40,
       "avgHeadlineLength": 47,
       "topCtas": [
@@ -214,6 +214,24 @@
       ],
       "examples": [
         {
+          "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
+          "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+          "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
+          "cta": "slevami až 50 %"
+        },
+        {
+          "subject": "Stihnete to dnes?",
+          "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+          "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+          "cta": "se slevou až 50 %"
+        },
+        {
+          "subject": "Teraz alebo nikdy: Posledné dni našich najlepších akcií!",
+          "headline": "Teraz alebo nikdy: Stihnete naše najlepšie akcie?",
+          "previewText": "Zľavy až do 50 %, akčné balíčky a darčeky v hodnote až 27 €",
+          "cta": "produkty so zľavami až do 50 %"
+        },
+        {
           "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
           "headline": "Ako nakupovať múdro a ušetriť čo najviac?",
           "previewText": "90 % zákazníkov nevyužíva všetky výhody. Patríte medzi nich?",
@@ -230,37 +248,77 @@
           "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
           "previewText": "Poslední příležitost nakoupit za akční ceny.",
           "cta": "NAKOUPIT HNED TEĎ"
-        },
+        }
+      ]
+    },
+    "launch": {
+      "count": 13,
+      "avgSubjectLength": 40,
+      "avgHeadlineLength": 44,
+      "topCtas": [
+        "KOUPIT",
+        "TO MUSÍM VYZKOŠET",
+        "ženské zdravie so zľavou až 50 %",
+        "darčeky v hodnote 27,60 €",
+        "NAKÚPIŤ VÝHODNE EŠTE DNES",
+        "NAKÚPIŤ ZA SÚČASNÉ CENY"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "gift",
+        "promo",
+        "urgency"
+      ],
+      "examples": [
         {
           "subject": "Stihnete to dnes?",
-          "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
-          "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
-          "cta": "se slevou až 50 %"
+          "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+          "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
+          "cta": "ženské zdravie so zľavou až 50 %"
         },
         {
-          "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
-          "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
-          "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
-          "cta": "slevami až 50 %"
+          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+          "cta": "exkluzivní nové balíčky s dárky"
         },
         {
-          "subject": "Škandál: Prečo štát chráni viac kondómy než ženy?",
-          "headline": "Škandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?",
-          "previewText": "Zistite, prečo majú muži väčšiu ochranu než ženy?! ͏ ͏ ͏",
-          "cta": "TO SI MUSÍM PREČÍTAŤ!"
+          "subject": "Oblíbené masky až se slevou 25 % + dárek zdarma.",
+          "headline": "Maskovací výzva pokračuje: až 25 % sleva a dárek k tomu",
+          "previewText": "Vyberte si své oblíbené masky se slevou až 25 % a získejte navíc dárek, který potěší.",
+          "cta": "NAKOUPIT MASKY SE SLEVOU"
+        },
+        {
+          "subject": "Letní překvapení? Máme pro vás hned 2 dárky!",
+          "headline": "Máme pro vás 2 letní kuchařky zdarma",
+          "previewText": "V košíku na vás čeká překvapení!",
+          "cta": "CHCI KUCHAŘKY ZDARMA"
+        },
+        {
+          "subject": "Letní dárek od nás: 2 nové kuchařky ZDARMA!",
+          "headline": "Naše nové letní kuchařky ZDARMA už na vás čekají v košíku!",
+          "previewText": "K nákupu nad 3000 Kč od nás právě teď získáte 2 nové letní kuchařky ZDARMA.",
+          "cta": "CHCI SVÉ LETNÍ KUCHAŘKY ZDARMA"
+        },
+        {
+          "subject": "20 % zľava? ÁNO, čítate správne!",
+          "headline": "Tak toto tu ešte nebolo! 20 % dole",
+          "previewText": "Nové pleťové balíčky teraz so zľavou 20 %!",
+          "cta": "VYBRAŤ SI BALÍČEK S 20 % ZĽAVOU"
         }
       ]
     },
     "education": {
-      "count": 54,
+      "count": 52,
       "avgSubjectLength": 48,
       "avgHeadlineLength": 57,
       "topCtas": [
         "KOUPIT",
         "Připojte se na webinář nyní",
         "CHCI BÝT U TOHO",
-        "CHCI SE PŘIDAT DO SKUPINY",
         "KÚPIŤ",
+        "CHCI SE PŘIDAT DO SKUPINY",
         "PUSTIT SI ZÁZNAM"
       ],
       "topOffers": [
@@ -368,64 +426,6 @@
         }
       ]
     },
-    "launch": {
-      "count": 12,
-      "avgSubjectLength": 42,
-      "avgHeadlineLength": 43,
-      "topCtas": [
-        "KOUPIT",
-        "TO MUSÍM VYZKOŠET",
-        "CHCI NAKOUPIT VÝHODNĚ",
-        "Nakupte ještě dnes",
-        "NAKOUPIT MASKY SE SLEVOU",
-        "CHCI KUCHAŘKY ZDARMA"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "gift",
-        "promo",
-        "urgency"
-      ],
-      "examples": [
-        {
-          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
-          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
-          "cta": "exkluzivní nové balíčky s dárky"
-        },
-        {
-          "subject": "Oblíbené masky až se slevou 25 % + dárek zdarma.",
-          "headline": "Maskovací výzva pokračuje: až 25 % sleva a dárek k tomu",
-          "previewText": "Vyberte si své oblíbené masky se slevou až 25 % a získejte navíc dárek, který potěší.",
-          "cta": "NAKOUPIT MASKY SE SLEVOU"
-        },
-        {
-          "subject": "Letní překvapení? Máme pro vás hned 2 dárky!",
-          "headline": "Máme pro vás 2 letní kuchařky zdarma",
-          "previewText": "V košíku na vás čeká překvapení!",
-          "cta": "CHCI KUCHAŘKY ZDARMA"
-        },
-        {
-          "subject": "Letní dárek od nás: 2 nové kuchařky ZDARMA!",
-          "headline": "Naše nové letní kuchařky ZDARMA už na vás čekají v košíku!",
-          "previewText": "K nákupu nad 3000 Kč od nás právě teď získáte 2 nové letní kuchařky ZDARMA.",
-          "cta": "CHCI SVÉ LETNÍ KUCHAŘKY ZDARMA"
-        },
-        {
-          "subject": "20 % zľava? ÁNO, čítate správne!",
-          "headline": "Tak toto tu ešte nebolo! 20 % dole",
-          "previewText": "Nové pleťové balíčky teraz so zľavou 20 %!",
-          "cta": "VYBRAŤ SI BALÍČEK S 20 % ZĽAVOU"
-        },
-        {
-          "subject": "20% sleva? ANO, čtete správně!",
-          "headline": "Tak tohle tu ještě nebylo! 20% dolů",
-          "previewText": "Nové pleťové balíčky nyní se slevou 20 %!",
-          "cta": "VYBRAT SI BALÍČEK S 20 % SLEVOU"
-        }
-      ]
-    },
     "event": {
       "count": 3,
       "avgSubjectLength": 51,
@@ -461,6 +461,38 @@
     }
   },
   "examples": [
+    {
+      "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
+      "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+      "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
+      "cta": "slevami až 50 %",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Stihnete to dnes?",
+      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+      "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+      "cta": "se slevou až 50 %",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Stihnete to dnes?",
+      "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+      "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
+      "cta": "ženské zdravie so zľavou až 50 %",
+      "language": "sk",
+      "campaignType": "launch"
+    },
+    {
+      "subject": "Teraz alebo nikdy: Posledné dni našich najlepších akcií!",
+      "headline": "Teraz alebo nikdy: Stihnete naše najlepšie akcie?",
+      "previewText": "Zľavy až do 50 %, akčné balíčky a darčeky v hodnote až 27 €",
+      "cta": "produkty so zľavami až do 50 %",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
     {
       "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
       "headline": "Ako nakupovať múdro a ušetriť čo najviac?",
@@ -506,22 +538,6 @@
       "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
       "previewText": "Poslední příležitost nakoupit za akční ceny.",
       "cta": "NAKOUPIT HNED TEĎ",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Stihnete to dnes?",
-      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
-      "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
-      "cta": "se slevou až 50 %",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
-      "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
-      "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
-      "cta": "slevami až 50 %",
       "language": "cz",
       "campaignType": "urgency"
     },
@@ -588,22 +604,6 @@
       "cta": "PUSTIŤ SI ZÁZNAM",
       "language": "sk",
       "campaignType": "education"
-    },
-    {
-      "subject": "🤫 Tajná akce pro naše VIP zákazníky!",
-      "headline": "VIP dárek čeká právě na vás v košíku!",
-      "previewText": "Získejte VIP dárek, který si oblíbila i Renata Králová. Akce končí za 48 hodin.",
-      "cta": "CHCI SVŮJ DÁREK ZDARMA",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "🤫 Tajná akcia pre našich VIP zákazníkov!",
-      "headline": "VIP darček čaká práve na vás v košíku!",
-      "previewText": "Získajte VIP darček, ktorý si obľúbila aj Renata Kráľová. Akcia končí o 48 hodín.",
-      "cta": "CHCEM SVOJ DARČEK ZADARMO",
-      "language": "sk",
-      "campaignType": "urgency"
     }
   ]
 }

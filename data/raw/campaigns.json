@@ -1,13 +1,170 @@
 [
   {
+    "id": "01KW19FCPPZDC84XHSRTJJDY0V",
+    "name": "CZ - Dvouměsíční akce Teď nebo nikdy",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
+    "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
+    "sentAt": "2026-06-26T00:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "UKhhvF",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+      "body": [
+        "Teď nebo nikdy: Stihnete naše nejlepší akce?",
+        "Právě teď máte jedinečnou příležitost nakoupit své oblíbené produkty se slevami až 50 % a získat dárky v hodnotě až 685 Kč .  Klikněte a využijte poslední dny naší mimořádné akce, než definitivně skončí!",
+        "Hloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy",
+        "✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu."
+      ],
+      "cta": "slevami až 50 %",
+      "ctas": [
+        "slevami až 50 %",
+        "dárky v hodnotě až 685 Kč",
+        "NAKOUPIT, NEŽ BUDE POZDĚ",
+        "KOUPIT",
+        "CHCI SVŮJ DÁREK",
+        "Klikněte"
+      ],
+      "text": "96\nTeď nebo nikdy: Stihnete naše nejlepší akce?\n🎁 Exkluzivní dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nPrávě teď máte jedinečnou příležitost nakoupit své oblíbené produkty se slevami až 50 % a získat dárky v hodnotě až 685 Kč .  Klikněte a využijte poslední dny naší mimořádné akce, než definitivně skončí!\nNAKOUPIT, NEŽ BUDE POZDĚ\nHloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy\n✅ Snadnější rozčesávání bez krepatění.\n✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu.\n✅ Hloubkové čištění + intenzivní výživa v jednom. ✅ Silnější, lesklejší a hebčí vlasy už po několika použitích. 🎁 DÁREK v hodnotě 536 Kč\n894 Kč 581 Kč (VIP Sleva)\nKOUPIT\nMezoroller (masážní váleček)\n✅ Podporuje přirozenou tvorbu kolagenu a pomáhá vyhlazovat vrásky.\n✅ Pomáhá zvýšit vstřebávání účinných látek z kosmetiky až o 90 %.\n✅ Dopřeje vám péči jako z kosmetického salonu – v pohodlí domova a za zlomek ceny. 🔥 30 % SLEVA\n1 281 Kč 583 Kč (VIP Sleva)\nKOUPIT\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie ✅ Chytrý hadřík na všechny omyvatelné povrchy ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n1 054 Kč 685 Kč (VIP Sleva)\nKOUPIT\nMalý tip pro vás\nChcete získat ještě něco navíc?  Při nákupu nad 3 000 Kč od nás získáte navíc dvě letní kuchařky zdarma.  Exkluzivní kuchařky, pro nás připravila Health Coach Jiřina Radová. Najdete v nich desítky lehkých, svěžích a chutných receptů, které si zamiluje celá rodina. ​ Nemusíte dělat vůbec nic navíc . Stačí nakoupit nad 3 000 Kč a váš dárek na vás bude automaticky čekat přímo v košíku (každý zákazník může tuto nabídku využít pouze jednou).\nCHCI SVŮJ DÁREK\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Připomínáme, že slevy až 50 %, dárky v hodnotě až 685 Kč a akční balíčky končí už 30. 6. Navíc při nákupu nad 3 000 Kč získáte Letní kuchařky zdarma. Nečekejte, až bude pozdě. Klikněte   a využijte své výhody ještě dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch",
+      "education"
+    ]
+  },
+  {
+    "id": "01KW1DBK9G6AJVTDAM0RXFNKA2",
+    "name": "CZ - Dvouměsíční akce -Odpočítávání začalo",
+    "status": "Queued without Recipients",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Stihnete to dnes?",
+    "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+    "sentAt": "2026-06-29T17:43:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "RjeLU2",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+      "body": [
+        "Odpočet běží. Udělejte si radost, dokud je čas!",
+        "Finální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.",
+        "POZOR: Od 1. 7. se ceny turmalínových produktů mění",
+        "Protože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes."
+      ],
+      "cta": "se slevou až 50 %",
+      "ctas": [
+        "se slevou až 50 %",
+        "dárky v hodnotě 685 Kč",
+        "NAKOUPIT VÝHODNĚ JEŠTĚ DNES",
+        "NAKOUPIT ZA SOUČASNÉ CENY",
+        "KOUPIT",
+        "Klikněte"
+      ],
+      "text": "96\nOdpočet běží. Udělejte si radost, dokud je čas!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nFinální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.\nNAKOUPIT VÝHODNĚ JEŠTĚ DNES\nPOZOR: Od 1. 7. se ceny turmalínových produktů mění\nProtože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes.\nNAKOUPIT ZA SOUČASNÉ CENY\nTurmalín hřeje, uvolňuje a pomáhá dobít energii.\nTurmalín je přírodní minerál, který je oblíbený pro svou schopnost vytvářet při kontaktu s tělem příjemné teplo. Mnoho lidí si ho oblíbilo pro pocit pohodlí, relaxace a regenerace, který přináší. ​ Podpora příjemného lokálního prohřátí\nPocit uvolnění a relaxace\nIdeální společník pro odpočinek po náročném dni\nVyužívá vlastnosti záporných iontů a infračerveného záření\nPás s bodovou turmalínovou vrstvou\nDlouhé sezení, práce na zahradě, sport nebo náročný den? Dopřejte si příjemný pocit tepla a pohodlí s turmalínovým pásem, který se stane vaším každodenním společníkem.\n2 055 Kč 1 336 Kč ( VIP Sleva)\nKOUPIT\nNavozuje příjemný hřejivý pocit v oblasti beder\nPomáhá uvolnit ztuhlost po dlouhém sezení nebo fyzické námaze\nElastický materiál se přizpůsobí pasu až do 120 cm\nDlouhá životnost až 5000 hodin používání\nMilan, 42 let \"Sedím celý den v kanceláři a večer jsem míval záda jako z kamene. Turmalínový pás jsem si pořídil ze zvědavosti a dnes ho používám skoro každý den. Příjemně hřeje, dobře drží a hlavně mi pomáhá cítit se mnohem pohodlněji. Bez něj už si práci z domova neumím představit.\"\nNákoleníky s bodovou turmalínovou vrstvou\nKolena nás nosí celý život. Ať už trávíte hodiny na nohou, milujete procházky, zahradu nebo aktivní život, zaslouží si péči, která přináší příjemný pocit tepla a komfortu.\n1 876 Kč 976 Kč ( VIP Sleva)\nKOUPIT\nNavozují příjemný hřejivý pocit v oblasti kolen\nIdeální po dlouhém dni na nohou i po fyzické aktivitě\nPodporují příjemný pocit uvolnění a regenerace po námaze.\nPružný materiál se dokonale přizpůsobí tvaru kolen\nPohodlně drží na místě a neomezují v pohybu\n🔥Nyní s 20% slevou\nLenka, 58 let: \"Pracuji kolem domu a na zahradě prakticky každý den. Večer bývala kolena unavená a nepříjemně ztuhlá. Nákoleníky mě mile překvapily. Jsou pohodlné, nikde netlačí a příjemné teplo je přesně to, co po náročném dni potřebuji. Dnes jsou součástí mé každodenní rutiny.\"\nPánské spodní prádlo s bodovou turmalínovou vrstvou\nMuži, kteří ho vyzkouší, se k němu rádi vracejí. Protože skutečné pohodlí poznáte už po prvním nošení.\n447 Kč 145 Kč ( VIP Sleva)\nKOUPIT\nPohodlí a příjemné prohřátí citlivých partií\nZvyšuje pocit pohodlí během náročného pracovního dne\nIdeální společník na cestování, do kanceláře i na chalupu\nPřizpůsobí se tělu a neomezuje v pohybu\n🔥Nyní s 50% slevou\nMarek, 39 let: \" Po pár dnech nošení jsem pochopil, proč jsou tak oblíbené. Jsou neuvěřitelně pohodlné, nikde netlačí a člověk se v nich cítí dobře od rána do večera. Dnes mám doma hned několik kusů a jiné už skoro nenosím.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Odpočítávání běží.  Klikněte   a získejte své oblíbené produkty i exkluzivní dárky, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW9202N9RST1WGB0APT0QNG7",
+    "name": "SK - Dvouměsíční akce -Odpočítávání začalo",
+    "status": "Queued without Recipients",
+    "language": "sk",
+    "campaignType": "launch",
+    "subject": "Stihnete to dnes?",
+    "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
+    "sentAt": "2026-06-29T17:42:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "TWVwS6",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+      "body": [
+        "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+        "Finálne odpočítavanie práve beží. Doprajte si svoje obľúbené produkty pre krásu, starostlivosť o telo aj  ženské zdravie so zľavou až 50 % a získajte exkluzívne darčeky v hodnote 27,60 € k starostlivo zostaveným balíčkom. Kliknite a vyberte si svojich favoritov, kým je ešte čas.",
+        "POZOR: Od 1. 7. sa ceny turmalínových produktov menia",
+        "Pretože si vážime vašu priazeň a dôveru, chceme vás na túto zmenu upozorniť. Od 1. júla dôjde pri produktoch s turmalínom k zmene cien v súvislosti so zvýšením DPH o 9 %. Ak patria turmalínové produkty medzi vaše obľúbené, práve teraz máte poslednú možnosť zaobstarať si ich za súčasné ceny. Využite túto príležitosť a urobte si zásobu ešte dnes."
+      ],
+      "cta": "ženské zdravie so zľavou až 50 %",
+      "ctas": [
+        "ženské zdravie so zľavou až 50 %",
+        "darčeky v hodnote 27,60 €",
+        "NAKÚPIŤ VÝHODNE EŠTE DNES",
+        "NAKÚPIŤ ZA SÚČASNÉ CENY",
+        "KÚPIŤ",
+        "Kliknite"
+      ],
+      "text": "96\nOdpočítavanie beží. Urobte si radosť, kým je ešte čas!\n🎁 Darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až 50 %\n⏰ Len do 30. 6.\nFinálne odpočítavanie práve beží. Doprajte si svoje obľúbené produkty pre krásu, starostlivosť o telo aj  ženské zdravie so zľavou až 50 % a získajte exkluzívne darčeky v hodnote 27,60 € k starostlivo zostaveným balíčkom. Kliknite a vyberte si svojich favoritov, kým je ešte čas.\nNAKÚPIŤ VÝHODNE EŠTE DNES\nPOZOR: Od 1. 7. sa ceny turmalínových produktov menia\nPretože si vážime vašu priazeň a dôveru, chceme vás na túto zmenu upozorniť. Od 1. júla dôjde pri produktoch s turmalínom k zmene cien v súvislosti so zvýšením DPH o 9 %. Ak patria turmalínové produkty medzi vaše obľúbené, práve teraz máte poslednú možnosť zaobstarať si ich za súčasné ceny. Využite túto príležitosť a urobte si zásobu ešte dnes.\nNAKÚPIŤ ZA SÚČASNÉ CENY\nTurmalín hreje, uvoľňuje a pomáha dobiť energiu.\nTurmalín je prírodný minerál, ktorý je obľúbený pre svoju schopnosť vytvárať pri kontakte s telom príjemné teplo. Mnohí ľudia si ho obľúbili pre pocit pohodlia, relaxácie a regenerácie, ktorý prináša.\nPodpora príjemného lokálneho prehriatia\nPocit uvoľnenia a relaxácie\nIdeálny spoločník na oddych po náročnom dni\nVyužíva vlastnosti záporných iónov a infračerveného žiarenia\nPás s bodovou turmalínovou vrstvou\nDlhé sedenie, práca v záhrade, šport alebo náročný deň? Doprajte si príjemný pocit tepla a pohodlia s turmalínovým pásom, ktorý sa stane vaším každodenným spoločníkom.\nKÚPIŤ\nNavodzuje príjemný hrejivý pocit v oblasti krížov\nPomáha uvoľniť stuhnutosť po dlhom sedení alebo fyzickej námahe\nElastický materiál sa prispôsobí pásu až do 120 cm\nDlhá životnosť až 5000 hodín používania\nMilan, 42 rokov: „Sedím celý deň v kancelárii a večer som mával chrbát ako z kameňa. Turmalínový pás som si zaobstaral zo zvedavosti a dnes ho používam takmer každý deň. Príjemne hreje, dobre drží a hlavne mi pomáha cítiť sa oveľa pohodlnejšie. Bez neho si už prácu z domu neviem predstaviť.“\nNákolenníky s bodovou turmalínovou vrstvou\nKolená nás nosia celý život. Či už trávite hodiny na nohách, milujete prechádzky, prácu v záhrade alebo aktívny život, zaslúžia si starostlivosť, ktorá prináša príjemný pocit tepla a komfortu.\nKÚPIŤ\nNavodzujú príjemný hrejivý pocit v oblasti kolien\nIdeálne po dlhom dni na nohách aj po fyzickej aktivite\nPodporujú príjemný pocit uvoľnenia a regenerácie po námahe\nPružný materiál sa dokonale prispôsobí tvaru kolien\nPohodlne držia na mieste a neobmedzujú v pohybe\n🔥 Teraz s 20 % zľavou\nLenka, 58 rokov: „Pracujem okolo domu a v záhrade prakticky každý deň. Večer bývali moje kolená unavené a nepríjemne stuhnuté. Nákolenníky ma milo prekvapili. Sú pohodlné, nikde netlačia a príjemné teplo je presne to, čo po náročnom dni potrebujem. Dnes sú súčasťou mojej každodennej rutiny.“\nPánska spodná bielizeň s bodovou turmalínovou vrstvou\nMuži, ktorí ho vyskúšajú, sa k nemu radi vracajú. Pretože skutočné pohodlie spoznáte už po prvom nosení.\nKÚPIŤ\nPohodlie a príjemné prehriatie citlivých partií\nZvyšuje pocit pohodlia počas náročného pracovného dňa\nIdeálny spoločník na cestovanie, do kancelárie aj na chalupu\nPrispôsobí sa telu a neobmedzuje v pohybe\n🔥 Teraz s 50 % zľavou\nMarek, 39 rokov: „Po pár dňoch nosenia som pochopil, prečo sú také obľúbené. Sú neuveriteľne pohodlné, nikde netlačia a človek sa v nich cíti dobre od rána do večera. Dnes ich mám doma hneď niekoľko kusov a iné už takmer nenosím.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. P.S. Odpočítavanie beží. Kliknite   a získajte svoje obľúbené produkty aj exkluzívne darčeky, kým je ešte čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW6M1YZRSK6YYEABRYZNJ88N",
+    "name": "SK - Dvouměsíční akce Teď nebo nikdy",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
+    "subject": "Teraz alebo nikdy: Posledné dni našich najlepších akcií!",
+    "previewText": "Zľavy až do 50 %, akčné balíčky a darčeky v hodnote až 27 €",
+    "sentAt": "2026-06-28T17:38:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Tiy3aU",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Teraz alebo nikdy: Stihnete naše najlepšie akcie?",
+      "body": [
+        "Teraz alebo nikdy: Stihnete naše najlepšie akcie?",
+        "🎁 Exkluzívne darčeky v hodnote až 27,60 €",
+        "Práve teraz máte jedinečnú príležitosť nakúpiť svoje obľúbené produkty so zľavami až do 50 % a získať darčeky v hodnote až 27,60 € . Kliknite a využite posledné dni našej mimoriadnej akcie, kým sa definitívne skončí!",
+        "Hĺbková regenerácia vlasov s efektom laminácie – lesklé, hladké a dokonale vyživené vlasy."
+      ],
+      "cta": "produkty so zľavami až do 50 %",
+      "ctas": [
+        "produkty so zľavami až do 50 %",
+        "darčeky v hodnote až 27,60 €",
+        "NAKÚPIŤ, KÝM NIE JE NESKORO",
+        "KÚPIŤ",
+        "CHCEM SVOJ DARČEK"
+      ],
+      "text": "96\nTeraz alebo nikdy: Stihnete naše najlepšie akcie?\n🎁 Exkluzívne darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až do 50 %\n⏰ Len do 30. 6.\nPráve teraz máte jedinečnú príležitosť nakúpiť svoje obľúbené produkty so zľavami až do 50 % a získať darčeky v hodnote až 27,60 € . Kliknite a využite posledné dni našej mimoriadnej akcie, kým sa definitívne skončí!\nNAKÚPIŤ, KÝM NIE JE NESKORO\nHĺbková regenerácia vlasov s efektom laminácie – lesklé, hladké a dokonale vyživené vlasy.\n✅ Jednoduchšie rozčesávanie bez krepovatenia. ✅ Viditeľne hladšie a lesklejšie vlasy ako po návšteve salónu.\n✅ Hĺbkové čistenie + intenzívna výživa v jednom.\n✅ Silnejšie, lesklejšie a hebkejšie vlasy už po niekoľkých použitiach.\n🎁 DARČEK v hodnote 21,60 €\nKÚPIŤ\nMezoroller (masážny valček)\n✅ Podporuje prirodzenú tvorbu kolagénu a pomáha vyhladzovať vrásky. ✅ Pomáha zvýšiť vstrebávanie účinných látok z kozmetiky až o 90 %.\n✅ Dopraje vám starostlivosť ako z kozmetického salónu – v pohodlí domova a za zlomok ceny.\n🔥 30 % ZĽAVA.\nKÚPIŤ\nEkologické upratovanie celej domácnosti – dokonale čistý domov bez zbytočnej chémie.\n✅ Hygienicky čistá bielizeň aj riad bez agresívnej chémie ✅ Inteligentná handrička na všetky umývateľné povrchy\n✅ Jeden balíček, ktorý šetrí váš čas, peniaze aj prírodu.\n🎁 DARČEK v hodnote 27,60 €\nKÚPIŤ\nMalý tip pre vás.\nChcete získať ešte niečo navyše? Pri nákupe nad 120 € od nás získate navyše dve letné kuchárky zadarmo. Exkluzívne kuchárky pre nás pripravila Health Coach Jiřina Radová. Nájdete v nich desiatky ľahkých, sviežich a chutných receptov, ktoré si zamiluje celá rodina. ​ Nemusíte robiť vôbec nič navyše. Stačí nakúpiť nad 120 € a váš darček na vás bude automaticky čakať priamo v košíku (každý zákazník môže túto ponuku využiť iba raz).\nCHCEM SVOJ DARČEK\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Pripomíname, že zľavy až do 50 %, darčeky v hodnote až 27,60 € a akčné balíčky končia už 30. 6. Navyše pri nákupe nad 120 € získate Letné kuchárky zadarmo. Nečakajte, kým bude neskoro. Kliknite a využite svoje výhody ešte dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch",
+      "education"
+    ]
+  },
+  {
     "id": "01KW6KHKRCDZNGXKC0BS10D552",
     "name": "SK - Webinář - od vlasů po úklid - pozvánka",
-    "status": "Draft",
+    "status": "Sent",
     "language": "sk",
     "campaignType": "urgency",
     "subject": "Nakupujte múdrejšie. Ukážeme vám, ako z každej objednávky získať maximum!",
     "previewText": "90 % zákazníkov nevyužíva všetky výhody. Patríte medzi nich?",
-    "sentAt": null,
+    "sentAt": "2026-06-28T09:46:00+00:00",
     "segments": [],
     "template": {
       "id": "UmM7BK",
@@ -24,13 +181,11 @@
       "ctas": [
         "REZERVOVAŤ SI MIESTO ZADARMO",
         "KÚPIŤ",
-        "KOUPIT",
-        "Klikněte"
+        "Kliknite"
       ],
-      "text": "96\nAko nakupovať múdro a ušetriť čo najviac?\nKEDY: UŽ ZAJTRA KDE: ONLINE (zadarmo)\nAko ušetriť stovky až tisíce eur ročne? Ukážeme vám to už zajtra. Ukážeme vám, ktoré produkty sa práve teraz oplatia najviac a ako môžete ušetriť stovky až tisíce eur ročne. O webinár je veľký záujem a zostáva už len niekoľko posledných miest\nREZERVOVAŤ SI MIESTO ZADARMO\nPripravili sme pre vás webinár nabitý konkrétnymi odporúčaniami. O svoje skúsenosti sa s vami podelia Jana Bařinková a Pavlína Macháčková , ktoré vám ukážu, čo sa práve teraz naozaj oplatí kúpiť a prečo. ​ Na webinári sa dozviete:\nKtoré produkty sa tento mesiac oplatí kúpiť najviac.\nAko využiť aktuálne akcie a získať z každej objednávky maximum.\nAko nakupovať múdrejšie a ušetriť stovky až tisíce eur ročne.\nPrečo sú hygienické kapsuly na pranie hitom a ako ich získať so skvelým darčekom.\nEkologické upratovanie celej domácnosti – dokonale čistý domov bez zbytočnej chémie\n✅ Hygienicky čistá bielizeň aj riad bez agresívnej chémie. ✅ Inteligentná handrička na všetky umývateľné povrchy.\n✅ Jeden balíček, ktorý šetrí váš čas, peniaze aj prírodu.\n🎁 DARČEK v hodnote 685 Kč.\nKÚPIŤ\nLenka, 42 rokov: \"Najviac som si obľúbila produkty na pranie. Bielizeň je po vypraní krásne čistá, svieža, mäkká a príjemne vonia. Skvele si poradia aj so športovým oblečením alebo uterákmi, ktoré bývajú po čase cítiť. Oceňujem tiež, že nemusím používať niekoľko rôznych prípravkov a mám dobrý pocit zo šetrnejšieho zloženia. Celý systém mi uľahčil starostlivosť o bielizeň a dnes by som sa už ku klasickým pracím prostriedkom nevrátila. Za mňa veľká spokojnosť a určite odporúčam každému, kto hľadá účinné a zároveň šetrnejšie riešenie na každodenné pranie.\"\nHloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy\n✅ Snadnější rozčesávání bez krepatění.\n✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu.\n✅ Hloubkové čištění + intenzivní výživa v jednom. ✅ Silnější, lesklejší a hebčí vlasy už po několika použitích. 🎁 DÁREK v hodnotě 536 Kč\n894 Kč 581 Kč (VIP Sleva)\nKOUPIT\nLaura 48 let: \"Moje vlasy byly po letech barvení suché, matné a konečky se neustále třepily. Po několika použitích této péče jsem byla opravdu překvapená. Vlasy jsou nádherně hladké, hebké na dotek a mají krásný lesk, jako bych právě odcházela z kadeřnického salonu. Navíc se mnohem lépe rozčesávají, nekrepatí se ani při vyšší vlhkosti a nepůsobí zatíženě. Oceňuji i to, že jsou konečky viditelně zdravější a celé vlasy vypadají silnější a upravenější. Za mě jedna z nejlepších vlasových péčí, které jsem kdy vyzkoušela. Určitě objednám znovu.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Připravili jsme pro vás konkrétní tipy, aktuální akce a doporučení, která vám pomohou nakupovat ještě chytřeji a výhodněji. Klikněte   a rezervujte si své místo zdarma, dokud jsou ještě volná.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+      "text": "96\nAko nakupovať múdro a ušetriť čo najviac?\nKEDY: UŽ ZAJTRA KDE: ONLINE (zadarmo)\nAko ušetriť stovky až tisíce eur ročne? Ukážeme vám to už zajtra. Ukážeme vám, ktoré produkty sa práve teraz oplatia najviac a ako môžete ušetriť stovky až tisíce eur ročne. O webinár je veľký záujem a zostáva už len niekoľko posledných miest\nREZERVOVAŤ SI MIESTO ZADARMO\nPripravili sme pre vás webinár nabitý konkrétnymi odporúčaniami. O svoje skúsenosti sa s vami podelia Jana Bařinková a Pavlína Macháčková , ktoré vám ukážu, čo sa práve teraz naozaj oplatí kúpiť a prečo. ​ Na webinári sa dozviete:\nKtoré produkty sa tento mesiac oplatí kúpiť najviac.\nAko využiť aktuálne akcie a získať z každej objednávky maximum.\nAko nakupovať múdrejšie a ušetriť stovky až tisíce eur ročne.\nPrečo sú hygienické kapsuly na pranie hitom a ako ich získať so skvelým darčekom.\nEkologické upratovanie celej domácnosti – dokonale čistý domov bez zbytočnej chémie\n✅ Hygienicky čistá bielizeň aj riad bez agresívnej chémie. ✅ Inteligentná handrička na všetky umývateľné povrchy.\n✅ Jeden balíček, ktorý šetrí váš čas, peniaze aj prírodu.\n🎁 DARČEK v hodnote 27,60 €\nKÚPIŤ\nLenka, 42 rokov: \"Najviac som si obľúbila produkty na pranie. Bielizeň je po vypraní krásne čistá, svieža, mäkká a príjemne vonia. Skvele si poradia aj so športovým oblečením alebo uterákmi, ktoré bývajú po čase cítiť. Oceňujem tiež, že nemusím používať niekoľko rôznych prípravkov a mám dobrý pocit zo šetrnejšieho zloženia. Celý systém mi uľahčil starostlivosť o bielizeň a dnes by som sa už ku klasickým pracím prostriedkom nevrátila. Za mňa veľká spokojnosť a určite odporúčam každému, kto hľadá účinné a zároveň šetrnejšie riešenie na každodenné pranie.\"\nHĺbková regenerácia vlasov s efektom laminácie – lesklé, hladké a dokonale vyživené vlasy\n✅ Jednoduchšie rozčesávanie bez krepovatenia. ✅ Viditeľne hladšie a lesklejšie vlasy ako po návšteve salónu.\n✅ Hĺbkové čistenie + intenzívna výživa v jednom.\n✅ Silnejšie, lesklejšie a hebkejšie vlasy už po niekoľkých použitiach.\n🎁 DARČEK v hodnote 21,60 €\nKÚPIŤ\nLaura, 48 rokov: \"Moje vlasy boli po rokoch farbenia suché, matné a končeky sa neustále štiepili. Po niekoľkých použitiach tejto starostlivosti som bola naozaj prekvapená. Vlasy sú nádherne hladké, hebké na dotyk a majú krásny lesk, akoby som práve odchádzala z kaderníckeho salónu. Navyše sa oveľa lepšie rozčesávajú, nekrepatia sa ani pri vyššej vlhkosti a nepôsobia zaťažene. Oceňujem aj to, že končeky sú viditeľne zdravšie a celé vlasy vyzerajú silnejšie a upravenejšie. Za mňa jedna z najlepších vlasových starostlivostí, aké som kedy vyskúšala. Určite objednám znova.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Pripravili sme pre vás konkrétne tipy, aktuálne akcie a odporúčania, ktoré vám pomôžu nakupovať ešte múdrejšie a výhodnejšie. Kliknite  a rezervujte si svoje miesto zadarmo, kým sú ešte voľné.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
-      "promo",
       "percent-off",
       "gift",
       "launch",
@@ -40,7 +195,7 @@
   {
     "id": "01KVZ568J092RXHNRCBW0KCNYX",
     "name": "CZ - Webinář - od vlasů po úklid - pozvánka",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "urgency",
     "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
@@ -215,85 +370,6 @@
       "percent-off",
       "gift",
       "launch"
-    ]
-  },
-  {
-    "id": "01KW1DBK9G6AJVTDAM0RXFNKA2",
-    "name": "CZ - Dvouměsíční akce -Odpočítávání začalo",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Stihnete to dnes?",
-    "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "RjeLU2",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
-      "body": [
-        "Odpočet běží. Udělejte si radost, dokud je čas!",
-        "Finální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.",
-        "POZOR: Od 1. 7. se ceny turmalínových produktů mění",
-        "Protože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes."
-      ],
-      "cta": "se slevou až 50 %",
-      "ctas": [
-        "se slevou až 50 %",
-        "dárky v hodnotě 685 Kč",
-        "NAKOUPIT VÝHODNĚ JEŠTĚ DNES",
-        "NAKOUPIT ZA SOUČASNÉ CENY",
-        "KOUPIT",
-        "Klikněte"
-      ],
-      "text": "96\nOdpočet běží. Udělejte si radost, dokud je čas!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nFinální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.\nNAKOUPIT VÝHODNĚ JEŠTĚ DNES\nPOZOR: Od 1. 7. se ceny turmalínových produktů mění\nProtože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes.\nNAKOUPIT ZA SOUČASNÉ CENY\nTurmalín hřeje, uvolňuje a pomáhá dobít energii.\nTurmalín je přírodní minerál, který je oblíbený pro svou schopnost vytvářet při kontaktu s tělem příjemné teplo. Mnoho lidí si ho oblíbilo pro pocit pohodlí, relaxace a regenerace, který přináší. ​ Podpora příjemného lokálního prohřátí\nPocit uvolnění a relaxace\nIdeální společník pro odpočinek po náročném dni\nVyužívá vlastnosti záporných iontů a infračerveného záření\nPás s bodovou turmalínovou vrstvou\nDlouhé sezení, práce na zahradě, sport nebo náročný den? Dopřejte si příjemný pocit tepla a pohodlí s turmalínovým pásem, který se stane vaším každodenním společníkem.\n2 055 Kč 1 336 Kč ( VIP Sleva)\nKOUPIT\nNavozuje příjemný hřejivý pocit v oblasti beder\nPomáhá uvolnit ztuhlost po dlouhém sezení nebo fyzické námaze\nElastický materiál se přizpůsobí pasu až do 120 cm\nDlouhá životnost až 5000 hodin používání\nMilan, 42 let \"Sedím celý den v kanceláři a večer jsem míval záda jako z kamene. Turmalínový pás jsem si pořídil ze zvědavosti a dnes ho používám skoro každý den. Příjemně hřeje, dobře drží a hlavně mi pomáhá cítit se mnohem pohodlněji. Bez něj už si práci z domova neumím představit.\"\nNákoleníky s bodovou turmalínovou vrstvou\nKolena nás nosí celý život. Ať už trávíte hodiny na nohou, milujete procházky, zahradu nebo aktivní život, zaslouží si péči, která přináší příjemný pocit tepla a komfortu.\n1 876 Kč 976 Kč ( VIP Sleva)\nKOUPIT\nNavozují příjemný hřejivý pocit v oblasti kolen\nIdeální po dlouhém dni na nohou i po fyzické aktivitě\nPodporují příjemný pocit uvolnění a regenerace po námaze.\nPružný materiál se dokonale přizpůsobí tvaru kolen\nPohodlně drží na místě a neomezují v pohybu\n🔥Nyní s 20% slevou\nLenka, 58 let: \"Pracuji kolem domu a na zahradě prakticky každý den. Večer bývala kolena unavená a nepříjemně ztuhlá. Nákoleníky mě mile překvapily. Jsou pohodlné, nikde netlačí a příjemné teplo je přesně to, co po náročném dni potřebuji. Dnes jsou součástí mé každodenní rutiny.\"\nPánské spodní prádlo s bodovou turmalínovou vrstvou\nMuži, kteří ho vyzkouší, se k němu rádi vracejí. Protože skutečné pohodlí poznáte už po prvním nošení.\n447 Kč 145 Kč ( VIP Sleva)\nKOUPIT\nPohodlí a příjemné prohřátí citlivých partií\nZvyšuje pocit pohodlí během náročného pracovního dne\nIdeální společník na cestování, do kanceláře i na chalupu\nPřizpůsobí se tělu a neomezuje v pohybu\n🔥Nyní s 50% slevou\nMarek, 39 let: \" Po pár dnech nošení jsem pochopil, proč jsou tak oblíbené. Jsou neuvěřitelně pohodlné, nikde netlačí a člověk se v nich cítí dobře od rána do večera. Dnes mám doma hned několik kusů a jiné už skoro nenosím.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Odpočítávání běží.  Klikněte   a získejte své oblíbené produkty i exkluzivní dárky, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KW19FCPPZDC84XHSRTJJDY0V",
-    "name": "CZ - Dvouměsíční akce Teď nebo nikdy",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Teď nebo nikdy: Poslední dny našich nejlepších akcí!",
-    "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "UKhhvF",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
-      "body": [
-        "Teď nebo nikdy: Stihnete naše nejlepší akce?",
-        "Právě teď máte jedinečnou příležitost nakoupit své oblíbené produkty se slevami až 50 % a získat dárky v hodnotě až 685 Kč .  Klikněte a využijte poslední dny naší mimořádné akce, než definitivně skončí!",
-        "Hloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy",
-        "✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu."
-      ],
-      "cta": "slevami až 50 %",
-      "ctas": [
-        "slevami až 50 %",
-        "dárky v hodnotě až 685 Kč",
-        "NAKOUPIT, NEŽ BUDE POZDĚ",
-        "KOUPIT",
-        "CHCI SVŮJ DÁREK",
-        "Klikněte"
-      ],
-      "text": "96\nTeď nebo nikdy: Stihnete naše nejlepší akce?\n🎁 Exkluzivní dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nPrávě teď máte jedinečnou příležitost nakoupit své oblíbené produkty se slevami až 50 % a získat dárky v hodnotě až 685 Kč .  Klikněte a využijte poslední dny naší mimořádné akce, než definitivně skončí!\nNAKOUPIT, NEŽ BUDE POZDĚ\nHloubková regenerace vlasů s efektem laminace – lesklé, hladké a dokonale vyživené vlasy\n✅ Snadnější rozčesávání bez krepatění.\n✅ Viditelně hladší a lesklejší vlasy jako po návštěvě salonu.\n✅ Hloubkové čištění + intenzivní výživa v jednom. ✅ Silnější, lesklejší a hebčí vlasy už po několika použitích. 🎁 DÁREK v hodnotě 536 Kč\n894 Kč 581 Kč (VIP Sleva)\nKOUPIT\nMezoroller (masážní váleček)\n✅ Podporuje přirozenou tvorbu kolagenu a pomáhá vyhlazovat vrásky.\n✅ Pomáhá zvýšit vstřebávání účinných látek z kosmetiky až o 90 %.\n✅ Dopřeje vám péči jako z kosmetického salonu – v pohodlí domova a za zlomek ceny. 🔥 30 % SLEVA\n1 281 Kč 897 Kč (VIP Sleva)\nKOUPIT\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie ✅ Chytrý hadřík na všechny omyvatelné povrchy ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n685 Kč 445 Kč (VIP Sleva)\nKOUPIT\nMalý tip pro vás\nChcete získat ještě něco navíc?  Při nákupu nad 3 000 Kč od nás získáte navíc dvě letní kuchařky zdarma.  Exkluzivní kuchařky, pro nás připravila Health Coach Jiřina Radová. Najdete v nich desítky lehkých, svěžích a chutných receptů, které si zamiluje celá rodina. ​ Nemusíte dělat vůbec nic navíc . Stačí nakoupit nad 3 000 Kč a váš dárek na vás bude automaticky čekat přímo v košíku (každý zákazník může tuto nabídku využít pouze jednou).\nCHCI SVŮJ DÁREK\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Připomínáme, že slevy až 50 %, dárky v hodnotě až 685 Kč a akční balíčky končí už 30. 6. Navíc při nákupu nad 3 000 Kč získáte Letní kuchařky zdarma. Nečekejte, až bude pozdě. Klikněte   a využijte své výhody ještě dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "gift",
-      "launch",
-      "education"
     ]
   },
   {
@@ -5057,76 +5133,6 @@
       "percent-off",
       "gift",
       "launch"
-    ]
-  },
-  {
-    "id": "01KRDMJVPAPE8PCCTSMQ6TT4DG",
-    "name": "CZ - Sebeláska 2. lekce - záznam",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "2. lekce otevřela bolest, kterou ženy roky skrývají!",
-    "previewText": "Utekla vám druhá lekce kurzu Sebelásky? Tady je záznam!",
-    "sentAt": "2026-05-12T12:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UgzjH4",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Včera ženy zjistily, proč se jim přání neplní…",
-      "body": [
-        "Včera ženy zjistily, proč se jim přání neplní…",
-        "Možná jste si celý život přála způsobem, který vás jen víc vyčerpával.",
-        "Ve 2. lekci  ženy zjistily, jak si začít přát s lehkostí, klidem a bez tlaku na dokonalost. Pokud jste vysílání nestihla, záznam už na vás čeká.",
-        "Andrea i Renata během večera ukázaly, jak moc naše přání ovlivňuje to, jak o sobě přemýšlíme. A že když se roky soustředíme jen na to, co nechceme, těžko můžeme vidět cestu k tomu, co si skutečně přejeme žít."
-      ],
-      "cta": "PUSTIT SI ZÁZNAM",
-      "ctas": [
-        "PUSTIT SI ZÁZNAM",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "KOUPIT"
-      ],
-      "text": "96\nVčera ženy zjistily, proč se jim přání neplní…\nMožná jste si celý život přála způsobem, který vás jen víc vyčerpával.\nVe 2. lekci  ženy zjistily, jak si začít přát s lehkostí, klidem a bez tlaku na dokonalost. Pokud jste vysílání nestihla, záznam už na vás čeká.\nPUSTIT SI ZÁZNAM\nAndrea i Renata během večera ukázaly, jak moc naše přání ovlivňuje to, jak o sobě přemýšlíme. A že když se roky soustředíme jen na to, co nechceme, těžko můžeme vidět cestu k tomu, co si skutečně přejeme žít.\nCo se dozvíte:\nJak formulovat přání v přítomném čase\nProč psaní rukou mění naše vnitřní nastavení\nJak přestat tvořit přání ze strachu a únavy\nZazněl i silný příběh paní Renaty Králové\nPo letech zklamání ve vztazích si sedla s obyčejným papírem a začala psát. Ne co nechce. Ale jakého partnera si přeje vedle sebe cítit.\nBez výčitek. Bez omluv. Bez strachu, že chce moc.  Dala svému přání jasný tvar. Pocit. Obraz. A dnes sama říká, že právě ten pocit, který si tehdy popsala na papír, opravdu žije.\nPřipojte se do skupiny\nSoučástí kurzu je i naše Facebook skupina, kde vám budeme ukazovat další praktické kroky a malé změny do každodenního života. A hlavně můžete se tam kdykoliv zeptat na to, co vás zajímá.\nCHCI SE PŘIDAT DO SKUPINY\nA teď něco, co vás možná potěší ještě víc…\nKurz právě začal a my máme obrovskou radost, kolik z vás se přidalo. Proto jsme si pro vás připravili malé poděkování.\n3 dárky pro vás:\nPříručka Sebeláska krok za krokem\nPříručka Sebeláska krok za krokem 2\nRůžová plážová taška\nJak dárky získat?\nStačí se přihlásit do svého zákaznického účtu\nVybrat si libovolné produkty za 3 000 Kč\nDárky se vám automaticky přidají do košíku.\nDopřejte nohám úlevu, kterou si zaslouží\n✅ Stačí nalepit a spát\n✅ Uklidňující vůně levandule pro příjemnější usínání\n✅Dopřejte nohám úlevu, kterou si zaslouží\n🎁 Kosmetická taštička\n4 174 Kč\n2 170 Kč ( VIP Sleva)\nKOUPIT\nKarolína 52 let: „Pracuji jako zdravotní sestra a po dvanáctihodinových směnách mám nohy jako olovo. Po první noci s levandulovými náplastmi jsem vstala s pocitem, že nohy nejsou tak těžké a oteklé jako obvykle. Dnes je používám pravidelně a nedám na ně dopustit.“\nZlatophyt s hřejivou náplastí Wutong\n✅ Každodenní podpora zevnitř i zvenčí v jednom balíčku\n✅ Příjemný hřejivý pocit pro unavená záda, šíji i ramena\n✅ Ideální po práci, sportu i dlouhém sezení\n🎁 Wutong\n1 342 Kč\n872 Kč ( VIP Sleva)\nKOUPIT\nSilva 38 let: „Zlatophyt užívám každé ráno a stal se součástí mojí rutiny. Náplast Wutong mě úplně překvapila – po celém dni v práci si ji dávám na záda a ten hřejivý pocit je neskutečně příjemný. Teď ji mám doma pořád.“\nAndrea Svitáková\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nP. S. Možná stačí jen jeden večer, jeden papír a jedno opravdové přání, aby se něco uvnitř vás konečně pohnulo správným směrem. Pusťte si záznam 2. lekce ještě dnes a dovolte si na chvíli myslet i sama na sebe.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KR0RP3BK3K4NEQNJWQC50CHA",
-    "name": "CZ - Balíček Fresh Click",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Dárek za 536 Kč zdarma? Vaše vlasy budou zářit!",
-    "previewText": "Nezapomeňte si vyzvednout svůj dárek za 536 Kč!",
-    "sentAt": "2026-05-11T16:45:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "V7Fzyi",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "3 kroky k vlasům, které budou všichni obdivovat",
-      "body": [
-        "3 kroky k vlasům, které budou všichni obdivovat",
-        "Trápí vás mdlé, krepaté nebo rychle se mastící vlasy bez lesku? Máme pro vás balíček, který promění vaše vlasy už po prvním použití. Dopřejte svým vlasům wow efekt jako ze salonu a objednejte ještě dnes.",
-        "Vaše vlasy každý den bojují s nánosy stylingu, mazem, krepatěním i ztrátou lesku. A čím více produktů používáme, tím více jsou unavené a bez života.",
-        "Právě proto jsme vytvořili speciální balíček, který vlasům vrátí hebkost, lesk a zdravý vzhled už po prvním použití."
-      ],
-      "cta": "CHCI MÍT KRÁSNÉ VLASY",
-      "ctas": [
-        "CHCI MÍT KRÁSNÉ VLASY"
-      ],
-      "text": "96\n3 kroky k vlasům, které budou všichni obdivovat\n🎁 Dárek v hodnotě 536 Kč\nTrápí vás mdlé, krepaté nebo rychle se mastící vlasy bez lesku? Máme pro vás balíček, který promění vaše vlasy už po prvním použití. Dopřejte svým vlasům wow efekt jako ze salonu a objednejte ještě dnes.\nCHCI MÍT KRÁSNÉ VLASY\nVaše vlasy každý den bojují s nánosy stylingu, mazem, krepatěním i ztrátou lesku. A čím více produktů používáme, tím více jsou unavené a bez života.\nPrávě proto jsme vytvořili speciální balíček, který vlasům vrátí hebkost, lesk a zdravý vzhled už po prvním použití.\nHloubkové čištění bez vysušení\nEfekt bio-laminace pro hladké a zářivě lesklé vlasy\nMéně krepatění a elektrizování\nHebké vlasy , které snadno rozčešete\n🎁 Fluid na vlasy s arganovým olejem v hodnotě 536 Kč zdarma\nMarek 48 let: „Upřímně? Nečekala jsem takový rozdíl už po prvním použití. Vlasy byly nádherně hebké, lesklé a vůbec se nekrepatily. Nejvíc mě překvapilo, že působily lehce a čistě několik dní, i když se mi běžně rychle mastí. A fluid s arganovým olejem? Naprostá závislost. Konečky vypadají zdravě a vlasy mají konečně ten „salonový“ efekt, který jsem roky hledala.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S: Nezapomeňte si vyzvednout svůj dárek v hodnotě 536 Kč zdarma a dopřejte svým vlasům lesk, hebkost a efekt bio-laminace, který si zamilujete už po prvním použití. Klikněte a objednejte si svůj balíček ještě dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch",
-      "education"
     ]
   }
 ]
