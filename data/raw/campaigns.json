@@ -1,5 +1,184 @@
 [
   {
+    "id": "01KW1KF6VDYZW7JVF465KGVVSC",
+    "name": "CZ - Dvouměsíční akce - konec",
+    "status": "Queued without Recipients",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
+    "previewText": "Poslední příležitost nakoupit za akční ceny.",
+    "sentAt": "2026-06-30T16:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "XwRJpG",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
+      "body": [
+        "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
+        "P.S. Jen do dnešní půlnoci můžete získat vybrané produkty se slevou až 50 % a navíc exkluzivní dárek v hodnotě 685 Kč . O půlnoci se tato jedinečná nabídka uzavře. Nakupte hned teď a využijte tuto mimořádnou příležitost naplno.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+      ],
+      "cta": "Nakoupit hned teď",
+      "ctas": [
+        "Nakoupit hned teď",
+        "produkty se slevou až 50 %",
+        "dárek v hodnotě 685 Kč"
+      ],
+      "text": "96\nChcete ještě ušetřit? Zbývá posledních 6 hodin!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\nNakoupit hned teď\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Jen do dnešní půlnoci můžete získat vybrané produkty se slevou až 50 % a navíc exkluzivní dárek v hodnotě 685 Kč . O půlnoci se tato jedinečná nabídka uzavře. Nakupte hned teď a využijte tuto mimořádnou příležitost naplno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWBQG1MMSVV0PP21MC8RTMQ3",
+    "name": "SK - Dvouměsíční akce - konec",
+    "status": "Queued without Recipients",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "⏰ Zostáva posledných 6 hodín! ⏰",
+    "previewText": "Posledná príležitosť nakúpiť za akciové ceny.",
+    "sentAt": "2026-06-30T16:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "X3fQsV",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
+      "body": [
+        "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
+        "P.S. Len do dnešnej polnoci môžete získať vybrané produkty so zľavou až 50 %   a navyše  exkluzívny darček v hodnote 27,60 € . O polnoci sa táto jedinečná ponuka uzavrie. Nakúpte hneď teraz a využite túto mimoriadnu príležitosť naplno.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+      ],
+      "cta": "NAKÚPIŤ HNEĎ TERAZ",
+      "ctas": [
+        "NAKÚPIŤ HNEĎ TERAZ",
+        "so zľavou až 50 %",
+        "exkluzívny darček v hodnote 27,60 €"
+      ],
+      "text": "96\nChcete ešte ušetriť? Zostáva posledných 6 hodín!\n🎁 ​ Darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až 50 %\nNAKÚPIŤ HNEĎ TERAZ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Len do dnešnej polnoci môžete získať vybrané produkty so zľavou až 50 %   a navyše  exkluzívny darček v hodnote 27,60 € . O polnoci sa táto jedinečná ponuka uzavrie. Nakúpte hneď teraz a využite túto mimoriadnu príležitosť naplno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW1DBK9G6AJVTDAM0RXFNKA2",
+    "name": "CZ - Dvouměsíční akce -Odpočítávání začalo",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Stihnete to dnes?",
+    "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
+    "sentAt": "2026-06-29T17:43:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "RjeLU2",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
+      "body": [
+        "Odpočet běží. Udělejte si radost, dokud je čas!",
+        "Finální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.",
+        "POZOR: Od 1. 7. se ceny turmalínových produktů mění",
+        "Protože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes."
+      ],
+      "cta": "se slevou až 50 %",
+      "ctas": [
+        "se slevou až 50 %",
+        "dárky v hodnotě 685 Kč",
+        "NAKOUPIT VÝHODNĚ JEŠTĚ DNES",
+        "NAKOUPIT ZA SOUČASNÉ CENY",
+        "KOUPIT",
+        "Klikněte"
+      ],
+      "text": "96\nOdpočet běží. Udělejte si radost, dokud je čas!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nFinální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.\nNAKOUPIT VÝHODNĚ JEŠTĚ DNES\nPOZOR: Od 1. 7. se ceny turmalínových produktů mění\nProtože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes.\nNAKOUPIT ZA SOUČASNÉ CENY\nTurmalín hřeje, uvolňuje a pomáhá dobít energii.\nTurmalín je přírodní minerál, který je oblíbený pro svou schopnost vytvářet při kontaktu s tělem příjemné teplo. Mnoho lidí si ho oblíbilo pro pocit pohodlí, relaxace a regenerace, který přináší. ​ Podpora příjemného lokálního prohřátí\nPocit uvolnění a relaxace\nIdeální společník pro odpočinek po náročném dni\nVyužívá vlastnosti záporných iontů a infračerveného záření\nPás s bodovou turmalínovou vrstvou\nDlouhé sezení, práce na zahradě, sport nebo náročný den? Dopřejte si příjemný pocit tepla a pohodlí s turmalínovým pásem, který se stane vaším každodenním společníkem.\n2 055 Kč 1 336 Kč ( VIP Sleva)\nKOUPIT\nNavozuje příjemný hřejivý pocit v oblasti beder\nPomáhá uvolnit ztuhlost po dlouhém sezení nebo fyzické námaze\nElastický materiál se přizpůsobí pasu až do 120 cm\nDlouhá životnost až 5000 hodin používání\nMilan, 42 let \"Sedím celý den v kanceláři a večer jsem míval záda jako z kamene. Turmalínový pás jsem si pořídil ze zvědavosti a dnes ho používám skoro každý den. Příjemně hřeje, dobře drží a hlavně mi pomáhá cítit se mnohem pohodlněji. Bez něj už si práci z domova neumím představit.\"\nNákoleníky s bodovou turmalínovou vrstvou\nKolena nás nosí celý život. Ať už trávíte hodiny na nohou, milujete procházky, zahradu nebo aktivní život, zaslouží si péči, která přináší příjemný pocit tepla a komfortu.\n1 876 Kč 976 Kč ( VIP Sleva)\nKOUPIT\nNavozují příjemný hřejivý pocit v oblasti kolen\nIdeální po dlouhém dni na nohou i po fyzické aktivitě\nPodporují příjemný pocit uvolnění a regenerace po námaze.\nPružný materiál se dokonale přizpůsobí tvaru kolen\nPohodlně drží na místě a neomezují v pohybu\n🔥Nyní s 20% slevou\nLenka, 58 let: \"Pracuji kolem domu a na zahradě prakticky každý den. Večer bývala kolena unavená a nepříjemně ztuhlá. Nákoleníky mě mile překvapily. Jsou pohodlné, nikde netlačí a příjemné teplo je přesně to, co po náročném dni potřebuji. Dnes jsou součástí mé každodenní rutiny.\"\nPánské spodní prádlo s bodovou turmalínovou vrstvou\nMuži, kteří ho vyzkouší, se k němu rádi vracejí. Protože skutečné pohodlí poznáte už po prvním nošení.\n447 Kč 145 Kč ( VIP Sleva)\nKOUPIT\nPohodlí a příjemné prohřátí citlivých partií\nZvyšuje pocit pohodlí během náročného pracovního dne\nIdeální společník na cestování, do kanceláře i na chalupu\nPřizpůsobí se tělu a neomezuje v pohybu\n🔥Nyní s 50% slevou\nMarek, 39 let: \" Po pár dnech nošení jsem pochopil, proč jsou tak oblíbené. Jsou neuvěřitelně pohodlné, nikde netlačí a člověk se v nich cítí dobře od rána do večera. Dnes mám doma hned několik kusů a jiné už skoro nenosím.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Odpočítávání běží.  Klikněte   a získejte své oblíbené produkty i exkluzivní dárky, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW9202N9RST1WGB0APT0QNG7",
+    "name": "SK - Dvouměsíční akce -Odpočítávání začalo",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "launch",
+    "subject": "Stihnete to dnes?",
+    "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
+    "sentAt": "2026-06-29T17:42:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "TWVwS6",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+      "body": [
+        "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+        "Finálne odpočítavanie práve beží. Doprajte si svoje obľúbené produkty pre krásu, starostlivosť o telo aj  ženské zdravie so zľavou až 50 % a získajte exkluzívne darčeky v hodnote 27,60 € k starostlivo zostaveným balíčkom. Kliknite a vyberte si svojich favoritov, kým je ešte čas.",
+        "POZOR: Od 1. 7. sa ceny turmalínových produktov menia",
+        "Pretože si vážime vašu priazeň a dôveru, chceme vás na túto zmenu upozorniť. Od 1. júla dôjde pri produktoch s turmalínom k zmene cien v súvislosti so zvýšením DPH o 9 %. Ak patria turmalínové produkty medzi vaše obľúbené, práve teraz máte poslednú možnosť zaobstarať si ich za súčasné ceny. Využite túto príležitosť a urobte si zásobu ešte dnes."
+      ],
+      "cta": "ženské zdravie so zľavou až 50 %",
+      "ctas": [
+        "ženské zdravie so zľavou až 50 %",
+        "darčeky v hodnote 27,60 €",
+        "NAKÚPIŤ VÝHODNE EŠTE DNES",
+        "NAKÚPIŤ ZA SÚČASNÉ CENY",
+        "KÚPIŤ",
+        "Kliknite"
+      ],
+      "text": "96\nOdpočítavanie beží. Urobte si radosť, kým je ešte čas!\n🎁 Darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až 50 %\n⏰ Len do 30. 6.\nFinálne odpočítavanie práve beží. Doprajte si svoje obľúbené produkty pre krásu, starostlivosť o telo aj  ženské zdravie so zľavou až 50 % a získajte exkluzívne darčeky v hodnote 27,60 € k starostlivo zostaveným balíčkom. Kliknite a vyberte si svojich favoritov, kým je ešte čas.\nNAKÚPIŤ VÝHODNE EŠTE DNES\nPOZOR: Od 1. 7. sa ceny turmalínových produktov menia\nPretože si vážime vašu priazeň a dôveru, chceme vás na túto zmenu upozorniť. Od 1. júla dôjde pri produktoch s turmalínom k zmene cien v súvislosti so zvýšením DPH o 9 %. Ak patria turmalínové produkty medzi vaše obľúbené, práve teraz máte poslednú možnosť zaobstarať si ich za súčasné ceny. Využite túto príležitosť a urobte si zásobu ešte dnes.\nNAKÚPIŤ ZA SÚČASNÉ CENY\nTurmalín hreje, uvoľňuje a pomáha dobiť energiu.\nTurmalín je prírodný minerál, ktorý je obľúbený pre svoju schopnosť vytvárať pri kontakte s telom príjemné teplo. Mnohí ľudia si ho obľúbili pre pocit pohodlia, relaxácie a regenerácie, ktorý prináša.\nPodpora príjemného lokálneho prehriatia\nPocit uvoľnenia a relaxácie\nIdeálny spoločník na oddych po náročnom dni\nVyužíva vlastnosti záporných iónov a infračerveného žiarenia\nPás s bodovou turmalínovou vrstvou\nDlhé sedenie, práca v záhrade, šport alebo náročný deň? Doprajte si príjemný pocit tepla a pohodlia s turmalínovým pásom, ktorý sa stane vaším každodenným spoločníkom.\nKÚPIŤ\nNavodzuje príjemný hrejivý pocit v oblasti krížov\nPomáha uvoľniť stuhnutosť po dlhom sedení alebo fyzickej námahe\nElastický materiál sa prispôsobí pásu až do 120 cm\nDlhá životnosť až 5000 hodín používania\nMilan, 42 rokov: „Sedím celý deň v kancelárii a večer som mával chrbát ako z kameňa. Turmalínový pás som si zaobstaral zo zvedavosti a dnes ho používam takmer každý deň. Príjemne hreje, dobre drží a hlavne mi pomáha cítiť sa oveľa pohodlnejšie. Bez neho si už prácu z domu neviem predstaviť.“\nNákolenníky s bodovou turmalínovou vrstvou\nKolená nás nosia celý život. Či už trávite hodiny na nohách, milujete prechádzky, prácu v záhrade alebo aktívny život, zaslúžia si starostlivosť, ktorá prináša príjemný pocit tepla a komfortu.\nKÚPIŤ\nNavodzujú príjemný hrejivý pocit v oblasti kolien\nIdeálne po dlhom dni na nohách aj po fyzickej aktivite\nPodporujú príjemný pocit uvoľnenia a regenerácie po námahe\nPružný materiál sa dokonale prispôsobí tvaru kolien\nPohodlne držia na mieste a neobmedzujú v pohybe\n🔥 Teraz s 20 % zľavou\nLenka, 58 rokov: „Pracujem okolo domu a v záhrade prakticky každý deň. Večer bývali moje kolená unavené a nepríjemne stuhnuté. Nákolenníky ma milo prekvapili. Sú pohodlné, nikde netlačia a príjemné teplo je presne to, čo po náročnom dni potrebujem. Dnes sú súčasťou mojej každodennej rutiny.“\nPánska spodná bielizeň s bodovou turmalínovou vrstvou\nMuži, ktorí ho vyskúšajú, sa k nemu radi vracajú. Pretože skutočné pohodlie spoznáte už po prvom nosení.\nKÚPIŤ\nPohodlie a príjemné prehriatie citlivých partií\nZvyšuje pocit pohodlia počas náročného pracovného dňa\nIdeálny spoločník na cestovanie, do kancelárie aj na chalupu\nPrispôsobí sa telu a neobmedzuje v pohybe\n🔥 Teraz s 50 % zľavou\nMarek, 39 rokov: „Po pár dňoch nosenia som pochopil, prečo sú také obľúbené. Sú neuveriteľne pohodlné, nikde netlačia a človek sa v nich cíti dobre od rána do večera. Dnes ich mám doma hneď niekoľko kusov a iné už takmer nenosím.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. P.S. Odpočítavanie beží. Kliknite   a získajte svoje obľúbené produkty aj exkluzívne darčeky, kým je ešte čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KW9EQPGKVZS91N7QDMMMC1FE",
+    "name": "Webinář - Od vlasů po úklid: Co si koupit, abyste maximálně ušetřili 29.6. odkaz",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "⏰ Webinář - Od vlasů po úklid: Co si koupit, abyste maximálně ušetřili - ZAČÍNÁME ZA 30 MINUT!",
+    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+    "sentAt": "2026-06-29T17:30:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "WnQFTa",
+      "name": "2025-02-16 06:16 s podpisem",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Už za 30 minut začínáme náš webinář - Od vlasů po úklid ve 20:00 hodin. První účastníci se už připojují.",
+      "body": [
+        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
+        "Už za 30 minut začínáme náš webinář - Od vlasů po úklid ve 20:00 hodin. První účastníci se už připojují.",
+        "Webinář - Od vlasů po úklid: Co si koupit, abyste maximálně ušetřili",
+        "Důležité: Připojte se včas, kapacita webináře je omezená."
+      ],
+      "cta": "Připojte se na webinář nyní",
+      "ctas": [
+        "Připojte se na webinář nyní"
+      ],
+      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš webinář - Od vlasů po úklid ve 20:00 hodin. První účastníci se už připojují.\nWebinář - Od vlasů po úklid: Co si koupit, abyste maximálně ušetřili\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nDenisa Horová provozní ředitelka\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KW19FCPPZDC84XHSRTJJDY0V",
     "name": "CZ - Dvouměsíční akce Teď nebo nikdy",
     "status": "Sent",
@@ -38,82 +217,6 @@
       "gift",
       "launch",
       "education"
-    ]
-  },
-  {
-    "id": "01KW1DBK9G6AJVTDAM0RXFNKA2",
-    "name": "CZ - Dvouměsíční akce -Odpočítávání začalo",
-    "status": "Queued without Recipients",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Stihnete to dnes?",
-    "previewText": "Dopřejte si své oblíbené produkty ještě za akční ceny.",
-    "sentAt": "2026-06-29T17:43:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RjeLU2",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Odpočet běží. Udělejte si radost, dokud je čas!",
-      "body": [
-        "Odpočet běží. Udělejte si radost, dokud je čas!",
-        "Finální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.",
-        "POZOR: Od 1. 7. se ceny turmalínových produktů mění",
-        "Protože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes."
-      ],
-      "cta": "se slevou až 50 %",
-      "ctas": [
-        "se slevou až 50 %",
-        "dárky v hodnotě 685 Kč",
-        "NAKOUPIT VÝHODNĚ JEŠTĚ DNES",
-        "NAKOUPIT ZA SOUČASNÉ CENY",
-        "KOUPIT",
-        "Klikněte"
-      ],
-      "text": "96\nOdpočet běží. Udělejte si radost, dokud je čas!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\n⏰ Pouze do 30. 6.\nFinální odpočet právě běží. Dopřejte si své oblíbené produkty pro krásu, péči o tělo i ženské zdraví se slevou až 50 % a získejte exkluzivní dárky v hodnotě 685 Kč   k pečlivě sestaveným balíčkům. Klikněte a vyberte si své favority, dokud je čas.\nNAKOUPIT VÝHODNĚ JEŠTĚ DNES\nPOZOR: Od 1. 7. se ceny turmalínových produktů mění\nProtože si vážíme vaší přízně a důvěry, chceme vás na tuto změnu upozornit. Od 1. července dojde u produktů s turmalínem ke změně cen v souvislosti se zvýšením DPH o 9 %. Pokud patří turmalín mezi vaše oblíbené produkty, právě teď máte poslední možnost pořídit si je za současné ceny. Využijte tuto příležitost a udělejte si zásobu ještě dnes.\nNAKOUPIT ZA SOUČASNÉ CENY\nTurmalín hřeje, uvolňuje a pomáhá dobít energii.\nTurmalín je přírodní minerál, který je oblíbený pro svou schopnost vytvářet při kontaktu s tělem příjemné teplo. Mnoho lidí si ho oblíbilo pro pocit pohodlí, relaxace a regenerace, který přináší. ​ Podpora příjemného lokálního prohřátí\nPocit uvolnění a relaxace\nIdeální společník pro odpočinek po náročném dni\nVyužívá vlastnosti záporných iontů a infračerveného záření\nPás s bodovou turmalínovou vrstvou\nDlouhé sezení, práce na zahradě, sport nebo náročný den? Dopřejte si příjemný pocit tepla a pohodlí s turmalínovým pásem, který se stane vaším každodenním společníkem.\n2 055 Kč 1 336 Kč ( VIP Sleva)\nKOUPIT\nNavozuje příjemný hřejivý pocit v oblasti beder\nPomáhá uvolnit ztuhlost po dlouhém sezení nebo fyzické námaze\nElastický materiál se přizpůsobí pasu až do 120 cm\nDlouhá životnost až 5000 hodin používání\nMilan, 42 let \"Sedím celý den v kanceláři a večer jsem míval záda jako z kamene. Turmalínový pás jsem si pořídil ze zvědavosti a dnes ho používám skoro každý den. Příjemně hřeje, dobře drží a hlavně mi pomáhá cítit se mnohem pohodlněji. Bez něj už si práci z domova neumím představit.\"\nNákoleníky s bodovou turmalínovou vrstvou\nKolena nás nosí celý život. Ať už trávíte hodiny na nohou, milujete procházky, zahradu nebo aktivní život, zaslouží si péči, která přináší příjemný pocit tepla a komfortu.\n1 876 Kč 976 Kč ( VIP Sleva)\nKOUPIT\nNavozují příjemný hřejivý pocit v oblasti kolen\nIdeální po dlouhém dni na nohou i po fyzické aktivitě\nPodporují příjemný pocit uvolnění a regenerace po námaze.\nPružný materiál se dokonale přizpůsobí tvaru kolen\nPohodlně drží na místě a neomezují v pohybu\n🔥Nyní s 20% slevou\nLenka, 58 let: \"Pracuji kolem domu a na zahradě prakticky každý den. Večer bývala kolena unavená a nepříjemně ztuhlá. Nákoleníky mě mile překvapily. Jsou pohodlné, nikde netlačí a příjemné teplo je přesně to, co po náročném dni potřebuji. Dnes jsou součástí mé každodenní rutiny.\"\nPánské spodní prádlo s bodovou turmalínovou vrstvou\nMuži, kteří ho vyzkouší, se k němu rádi vracejí. Protože skutečné pohodlí poznáte už po prvním nošení.\n447 Kč 145 Kč ( VIP Sleva)\nKOUPIT\nPohodlí a příjemné prohřátí citlivých partií\nZvyšuje pocit pohodlí během náročného pracovního dne\nIdeální společník na cestování, do kanceláře i na chalupu\nPřizpůsobí se tělu a neomezuje v pohybu\n🔥Nyní s 50% slevou\nMarek, 39 let: \" Po pár dnech nošení jsem pochopil, proč jsou tak oblíbené. Jsou neuvěřitelně pohodlné, nikde netlačí a člověk se v nich cítí dobře od rána do večera. Dnes mám doma hned několik kusů a jiné už skoro nenosím.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Odpočítávání běží.  Klikněte   a získejte své oblíbené produkty i exkluzivní dárky, dokud je čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KW9202N9RST1WGB0APT0QNG7",
-    "name": "SK - Dvouměsíční akce -Odpočítávání začalo",
-    "status": "Queued without Recipients",
-    "language": "sk",
-    "campaignType": "launch",
-    "subject": "Stihnete to dnes?",
-    "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
-    "sentAt": "2026-06-29T17:42:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "TWVwS6",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
-      "body": [
-        "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
-        "Finálne odpočítavanie práve beží. Doprajte si svoje obľúbené produkty pre krásu, starostlivosť o telo aj  ženské zdravie so zľavou až 50 % a získajte exkluzívne darčeky v hodnote 27,60 € k starostlivo zostaveným balíčkom. Kliknite a vyberte si svojich favoritov, kým je ešte čas.",
-        "POZOR: Od 1. 7. sa ceny turmalínových produktov menia",
-        "Pretože si vážime vašu priazeň a dôveru, chceme vás na túto zmenu upozorniť. Od 1. júla dôjde pri produktoch s turmalínom k zmene cien v súvislosti so zvýšením DPH o 9 %. Ak patria turmalínové produkty medzi vaše obľúbené, práve teraz máte poslednú možnosť zaobstarať si ich za súčasné ceny. Využite túto príležitosť a urobte si zásobu ešte dnes."
-      ],
-      "cta": "ženské zdravie so zľavou až 50 %",
-      "ctas": [
-        "ženské zdravie so zľavou až 50 %",
-        "darčeky v hodnote 27,60 €",
-        "NAKÚPIŤ VÝHODNE EŠTE DNES",
-        "NAKÚPIŤ ZA SÚČASNÉ CENY",
-        "KÚPIŤ",
-        "Kliknite"
-      ],
-      "text": "96\nOdpočítavanie beží. Urobte si radosť, kým je ešte čas!\n🎁 Darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až 50 %\n⏰ Len do 30. 6.\nFinálne odpočítavanie práve beží. Doprajte si svoje obľúbené produkty pre krásu, starostlivosť o telo aj  ženské zdravie so zľavou až 50 % a získajte exkluzívne darčeky v hodnote 27,60 € k starostlivo zostaveným balíčkom. Kliknite a vyberte si svojich favoritov, kým je ešte čas.\nNAKÚPIŤ VÝHODNE EŠTE DNES\nPOZOR: Od 1. 7. sa ceny turmalínových produktov menia\nPretože si vážime vašu priazeň a dôveru, chceme vás na túto zmenu upozorniť. Od 1. júla dôjde pri produktoch s turmalínom k zmene cien v súvislosti so zvýšením DPH o 9 %. Ak patria turmalínové produkty medzi vaše obľúbené, práve teraz máte poslednú možnosť zaobstarať si ich za súčasné ceny. Využite túto príležitosť a urobte si zásobu ešte dnes.\nNAKÚPIŤ ZA SÚČASNÉ CENY\nTurmalín hreje, uvoľňuje a pomáha dobiť energiu.\nTurmalín je prírodný minerál, ktorý je obľúbený pre svoju schopnosť vytvárať pri kontakte s telom príjemné teplo. Mnohí ľudia si ho obľúbili pre pocit pohodlia, relaxácie a regenerácie, ktorý prináša.\nPodpora príjemného lokálneho prehriatia\nPocit uvoľnenia a relaxácie\nIdeálny spoločník na oddych po náročnom dni\nVyužíva vlastnosti záporných iónov a infračerveného žiarenia\nPás s bodovou turmalínovou vrstvou\nDlhé sedenie, práca v záhrade, šport alebo náročný deň? Doprajte si príjemný pocit tepla a pohodlia s turmalínovým pásom, ktorý sa stane vaším každodenným spoločníkom.\nKÚPIŤ\nNavodzuje príjemný hrejivý pocit v oblasti krížov\nPomáha uvoľniť stuhnutosť po dlhom sedení alebo fyzickej námahe\nElastický materiál sa prispôsobí pásu až do 120 cm\nDlhá životnosť až 5000 hodín používania\nMilan, 42 rokov: „Sedím celý deň v kancelárii a večer som mával chrbát ako z kameňa. Turmalínový pás som si zaobstaral zo zvedavosti a dnes ho používam takmer každý deň. Príjemne hreje, dobre drží a hlavne mi pomáha cítiť sa oveľa pohodlnejšie. Bez neho si už prácu z domu neviem predstaviť.“\nNákolenníky s bodovou turmalínovou vrstvou\nKolená nás nosia celý život. Či už trávite hodiny na nohách, milujete prechádzky, prácu v záhrade alebo aktívny život, zaslúžia si starostlivosť, ktorá prináša príjemný pocit tepla a komfortu.\nKÚPIŤ\nNavodzujú príjemný hrejivý pocit v oblasti kolien\nIdeálne po dlhom dni na nohách aj po fyzickej aktivite\nPodporujú príjemný pocit uvoľnenia a regenerácie po námahe\nPružný materiál sa dokonale prispôsobí tvaru kolien\nPohodlne držia na mieste a neobmedzujú v pohybe\n🔥 Teraz s 20 % zľavou\nLenka, 58 rokov: „Pracujem okolo domu a v záhrade prakticky každý deň. Večer bývali moje kolená unavené a nepríjemne stuhnuté. Nákolenníky ma milo prekvapili. Sú pohodlné, nikde netlačia a príjemné teplo je presne to, čo po náročnom dni potrebujem. Dnes sú súčasťou mojej každodennej rutiny.“\nPánska spodná bielizeň s bodovou turmalínovou vrstvou\nMuži, ktorí ho vyskúšajú, sa k nemu radi vracajú. Pretože skutočné pohodlie spoznáte už po prvom nosení.\nKÚPIŤ\nPohodlie a príjemné prehriatie citlivých partií\nZvyšuje pocit pohodlia počas náročného pracovného dňa\nIdeálny spoločník na cestovanie, do kancelárie aj na chalupu\nPrispôsobí sa telu a neobmedzuje v pohybe\n🔥 Teraz s 50 % zľavou\nMarek, 39 rokov: „Po pár dňoch nosenia som pochopil, prečo sú také obľúbené. Sú neuveriteľne pohodlné, nikde netlačia a človek sa v nich cíti dobre od rána do večera. Dnes ich mám doma hneď niekoľko kusov a iné už takmer nenosím.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. P.S. Odpočítavanie beží. Kliknite   a získajte svoje obľúbené produkty aj exkluzívne darčeky, kým je ešte čas.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
     ]
   },
   {
@@ -333,42 +436,6 @@
     "offers": [
       "urgency",
       "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KW1KF6VDYZW7JVF465KGVVSC",
-    "name": "CZ - Dvouměsíční akce - konec",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
-    "previewText": "Poslední příležitost nakoupit za akční ceny.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "XwRJpG",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
-      "body": [
-        "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
-        "P.S. Jen do dnešní půlnoci můžete získat vybrané produkty se slevou až 50 % a navíc exkluzivní dárek v hodnotě 685 Kč . O půlnoci se tato jedinečná nabídka uzavře. Nakupte hned teď a využijte tuto mimořádnou příležitost naplno.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
-      ],
-      "cta": "NAKOUPIT HNED TEĎ",
-      "ctas": [
-        "NAKOUPIT HNED TEĎ",
-        "produkty se slevou až 50 %",
-        "dárek v hodnotě 685 Kč"
-      ],
-      "text": "96\nChcete ještě ušetřit? Zbývá posledních 6 hodin!\n🎁  Dárky v hodnotě až 685 Kč\n🔥 Extra slevy až 50 %\nNAKOUPIT HNED TEĎ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Jen do dnešní půlnoci můžete získat vybrané produkty se slevou až 50 % a navíc exkluzivní dárek v hodnotě 685 Kč . O půlnoci se tato jedinečná nabídka uzavře. Nakupte hned teď a využijte tuto mimořádnou příležitost naplno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
-      "gift",
       "launch"
     ]
   },
@@ -5060,74 +5127,6 @@
         "Sledovat na youtube"
       ],
       "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.\nTělo jako kompas\n6. Jídlo jako lék nebo jed\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nPoznámka: Pokud se nedostanete na zoom - zájem je velký - můžete nás sledovat v přímém přenosu na youtube zde:\nSledovat na youtube\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nPaedDr. Eva Štěpová\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRB1V0XJNHY5HHNRYX1QGDGQ",
-    "name": "CZ 10. narozeniny",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "launch",
-    "subject": "🎁 POZOR: dnes rozdáváme DÁRKY! 🎁",
-    "previewText": "Zatočte si kolem štěstí a vyhrajte dárek. Dnes vyhrává opravdu každý!",
-    "sentAt": "2026-05-12T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "WLHCFW",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Slavíme 10 let a dárky rozdáváme úplně všem!",
-      "body": [
-        "Slavíme 10 let a dárky rozdáváme úplně všem!",
-        "Slavíme 10 let Království tianDe a bez vás by tenhle příběh nikdy nevznikl. Pusťte si naše narozeninové video plné vzpomínek a emoce. A potom si zatočte kolem štěstí o exkluzivní dárky, protože dnes vyhrává opravdu každý!",
-        "PODÍVEJTE SE NA NÁŠ SPOLEČNÝ 10 LETÝ PŘÍBĚH",
-        "P. S. Nenechte si svůj dárek utéct… Kolo štěstí se točí právě teď a každý roztočený okamžik ukrývá malé poděkování za to, že jste součástí našeho příběhu."
-      ],
-      "cta": "zatočte kolem štěstí",
-      "ctas": [
-        "zatočte kolem štěstí",
-        "PODÍVEJTE SE NA NÁŠ SPOLEČNÝ 10 LETÝ PŘÍBĚH"
-      ],
-      "text": "96\nSlavíme 10 let a dárky rozdáváme úplně všem!\n🎥 Exkluzivní video přímo pro vás\n🎡 Kolo štěstí - 100% šance na výhru\nSlavíme 10 let Království tianDe a bez vás by tenhle příběh nikdy nevznikl. Pusťte si naše narozeninové video plné vzpomínek a emoce. A potom si zatočte kolem štěstí o exkluzivní dárky, protože dnes vyhrává opravdu každý!\nPODÍVEJTE SE NA NÁŠ SPOLEČNÝ 10 LETÝ PŘÍBĚH\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Nenechte si svůj dárek utéct… Kolo štěstí se točí právě teď a každý roztočený okamžik ukrývá malé poděkování za to, že jste součástí našeho příběhu.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRDQ37JN3AWCJQJ3MAX95GMT",
-    "name": "SK 10. narozeniny",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "launch",
-    "subject": "🎁 POZOR: dnes rozdávame DARČEKY! 🎁",
-    "previewText": "Roztočte kolo šťastia a vyhrajte darček. Dnes vyhráva naozaj každý!",
-    "sentAt": "2026-05-12T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "TavJRP",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Oslavujeme 10 rokov a darčeky rozdávame úplne všetkým!",
-      "body": [
-        "Oslavujeme 10 rokov a darčeky rozdávame úplne všetkým!",
-        "🎡 Koleso šťastia – 100 % šanca na výhru",
-        "Oslavujeme 10 rokov Kráľovstva tianDe a bez vás by tento príbeh nikdy nevznikol. Pozrite si naše narodeninové video plné spomienok a emócií. A potom si roztočte koleso šťastia o exkluzívne darčeky , pretože dnes vyhráva naozaj každý!",
-        "P . S. Nenechajte si svoj darček ujsť… Koleso šťastia sa točí práve teraz a každý roztočený okamih ukrýva malé poďakovanie za to, že ste súčasťou nášho príbehu."
-      ],
-      "cta": "roztočte koleso šťastia o exkluzívne darčeky",
-      "ctas": [
-        "roztočte koleso šťastia o exkluzívne darčeky",
-        "POZRITE SI NÁŠ SPOLOČNÝ 10-ROČNÝ PRÍBEH"
-      ],
-      "text": "96\nOslavujeme 10 rokov a darčeky rozdávame úplne všetkým!\n🎥 Exkluzívne video priamo pre vás\n🎡 Koleso šťastia – 100 % šanca na výhru\nOslavujeme 10 rokov Kráľovstva tianDe a bez vás by tento príbeh nikdy nevznikol. Pozrite si naše narodeninové video plné spomienok a emócií. A potom si roztočte koleso šťastia o exkluzívne darčeky , pretože dnes vyhráva naozaj každý!\nPOZRITE SI NÁŠ SPOLOČNÝ 10-ROČNÝ PRÍBEH\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP . S. Nenechajte si svoj darček ujsť… Koleso šťastia sa točí práve teraz a každý roztočený okamih ukrýva malé poďakovanie za to, že ste súčasťou nášho príbehu.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "percent-off",
