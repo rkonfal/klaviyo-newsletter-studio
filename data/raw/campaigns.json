@@ -1,8 +1,79 @@
 [
   {
+    "id": "01KWEA49KEG89W178EGKYEG2EE",
+    "name": "SK Doprava zdarma červenec - začíná",
+    "status": "Draft",
+    "language": "sk",
+    "campaignType": "launch",
+    "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
+    "previewText": "Nielen doprava zdarma! Objavte aj nové exkluzívne zľavy až do 50 %!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "Ynnue5",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
+      "body": [
+        "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
+        "📅 Od 1. do 7. júla 🎁 Pri nákupe nad 36 €",
+        "Nový mesiac sme odštartovali naozaj vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, ​ limitované zľavy až do 50 % a navyše dopravu ZADARMO pri nákupe nad 36 €. Urobte si radosť ešte dnes.",
+        "P. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!"
+      ],
+      "cta": "exkluzívne nové balíčky s darčekmi,",
+      "ctas": [
+        "exkluzívne nové balíčky s darčekmi,",
+        "limitované zľavy až do 50 %",
+        "CHCEM NAKÚPIŤ VÝHODNE",
+        "Nakupte ještě dnes"
+      ],
+      "text": "96\nJE TO TU: Nové balíčky, nové zľavy a doprava zdarma!\n📅 Od 1. do 7. júla 🎁 Pri nákupe nad 36 €\nNový mesiac sme odštartovali naozaj vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, ​ limitované zľavy až do 50 % a navyše dopravu ZADARMO pri nákupe nad 36 €. Urobte si radosť ešte dnes.\nCHCEM NAKÚPIŤ VÝHODNE\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWBQG1MMSVV0PP21MC8RTMQ3",
+    "name": "SK - Dvouměsíční akce - konec",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "⏰ Zostáva posledných 6 hodín! ⏰",
+    "previewText": "Posledná príležitosť nakúpiť za akciové ceny.",
+    "sentAt": "2026-06-30T16:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "X3fQsV",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
+      "body": [
+        "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
+        "P.S. Len do dnešnej polnoci môžete získať vybrané produkty so zľavou až 50 %   a navyše  exkluzívny darček v hodnote 27,60 € . O polnoci sa táto jedinečná ponuka uzavrie. Nakúpte hneď teraz a využite túto mimoriadnu príležitosť naplno.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+      ],
+      "cta": "NAKÚPIŤ HNEĎ TERAZ",
+      "ctas": [
+        "NAKÚPIŤ HNEĎ TERAZ",
+        "so zľavou až 50 %",
+        "exkluzívny darček v hodnote 27,60 €"
+      ],
+      "text": "96\nChcete ešte ušetriť? Zostáva posledných 6 hodín!\n🎁 ​ Darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až 50 %\nNAKÚPIŤ HNEĎ TERAZ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Len do dnešnej polnoci môžete získať vybrané produkty so zľavou až 50 %   a navyše  exkluzívny darček v hodnote 27,60 € . O polnoci sa táto jedinečná ponuka uzavrie. Nakúpte hneď teraz a využite túto mimoriadnu príležitosť naplno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
     "id": "01KW1KF6VDYZW7JVF465KGVVSC",
     "name": "CZ - Dvouměsíční akce - konec",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "urgency",
     "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
@@ -30,41 +101,6 @@
     },
     "offers": [
       "urgency",
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KWBQG1MMSVV0PP21MC8RTMQ3",
-    "name": "SK - Dvouměsíční akce - konec",
-    "status": "Queued without Recipients",
-    "language": "sk",
-    "campaignType": "promo",
-    "subject": "⏰ Zostáva posledných 6 hodín! ⏰",
-    "previewText": "Posledná príležitosť nakúpiť za akciové ceny.",
-    "sentAt": "2026-06-30T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "X3fQsV",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
-      "body": [
-        "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
-        "P.S. Len do dnešnej polnoci môžete získať vybrané produkty so zľavou až 50 %   a navyše  exkluzívny darček v hodnote 27,60 € . O polnoci sa táto jedinečná ponuka uzavrie. Nakúpte hneď teraz a využite túto mimoriadnu príležitosť naplno.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
-      ],
-      "cta": "NAKÚPIŤ HNEĎ TERAZ",
-      "ctas": [
-        "NAKÚPIŤ HNEĎ TERAZ",
-        "so zľavou až 50 %",
-        "exkluzívny darček v hodnote 27,60 €"
-      ],
-      "text": "96\nChcete ešte ušetriť? Zostáva posledných 6 hodín!\n🎁 ​ Darčeky v hodnote až 27,60 €\n🔥 Extra zľavy až 50 %\nNAKÚPIŤ HNEĎ TERAZ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Len do dnešnej polnoci môžete získať vybrané produkty so zľavou až 50 %   a navyše  exkluzívny darček v hodnote 27,60 € . O polnoci sa táto jedinečná ponuka uzavrie. Nakúpte hneď teraz a využite túto mimoriadnu príležitosť naplno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
       "percent-off",
       "gift",
       "launch"
@@ -5098,40 +5134,6 @@
       "percent-off",
       "launch",
       "education"
-    ]
-  },
-  {
-    "id": "01KRE5XF5EYPKJHTNRHDKBW7F3",
-    "name": "Kurz Tělo jako kompas 1, 6.lekce 12.5. odkaz",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "⏰ Kurz Tělo jako kompas - ZAČÍNÁME ZA 30 MINUT! + Dnes skvělý dárek",
-    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-    "sentAt": "2026-05-12T17:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RXNnyM",
-      "name": "2025-02-16 06:16 s podpisem",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
-      "body": [
-        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
-        "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
-        "Důležité: Připojte se včas, kapacita webináře je omezená.",
-        "🟢 Váš osobní odkaz pro připojení na webinář:"
-      ],
-      "cta": "Připojte se na webinář nyní",
-      "ctas": [
-        "Připojte se na webinář nyní",
-        "Sledovat na youtube"
-      ],
-      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.\nTělo jako kompas\n6. Jídlo jako lék nebo jed\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nPoznámka: Pokud se nedostanete na zoom - zájem je velký - můžete nás sledovat v přímém přenosu na youtube zde:\nSledovat na youtube\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nPaedDr. Eva Štěpová\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
     ]
   }
 ]
