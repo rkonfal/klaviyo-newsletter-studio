@@ -1,13 +1,49 @@
 [
   {
+    "id": "01KW1T7QR8Z9BPM011PT6J666J",
+    "name": "CZ Doprava zdarma červenec - začíná",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "launch",
+    "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+    "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+    "sentAt": "2026-07-01T16:49:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "SkUQ8P",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+      "body": [
+        "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+        "📅 Od 1. do 7. července 🎁 Při nákupu nad 900 Kč",
+        "Nový měsíc jsme odstartovali opravdu ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky , limitované slevy až 50 % a navíc dopravu ZDARMA při nákupu nad 900 Kč. Udělejte si radost ještě dnes.",
+        "P. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!"
+      ],
+      "cta": "exkluzivní nové balíčky s dárky",
+      "ctas": [
+        "exkluzivní nové balíčky s dárky",
+        "limitované slevy až 50 %",
+        "Chci nakoupit výhodně",
+        "Nakupte ještě dnes"
+      ],
+      "text": "96\nJE TO TADY: Nové balíčky, nové slevy a doprava zdarma\n📅 Od 1. do 7. července 🎁 Při nákupu nad 900 Kč\nNový měsíc jsme odstartovali opravdu ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky , limitované slevy až 50 % a navíc dopravu ZDARMA při nákupu nad 900 Kč. Udělejte si radost ještě dnes.\nChci nakoupit výhodně\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KWEA49KEG89W178EGKYEG2EE",
     "name": "SK Doprava zdarma červenec - začíná",
-    "status": "Draft",
+    "status": "Sent",
     "language": "sk",
     "campaignType": "launch",
     "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
     "previewText": "Nielen doprava zdarma! Objavte aj nové exkluzívne zľavy až do 50 %!",
-    "sentAt": null,
+    "sentAt": "2026-07-01T16:48:00+00:00",
     "segments": [],
     "template": {
       "id": "Ynnue5",
@@ -18,20 +54,52 @@
         "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
         "📅 Od 1. do 7. júla 🎁 Pri nákupe nad 36 €",
         "Nový mesiac sme odštartovali naozaj vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, ​ limitované zľavy až do 50 % a navyše dopravu ZADARMO pri nákupe nad 36 €. Urobte si radosť ešte dnes.",
-        "P. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!"
+        "P. S. Doprava zdarma je len začiatok! Nakúpte ešte dnes , kým sa tie najlepšie kúsky nevypredajú!"
       ],
       "cta": "exkluzívne nové balíčky s darčekmi,",
       "ctas": [
         "exkluzívne nové balíčky s darčekmi,",
         "limitované zľavy až do 50 %",
         "CHCEM NAKÚPIŤ VÝHODNE",
-        "Nakupte ještě dnes"
+        "ešte dnes"
       ],
-      "text": "96\nJE TO TU: Nové balíčky, nové zľavy a doprava zdarma!\n📅 Od 1. do 7. júla 🎁 Pri nákupe nad 36 €\nNový mesiac sme odštartovali naozaj vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, ​ limitované zľavy až do 50 % a navyše dopravu ZADARMO pri nákupe nad 36 €. Urobte si radosť ešte dnes.\nCHCEM NAKÚPIŤ VÝHODNE\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+      "text": "96\nJE TO TU: Nové balíčky, nové zľavy a doprava zdarma!\n📅 Od 1. do 7. júla 🎁 Pri nákupe nad 36 €\nNový mesiac sme odštartovali naozaj vo veľkom. Pripravili sme pre vás exkluzívne nové balíčky s darčekmi, ​ limitované zľavy až do 50 % a navyše dopravu ZADARMO pri nákupe nad 36 €. Urobte si radosť ešte dnes.\nCHCEM NAKÚPIŤ VÝHODNE\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Doprava zdarma je len začiatok! Nakúpte ešte dnes , kým sa tie najlepšie kúsky nevypredajú!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "percent-off",
       "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWESZ5WGHG0ZWM8E964195FF",
+    "name": "CZ - Kosmetická taštička s produkty.",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "🏖️☀️✈️Zabalili jsme vám!",
+    "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "TY5k56",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+      "body": [
+        "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+        "Připravili jsme pro vás novou letní kosmetickou taštičku plnou produktů, které vám pomohou užít si dovolenou bez zbytečných starostí. Podívejte se, co jsme do ní letos zabalili.",
+        "P. S. Nečekejte, až slunce, chlorovaná voda a horké dny zanechají na vašich vlasech a pokožce svou stopu. Dopřejte jim péči právě teď a užijte si léto v plné kráse.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
+      ],
+      "cta": "Prohlédnout si kosmetickou taštičku",
+      "ctas": [
+        "Prohlédnout si kosmetickou taštičku"
+      ],
+      "text": "96\nPřipravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!\n🎁Luxusní kosmetická taštička\nPřipravili jsme pro vás novou letní kosmetickou taštičku plnou produktů, které vám pomohou užít si dovolenou bez zbytečných starostí. Podívejte se, co jsme do ní letos zabalili.\nProhlédnout si kosmetickou taštičku\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Nečekejte, až slunce, chlorovaná voda a horké dny zanechají na vašich vlasech a pokožce svou stopu. Dopřejte jim péči právě teď a užijte si léto v plné kráse.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
       "launch"
     ]
   },
@@ -436,42 +504,6 @@
     "offers": [
       "percent-off",
       "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KW1T7QR8Z9BPM011PT6J666J",
-    "name": "CZ Doprava zdarma červenec - začíná",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "launch",
-    "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
-    "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "SkUQ8P",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-      "body": [
-        "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-        "📅 Od 1. do 7. července 🎁 Při nákupu nad 900 Kč",
-        "Nový měsíc jsme odstartovali opravdu ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky , limitované slevy až 50 % a navíc dopravu ZDARMA při nákupu nad 900 Kč. Udělejte si radost ještě dnes.",
-        "P. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!"
-      ],
-      "cta": "exkluzivní nové balíčky s dárky",
-      "ctas": [
-        "exkluzivní nové balíčky s dárky",
-        "limitované slevy až 50 %",
-        "CHCI NAKOUPIT VÝHODNĚ",
-        "Nakupte ještě dnes"
-      ],
-      "text": "96\nJE TO TADY: Nové balíčky, nové slevy a doprava zdarma\n📅 Od 1. do 7. července 🎁 Při nákupu nad 900 Kč\nNový měsíc jsme odstartovali opravdu ve velkém. Připravili jsme pro vás exkluzivní nové balíčky s dárky , limitované slevy až 50 % a navíc dopravu ZDARMA při nákupu nad 900 Kč. Udělejte si radost ještě dnes.\nCHCI NAKOUPIT VÝHODNĚ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.  Doprava zdarma je jen začátek! Nakupte ještě dnes , než budou ty nejlepší kousky pryč!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "urgency",
-      "percent-off",
       "launch"
     ]
   },
@@ -5093,42 +5125,6 @@
       "cta": "Zjistit víc",
       "ctas": [],
       "text": "96\nTohle v Třinci ještě nebylo: přijedeme s pojízdnou prodejnou!\n📌KDE: nám. Svobody 527, 739 61 Třinec (restaurace STEELHOUSE)\n📌KDY: 21. 5. v 15:00 - 18:00\nUž příští týden přijedeme přímo za vámi do Třince. Přivezeme s sebou pojízdnou prodejnu plnou oblíbených produktů a speciálních slev. Bude to den, kdy si můžete vše vyzkoušet, zeptat se a nakoupit výhodněji než obvykle.\nZažijete odpoledne, které nebude jen o produktech, ale hlavně o vás. O chvíli zastavení, inspiraci a péči, kterou si v běžném shonu často odkládáme na později.\nVyzkoušíte si produkty tianDe na vlastní kůži\nAnalýza pleti a vlasů a zjistíte, co vaše pokožka a vlasy skutečně potřebují\nZměřit bazální metabolismus a dozvíte se praktické tipy k hubnutí\nPodstoupíte speciální analýzu těla a zjistíte, jaké vitamíny či doplňky může vaše tělo právě potřebovat\nObjevíte novinky tianDe, které možná ještě neznáte\nUžijete si příjemné odpoledne plné inspirace, sdílení a dobré nálady\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Osobní poradenství, inspirace a možnost vše si vyzkoušet na vlastní kůži. Takový den nezažijete každý den. Uložte si datum 21. 5., vezměte kamarádku a přijďte si to užít s námi.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KRG6M1ATC2ACHCYTSDG2272K",
-    "name": "CZ - Tělo jako kompas - 6. lekce - záznam",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Šokující pravda o „zdravých“ potravinách!",
-    "previewText": "Pokud jste včera nestihli 6. lekci, záznam už je online!",
-    "sentAt": "2026-05-13T12:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "T6v8gs",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Jídlo může být lék. Nebo pomalý jed.",
-      "body": [
-        "📌 Upozornění: příští lekce se koná až 26. 5.",
-        "To, co si každý den dáváme na talíř, může být pro tělo lékem. Nebo tichou zátěží, která bere energii. Pokud jste nestihli včerejší vysílání, pusťte si záznam a zjistěte, proč tělo nepotřebuje další dietu… ale skutečnou výživu.",
-        "Hostem byla Jiřina Radová, která mluvila o jídle úplně jinak, než jsme zvyklé z diet a zákazů. Jednoduše, lidsky a hlavně prakticky. O tom, proč ženy po 45 potřebují víc chránit svaly, energii a sytost. Proč samotné kalorie nestačí.",
-        "Proč některé „zdravé“ potraviny tělo ve skutečnosti jen vyčerpávají."
-      ],
-      "cta": "PUSTIT SI ZÁZNAM",
-      "ctas": [
-        "PUSTIT SI ZÁZNAM",
-        "PŘIHLÁSIT SE",
-        "TO MUSÍM MÍT",
-        "CHCI PŘÍRUČKY ZDARMA"
-      ],
-      "text": "96\nJídlo může být lék. Nebo pomalý jed.\n📌 Upozornění: příští lekce se koná až 26. 5.\nTo, co si každý den dáváme na talíř, může být pro tělo lékem. Nebo tichou zátěží, která bere energii. Pokud jste nestihli včerejší vysílání, pusťte si záznam a zjistěte, proč tělo nepotřebuje další dietu… ale skutečnou výživu.\nPUSTIT SI ZÁZNAM\nHostem byla Jiřina Radová, která mluvila o jídle úplně jinak, než jsme zvyklé z diet a zákazů. Jednoduše, lidsky a hlavně prakticky. O tom, proč ženy po 45 potřebují víc chránit svaly, energii a sytost. Proč samotné kalorie nestačí.\nV lekci zaznělo:\nJak poznat talíř, který opravdu zasytí\nProč jsou bílkoviny klíčem k energii\nProč některé „zdravé“ potraviny tělo ve skutečnosti jen vyčerpávají.\nEmoční jedení a první jednoduchý krok, jak zastavit automatické chutě\nOnline kurz hubnutí\nA protože víme, jak moc tohle téma ženy trápí, připravujeme pro vás také nový online kurz hubnutí pod vedením Jiřiny Radové.   Bez drastických diet, zákazů a věčného začínání od pondělí. Chcete být mezi prvními, kdo se dozví více? Přihlaste se už teď.\nPŘIHLÁSIT SE\nVčera jsme soutěžili o Piaoliang\nVlasy bez života, lámavé nehty nebo unavená pleť často nejsou jen kosmetickým problémem.  Jsou signálem, že tělo potřebuje větší péči zevnitř. Piaoliang je oblíbený právě u žen, které chtějí znovu cítit, že jejich tělo září, ne jen přežívá.\nTO MUSÍM MÍT\nMarie 38 let: „Po dětech mi začaly hodně padat vlasy, nehty se lámaly a na pleti bylo vidět, že tělo není úplně v pohodě. Vyzkoušela jsem spoustu věcí zvenku, ale až s Piaoliang jsem měla pocit, že konečně pečuji i zevnitř. Po pár týdnech jsem si všimla, že vlasy působí silnější a mají větší objem, nehty se přestaly tolik třepit a celkově jsem měla lepší pocit sama ze sebe.“\nElektronické i tištěné materiály dostanete v hlavním balíčku\nPokud chcete mít po ruce i konkrétní podporu z webináře, dole najdete balíček, příručky a odkazy na produkty, o kterých se během večera mluvilo. Není to podmínka účasti v kurzu.\nCHCI PŘÍRUČKY ZDARMA\nKomplexní péče od hlavy až k patám\nPropojení vnější a vnitřní péče\nZískáte jedinečné vzdělávací materiály\n🎁 Dárky v hodnotě 2 500 Kč\nBc. Renata Králová\nNejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP.S. Pokud cítíte, že vaše tělo volá po změně, nepřehlížejte to. Pusťte si záznam 6. lekce a připojte se k nám i do nového online kurzu s Jiřinou Radovou. Možná právě teď začíná cesta, díky které se budete ve svém těle znovu cítit dobře.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "percent-off",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T08:36:38.645Z",
+  "generatedAt": "2026-07-02T07:49:57.135Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -8,8 +8,8 @@
   },
   "campaignTypeBreakdown": {
     "urgency": 56,
-    "education": 52,
-    "promo": 27,
+    "education": 51,
+    "promo": 28,
     "launch": 12,
     "event": 3
   },
@@ -31,11 +31,11 @@
       "Zjistit víc",
       "CHCI BÝT U TOHO",
       "Připojte se na webinář nyní",
-      "PUSTIT SI ZÁZNAM",
       "Klikněte",
-      "TO MUSÍM MÍT",
+      "PUSTIT SI ZÁZNAM",
       "CHCI SE PŘIDAT DO SKUPINY",
       "Kliknite",
+      "TO MUSÍM MÍT",
       "NAKOUPIT SE SLEVOU",
       "ZAČNU HUBNOUT HNED"
     ]
@@ -81,8 +81,8 @@
         "Zjistit víc",
         "CHCI BÝT U TOHO",
         "Připojte se na webinář nyní",
-        "PUSTIT SI ZÁZNAM",
-        "Klikněte"
+        "Klikněte",
+        "PUSTIT SI ZÁZNAM"
       ],
       "topOffers": [
         "percent-off",
@@ -93,6 +93,18 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+          "cta": "exkluzivní nové balíčky s dárky"
+        },
+        {
+          "subject": "🏖️☀️✈️Zabalili jsme vám!",
+          "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+          "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
+          "cta": "Prohlédnout si kosmetickou taštičku"
+        },
         {
           "subject": "⏰ Zbývá posledních 6 hodin! ⏰",
           "headline": "Chcete ještě ušetřit? Zbývá posledních 6 hodin!",
@@ -116,18 +128,6 @@
           "headline": "Teď nebo nikdy: Stihnete naše nejlepší akce?",
           "previewText": "Slevy až 50 %, akční balíčky a dárky v hodnotě až 685 Kč.",
           "cta": "slevami až 50 %"
-        },
-        {
-          "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
-          "headline": "Jak nakupovat chytře a maximálně ušetřit?",
-          "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
-          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
-        },
-        {
-          "subject": "90 % zákazníků přichází o peníze. Patříte mezi ně?",
-          "headline": "Webinář: Co si koupit, abyste maximálně ušetřili.",
-          "previewText": "Přijďte na bezplatný webinář a zjistěte, jak ještě tento měsíc ušetřit. ͏",
-          "cta": "REZERVOVAT SI MÍSTO ZDARMA"
         }
       ]
     },
@@ -197,12 +197,12 @@
       "avgSubjectLength": 41,
       "avgHeadlineLength": 44,
       "topCtas": [
-        "Nakupte ještě dnes",
         "KOUPIT",
         "TO MUSÍM VYZKOŠET",
+        "Chci nakoupit výhodně",
+        "Nakupte ještě dnes",
         "CHCEM NAKÚPIŤ VÝHODNE",
-        "ženské zdravie so zľavou až 50 %",
-        "darčeky v hodnote 27,60 €"
+        "ešte dnes"
       ],
       "topOffers": [
         "percent-off",
@@ -212,6 +212,12 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+          "cta": "exkluzivní nové balíčky s dárky"
+        },
         {
           "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
           "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
@@ -223,12 +229,6 @@
           "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
           "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
           "cta": "ženské zdravie so zľavou až 50 %"
-        },
-        {
-          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
-          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
-          "cta": "exkluzivní nové balíčky s dárky"
         },
         {
           "subject": "Oblíbené masky až se slevou 25 % + dárek zdarma.",
@@ -251,16 +251,16 @@
       ]
     },
     "promo": {
-      "count": 27,
-      "avgSubjectLength": 43,
-      "avgHeadlineLength": 50,
+      "count": 28,
+      "avgSubjectLength": 42,
+      "avgHeadlineLength": 51,
       "topCtas": [
         "KÚPIŤ",
         "KOUPIT",
         "Zjistit víc",
         "NAKÚPIŤ MASKY SO ZĽAVOU",
-        "NAKÚPIŤ HNEĎ TERAZ",
-        "so zľavou až 50 %"
+        "Prohlédnout si kosmetickou taštičku",
+        "NAKÚPIŤ HNEĎ TERAZ"
       ],
       "topOffers": [
         "percent-off",
@@ -270,6 +270,12 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "🏖️☀️✈️Zabalili jsme vám!",
+          "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+          "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
+          "cta": "Prohlédnout si kosmetickou taštičku"
+        },
         {
           "subject": "⏰ Zostáva posledných 6 hodín! ⏰",
           "headline": "Chcete ešte ušetriť? Zostáva posledných 6 hodín!",
@@ -299,12 +305,6 @@
           "headline": "Letní favorité, bez kterých si naši zákazníci neumí představit léto.",
           "previewText": "Objevte produkty, které si naše zákaznice berou na dovolenou, k vodě i do každodenní letní péče.",
           "cta": "TO MUSÍM MÍT"
-        },
-        {
-          "subject": "☀️ Letní favoriti našich zákazníkov! ☀️",
-          "headline": "Letní favoriti, bez ktorých si naši zákazníci nevedia predstaviť leto.",
-          "previewText": "Objavte produkty, ktoré si naše zákazníčky berú na dovolenku, k vode aj do každodennej letnej starostlivosti.",
-          "cta": "TOTO MUSÍM MAŤ!"
         }
       ]
     },
@@ -368,9 +368,9 @@
       ]
     },
     "education": {
-      "count": 52,
+      "count": 51,
       "avgSubjectLength": 49,
-      "avgHeadlineLength": 57,
+      "avgHeadlineLength": 58,
       "topCtas": [
         "KOUPIT",
         "Připojte se na webinář nyní",
@@ -462,12 +462,28 @@
   },
   "examples": [
     {
+      "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+      "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+      "cta": "exkluzivní nové balíčky s dárky",
+      "language": "cz",
+      "campaignType": "launch"
+    },
+    {
       "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
       "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
       "previewText": "Nielen doprava zdarma! Objavte aj nové exkluzívne zľavy až do 50 %!",
       "cta": "exkluzívne nové balíčky s darčekmi,",
       "language": "sk",
       "campaignType": "launch"
+    },
+    {
+      "subject": "🏖️☀️✈️Zabalili jsme vám!",
+      "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+      "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
+      "cta": "Prohlédnout si kosmetickou taštičku",
+      "language": "cz",
+      "campaignType": "promo"
     },
     {
       "subject": "⏰ Zostáva posledných 6 hodín! ⏰",
@@ -558,14 +574,6 @@
       "campaignType": "promo"
     },
     {
-      "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
-      "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-      "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
-      "cta": "exkluzivní nové balíčky s dárky",
-      "language": "cz",
-      "campaignType": "launch"
-    },
-    {
       "subject": "Škandál: Prečo štát chráni viac kondómy než ženy?",
       "headline": "Škandál, o ktorom sa mlčí: Prečo majú muži väčšiu ochranu než my?",
       "previewText": "Zistite, prečo majú muži väčšiu ochranu než ženy?! ͏ ͏ ͏",
@@ -596,14 +604,6 @@
       "cta": "Zjistit víc",
       "language": "cz",
       "campaignType": "event"
-    },
-    {
-      "subject": "Akce, které rozhodně stojí za pozornost!",
-      "headline": "Zákazníci ich milujú. A práve teraz sú ešte výhodnejšie.",
-      "previewText": "Akcia končí! Využite balíčky s darčekom až v hodnote 27,60 €.",
-      "cta": "CHCEM SI VYBRAŤ BALÍČEK S DARČEKOM",
-      "language": "sk",
-      "campaignType": "urgency"
     }
   ]
 }
