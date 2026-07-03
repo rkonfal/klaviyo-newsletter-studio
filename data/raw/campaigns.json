@@ -1,5 +1,219 @@
 [
   {
+    "id": "01KWKBBDV0DJERCS411XZF8A9J",
+    "name": "CZ Vykoupili jste nám sklad",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "😲🚨Vykoupili jste nám sklad....",
+    "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "WTkNrU",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+      "body": [
+        "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+        "Neuvěřitelné se stalo skutečností. Některé naše nejoblíbenější produkty mizí ze skladu doslova před očima. Pokud jste si chtěli doplnit zásoby, teď je ten pravý okamžik.  Klikněte a objednejte si své oblíbené produkty ještě dnes, dokud jsou skladem.",
+        "Kompletní anti-age péče pro obličej, oční okolí i ruce",
+        "✅ Luxusní anti-age péče za výhodnou cenu"
+      ],
+      "cta": "Klikněte a objednejte",
+      "ctas": [
+        "Klikněte a objednejte",
+        "Nakoupit, dokud jsou skladem",
+        "KOUPIT",
+        "navíc získat slevy až 50 %",
+        "Nakoukněte do svého košíku"
+      ],
+      "text": "96\nVykoupili jste nám sklad a zbývají už jen poslední kusy!\n🚨Poslední kusy\nNeuvěřitelné se stalo skutečností. Některé naše nejoblíbenější produkty mizí ze skladu doslova před očima. Pokud jste si chtěli doplnit zásoby, teď je ten pravý okamžik.  Klikněte a objednejte si své oblíbené produkty ještě dnes, dokud jsou skladem.\nNakoupit, dokud jsou skladem\nKompletní anti-age péče pro obličej, oční okolí i ruce\n✅ Luxusní anti-age péče za výhodnou cenu\n✅ Zklidňuje citlivou a podrážděnou pleť\n✅ Mladistvější a zářivější vzhled pleti\n🔥 45 % SLEVA\n​\n1 118 Kč 727 Kč (VIP Sleva)\nKOUPIT\nMartina, 47 let: \"Po několika týdnech používání vidím, že moje pleť působí svěžeji, je hydratovaná a jemnější na dotek. Oceňuji lehké textury, které se rychle vstřebávají, a mám pocit, že moje pleť získala zpět pružnost a zdravý vzhled. Tento balíček se stal součástí mé každodenní péče.\"\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie ✅ Chytrý hadřík, na všechny omyvatelné povrchy ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n685 Kč 445 Kč (VIP Sleva)\nKOUPIT\nEkologický úklid celé domácnosti – dokonale čistý domov bez zbytečné chemie\n✅ Hygienicky čisté prádlo i nádobí bez agresivní chemie ✅ Chytrý hadřík, na všechny omyvatelné povrchy ✅ Jeden balíček, který šetří váš čas, peníze i přírodu. 🎁 DÁREK v hodnotě 685 Kč\n685 Kč 445 Kč (VIP Sleva)\nKOUPIT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 50 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWHB4T1GCPWBZEFY511E9A69",
+    "name": "CZ - Akční balíček - šnek",
+    "status": "Queued without Recipients",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "🐌Proč ženy po 40 tajně přecházejí na tuto péči?",
+    "previewText": "Tajemství regenerace, které přežilo staletí. Právě teď se slevou až 46 %.",
+    "sentAt": "2026-07-03T16:36:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "TXfFp6",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Tajemství mladistvé pleti, které příroda střežila po staletí!",
+      "body": [
+        "Tajemství mladistvé pleti, které příroda střežila po staletí!",
+        "🔥 Až 46 % sleva na luxusní omlazující péči  ​🎁 3 v 1",
+        "Říká se, že ženy pracující v růžových zahradách měly i přes náročnou práci neuvěřitelně jemnou a mladistvou pokožku. Tajemství, které příroda ukrývala po staletí, dnes známe jako hlemýždí mucin. Jednu z nejoblíbenějších anti-age složek současnosti. Objevte jeho tajemství a využijte slevu až 46 % ještě dnes.",
+        "Kompletní anti-age péče pro obličej, oční okolí i ruce"
+      ],
+      "cta": "Odkrýt tajemství mladistvé pleti",
+      "ctas": [
+        "Odkrýt tajemství mladistvé pleti",
+        "Koupit",
+        "Zjistěte proč"
+      ],
+      "text": "96\nTajemství mladistvé pleti, které příroda střežila po staletí!\n🔥 Až 46 % sleva na luxusní omlazující péči  ​🎁 3 v 1\nŘíká se, že ženy pracující v růžových zahradách měly i přes náročnou práci neuvěřitelně jemnou a mladistvou pokožku. Tajemství, které příroda ukrývala po staletí, dnes známe jako hlemýždí mucin. Jednu z nejoblíbenějších anti-age složek současnosti. Objevte jeho tajemství a využijte slevu až 46 % ještě dnes.\nOdkrýt tajemství mladistvé pleti\nKompletní anti-age péče pro obličej, oční okolí i ruce\n✅ Luxusní anti-age péče za výhodnou cenu ✅ Zklidňuje citlivou a podrážděnou pleť ✅ Mladistvější a zářivější vzhled pleti 🔥 45 % SLEVA\n1 118 Kč 727 Kč (VIP Sleva)\nKoupit\nJana, 46 let: „Po třech týdnech používání vidím obrovský rozdíl. Pleť je krásně hydratovaná, jemnější a působí mnohem mladistvěji. Nejvíc mě překvapilo oční okolí – vypadám odpočatěji a svěžeji. Krém na ruce nosím neustále v kabelce. Za mě jeden z nejlepších balíčků, které jsem kdy vyzkoušela.“\nPleť bez vrásek. Luxusní anti-age péče s hlemýždím mucinem\n✅ Šnečí mucin podporuje regeneraci a omlazení pleti ✅ Pomáhá nejen redukovat vrásky, ale i zlepšovat vzhled jizev a nedokonalostí. ✅ Pomáhá pečovat o suchou, citlivou a popraskanou pokožku rukou. 🎁 46 % SLEVA\n1 057 Kč 687 Kč (VIP Sleva)\nKoupit\nLenka, 58 let: „Tyto produkty používám celé jaro a jsem nadšená. Pleť je krásně hydratovaná, jemná a působí svěže i během horkých dnů. Oční okolí vypadá odpočatěji a krém na ruce se rychle vstřebává, což v létě opravdu oceňuji. Dokonce mi okolí říká, že vypadám mladší a odpočatější.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Co když právě hlemýždí mucin je to, co vaší pleti dosud chybělo? Tisíce žen už jeho sílu objevily. Zjistěte proč a využijte slevu až 46 % ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWKAB2M36KEJWV6PRRFWQSJ8",
+    "name": "SK - Akční balíček - šnek",
+    "status": "Queued without Recipients",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "🐌Prečo ženy po 40-tke tajne prechádzajú na túto starostlivosť?",
+    "previewText": "Tajomstvo regenerácie, ktoré prežilo stáročia. Práve teraz so zľavou až 46 %.",
+    "sentAt": "2026-07-03T16:26:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "Y9fTJd",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Tajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!",
+      "body": [
+        "Tajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!",
+        "🔥 Až 46 % zľava na luxusnú omladzujúcu starostlivosť 🎁 3 v 1",
+        "Říká sa, že ženy pracujúce v ružových záhradách mali aj napriek náročnej práci neuveriteľne jemnú a mladistvú pokožku. Tajomstvo, ktoré príroda ukrývala po stáročia, dnes poznáme ako slimačí mucín. Jednu z najobľúbenejších anti-age zložiek súčasnosti. Objavte jeho tajomstvo a využite zľavu až 46 % ešte dnes.",
+        "Komplexná anti-age starostlivosť o tvár, očné okolie aj ruky"
+      ],
+      "cta": "Odhaliť tajomstvo mladistvej pleti",
+      "ctas": [
+        "Odhaliť tajomstvo mladistvej pleti",
+        "Kúpiť",
+        "Zistite prečo"
+      ],
+      "text": "96\nTajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!\n🔥 Až 46 % zľava na luxusnú omladzujúcu starostlivosť 🎁 3 v 1\nŘíká sa, že ženy pracujúce v ružových záhradách mali aj napriek náročnej práci neuveriteľne jemnú a mladistvú pokožku. Tajomstvo, ktoré príroda ukrývala po stáročia, dnes poznáme ako slimačí mucín. Jednu z najobľúbenejších anti-age zložiek súčasnosti. Objavte jeho tajomstvo a využite zľavu až 46 % ešte dnes.\nOdhaliť tajomstvo mladistvej pleti\nKomplexná anti-age starostlivosť o tvár, očné okolie aj ruky\n✅ Luxusná anti-age starostlivosť za výhodnú cenu ✅ Upokojuje citlivú a podráždenú pleť\n✅ Mladistvejší a žiarivejší vzhľad pleti\n🔥 45 % ZĽAVA\nKúpiť\nJana, 46 rokov: „Po troch týždňoch používania vidím obrovský rozdiel. Pleť je krásne hydratovaná, jemnejšia a pôsobí oveľa mladistvejšie. Najviac ma prekvapilo očné okolie – vyzerám oddýchnutejšie a sviežejšie. Krém na ruky nosím neustále v kabelke. Za mňa jeden z najlepších balíčkov, ktoré som kedy vyskúšala.“\nPleť bez vrások. Luxusná anti-age starostlivosť so slimačím mucínom.\n✅ Slimačí mucín podporuje regeneráciu a omladenie pleti ✅ Pomáha nielen redukovať vrásky, ale aj zlepšovať vzhľad jaziev a nedokonalostí.\n✅ Pomáha starať sa o suchú, citlivú a popraskanú pokožku rúk.\n🎁 46 % ZĽAVA\nKúpiť\nLenka, 58 rokov: „Tieto produkty používam celé leto a som nadšená. Pleť je krásne hydratovaná, jemná a pôsobí sviežo aj počas horúcich dní. Očné okolie vyzerá oddýchnutejšie a krém na ruky sa rýchlo vstrebáva, čo v lete naozaj oceňujem. Dokonca mi okolie hovorí, že vyzerám mladšie a oddýchnutejšie.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Čo ak je práve slimačí mucín to, čo vašej pleti doteraz chýbalo? Tisíce žien už objavili jeho silu. Zistite prečo ​  a využite zľavu až 46 % ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWK82VF25EW1DZVDJKCGTYH7",
+    "name": "CZ Doprava zdarma červenec- konec",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "⏰🚚Doprava ZDARMA pouze teď. Využijete ji?",
+    "previewText": "Doprava zdarma nad 900 Kč končí dnes o půlnoci a navíc můžete získat slevy až 50 %.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "XLWnm8",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Čas se krátí! Využijte dopravu zdarma a slevy až 50 %",
+      "body": [
+        "Čas se krátí! Využijte dopravu zdarma a slevy až 50 %",
+        "P. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 50 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+      ],
+      "cta": "Chci nakoupit hned",
+      "ctas": [
+        "Chci nakoupit hned",
+        "navíc získat slevy až 50 %",
+        "Nakoukněte do svého košíku"
+      ],
+      "text": "96\nČas se krátí! Využijte dopravu zdarma a slevy až 50 %\n⏰ Do dnešní půlnoci  ​🔥 Slevy až 50 %\nChci nakoupit hned\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 50 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWHEPC83HSPT8EA215P6XSDS",
+    "name": "SK  - Kosmetická taštička s produkty.",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "🏖️☀️✈️Zbalili sme vám!",
+    "previewText": "Do kozmetickej taštičky sme vám pribalili všetko, na čo ženy na dovolenke najčastejšie zabúdajú.",
+    "sentAt": "2026-07-02T17:33:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "X2A9Qu",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Pripravili sme pre vás NOVÚ kozmetickú taštičku na dovolenku!",
+      "body": [
+        "Pripravili sme pre vás NOVÚ kozmetickú taštičku na dovolenku!",
+        "Pripravili sme pre vás novú luxusnú kozmetickú taštičku plnú produktov, ktoré vám pomôžu užiť si dovolenku bez zbytočných starostí. Pozrite sa, čo sme do nej tento rok zabalili.",
+        "Rozbaľte s Renatou Královou letnú kozmetickú taštičku a objavte darčeky v hodnote 104 €",
+        "Pozrite si aj naše video, v ktorom vám pani Renata Králová podrobne ukáže , čo všetko sme zabalili do novej letnej kozmetickej taštičky. Dozviete sa nielen to, prečo sme vybrali práve tieto produkty, ale aj to, ako môžete získať darčeky v celkovej hodnote 104 €. Pustite si video a zistite, ako si tento rok dopriať dovolenku plnú pohodlia, starostlivosti a radosti."
+      ],
+      "cta": "Prohlédnout si kosmetickou taštičku",
+      "ctas": [
+        "Prohlédnout si kosmetickou taštičku",
+        "To musím vidieť.",
+        "Kliknite a objavte obsah"
+      ],
+      "text": "96\nPripravili sme pre vás NOVÚ kozmetickú taštičku na dovolenku!\n🎁 Luxusná kozmetická taštička\nPripravili sme pre vás novú luxusnú kozmetickú taštičku plnú produktov, ktoré vám pomôžu užiť si dovolenku bez zbytočných starostí. Pozrite sa, čo sme do nej tento rok zabalili.\nProhlédnout si kosmetickou taštičku\nRozbaľte s Renatou Královou letnú kozmetickú taštičku a objavte darčeky v hodnote 104 €\nPozrite si aj naše video, v ktorom vám pani Renata Králová podrobne ukáže , čo všetko sme zabalili do novej letnej kozmetickej taštičky. Dozviete sa nielen to, prečo sme vybrali práve tieto produkty, ale aj to, ako môžete získať darčeky v celkovej hodnote 104 €. Pustite si video a zistite, ako si tento rok dopriať dovolenku plnú pohodlia, starostlivosti a radosti.\nTo musím vidieť.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Dovolenka má byť o pohode, nie o starostiach. Preto sme do novej kozmetickej taštičky zabalili našich osvedčených pomocníkov, ktorých si ženy berú na cesty rok čo rok. Kliknite a objavte obsah našej letnej kozmetickej taštičky.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWESZ5WGHG0ZWM8E964195FF",
+    "name": "CZ - Kosmetická taštička s produkty.",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "launch",
+    "subject": "🏖️☀️✈️Zabalili jsme vám!",
+    "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
+    "sentAt": "2026-07-02T17:32:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "TY5k56",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+      "body": [
+        "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+        "Připravili jsme pro vás novou luxusní kosmetickou taštičku plnou produktů, které vám pomohou užít si dovolenou bez zbytečných starostí. Podívejte se, co jsme do ní letos zabalili.",
+        "Rozbalte s Renatou Královou letní kosmetickou taštičku a objevte dárky v hodnotě 2 638 Kč!",
+        "Podívejte se také na naše video, ve kterém vám paní Renata Králová detailně ukazuje, co všechno jsme do nové letní kosmetické taštičky zabalili. Dozvíte se nejen, proč jsme vybrali právě tyto produkty, ale také jak můžete získat dárky v celkové hodnotě 2 638 Kč . Pusťte si video a zjistěte, jak si letos dopřát dovolenou plnou pohodlí, péče a radosti."
+      ],
+      "cta": "Prohlédnout si kosmetickou taštičku",
+      "ctas": [
+        "Prohlédnout si kosmetickou taštičku",
+        "To musím vidět",
+        "Klikněte a objevte obsah"
+      ],
+      "text": "96\nPřipravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!\n🎁 Luxusní kosmetická taštička\nPřipravili jsme pro vás novou luxusní kosmetickou taštičku plnou produktů, které vám pomohou užít si dovolenou bez zbytečných starostí. Podívejte se, co jsme do ní letos zabalili.\nProhlédnout si kosmetickou taštičku\nRozbalte s Renatou Královou letní kosmetickou taštičku a objevte dárky v hodnotě 2 638 Kč!\nPodívejte se také na naše video, ve kterém vám paní Renata Králová detailně ukazuje, co všechno jsme do nové letní kosmetické taštičky zabalili. Dozvíte se nejen, proč jsme vybrali právě tyto produkty, ale také jak můžete získat dárky v celkové hodnotě 2 638 Kč . Pusťte si video a zjistěte, jak si letos dopřát dovolenou plnou pohodlí, péče a radosti.\nTo musím vidět\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.  Dovolená má být o pohodě, ne o starostech. Proto jsme do nové kosmetické taštičky zabalili naše osvědčené pomocníky, které si ženy berou na cesty rok co rok. Klikněte a objevte obsah naší letní kosmetické taštičky.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KW1T7QR8Z9BPM011PT6J666J",
     "name": "CZ Doprava zdarma červenec - začíná",
     "status": "Sent",
@@ -68,38 +282,6 @@
     "offers": [
       "percent-off",
       "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KWESZ5WGHG0ZWM8E964195FF",
-    "name": "CZ - Kosmetická taštička s produkty.",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "🏖️☀️✈️Zabalili jsme vám!",
-    "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "TY5k56",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
-      "body": [
-        "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
-        "Připravili jsme pro vás novou letní kosmetickou taštičku plnou produktů, které vám pomohou užít si dovolenou bez zbytečných starostí. Podívejte se, co jsme do ní letos zabalili.",
-        "P. S. Nečekejte, až slunce, chlorovaná voda a horké dny zanechají na vašich vlasech a pokožce svou stopu. Dopřejte jim péči právě teď a užijte si léto v plné kráse.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
-      ],
-      "cta": "Prohlédnout si kosmetickou taštičku",
-      "ctas": [
-        "Prohlédnout si kosmetickou taštičku"
-      ],
-      "text": "96\nPřipravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!\n🎁Luxusní kosmetická taštička\nPřipravili jsme pro vás novou letní kosmetickou taštičku plnou produktů, které vám pomohou užít si dovolenou bez zbytečných starostí. Podívejte se, co jsme do ní letos zabalili.\nProhlédnout si kosmetickou taštičku\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Nečekejte, až slunce, chlorovaná voda a horké dny zanechají na vašich vlasech a pokožce svou stopu. Dopřejte jim péči právě teď a užijte si léto v plné kráse.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
       "launch"
     ]
   },
@@ -4958,176 +5140,6 @@
     "offers": [
       "percent-off",
       "gift",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KRBC4AETZ5J1GDXZNY5PPCKJ",
-    "name": "CZ  Domácnost",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "STOP! Tohle vás stojí 24 000 Kč ročně!",
-    "previewText": "Čistější domov bez agresivní chemie? Právě teď s dárkem za 685 Kč!",
-    "sentAt": "2026-05-15T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "YactDB",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Vyhoďte toxickou chemii z domu jednou provždy!",
-      "body": [
-        "Vyhoďte toxickou chemii z domu jednou provždy!",
-        "Kolik toxické chemie denně zůstává na vašem prádle, nádobí a v ovzduší vašeho domova? Přivítejte novou éru ekologického úklidu a začněte uklízet moderněji, šetrněji a efektivněji.",
-        "Kolik peněz ročně doslova spláchneme za toxickou chemii do domácnosti? V průměru až 24 000 Kč. Přitom stačí pár chytrých produktů, které zvládnou praní, nádobí i úklid efektivněji, šetrněji a bez agresivních látek.",
-        "Proč se ženy už nechtějí vracet k běžné chemii"
-      ],
-      "cta": "CHCI DOMOV BEZ TOXICKÉ CHEMIE",
-      "ctas": [
-        "CHCI DOMOV BEZ TOXICKÉ CHEMIE",
-        "KOUPIT",
-        "PUSTIT SI WEBINÁŘ"
-      ],
-      "text": "96\nVyhoďte toxickou chemii z domu jednou provždy!\n🎁 Dárek v hodnotě 685 Kč\nKolik toxické chemie denně zůstává na vašem prádle, nádobí a v ovzduší vašeho domova? Přivítejte novou éru ekologického úklidu a začněte uklízet moderněji, šetrněji a efektivněji.\nCHCI DOMOV BEZ TOXICKÉ CHEMIE\nKolik peněz ročně doslova spláchneme za toxickou chemii do domácnosti? V průměru až 24 000 Kč. Přitom stačí pár chytrých produktů, které zvládnou praní, nádobí i úklid efektivněji, šetrněji a bez agresivních látek.\nProč se ženy už nechtějí vracet k běžné chemii\nHygienické praní bez fosfátů a chlóru\nZářivé nádobí bez šmouh\nMultifunkční úklid bez zbytečných hadrů\nMéně chemie. Více klidu.\nÚspora času i peněz každý den\nVyhoďte toxickou chemii z domu jednou provždy\n✅ Zářivé nádobí bez šmouh\n✅ Hygienicky čisté prádlo bez agresivní chemie\n✅ Bez fosfátů a toxické chemie\n🎁 DÁREK V HODNOTĚ 685 Kč\n1 054 Kč\n685 Kč ( VIP Sleva)\nKOUPIT\nMilena 48 let: „Prádlo je nádherně svěží a myčka konečně nezanechává šmouhy. Utěrka-skraber je malý zázrak na kuchyňskou linku i sporák.“\nHygienická čistota bez agresivní chemie\n✅ Jemná péče i pro citlivou pleť\n✅ Intenzivně hydratuje a vyhlazuje pleť\n✅ Zpevňuje a navrací pleti komfort\n🎁 DÁREK V HODNOTĚ 685 Kč\n1 012 Kč\n658 Kč ( VIP Sleva)\nKOUPIT\nMonika 29 let: „Nevěřila jsem, že mi na úklid bude stačit skoro jen voda a jedna utěrka. Kuchyň i koupelna vypadají lépe než po běžných čističích.“\nChcete vědět, jak uklízet efektivněji a bez zbytečné chemie?\nPřipravili jsme pro vás také speciální webinář, kde zjistíte, jak proměnit běžný úklid v rychlou, ekologickou a zdravější rutinu pro celou domácnost. Objevte chytré tipy, moderní řešení a produkty, které ženám šetří čas, peníze i místo pod dřezem.\nPUSTIT SI WEBINÁŘ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Vaše domácnost nemusí vonět chemií, aby byla dokonale čistá. Dopřejte sobě i své rodině bezpečnější a chytřejší úklid ještě dnes. A získejte dárek v hodnotě 685 Kč zdarma.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "gift",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KRB62BWG5RXP6KZAM6T2XPNY",
-    "name": "CZ - vstupenka Margit Slimáková - poslední místa",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Poslední místa! Budete u toho?",
-    "previewText": "Za pár dní se potkáme s Margit Slimákovou v Praze a zbývá už jen posledních 6 míst!",
-    "sentAt": "2026-05-14T16:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "V8Sfuh",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Margit Slimáková už příští týden naživo v Praze!",
-      "body": [
-        "Margit Slimáková už příští týden naživo v Praze!",
-        "Už příští týden se v Praze potkáme s Margit Slimákovou na setkání, které může změnit váš pohled na hubnutí, diety i vztah k vlastnímu tělu. Zájem je obrovský a zbývá už posledních 6 míst.",
-        "Hlavním hostem celého setkání bude Margit Slimáková. Žena, která dokáže o jídle, zdraví a hubnutí mluvit srozumitelně, bez extrémů a zbytečného strašení. Možná ji znáte z médií nebo z jejích článků, ale slyšet ji naživo je úplně jiný zážitek.",
-        "Na pódiu ji doplní také Jiřina Radová , která provedla tisíce žen kurzem Zhubni 5 kg za 5 týdnů, a Renata Králová, zakladatelka celého projektu a žena, která stála u jeho úplného začátku."
-      ],
-      "cta": "KOUPIT VSTUPENKU",
-      "ctas": [
-        "KOUPIT VSTUPENKU",
-        "PUSTIT SI ROZHOVOR"
-      ],
-      "text": "96\nMargit Slimáková už příští týden naživo v Praze!\n📌 KDY: už 18. 5.\n📌 KDE: V PRAZE\nUž příští týden se v Praze potkáme s Margit Slimákovou na setkání, které může změnit váš pohled na hubnutí, diety i vztah k vlastnímu tělu. Zájem je obrovský a zbývá už posledních 6 míst.\nKOUPIT VSTUPENKU\nHlavním hostem celého setkání bude Margit Slimáková. Žena, která dokáže o jídle, zdraví a hubnutí mluvit srozumitelně, bez extrémů a zbytečného strašení. Možná ji znáte z médií nebo z jejích článků, ale slyšet ji naživo je úplně jiný zážitek.\nNa pódiu ji doplní také Jiřina Radová , která provedla tisíce žen kurzem Zhubni 5 kg za 5 týdnů, a Renata Králová, zakladatelka celého projektu a žena, která stála u jeho úplného začátku.\nNahlédněte do atmosféry celé akce ještě před začátkem\nMožná si ještě říkáte, jestli je tohle setkání právě pro vás. Proto jsme pro vás připravili první rozhovor, díky kterému lépe poznáte atmosféru celé akce i témata, o kterých budeme společně mluvit.\nPUSTIT SI ROZHOVOR\n💜 Těšíme se na vás!\nJiřina Radová\nlektorka kurzu\nRenata Králová\nzakladatelka Království tianDe\nP. S. Už příští týden se v Praze otevřou dveře setkání, které může změnit váš pohled na hubnutí i na sebe samotné. Už zbývá posledních 6 míst. Rezervujte si své místo ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRJTQ660NZH1C8BYWCB2YG71",
-    "name": "SK  Maskovací výzva",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "promo",
-    "subject": "Maskovacia výzva pokračuje: až 25 % zľava!",
-    "previewText": "Využite zľavu až 25 % na obľúbené masky....",
-    "sentAt": "2026-05-14T09:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "XSaR9M",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Ulovte svoje obľúbené masky so zľavou 25 %",
-      "body": [
-        "Ulovte svoje obľúbené masky so zľavou 25 %",
-        "Maskovacia výzva je tu! Regenerujte, hydratujte a spevnite svoju pleť s obľúbenými maskami teraz so zľavou až 25 % . Nakúpte ešte dnes!",
-        "Pleťová maska s kyselinou azelaovou a vitamínom C",
-        "Klára 47 rokov: „Pleť bola po použití nádherne hebká, rozjasnená a pôsobila oveľa sviežejšie. Masku som si zamilovala už po prvom použití.“"
-      ],
-      "cta": "NAKÚPIŤ MASKY SO ZĽAVOU",
-      "ctas": [
-        "NAKÚPIŤ MASKY SO ZĽAVOU",
-        "KÚPIŤ"
-      ],
-      "text": "96\nUlovte svoje obľúbené masky so zľavou 25 %\n🔥AŽ 25 % ZĽAVA\nMaskovacia výzva je tu! Regenerujte, hydratujte a spevnite svoju pleť s obľúbenými maskami teraz so zľavou až 25 % . Nakúpte ešte dnes!\nNAKÚPIŤ MASKY SO ZĽAVOU\nPleťová maska s kyselinou azelaovou a vitamínom C\n✅ Rozjasňuje a zjednocuje tón pleti\n✅ Intenzívne hydratuje a spevňuje\n✅ Upokojuje a pomáha s nedokonalosťami\n🔥20 % ZĽAVA\nKÚPIŤ\nKlára 47 rokov: „Pleť bola po použití nádherne hebká, rozjasnená a pôsobila oveľa sviežejšie. Masku som si zamilovala už po prvom použití.“\nObnovujúca maska na tvár a krk\n✅ Jemná starostlivosť aj pre citlivú pleť\n✅ Intenzívne hydratuje a vyhladzuje pleť\n✅ Spevňuje a navracia pleti komfort\n🔥 25 % ZĽAVA\nKÚPIŤ\nMariana 35 rokov: „Pleť bola po použití nádherne hydratovaná, jemná a pôsobila mladším dojmom. Masku používam pravidelne a vždy je to malý domáci wellness.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Začnite s nami maskovaciu výzvu ešte dnes. Vaša pleť sa vám poďakuje za každú dávku hydratácie, regenerácie a starostlivosti, ktorú jej doprajete.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRB8RJXAS4585SH322EQC74P",
-    "name": "CZ  Maskovací výzva",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "Maskovací výzva pokračuje: až 25% sleva!",
-    "previewText": "Využijte slevu až 25 % na oblíbené masky....",
-    "sentAt": "2026-05-14T09:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "X8Q9CV",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Ulovte své oblíbené masky se slevou 25 %",
-      "body": [
-        "Ulovte své oblíbené masky se slevou 25 %",
-        "Maskovací výzva je tady! Regenerujte, hydratujte a zpevněte svou pleť s oblíbenými maskami nyní se slevou až 25 % . Nakupte ještě dnes!",
-        "Pleťová maska s kyselinou azelaovou a vitamínem C",
-        "Klára 47 let: „Pleť byla po použití nádherně hebká, rozjasněná a působila mnohem svěžeji. Masku jsem si zamilovala už po prvním použití.“"
-      ],
-      "cta": "NAKOUPIT MASKY SE SLEVOU",
-      "ctas": [
-        "NAKOUPIT MASKY SE SLEVOU",
-        "KOUPIT"
-      ],
-      "text": "96\nUlovte své oblíbené masky se slevou 25 %\n🔥AŽ 25% SLEVA\nMaskovací výzva je tady! Regenerujte, hydratujte a zpevněte svou pleť s oblíbenými maskami nyní se slevou až 25 % . Nakupte ještě dnes!\nNAKOUPIT MASKY SE SLEVOU\nPleťová maska s kyselinou azelaovou a vitamínem C\n✅ Rozjasňuje a sjednocuje tón pleti\n✅ Intenzivně hydratuje a zpevňuje\n✅ Zklidňuje a pomáhá s nedokonalostmi\n🔥20 % SLEVA\n102 Kč\n53 Kč ( VIP Sleva)\nKOUPIT\nKlára 47 let: „Pleť byla po použití nádherně hebká, rozjasněná a působila mnohem svěžeji. Masku jsem si zamilovala už po prvním použití.“\nObnovující maska na obličej a krk\n✅ Jemná péče i pro citlivou pleť\n✅ Intenzivně hydratuje a vyhlazuje pleť\n✅ Zpevňuje a navrací pleti komfort\n🔥25 % SLEVA\n87 Kč\n42 Kč ( VIP Sleva)\nKOUPIT\nMariana 35 let: „Pleť byla po použití nádherně hydratovaná, jemná a působila mladším dojmem. Masku používám pravidelně a vždy je to malý domácí wellness.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Začněte s námi maskovací výzvu ještě dnes. Vaše pleť vám poděkuje za každou dávku hydratace, regenerace a péče, kterou jí dopřejete\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRB3GNZADG16SEN77RWZ8YTD",
-    "name": "CZ -  Třinec",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Pozor! Už příští týden jsme u vás!",
-    "previewText": "Už příští týden přijedeme do Třince s pojízdnou prodejnou!",
-    "sentAt": "2026-05-13T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UmwGsJ",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Tohle v Třinci ještě nebylo: přijedeme s pojízdnou prodejnou!",
-      "body": [
-        "Tohle v Třinci ještě nebylo: přijedeme s pojízdnou prodejnou!",
-        "📌KDE: nám. Svobody 527, 739 61 Třinec (restaurace STEELHOUSE)",
-        "Už příští týden přijedeme přímo za vámi do Třince. Přivezeme s sebou pojízdnou prodejnu plnou oblíbených produktů a speciálních slev. Bude to den, kdy si můžete vše vyzkoušet, zeptat se a nakoupit výhodněji než obvykle.",
-        "Zažijete odpoledne, které nebude jen o produktech, ale hlavně o vás. O chvíli zastavení, inspiraci a péči, kterou si v běžném shonu často odkládáme na později."
-      ],
-      "cta": "Zjistit víc",
-      "ctas": [],
-      "text": "96\nTohle v Třinci ještě nebylo: přijedeme s pojízdnou prodejnou!\n📌KDE: nám. Svobody 527, 739 61 Třinec (restaurace STEELHOUSE)\n📌KDY: 21. 5. v 15:00 - 18:00\nUž příští týden přijedeme přímo za vámi do Třince. Přivezeme s sebou pojízdnou prodejnu plnou oblíbených produktů a speciálních slev. Bude to den, kdy si můžete vše vyzkoušet, zeptat se a nakoupit výhodněji než obvykle.\nZažijete odpoledne, které nebude jen o produktech, ale hlavně o vás. O chvíli zastavení, inspiraci a péči, kterou si v běžném shonu často odkládáme na později.\nVyzkoušíte si produkty tianDe na vlastní kůži\nAnalýza pleti a vlasů a zjistíte, co vaše pokožka a vlasy skutečně potřebují\nZměřit bazální metabolismus a dozvíte se praktické tipy k hubnutí\nPodstoupíte speciální analýzu těla a zjistíte, jaké vitamíny či doplňky může vaše tělo právě potřebovat\nObjevíte novinky tianDe, které možná ještě neznáte\nUžijete si příjemné odpoledne plné inspirace, sdílení a dobré nálady\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Osobní poradenství, inspirace a možnost vše si vyzkoušet na vlastní kůži. Takový den nezažijete každý den. Uložte si datum 21. 5., vezměte kamarádku a přijďte si to užít s námi.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
       "launch",
       "education"
     ]
