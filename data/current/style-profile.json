@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-07-06T08:45:53.861Z",
+  "generatedAt": "2026-07-07T07:57:35.803Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
-    "cz": 109,
-    "sk": 41
+    "cz": 108,
+    "sk": 42
   },
   "campaignTypeBreakdown": {
     "urgency": 57,
-    "education": 48,
+    "education": 47,
     "promo": 28,
-    "launch": 14,
+    "launch": 15,
     "event": 3
   },
   "tone": {
@@ -28,13 +28,13 @@
     "ctaPatterns": [
       "KOUPIT",
       "KÚPIŤ",
-      "CHCI BÝT U TOHO",
       "Připojte se na webinář nyní",
       "Zjistit víc",
+      "CHCI BÝT U TOHO",
       "Klikněte",
       "PUSTIT SI ZÁZNAM",
-      "CHCI SE PŘIDAT DO SKUPINY",
       "Kliknite",
+      "CHCI SE PŘIDAT DO SKUPINY",
       "TO MUSÍM MÍT",
       "NAKOUPIT SE SLEVOU",
       "ZAČNU HUBNOUT HNED"
@@ -73,14 +73,14 @@
   },
   "byLanguage": {
     "cz": {
-      "count": 109,
+      "count": 108,
       "avgSubjectLength": 44,
       "avgHeadlineLength": 52,
       "topCtas": [
         "KOUPIT",
-        "CHCI BÝT U TOHO",
         "Připojte se na webinář nyní",
         "Zjistit víc",
+        "CHCI BÝT U TOHO",
         "Klikněte",
         "PUSTIT SI ZÁZNAM"
       ],
@@ -94,16 +94,16 @@
       ],
       "examples": [
         {
-          "subject": "🐌Proč ženy po 40 tajně přecházejí na tuto péči?",
-          "headline": "Tajemství mladistvé pleti, které příroda střežila po staletí!",
-          "previewText": "Tajemství regenerace, které přežilo staletí. Právě teď se slevou až 46 %.",
-          "cta": "Odkrýt tajemství mladistvé pleti"
-        },
-        {
           "subject": "🎁✨Odemkněte si svůj dárek!",
           "headline": "Váš dárek už čeká. Vyberte si ho sami!",
           "previewText": "Připravili jsme pro vás nové exkluzivní dárky. Který si vyberete vy?",
           "cta": "Chci si vybrat dárek"
+        },
+        {
+          "subject": "🐌Proč ženy po 40 tajně přecházejí na tuto péči?",
+          "headline": "Tajemství mladistvé pleti, které příroda střežila po staletí!",
+          "previewText": "Tajemství regenerace, které přežilo staletí. Právě teď se slevou až 46 %.",
+          "cta": "Odkrýt tajemství mladistvé pleti"
         },
         {
           "subject": "😲🚨Vykoupili jste nám sklad....",
@@ -132,9 +132,9 @@
       ]
     },
     "sk": {
-      "count": 41,
+      "count": 42,
       "avgSubjectLength": 43,
-      "avgHeadlineLength": 50,
+      "avgHeadlineLength": 49,
       "topCtas": [
         "KÚPIŤ",
         "Kliknite",
@@ -152,6 +152,12 @@
         "education"
       ],
       "examples": [
+        {
+          "subject": "🎁✨ Odomknite si svoj darček!",
+          "headline": "Váš darček už čaká. Vyberte si ho sami!",
+          "previewText": "Pripravili sme pre vás nové exkluzívne darčeky. Ktorý si vyberiete vy?",
+          "cta": "Chcem si vybrať darček."
+        },
         {
           "subject": "🐌Prečo ženy po 40-tke tajne prechádzajú na túto starostlivosť?",
           "headline": "Tajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!",
@@ -181,17 +187,69 @@
           "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
           "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
           "cta": "ženské zdravie so zľavou až 50 %"
-        },
-        {
-          "subject": "Teraz alebo nikdy: Posledné dni našich najlepších akcií!",
-          "headline": "Teraz alebo nikdy: Stihnete naše najlepšie akcie?",
-          "previewText": "Zľavy až do 50 %, akčné balíčky a darčeky v hodnote až 27 €",
-          "cta": "produkty so zľavami až do 50 %"
         }
       ]
     }
   },
   "byCampaignType": {
+    "launch": {
+      "count": 15,
+      "avgSubjectLength": 38,
+      "avgHeadlineLength": 44,
+      "topCtas": [
+        "KOUPIT",
+        "TO MUSÍM VYZKOŠET",
+        "Chci si vybrat dárek",
+        "Podívejte se do košíku",
+        "Pozrite sa do košíka",
+        "Prohlédnout si kosmetickou taštičku"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "gift",
+        "promo",
+        "urgency"
+      ],
+      "examples": [
+        {
+          "subject": "🎁✨Odemkněte si svůj dárek!",
+          "headline": "Váš dárek už čeká. Vyberte si ho sami!",
+          "previewText": "Připravili jsme pro vás nové exkluzivní dárky. Který si vyberete vy?",
+          "cta": "Chci si vybrat dárek"
+        },
+        {
+          "subject": "🎁✨ Odomknite si svoj darček!",
+          "headline": "Váš darček už čaká. Vyberte si ho sami!",
+          "previewText": "Pripravili sme pre vás nové exkluzívne darčeky. Ktorý si vyberiete vy?",
+          "cta": "Chcem si vybrať darček."
+        },
+        {
+          "subject": "🏖️☀️✈️Zabalili jsme vám!",
+          "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
+          "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
+          "cta": "Prohlédnout si kosmetickou taštičku"
+        },
+        {
+          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
+          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
+          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
+          "cta": "exkluzivní nové balíčky s dárky"
+        },
+        {
+          "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
+          "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
+          "previewText": "Nielen doprava zdarma! Objavte aj nové exkluzívne zľavy až do 50 %!",
+          "cta": "exkluzívne nové balíčky s darčekmi,"
+        },
+        {
+          "subject": "Stihnete to dnes?",
+          "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
+          "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
+          "cta": "ženské zdravie so zľavou až 50 %"
+        }
+      ]
+    },
     "promo": {
       "count": 28,
       "avgSubjectLength": 43,
@@ -247,64 +305,6 @@
           "headline": "Tajomstvo odhalíme už zajtra o 20:00. Budete pri tom?",
           "previewText": "Rezervujte si svoje miesto ešte dnes. Zajtra o 20:00 sa to všetko začína.",
           "cta": "TOTO SI URČITE NENECHÁM UJSŤ!"
-        }
-      ]
-    },
-    "launch": {
-      "count": 14,
-      "avgSubjectLength": 39,
-      "avgHeadlineLength": 45,
-      "topCtas": [
-        "KOUPIT",
-        "TO MUSÍM VYZKOŠET",
-        "Chci si vybrat dárek",
-        "Podívejte se do košíku",
-        "Prohlédnout si kosmetickou taštičku",
-        "To musím vidět"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "gift",
-        "promo",
-        "urgency"
-      ],
-      "examples": [
-        {
-          "subject": "🎁✨Odemkněte si svůj dárek!",
-          "headline": "Váš dárek už čeká. Vyberte si ho sami!",
-          "previewText": "Připravili jsme pro vás nové exkluzivní dárky. Který si vyberete vy?",
-          "cta": "Chci si vybrat dárek"
-        },
-        {
-          "subject": "🏖️☀️✈️Zabalili jsme vám!",
-          "headline": "Připravili jsme pro vás NOVOU kosmetickou taštičku na dovolenou!",
-          "previewText": "Do kosmetické taštičky jsme vám přibalili vše, na co ženy na dovolené nejčastěji zapomínají.",
-          "cta": "Prohlédnout si kosmetickou taštičku"
-        },
-        {
-          "subject": "🚚 POZOR: Týden dopravy ZDARMA je tady! 🚚",
-          "headline": "JE TO TADY: Nové balíčky, nové slevy a doprava zdarma",
-          "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 50 %!",
-          "cta": "exkluzivní nové balíčky s dárky"
-        },
-        {
-          "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
-          "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
-          "previewText": "Nielen doprava zdarma! Objavte aj nové exkluzívne zľavy až do 50 %!",
-          "cta": "exkluzívne nové balíčky s darčekmi,"
-        },
-        {
-          "subject": "Stihnete to dnes?",
-          "headline": "Odpočítavanie beží. Urobte si radosť, kým je ešte čas!",
-          "previewText": "Doprajte si svoje obľúbené produkty ešte za akciové ceny.",
-          "cta": "ženské zdravie so zľavou až 50 %"
-        },
-        {
-          "subject": "Oblíbené masky až se slevou 25 % + dárek zdarma.",
-          "headline": "Maskovací výzva pokračuje: až 25 % sleva a dárek k tomu",
-          "previewText": "Vyberte si své oblíbené masky se slevou až 25 % a získejte navíc dárek, který potěší.",
-          "cta": "NAKOUPIT MASKY SE SLEVOU"
         }
       ]
     },
@@ -368,15 +368,15 @@
       ]
     },
     "education": {
-      "count": 48,
+      "count": 47,
       "avgSubjectLength": 50,
-      "avgHeadlineLength": 58,
+      "avgHeadlineLength": 59,
       "topCtas": [
         "KOUPIT",
         "Připojte se na webinář nyní",
         "CHCI BÝT U TOHO",
-        "CHCI SE PŘIDAT DO SKUPINY",
         "KÚPIŤ",
+        "CHCI SE PŘIDAT DO SKUPINY",
         "PUSTIT SI ZÁZNAM"
       ],
       "topOffers": [
@@ -462,6 +462,22 @@
   },
   "examples": [
     {
+      "subject": "🎁✨Odemkněte si svůj dárek!",
+      "headline": "Váš dárek už čeká. Vyberte si ho sami!",
+      "previewText": "Připravili jsme pro vás nové exkluzivní dárky. Který si vyberete vy?",
+      "cta": "Chci si vybrat dárek",
+      "language": "cz",
+      "campaignType": "launch"
+    },
+    {
+      "subject": "🎁✨ Odomknite si svoj darček!",
+      "headline": "Váš darček už čaká. Vyberte si ho sami!",
+      "previewText": "Pripravili sme pre vás nové exkluzívne darčeky. Ktorý si vyberiete vy?",
+      "cta": "Chcem si vybrať darček.",
+      "language": "sk",
+      "campaignType": "launch"
+    },
+    {
       "subject": "🐌Proč ženy po 40 tajně přecházejí na tuto péči?",
       "headline": "Tajemství mladistvé pleti, které příroda střežila po staletí!",
       "previewText": "Tajemství regenerace, které přežilo staletí. Právě teď se slevou až 46 %.",
@@ -476,14 +492,6 @@
       "cta": "Odhaliť tajomstvo mladistvej pleti",
       "language": "sk",
       "campaignType": "promo"
-    },
-    {
-      "subject": "🎁✨Odemkněte si svůj dárek!",
-      "headline": "Váš dárek už čeká. Vyberte si ho sami!",
-      "previewText": "Připravili jsme pro vás nové exkluzivní dárky. Který si vyberete vy?",
-      "cta": "Chci si vybrat dárek",
-      "language": "cz",
-      "campaignType": "launch"
     },
     {
       "subject": "😲🚨Vykoupili jste nám sklad....",
@@ -595,14 +603,6 @@
       "previewText": "90 % zákazníkov nevyužíva všetky výhody. Patríte medzi nich?",
       "cta": "REZERVOVAŤ SI MIESTO ZADARMO",
       "language": "sk",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "Nakupujte chytřeji. Ukážeme vám, jak získat z každé objednávky maximum!",
-      "headline": "Jak nakupovat chytře a maximálně ušetřit?",
-      "previewText": "90 % zákazníků nevyužívá všechny výhody. Patříte mezi ně?",
-      "cta": "REZERVOVAT SI MÍSTO ZDARMA",
-      "language": "cz",
       "campaignType": "urgency"
     }
   ]
