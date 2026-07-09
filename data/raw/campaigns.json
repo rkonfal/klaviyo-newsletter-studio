@@ -1,5 +1,237 @@
 [
   {
+    "id": "01KX2XKTG9VTNPCF3AJE1MN2ZY",
+    "name": "Lhenice  - zážitkový den, už zítra",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "Už zítra: Nezapomněli jste si rezervovat svůj termín?",
+    "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "WLMsry",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+      "body": [
+        "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+        "📌 KDY: již zítra od 10:00 do 17:00 📌 KDE: Farní 43, Měčín 340 12 💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
+        "Už zítra máte jedinečnou možnost získat diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma. Využijte příležitost dozvědět se více o svém zdraví, pleti, vlasech i metabolismu a získejte doporučení na míru.",
+        "Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky"
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nDiagnostiky a konzultace v hodnotě 3 100 Kč zdarma!\n📌 KDY: již zítra od 10:00 do 17:00 📌 KDE: Farní 43, Měčín 340 12 💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nUž zítra máte jedinečnou možnost získat diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma. Využijte příležitost dozvědět se více o svém zdraví, pleti, vlasech i metabolismu a získejte doporučení na míru.\nCo na vás čeká: Analýza zdravotního stavu přístrojem Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky\nMarie 48 let: „Nedávno jsem si na prodejně vyzkoušela zdravotní analýzu Bicom i diagnostiku pleti a byla jsem opravdu překvapená, kolik zajímavých informací jsem se o sobě dozvěděla. Analýza pleti mi ukázala věci, které nejsou na první pohled vidět, a díky Bicomu jsem získala lepší přehled o tom, na co se zaměřit. Atmosféra byla velmi příjemná a profesionální. Když jsem se dozvěděla o Zážitkovém dni, neváhala jsem ani chvíli. Moc se těším, až si vyzkouším také InBody a další diagnostiky a získám ještě ucelenější pohled na své zdraví.“\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Dopřejte si chvíli jen pro sebe. Zavolejte na 373 700 900 nebo napište na info@kralovstvi-tiande.cz a rezervujte si svůj čas ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KX0NJ9V70FDD45VRHEE7RWB0",
+    "name": "CZ Webinář - Překvapení -8.7. odkaz",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "⏰ Překvapení, kam se podíváš. Kafíčko s Renatou Královou - ZAČÍNÁME ZA 30 MINUT!",
+    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+    "sentAt": "2026-07-08T17:30:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "VRJJGw",
+      "name": "2025-02-16 06:16 s podpisem",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
+      "body": [
+        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
+        "Už za 30 minut začínáme náš webinář - Krásná a zdravá pleť v každém věku ve 20:00 hodin. První účastníci se už připojují.",
+        "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
+        "Důležité: Připojte se včas, kapacita webináře je omezená."
+      ],
+      "cta": "Připojte se na webinář nyní",
+      "ctas": [
+        "Připojte se na webinář nyní"
+      ],
+      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš webinář - Krásná a zdravá pleť v každém věku ve 20:00 hodin. První účastníci se už připojují.\nPřekvapení, kam se podíváš. Kafíčko s Renatou Královou\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nDenisa Horová provozní ředitelka\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KWY77EVWGQCQY94DAXAM4K2J",
+    "name": "CZ Letní výprodej do 31. 7.",
+    "status": "Sent",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "☀️🍹Letní výprodej začal! Jste připraveni?",
+    "previewText": "Oblíbené produkty za skvělé ceny a k nim dárek zdarma! 🎁",
+    "sentAt": "2026-07-08T17:06:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "VuE5Tz",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Letní výprodej je tady! Dárek ke každému balíčku!",
+      "body": [
+        "Letní výprodej je tady! Dárek ke každému balíčku!",
+        "🎁 Ke každému balíčku přibalíme dárek zdarma ⏰ Do 31. 7.",
+        "Léto plné výhod právě začíná! Vyberte si své oblíbené  produkty z letního výprodeje a my vám do každého balíčku přibalíme exkluzivní dárek. Udělejte si radost ještě dnes.",
+        "P.S. Nejoblíbenější produkty z letního výprodeje mizí opravdu rychle. Pokud máte své favority vyhlédnuté, nakupte ještě dnes!"
+      ],
+      "cta": "produkty z letního výprodeje",
+      "ctas": [
+        "produkty z letního výprodeje",
+        "Chci nakoupit výhodně",
+        "nakupte ještě dnes!"
+      ],
+      "text": "96\nLetní výprodej je tady! Dárek ke každému balíčku!\n🎁 Ke každému balíčku přibalíme dárek zdarma ⏰ Do 31. 7.\nLéto plné výhod právě začíná! Vyberte si své oblíbené  produkty z letního výprodeje a my vám do každého balíčku přibalíme exkluzivní dárek. Udělejte si radost ještě dnes.\nChci nakoupit výhodně\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Nejoblíbenější produkty z letního výprodeje mizí opravdu rychle. Pokud máte své favority vyhlédnuté, nakupte ještě dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KX0VF6J5X015Y4YEBC8ZC44Y",
+    "name": "SK Letní výprodej do 31. 7.",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "☀️🍹 Letný výpredaj sa začal! Ste pripravení?",
+    "previewText": "Obľúbené produkty za skvelé ceny a k nim darček zdarma! 🎁",
+    "sentAt": "2026-07-08T17:05:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "RWbrLQ",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Letný výpredaj je tu! Darček ku každému balíčku!",
+      "body": [
+        "Letný výpredaj je tu! Darček ku každému balíčku!",
+        "🎁 Ku každému balíčku pribalíme darček zdarma ⏰ Do 31. 7.",
+        "Leto plné výhod práve začína! Vyberte si svoje obľúbené produkty z letného výpredaja a my vám ku každej objednávke pribalíme exkluzívny darček. Urobte si radosť ešte dnes.",
+        "P. S. Najobľúbenejšie produkty z letného výpredaja miznú naozaj rýchlo. Ak už máte svojich favoritov vyhliadnutých, nakúpte ešte dnes!"
+      ],
+      "cta": "produkty z letného výpredaja",
+      "ctas": [
+        "produkty z letného výpredaja",
+        "Chcem nakúpiť výhodne.",
+        "nakúpte ešte dnes!"
+      ],
+      "text": "96\nLetný výpredaj je tu! Darček ku každému balíčku!\n🎁 Ku každému balíčku pribalíme darček zdarma ⏰ Do 31. 7.\nLeto plné výhod práve začína! Vyberte si svoje obľúbené produkty z letného výpredaja a my vám ku každej objednávke pribalíme exkluzívny darček. Urobte si radosť ešte dnes.\nChcem nakúpiť výhodne.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Najobľúbenejšie produkty z letného výpredaja miznú naozaj rýchlo. Ak už máte svojich favoritov vyhliadnutých, nakúpte ešte dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KX0PJY5F3JZDB2B63WFMTBR0",
+    "name": "Blatná - zážitkový den  2. email",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
+    "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "X6Q5Mt",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+      "body": [
+        "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+        "📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
+        "Pozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.",
+        "Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky"
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nPoslední příležitost získat péči za 3 100 Kč zdarma!\n📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nPozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.\nCo na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky\nLenka, 58 let: „Vyzkoušela jsem zdravotní analýzu Bicom i diagnostiku pleti a překvapilo mě, kolik jsem se o sobě dozvěděla. Díky výsledkům jsem lépe pochopila, na co se zaměřit. Když jsem se dozvěděla o Zážitkovém dni, neváhala jsem ani chvíli.“\nRezervujte si své místo ještě dnes:\nE-mail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Zbývá už jen posledních 7 rezervací. Pokud si chcete dopřát diagnostiku zdraví, pleti a vlasů v hodnotě 3 100 Kč zdarma, rezervujte si svůj termín ještě dnes na telefonu 373 700 900 nebo e-mailu info@kralovstvi-tiande.cz\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KX0GWAS8JTQKZKXZ2CN2D1PA",
+    "name": "CZ - Teploty opět stoupají",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
+    "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "SnLYyi",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Vedra? Máme řešení, které si zamilujete.",
+      "body": [
+        "Vedra? Máme řešení, které si zamilujete.",
+        "🌞 Letní hity, které právě teď potřebujete.",
+        "Vedra jsou zpět! Pot, lepkavá pokožka, horké noci… Léto umí být krásné, ale také náročné. Dopřejte si letní péči, díky které se budete cítit svěže, sebevědomě a v pohodlí od rána až do večera.  Vyberte si své favority a užijte si léto naplno!",
+        "Horké letní dny dávají nohám pořádně zabrat. Slaviton přináší příjemné ochlazení, úlevu a pocit lehkých nohou, který si zamilujete."
+      ],
+      "cta": "Chci se osvěžit",
+      "ctas": [
+        "Chci se osvěžit",
+        "KOUPIT"
+      ],
+      "text": "96\nVedra? Máme řešení, které si zamilujete.\n🌞 Letní hity, které právě teď potřebujete.\nVedra jsou zpět! Pot, lepkavá pokožka, horké noci… Léto umí být krásné, ale také náročné. Dopřejte si letní péči, díky které se budete cítit svěže, sebevědomě a v pohodlí od rána až do večera.  Vyberte si své favority a užijte si léto naplno!\nChci se osvěžit\nSlaviton\nHorké letní dny dávají nohám pořádně zabrat. Slaviton přináší příjemné ochlazení, úlevu a pocit lehkých nohou, který si zamilujete.\n✅ Okamžitě osvěží a uleví unaveným nohám ✅ Pomáhá zmírnit pocit otoků a těžkých nohou ✅ Rychle se vstřebává a nezanechává mastný film ✅ Síla léčivých bylin a mentolu\n434 Kč 282 Kč (VIP Sleva)\nKOUPIT\nKamencový deodorant s prebiotiky, svěží vůně\nLéto a horké dny přinášejí i pocení. Dopřejte pokožce přirozenou ochranu, která eliminuje zápach, pečuje o kožní mikrobiom a udrží vás svěží po celý den.\n✅ Eliminuje nepříjemný zápach, ale neblokuje přirozené pocení ✅ Vhodný i pro citlivou pokožku ✅ Nezanechává bílé ani žluté stopy na oblečení ✅ Přírodní složení bez parabenů a alkoholu\n206 Kč 134 Kč (VIP Sleva)\nKOUPIT\nTající kolagenová liftingová maska\nSlunce, klimatizace, koupání i cestování dávají pleti během léta pořádně zabrat. Dopřejte jí dávku intenzivní hydratace a liftingové péče, díky které bude znovu svěží, vypnutá a rozzářená.\n✅ Intenzivně hydratuje a vyhlazuje pleť ✅ Okamžitý efekt pro unavenou a dehydratovanou pleť ✅ Viditelně vypíná a zpevňuje pleť ✅ Ideální SOS péče po slunění\n114 Kč 74 Kč (VIP Sleva)\nKOUPIT\nRevitalizační pleťová esence ve spreji Biotics\nHorké dny, slunce, klimatizace i pobyt u vody mohou pleť snadno vysušit a unavit. Dopřejte jí během dne okamžité osvěžení, hydrataci a dávku aktivní péče v jediném střiku.\n✅ Okamžitě hydratuje a osvěžuje pleť ✅ Jemná mlha bez narušení make-upu ✅ Chrání pleť před vysoušením během léta ✅ Zklidňuje podrážděnou a citlivou pleť\n581 Kč 378 Kč (VIP Sleva)\nKOUPIT\nŠampon a sprchový gel pro muže 2 v 1\nLéto patří dobrodružství, sportu i cestování. Ať už vyrážíte kamkoliv, dopřejte si rychlou a svěží péči, která vás osvěží od hlavy až k patě.\n✅ Vlasy i tělo umyjete jedním produktem ✅ Šetrně pečuje o pokožku i vlasy ✅ Odstraňuje pot, maz i nečistoty po náročném dni ✅ Dodává energii a dlouhotrvající pocit svěžesti\n300 Kč 195 Kč (VIP Sleva)\nKOUPIT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Až teploty opět vyskočí nahoru, budete rádi, že máte své letní pomocníky doma. Vyberte si je ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KX0E9KK0ER35HWB010G4Z6TY",
+    "name": "CZ - Nová kosmetická taštička",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "🤫🎁Otevřete dřív, než bude pryč…",
+    "previewText": "Dovolená začíná u správného balení. Naše novinka vás nadchne.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "UqADjb",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Léto volá... Máte už sbaleno?",
+      "body": [
+        "🎁 Nová luxusní kosmetická taška 🔥 Poslední kusy",
+        "Dovolená se blíží a naše exkluzivní kosmetická taška už je připravená vyrazit na cesty společně s vámi. Stačí ji přibalit do kufru a vydat se za novými zážitky. Na skladě zbývá už jen několik kusů . Pokud chcete, aby cestovala právě s vámi, objednejte si ji ještě dnes.",
+        "Uvnitř kosmetické tašky na vás čeká výběr našich nejoblíbenějších letních produktů, které si získaly oblibu a důvěru tisíců našich zákazníků. Každý z nich jsme vybrali tak, aby vám zpříjemnil cestování a pomohl vám cítit se skvěle během celé dovolené. ​ Nemusíte přemýšlet, co si přibalit. My jsme to udělali za vás. Vy si jen užijte léto, odpočinek a pocit, že máte vše důležité vždy po ruce.",
+        "Jana, 58 let: \"Když mi kosmetická taška dorazila, byla jsem nadšená. Je nádherná a kvalitně zpracovaná, ale největší radost mi udělal její obsah. Všechny produkty byly krásně připravené a bylo vidět, že jsou vybrané s rozmyslem. Nemusela jsem přemýšlet, co si na dovolenou zabalit. Stačilo taštičku otevřít a bylo hotovo. Za mě skvělý nápad, který ušetří čas i starosti.\""
+      ],
+      "cta": "naše exkluzivní kosmetická taška",
+      "ctas": [
+        "naše exkluzivní kosmetická taška",
+        "Chci svou kosmetickou tašku",
+        "Renata Králová pro vás natočila video",
+        "Chci vidět, co je uvnitř",
+        "Stačí si ho pustit"
+      ],
+      "text": "96\nLéto volá... Máte už sbaleno?\n🎁 Nová luxusní kosmetická taška 🔥 Poslední kusy\nDovolená se blíží a naše exkluzivní kosmetická taška už je připravená vyrazit na cesty společně s vámi. Stačí ji přibalit do kufru a vydat se za novými zážitky. Na skladě zbývá už jen několik kusů . Pokud chcete, aby cestovala právě s vámi, objednejte si ji ještě dnes.\nChci svou kosmetickou tašku\nCo na vás uvnitř čeká?\nUvnitř kosmetické tašky na vás čeká výběr našich nejoblíbenějších letních produktů, které si získaly oblibu a důvěru tisíců našich zákazníků. Každý z nich jsme vybrali tak, aby vám zpříjemnil cestování a pomohl vám cítit se skvěle během celé dovolené. ​ Nemusíte přemýšlet, co si přibalit. My jsme to udělali za vás. Vy si jen užijte léto, odpočinek a pocit, že máte vše důležité vždy po ruce.\nJana, 58 let: \"Když mi kosmetická taška dorazila, byla jsem nadšená. Je nádherná a kvalitně zpracovaná, ale největší radost mi udělal její obsah. Všechny produkty byly krásně připravené a bylo vidět, že jsou vybrané s rozmyslem. Nemusela jsem přemýšlet, co si na dovolenou zabalit. Stačilo taštičku otevřít a bylo hotovo. Za mě skvělý nápad, který ušetří čas i starosti.\"\nPodívejte se zblízka, co jsme pro vás ukryli uvnitř…\nNejste si jistí, co všechno se uvnitř kosmetické tašky ukrývá?  Renata Králová pro vás natočila video , ve kterém vám ukáže nejen samotnou kosmetickou tašku i vše, co jsme do ní připravili. Zjistíte, proč právě tyto pomocníky naše zákaznice nejraději přibalují na letní dovolenou.\nChci vidět, co je uvnitř\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Možná vás překvapí, že tahle nabídka ukrývá ještě jedno krásné překvapení. Ve videu s Renatou Královou se dozvíte, jak můžete získat dárky v hodnotě 2 638 Kč. Stačí si ho pustit a vše vám během chvilky ukáže.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KWXS9JK6DC46YJ84H7NHCWS0",
     "name": "SK Doprava zdarma červenec- konec",
     "status": "Sent",
@@ -98,41 +330,6 @@
     },
     "offers": [
       "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KWY77EVWGQCQY94DAXAM4K2J",
-    "name": "CZ Letní výprodej do 31. 7.",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "☀️🍹Letní výprodej začal! Jste připraveni?",
-    "previewText": "Oblíbené produkty za skvělé ceny a k nim dárek zdarma! 🎁",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "VuE5Tz",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Letní výprodej je tady! Dárek ke každému balíčku!",
-      "body": [
-        "Letní výprodej je tady! Dárek ke každému balíčku!",
-        "🎁 Ke každému balíčku přibalíme dárek zdarma ⏰ Do 31. 7.",
-        "Léto plné výhod právě začíná! Vyberte si své oblíbené  produkty z letního výprodeje a my vám do každého balíčku přibalíme exkluzivní dárek. Udělejte si radost ještě dnes.",
-        "P.S. Nejoblíbenější produkty z letního výprodeje mizí opravdu rychle. Pokud máte své favority vyhlédnuté, nakupte ještě dnes!"
-      ],
-      "cta": "produkty z letního výprodeje",
-      "ctas": [
-        "produkty z letního výprodeje",
-        "Chci nakoupit výhodně",
-        "nakupte ještě dnes!"
-      ],
-      "text": "96\nLetní výprodej je tady! Dárek ke každému balíčku!\n🎁 Ke každému balíčku přibalíme dárek zdarma ⏰ Do 31. 7.\nLéto plné výhod právě začíná! Vyberte si své oblíbené  produkty z letního výprodeje a my vám do každého balíčku přibalíme exkluzivní dárek. Udělejte si radost ještě dnes.\nChci nakoupit výhodně\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Nejoblíbenější produkty z letního výprodeje mizí opravdu rychle. Pokud máte své favority vyhlédnuté, nakupte ještě dnes!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
       "launch"
     ]
   },
@@ -4927,208 +5124,6 @@
         "CHCEM VYSKÚŠAŤ NOVINKU"
       ],
       "text": "96\nTáto novinka bude hitom leta!\nNovinka je tu… a ak sa často cítite ťažko, nafúknuto alebo máte pocit, že vaše telo „nestíha spaľovať“, táto novinka vás bude baviť. Vyskúšajte novinku, ktorú si vaše telo zamiluje.\nCHCEM VYSKÚŠAŤ NOVINKU\nSila tejto novinky stojí na dvoch výnimočných rastlinách, ktoré vaše telo ocení každý deň.\nArtičok\nPodporuje správnu tvorbu a tok žlče\nPrispieva k lepšiemu tráveniu aj metabolizmu tukov\nPomáha navodiť príjemný pocit ľahkosti po jedle\nPodporuje zdravý metabolizmus lipidov\nDráč obyčajný\nPrispieva k udržaniu normálnej hladiny cukru v krvi\nPodporuje metabolizmus sacharidov a efektívne využitie energie\nPodporuje zdravú črevnú mikroflóru a celkovú rovnováhu organizmu\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Táto novinka mizne rýchlejšie, než sme čakali. Vyskúšajte ju skôr, než bude preč.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRZGQCEQWCMKJBV8VF059411",
-    "name": "Letní kuchařky",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "2 LETNÍ nové kuchařky ZDARMA!",
-    "previewText": "K nákupu nad 3000 Kč od nás právě teď získáte 2 nové letní kuchařky ZDARMA.",
-    "sentAt": "2026-05-19T12:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "ThZjPA",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Na léto pro vás máme 2 nové kuchařky ZDARMA",
-      "body": [
-        "Na léto pro vás máme 2 nové kuchařky ZDARMA",
-        "Léto je plné lákadel, která nám často komplikují cestu za vysněnou postavou.. S novými letními kuchařkami od Jiřiny Radové ale zůstanete na správné cestě. A teď je získáte ZDARMA k nákupu nad 3000 Kč.",
-        "Čekají vás svěží recepty, lehká letní jídla i inspirace na dny, kdy nechcete trávit hodiny v kuchyni. Obě kuchařky vznikly s láskou k létu, jednoduchosti a radosti z dobrého jídla.",
-        "Stačí vybrat naše produkty na e-shopu v hodnotě 3 000 Kč."
-      ],
-      "cta": "CHCI LETNÍ KUCHAŘKY",
-      "ctas": [
-        "CHCI LETNÍ KUCHAŘKY",
-        "ZJISTIT VÍC"
-      ],
-      "text": "96\nNa léto pro vás máme 2 nové kuchařky ZDARMA\n🎁 K nákupu nad 3 000 Kč\nLéto je plné lákadel, která nám často komplikují cestu za vysněnou postavou.. S novými letními kuchařkami od Jiřiny Radové ale zůstanete na správné cestě. A teď je získáte ZDARMA k nákupu nad 3000 Kč.\nCHCI LETNÍ KUCHAŘKY\nČekají vás svěží recepty, lehká letní jídla i inspirace na dny, kdy nechcete trávit hodiny v kuchyni. Obě kuchařky vznikly s láskou k létu, jednoduchosti a radosti z dobrého jídla.\nStačí vybrat naše produkty na e-shopu v hodnotě 3 000 Kč.\nKuchařky na vás budou čekat v košíku jako dárek.\nA pak už si jen můžete vychutnat lahodné letní recepty.\nNovinka, kterou si vaše tělo zamiluje\nA protože se léto blíží, je ideální čas začít se cítit lehčeji. Proto pro vás máme exkluzivní novinku. Nápoj s artyčokem a dřišťálem je bylinný nápoj vytvořený pro podporu trávení. Pomáhá podpořit metabolismus, harmonii jater i kontrolu tělesné hmotnosti.\nZJISTIT VÍC\n💜 Přejeme hodně štěstí v pokračování na vaší cestě.\nJiřina Radová\nlektorka kurzu\nRenata Králová\nzakladatelka Království tianDe\nP. S.: Nezapomeňte si v košíku vyzvednout své 2 nové letní kuchařky. Nakupte ještě dnes a dopřejte si léto plné chutí, inspirace a lehkosti.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRXZ9SK6GS1V62VF7YH545QG",
-    "name": "SK - Jarní Black friday",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "promo",
-    "subject": "Jarný BLACK FRIDAY práve odštartoval!",
-    "previewText": "Len pár dní. Len vybrané produkty....",
-    "sentAt": "2026-05-18T17:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "XZGeGG",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Najväčšia jarná akcia je tu!",
-      "body": [
-        "Pripravili sme pre vás JARNÝ BLACK FRIDAY plný zvýhodnených balíčkov, ktoré si zamilujete. Vaše obľúbené produkty teraz kúpite za ceny, ktoré tu dlho nebudú. Kliknite a ulovte si svojich jarných favoritov skôr, než zmiznú.",
-        "P. S. Tie najobľúbenejšie balíčky bývajú vždy vypredané ako prvé. Nečakajte, kým vaše obľúbené produkty zmiznú. Kliknite a vyberte si svoj ešte dnes.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
-      ],
-      "cta": "NAKÚPIŤ VÝHODNE",
-      "ctas": [
-        "NAKÚPIŤ VÝHODNE"
-      ],
-      "text": "96\nNajväčšia jarná akcia je tu!\n🔥 Jarný BLACK FRIDAY\n⏰ Iba do 30. 5.\nPripravili sme pre vás JARNÝ BLACK FRIDAY plný zvýhodnených balíčkov, ktoré si zamilujete. Vaše obľúbené produkty teraz kúpite za ceny, ktoré tu dlho nebudú. Kliknite a ulovte si svojich jarných favoritov skôr, než zmiznú.\nNAKÚPIŤ VÝHODNE\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Tie najobľúbenejšie balíčky bývajú vždy vypredané ako prvé. Nečakajte, kým vaše obľúbené produkty zmiznú. Kliknite a vyberte si svoj ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRNN9061PCMB2GGWWD9J73PK",
-    "name": "CZ - Jarní Black friday",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "Jarní BLACK FRIDAY právě odstartoval!",
-    "previewText": "Jen pár dní. Jen vybrané produkty....",
-    "sentAt": "2026-05-18T17:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "SHaAZY",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Největší jarní akce je tady!",
-      "body": [
-        "Připravili jsme pro vás JARNÍ BLACK FRIDAY plnou zvýhodněných balíčků, které si zamilujete. Vaše oblíbené produkty teď pořídíte za ceny, které tu dlouho nebudou. Klikněte a ulovte si své jarní favority dřív, než budou pryč.",
-        "P. S. Ty nejoblíbenější balíčky bývají vždy vyprodané jako první. Nečekejte, až vaše favority zmizí. Klikněte a vyberte si svůj ještě dnes",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
-      ],
-      "cta": "NAKOUPIT VÝHODNĚ",
-      "ctas": [
-        "NAKOUPIT VÝHODNĚ"
-      ],
-      "text": "96\nNejvětší jarní akce je tady!\n🔥 Jarní BLACK FRIDAY\n⏰ Pouze do 30. 5.\nPřipravili jsme pro vás JARNÍ BLACK FRIDAY plnou zvýhodněných balíčků, které si zamilujete. Vaše oblíbené produkty teď pořídíte za ceny, které tu dlouho nebudou. Klikněte a ulovte si své jarní favority dřív, než budou pryč.\nNAKOUPIT VÝHODNĚ\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Ty nejoblíbenější balíčky bývají vždy vyprodané jako první. Nečekejte, až vaše favority zmizí. Klikněte a vyberte si svůj ještě dnes\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRX2JD8X1PV0J87NTRDN5WFP",
-    "name": "CZ - Sebeláska 3. lekce - záznam",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Tohle většina žen nikdy neuslyší…",
-    "previewText": "Ve 3. lekci jsme otevřeli velmi silné téma.",
-    "sentAt": "2026-05-18T12:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "TYHeC2",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Ve 3. lekci jsme mluvily o strachu, který nás brzdí",
-      "body": [
-        "Ve 3. lekci jsme mluvily o strachu, který nás brzdí",
-        "Ve 3. lekci jsme otevřely něco, co si mnoho žen nosí hluboko v sobě. Strach, který nás tiše brzdí dělat změny, věřit si a posunout se dál.",
-        "Pokud jste lekci nestihli živě, můžete si pustit záznam.",
-        "Hostem této lekce byla také Iveta Kuchyňová , která sdílela svůj silný osobní příběh o tom, jak se změna vnitřního nastavení propsala do jejího těla, vztahů i každodenního života."
-      ],
-      "cta": "PUSTIT SI ZÁZNAM",
-      "ctas": [
-        "PUSTIT SI ZÁZNAM",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "KOUPIT"
-      ],
-      "text": "96\nVe 3. lekci jsme mluvily o strachu, který nás brzdí\nVe 3. lekci jsme otevřely něco, co si mnoho žen nosí hluboko v sobě. Strach, který nás tiše brzdí dělat změny, věřit si a posunout se dál.\nPokud jste lekci nestihli živě, můžete si pustit záznam.\nPUSTIT SI ZÁZNAM\nHostem této lekce byla také Iveta Kuchyňová , která sdílela svůj silný osobní příběh o tom, jak se změna vnitřního nastavení propsala do jejího těla, vztahů i každodenního života.\nOdkud vznikají naše vzorce a přesvědčení\nProč nás strach drží ve starém nastavení\nProč chyba není selhání\nPřipojte se do skupiny\nSoučástí kurzu je i naše Facebook skupina, kde vám budeme ukazovat další praktické kroky a malé změny do každodenního života. A hlavně můžete se tam kdykoliv zeptat na to, co vás zajímá.\nCHCI SE PŘIDAT DO SKUPINY\nA teď něco, co vás možná potěší ještě víc…\nKurz právě začal a my máme obrovskou radost, kolik z vás se přidalo. Proto jsme si pro vás připravili malé poděkování.\n3 dárky pro vás:\nPříručka Sebeláska krok za krokem\nPříručka Sebeláska krok za krokem 2\nRůžová plážová taška\nJak dárky získat?\nStačí se přihlásit do svého zákaznického účtu\nVybrat si libovolné produkty za 3 000 Kč\nDárky se vám automaticky přidají do košíku.\nTělová sůl „Medová broskev“\n✅ Pomáhá odstranit suchá a hrubá místa\n✅ Masáž krystalky soli příjemně rozproudí pokožku\n✅ Lze použít jako peeling i relaxační koupel\n330 Kč\n215 Kč ( VIP Sleva)\nKOUPIT\nLaura 43 let: „Tuhle sůl jsem si zamilovala už po prvním použití. Nejen že nádherně voní po broskvích a pokožka je po ní krásně jemná, ale začala jsem si všímat i toho, že mám večer mnohem lehčí nohy. Po náročných dnech a dlouhém stání jsem často mívala pocit těžkých a oteklých nohou, ale pravidelný peeling a masáž s touto solí mi opravdu pomáhá ulevit.“\nModelující gel na tvar obličeje\n✅ Pokožka působí pevněji a vypnutěji\n✅ Pomáhá zjemnit povadlé kontury obličeje\n✅ Pokožka je po použití hladká a hebká na dotek\n534 Kč\n347 Kč ( VIP Sleva)\nKOUPIT\nMartina 48 let: „Používám ráno i večer na obličej, krk i stehna a pokožka je viditelně jemnější a pevnější. Navíc mi příjemně ulevuje od pocitu oteklých nohou po celém dni.“\nAndrea Svitáková\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nP.S. Pokud cítíte, že je čas přestat být na sebe tak tvrdé a udělat malý krok směrem k sobě, pusťte si záznam ještě dnes. Někdy stačí jediná věta, aby se začalo měnit úplně všechno.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KRWYDJ6FDBMFK4EPCTESRX8X",
-    "name": "SK - Novinky + znovu skladem",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "launch",
-    "subject": "🔥 3 obľúbené produkty sú SPÄŤ a k tomu NOVINKA! 🔥",
-    "previewText": "Oblíbené produkty jsou zpět a k tomu 1 žhavá novinka!",
-    "sentAt": "2026-05-18T07:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "VjAkvd",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Konečně zpět! A k tomu jedna krásná novinka!",
-      "body": [
-        "Konečně zpět! A k tomu jedna krásná novinka!",
-        "Čekání je u konce. Vaše 3 nejoblíbenější produkty jsou znovu skladem. A protože milujeme překvapení, přidali jsme k nim i jednu horkou novinku, kterou si zamilujete stejně rychle.",
-        "P. S.: Klikněte, dopřejte si své oblíbené produkty a vyzkoušejte naši novinku mezi prvními…",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
-      ],
-      "cta": "NAKOUPIT DŘÍV, NEŽ ZASE ZMIZÍc",
-      "ctas": [
-        "NAKOUPIT DŘÍV, NEŽ ZASE ZMIZÍc"
-      ],
-      "text": "96\nKonečně zpět! A k tomu jedna krásná novinka!\nČekání je u konce. Vaše 3 nejoblíbenější produkty jsou znovu skladem. A protože milujeme překvapení, přidali jsme k nim i jednu horkou novinku, kterou si zamilujete stejně rychle.\nNAKOUPIT DŘÍV, NEŽ ZASE ZMIZÍc\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Klikněte, dopřejte si své oblíbené produkty a vyzkoušejte naši novinku mezi prvními…\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KRNFBVC92Q08MN4GP4YXW939",
-    "name": "CZ - Novinky + znovu skladem",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "launch",
-    "subject": "🔥 3 oblíbené produkty jsou ZPĚT a k tomu NOVINKA! 🔥",
-    "previewText": "Oblíbené produkty jsou zpět a k tomu 1 žhavá novinka!",
-    "sentAt": "2026-05-18T07:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "XKheBc",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Konečně zpět! A k tomu jedna krásná novinka!",
-      "body": [
-        "Konečně zpět! A k tomu jedna krásná novinka!",
-        "Čekání je u konce.  Vaše 3 nejoblíbenější produkty jsou znovu skladem. A protože milujeme překvapení, přidali jsme k nim i jednu horkou novinku, kterou si zamilujete stejně rychle.",
-        "✅ Pomáhá s metabolismem tuků a podporou štíhlé linie",
-        "✅ Přispívá k normální funkci jater a přirozené detoxikaci"
-      ],
-      "cta": "NAKOUPIT DŘÍV, NEŽ ZMIZÍ",
-      "ctas": [
-        "NAKOUPIT DŘÍV, NEŽ ZMIZÍ",
-        "KOUPIT"
-      ],
-      "text": "96\nKonečně zpět! A k tomu jedna krásná novinka!\nČekání je u konce.  Vaše 3 nejoblíbenější produkty jsou znovu skladem. A protože milujeme překvapení, přidali jsme k nim i jednu horkou novinku, kterou si zamilujete stejně rychle.\nNAKOUPIT DŘÍV, NEŽ ZMIZÍ\nNápoj s artyčokem a dřišťálem\n✅ Pomáhá s metabolismem tuků a podporou štíhlé linie\n✅ Přispívá k normální funkci jater a přirozené detoxikaci\n✅ Podporuje trávení a pocit lehkosti po jídle\n✅ Ideální při pocitu těžkosti, únavě nebo zpomaleném trávení\nKOUPIT\nKoncentrát s malinovou\n✅ Podporuje hormonální rovnováhu díky fytoestrogenům z lněného semínka\n✅ Přispívá ke komfortu během menstruace i menopauzy\n✅ Může pomoci při pocitu pnutí prsou a ženském diskomfortu\nKOUPIT\nSolná koupel na nohy Levandule\n✅ Změkčuje zhrublou pokožku a zanechává chodidla hebká\n✅ Přináší pocit uvolnění a lehkosti po náročném dni\n✅ Ideální večerní péče pro unavené nohy\nKOUPIT\nOvocný balzám na rty\n✅ Vyživuje a zjemňuje rty už po první aplikaci\n✅ Chrání rty před vysušením\n✅ Jemný lesk pro přirozeně krásné rty\n✅ Skvělý pomocník do zimy, větru i klimatizovaných prostor\nKOUPIT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S: Klikněte, dopřejte si své oblíbené produkty a vyzkoušejte naši novinku mezi prvními…\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "percent-off",
