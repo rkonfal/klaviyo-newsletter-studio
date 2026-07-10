@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T07:58:11.749Z",
+  "generatedAt": "2026-07-10T07:57:36.691Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -7,10 +7,10 @@
     "sk": 42
   },
   "campaignTypeBreakdown": {
-    "urgency": 59,
+    "urgency": 61,
     "education": 45,
-    "promo": 29,
-    "launch": 14,
+    "promo": 31,
+    "launch": 10,
     "event": 3
   },
   "tone": {
@@ -21,7 +21,7 @@
       "benefit-first"
     ],
     "headlinePatterns": [
-      "průměrná délka předmětu 44 znaků",
+      "průměrná délka předmětu 45 znaků",
       "průměrná délka headline 52 znaků",
       "headline s rychlým příslibem nebo výsledkem"
     ],
@@ -36,8 +36,8 @@
       "PUSTIT SI ZÁZNAM",
       "TO MUSÍM MÍT",
       "CHCI SE PŘIDAT DO SKUPINY",
-      "NAKOUPIT SE SLEVOU",
-      "ZAČNU HUBNOUT HNED"
+      "Koupit",
+      "NAKOUPIT SE SLEVOU"
     ]
   },
   "commonOffers": [
@@ -94,22 +94,10 @@
       ],
       "examples": [
         {
-          "subject": "Už zítra: Nezapomněli jste si rezervovat svůj termín?",
-          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-          "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "⏰ Překvapení, kam se podíváš. Kafíčko s Renatou Královou - ZAČÍNÁME ZA 30 MINUT!",
-          "headline": "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
-          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-          "cta": "Připojte se na webinář nyní"
-        },
-        {
-          "subject": "☀️🍹Letní výprodej začal! Jste připraveni?",
-          "headline": "Letní výprodej je tady! Dárek ke každému balíčku!",
-          "previewText": "Oblíbené produkty za skvělé ceny a k nim dárek zdarma! 🎁",
-          "cta": "produkty z letního výprodeje"
+          "subject": "😲🚨Vykoupili jste nám sklad....",
+          "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+          "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
+          "cta": "Klikněte a objednejte"
         },
         {
           "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
@@ -118,29 +106,41 @@
           "cta": "Zjistit víc"
         },
         {
-          "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
-          "headline": "Vedra? Máme řešení, které si zamilujete.",
-          "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
-          "cta": "Chci se osvěžit"
+          "subject": "Vysušená pleť, těžké nohy a vedro? Nejste v tom sama.",
+          "headline": "Praktické letní tipy pro pleť, tělo i domácnost na jednom místě.",
+          "previewText": "Pusťte si záznam plný praktických letních tipů pro pleť, tělo, cestování i domácnost.",
+          "cta": "pro vás připravili záznam"
         },
         {
-          "subject": "🤫🎁Otevřete dřív, než bude pryč…",
-          "headline": "Léto volá... Máte už sbaleno?",
-          "previewText": "Dovolená začíná u správného balení. Naše novinka vás nadchne.",
-          "cta": "naše exkluzivní kosmetická taška"
+          "subject": "Užíváte doplňky stravy? Máme pro vás slevu až 30 %",
+          "headline": "Nejoblíbenější doplňky stravy právě teď až o 30 % levnější",
+          "previewText": "3 oblíbené doplňky se slevou až 30 %!",
+          "cta": "Chci ušetřit až 30 %"
+        },
+        {
+          "subject": "Už zítra. Máte svůj termín rezervovaný?",
+          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
+          "cta": "Zjistit víc"
+        },
+        {
+          "subject": "🚨⚠️POZOR: Tyhle produkty už brzy neobjednáte.",
+          "headline": "Letní výprodej sotva odstartoval, ale sklad se rychle vyprazdňuje.",
+          "previewText": "Letní výprodej běží do 31. 7., ale zásoby už ale tak dlouho nevydrží.",
+          "cta": "zbývají už jen poslední kusy."
         }
       ]
     },
     "sk": {
       "count": 42,
-      "avgSubjectLength": 43,
-      "avgHeadlineLength": 50,
+      "avgSubjectLength": 44,
+      "avgHeadlineLength": 52,
       "topCtas": [
         "KÚPIŤ",
         "Kliknite",
+        "Kúpiť",
         "PUSTIŤ SI ZÁZNAM",
         "CHCEM BYŤ PRI TOM!",
-        "Kúpiť",
         "CHCEM NAKÚPIŤ VÝHODNE"
       ],
       "topOffers": [
@@ -152,6 +152,18 @@
         "education"
       ],
       "examples": [
+        {
+          "subject": "😲🚨Vypredali ste nám sklad....",
+          "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
+          "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
+          "cta": "Kliknite"
+        },
+        {
+          "subject": "Vysušená pleť, ťažké nohy a horúčava? Nie ste v tom sama.",
+          "headline": "Praktické letné tipy pre pleť, telo aj domácnosť na jednom mieste.",
+          "previewText": "Pustite si záznam plný praktických letných tipov pre pleť, telo, cestovanie aj domácnosť.",
+          "cta": "Preto sme pre vás pripravili záznam"
+        },
         {
           "subject": "☀️🍹 Letný výpredaj sa začal! Ste pripravení?",
           "headline": "Letný výpredaj je tu! Darček ku každému balíčku!",
@@ -175,83 +187,73 @@
           "headline": "Tajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!",
           "previewText": "Tajomstvo regenerácie, ktoré prežilo stáročia. Práve teraz so zľavou až 46 %.",
           "cta": "Odhaliť tajomstvo mladistvej pleti"
-        },
-        {
-          "subject": "🏖️☀️✈️Zbalili sme vám!",
-          "headline": "Pripravili sme pre vás NOVÚ kozmetickú taštičku na dovolenku!",
-          "previewText": "Do kozmetickej taštičky sme vám pribalili všetko, na čo ženy na dovolenke najčastejšie zabúdajú.",
-          "cta": "Prohlédnout si kosmetickou taštičku"
-        },
-        {
-          "subject": "🚚 POZOR: Týždeň dopravy ZDARMA je tu! 🚚",
-          "headline": "JE TO TU: Nové balíčky, nové zľavy a doprava zdarma!",
-          "previewText": "Nielen doprava zdarma! Objavte aj nové exkluzívne zľavy až do 50 %!",
-          "cta": "exkluzívne nové balíčky s darčekmi,"
         }
       ]
     }
   },
   "byCampaignType": {
-    "promo": {
-      "count": 29,
-      "avgSubjectLength": 44,
-      "avgHeadlineLength": 54,
+    "urgency": {
+      "count": 61,
+      "avgSubjectLength": 41,
+      "avgHeadlineLength": 48,
       "topCtas": [
         "KOUPIT",
+        "Klikněte",
         "KÚPIŤ",
+        "Kliknite",
         "Zjistit víc",
-        "produkty z letního výprodeje",
-        "Chci nakoupit výhodně",
-        "nakupte ještě dnes!"
+        "PUSTIT SI ZÁZNAM"
       ],
       "topOffers": [
         "percent-off",
         "launch",
+        "urgency",
         "promo",
-        "gift"
+        "gift",
+        "education"
       ],
       "examples": [
         {
-          "subject": "Už zítra: Nezapomněli jste si rezervovat svůj termín?",
-          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-          "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
+          "subject": "😲🚨Vykoupili jste nám sklad....",
+          "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+          "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
+          "cta": "Klikněte a objednejte"
+        },
+        {
+          "subject": "😲🚨Vypredali ste nám sklad....",
+          "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
+          "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
+          "cta": "Kliknite"
+        },
+        {
+          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
+          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
           "cta": "Zjistit víc"
         },
         {
-          "subject": "☀️🍹Letní výprodej začal! Jste připraveni?",
-          "headline": "Letní výprodej je tady! Dárek ke každému balíčku!",
-          "previewText": "Oblíbené produkty za skvělé ceny a k nim dárek zdarma! 🎁",
-          "cta": "produkty z letního výprodeje"
+          "subject": "🚨⚠️POZOR: Tyhle produkty už brzy neobjednáte.",
+          "headline": "Letní výprodej sotva odstartoval, ale sklad se rychle vyprazdňuje.",
+          "previewText": "Letní výprodej běží do 31. 7., ale zásoby už ale tak dlouho nevydrží.",
+          "cta": "zbývají už jen poslední kusy."
         },
         {
-          "subject": "☀️🍹 Letný výpredaj sa začal! Ste pripravení?",
-          "headline": "Letný výpredaj je tu! Darček ku každému balíčku!",
-          "previewText": "Obľúbené produkty za skvelé ceny a k nim darček zdarma! 🎁",
-          "cta": "produkty z letného výpredaja"
+          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
+          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+          "cta": "Zjistit víc"
         },
         {
-          "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
-          "headline": "Vedra? Máme řešení, které si zamilujete.",
-          "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
-          "cta": "Chci se osvěžit"
-        },
-        {
-          "subject": "🐌Proč ženy po 40 tajně přecházejí na tuto péči?",
-          "headline": "Tajemství mladistvé pleti, které příroda střežila po staletí!",
-          "previewText": "Tajemství regenerace, které přežilo staletí. Právě teď se slevou až 46 %.",
-          "cta": "Odkrýt tajemství mladistvé pleti"
-        },
-        {
-          "subject": "🐌Prečo ženy po 40-tke tajne prechádzajú na túto starostlivosť?",
-          "headline": "Tajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!",
-          "previewText": "Tajomstvo regenerácie, ktoré prežilo stáročia. Práve teraz so zľavou až 46 %.",
-          "cta": "Odhaliť tajomstvo mladistvej pleti"
+          "subject": "🤫🎁Otevřete dřív, než bude pryč…",
+          "headline": "Léto volá... Máte už sbaleno?",
+          "previewText": "Dovolená začíná u správného balení. Naše novinka vás nadchne.",
+          "cta": "naše exkluzivní kosmetická taška"
         }
       ]
     },
     "education": {
       "count": 45,
-      "avgSubjectLength": 52,
+      "avgSubjectLength": 53,
       "avgHeadlineLength": 58,
       "topCtas": [
         "KOUPIT",
@@ -270,6 +272,18 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "Vysušená pleť, těžké nohy a vedro? Nejste v tom sama.",
+          "headline": "Praktické letní tipy pro pleť, tělo i domácnost na jednom místě.",
+          "previewText": "Pusťte si záznam plný praktických letních tipů pro pleť, tělo, cestování i domácnost.",
+          "cta": "pro vás připravili záznam"
+        },
+        {
+          "subject": "Vysušená pleť, ťažké nohy a horúčava? Nie ste v tom sama.",
+          "headline": "Praktické letné tipy pre pleť, telo aj domácnosť na jednom mieste.",
+          "previewText": "Pustite si záznam plný praktických letných tipov pre pleť, telo, cestovanie aj domácnosť.",
+          "cta": "Preto sme pre vás pripravili záznam"
+        },
         {
           "subject": "⏰ Překvapení, kam se podíváš. Kafíčko s Renatou Královou - ZAČÍNÁME ZA 30 MINUT!",
           "headline": "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
@@ -293,84 +307,70 @@
           "headline": "Tajemství mladistvé pleti není v genech.",
           "previewText": "Podívejte se, co překvapilo stovky žen.",
           "cta": "PUSTIT SI ZÁZNÁM"
-        },
-        {
-          "subject": "Prečo niektoré ženy vyzerajú o 10 rokov mladšie?",
-          "headline": "Tajomstvo mladistvej pleti nespočíva v génoch.",
-          "previewText": "Pozrite sa, čo prekvapilo stovky žien.",
-          "cta": "PUSTIŤ SI ZÁZNAM"
-        },
-        {
-          "subject": "⏰ Webinář - Krásná a zdravá pleť v každém věku - ZAČÍNÁME ZA 30 MINUT!",
-          "headline": "Webinář - Krásná a zdravá pleť v každém věku",
-          "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-          "cta": "Připojte se na webinář nyní"
         }
       ]
     },
-    "urgency": {
-      "count": 59,
-      "avgSubjectLength": 41,
-      "avgHeadlineLength": 47,
+    "promo": {
+      "count": 31,
+      "avgSubjectLength": 43,
+      "avgHeadlineLength": 52,
       "topCtas": [
         "KOUPIT",
-        "Klikněte",
         "KÚPIŤ",
         "Zjistit víc",
-        "Kliknite",
-        "PUSTIT SI ZÁZNAM"
+        "Koupit",
+        "Chci ušetřit až 30 %",
+        "Využijte slevu až 30 %"
       ],
       "topOffers": [
         "percent-off",
         "launch",
-        "urgency",
         "promo",
-        "gift",
-        "education"
+        "gift"
       ],
       "examples": [
         {
-          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+          "subject": "Užíváte doplňky stravy? Máme pro vás slevu až 30 %",
+          "headline": "Nejoblíbenější doplňky stravy právě teď až o 30 % levnější",
+          "previewText": "3 oblíbené doplňky se slevou až 30 %!",
+          "cta": "Chci ušetřit až 30 %"
+        },
+        {
+          "subject": "Už zítra. Máte svůj termín rezervovaný?",
+          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
           "cta": "Zjistit víc"
         },
         {
-          "subject": "🤫🎁Otevřete dřív, než bude pryč…",
-          "headline": "Léto volá... Máte už sbaleno?",
-          "previewText": "Dovolená začíná u správného balení. Naše novinka vás nadchne.",
-          "cta": "naše exkluzivní kosmetická taška"
-        },
-        {
-          "subject": "⏰🚚 Stihnete dopravu zadarmo? Už len do polnoci.",
-          "headline": "Čas sa kráti! Využite dopravu zdarma a zľavy až do 50 %.",
-          "previewText": "Doprava zdarma nad 36 € končí dnes o polnoci. A navyše môžete získať zľavy až do 50 %.",
-          "cta": "Chcem nakupovať hneď."
-        },
-        {
-          "subject": "⏰🚚 Stihnete dopravu zdarma? Už jen do půlnoci.",
-          "headline": "Čas se krátí! Využijte dopravu zdarma a slevy až 50 %",
-          "previewText": "Doprava zdarma nad 900 Kč končí dnes o půlnoci a navíc můžete získat slevy až 50 %.",
-          "cta": "Chci nakoupit hned"
-        },
-        {
-          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+          "subject": "Už zítra. Máte svůj termín rezervovaný?",
+          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
           "cta": "Zjistit víc"
         },
         {
-          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+          "subject": "Už zítra. Máte svůj termín rezervovaný?",
+          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
           "cta": "Zjistit víc"
+        },
+        {
+          "subject": "☀️🍹Letní výprodej začal! Jste připraveni?",
+          "headline": "Letní výprodej je tady! Dárek ke každému balíčku!",
+          "previewText": "Oblíbené produkty za skvělé ceny a k nim dárek zdarma! 🎁",
+          "cta": "produkty z letního výprodeje"
+        },
+        {
+          "subject": "☀️🍹 Letný výpredaj sa začal! Ste pripravení?",
+          "headline": "Letný výpredaj je tu! Darček ku každému balíčku!",
+          "previewText": "Obľúbené produkty za skvelé ceny a k nim darček zdarma! 🎁",
+          "cta": "produkty z letného výpredaja"
         }
       ]
     },
     "launch": {
-      "count": 14,
-      "avgSubjectLength": 36,
-      "avgHeadlineLength": 46,
+      "count": 10,
+      "avgSubjectLength": 35,
+      "avgHeadlineLength": 51,
       "topCtas": [
         "TO MUSÍM VYZKOŠET",
         "Nakoupit hned",
@@ -461,9 +461,81 @@
   },
   "examples": [
     {
-      "subject": "Už zítra: Nezapomněli jste si rezervovat svůj termín?",
+      "subject": "😲🚨Vykoupili jste nám sklad....",
+      "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+      "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
+      "cta": "Klikněte a objednejte",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "😲🚨Vypredali ste nám sklad....",
+      "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
+      "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
+      "cta": "Kliknite",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
+      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+      "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+      "cta": "Zjistit víc",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Vysušená pleť, těžké nohy a vedro? Nejste v tom sama.",
+      "headline": "Praktické letní tipy pro pleť, tělo i domácnost na jednom místě.",
+      "previewText": "Pusťte si záznam plný praktických letních tipů pro pleť, tělo, cestování i domácnost.",
+      "cta": "pro vás připravili záznam",
+      "language": "cz",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Vysušená pleť, ťažké nohy a horúčava? Nie ste v tom sama.",
+      "headline": "Praktické letné tipy pre pleť, telo aj domácnosť na jednom mieste.",
+      "previewText": "Pustite si záznam plný praktických letných tipov pre pleť, telo, cestovanie aj domácnosť.",
+      "cta": "Preto sme pre vás pripravili záznam",
+      "language": "sk",
+      "campaignType": "education"
+    },
+    {
+      "subject": "Užíváte doplňky stravy? Máme pro vás slevu až 30 %",
+      "headline": "Nejoblíbenější doplňky stravy právě teď až o 30 % levnější",
+      "previewText": "3 oblíbené doplňky se slevou až 30 %!",
+      "cta": "Chci ušetřit až 30 %",
+      "language": "cz",
+      "campaignType": "promo"
+    },
+    {
+      "subject": "Už zítra. Máte svůj termín rezervovaný?",
       "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-      "previewText": "Procedury a diagnostiky za 3 100 Kč zdarma.",
+      "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
+      "cta": "Zjistit víc",
+      "language": "cz",
+      "campaignType": "promo"
+    },
+    {
+      "subject": "🚨⚠️POZOR: Tyhle produkty už brzy neobjednáte.",
+      "headline": "Letní výprodej sotva odstartoval, ale sklad se rychle vyprazdňuje.",
+      "previewText": "Letní výprodej běží do 31. 7., ale zásoby už ale tak dlouho nevydrží.",
+      "cta": "zbývají už jen poslední kusy.",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
+      "subject": "Už zítra. Máte svůj termín rezervovaný?",
+      "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+      "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
+      "cta": "Zjistit víc",
+      "language": "cz",
+      "campaignType": "promo"
+    },
+    {
+      "subject": "Už zítra. Máte svůj termín rezervovaný?",
+      "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+      "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
       "cta": "Zjistit víc",
       "language": "cz",
       "campaignType": "promo"
@@ -531,78 +603,6 @@
       "cta": "Chci nakoupit hned",
       "language": "cz",
       "campaignType": "urgency"
-    },
-    {
-      "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-      "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-      "cta": "Zjistit víc",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "🎁🔥Exkluzivní akce 1 + 1 ZDARMA!",
-      "headline": "Druhý produkt je na nás! Vyberte si své favority, než budou pryč.",
-      "previewText": "Proč platit za dva? Využijte exkluzivní akci 1+1 ZDARMA ještě dnes.",
-      "cta": "Nakoupit hned",
-      "language": "cz",
-      "campaignType": "launch"
-    },
-    {
-      "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-      "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-      "cta": "Zjistit víc",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "🎁✨Odemkněte si svůj dárek!",
-      "headline": "Váš dárek už čeká. Vyberte si ho sami!",
-      "previewText": "Připravili jsme pro vás nové exkluzivní dárky. Který si vyberete vy?",
-      "cta": "Chci si vybrat dárek",
-      "language": "cz",
-      "campaignType": "launch"
-    },
-    {
-      "subject": "🎁✨ Odomknite si svoj darček!",
-      "headline": "Váš darček už čaká. Vyberte si ho sami!",
-      "previewText": "Pripravili sme pre vás nové exkluzívne darčeky. Ktorý si vyberiete vy?",
-      "cta": "Chcem si vybrať darček.",
-      "language": "sk",
-      "campaignType": "launch"
-    },
-    {
-      "subject": "🐌Proč ženy po 40 tajně přecházejí na tuto péči?",
-      "headline": "Tajemství mladistvé pleti, které příroda střežila po staletí!",
-      "previewText": "Tajemství regenerace, které přežilo staletí. Právě teď se slevou až 46 %.",
-      "cta": "Odkrýt tajemství mladistvé pleti",
-      "language": "cz",
-      "campaignType": "promo"
-    },
-    {
-      "subject": "🐌Prečo ženy po 40-tke tajne prechádzajú na túto starostlivosť?",
-      "headline": "Tajomstvo mladistvej pleti, ktoré príroda strážila po stáročia!",
-      "previewText": "Tajomstvo regenerácie, ktoré prežilo stáročia. Práve teraz so zľavou až 46 %.",
-      "cta": "Odhaliť tajomstvo mladistvej pleti",
-      "language": "sk",
-      "campaignType": "promo"
-    },
-    {
-      "subject": "😲🚨Vykoupili jste nám sklad....",
-      "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
-      "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
-      "cta": "Klikněte a objednejte",
-      "language": "cz",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "🏖️☀️✈️Zbalili sme vám!",
-      "headline": "Pripravili sme pre vás NOVÚ kozmetickú taštičku na dovolenku!",
-      "previewText": "Do kozmetickej taštičky sme vám pribalili všetko, na čo ženy na dovolenke najčastejšie zabúdajú.",
-      "cta": "Prohlédnout si kosmetickou taštičku",
-      "language": "sk",
-      "campaignType": "promo"
     }
   ]
 }
