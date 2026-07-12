@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T06:32:16.638Z",
+  "generatedAt": "2026-07-12T06:51:06.784Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -94,6 +94,12 @@
       ],
       "examples": [
         {
+          "subject": "😲🚨Vykoupili jste nám sklad....",
+          "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+          "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
+          "cta": "Klikněte a objednejte"
+        },
+        {
           "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
           "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
           "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
@@ -110,12 +116,6 @@
           "headline": "Ukliďte rychleji, chytřeji a ušetřete. Nové balíčky jsou právě v akci.",
           "previewText": "Objevte nové zvýhodněné balíčky a ušetřete až 39 %!",
           "cta": "připravili nové výhodné balíčky"
-        },
-        {
-          "subject": "😲🚨Vykoupili jste nám sklad....",
-          "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
-          "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
-          "cta": "Klikněte a objednejte"
         },
         {
           "subject": "Vysušená pleť, těžké nohy a vedro? Nejste v tom sama.",
@@ -214,16 +214,16 @@
       ],
       "examples": [
         {
-          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-          "cta": "Zjistit víc"
-        },
-        {
           "subject": "😲🚨Vykoupili jste nám sklad....",
           "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
           "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
           "cta": "Klikněte a objednejte"
+        },
+        {
+          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
+          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+          "cta": "Zjistit víc"
         },
         {
           "subject": "😲🚨Vypredali ste nám sklad....",
@@ -461,6 +461,14 @@
   },
   "examples": [
     {
+      "subject": "😲🚨Vykoupili jste nám sklad....",
+      "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
+      "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
+      "cta": "Klikněte a objednejte",
+      "language": "cz",
+      "campaignType": "urgency"
+    },
+    {
       "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
       "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
       "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
@@ -483,14 +491,6 @@
       "cta": "připravili nové výhodné balíčky",
       "language": "cz",
       "campaignType": "education"
-    },
-    {
-      "subject": "😲🚨Vykoupili jste nám sklad....",
-      "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
-      "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
-      "cta": "Klikněte a objednejte",
-      "language": "cz",
-      "campaignType": "urgency"
     },
     {
       "subject": "😲🚨Vypredali ste nám sklad....",
