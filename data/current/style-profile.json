@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T06:51:06.784Z",
+  "generatedAt": "2026-07-13T07:43:08.356Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -214,6 +214,12 @@
       ],
       "examples": [
         {
+          "subject": "😲🚨Vypredali ste nám sklad....",
+          "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
+          "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
+          "cta": "Kliknite"
+        },
+        {
           "subject": "😲🚨Vykoupili jste nám sklad....",
           "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
           "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
@@ -224,12 +230,6 @@
           "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
           "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
           "cta": "Zjistit víc"
-        },
-        {
-          "subject": "😲🚨Vypredali ste nám sklad....",
-          "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
-          "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
-          "cta": "Kliknite"
         },
         {
           "subject": "🚨⚠️POZOR: Tyhle produkty už brzy neobjednáte.",
@@ -461,6 +461,14 @@
   },
   "examples": [
     {
+      "subject": "😲🚨Vypredali ste nám sklad....",
+      "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
+      "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
+      "cta": "Kliknite",
+      "language": "sk",
+      "campaignType": "urgency"
+    },
+    {
       "subject": "😲🚨Vykoupili jste nám sklad....",
       "headline": "Vykoupili jste nám sklad a zbývají už jen poslední kusy!",
       "previewText": "Pokud jste čekali na objednávku, možná nastal ten pravý čas!",
@@ -491,14 +499,6 @@
       "cta": "připravili nové výhodné balíčky",
       "language": "cz",
       "campaignType": "education"
-    },
-    {
-      "subject": "😲🚨Vypredali ste nám sklad....",
-      "headline": "Vypredali ste nám sklad a zostávajú už len posledné kusy!",
-      "previewText": "Ak ste čakali na svoju objednávku, možno práve nastal ten správny čas!",
-      "cta": "Kliknite",
-      "language": "sk",
-      "campaignType": "urgency"
     },
     {
       "subject": "Vysušená pleť, těžké nohy a vedro? Nejste v tom sama.",
