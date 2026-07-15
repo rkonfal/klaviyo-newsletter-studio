@@ -1,43 +1,105 @@
 [
   {
-    "id": "01KXFGEEX5JEWF0M1R9VDV1T56",
-    "name": "SK - Letní výprodej balíčky",
+    "id": "01KX0GWAS8JTQKZKXZ2CN2D1PA",
+    "name": "CZ - Teploty opět stoupají",
     "status": "Queued without Recipients",
-    "language": "sk",
-    "campaignType": "urgency",
-    "subject": "🚨⚠️ POZOR: Tieto produkty si už čoskoro nebudete môcť objednať.",
-    "previewText": "Letný výpredaj trvá do 31. 7., no zásoby sa pravdepodobne minú oveľa skôr.",
-    "sentAt": "2026-07-14T17:45:00+00:00",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
+    "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
+    "sentAt": "2026-07-15T17:18:00+00:00",
     "segments": [],
     "template": {
-      "id": "XhYeUN",
+      "id": "SnLYyi",
       "name": "2025-02-28 04:04 popup existující klient",
       "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Letný výpredaj sa sotva začal, no sklad sa rýchlo vyprázdňuje.",
+      "headline": "Vedra? Máme řešení, které si zamilujete.",
       "body": [
-        "Letný výpredaj sa sotva začal, no sklad sa rýchlo vyprázdňuje.",
-        "Letný výpredaj je v plnom prúde a niektoré z našich najobľúbenejších produktov miznú rýchlejšie, než sme čakali. Pri viacerých z nich zostávajú už len posledné kusy skladom. Ak ste ich mali v pláne vyskúšať, teraz je ten správny čas.",
-        "5 minút k hladšej, pevnejšej a viditeľne mladšej pleti. Bez kozmetického salónu.",
-        "✅ Okamžite vyhladzuje jemné vrásky a nerovnosti pleti. ✅ Až o 90 % zlepšuje vstrebávanie pleťových krémov a sér."
+        "Vedra? Máme řešení, které si zamilujete.",
+        "🌞 Letní hity, které právě teď potřebujete.",
+        "Vedra jsou zpět! Pot, lepkavá pokožka, horké noci… Léto umí být krásné, ale také náročné. Dopřejte si letní péči, díky které se budete cítit svěže, sebevědomě a v pohodlí od rána až do večera.  Vyberte si své favority a užijte si léto naplno!",
+        "Horké letní dny dávají nohám pořádně zabrat. Slaviton přináší příjemné ochlazení, úlevu a pocit lehkých nohou, který si zamilujete."
       ],
-      "cta": "Nakúpte ešte dnes.",
+      "cta": "Chci se osvěžit",
       "ctas": [
-        "Nakúpte ešte dnes.",
-        "Kúpiť",
-        "Kliknite a zabezpečte"
+        "Chci se osvěžit",
+        "Koupit"
       ],
-      "text": "96\nLetný výpredaj sa sotva začal, no sklad sa rýchlo vyprázdňuje.\n🔥 Posledné kusy skladom\nLetný výpredaj je v plnom prúde a niektoré z našich najobľúbenejších produktov miznú rýchlejšie, než sme čakali. Pri viacerých z nich zostávajú už len posledné kusy skladom. Ak ste ich mali v pláne vyskúšať, teraz je ten správny čas.\nNakúpte ešte dnes.\n5 minút k hladšej, pevnejšej a viditeľne mladšej pleti. Bez kozmetického salónu.\n✅ Okamžite vyhladzuje jemné vrásky a nerovnosti pleti. ✅ Až o 90 % zlepšuje vstrebávanie pleťových krémov a sér.\n✅ Podporuje tvorbu vlastného kolagénu.\n✅ Praktický pomocník v boji proti starnutiu.\n🎁 Darček zadarmo: Luxusná kozmetická taštička.\nKúpiť\nJana, 48 rokov: „Toto je moja záchrana vždy, keď moja pleť vyzerá unavene. Už po pár minútach je jemnejšia, pevnejšia a krásne rozžiarená. Mám pocit, akoby som práve vyšla z kozmetického salónu.“\nVnútorná sila a relax\n✅ Podporuje energiu a vitalitu. ✅ Pomáha udržiavať normálnu hladinu cukru v krvi.\n✅ Podporuje sústredenie a duševnú výkonnosť.\n✅ Posilňuje prirodzenú obranyschopnosť.\n🎁 Darček zadarmo: Luxusná ružová čelenka.\nKúpiť\nLenka, 38 rokov: „Po niekoľkých týždňoch užívania som si všimla, že mám počas dňa oveľa viac energie a lepšie zvládam pracovný stres. Navyše som toto obdobie nachladnutí zvládla oveľa lepšie ako kedysi. Najviac oceňujem prírodné zloženie a to, že sa celkovo cítim oveľa lepšie.“\nPrírodná cesta k regenerácii unaveného organizmu\n✅ Pomáha zmierniť únavu a podporiť vitalitu. ✅ Podporuje prirodzenú regeneráciu organizmu.\n✅ Posilňuje obranyschopnosť organizmu.\n🎁 Darček zadarmo: Levanduľová náplasť na nohy.\nKúpiť\nMarcela, 48 rokov: „Po niekoľkých týždňoch užívania som cítila výrazný rozdiel. Ráno vstávam s väčšou chuťou do nového dňa, popoludňajšia únava takmer zmizla a zvládam pracovné tempo aj šport bez pocitu vyčerpania. Najviac oceňujem to, že energia prichádza prirodzene a necítim žiadne výkyvy ako po káve či energetických nápojoch. Tento produkt sa stal súčasťou mojej každodennej starostlivosti o zdravie.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Niektoré produkty z letného výpredaja sú už dostupné len v posledných kusoch. Ak už máte svojho favorita vybraného, odporúčame objednať ešte dnes. Kliknite a zabezpečte   si ho skôr, než zmizne z ponuky.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+      "text": "96\nVedra? Máme řešení, které si zamilujete.\n🌞 Letní hity, které právě teď potřebujete.\nVedra jsou zpět! Pot, lepkavá pokožka, horké noci… Léto umí být krásné, ale také náročné. Dopřejte si letní péči, díky které se budete cítit svěže, sebevědomě a v pohodlí od rána až do večera.  Vyberte si své favority a užijte si léto naplno!\nChci se osvěžit\nSlaviton\nHorké letní dny dávají nohám pořádně zabrat. Slaviton přináší příjemné ochlazení, úlevu a pocit lehkých nohou, který si zamilujete.\n✅ Okamžitě osvěží a uleví unaveným nohám. ✅ Pomáhá zmírnit pocit otoků a těžkých nohou. ✅ Rychle se vstřebává a nezanechává mastný film. ✅ Síla léčivých bylin a mentolu.\n434 Kč 282 Kč (VIP Sleva)\nKoupit\nKamencový deodorant s prebiotiky, svěží vůně\nLéto a horké dny přinášejí i pocení. Dopřejte pokožce přirozenou ochranu, která eliminuje zápach, pečuje o kožní mikrobiom a udrží vás svěží po celý den.\n✅ Eliminuje nepříjemný zápach, ale neblokuje přirozené pocení. ✅ Vhodný i pro citlivou pokožku. ✅ Nezanechává bílé ani žluté stopy na oblečení. ✅ Přírodní složení bez parabenů a alkoholu.\n206 Kč 134 Kč (VIP Sleva)\nKoupit\nTající kolagenová liftingová maska\nSlunce, klimatizace, koupání i cestování dávají pleti během léta pořádně zabrat. Dopřejte jí dávku intenzivní hydratace a liftingové péče, díky které bude znovu svěží, vypnutá a rozzářená.\n✅ Intenzivně hydratuje a vyhlazuje pleť. ✅ Okamžitý efekt pro unavenou a dehydratovanou pleť. ✅ Viditelně vypíná a zpevňuje pleť. ✅ Ideální SOS péče po slunění.\n114 Kč 74 Kč (VIP Sleva)\nKoupit\nRevitalizační pleťová esence ve spreji Biotics\nHorké dny, slunce, klimatizace i pobyt u vody mohou pleť snadno vysušit a unavit. Dopřejte jí během dne okamžité osvěžení, hydrataci a dávku aktivní péče v jediném střiku.\n✅ Okamžitě hydratuje a osvěžuje pleť. ✅ Jemná mlha bez narušení make-upu. ✅ Chrání pleť před vysoušením během léta. ✅ Zklidňuje podrážděnou a citlivou pleť.\n581 Kč 378 Kč (VIP Sleva)\nKoupit\nŠampon a sprchový gel pro muže 2 v 1\nLéto patří dobrodružství, sportu i cestování. Ať už vyrážíte kamkoliv, dopřejte si rychlou a svěží péči, která vás osvěží od hlavy až k patě.\n✅ Vlasy i tělo umyjete jedním produktem. ✅ Šetrně pečuje o pokožku i vlasy. ✅ Odstraňuje pot, maz i nečistoty po náročném dni. ✅ Dodává energii a dlouhotrvající pocit svěžesti.\n300 Kč 195 Kč (VIP Sleva)\nKoupit\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Až teploty opět vyskočí nahoru, budete rádi, že máte své letní pomocníky doma. Vyberte si je ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "promo",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KXJ661TDH3T8XYYP5YYJA566",
+    "name": "SK- Teploty opět stoupají",
+    "status": "Queued without Recipients",
+    "language": "sk",
+    "campaignType": "promo",
+    "subject": "🌡️🥵☀️ Horúčavy sa vracajú. Pripravte sa na ne.",
+    "previewText": "Objavte letných pomocníkov, ktorí vám spríjemnia každý horúci deň.",
+    "sentAt": "2026-07-15T17:18:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "R8s9CF",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Horúčavy? Máme riešenie, ktoré si zamilujete.",
+      "body": [
+        "Horúčavy? Máme riešenie, ktoré si zamilujete.",
+        "🌞 Letné hity, ktoré práve teraz potrebujete",
+        "Horúčavy sú späť! Pot, lepkavá pokožka, horúce noci… Leto vie byť nádherné, ale aj náročné. Doprajte si letnú starostlivosť, vďaka ktorej sa budete cítiť sviežo, sebavedomo a komfortne od rána až do večera. Vyberte si svojich letných favoritov a užite si leto naplno!",
+        "Horúce letné dni dávajú nohám poriadne zabrať. Slaviton prináša príjemné ochladenie, úľavu a pocit ľahkých nôh, ktorý si zamilujete."
+      ],
+      "cta": "Chcem sa osviežiť",
+      "ctas": [
+        "Chcem sa osviežiť",
+        "Kúpiť"
+      ],
+      "text": "96\nHorúčavy? Máme riešenie, ktoré si zamilujete.\n🌞 Letné hity, ktoré práve teraz potrebujete\nHorúčavy sú späť! Pot, lepkavá pokožka, horúce noci… Leto vie byť nádherné, ale aj náročné. Doprajte si letnú starostlivosť, vďaka ktorej sa budete cítiť sviežo, sebavedomo a komfortne od rána až do večera. Vyberte si svojich letných favoritov a užite si leto naplno!\nChcem sa osviežiť\nSlaviton\nHorúce letné dni dávajú nohám poriadne zabrať. Slaviton prináša príjemné ochladenie, úľavu a pocit ľahkých nôh, ktorý si zamilujete.\n✅ Okamžite osvieži a uľaví unaveným nohám ✅ Pomáha zmierniť pocit opuchov a ťažkých nôh\n✅ Rýchlo sa vstrebáva a nezanecháva mastný film\n✅ Sila liečivých bylín a mentolu\nKúpiť\nKamenecový deodorant s prebiotikami, svieža vôňa\nLeto a horúce dni prinášajú aj potenie. Doprajte svojej pokožke prirodzenú ochranu, ktorá eliminuje zápach, stará sa o kožný mikrobióm a udrží vás sviežich po celý deň.\n✅ Eliminuje nepríjemný zápach, ale neblokuje prirodzené potenie ✅ Vhodný aj pre citlivú pokožku\n✅ Nezanecháva biele ani žlté stopy na oblečení\n✅ Prírodné zloženie bez parabénov a alkoholu\nKúpiť\nRozpúšťajúca sa kolagénová liftingová maska\nSlnko, klimatizácia, kúpanie aj cestovanie dávajú pleti počas leta poriadne zabrať. Doprajte jej dávku intenzívnej hydratácie a liftingovej starostlivosti, vďaka ktorej bude opäť svieža, vypnutá a rozžiarená.\n✅ Intenzívne hydratuje a vyhladzuje pleť ✅ Okamžitý efekt pre unavenú a dehydrovanú pleť\n✅ Viditeľne vypína a spevňuje pleť\n✅ Ideálna SOS starostlivosť po opaľovaní\nKúpiť\nRevitalizačná pleťová esencia v spreji Biotics\nHorúce dni, slnko, klimatizácia aj pobyt pri vode môžu pleť ľahko vysušiť a unaviť. Doprajte jej počas dňa okamžité osvieženie, hydratáciu a dávku aktívnej starostlivosti v jedinom streknutí.\n✅ Okamžite hydratuje a osviežuje pleť ✅ Jemná hmla bez narušenia make-upu\n✅ Chráni pleť pred vysušovaním počas leta\n✅ Upokojuje podráždenú a citlivú pleť\nKúpiť\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Keď teploty opäť vystúpia poriadne vysoko, budete radi, že máte svojich letných pomocníkov doma. Vyberte si ich ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
       "percent-off",
-      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KX2YVNHGX1BFJ47WY1YXPJEA",
+    "name": "Jindřichův Hradec  - zážitkový den, už zítra",
+    "status": "Queued without Recipients",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "Už zítra. Máte svůj termín rezervovaný?",
+    "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
+    "sentAt": "2026-07-15T14:00:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "WQHsBz",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Diagnostiky a konzultace v hodnotě",
+      "body": [
+        "📌 KDY: již zítra od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec 💰 Diagnostiky a odborné konzultace v hodnotě 3 100 Kč  -&gt; nyní zdarma",
+        "Už zítra máte jedinečnou možnost zjistit více o svém zdraví, pleti, vlasech i metabolismu. Během jedné návštěvy získáte diagnostiky i odborné doporučení na míru – zcela zdarma.  Rezervujte si svůj termín ještě dnes a těšte se na odpoledne užitečných informací a péče  ​ věnované právě vám.",
+        "Co na vás čeká: Analýza zdravotního stavu pomocí přístroje Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně odhalí skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby byla vaše péče co nejúčinnější. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici i doporučení, na co se zaměřit. Osobní konzultace s odborníky",
+        "Marie 48 let: „Nedávno jsem si na prodejně vyzkoušela zdravotní analýzu Bicom i diagnostiku pleti a byla jsem opravdu překvapená, kolik zajímavých informací jsem se o sobě dozvěděla. Analýza pleti mi ukázala věci, které nejsou na první pohled vidět, a díky Bicomu jsem získala lepší přehled o tom, na co se zaměřit. Atmosféra byla velmi příjemná a profesionální. Když jsem se dozvěděla o zážitkovém dni, neváhala jsem ani chvíli. Moc se těším, až si vyzkouším také InBody a další diagnostiky a získám ještě ucelenější pohled na své zdraví.“"
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nDiagnostiky a konzultace v hodnotě\n3 100 Kč zdarma!\n📌 KDY: již zítra od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec 💰 Diagnostiky a odborné konzultace v hodnotě 3 100 Kč  -&gt; nyní zdarma\nUž zítra máte jedinečnou možnost zjistit více o svém zdraví, pleti, vlasech i metabolismu. Během jedné návštěvy získáte diagnostiky i odborné doporučení na míru – zcela zdarma.  Rezervujte si svůj termín ještě dnes a těšte se na odpoledne užitečných informací a péče  ​ věnované právě vám.\nCo na vás čeká: Analýza zdravotního stavu pomocí přístroje Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně odhalí skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby byla vaše péče co nejúčinnější. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici i doporučení, na co se zaměřit. Osobní konzultace s odborníky\nMarie 48 let: „Nedávno jsem si na prodejně vyzkoušela zdravotní analýzu Bicom i diagnostiku pleti a byla jsem opravdu překvapená, kolik zajímavých informací jsem se o sobě dozvěděla. Analýza pleti mi ukázala věci, které nejsou na první pohled vidět, a díky Bicomu jsem získala lepší přehled o tom, na co se zaměřit. Atmosféra byla velmi příjemná a profesionální. Když jsem se dozvěděla o zážitkovém dni, neváhala jsem ani chvíli. Moc se těším, až si vyzkouším také InBody a další diagnostiky a získám ještě ucelenější pohled na své zdraví.“\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Dopřejte si chvíli jen pro sebe. Zavolejte na 373 700 900 nebo napište na info@kralovstvi-tiande.cz . Počet míst je omezený. Rezervujte si svůj termín ještě dnes. Stačí odpovědět na tento e-mail.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
       "launch"
     ]
   },
   {
     "id": "01KX301VCX2GNRY5JSDKSK11TT",
     "name": "CZ - Letní výprodej balíčky",
-    "status": "Queued without Recipients",
+    "status": "Sent",
     "language": "cz",
     "campaignType": "urgency",
     "subject": "🚨⚠️POZOR: Tyhle produkty už brzy neobjednáte.",
@@ -66,6 +128,41 @@
     },
     "offers": [
       "promo",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KXFGEEX5JEWF0M1R9VDV1T56",
+    "name": "SK - Letní výprodej balíčky",
+    "status": "Sent",
+    "language": "sk",
+    "campaignType": "urgency",
+    "subject": "🚨⚠️ POZOR: Tieto produkty si už čoskoro nebudete môcť objednať.",
+    "previewText": "Letný výpredaj trvá do 31. 7., no zásoby sa pravdepodobne minú oveľa skôr.",
+    "sentAt": "2026-07-14T17:45:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "XhYeUN",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Letný výpredaj sa sotva začal, no sklad sa rýchlo vyprázdňuje.",
+      "body": [
+        "Letný výpredaj sa sotva začal, no sklad sa rýchlo vyprázdňuje.",
+        "Letný výpredaj je v plnom prúde a niektoré z našich najobľúbenejších produktov miznú rýchlejšie, než sme čakali. Pri viacerých z nich zostávajú už len posledné kusy skladom. Ak ste ich mali v pláne vyskúšať, teraz je ten správny čas.",
+        "5 minút k hladšej, pevnejšej a viditeľne mladšej pleti. Bez kozmetického salónu.",
+        "✅ Okamžite vyhladzuje jemné vrásky a nerovnosti pleti. ✅ Až o 90 % zlepšuje vstrebávanie pleťových krémov a sér."
+      ],
+      "cta": "Nakúpte ešte dnes.",
+      "ctas": [
+        "Nakúpte ešte dnes.",
+        "Kúpiť",
+        "Kliknite a zabezpečte"
+      ],
+      "text": "96\nLetný výpredaj sa sotva začal, no sklad sa rýchlo vyprázdňuje.\n🔥 Posledné kusy skladom\nLetný výpredaj je v plnom prúde a niektoré z našich najobľúbenejších produktov miznú rýchlejšie, než sme čakali. Pri viacerých z nich zostávajú už len posledné kusy skladom. Ak ste ich mali v pláne vyskúšať, teraz je ten správny čas.\nNakúpte ešte dnes.\n5 minút k hladšej, pevnejšej a viditeľne mladšej pleti. Bez kozmetického salónu.\n✅ Okamžite vyhladzuje jemné vrásky a nerovnosti pleti. ✅ Až o 90 % zlepšuje vstrebávanie pleťových krémov a sér.\n✅ Podporuje tvorbu vlastného kolagénu.\n✅ Praktický pomocník v boji proti starnutiu.\n🎁 Darček zadarmo: Luxusná kozmetická taštička.\nKúpiť\nJana, 48 rokov: „Toto je moja záchrana vždy, keď moja pleť vyzerá unavene. Už po pár minútach je jemnejšia, pevnejšia a krásne rozžiarená. Mám pocit, akoby som práve vyšla z kozmetického salónu.“\nVnútorná sila a relax\n✅ Podporuje energiu a vitalitu. ✅ Pomáha udržiavať normálnu hladinu cukru v krvi.\n✅ Podporuje sústredenie a duševnú výkonnosť.\n✅ Posilňuje prirodzenú obranyschopnosť.\n🎁 Darček zadarmo: Luxusná ružová čelenka.\nKúpiť\nLenka, 38 rokov: „Po niekoľkých týždňoch užívania som si všimla, že mám počas dňa oveľa viac energie a lepšie zvládam pracovný stres. Navyše som toto obdobie nachladnutí zvládla oveľa lepšie ako kedysi. Najviac oceňujem prírodné zloženie a to, že sa celkovo cítim oveľa lepšie.“\nPrírodná cesta k regenerácii unaveného organizmu\n✅ Pomáha zmierniť únavu a podporiť vitalitu. ✅ Podporuje prirodzenú regeneráciu organizmu.\n✅ Posilňuje obranyschopnosť organizmu.\n🎁 Darček zadarmo: Levanduľová náplasť na nohy.\nKúpiť\nMarcela, 48 rokov: „Po niekoľkých týždňoch užívania som cítila výrazný rozdiel. Ráno vstávam s väčšou chuťou do nového dňa, popoludňajšia únava takmer zmizla a zvládam pracovné tempo aj šport bez pocitu vyčerpania. Najviac oceňujem to, že energia prichádza prirodzene a necítim žiadne výkyvy ako po káve či energetických nápojoch. Tento produkt sa stal súčasťou mojej každodennej starostlivosti o zdravie.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S. Niektoré produkty z letného výpredaja sú už dostupné len v posledných kusoch. Ak už máte svojho favorita vybraného, odporúčame objednať ešte dnes. Kliknite a zabezpečte   si ho skôr, než zmizne z ponuky.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
       "percent-off",
       "gift",
       "launch"
@@ -557,36 +654,6 @@
     ]
   },
   {
-    "id": "01KX2YVNHGX1BFJ47WY1YXPJEA",
-    "name": "Jindřichův Hradec  - zážitkový den, už zítra",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "Už zítra. Máte svůj termín rezervovaný?",
-    "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "WQHsBz",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-      "body": [
-        "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-        "📌 KDY: již zítra od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec 💰 Diagnostiky a odborné konzultace v hodnotě 3 100 Kč  -&gt; nyní zdarma",
-        "Už zítra máte jedinečnou možnost zjistit více o svém zdraví, pleti, vlasech i metabolismu. Během jedné návštěvy získáte diagnostiky i odborné doporučení na míru – zcela zdarma.  Rezervujte si svůj termín ještě dnes a těšte se na odpoledne užitečných informací a péče  ​ věnované právě vám.",
-        "Co na vás čeká: Analýza zdravotního stavu pomocí přístroje Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně odhalí skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby byla vaše péče co nejúčinnější. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici i doporučení, na co se zaměřit. Osobní konzultace s odborníky"
-      ],
-      "cta": "Zjistit víc",
-      "ctas": [],
-      "text": "96\nDiagnostiky a konzultace v hodnotě 3 100 Kč zdarma!\n📌 KDY: již zítra od 15:00 do 18:00 📌 KDE: Zlatá Husa, nám. Míru 142, Jindřichův Hradec 💰 Diagnostiky a odborné konzultace v hodnotě 3 100 Kč  -&gt; nyní zdarma\nUž zítra máte jedinečnou možnost zjistit více o svém zdraví, pleti, vlasech i metabolismu. Během jedné návštěvy získáte diagnostiky i odborné doporučení na míru – zcela zdarma.  Rezervujte si svůj termín ještě dnes a těšte se na odpoledne užitečných informací a péče  ​ věnované právě vám.\nCo na vás čeká: Analýza zdravotního stavu pomocí přístroje Bicom - Pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - Detailně odhalí skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby byla vaše péče co nejúčinnější. Metabolická diagnostika InBody - Zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici i doporučení, na co se zaměřit. Osobní konzultace s odborníky\nMarie 48 let: „Nedávno jsem si na prodejně vyzkoušela zdravotní analýzu Bicom i diagnostiku pleti a byla jsem opravdu překvapená, kolik zajímavých informací jsem se o sobě dozvěděla. Analýza pleti mi ukázala věci, které nejsou na první pohled vidět, a díky Bicomu jsem získala lepší přehled o tom, na co se zaměřit. Atmosféra byla velmi příjemná a profesionální. Když jsem se dozvěděla o zážitkovém dni, neváhala jsem ani chvíli. Moc se těším, až si vyzkouším také InBody a další diagnostiky a získám ještě ucelenější pohled na své zdraví.“\nRezervujte si své místo ještě dnes:\nEmail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Dopřejte si chvíli jen pro sebe. Zavolejte na 373 700 900 nebo napište na info@kralovstvi-tiande.cz . Počet míst je omezený. Rezervujte si svůj termín ještě dnes. Stačí odpovědět na tento e-mail.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
     "id": "01KX0NJ9V70FDD45VRHEE7RWB0",
     "name": "CZ Webinář - Překvapení -8.7. odkaz",
     "status": "Sent",
@@ -714,40 +781,6 @@
       "text": "96\nPoslední příležitost získat péči za 3 100 Kč zdarma!\n📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nPozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.\nCo na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky\nLenka, 58 let: „Vyzkoušela jsem zdravotní analýzu Bicom i diagnostiku pleti a překvapilo mě, kolik jsem se o sobě dozvěděla. Díky výsledkům jsem lépe pochopila, na co se zaměřit. Když jsem se dozvěděla o Zážitkovém dni, neváhala jsem ani chvíli.“\nRezervujte si své místo ještě dnes:\nE-mail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Zbývá už jen posledních 7 rezervací. Pokud si chcete dopřát diagnostiku zdraví, pleti a vlasů v hodnotě 3 100 Kč zdarma, rezervujte si svůj termín ještě dnes na telefonu 373 700 900 nebo e-mailu info@kralovstvi-tiande.cz\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
-      "percent-off",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KX0GWAS8JTQKZKXZ2CN2D1PA",
-    "name": "CZ - Teploty opět stoupají",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "promo",
-    "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
-    "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "SnLYyi",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Vedra? Máme řešení, které si zamilujete.",
-      "body": [
-        "Vedra? Máme řešení, které si zamilujete.",
-        "🌞 Letní hity, které právě teď potřebujete.",
-        "Vedra jsou zpět! Pot, lepkavá pokožka, horké noci… Léto umí být krásné, ale také náročné. Dopřejte si letní péči, díky které se budete cítit svěže, sebevědomě a v pohodlí od rána až do večera.  Vyberte si své favority a užijte si léto naplno!",
-        "Horké letní dny dávají nohám pořádně zabrat. Slaviton přináší příjemné ochlazení, úlevu a pocit lehkých nohou, který si zamilujete."
-      ],
-      "cta": "Chci se osvěžit",
-      "ctas": [
-        "Chci se osvěžit",
-        "KOUPIT"
-      ],
-      "text": "96\nVedra? Máme řešení, které si zamilujete.\n🌞 Letní hity, které právě teď potřebujete.\nVedra jsou zpět! Pot, lepkavá pokožka, horké noci… Léto umí být krásné, ale také náročné. Dopřejte si letní péči, díky které se budete cítit svěže, sebevědomě a v pohodlí od rána až do večera.  Vyberte si své favority a užijte si léto naplno!\nChci se osvěžit\nSlaviton\nHorké letní dny dávají nohám pořádně zabrat. Slaviton přináší příjemné ochlazení, úlevu a pocit lehkých nohou, který si zamilujete.\n✅ Okamžitě osvěží a uleví unaveným nohám ✅ Pomáhá zmírnit pocit otoků a těžkých nohou ✅ Rychle se vstřebává a nezanechává mastný film ✅ Síla léčivých bylin a mentolu\n434 Kč 282 Kč (VIP Sleva)\nKOUPIT\nKamencový deodorant s prebiotiky, svěží vůně\nLéto a horké dny přinášejí i pocení. Dopřejte pokožce přirozenou ochranu, která eliminuje zápach, pečuje o kožní mikrobiom a udrží vás svěží po celý den.\n✅ Eliminuje nepříjemný zápach, ale neblokuje přirozené pocení ✅ Vhodný i pro citlivou pokožku ✅ Nezanechává bílé ani žluté stopy na oblečení ✅ Přírodní složení bez parabenů a alkoholu\n206 Kč 134 Kč (VIP Sleva)\nKOUPIT\nTající kolagenová liftingová maska\nSlunce, klimatizace, koupání i cestování dávají pleti během léta pořádně zabrat. Dopřejte jí dávku intenzivní hydratace a liftingové péče, díky které bude znovu svěží, vypnutá a rozzářená.\n✅ Intenzivně hydratuje a vyhlazuje pleť ✅ Okamžitý efekt pro unavenou a dehydratovanou pleť ✅ Viditelně vypíná a zpevňuje pleť ✅ Ideální SOS péče po slunění\n114 Kč 74 Kč (VIP Sleva)\nKOUPIT\nRevitalizační pleťová esence ve spreji Biotics\nHorké dny, slunce, klimatizace i pobyt u vody mohou pleť snadno vysušit a unavit. Dopřejte jí během dne okamžité osvěžení, hydrataci a dávku aktivní péče v jediném střiku.\n✅ Okamžitě hydratuje a osvěžuje pleť ✅ Jemná mlha bez narušení make-upu ✅ Chrání pleť před vysoušením během léta ✅ Zklidňuje podrážděnou a citlivou pleť\n581 Kč 378 Kč (VIP Sleva)\nKOUPIT\nŠampon a sprchový gel pro muže 2 v 1\nLéto patří dobrodružství, sportu i cestování. Ať už vyrážíte kamkoliv, dopřejte si rychlou a svěží péči, která vás osvěží od hlavy až k patě.\n✅ Vlasy i tělo umyjete jedním produktem ✅ Šetrně pečuje o pokožku i vlasy ✅ Odstraňuje pot, maz i nečistoty po náročném dni ✅ Dodává energii a dlouhotrvající pocit svěžesti\n300 Kč 195 Kč (VIP Sleva)\nKOUPIT\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Až teploty opět vyskočí nahoru, budete rádi, že máte své letní pomocníky doma. Vyberte si je ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
       "percent-off",
       "launch"
     ]
@@ -5122,41 +5155,6 @@
       "urgency",
       "percent-off",
       "launch"
-    ]
-  },
-  {
-    "id": "01KS044FH8VER8G74AWQNS5CAC",
-    "name": "CZ - Sebeláska 4. lekce - pozvánka",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Jsem ošklivá. Nejsem v ničem dobrá. Co si lidi pomyslí?",
-    "previewText": "Už zítra nás čeká 4. lekce o vnitřním kritikovi a starých vzorcích.",
-    "sentAt": "2026-05-24T13:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "U4iBhk",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Kolik let ještě budete pochybovat o sobě?",
-      "body": [
-        "Kolik let ještě budete pochybovat o sobě?",
-        "📍 Kde: Odkaz pošleme do e-mailu v 18:30",
-        "Možná navenek zvládáte všechno… ale uvnitř vás stále běží hlas, který pochybuje a kritizuje.  Už zítra nás čeká 4. lekce na téma vnitřní kritik a staré vzorce. Připojte se k nám a začněte měnit vztah samy k sobě.",
-        "Možná jste si ten hlas ani nezačaly uvědomovat.  Ten, který vás srovnává s ostatními. Který vám říká, že musíte být dokonalejší, výkonnější, hubenější, silnější. A právě proto je tahle lekce tak důležitá. Protože dokud nezměníme to, co se odehrává uvnitř nás, bude se stejný pocit vracet stále dokola."
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO",
-        "TO MUSÍM MÍT",
-        "CHCI SE PŘIDAT DO SKUPINY"
-      ],
-      "text": "96\nKolik let ještě budete pochybovat o sobě?\n📍 Kde: Odkaz pošleme do e-mailu v 18:30\nMožná navenek zvládáte všechno… ale uvnitř vás stále běží hlas, který pochybuje a kritizuje.  Už zítra nás čeká 4. lekce na téma vnitřní kritik a staré vzorce. Připojte se k nám a začněte měnit vztah samy k sobě.\nCHCI BÝT U TOHO\nMožná jste si ten hlas ani nezačaly uvědomovat.  Ten, který vás srovnává s ostatními. Který vám říká, že musíte být dokonalejší, výkonnější, hubenější, silnější. A právě proto je tahle lekce tak důležitá. Protože dokud nezměníme to, co se odehrává uvnitř nás, bude se stejný pocit vracet stále dokola.\nCo se dozvíte:\nOdkud se vzal váš vnitřní kritik\nProč si opakujeme stejné bolestivé vzorce\nJak nás ovlivňuje dětství a okolí\nProč se pořád podceňujeme\nJak přestat být samy sobě největším nepřítelem\nA teď něco, co vás možná potěší ještě víc…\nKurz právě začal a my máme obrovskou radost, kolik z vás se přidalo. Proto jsme si pro vás připravili malé poděkování.\nTO MUSÍM MÍT\n3 dárky pro vás:\nPříručka Sebeláska krok za krokem\nPříručka Sebeláska krok za krokem 2\nRůžová plážová taška\nJak dárky získat?\nStačí se přihlásit do svého zákaznického účtu\nVybrat si libovolné produkty za 3 000 Kč\nDárky se vám automaticky přidají do košíku.\nPřipojte se do skupiny\nSoučástí kurzu je i naše Facebook skupina, kde vám budeme ukazovat další praktické kroky a malé změny do každodenního života. A hlavně můžete se tam kdykoliv zeptat na to, co vás zajímá.\nCHCI SE PŘIDAT DO SKUPINY\nAndrea Svitáková\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nP. S. Pokud cítíte, že vás vlastní myšlenky už příliš dlouho brzdí, je možná právě tahle lekce tím momentem, kdy se všechno začne měnit. Přidejte se k nám už zítra a dovolte si být konečně na své straně.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
     ]
   }
 ]
