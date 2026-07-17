@@ -1,5 +1,35 @@
 [
   {
+    "id": "01KX0PJY5F3JZDB2B63WFMTBR0",
+    "name": "Blatná - zážitkový den  2. email",
+    "status": "Queued without Recipients",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
+    "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
+    "sentAt": "2026-07-18T17:07:00+00:00",
+    "segments": [],
+    "template": {
+      "id": "X6Q5Mt",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+      "body": [
+        "Poslední příležitost získat péči za 3 100 Kč zdarma!",
+        "📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
+        "Pozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.",
+        "Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky"
+      ],
+      "cta": "Zjistit víc",
+      "ctas": [],
+      "text": "96\nPoslední příležitost získat péči za 3 100 Kč zdarma!\n📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nPozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.\nCo na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky\nLenka, 58 let: „Vyzkoušela jsem zdravotní analýzu Bicom i diagnostiku pleti a překvapilo mě, kolik jsem se o sobě dozvěděla. Díky výsledkům jsem lépe pochopila, na co se zaměřit. Když jsem se dozvěděla o Zážitkovém dni, neváhala jsem ani chvíli.“\nRezervujte si své místo ještě dnes:\nE-mail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S.: Zbývá už jen posledních 7 rezervací. Pokud si chcete dopřát diagnostiku zdraví, pleti a vlasů v hodnotě 3 100 Kč zdarma, rezervujte si svůj termín ještě dnes na telefonu 373 700 900 nebo e-mailu info@kralovstvi-tiande.cz\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KX0GWAS8JTQKZKXZ2CN2D1PA",
     "name": "CZ - Teploty opět stoupají",
     "status": "Sent",
@@ -895,36 +925,6 @@
     "offers": [
       "percent-off",
       "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KX0PJY5F3JZDB2B63WFMTBR0",
-    "name": "Blatná - zážitkový den  2. email",
-    "status": "Draft",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-    "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-    "sentAt": null,
-    "segments": [],
-    "template": {
-      "id": "X6Q5Mt",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-      "body": [
-        "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-        "📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA",
-        "Pozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.",
-        "Co na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky"
-      ],
-      "cta": "Zjistit víc",
-      "ctas": [],
-      "text": "96\nPoslední příležitost získat péči za 3 100 Kč zdarma!\n📌 KDY: 22. 7. od 15:00 do 18:00 📌 KDE:  Kavárna v Podzámčí, Blatná   💰 Celková hodnota 3 100 Kč  -&gt; nyní ZDARMA\nPozor, zbývá už jen posledních 7 rezervací. Pokud chcete získat péči v hodnotě 3 100 Kč zcela zdarma, doporučujeme rezervovat si svůj termín ještě dnes. Jakmile se kapacita naplní, registraci uzavřeme.\nCo na vás čeká: Analýza zdravotního stavu přístrojem Bicom - pomůže odhalit možné nerovnováhy v organismu, nedostatky vitamínů a minerálů nebo další faktory, které mohou ovlivňovat vaše zdraví a vitalitu. Diagnostika pleti a vlasů profesionální kamerou - detailně ukáže skutečný stav pleti a vlasové pokožky a pomůže vybrat produkty i péči na míru, aby vaše výsledky byly co nejlepší. Metabolická diagnostika InBody - zjistěte, jak na tom vaše tělo skutečně je. InBody změří podíl svalů, tělesného tuku, množství vody v těle a váš metabolický věk. Získáte jasný přehled o své kondici a směru, kterým se vydat. Osobní konzultace s odborníky\nLenka, 58 let: „Vyzkoušela jsem zdravotní analýzu Bicom i diagnostiku pleti a překvapilo mě, kolik jsem se o sobě dozvěděla. Díky výsledkům jsem lépe pochopila, na co se zaměřit. Když jsem se dozvěděla o Zážitkovém dni, neváhala jsem ani chvíli.“\nRezervujte si své místo ještě dnes:\nE-mail: info@kralovstvi-tiande.cz   Telefon: 373 700 900\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Zbývá už jen posledních 7 rezervací. Pokud si chcete dopřát diagnostiku zdraví, pleti a vlasů v hodnotě 3 100 Kč zdarma, rezervujte si svůj termín ještě dnes na telefonu 373 700 900 nebo e-mailu info@kralovstvi-tiande.cz\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
       "launch"
     ]
   },
