@@ -1,5 +1,113 @@
 [
   {
+    "id": "01KY1NYAEPPNJRV038QAN6JGR1",
+    "name": "CZ Doprava zdarma srpen - konec",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "⏰🚚 Doprava zdarma pouze teď!",
+    "previewText": "Doprava zdarma končí dnes o půlnoci. Stihnete objednat včas?",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "QYAyzw",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Doprava zdarma pouze do dnešní půlnoci!",
+      "body": [
+        "🚚 Doprava zdarma nad 900 Kč  ⏰ Do dnešní půlnoci",
+        "P. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 40 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
+        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+      ],
+      "cta": "Nakoupit ještě dnes",
+      "ctas": [
+        "Nakoupit ještě dnes",
+        "navíc získat slevy až 40 %",
+        "Nakoukněte do svého košíku"
+      ],
+      "text": "96\nDoprava zdarma pouze do dnešní půlnoci!\n🚚 Doprava zdarma nad 900 Kč  ⏰ Do dnešní půlnoci\nNakoupit ještě dnes\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 40 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KXZC5K4H7V55GV5SBW51AYW9",
+    "name": "CZ Doprava zdarma srpen- začíná",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "launch",
+    "subject": "🔥🚚 Doprava zdarma? Ano. Slevy až 40 %? Také!",
+    "previewText": "Nejen doprava zdarma! Objevte i nové exkluzivní slevy až 40 %!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "WyzPGy",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Je to tady: Doprava zdarma + slevy až 40 %",
+      "body": [
+        "Je to tady: Doprava zdarma + slevy až 40 %",
+        "🚚 Doprava zdarma při nákupu nad 900 Kč 🔥 Slevy až 40 %",
+        "Vybrali jsme pro vás oblíbené produkty se slevou až 40 % . Navíc přidáváme dopravu zdarma při objednávce nad 900 Kč. Vyberte si své favority ještě dnes a využijte tuto jedinečnou nabídku.",
+        "P. S. Nakupte ještě dnes , využijte dopravu ZDARMA při nákupu"
+      ],
+      "cta": "se slevou až 40 %",
+      "ctas": [
+        "se slevou až 40 %",
+        "Chci nakoupit výhodně",
+        "Nakupte ještě dnes",
+        "produkty se slevou až 40 %."
+      ],
+      "text": "96\nJe to tady: Doprava zdarma + slevy až 40 %\n🚚 Doprava zdarma při nákupu nad 900 Kč 🔥 Slevy až 40 %\nVybrali jsme pro vás oblíbené produkty se slevou až 40 % . Navíc přidáváme dopravu zdarma při objednávce nad 900 Kč. Vyberte si své favority ještě dnes a využijte tuto jedinečnou nabídku.\nChci nakoupit výhodně\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S. Nakupte ještě dnes , využijte dopravu ZDARMA při nákupu\nnad 900 Kč a dopřejte si své oblíbené produkty se slevou až 40 %.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KXZ9HNWA335G0S6ESZM4CDW4",
+    "name": "CZ - Dárky k nákupu - blogový článek",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "🎁 🛒 Otevřete košík. Čeká tam na vás dárek!",
+    "previewText": "Ověřte si košík dřív, než o svůj dárek přijdete.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "WVFRvA",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Připravili jsme pro vás nové dárky, které potěší ještě víc než kdy dřív.",
+      "body": [
+        "Připravili jsme pro vás nové dárky, které potěší ještě víc než kdy dřív.",
+        "🎁 Vyberte si dárek k objednávce nad 1 000 Kč",
+        "Máme pro vás nové exkluzivní dárky k nákupu! Vyberte si dárek zdarma k objednávce nad 1 000 Kč. Chcete vědět, jak jednoduše získat hodnotnější dárek? Připravili jsme pro vás článek , ve kterém se dozvíte, kdy se vyplatí objednávku navýšit a jak z každého nákupu vytěžit maximum.",
+        "P. S. Než dokončíte svou příští objednávku, věnujte dvě minuty přečtení článku. Možná vás od hodnotnějšího dárku dělí jen pár korun – byla by škoda o něj zbytečně přijít."
+      ],
+      "cta": "pro vás článek",
+      "ctas": [
+        "pro vás článek",
+        "Zjistit, jak získat lepší dárek",
+        "věnujte dvě minuty přečtení článku."
+      ],
+      "text": "96\nPřipravili jsme pro vás nové dárky, které potěší ještě víc než kdy dřív.\n🎁 Vyberte si dárek k objednávce nad 1 000 Kč\nMáme pro vás nové exkluzivní dárky k nákupu! Vyberte si dárek zdarma k objednávce nad 1 000 Kč. Chcete vědět, jak jednoduše získat hodnotnější dárek? Připravili jsme pro vás článek , ve kterém se dozvíte, kdy se vyplatí objednávku navýšit a jak z každého nákupu vytěžit maximum.\nZjistit, jak získat lepší dárek\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S. Než dokončíte svou příští objednávku, věnujte dvě minuty přečtení článku. Možná vás od hodnotnějšího dárku dělí jen pár korun – byla by škoda o něj zbytečně přijít.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
     "id": "01KX0PJY5F3JZDB2B63WFMTBR0",
     "name": "Blatná - zážitkový den  2. email",
     "status": "Cancelled: No Recipients",
@@ -5057,109 +5165,6 @@
     },
     "offers": [
       "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KSFJGXTBQYMDZGKSM4H5BHAA",
-    "name": "CZ Webinář online kurz hubnutí - již zítra",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Tisíce žen už začaly. Přidáte se také?",
-    "previewText": "Přidejte se k tisícům žen, které zhubly bez diet a hladovění.",
-    "sentAt": "2026-05-26T09:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "WNUYQZ",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Přidejte se k tisícům žen, které zhubly bez diet a hladovění.",
-      "body": [
-        "Přidejte se k tisícům žen, které zhubly bez diet a hladovění.",
-        "Co když hubnutí nemusí bolet? Už zítra vám ukážeme cestu, díky které 80 % žen zhublo bez diet, hladovění a výčitek. Přidejte se k nám ještě dnes a udělejte první krok pro sebe.",
-        "Možná už jste vyzkoušela diety, počítání kalorií i nekonečné omezování. A kila se stejně vracela zpět. Právě proto vznikl náš online kurz. Aby ženám ukázal jinou cestu. Bez hladu. Bez stresu. Bez výčitek.",
-        "Nejde jen o hubnutí. Jde o to cítit se znovu lehčí, plná energie a spokojená sama se sebou. A právě teď je ten nejlepší čas začít."
-      ],
-      "cta": "CHCI BÝT U TOHO",
-      "ctas": [
-        "CHCI BÝT U TOHO"
-      ],
-      "text": "96\nPřidejte se k tisícům žen, které zhubly bez diet a hladovění.\n🖥️ ONLINE - již zítra ve 19:00\n💪 Zhubni 5 kg za 5 týdnů\nCo když hubnutí nemusí bolet? Už zítra vám ukážeme cestu, díky které 80 % žen zhublo bez diet, hladovění a výčitek. Přidejte se k nám ještě dnes a udělejte první krok pro sebe.\nCHCI BÝT U TOHO\nMožná už jste vyzkoušela diety, počítání kalorií i nekonečné omezování. A kila se stejně vracela zpět. Právě proto vznikl náš online kurz. Aby ženám ukázal jinou cestu. Bez hladu. Bez stresu. Bez výčitek.\nNejde jen o hubnutí. Jde o to cítit se znovu lehčí, plná energie a spokojená sama se sebou. A právě teď je ten nejlepší čas začít.\nDíky kurzu získáte:\nPodporu a motivaci krok za krokem\nJídelní návyky bez extrémů a hladovění\nVíce energie a lehkosti během dne\nInspiraci od žen, které si prošly stejnou cestou\nMožnost zhubnout zdravě a dlouhodobě\nMartina, 42 let: „Za celý život jsem vyzkoušela snad všechny diety. Tady jsem poprvé neměla hlad a kila šla dolů přirozeně. Za 5 týdnů mám dole 6 kg a hlavně mnohem více energie.“\nPetra, 51 let: „Kurz mi změnil pohled na jídlo i na sebe samu. Přestala jsem se stresovat a konečně jsem začala hubnout. Dnes jsem lehčí o 8 kilo a cítím se skvěle.“\nLenka, 37 let: „Líbilo se mi, že jsem na to nebyla sama. Podpora, motivace a jednoduché kroky mi pomohly vydržet. Do léta mám dole 5 kg a pokračuji dál.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Celým kurzem vás osobně provedou Jiřina Radová a Renata Králová, které už pomohly tisícům žen změnit vztah k jídlu i ke svému tělu. Přidejte se k nám ještě dnes a udělejte první krok k lehčímu a spokojenějšímu létu.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KRGFE4SP2QP2BB7SAS5SYGC9",
-    "name": "CZ - Fucoidan balíček - letní péče o pleť",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Dárek za 541 Kč zdarma? Vaše pleť bude zářit!",
-    "previewText": "Váš dárek za 541 Kč už čeká! Dopřejte své pleti letní hydrataci s mořskými řasami.",
-    "sentAt": "2026-05-25T17:15:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RdZdBC",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Mořská síla pro vaši pleť. Hydratace, kterou si zamilujete.",
-      "body": [
-        "Mořská síla pro vaši pleť. Hydratace, kterou si zamilujete.",
-        "Slunce, horko i klimatizace dávají pleti během léta pořádně zabrat. Dopřejte své pleti během léta dávku mořské hydratace. Objevte péči Fucoidan, která pleť zahalí do hebkosti a pomůže jí zůstat zářivá i v horkých dnech.",
-        "V létě pleť často ztrácí to nejdůležitější. Vláhu, pružnost a svěží vzhled. Právě proto vznikla řada Fucoidan, která pomáhá pleť hydratovat, zjemnit i během horkých dnů.",
-        "A to nejlepší? Nemusíte složitě kombinovat několik produktů. Všechny kroky péče na sebe navazují a společně vytváří jednoduchou, ale účinnou letní péči o pleť."
-      ],
-      "cta": "CHCI ZÁŘIVOU PLEŤ",
-      "ctas": [
-        "CHCI ZÁŘIVOU PLEŤ",
-        "KOUPIT"
-      ],
-      "text": "96\nMořská síla pro vaši pleť. Hydratace, kterou si zamilujete.\n🎁 Dárek v hodnotě 541 Kč\nSlunce, horko i klimatizace dávají pleti během léta pořádně zabrat. Dopřejte své pleti během léta dávku mořské hydratace. Objevte péči Fucoidan, která pleť zahalí do hebkosti a pomůže jí zůstat zářivá i v horkých dnech.\nCHCI ZÁŘIVOU PLEŤ\nV létě pleť často ztrácí to nejdůležitější. Vláhu, pružnost a svěží vzhled. Právě proto vznikla řada Fucoidan, která pomáhá pleť hydratovat, zjemnit i během horkých dnů.\nA to nejlepší? Nemusíte složitě kombinovat několik produktů. Všechny kroky péče na sebe navazují a společně vytváří jednoduchou, ale účinnou letní péči o pleť.\nPleť je hydratovaná, jemná a svěží už po pár dnech\nMořské řasy pomáhají udržet mladistvý vzhled pleti\nPéče vhodná pro normální, suchou i smíšenou pleť\nPleť působí hladší, pružnější a sjednocenější\nMořská hydratace, po které bude vaše pleť svěží.\n✅ Kompletní 4kroková péče\n✅ Pleť je jemnější a hydratovanější už po několika dnech\n✅ Lehká textura ideální i do horkých letních dnů\n🎁 Fucoidan - oční krém\nKOUPIT\nMarie 41 let: „Po měsíci používání je moje pleť mnohem jemnější, hydratovanější a působí svěžeji. Nejvíc mě překvapilo, že nemusím řešit několik různých krémů a sér. Všechno krásně funguje dohromady.“\nAnti-aging péče, která vrací pleti hydrataci.\n✅ Lehká textura ideální i pod make-up\n✅ Čištění, hydratace i regenerace\n✅ Péče vhodná pro normální, smíšenou i sušší pleť\n🎁 Fucoidan - krémová omlazující maska\nKOUPIT\nMartina 49 let: „ Po několika týdnech používání je moje pleť mnohem hydratovanější a působí mladším dojmem. Největší rozdíl vidím ráno. Pleť není unavená ani zašedlá. A maska? Ta je pro mě malý domácí wellness.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S: Nezapomeňte, krémovou omlazující masku získáte teď jako dárek zdarma. Dopřejte své pleti hydrataci a péči, kterou bude v létě opravdu milovat. Objednejte svůj balíček Fucoidan ještě dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KSG0G3Q9H2NQYQFAWK8Q0J34",
-    "name": "SK- Fucoidan balíček - letní péče o pleť",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "education",
-    "subject": "Darček v hodnote 21,80 € zadarmo? Vaša pleť bude žiariť!",
-    "previewText": "Váš darček v hodnote 21,80 € už čaká! Doprajte svojej pleti letnú hydratáciu s morskými riasami.",
-    "sentAt": "2026-05-25T17:15:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "UjU3mk",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Morská sila pre vašu pleť. Hydratácia, ktorú si zamilujete",
-      "body": [
-        "Morská sila pre vašu pleť. Hydratácia, ktorú si zamilujete",
-        "Slnko, horúčavy aj klimatizácia dávajú pleti počas leta poriadne zabrať. Doprajte svojej pleti počas leta dávku morskej hydratácie. Objavte starostlivosť Fucoidan, ktorá pleť zahalí do hebkosti a pomôže jej zostať žiariv á aj počas horúcich dní.",
-        "V lete pleť často stráca to najdôležitejšie. Vlahu, pružnosť a svieži vzhľad. Práve preto vznikol rad Fucoidan, ktorý pomáha pleť hydratovať a zjemniť aj počas horúcich dní.",
-        "A to najlepšie? Nemusíte zložito kombinovať niekoľko produktov. Všetky kroky starostlivosti na seba nadväzujú a spoločne vytvárajú jednoduchú, ale účinnú letnú starostlivosť o pleť."
-      ],
-      "cta": "CHCEM ŽIARIVÚ PLEŤ",
-      "ctas": [
-        "CHCEM ŽIARIVÚ PLEŤ",
-        "KÚPIŤ"
-      ],
-      "text": "96\nMorská sila pre vašu pleť. Hydratácia, ktorú si zamilujete\n🎁 Darček v hodnote 21,80 €\nSlnko, horúčavy aj klimatizácia dávajú pleti počas leta poriadne zabrať. Doprajte svojej pleti počas leta dávku morskej hydratácie. Objavte starostlivosť Fucoidan, ktorá pleť zahalí do hebkosti a pomôže jej zostať žiariv á aj počas horúcich dní.\nCHCEM ŽIARIVÚ PLEŤ\nV lete pleť často stráca to najdôležitejšie. Vlahu, pružnosť a svieži vzhľad. Práve preto vznikol rad Fucoidan, ktorý pomáha pleť hydratovať a zjemniť aj počas horúcich dní.\nA to najlepšie? Nemusíte zložito kombinovať niekoľko produktov. Všetky kroky starostlivosti na seba nadväzujú a spoločne vytvárajú jednoduchú, ale účinnú letnú starostlivosť o pleť.\nPleť je hydratovaná, jemná a svieža už po pár dňoch\nMorské riasy pomáhajú udržať mladistvý vzhľad pleti\nStarostlivosť vhodná pre normálnu, suchú aj zmiešanú pleť\nPleť pôsobí hladšie, pružnejšie a zjednotenejšie\nMorská hydratácia, po ktorej bude vaša pleť svieža.\n✅ Kompletná 4-kroková starostlivosť\n✅ Pleť je jemnejšia a hydratovanejšia už po niekoľkých dňoch\n✅ Ľahká textúra ideálna aj do horúcich letných dní\n🎁 Fucoidan – očný krém\nKÚPIŤ\nMarie, 41 rokov: „Po mesiaci používania je moja pleť oveľa jemnejšia, hydratovanejšia a pôsobí sviežejšie. Najviac ma prekvapilo, že nemusím riešiť niekoľko rôznych krémov a sér. Všetko krásne funguje spolu.“\nAnti-aging starostlivosť, ktorá vracia pleti hydratáciu.\n✅ Ľahká textúra ideálna aj pod make-up\n✅ Čistenie, hydratácia aj regenerácia\n✅ Starostlivosť vhodná pre normálnu, zmiešanú aj suchšiu pleť\n🎁 Fucoidan – krémová omladzujúca maska\nKÚPIŤ\nMartina, 49 rokov: „Po niekoľkých týždňoch používania je moja pleť oveľa hydratovanejšia a pôsobí mladistvejšie. Najväčší rozdiel vidím ráno. Pleť nie je unavená ani sivastá. A maska? Tá je pre mňa malý domáci wellness.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Nezabudnite, krémovú omladzujúcu masku teraz získate ako darček zadarmo. Doprajte svojej pleti hydratáciu a starostlivosť, ktorú bude v lete naozaj milovať. Objednajte si svoj balíček Fucoidan ešte dnes.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
       "launch",
       "education"
     ]
