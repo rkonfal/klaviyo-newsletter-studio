@@ -1,5 +1,106 @@
 [
   {
+    "id": "01KY341FJ7E0BY4765SG7J2C8G",
+    "name": "SK Doprava zdarma červenec- konec (clone)",
+    "status": "Draft",
+    "language": "sk",
+    "campaignType": "urgency",
+    "subject": "⏰🚚 Stihnete dopravu zadarmo? Už len do polnoci.",
+    "previewText": "Doprava zdarma nad 36 € končí dnes o polnoci. A navyše môžete získať zľavy až do 50 %.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "VUykHR",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Čas sa kráti! Využite dopravu zdarma a zľavy až do 50 %.",
+      "body": [
+        "Čas sa kráti! Využite dopravu zdarma a zľavy až do 50 %.",
+        "⏰ Do dnešnej polnoci 🔥 Zľavy až do 50 %",
+        "P. S. Čas sa kráti! Už len do dnešnej polnoci môžete využiť dopravu zdarma pri nákupe nad 36 € a navyše získať zľavy až do 50 % na vybrané produkty. Urobte si radosť ešte dnes a využite túto výhodnú ponuku naplno. ​ P. P. S. Pripravili sme pre vás nové darčeky k nákupom, ktoré sa vám zobrazia priamo v košíku. Platí jednoduché pravidlo: čím vyššia objednávka, tým hodnotnejší darček získate. Nazrite do svojho košíka a zistite, aké prekvapenie na vás čaká.",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
+      ],
+      "cta": "Chcem nakupovať hneď.",
+      "ctas": [
+        "Chcem nakupovať hneď.",
+        "Urobte si radosť ešte dnes",
+        "ktoré sa vám zobrazia priamo v košíku."
+      ],
+      "text": "96\nČas sa kráti! Využite dopravu zdarma a zľavy až do 50 %.\n⏰ Do dnešnej polnoci 🔥 Zľavy až do 50 %\nChcem nakupovať hneď.\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Čas sa kráti! Už len do dnešnej polnoci môžete využiť dopravu zdarma pri nákupe nad 36 € a navyše získať zľavy až do 50 % na vybrané produkty. Urobte si radosť ešte dnes a využite túto výhodnú ponuku naplno. ​ P. P. S. Pripravili sme pre vás nové darčeky k nákupom, ktoré sa vám zobrazia priamo v košíku. Platí jednoduché pravidlo: čím vyššia objednávka, tým hodnotnejší darček získate. Nazrite do svojho košíka a zistite, aké prekvapenie na vás čaká.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KY2NZFV2WQFC3WW5XFX0G9MW",
+    "name": "CZ Webinář - Překvapení -8.7. odkaz (clone)",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "education",
+    "subject": "⏰ Překvapení, kam se podíváš. Kafíčko s Renatou Královou - ZAČÍNÁME ZA 30 MINUT!",
+    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "R2rZBV",
+      "name": "2025-02-16 06:16 s podpisem",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
+      "body": [
+        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
+        "Už za 30 minut začínáme náš webinář - Krásná a zdravá pleť v každém věku ve 20:00 hodin. První účastníci se už připojují.",
+        "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
+        "Důležité: Připojte se včas, kapacita webináře je omezená."
+      ],
+      "cta": "Připojte se na webinář nyní",
+      "ctas": [
+        "Připojte se na webinář nyní"
+      ],
+      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš webinář - Krásná a zdravá pleť v každém věku ve 20:00 hodin. První účastníci se už připojují.\nPřekvapení, kam se podíváš. Kafíčko s Renatou Královou\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nDenisa Horová provozní ředitelka\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
+    "id": "01KY1PR5RDQP4H5R9YFNHRYGQD",
+    "name": "CZ - Nové slevy - od srpna",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "launch",
+    "subject": "🎁🔥 Máme pro vás nové slevy až 40 %!",
+    "previewText": "Nové slevy až 40 % jsou tady!",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "TDGfEQ",
+      "name": "2025-02-28 04:04 popup existující klient",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Máme pro vás až 40 % slevu na oblíbené produkty!",
+      "body": [
+        "Máme pro vás až 40 % slevu na oblíbené produkty!",
+        "Máme pro vás skvělou zprávu! Vybrané oblíbené produkty nyní pořídíte se slevou až 40 % . O tuto akci je opravdu velký zájem, proto neváhejte a objednejte ještě dnes.",
+        "P. S. Slevy až 40 % platí pouze do 31. 8. ​  Klikněte a vyberte si své oblíbené produkty, dokud jsou za výhodnější ceny",
+        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00"
+      ],
+      "cta": "Prohlédnout si nové slevy",
+      "ctas": [
+        "Prohlédnout si nové slevy",
+        "Klikněte a vyberte"
+      ],
+      "text": "96\nMáme pro vás až 40 % slevu na oblíbené produkty!\n🔥 Ušetřete až 40 %\nMáme pro vás skvělou zprávu! Vybrané oblíbené produkty nyní pořídíte se slevou až 40 % . O tuto akci je opravdu velký zájem, proto neváhejte a objednejte ještě dnes.\nProhlédnout si nové slevy\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S. Slevy až 40 % platí pouze do 31. 8. ​  Klikněte a vyberte si své oblíbené produkty, dokud jsou za výhodnější ceny\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "launch"
+    ]
+  },
+  {
     "id": "01KY1NYAEPPNJRV038QAN6JGR1",
     "name": "CZ Doprava zdarma srpen - konec",
     "status": "Draft",
@@ -16,19 +117,21 @@
       "headline": "Doprava zdarma pouze do dnešní půlnoci!",
       "body": [
         "🚚 Doprava zdarma nad 900 Kč  ⏰ Do dnešní půlnoci",
-        "P. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 40 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.",
-        "Infolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00",
-        "info@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490"
+        "Příjemně prohřívá a pomáhá uvolnit ztuhlé svaly i napětí v oblasti beder Poskytuje cílenou péči o oblast beder, ledvin a močových cest Účinné látky se vstřebávají přes pokožku – bez zatížení trávicího systému. DÁREK: Cestovní láhev - zlatá",
+        "Martina, 48 let:  \"Pracuji v kanceláři a večer jsem často cítila nepříjemné napětí v oblasti beder. Yaoshen Forte mi doporučila kamarádka a dnes bych ji neměnila. Příjemně prohřívá, dobře drží a mám po ní skvělý pocit uvolnění. Líbí se mi, že je určená právě pro oblast beder a ledvin a vydrží působit dlouhé hodiny. Určitě doporučuji každému, kdo tráví hodně času vsedě nebo má namáhaná záda.\"",
+        "Fytogel Slaviton ​ Chladivý gel pro okamžitou úlevu těžkým, unaveným a oteklým nohám. Slaviton přináší pocit lehkosti po dlouhém stání, chůzi, cestování nebo sportu ​ Jemný intimní gel ​ Šetrný gel pro každodenní intimní hygienu s kyselinou mléčnou a bylinkovými extrakty. Čistí bez vysušování, podporuje přirozený komfort a svěžest i při citlivějším intimním prostředí. ​ Citrokalcevit ​ Citrokalcevit pomáhá nastolit přirozenou rovnováhu organismu, doplňuje důležité vitamíny a lehce vstřebatelný vápník pro podporu kostí, zubů i imunity. Je ideální volbou pro každého, kdo chce zmírnit překyselení organismu, doplnit energii a podpořit své zdraví každý den. ​ DÁREK: Zlatophyt ​ Zlatophyt je bylinný komplex, který podporuje správnou funkci ledvin a močových cest, přispívá k ženské hormonální rovnováze a pomáhá navodit pocit lehkosti. Ideální volba pro ženy, které chtějí pečovat o své zdraví přirozenou cestou."
       ],
       "cta": "Nakoupit ještě dnes",
       "ctas": [
         "Nakoupit ještě dnes",
+        "Koupit",
         "navíc získat slevy až 40 %",
         "Nakoukněte do svého košíku"
       ],
-      "text": "96\nDoprava zdarma pouze do dnešní půlnoci!\n🚚 Doprava zdarma nad 900 Kč  ⏰ Do dnešní půlnoci\nNakoupit ještě dnes\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 40 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+      "text": "96\nDoprava zdarma pouze do dnešní půlnoci!\n🚚 Doprava zdarma nad 900 Kč  ⏰ Do dnešní půlnoci\nNakoupit ještě dnes\nRozhýbejte své tělo znovu s lehkostí.\n1 940 Kč 1 261 Kč (VIP Sleva)\nKoupit\nPříjemně prohřívá a pomáhá uvolnit ztuhlé svaly i napětí v oblasti beder Poskytuje cílenou péči o oblast beder, ledvin a močových cest Účinné látky se vstřebávají přes pokožku – bez zatížení trávicího systému. DÁREK: Cestovní láhev - zlatá\nMartina, 48 let:  \"Pracuji v kanceláři a večer jsem často cítila nepříjemné napětí v oblasti beder. Yaoshen Forte mi doporučila kamarádka a dnes bych ji neměnila. Příjemně prohřívá, dobře drží a mám po ní skvělý pocit uvolnění. Líbí se mi, že je určená právě pro oblast beder a ledvin a vydrží působit dlouhé hodiny. Určitě doporučuji každému, kdo tráví hodně času vsedě nebo má namáhaná záda.\"\nKrálovská péče o celé tělo\n1 565 Kč 1 017 Kč (VIP Sleva)\nKoupit\nFytogel Slaviton ​ Chladivý gel pro okamžitou úlevu těžkým, unaveným a oteklým nohám. Slaviton přináší pocit lehkosti po dlouhém stání, chůzi, cestování nebo sportu ​ Jemný intimní gel ​ Šetrný gel pro každodenní intimní hygienu s kyselinou mléčnou a bylinkovými extrakty. Čistí bez vysušování, podporuje přirozený komfort a svěžest i při citlivějším intimním prostředí. ​ Citrokalcevit ​ Citrokalcevit pomáhá nastolit přirozenou rovnováhu organismu, doplňuje důležité vitamíny a lehce vstřebatelný vápník pro podporu kostí, zubů i imunity. Je ideální volbou pro každého, kdo chce zmírnit překyselení organismu, doplnit energii a podpořit své zdraví každý den. ​ DÁREK: Zlatophyt ​ Zlatophyt je bylinný komplex, který podporuje správnou funkci ledvin a močových cest, přispívá k ženské hormonální rovnováze a pomáhá navodit pocit lehkosti. Ideální volba pro ženy, které chtějí pečovat o své zdraví přirozenou cestou.\nLenka, 58 let: „Objednala jsem balíček hlavně kvůli Slavitonu, protože po celodenním stání v práci mám nohy jako olovo. Ale nakonec jsem ráda za celý balíček – Zlatophyt jako dárek mě příjemně překvapil a teď ho beru každé ráno spolu s Citrokalcevitem. Za tři týdny cítím, že mám víc energie a nohy večer tolik neotékají. Doporučuji každé ženě, která na sebe zapomíná.\"\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nRenata Králová\nZakladatelka\nKrálovství tianDe\nP. S. Čas se krátí! Už jen do dnešní půlnoci můžete využít dopravu zdarma při nákupu nad 900 Kč a  navíc získat slevy až 40 % na vybrané produkty. Udělejte si radost ještě dnes a využijte výhodnou nabídku naplno. ​ P. P. S. Připravili jsme pro vás nové dárky k nákupům, které se vám zobrazí přímo v košíku. Platí jednoduché pravidlo: čím vyšší objednávka, tím hodnotnější dárek získáte. Nakoukněte do svého košíku a zjistěte, jaké překvapení na vás čeká.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
     },
     "offers": [
+      "promo",
       "urgency",
       "percent-off",
       "gift",
@@ -5062,108 +5165,6 @@
     },
     "offers": [
       "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KSFDN7QAV2EZRHPQHJF6CR64",
-    "name": "Kurz Tělo jako kompas 1, 7.lekce 26.5. odkaz",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "⏰ Kurz Tělo jako kompas - ZAČÍNÁME ZA 30 MINUT! + Dnes skvělý dárek",
-    "previewText": "Už se připojují první účastníci! Klikněte na váš osobní odkaz a připojte se hned.",
-    "sentAt": "2026-05-26T17:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "RP6Sex",
-      "name": "2025-02-16 06:16 s podpisem",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
-      "body": [
-        "{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}",
-        "Už za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.",
-        "Důležité: Připojte se včas, kapacita webináře je omezená.",
-        "🟢 Váš osobní odkaz pro připojení na webinář:"
-      ],
-      "cta": "Připojte se na webinář nyní",
-      "ctas": [
-        "Připojte se na webinář nyní"
-      ],
-      "text": "96\n{% if person|lookup:\"first_name_vocative\" %} Dobrý den, {{ person|lookup:\"first_name_vocative\" }} ,{% else %} Dobrý den , {% endif %}\nUž za 30 minut začínáme náš kurz Tělo jako kompas vě 20:00 hodin. První účastníci se už připojují.\nTělo jako kompas\nPřipojte se na webinář nyní\nDůležité: Připojte se včas, kapacita webináře je omezená.\n🟢 Váš osobní odkaz pro připojení na webinář:\nhttps://univerzita.kralovstvi-tiande.cz/webinar-vysilani/?participant={{ person|lookup:\"Webinar_URL_Param\"|default:'' }}\nRychlá kontrola před začátkem:\n✓ Jste v klidném prostředí?\n✓ Máte stabilní internet?\n✓ Připravili jste si poznámkový blok?\nZačínáme za pár minut! Těšíme se na vás.\nPaedDr. Eva Štěpová\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "percent-off",
-      "gift",
-      "launch"
-    ]
-  },
-  {
-    "id": "01KSHP8ZCJAE2H7A732M47BKNN",
-    "name": "CZ - Sebeláska 4. lekce - záznam",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Proč jsou ženy neustále vyčerpané? Tohle je jeden z důvodů!",
-    "previewText": "Ve 4. lekci zjistíte, proč tělo nikdy nelže.",
-    "sentAt": "2026-05-26T12:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "YhB2NE",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Myšlenky. Emoce. Tělo. Všechno spolu souvisí",
-      "body": [
-        "Myšlenky. Emoce. Tělo. Všechno spolu souvisí",
-        "Právě vám posíláme záznam 4. lekce, která může změnit způsob, jakým vnímáte vlastní tělo i únavu. Pusťte si ji ještě dnes a objevte, proč tělo často začne bolet až ve chvíli, kdy ho příliš dlouho neposloucháme.",
-        "Tentokrát s námi byla i úžasná Míša Holinská, která do večera přinesla obrovskou lidskost, otevřenost a hluboké uvědomění. Společně jsme se zastavily a podívaly se na něco, co většina z nás každý den přehlíží.",
-        "Možná znáte ten pocit, že jedete dál, i když už jste unavená. Že se usmíváte, i když uvnitř cítíte tlak.  Že tělo něco naznačuje… ale není čas poslouchat."
-      ],
-      "cta": "PUSTIT SI ZÁZNAM",
-      "ctas": [
-        "PUSTIT SI ZÁZNAM",
-        "CHCI SE PŘIDAT DO SKUPINY",
-        "KOUPIT"
-      ],
-      "text": "96\nMyšlenky. Emoce. Tělo. Všechno spolu souvisí\nPrávě vám posíláme záznam 4. lekce, která může změnit způsob, jakým vnímáte vlastní tělo i únavu. Pusťte si ji ještě dnes a objevte, proč tělo často začne bolet až ve chvíli, kdy ho příliš dlouho neposloucháme.\nPUSTIT SI ZÁZNAM\nTentokrát s námi byla i úžasná Míša Holinská, která do večera přinesla obrovskou lidskost, otevřenost a hluboké uvědomění. Společně jsme se zastavily a podívaly se na něco, co většina z nás každý den přehlíží.\nMožná znáte ten pocit, že jedete dál, i když už jste unavená. Že se usmíváte, i když uvnitř cítíte tlak.  Že tělo něco naznačuje… ale není čas poslouchat.\nPřipojte se do skupiny\nSoučástí kurzu je i naše Facebook skupina, kde vám budeme ukazovat další praktické kroky a malé změny do každodenního života. A hlavně můžete se tam kdykoliv zeptat na to, co vás zajímá.\nCHCI SE PŘIDAT DO SKUPINY\nA teď něco, co vás možná potěší ještě víc…\nKurz právě začal a my máme obrovskou radost, kolik z vás se přidalo. Proto jsme si pro vás připravili malé poděkování.\n3 dárky pro vás:\nPříručka Sebeláska krok za krokem\nPříručka Sebeláska krok za krokem 2\nRůžová plážová taška\nJak dárky získat?\nStačí se přihlásit do svého zákaznického účtu\nVybrat si libovolné produkty za 3 000 Kč\nDárky se vám automaticky přidají do košíku.\nSlaviton\n✅ Okamžitý chladivý efekt\n✅ Rychle se vstřebává a nelepí\n✅ Ideální po dlouhém stání, chůzi i sportu\n✅ Skvělý i po slunění nebo poštípání hmyzem\n434 Kč\n282 Kč ( VIP Sleva)\nKOUPIT\nMartina 49 let: „Po celém dni na nohou je Slaviton moje malá večerní záchrana. Krásně chladí, rychle se vstřebá a nohy jsou během chvilky lehčí a svěží. V létě ho mám dokonce v lednici – ten pocit je naprosto božský.“\nAndrea Svitáková\nlektorka kurzu\nBc. Renata Králová\nzakladatelka Království tianDe\nP. S. Možná právě dnes vaše tělo potřebuje jediné, abyste ho na chvíli opravdu vyslechla. Pusťte si záznam 4. lekce a dovolte si zastavit, nadechnout a vrátit se zase o kousek blíž sama k sobě.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KSHFKXVGJ5THBD0TQAS31R3T",
-    "name": "SK Webinář online kurz hubnutí - již zítra",
-    "status": "Sent",
-    "language": "sk",
-    "campaignType": "education",
-    "subject": "Tisíce žien už začali. Pridáte sa tiež?",
-    "previewText": "Pridajte sa k tisícom žien, ktoré schudli bez diét a hladovania.",
-    "sentAt": "2026-05-26T09:15:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "Wub9JB",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Pridajte sa k tisícom žien, ktoré schudli bez diét a hladovania.",
-      "body": [
-        "Pridajte sa k tisícom žien, ktoré schudli bez diét a hladovania.",
-        "Čo ak chudnutie nemusí bolieť? Už zajtra vám ukážeme cestu, vďaka ktorej 80 % žien schudlo bez diét, hladovania a výčitiek. P ridajte sa k nám ešte dnes a urobte prvý krok pre seba.",
-        "Možno ste už vyskúšali diéty, počítanie kalórií aj nekonečné obmedzovanie. A kilá sa aj tak vracali späť. Práve preto vznikol náš online kurz. Aby ženám ukázal inú cestu. Bez hladu. Bez stresu. Bez výčitiek.",
-        "Nejde len o chudnutie. Ide o to cítiť sa znovu ľahšie, plná energie a spokojná sama so sebou. A práve teraz je ten najlepší čas začať."
-      ],
-      "cta": "CHCEM BYŤ PRI TOM",
-      "ctas": [
-        "CHCEM BYŤ PRI TOM"
-      ],
-      "text": "96\nPridajte sa k tisícom žien, ktoré schudli bez diét a hladovania.\n🖥️ ONLINE – už zajtra o 19:00\n💪 Schudni 5 kg za 5 týždňov\nČo ak chudnutie nemusí bolieť? Už zajtra vám ukážeme cestu, vďaka ktorej 80 % žien schudlo bez diét, hladovania a výčitiek. P ridajte sa k nám ešte dnes a urobte prvý krok pre seba.\nCHCEM BYŤ PRI TOM\nMožno ste už vyskúšali diéty, počítanie kalórií aj nekonečné obmedzovanie. A kilá sa aj tak vracali späť. Práve preto vznikol náš online kurz. Aby ženám ukázal inú cestu. Bez hladu. Bez stresu. Bez výčitiek.\nNejde len o chudnutie. Ide o to cítiť sa znovu ľahšie, plná energie a spokojná sama so sebou. A práve teraz je ten najlepší čas začať.\nVďaka kurzu získate:\nPodporu a motiváciu krok za krokom\nStravovacie návyky bez extrémov a hladovania\nViac energie a ľahkosti počas dňa\nInšpiráciu od žien, ktoré si prešli rovnakou cestou\nMožnosť schudnúť zdravo a dlhodobo\nMartina, 42 let: „Za celý život jsem vyzkoušela snad všechny diety. Tady jsem poprvé neměla hlad a kila šla dolů přirozeně. Za 5 týdnů mám dole 6 kg a hlavně mnohem více energie.“\nPetra, 51 let: „Kurz mi změnil pohled na jídlo i na sebe samu. Přestala jsem se stresovat a konečně jsem začala hubnout. Dnes jsem lehčí o 8 kilo a cítím se skvěle.“\nLenka, 37 let: „Líbilo se mi, že jsem na to nebyla sama. Podpora, motivace a jednoduché kroky mi pomohly vydržet. Do léta mám dole 5 kg a pokračuji dál.“\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S. Celým kurzom vás osobne prevedú Jiřina Radová a Renata Králová, ktoré už pomohli tisícom žien zmeniť vzťah k jedlu aj k svojmu telu. Pridajte sa k nám ešte dnes a urobte prvý krok k ľahšiemu a spokojnejšiemu letu.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
       "percent-off",
       "launch",
       "education"
