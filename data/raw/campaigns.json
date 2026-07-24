@@ -1,5 +1,39 @@
 [
   {
+    "id": "01KY85HZNDB77A07RFK1Q2MYRN",
+    "name": "Dárky k nákupu — email",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "promo",
+    "subject": "🎁 Dárek zdarma k nákupu? Takhle si ho vyberete sami",
+    "previewText": "Žádné kódy, žádné hledání. Stačí dosáhnout hranice a dárek si vyberete přímo v košíku.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "VCAALW",
+      "name": "Gift-With-Purchase Program Email",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Váš dárek už čeká. Vyberete si ho sami.",
+      "body": [
+        "🎁 Jak získat dárek ve 4 krocích ✓   Vyberte produkty, které máte rádi. ✓   Vložte je do košíku. ✓   Po dosažení hranice se zobrazí nabídka dárků. ✓   Vyberte si svůj dárek a dokončete objednávku. Žádný promo kód. Žádné hledání podmínek malým písmem.",
+        "Dárek se nepřidává automaticky. Systém vám v košíku ukáže dostupnou nabídku a konkrétní produkt si vyberete sami. Žádné náhodné překvapení, které vám zůstane ležet ve skříni. Vyberete si to, co vás skutečně potěší.",
+        "Čím větší nákup, tím větší výběr 🎁   Nákup nad 1 000 Kč : základní nabídka dárků 🎁   Nákup nad 1 500 Kč : širší výběr 🎁   Nákup nad 2 000 Kč : ještě více možností 🎁   Nákup nad 2 500 Kč : atraktivnější dárky 🎁   Nákup nad 3 000 Kč : nejbohatší výběr S každou vyšší hladinou se otevře širší a atraktivnější nabídka.",
+        "Chybí vám jen pár korun do další hladiny? Máte v košíku produkty za 1 940 Kč ? Do hranice 2 000 Kč vám chybí jen 60 Kč . Místo impulzivního přihazování čehokoliv raději zvolte něco, co stejně běžně používáte: •   oblíbenou zubní pastu"
+      ],
+      "cta": "Vybrat produkty a dárek",
+      "ctas": [
+        "Vybrat produkty a dárek",
+        "Podívejte se do košíku"
+      ],
+      "text": "96\nVáš dárek už čeká. Vyberete si ho sami.\n🎁 Jak získat dárek ve 4 krocích ✓   Vyberte produkty, které máte rádi. ✓   Vložte je do košíku. ✓   Po dosažení hranice se zobrazí nabídka dárků. ✓   Vyberte si svůj dárek a dokončete objednávku. Žádný promo kód. Žádné hledání podmínek malým písmem.\nDárek se nepřidává automaticky. Systém vám v košíku ukáže dostupnou nabídku a konkrétní produkt si vyberete sami. Žádné náhodné překvapení, které vám zůstane ležet ve skříni. Vyberete si to, co vás skutečně potěší.\nČím větší nákup, tím větší výběr 🎁   Nákup nad 1 000 Kč : základní nabídka dárků 🎁   Nákup nad 1 500 Kč : širší výběr 🎁   Nákup nad 2 000 Kč : ještě více možností 🎁   Nákup nad 2 500 Kč : atraktivnější dárky 🎁   Nákup nad 3 000 Kč : nejbohatší výběr S každou vyšší hladinou se otevře širší a atraktivnější nabídka.\nChybí vám jen pár korun do další hladiny? Máte v košíku produkty za 1 940 Kč ? Do hranice 2 000 Kč vám chybí jen 60 Kč . Místo impulzivního přihazování čehokoliv raději zvolte něco, co stejně běžně používáte: •   oblíbenou zubní pastu\n•   pleťovou masku\n•   sprchový gel\n•   šampon nebo vlasovou péči\n•   hygienické potřeby Doplníte si zásoby, posunete se do vyšší dárkové hladiny a získáte zajímavější odměnu. To už je nákup, který dává smysl.\n✓   Dárek si vyberete až když máte košík hotový. ✓   Pokud změníte obsah košíku, nabídka dárků se může upravit. ✓   Nabídka se zobrazí přímo v košíku, bez kódu.\nVybrat produkty a dárek\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S.  Čím vyšší hodnota objednávky, tím hodnotnější dárek. Podívejte se do košíku a zkontrolujte, jestli vám nechybí jen pár korun do další hladiny.\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., {{ organization.full_address }}, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "percent-off",
+      "gift",
+      "launch"
+    ]
+  },
+  {
     "id": "01KY341FJ7E0BY4765SG7J2C8G",
     "name": "SK Doprava zdarma červenec- konec (clone)",
     "status": "Draft",
@@ -5133,38 +5167,6 @@
     "offers": [
       "promo",
       "urgency",
-      "percent-off",
-      "launch",
-      "education"
-    ]
-  },
-  {
-    "id": "01KSKYYA7PDHE3KG2EQ68V821E",
-    "name": "CZ -  Měčín - hasičská zábava",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "education",
-    "subject": "Tak tohle si nesmíte nechat ujít!",
-    "previewText": "Oslavte s námi 150 let hasičů v Měčíně!",
-    "sentAt": "2026-05-27T09:30:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "T5ZMsQ",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Oslavte s námi 150 let hasičů a nechte se hýčkat s Královstvím",
-      "body": [
-        "Oslavte s námi 150 let hasičů a nechte se hýčkat s Královstvím",
-        "📌KDE: Louka za hasičárnou, Měčín 340 12 (okres Klatovy)",
-        "Už 30. května se Měčín promění v místo plné oslav, radosti a péče. Přijďte s námi oslavit 150 let hasičského sbor u a navštivte naši pojízdnou prodejnu Království tianDe.",
-        "U našeho stánku si budete moci vše osobně vyzkoušet, poradit se s námi a užít si příjemné chvíle v atmosféře plné inspirace a péče. Přijďte si udělat radost, načerpat nové tipy a odnést si něco krásného pro sebe i své blízké."
-      ],
-      "cta": "Zjistit víc",
-      "ctas": [],
-      "text": "96\nOslavte s námi 150 let hasičů a nechte se hýčkat s Královstvím\n📌KDY: 30. 5. od 14:00\n📌KDE: Louka za hasičárnou, Měčín 340 12 (okres Klatovy)\nUž 30. května se Měčín promění v místo plné oslav, radosti a péče. Přijďte s námi oslavit 150 let hasičského sbor u a navštivte naši pojízdnou prodejnu Království tianDe.\nU našeho stánku si budete moci vše osobně vyzkoušet, poradit se s námi a užít si příjemné chvíle v atmosféře plné inspirace a péče. Přijďte si udělat radost, načerpat nové tipy a odnést si něco krásného pro sebe i své blízké.\nCo Vás u nás čeká?\nMožnost vyzkoušet si nejoblíbenější produkty\nOdborné poradenství a doporučení péče na míru\nVIP sleva 35 % na Vaše nákupy\nDárky a malé překvapení pro dospělé i ty nejmenší\nOtevřena bude i naše kamenná prodejna\nPokud to nestihnete přímo na akci, budeme se na Vás těšit také v naší kamenné prodejně, která bude po celou dobu otevřená. Můžete se tak zastavit kdykoliv, v klidu si vybrat své oblíbené produkty a užít si příjemné osobní poradenství\n📌 KDE: Farní 43, 340 12 Měčín\n❤️ Budeme se na vás těšit!\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP. S.: Už zítra se na Vás budeme těšit v Měčíně. Přijďte navštívit naši pojízdnou i kamennou prodejnu, užít si krásnou atmosféru oslav, vyzkoušet si oblíbené produkty a dopřát si chvíli jen pro sebe. Těšíme se na každé milé setkání s Vámi!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
       "percent-off",
       "launch",
       "education"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-23T06:45:45.001Z",
+  "generatedAt": "2026-07-24T06:45:03.654Z",
   "sourceFile": "data/raw/campaigns.json",
   "campaignCount": 150,
   "languageBreakdown": {
@@ -8,8 +8,8 @@
   },
   "campaignTypeBreakdown": {
     "urgency": 63,
-    "education": 38,
-    "promo": 33,
+    "education": 37,
+    "promo": 34,
     "launch": 13,
     "event": 3
   },
@@ -75,7 +75,7 @@
     "cz": {
       "count": 107,
       "avgSubjectLength": 45,
-      "avgHeadlineLength": 52,
+      "avgHeadlineLength": 51,
       "topCtas": [
         "KOUPIT",
         "Zjistit víc",
@@ -93,6 +93,12 @@
         "urgency"
       ],
       "examples": [
+        {
+          "subject": "🎁 Dárek zdarma k nákupu? Takhle si ho vyberete sami",
+          "headline": "Váš dárek už čeká. Vyberete si ho sami.",
+          "previewText": "Žádné kódy, žádné hledání. Stačí dosáhnout hranice a dárek si vyberete přímo v košíku.",
+          "cta": "Vybrat produkty a dárek"
+        },
         {
           "subject": "⏰ Překvapení, kam se podíváš. Kafíčko s Renatou Královou - ZAČÍNÁME ZA 30 MINUT!",
           "headline": "Překvapení, kam se podíváš. Kafíčko s Renatou Královou",
@@ -122,12 +128,6 @@
           "headline": "Připravili jsme pro vás nové dárky, které potěší ještě víc než kdy dřív.",
           "previewText": "Ověřte si košík dřív, než o svůj dárek přijdete.",
           "cta": "pro vás článek"
-        },
-        {
-          "subject": "Zbývá posledních 7 míst. Budete mezi nimi?",
-          "headline": "Poslední příležitost získat péči za 3 100 Kč zdarma!",
-          "previewText": "Péče za 3 100 Kč zdarma. Kapacita se rychle plní.",
-          "cta": "Zjistit víc"
         }
       ]
     },
@@ -192,6 +192,63 @@
     }
   },
   "byCampaignType": {
+    "promo": {
+      "count": 34,
+      "avgSubjectLength": 44,
+      "avgHeadlineLength": 51,
+      "topCtas": [
+        "KÚPIŤ",
+        "Zjistit víc",
+        "KOUPIT",
+        "Koupit",
+        "Kúpiť",
+        "Vybrat produkty a dárek"
+      ],
+      "topOffers": [
+        "percent-off",
+        "launch",
+        "promo",
+        "gift"
+      ],
+      "examples": [
+        {
+          "subject": "🎁 Dárek zdarma k nákupu? Takhle si ho vyberete sami",
+          "headline": "Váš dárek už čeká. Vyberete si ho sami.",
+          "previewText": "Žádné kódy, žádné hledání. Stačí dosáhnout hranice a dárek si vyberete přímo v košíku.",
+          "cta": "Vybrat produkty a dárek"
+        },
+        {
+          "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
+          "headline": "Vedra? Máme řešení, které si zamilujete.",
+          "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
+          "cta": "Chci se osvěžit"
+        },
+        {
+          "subject": "🌡️🥵☀️ Horúčavy sa vracajú. Pripravte sa na ne.",
+          "headline": "Horúčavy? Máme riešenie, ktoré si zamilujete.",
+          "previewText": "Objavte letných pomocníkov, ktorí vám spríjemnia každý horúci deň.",
+          "cta": "Chcem sa osviežiť"
+        },
+        {
+          "subject": "Už zítra. Máte svůj termín rezervovaný?",
+          "headline": "Diagnostiky a konzultace v hodnotě",
+          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
+          "cta": "Zjistit víc"
+        },
+        {
+          "subject": "95 % lidí dělá v létě tuhle chybu… Připravte se včas!",
+          "headline": "Vaše nejlepší letní výbava? Silná imunita.",
+          "previewText": "Dovolená bez nachlazení? Začněte pečovat o svou imunitu už dnes.",
+          "cta": "Podpořit svou imunitu"
+        },
+        {
+          "subject": "Už zítra. Máte svůj termín rezervovaný?",
+          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
+          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
+          "cta": "Zjistit víc"
+        }
+      ]
+    },
     "urgency": {
       "count": 63,
       "avgSubjectLength": 41,
@@ -252,8 +309,8 @@
       ]
     },
     "education": {
-      "count": 38,
-      "avgSubjectLength": 53,
+      "count": 37,
+      "avgSubjectLength": 54,
       "avgHeadlineLength": 58,
       "topCtas": [
         "KOUPIT",
@@ -368,63 +425,6 @@
         }
       ]
     },
-    "promo": {
-      "count": 33,
-      "avgSubjectLength": 44,
-      "avgHeadlineLength": 51,
-      "topCtas": [
-        "KÚPIŤ",
-        "Zjistit víc",
-        "KOUPIT",
-        "Koupit",
-        "Kúpiť",
-        "Chci se osvěžit"
-      ],
-      "topOffers": [
-        "percent-off",
-        "launch",
-        "promo",
-        "gift"
-      ],
-      "examples": [
-        {
-          "subject": "🌡️🥵☀️Vedra se vrací. Připravte se na ně.",
-          "headline": "Vedra? Máme řešení, které si zamilujete.",
-          "previewText": "Objevte letní pomocníky, kteří vám zpříjemní každý horký den.",
-          "cta": "Chci se osvěžit"
-        },
-        {
-          "subject": "🌡️🥵☀️ Horúčavy sa vracajú. Pripravte sa na ne.",
-          "headline": "Horúčavy? Máme riešenie, ktoré si zamilujete.",
-          "previewText": "Objavte letných pomocníkov, ktorí vám spríjemnia každý horúci deň.",
-          "cta": "Chcem sa osviežiť"
-        },
-        {
-          "subject": "Už zítra. Máte svůj termín rezervovaný?",
-          "headline": "Diagnostiky a konzultace v hodnotě",
-          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "95 % lidí dělá v létě tuhle chybu… Připravte se včas!",
-          "headline": "Vaše nejlepší letní výbava? Silná imunita.",
-          "previewText": "Dovolená bez nachlazení? Začněte pečovat o svou imunitu už dnes.",
-          "cta": "Podpořit svou imunitu"
-        },
-        {
-          "subject": "Už zítra. Máte svůj termín rezervovaný?",
-          "headline": "Diagnostiky a konzultace v hodnotě 3 100 Kč zdarma!",
-          "previewText": "Získejte diagnostiky a odborné konzultace v celkové hodnotě 3 100 Kč zcela zdarma.",
-          "cta": "Zjistit víc"
-        },
-        {
-          "subject": "Užíváte doplňky stravy? Máme pro vás slevu až 30 %",
-          "headline": "Nejoblíbenější doplňky stravy právě teď až o 30 % levnější",
-          "previewText": "3 oblíbené doplňky se slevou až 30 %!",
-          "cta": "Chci ušetřit až 30 %"
-        }
-      ]
-    },
     "event": {
       "count": 3,
       "avgSubjectLength": 51,
@@ -460,6 +460,14 @@
     }
   },
   "examples": [
+    {
+      "subject": "🎁 Dárek zdarma k nákupu? Takhle si ho vyberete sami",
+      "headline": "Váš dárek už čeká. Vyberete si ho sami.",
+      "previewText": "Žádné kódy, žádné hledání. Stačí dosáhnout hranice a dárek si vyberete přímo v košíku.",
+      "cta": "Vybrat produkty a dárek",
+      "language": "cz",
+      "campaignType": "promo"
+    },
     {
       "subject": "⏰🚚 Stihnete dopravu zadarmo? Už len do polnoci.",
       "headline": "Čas sa kráti! Využite dopravu zdarma a zľavy až do 50 %.",
@@ -594,14 +602,6 @@
       "previewText": "Dovolenka sa začína správnym balením. Naša novinka vás nadchne.",
       "cta": "exkluzívna kozmetická taška",
       "language": "sk",
-      "campaignType": "urgency"
-    },
-    {
-      "subject": "🤫🎁Otevřete dřív, než bude pryč…",
-      "headline": "Léto volá... Máte už sbaleno?",
-      "previewText": "Dovolená začíná u správného balení. Naše novinka vás nadchne.",
-      "cta": "naše exkluzivní kosmetická taška",
-      "language": "cz",
       "campaignType": "urgency"
     }
   ]
