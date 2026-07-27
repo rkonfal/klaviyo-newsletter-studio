@@ -1,5 +1,45 @@
 [
   {
+    "id": "01KYH7TN3V6PM43BMTP4131G09",
+    "name": "Letní slevy 40 % + dárek — email",
+    "status": "Draft",
+    "language": "cz",
+    "campaignType": "urgency",
+    "subject": "Ušetřete až 40 % a vyberte si dárek",
+    "previewText": "Letní ceny končí 31. 7. Dárek čeká už při nákupu nad 1 000 Kč.",
+    "sentAt": null,
+    "segments": [],
+    "template": {
+      "id": "TB2UcD",
+      "name": "Letní slevy 40 % + dárek",
+      "editorType": "SYSTEM_DRAGGABLE",
+      "headline": "Ušetřete až 40 %. A dárek si vyberte sama.",
+      "body": [
+        "Ušetřete až 40 %. A dárek si vyberte sama.",
+        "Právě teď získáte z letního nákupu ještě víc. Vybrané oblíbené produkty pořídíte se slevou až 40 % a při nákupu nad 1 000 Kč se vám v košíku navíc otevře nabídka dárků. Žádný kód. Žádný náhodný produkt. Sama si vyberete, co vám udělá největší radost.",
+        "🎁 Jak získat svůj dárek ✓   Vyberte si produkty, klidně z letního výprodeje. ✓   Při nákupu nad 1 000 Kč vám košík ukáže dostupné dárky. ✓   Vyberte si ten, který skutečně využijete, a dokončete objednávku. Dárek se nepřidá automaticky. Před odesláním objednávky jej stačí v košíku označit.",
+        "Čím vyšší košík, tím větší výběr 🎁   nad 1 000 Kč 🎁   nad 1 500 Kč 🎁   nad 2 000 Kč 🎁   nad 2 500 Kč 🎁   nad 3 000 Kč S každou další hladinou se vám může otevřít širší a atraktivnější nabídka dárků."
+      ],
+      "cta": "Nakoupit se slevou a vybrat dárek",
+      "ctas": [
+        "Nakoupit se slevou a vybrat dárek",
+        "Solná koupel na nohy Čajovníkový strom",
+        "Pleťové matující papírky Něžná růže",
+        "Zubní kartáček ProDental",
+        "Peeling Citrónový",
+        "Prohlédnout letní nabídku"
+      ],
+      "text": "96\nUšetřete až 40 %. A dárek si vyberte sama.\nPrávě teď získáte z letního nákupu ještě víc. Vybrané oblíbené produkty pořídíte se slevou až 40 % a při nákupu nad 1 000 Kč se vám v košíku navíc otevře nabídka dárků. Žádný kód. Žádný náhodný produkt. Sama si vyberete, co vám udělá největší radost.\nNakoupit se slevou a vybrat dárek\n🎁 Jak získat svůj dárek ✓   Vyberte si produkty, klidně z letního výprodeje. ✓   Při nákupu nad 1 000 Kč vám košík ukáže dostupné dárky. ✓   Vyberte si ten, který skutečně využijete, a dokončete objednávku. Dárek se nepřidá automaticky. Před odesláním objednávky jej stačí v košíku označit.\nČím vyšší košík, tím větší výběr 🎁   nad 1 000 Kč 🎁   nad 1 500 Kč 🎁   nad 2 000 Kč 🎁   nad 2 500 Kč 🎁   nad 3 000 Kč S každou další hladinou se vám může otevřít širší a atraktivnější nabídka dárků.\nChybí vám do další hladiny jen kousek? Máte v košíku produkty za 1 940 Kč ? Do hranice 2 000 Kč vám chybí jen 60 Kč . Místo přidávání něčeho, co nepotřebujete, si doplňte zásoby produktu, který stejně běžně používáte: •   zubní pasty\n•   pleťové masky\n•   sprchového gelu\n•   šamponu nebo vlasové péče\n•   hygienických potřeb Využijete letní cenu, doplníte si zásoby a otevřete si širší výběr dárků. Takový nákup dává smysl.\nMalý tip: Dárek vybírejte až ve chvíli, kdy máte košík téměř hotový. Pokud některý produkt odeberete, dostupná nabídka se může změnit.\nSolná koupel na nohy Čajovníkový strom\nPleťové matující papírky Něžná růže\nZubní kartáček ProDental\nPeeling Citrónový\n49 Kč\n147 Kč\n177 Kč\n191 Kč\nNakoupit se slevou a vybrat dárek\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nDenisa Horová\nProvozní ředitelka\nKrálovství tianDe\nP.S.  Letní slevy až 40 % platí jen do 31. 7. nebo do vyprodání zásob. Prohlédnout letní nabídku\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., {{ organization.full_address }}, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
+    },
+    "offers": [
+      "urgency",
+      "percent-off",
+      "gift",
+      "launch",
+      "education"
+    ]
+  },
+  {
     "id": "01KY85HZNDB77A07RFK1Q2MYRN",
     "name": "Dárky k nákupu — email",
     "status": "Draft",
@@ -5134,42 +5174,6 @@
       "percent-off",
       "gift",
       "launch"
-    ]
-  },
-  {
-    "id": "01KSFC48T2EY7D54TEV4F4PSFZ",
-    "name": "Vypadlící 05/26",
-    "status": "Sent",
-    "language": "cz",
-    "campaignType": "urgency",
-    "subject": "POZOR: Nenechte si utéct 35% slevu!",
-    "previewText": "Ještě máte čas zachránit svou VIP slevu 35 %… ale jen do 30. 5.",
-    "sentAt": "2026-05-27T11:00:00+00:00",
-    "segments": [],
-    "template": {
-      "id": "YjKRAm",
-      "name": "2025-02-28 04:04 popup existující klient",
-      "editorType": "SYSTEM_DRAGGABLE",
-      "headline": "Dobrý den,",
-      "body": [
-        "Koukala jsem do našeho systému (ano, pečlivě hlídám, aby vám nic neuteklo 🙂) a všimla jsem si, že vám už příští měsíc končí vaše VIP sleva 35 %. A byla by opravdu škoda o ni přijít…",
-        "Pokud do 30. 5. neuděláte objednávku, vaše VIP sleva 35 % se od 1. 6. ukončí. Stačí ale jakýkoliv nákup na e-shopu a sleva se vám automaticky prodlouží na dalších 6 měsíců. Bez složitostí, bez podmínek navíc.",
-        "✓ Dopřejete si (nebo někomu blízkému) něco krásného",
-        "✓ Tím si udržíte VIP slevu 35 % na další půl roku"
-      ],
-      "cta": "PRODLOUŽIT SLEVU JEDNÍM NÁKUPEM",
-      "ctas": [
-        "PRODLOUŽIT SLEVU JEDNÍM NÁKUPEM",
-        "NAOUPIT VÝHODNĚ"
-      ],
-      "text": "96\nDobrý den,\nKoukala jsem do našeho systému (ano, pečlivě hlídám, aby vám nic neuteklo 🙂) a všimla jsem si, že vám už příští měsíc končí vaše VIP sleva 35 %. A byla by opravdu škoda o ni přijít…\nPRODLOUŽIT SLEVU JEDNÍM NÁKUPEM\nPokud do 30. 5. neuděláte objednávku, vaše VIP sleva 35 % se od 1. 6. ukončí. Stačí ale jakýkoliv nákup na e-shopu a sleva se vám automaticky prodlouží na dalších 6 měsíců. Bez složitostí, bez podmínek navíc.\n✓ Dopřejete si (nebo někomu blízkému) něco krásného\n✓ Tím si udržíte VIP slevu 35 % na další půl roku\nTIP pro vás\nPrávě teď u nás navíc odstartoval Jarní Black Friday . A to znamená jediné. Exkluzivní balíčky plné oblíbených produktů a nádherných dárků navíc, které jindy nezískáte . Klikněte a ulovte si své jarní favority dřív , než budou pryč\nNAOUPIT VÝHODNĚ\nTak co, využijete to? Já bych na vašem místě neváhala ani vteřinu :). Pokud už jste mezitím nakoupili jinde, berte prosím tuto zprávu jen jako milé připomenutí.\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nBc. Renata Králová\nnejúspěšnější žena tianDe na světě\nP.S. Pokud si nejste jistá, co vybrat, nebo chcete poradit s produkty, klidně nám zavolejte na 373 700 900. Rádi vám pomůžeme vybrat to pravé!\nInfolinka pro vaše dotazy či objednávky Po-Pá: 8:00-15:00\ninfo@kralovstvi-tiande.cz CZ  +420 373 700 900 SK  +421 220 924 490\n© 2015–2025 Diamond Plus s.r.o., Farní 43, 340 12 Měčín, IČO: 06642144, Ochrana osobních údajů .\nTento e-mail je obchodním sdělením, které bylo na e-mailovou adresu {{ email|default:'' }} odesláno na základě uděleného souhlasu s odběrem obchodních sdělení nebo v rámci navázání obchodního vztahu. Pokud se chcete odhlásit z odběru newsletteru, klikněte {% unsubscribe %}."
-    },
-    "offers": [
-      "promo",
-      "urgency",
-      "percent-off",
-      "launch",
-      "education"
     ]
   }
 ]
